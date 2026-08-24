@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIH 2026 · Ettimadai Campus — Registration Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF7F2;
+    --surface:#FFFFFF;
+    --ink:#211A1D;
+    --muted:#6E6469;
+    --faint:#A69EA1;
+    --line:#E9E1D9;
+    --maroon:#8A1834;
+    --maroon-deep:#5E0F23;
+    --gold:#BD8C34;
+    --gold-soft:#F1E4C6;
+    --maroon-soft:#F6E4E8;
+    --good:#4C7A5D;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold-soft);}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+
+  /* ---------- Header ---------- */
+  header{
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#FFFDFA 0%, var(--paper) 100%);
+  }
+  .hbar{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:22px 0 20px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .mark{
+    width:38px;height:38px;border-radius:9px;
+    background:var(--maroon);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:17px;
+    flex-shrink:0;
+  }
+  .brand .name{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);}
+  .brand .sub{font-size:11.5px;color:var(--muted);margin-top:1px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;color:var(--maroon-deep);
+    background:var(--maroon-soft);
+    padding:6px 12px;border-radius:100px;
+    letter-spacing:.02em;
+    white-space:nowrap;
+  }
+
+  .hero{padding:34px 0 40px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;color:var(--maroon);
+    letter-spacing:.08em;text-transform:uppercase;
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:clamp(32px,4.6vw,54px);
+    line-height:1.04;
+    letter-spacing:-.01em;
+    margin:0 0 16px;
+    max-width:820px;
+  }
+  h1 em{font-style:italic;color:var(--maroon);}
+  .hero p{
+    font-size:16px;line-height:1.6;color:var(--muted);
+    max-width:600px;margin:0;
+  }
+
+  /* ---------- Stat strip ---------- */
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;margin-top:36px;
+  }
+  .stat{background:var(--surface);padding:22px 22px 20px;}
+  .stat .num{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:clamp(26px,3vw,36px);color:var(--ink);
+    line-height:1;
+  }
+  .stat .num span{color:var(--maroon);}
+  .stat .label{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.4;}
+
+  /* ---------- Sections ---------- */
+  section{padding:56px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px;flex-wrap:wrap;}
+  .sec-head h2{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:26px;margin:0;letter-spacing:-.01em;
+  }
+  .sec-head .num-tag{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--faint);
+  }
+  .sec-note{font-size:14px;color:var(--muted);max-width:560px;margin:8px 0 0;line-height:1.55;}
+
+  .card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;padding:26px;
+  }
+
+  /* ---------- Timeline (signature) ---------- */
+  .timeline-card{position:relative;}
+  .callout{
+    display:inline-flex;align-items:baseline;gap:8px;
+    background:var(--maroon);color:#fff;
+    padding:12px 18px;border-radius:11px;
+    margin-bottom:22px;
+  }
+  .callout .big{font-family:'Fraunces',serif;font-weight:600;font-size:22px;}
+  .callout .txt{font-size:13px;opacity:.92;line-height:1.4;max-width:360px;}
+  .tl-legend{display:flex;gap:22px;margin-top:16px;flex-wrap:wrap;}
+  .tl-legend .item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);}
+  .tl-legend .dot{width:9px;height:9px;border-radius:3px;}
+
+  /* Bar chart (pure CSS/SVG, no external deps) */
+  .bars{
+    display:flex;align-items:flex-end;gap:10px;
+    height:230px;padding:0 4px;border-bottom:1px solid var(--line);
+  }
+  .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;}
+  .bar-shape{
+    width:100%;max-width:52px;border-radius:6px 6px 3px 3px;
+    background:linear-gradient(180deg,var(--maroon),var(--maroon-deep));
+    position:relative;transition:opacity .15s;
+  }
+  .bar-shape.late{background:linear-gradient(180deg,var(--gold),#9C7126);}
+  .bar-shape:hover{opacity:.85;}
+  .bar-val{font-size:11px;color:var(--ink);font-weight:600;margin-bottom:6px;font-variant-numeric:tabular-nums;}
+  .bar-labels{display:flex;gap:10px;padding:10px 4px 0;}
+  .bar-labels span{flex:1;text-align:center;font-size:10.5px;color:var(--faint);max-width:62px;}
+
+  /* ---------- Two-col grid ---------- */
+  .grid-2{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;}
+  @media(max-width:900px){.grid-2{grid-template-columns:1fr;}}
+
+  /* Branch bars */
+  .branch-row{
+    display:grid;grid-template-columns:96px 1fr 46px;
+    align-items:center;gap:14px;padding:8px 0;
+  }
+  .branch-row .code{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;
+    color:var(--maroon-deep);background:var(--maroon-soft);
+    padding:4px 8px;border-radius:6px;text-align:center;width:fit-content;
+  }
+  .branch-row .bartrack{background:#F1ECE5;border-radius:6px;height:10px;overflow:hidden;}
+  .branch-row .barfill{
+    height:100%;background:linear-gradient(90deg,var(--maroon),var(--maroon-deep));
+    border-radius:6px;
+  }
+  .branch-row .count{font-size:12.5px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums;}
+  .branch-name{font-size:11px;color:var(--faint);margin-top:1px;}
+
+  /* Gender donut card */
+  .donut-wrap{display:flex;align-items:center;gap:22px;}
+  .donut-svg{flex-shrink:0;}
+  .donut-center-num{font-family:'Fraunces',serif;font-weight:600;font-size:17px;fill:var(--ink);}
+  .donut-legend .item{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .donut-legend .sw{width:10px;height:10px;border-radius:3px;}
+  .donut-legend .l-label{font-size:13px;color:var(--ink);font-weight:500;}
+  .donut-legend .l-val{font-size:12px;color:var(--muted);}
+
+  .mix-bar{display:flex;height:26px;border-radius:7px;overflow:hidden;margin:18px 0 10px;}
+  .mix-legend{display:flex;gap:18px;flex-wrap:wrap;}
+  .mix-legend .item{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);}
+  .mix-legend .dot{width:8px;height:8px;border-radius:2px;}
+  .divider{border:none;border-top:1px solid var(--line);margin:22px 0;}
+
+  /* ---------- Mentor + notes ---------- */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:12.5px;padding:7px 12px;border-radius:100px;
+    background:var(--surface);border:1px solid var(--line);color:var(--ink);
+    display:flex;align-items:center;gap:7px;
+  }
+  .chip b{color:var(--maroon);font-family:'IBM Plex Mono',monospace;font-size:11.5px;}
+
+  .notes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media(max-width:1050px){.notes-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.notes-grid{grid-template-columns:1fr;}}
+  .note-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;}
+  .note-card .n-num{font-family:'Fraunces',serif;font-size:28px;font-weight:600;color:var(--maroon);}
+  .note-card .n-title{font-size:13px;font-weight:600;margin:6px 0 6px;}
+  .note-card .n-desc{font-size:12.5px;color:var(--muted);line-height:1.55;}
+
+  /* Homogeneity / school lists (reuse branch-row look) */
+  .stat-row{display:grid;grid-template-columns:150px 1fr 40px;align-items:center;gap:14px;padding:7px 0;}
+  .stat-row .lbl{font-size:12.5px;color:var(--ink);}
+  .stat-row .bartrack{background:#F1ECE5;border-radius:6px;height:10px;overflow:hidden;}
+  .stat-row .barfill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--maroon),var(--maroon-deep));}
+  .stat-row .count{font-size:12px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums;}
+
+  footer{padding:30px 0 44px;}
+  footer p{font-size:12px;color:var(--faint);margin:0;line-height:1.6;}
+
+  @media(max-width:700px){
+    .stats{grid-template-columns:1fr 1fr;}
+    .wrap{padding:0 18px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <div class="brand">
+      <div class="mark">A</div>
+      <div>
+        <div class="name">Amrita Vishwa Vidyapeetham</div>
+        <div class="sub">Ettimadai Campus · in association with IIC Amrita</div>
+      </div>
+    </div>
+    <div class="tag">SIH 2026 · Internal Hackathon</div>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <p class="eyebrow">Registration Analytics — Smart India Hackathon 2026</p>
+  <h1>458 teams. 2,748 students.<br>One <em>very</em> last-minute rush.</h1>
+  <p>A read of the Ettimadai campus team-registration form: who signed up, from which branch, how the deadline shaped behaviour, and where the data itself needs a second look.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="num">458</div><div class="label">Teams registered</div></div>
+    <div class="stat"><div class="num">2,748</div><div class="label">Student participants (6 / team)</div></div>
+    <div class="stat"><div class="num">40.9<span>%</span></div><div class="label">Female participation share</div></div>
+    <div class="stat"><div class="num">71.6<span>%</span></div><div class="label">Teams with a mentor on record</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- BRANCH + GENDER -->
+  <section id="composition">
+    <div class="sec-head">
+      <div>
+        <h2>Who registered</h2>
+        <p class="sec-note">Branch read from each member's roll-number code — every code that appears in the data is broken out individually below (2,745 of 2,748 roll numbers resolved to a branch); gender as declared on the form.</p>
+      </div>
+      <span class="num-tag">2,748 participants</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Participation by branch</div>
+        <div id="branchList" style="max-height:640px;overflow-y:auto;"></div>
+        <p style="font-size:11px;color:var(--faint);margin:14px 0 0;">All 31 branch codes found in the roll numbers are listed above — none are lumped into "other." AAR / CPS / QTS / AIM are AI &amp; Data Science specialisation tracks (Autonomous Agents &amp; Robotics, Cyber-Physical Systems &amp; Security, Quantum Technologies, Medical Engineering) confirmed against both Amrita's admissions listing and each student's own department text. * = codes with only 1–2 students where the exact programme name couldn't be fully confirmed on amrita.edu (CDA/DLS match Allied Health / Applied Statistics PG programme codes; ATE and IAE each appear once and are almost certainly typos of AEE and AIE respectively — each shares its school code with the programme it likely mistypes: ATE sits under the Engineering school code like AEE, IAE sits under the Computing school code like AIE). The 3 "unreadable" entries are roll numbers with a missing or malformed branch segment (e.g. digits only, or a name typed into the roll-number field) that no amount of pattern-matching can safely resolve.</p>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:20px;">
+          <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Gender split — all participants</div>
+          <div class="donut-wrap">
+            <svg id="genderDonut" class="donut-svg" width="140" height="140" viewBox="0 0 140 140"></svg>
+            <div class="donut-legend" id="donutLegend"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="font-size:13px;font-weight:600;">Team gender composition</div>
+          <div class="mix-bar" id="mixBar"></div>
+          <div class="mix-legend" id="mixLegend"></div>
+          <hr class="divider">
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Team leaders</div>
+          <div style="font-size:12.5px;color:var(--muted);">326 male · 132 female — <b style="color:var(--ink)">28.8%</b> of teams are led by a woman</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- TEAM COMPOSITION DEPTH -->
+  <section id="depth">
+    <div class="sec-head">
+      <div>
+        <h2>How teams are built</h2>
+        <p class="sec-note">Whether a team is drawn from one branch or several, and which of Amrita's schools its members come from.</p>
+      </div>
+      <span class="num-tag">458 teams</span>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Single-branch vs. cross-branch teams</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:16px;">By how many distinct branch codes appear among a team's 6 members.</div>
+        <div id="homogList"></div>
+        <hr class="divider">
+        <div style="font-size:12.5px;color:var(--muted);">
+          <b style="color:var(--ink)">56.6%</b> of teams (259) draw all 6 members from one branch. Of those, only <b style="color:var(--ink)">79 teams</b> are pure CSE — the rest are single-branch teams from AIE, AID, ECE and others. The most mixed team spans <b style="color:var(--ink)">6</b> different branches at once.
+        </div>
+      </div>
+      <div class="card">
+        <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Participation by school</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:16px;">Read from the school segment of each roll number.</div>
+        <div id="schoolList"></div>
+        <hr class="divider">
+        <div style="font-size:12.5px;color:var(--muted);">
+          <b style="color:var(--ink)">32 teams</b> include at least one member from the School of Physical Sciences (integrated M.Sc. programs) or the School of Law — engineering-dominated, but not engineering-only. A further <b style="color:var(--ink)">2 students</b> come from the Center for Allied Health Sciences (school code AH), a school not previously called out in this data.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTORS -->
+  <section id="mentors">
+    <div class="sec-head">
+      <div>
+        <h2>Mentor coverage</h2>
+        <p class="sec-note">328 of 458 teams (71.6%) named a faculty mentor at registration; 130 left it blank. A handful of mentors are already guiding more than one team.</p>
+      </div>
+      <span class="num-tag">328 / 458 teams</span>
+    </div>
+    <div class="card">
+      <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Mentors listed on 2 or more teams</div>
+      <div class="chips">
+        <span class="chip"><b>4</b> Aditya S</span>
+        <span class="chip"><b>3</b> Dr. Neelesh Ashok</span>
+        <span class="chip"><b>3</b> Vaishnavi K</span>
+        <span class="chip"><b>3</b> Dr. Aravind Vishnu S S</span>
+        <span class="chip"><b>3</b> Ritwik M</span>
+        <span class="chip"><b>3</b> Rithvik M *</span>
+        <span class="chip"><b>2</b> Ramaguru Radhakrishnan</span>
+        <span class="chip"><b>2</b> Dr. Bagavathi C</span>
+        <span class="chip"><b>2</b> Dr. Ashik Suresh</span>
+        <span class="chip"><b>2</b> Dr. M. Thilaga</span>
+        <span class="chip"><b>2</b> Dr Bagavathi Sivakumar P</span>
+        <span class="chip"><b>2</b> Dr. Rayappa David Amar Raj</span>
+        <span class="chip"><b>2</b> Sibi Sambasivam</span>
+        <span class="chip"><b>2</b> Rakesh Kumar Sidharthan</span>
+        <span class="chip"><b>2</b> Ms. Nalinadevi K</span>
+      </div>
+      <p style="font-size:11.5px;color:var(--faint);margin:14px 0 0;">* "Ritwik M" and "Rithvik M" are 3 mentions apart — likely the same person spelled two ways; worth reconciling before the mentor list goes out.</p>
+    </div>
+  </section>
+
+  <!-- CLASS-YEAR MIX -->
+  <section id="classyear">
+    <div class="sec-head">
+      <div>
+        <h2>Who's actually showing up: year of study</h2>
+        <p class="sec-note">Joining year, read from each roll number's batch segment and its programme length (4-yr, 5-yr integrated, or 2-yr postgraduate), converted to year of study as of Aug 2026 (academic year 2026–27). Postgraduate participants are shown in their own row rather than folded into the undergraduate ladder.</p>
+      </div>
+      <span class="num-tag">2,737 of 2,748 resolved</span>
+    </div>
+    <div class="card">
+      <div class="callout">
+        <span class="big">75.1%</span>
+        <span class="txt">of all participants are in their 1st or 2nd year — hackathon turnout skews heavily toward newer students.</span>
+      </div>
+      <div id="yearList"></div>
+      <hr class="divider">
+      <div style="font-size:12.5px;color:var(--muted);line-height:1.6;">
+        4th-year students (2023 batch, final year on a 4-year B.Tech) make up just <b style="color:var(--ink)">2.0%</b> of participants — 56 students across all 458 teams. 5th-year standing applies only to 2022-batch students on a 5-year integrated programme (Data Science, Maths &amp; Computing, or BBA LL.B.) — no students from that batch appear in this dataset, so the row shows zero rather than being folded into "unresolved." Among students who <i>are</i> on one of those three 5-yr integrated programmes, the year-of-study spread is 1st year: 39, 2nd year: 44, 3rd year: 7, 4th year: 29 — confirming the batches present simply haven't reached year 5 yet, rather than year 5 being uncounted. A further <b style="color:var(--ink)">37 participants</b> (1.3%) are postgraduate students (M.Tech / M.Sc., 2-year programmes) rather than undergraduates. The remaining <b style="color:var(--ink)">11 unresolved</b> entries (0.4%) are roll numbers with a missing, truncated, or non-standard segment — genuinely unrecoverable from the data as submitted, not a rounding gap.
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM EXPLORER -->
+  <section id="explorer">
+    <div class="sec-head">
+      <div>
+        <h2>Look up any team</h2>
+        <p class="sec-note">Search all 458 registered teams by name, ID, leader, department, school or mentor.</p>
+      </div>
+      <span class="num-tag" id="explorerCount"></span>
+    </div>
+
+    <div class="card" style="padding:20px;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+        <input id="expSearch" type="text" placeholder="Search by team name, ID, leader, mentor…" style="flex:2 1 260px;min-width:220px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13.5px;background:#fff;color:var(--ink);">
+        <select id="expSchool" class="exp-filter" style="flex:1 1 180px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13.5px;background:#fff;color:var(--ink);">
+          <option value="">All schools</option>
+        </select>
+        <select id="expMix" class="exp-filter" style="flex:1 1 150px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13.5px;background:#fff;color:var(--ink);">
+          <option value="">All gender mixes</option>
+        </select>
+        <select id="expMentor" class="exp-filter" style="flex:1 1 150px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13.5px;background:#fff;color:var(--ink);">
+          <option value="">Mentor: any</option>
+          <option value="yes">Has a mentor</option>
+          <option value="no">No mentor on record</option>
+        </select>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <thead>
+            <tr style="background:var(--gold-soft);text-align:left;">
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Team ID</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Team name</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Leader</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Department</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">School</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Gender mix</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Mentor</th>
+              <th style="padding:10px 12px;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;">Registered</th>
+            </tr>
+          </thead>
+          <tbody id="expBody"></tbody>
+        </table>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:14px;">
+        <p style="font-size:11px;color:var(--faint);margin:0;">Department shown as the leader typed it on the form.</p>
+        <div id="expPager" style="display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted);white-space:nowrap;">
+          <button id="expPrev" type="button" style="padding:5px 11px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);font-family:'Inter',sans-serif;font-size:12px;cursor:pointer;">&larr; Prev</button>
+          <span id="expPageLabel"></span>
+          <button id="expNext" type="button" style="padding:5px 11px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);font-family:'Inter',sans-serif;font-size:12px;cursor:pointer;">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>© Amrita Vishwa Vidyapeetham</b> and the <b>Institution's Innovation Council (IIC), Amrita</b>. This registration data and the SIH 2026 event it belongs to are the property of Amrita Vishwa Vidyapeetham and IIC Amrita; this page is an independent analysis of that data and is not an official university or IIC publication.</p>
+    <p style="margin-top:8px;">Built from the SIH 2026 Ettimadai Campus team-registration export (458 responses, verified row by row and column by column against every one of the 2,748 roll numbers on the form). All 31 branch codes present in the roll-number data are shown individually — none lumped into "other." Branch and school names are cross-checked against Amrita's official programme list and school curricula (amrita.edu/admissions/engineering, amrita.edu/school/artificial-intelligence, amrita.edu/school/physical-sciences, amrita.edu/school/law, amrita.edu/school/allied-health-sciences) and, where public listings were ambiguous, against each student's own free-text department field on the form — codes marked * had only 1–2 students and could not be tied to a confirmed programme name with full certainty. Year-of-study is computed from each roll number's batch year and programme length (4-yr, 5-yr integrated, or 2-yr postgraduate) as of Aug 2026; a handful of roll numbers with typos (missing dots, swapped Name/Roll fields, doubled digits) were still resolved by pattern-matching against the other 2,745 valid entries — only 3 branch codes and 11 batch years remain genuinely unrecoverable.</p>
+  </div>
+</footer>
+
+<script>
+const DATA = {
+  branches: [
+    {code:'CSE', name:'Computer Science & Engg. (Core)', count:743},
+    {code:'AIE', name:'CSE (Artificial Intelligence)', count:252},
+    {code:'ECE', name:'Electronics & Communication Engg.', count:205},
+    {code:'AID', name:'AI & Data Science (Core)', count:201},
+    {code:'CYS', name:'CSE (Cyber Security)', count:182},
+    {code:'CCE', name:'Computer & Communication Engg.', count:166},
+    {code:'ELC', name:'Electrical & Computer Engg.', count:147},
+    {code:'EEE', name:'Electrical & Electronics Engg.', count:139},
+    {code:'DAS', name:'Integrated M.Sc. Data Science (5-yr)', count:90},
+    {code:'ARE', name:'Automation & Robotics Engg.', count:86},
+    {code:'MEE', name:'Mechanical Engineering', count:78},
+    {code:'AAR', name:'AI & DS — Autonomous Agents & Robotic Systems', count:76},
+    {code:'CPS', name:'AI & DS — Cyber-Physical Systems & Security', count:70},
+    {code:'QTS', name:'AI & DS — Quantum Technologies', count:68},
+    {code:'AIM', name:'AI & DS — Medical Engineering', count:64},
+    {code:'CHE', name:'Chemical Engineering', count:55},
+    {code:'AEE', name:'Aerospace Engineering', count:39},
+    {code:'MAT', name:'Integrated M.Sc. Maths & Computing (5-yr)', count:27},
+    {code:'CIE', name:'Civil Engineering', count:22},
+    {code:'PHY', name:'B.Sc. Physics (Honours)', count:15},
+    {code:'ASD', name:'M.Sc. Applied Statistics & Data Analytics', count:5},
+    {code:'BBL', name:'BBA LL.B. (Hons.) — Integrated Law, 5-yr', count:3},
+    {code:'CDA', name:'Allied Health Sciences *', count:2},
+    {code:'AI', name:'B.Tech Artificial Intelligence (School of AI)', count:2},
+    {code:'CSC', name:'Computer Science *', count:2},
+    {code:'ARR', name:'AI & DS — Autonomous Agents & Robotic Systems (alt. roll spelling)', count:1},
+    {code:'DSC', name:'M.Tech / M.Sc. Data Science (PG) *', count:1},
+    {code:'ATE', name:'Unresolved — likely typo of AEE (same school code, EN) *', count:1},
+    {code:'IAE', name:'Unresolved — likely typo of AIE (same school code, SC) *', count:1},
+    {code:'MSE', name:'M.Tech Materials Science & Engg.', count:1},
+    {code:'DLS', name:'PG, Dept. of Applied Statistics & Data Analytics *', count:1},
+    {code:'???', name:'Roll number unreadable / no branch code found', count:3}
+  ],
+  gender: {Male:1623, Female:1125},
+  mix: {'Mixed':421, 'All-Female':35, 'All-Male':2},
+  homogeneity: [
+    {label:'1 branch (single-branch team)', count:259},
+    {label:'2 branches', count:122},
+    {label:'3 branches', count:50},
+    {label:'4 branches', count:21},
+    {label:'5 branches', count:5},
+    {label:'6 branches (fully mixed)', count:1}
+  ],
+  schools: [
+    {label:'School of Computing (SC)', count:1185},
+    {label:'School of Engineering (EN)', count:941},
+    {label:'School of Artificial Intelligence (AI)', count:477},
+    {label:'School of Physical Sciences (PS)', count:140},
+    {label:'International School of Law (LW)', count:3},
+    {label:'Center for Allied Health Sciences (AH)', count:2}
+  ],
+  classYears: [
+    {label:'1st year (2026 batch)', count:1182},
+    {label:'2nd year (2025 batch)', count:883},
+    {label:'3rd year (2024 batch)', count:579},
+    {label:'4th year (2023 batch)', count:56},
+    {label:'5th year (2022 batch — 5-yr integrated only)', count:0},
+    {label:'Postgraduate (M.Tech / M.Sc., 2-yr programmes)', count:37},
+    {label:'Unresolved (malformed roll number)', count:11}
+  ]
+};
+
+const TEAMS = [
+  {id:'T001',name:'Nova Prime',leader:'Ragulkanna V U',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Resma Madhu P K',date:'14 Aug 2026'},
+  {id:'T002',name:'Sprinters',leader:'Niveditha Prasad Andhooran',dept:'B TECH Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'15 Aug 2026'},
+  {id:'T003',name:'LumberJack',leader:'Gautam Arun',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ramaguru Radhakrishnan',date:'15 Aug 2026'},
+  {id:'T004',name:'ARISTELLA',leader:'A PARDHAV REDDY',dept:'SCHOOL OF AI',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Nitha P K',date:'15 Aug 2026'},
+  {id:'T005',name:'Code Psychics',leader:'GARREPALLI VARSHITH',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Bagavathi C',date:'15 Aug 2026'},
+  {id:'T006',name:'The Multiverse of Madness',leader:'Harshith Reddy Bathula',dept:'Artificial intelligence and Data Science (Quantum Technology)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'David Amar Raj',date:'15 Aug 2026'},
+  {id:'T007',name:'OrbitalGeeks',leader:'Jishnu Teja Dandamudi',dept:'Amrita School of Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. David Amar Raj Rayappa',date:'15 Aug 2026'},
+  {id:'T008',name:'suhana',leader:'suhan deb',dept:'AID',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'DR.Premjith B',date:'15 Aug 2026'},
+  {id:'T009',name:'TechTitans',leader:'K Yogendra Babu',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'15 Aug 2026'},
+  {id:'T010',name:'Algo Knights',leader:'Jaikiran J',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Neethu MR',date:'15 Aug 2026'},
+  {id:'T011',name:'Innov8ers',leader:'Maddirala Jerusha Olivia',dept:'Artificial Intelligence Engineering (AIE)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Ashik Suresh',date:'15 Aug 2026'},
+  {id:'T012',name:'Beyond Limitless',leader:'Karthikeyan K',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'15 Aug 2026'},
+  {id:'T013',name:'Capybara_67',leader:'Sanjay Viswaq Manickarajan',dept:'Computer Science and Engineering (Cyber Security)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. S Durga',date:'15 Aug 2026'},
+  {id:'T014',name:'Arcane',leader:'Ritu Ramesh',dept:'B Tech Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Suman Datta',date:'16 Aug 2026'},
+  {id:'T015',name:'PIKACHU',leader:'Srinithi J',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:1,females:5,mentor:'Neethu M R',date:'16 Aug 2026'},
+  {id:'T016',name:'The outliers',leader:'Rithwik vallala',dept:'Cse',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Goutham ramesh (cse dept)',date:'16 Aug 2026'},
+  {id:'T017',name:'Code Alchemy',leader:'Sandhiya.D',dept:'COMPUTER SCIENCE ENGINEERING AND ARTIFICIAL INTELLIGENCE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Keerthika',date:'16 Aug 2026'},
+  {id:'T018',name:'THE NEURONEX LEGION',leader:'R. HARSHAN',dept:'ARTIFICIAL INTELLIGENCE AND DATA SCIENCE',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'PREMJITH B',date:'16 Aug 2026'},
+  {id:'T019',name:'ByteBrains',leader:'SHRI THANISHKA',dept:'AI MEDICAL ENGINEERING',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'DIVYA SASIDHARAN',date:'16 Aug 2026'},
+  {id:'T020',name:'VISHWAKARMA',leader:'Pranav Yogesh P',dept:'Artificial Intelligence And Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Manimaran S',date:'16 Aug 2026'},
+  {id:'T021',name:'HydraSoft',leader:'Sreekanth S',dept:'TIFAC CORE in Cybersecurity',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'16 Aug 2026'},
+  {id:'T022',name:'HexNova',leader:'Akula Manideep',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'Bagavathi c',date:'16 Aug 2026'},
+  {id:'T023',name:'NovaCore',leader:'M Devi Priya',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'17 Aug 2026'},
+  {id:'T024',name:'YinMnBlu',leader:'Pavithran A',dept:'Mathematics',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. M. Thilaga',date:'17 Aug 2026'},
+  {id:'T025',name:'CHRONOS',leader:'ROHITH B',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Bagavathi Sivakumar P',date:'17 Aug 2026'},
+  {id:'T026',name:'Hexcode',leader:'Bhuvigna Vuyyuru',dept:'AARS',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr. S. S. Kalai Vani',date:'17 Aug 2026'},
+  {id:'T027',name:'Git Gud',leader:'Anush Sivakumar',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Dhanya M. Dhanalakshmy',date:'17 Aug 2026'},
+  {id:'T028',name:'Neural Nexus',leader:'Nellore Bhargav Sai',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Rayappa David Amar Raj',date:'17 Aug 2026'},
+  {id:'T029',name:'Qurios',leader:'R Gagan Chowdary',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ramaguru R',date:'17 Aug 2026'},
+  {id:'T030',name:'Hacktilldawn',leader:'S Ashvinsai',dept:'TIFAC-CORE in Cyber Security, Amrita School of Engineering, Coimbatore, Amrita Vishwa Vidyapeetham, India',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sibi Sambasivam',date:'17 Aug 2026'},
+  {id:'T031',name:'Nexus Vici',leader:'Shailesh R K',dept:'Artificial Intelligence and Data Science [Medical Engineering ]',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr Hima Vyshnavi A M',date:'17 Aug 2026'},
+  {id:'T032',name:'Syntax',leader:'NIKIL J A',dept:'Computer science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'17 Aug 2026'},
+  {id:'T033',name:'SYNAPSE',leader:'Naren Balaji V',dept:'Computer Science and Engineering Core',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'17 Aug 2026'},
+  {id:'T034',name:'Silent Strike',leader:'Jayanthi Rohith',dept:'computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'17 Aug 2026'},
+  {id:'T035',name:'Syntax Error',leader:'Ashwanth S',dept:'B.Tech in Ai&Ds( Autonomous Agents and Robotic Systems)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Sreekumar K T',date:'17 Aug 2026'},
+  {id:'T036',name:'TEAM AXION',leader:'Raghammudi Veda Vamsi Krishna',dept:'Computer Science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Sabarish B. A',date:'17 Aug 2026'},
+  {id:'T037',name:'sinister6',leader:'Thulasiram Sudheeswar Reddy',dept:'Artificial intelligence and Data Science (Autonomous Agents and Robotic Systems)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Rayappa David Amar Raj',date:'18 Aug 2026'},
+  {id:'T038',name:'Team syntax',leader:'Roahith p',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Mr. C B Rajesh',date:'18 Aug 2026'},
+  {id:'T039',name:'AstraNova',leader:'Abinash S',dept:'B.Tech Artificial Intelligence And Data Science (Quantum Technology)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.Neelesh Ashok',date:'18 Aug 2026'},
+  {id:'T040',name:'Team Fury',leader:'Jayabalan Dharmadurai',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'18 Aug 2026'},
+  {id:'T041',name:'ARSEN',leader:'SUJITHKANNAN M R',dept:'Automation and Robotics',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'18 Aug 2026'},
+  {id:'T042',name:'Anantha',leader:'Vinayak S',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Vaishnavi K',date:'18 Aug 2026'},
+  {id:'T043',name:'(SAD)²',leader:'Deepak Raja KN',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr .Hari Kumar',date:'18 Aug 2026'},
+  {id:'T044',name:'Nexora',leader:'Putta Sethu Sagar Reddy',dept:'Mechanical department',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'S Rakesh Kumar',date:'18 Aug 2026'},
+  {id:'T045',name:'F0rg3d',leader:'Haranya R.N',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Aravind Vishnu S S',date:'18 Aug 2026'},
+  {id:'T046',name:'NEXUS SIX',leader:'HARISH G',dept:'COMPUTER AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'ADITYA S',date:'18 Aug 2026'},
+  {id:'T047',name:'Syntax Slayers',leader:'Charugundla Akhil',dept:'TIFAC-CORE in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.Rohini Murugesan (CYS)',date:'18 Aug 2026'},
+  {id:'T048',name:'CodeNova',leader:'Dilipkumar A',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. E. Prabhu',date:'18 Aug 2026'},
+  {id:'T049',name:'RoboTechs',leader:'Anaswar Mahesh',dept:'Automation and Robotics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rakesh Kumar Sidharthan',date:'19 Aug 2026'},
+  {id:'T050',name:'Glitch Guardians',leader:'U Harish Karthic',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ms.Nalinadevi K',date:'19 Aug 2026'},
+  {id:'T051',name:'Six - byte',leader:'Yazhidanya V',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Sabarish Narayanan B',date:'19 Aug 2026'},
+  {id:'T052',name:'TechSpartans',leader:'Vallamsetty Mihir',dept:'AID-A',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Rayappa David Amar Raj',date:'19 Aug 2026'},
+  {id:'T053',name:'Vision',leader:'Kanishk J',dept:'CYBERSECURITY',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ms Vaishnavi k',date:'19 Aug 2026'},
+  {id:'T054',name:'TECH FORGE',leader:'Siva Prasantham K',dept:'CSE AI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Deepa Raj (c programming and problem solving faculty)',date:'19 Aug 2026'},
+  {id:'T055',name:'Innovexa',leader:'Ashwin.G',dept:'Ai Ds CPSS',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Nalini.D',date:'19 Aug 2026'},
+  {id:'T056',name:'404 Brain not found',leader:'Udanthika Manoharan',dept:'Mathematics',school:'School of Physical Sciences (PS)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr . Subburaj .S',date:'19 Aug 2026'},
+  {id:'T057',name:'HexaCore',leader:'Patakota Pranav Kumar Reddy',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Abhijith Anandakrishnan',date:'19 Aug 2026'},
+  {id:'T058',name:'RepublicOfCode',leader:'KALWAKOL ABHIJITH',dept:'CYBERSECURITY',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Vaishnavi K',date:'19 Aug 2026'},
+  {id:'T059',name:'Tech Shayak',leader:'Gowresh Krithik',dept:'ARTIFICIAL INTELLIGENCE AND DATA SCIENCE',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr Premjith B',date:'19 Aug 2026'},
+  {id:'T060',name:'404',leader:'V Manasvith Reddy',dept:'ARTIFICIAL INTELIGENCE AND DATA SCIENCE(AUTONOMOUS AGENTS & ROBOTIC SYSTEMS)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Panduranga Ravi Teja',date:'19 Aug 2026'},
+  {id:'T061',name:'Binary Brains',leader:'Anushree K A',dept:'DEPARTMENT OF MATHEMATICS',school:'School of Physical Sciences (PS)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr Venkataraman D',date:'19 Aug 2026'},
+  {id:'T062',name:'Code Architects',leader:'Srishanth S',dept:'School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Vipin Venugopal',date:'19 Aug 2026'},
+  {id:'T063',name:'HELIX',leader:'Akshithaa UD',dept:'AI AND DATASCIENCE(QUANTUM TECHNOLOGIES)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Neelesh Ashok Assistant Professor (Senior Grade) Amrita School of Artificial Intelligence Amrita Vishwa Vidyapeetham Coimbatore India',date:'19 Aug 2026'},
+  {id:'T064',name:'Byte Force',leader:'Siddhesh Bala B',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'19 Aug 2026'},
+  {id:'T065',name:'Undefined',leader:'Vishal viswanath',dept:'computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Bagavathi Sivakumar P',date:'19 Aug 2026'},
+  {id:'T066',name:'Codeslaw',leader:'S Sai Harshil',dept:'CSE(AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Deepa Raj mam',date:'19 Aug 2026'},
+  {id:'T067',name:'CaffeineCoderzz',leader:'Navikesh Saravanan',dept:'Computer science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'19 Aug 2026'},
+  {id:'T068',name:'Ouroboros',leader:'Rohith Sivakumar',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Divya Bharathi P',date:'19 Aug 2026'},
+  {id:'T069',name:'Syntax who?',leader:'T S ABHIJITH',dept:'Computer science Engineering (Cyber Security)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'VAISHNAVI K',date:'19 Aug 2026'},
+  {id:'T070',name:'Nexora',leader:'Dhanvant Menon',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'19 Aug 2026'},
+  {id:'T071',name:'TEAM ZENITH',leader:'Abishek N',dept:'CSE CORE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'19 Aug 2026'},
+  {id:'T072',name:'Stack Trace',leader:'Devi Sri Soumith',dept:'Computer Science Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'19 Aug 2026'},
+  {id:'T073',name:'Enthusiasts',leader:'Sri Dhiksha.M',dept:'TIFAC-CORE in Cyber Security',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr.Neelesh Ashok',date:'19 Aug 2026'},
+  {id:'T074',name:'Innov8',leader:'Pranav Balaji T',dept:'Electrical And Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'20 Aug 2026'},
+  {id:'T075',name:'Luna',leader:'Sai Khaushik P S',dept:'TIFAC-CORE in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Durga S',date:'20 Aug 2026'},
+  {id:'T076',name:'Nithiin K',leader:'Nithiin K',dept:'CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'20 Aug 2026'},
+  {id:'T077',name:'Team Antares',leader:'Kaevin P',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. S. Shanmugapriya',date:'20 Aug 2026'},
+  {id:'T078',name:'FORGE’26',leader:'Savetha Aravindan',dept:'Electrical and Computer engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'20 Aug 2026'},
+  {id:'T079',name:'Hive',leader:'Gopika Sathish',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr Sreekumar K.T',date:'20 Aug 2026'},
+  {id:'T080',name:'Quantum Codex',leader:'ASWATH G',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'AKHIL MOHAN',date:'20 Aug 2026'},
+  {id:'T081',name:'Code and coffee',leader:'Vijayaragunathan R',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Ragesh Krishnan',date:'20 Aug 2026'},
+  {id:'T082',name:'Core Dumped',leader:'Adhithya R',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Anand R [EEE]',date:'20 Aug 2026'},
+  {id:'T083',name:'APEX WOLVES',leader:'VINAY VG',dept:'ECE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ashok.P',date:'20 Aug 2026'},
+  {id:'T084',name:'Pixel Pirates',leader:'Sai Saran',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'20 Aug 2026'},
+  {id:'T085',name:'Aether',leader:'Aagney Kanjur Vinod',dept:'BTech Computer Science (AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ram K Shivany',date:'20 Aug 2026'},
+  {id:'T086',name:'Quadrix',leader:'Palella Bhanu Prasad',dept:'Artificial Intelligence and Data Science (Cyber physical System and Security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Nitha P.K.',date:'20 Aug 2026'},
+  {id:'T087',name:'cuda cub',leader:'S Vinay Siddharth',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Sowmya Vathsan M S',date:'20 Aug 2026'},
+  {id:'T088',name:'DevX',leader:'Dhakshith K',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ganeshan sir',date:'20 Aug 2026'},
+  {id:'T089',name:'SIX-SEVEN',leader:'Srisailaswaran A',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'V.C Dinesh',date:'20 Aug 2026'},
+  {id:'T090',name:'Stack Smashers',leader:'Ponnuru Sri Venkata Naga Hemanth',dept:'Computer science engineering (Artificial intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ms. Deepa Raj K',date:'20 Aug 2026'},
+  {id:'T091',name:'Neural Ninjas',leader:'Ishvarya D',dept:'Btech. Computer science engineering ( Artifical Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Sandhya',date:'20 Aug 2026'},
+  {id:'T092',name:'Zenith Node',leader:'Moulik Gupta',dept:'Department of artificial intelligence (AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. T.DEEPIKA',date:'20 Aug 2026'},
+  {id:'T093',name:'Codenova',leader:'P Kamalaakasthuri',dept:'electrical and computer enginnering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'20 Aug 2026'},
+  {id:'T094',name:'Viveka',leader:'Sharan S',dept:'ECE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Ganesan M',date:'20 Aug 2026'},
+  {id:'T095',name:'EIDOS',leader:'AYSHA RUMANA M',dept:'CHEMICAL ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'20 Aug 2026'},
+  {id:'T096',name:'INFIX',leader:'Shagarika p',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'20 Aug 2026'},
+  {id:'T097',name:'Team Algoris',leader:'Srinath Balakrishnan',dept:'School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Divya Sasidharan',date:'20 Aug 2026'},
+  {id:'T098',name:'The Debuggers',leader:'Aditya Hamsaneni',dept:'Artificial Intelligence and Data Science (Autonomous Agent and Robotic System)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'20 Aug 2026'},
+  {id:'T099',name:'PotaTo3 Stuff',leader:'Rohit Lal P P',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'20 Aug 2026'},
+  {id:'T100',name:'TExperts',leader:'BAVAN VIJAYA RAJA M K',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Aditya S',date:'20 Aug 2026'},
+  {id:'T101',name:'Semi Colonized',leader:'S Anisha',dept:'ARTIFICIAL INTELLIGENCE AND DATA SCIENCE(CYBER PHYSICAL SYSTEM AND SECURITY)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Neelesh Ashok',date:'20 Aug 2026'},
+  {id:'T102',name:'Inframinds',leader:'Adesh Kumar',dept:'Civil engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'20 Aug 2026'},
+  {id:'T103',name:'SYNAPSE',leader:'Satya Prakash S M',dept:'SCHOOL OF COMPUTING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Shanmuga Priya S',date:'20 Aug 2026'},
+  {id:'T104',name:'VisionX',leader:'GUHAN V',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'ROHINI S',date:'20 Aug 2026'},
+  {id:'T105',name:'DE~PULGA',leader:'SOBHITH SANKAR',dept:'COMPUTER SCIENCE ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ritwik M',date:'20 Aug 2026'},
+  {id:'T106',name:'ZENITH',leader:'SARUMATHI R N',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr.BHARATHI',date:'20 Aug 2026'},
+  {id:'T107',name:'The Shock Crew',leader:'Parthasarathy P',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Anand R',date:'20 Aug 2026'},
+  {id:'T108',name:'Team QuickER',leader:'Shreyas R',dept:'Cybersecurity',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sibi S',date:'20 Aug 2026'},
+  {id:'T109',name:'Serendipity Sparks',leader:'Anjana Krishna A',dept:'TIFAC-CORE in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr. Aravind Vishnu S S',date:'20 Aug 2026'},
+  {id:'T110',name:'CTRL+ALT+CREATE',leader:'AKASHH RAMESH CHANDAR',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Saumya Vathsan M S',date:'20 Aug 2026'},
+  {id:'T111',name:'AURA [Amrita University Rocketry Association]',leader:'V VISHVANTH RAM',dept:'BTECH AEROSPACE ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Unnikrishnan D',date:'20 Aug 2026'},
+  {id:'T112',name:'Game of Codes',leader:'Ch.Sai Varun',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Mr.Rahul Pawar',date:'20 Aug 2026'},
+  {id:'T113',name:'Brute Force',leader:'Prajesh T M',dept:'B.Tech Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'20 Aug 2026'},
+  {id:'T114',name:'Sentinels',leader:'Krishnamohan Ambaty',dept:'Artificial Intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'Sreekumar KT',date:'20 Aug 2026'},
+  {id:'T115',name:'Techies',leader:'Rithanya Kamal Kannan',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'20 Aug 2026'},
+  {id:'T116',name:'JARVIS',leader:'Nirupama Mahesh',dept:'CHEMICAL ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'20 Aug 2026'},
+  {id:'T117',name:'Singularities',leader:'V M Nitesh',dept:'TIFAC Core in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Aravind Vishnu S S',date:'20 Aug 2026'},
+  {id:'T118',name:'HackRythm',leader:'Hashwin M',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Suman Dutta',date:'20 Aug 2026'},
+  {id:'T119',name:'Runtime Terror',leader:'B Sanjai',dept:'Computer Science(Cyber Security)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'20 Aug 2026'},
+  {id:'T120',name:'ReVolt — Revolutionize.Innovate.Impact',leader:'Ishani Jyothirmayi Nambiar',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.M.S.Sivagama Sundari',date:'20 Aug 2026'},
+  {id:'T121',name:'ByteMe',leader:'Senthil Yohan N',dept:'TIFAC Core in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Ms. Vaishnavi K',date:'20 Aug 2026'},
+  {id:'T122',name:'Algorithm Avengers',leader:'Abhinav N',dept:'AID CORE',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sandya mam , anand sir , rateesh sir',date:'20 Aug 2026'},
+  {id:'T123',name:'Sergio',leader:'Visaonth J',dept:'Electronics And Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Sowmyaa Vathsan M S',date:'20 Aug 2026'},
+  {id:'T124',name:'VisionX',leader:'Lalith sudharsan M M',dept:'AID(AARS)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Navaneeth Haridasan',date:'20 Aug 2026'},
+  {id:'T125',name:'404 Not Founders',leader:'Yugavartha Senthil Kumar',dept:'CSE (AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Deepa Raj K',date:'20 Aug 2026'},
+  {id:'T126',name:'BRAVITS',leader:'SANJAY S M',dept:'ARTIFICIAL INTELLIGENCE AND DATA SCIENCE (QUANTUM TECHNOLOGIES)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Unnikrishnan P',date:'20 Aug 2026'},
+  {id:'T127',name:'Zenith',leader:'Lakshmi Krishna B',dept:'Int. M.Sc Mathematics and Computing',school:'School of Physical Sciences (PS)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'20 Aug 2026'},
+  {id:'T128',name:'Faze Clan',leader:'Yashvardhan Deep',dept:'Cybersecurity',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Aravind Vishnu S.',date:'20 Aug 2026'},
+  {id:'T129',name:'First Year Fiasco',leader:'Mokshit Sai J',dept:'Electronics and Communications',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'20 Aug 2026'},
+  {id:'T130',name:'TVA',leader:'Abhinav Joby',dept:'AIE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Ashik Suresh',date:'20 Aug 2026'},
+  {id:'T131',name:'Fable\'s',leader:'Aditya S',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'20 Aug 2026'},
+  {id:'T132',name:'The Async Avengers',leader:'Sahana B',dept:'Artificial intelligence and data science ( cyber physical systems and security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Mr. Anivilla Shashank',date:'20 Aug 2026'},
+  {id:'T133',name:'FAST AND CURIOUS',leader:'NITHIN KARTHIK SONAI',dept:'CIVIL ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'20 Aug 2026'},
+  {id:'T134',name:'Cognivex',leader:'Mega Deep Chelliboyina',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Goutham Ramesh',date:'20 Aug 2026'},
+  {id:'T135',name:'Quantumaniacs',leader:'H DHARSHAN',dept:'CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'20 Aug 2026'},
+  {id:'T136',name:'PowerHouse',leader:'Gurunikesh S',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T137',name:'Team Mayrix',leader:'Tanishq Rathi',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Mrs.Bharathi',date:'21 Aug 2026'},
+  {id:'T138',name:'TheSixthSense',leader:'K.J.Jayashree',dept:'Computer Science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:1,females:5,mentor:'Mrs Sathiya',date:'21 Aug 2026'},
+  {id:'T139',name:'Black bulls',leader:'V Karthik Chockalingam',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Deepika S',date:'21 Aug 2026'},
+  {id:'T140',name:'Stark Minds',leader:'ABISHEKAPRIYAN P',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Appu Rshikesan Paduthol',date:'21 Aug 2026'},
+  {id:'T141',name:'TEAM T6STAMND',leader:'Tanishq Borah',dept:'Int. Msc Mathematics and Computing',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T142',name:'Dark protocol',leader:'Sattineni Venkata Satya Tulasi ram',dept:'Artificial intelligence and Data science ( Cyber physical system and security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ms.Anjana C',date:'21 Aug 2026'},
+  {id:'T143',name:'Glitch Squad',leader:'A S Jeevanpranav',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T144',name:'Tech titans',leader:'Karri Jahnavi',dept:'BTECH CSE CYBERSECURITY',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'Mr.Sibi S',date:'21 Aug 2026'},
+  {id:'T145',name:'Runtime Terrors',leader:'Saatvik Srivatsan K',dept:'Computer Science - AI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'20 Aug 2026'},
+  {id:'T146',name:'CRIMSONS’S',leader:'Sanjith K R',dept:'Cse AI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Anita',date:'21 Aug 2026'},
+  {id:'T147',name:'TechTessaract',leader:'Ashwath Krishna B',dept:'Computer Science and Engineering (CyberSecurity)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T148',name:'Point break',leader:'Karthik arunkumar',dept:'AI&DS(Quantum technology)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sreekumar K.T',date:'21 Aug 2026'},
+  {id:'T149',name:'The Bit Reactor',leader:'Yazhini S K',dept:'Chemical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Amal G S',date:'21 Aug 2026'},
+  {id:'T150',name:'TECHORA',leader:'Vansh Sawhney',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr Bagavathi Sivakumar P',date:'21 Aug 2026'},
+  {id:'T151',name:'Electrasix',leader:'Sandhruvikash M',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T152',name:'CodeCraft',leader:'Dharuneashwar. E',dept:'AIDS (AR & RS)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'Vaishnavi K',date:'21 Aug 2026'},
+  {id:'T153',name:'DAKOTA',leader:'V RAGGHUL',dept:'B.TECH COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'T.Senthil kumar',date:'21 Aug 2026'},
+  {id:'T154',name:'HEXA',leader:'Sasmitha K',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. S Padmavathi',date:'21 Aug 2026'},
+  {id:'T155',name:'Tomato Chutney',leader:'Sibi Chakravarthi',dept:'Artificial intelligence and Data Science ( Quantum Technology)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Sreelakshmi K',date:'21 Aug 2026'},
+  {id:'T156',name:'6 Braincells™',leader:'M Dakshinesh',dept:'Electrical and Electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Sankar N',date:'21 Aug 2026'},
+  {id:'T157',name:'Code Mode',leader:'Gopikrishnan.R',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T158',name:'CODEXCAPE',leader:'MUKHIL HARSHINI SENTHUR SELVAM',dept:'Chemical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'Amal GS',date:'21 Aug 2026'},
+  {id:'T159',name:'CodeNova',leader:'Sanjeev Kumar K',dept:'Electrical and Electronic Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T160',name:'HACKTIVATORS',leader:'Purvikka N.',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Raghesh Krishnan K',date:'21 Aug 2026'},
+  {id:'T161',name:'Dark Mod Devs',leader:'Thiruvenkadesuwaran S',dept:'Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Sibi Sambasivam',date:'21 Aug 2026'},
+  {id:'T162',name:'QCrew',leader:'S Naresh',dept:'Artificial Intelligence and Data Science(Quantum Tech)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. S.S Kalai vani',date:'21 Aug 2026'},
+  {id:'T163',name:'Stack Overflowed',leader:'REDDY UDAY SAI',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'DR.RAKESH',date:'21 Aug 2026'},
+  {id:'T164',name:'Vertex',leader:'Sarnitha B',dept:'BTech CSE Core',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'21 Aug 2026'},
+  {id:'T165',name:'The Hacksons',leader:'Aakaash V',dept:'Artificial Intelligence and Data Science (Core)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Soumya',date:'21 Aug 2026'},
+  {id:'T166',name:'CipherZ',leader:'Adhithyan A S',dept:'Mathematics Department',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:3,females:3,mentor:'Divya Sasidharan',date:'21 Aug 2026'},
+  {id:'T167',name:'Catalysts',leader:'JEEVA RAKSHITHA M',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr.Megha.S.Kumar',date:'21 Aug 2026'},
+  {id:'T168',name:'HackNova-X',leader:'P.SARAVANA SELVAN',dept:'B.TECH ELECTRONICS AND COMPUTER SCIENCE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'KAMATCHI S',date:'21 Aug 2026'},
+  {id:'T169',name:'Carpe diem',leader:'Sachin R',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Abhishek S',date:'21 Aug 2026'},
+  {id:'T170',name:'AIgnite',leader:'Devanandha M K',dept:'Computer Science and Artificial Intelligence Engineering (AIE)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rema M',date:'21 Aug 2026'},
+  {id:'T171',name:'Cobra Tech',leader:'Alen Jomon',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T172',name:'Harrington',leader:'P Dakshin Raj',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. J.Uma',date:'21 Aug 2026'},
+  {id:'T173',name:'VisionX',leader:'MADDIPATLA PHANI PRIYA',dept:'CSE(AI) B-Batch',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'ARDRA P S',date:'21 Aug 2026'},
+  {id:'T174',name:'Carboncrewzz',leader:'Tevin Titus',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Sumesh A',date:'21 Aug 2026'},
+  {id:'T175',name:'Tech Titans',leader:'Kaukuntla Sushanth Reddy',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'S. Padmavathi',date:'21 Aug 2026'},
+  {id:'T176',name:'The hacksmiths',leader:'Chittem Amrutha varshini',dept:'Btech CSE (Core)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Bagavathi Sivakumar Sir',date:'21 Aug 2026'},
+  {id:'T177',name:'Tech knights',leader:'A K Vijeesh',dept:'Electronics And Communication',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr.Ashok P',date:'21 Aug 2026'},
+  {id:'T178',name:'Code Reapers',leader:'Ragauv Sairam R S',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rithvik M',date:'21 Aug 2026'},
+  {id:'T179',name:'RAVENS',leader:'MITHUL PRANAV D',dept:'ELECTRICAL AND ELECTRONICS ENGINEERING DEPT',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'APPU PADUTHOL SIR',date:'21 Aug 2026'},
+  {id:'T180',name:'Straw Hats',leader:'G.Manu Deep Reddy',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Rohini Madam',date:'21 Aug 2026'},
+  {id:'T181',name:'Basileus',leader:'BHARANIDHARAN',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.Raja Pandiyan',date:'21 Aug 2026'},
+  {id:'T182',name:'CodeX',leader:'Tarun T',dept:'ELECTRONICS AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Aditya S',date:'21 Aug 2026'},
+  {id:'T183',name:'Marix',leader:'DHEERAJ KUMAR REDDY PAMURI',dept:'ARTIFICIAL INTELLIGENCE AND DATA SCIENCE (MEDICAL ENGINEERING)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'MANOJ KASHYAP',date:'21 Aug 2026'},
+  {id:'T184',name:'Paradoxx6',leader:'Ritesh S',dept:'Computer Science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ritwik M',date:'21 Aug 2026'},
+  {id:'T185',name:'HackNova',leader:'P U Neha',dept:'Artificial Intelligence (AI) and Data Science (Autonomous Agents and Robotic Systems)',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr. Neelesh Ashok Assistant Professor Senior Grade',date:'21 Aug 2026'},
+  {id:'T186',name:'Nexcore',leader:'MONISH V P',dept:'ELECTRONICS AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Nil',date:'21 Aug 2026'},
+  {id:'T187',name:'Hexagon',leader:'Shashwat Gaur',dept:'CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Akhil V P',date:'21 Aug 2026'},
+  {id:'T188',name:'Logic Lords',leader:'A.Kamalesh',dept:'Artificial intelligence and data science (Quantum technologies)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T189',name:'NullByte Exploiters',leader:'EZHIL PRASAATH SE',dept:'Cybersecurity',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'AKHIL K J',date:'21 Aug 2026'},
+  {id:'T190',name:'Stark Havoc',leader:'Hari Karthikeyan R',dept:'Computer science and Engineering (Cyber security)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Akhil K J',date:'21 Aug 2026'},
+  {id:'T191',name:'TECH NOVA',leader:'D Hashwanth',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:1,females:5,mentor:'',date:'21 Aug 2026'},
+  {id:'T192',name:'Bots with dots',leader:'R.Rakshana',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Mrs.Meera .k',date:'21 Aug 2026'},
+  {id:'T193',name:'Tin tin',leader:'Devika Hari',dept:'Bsc physics honours',school:'School of Physical Sciences (PS)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'21 Aug 2026'},
+  {id:'T194',name:'SIX ERRORS',leader:'ASWANTH JAIN C',dept:'ELECTRONICS AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Harikumar M. E.',date:'21 Aug 2026'},
+  {id:'T195',name:'Void',leader:'A Tharun',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T196',name:'VisionX',leader:'JAMPANA AAMUKTHA',dept:'CYBER SECURITY',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'AKHIL K J',date:'21 Aug 2026'},
+  {id:'T197',name:'Innova',leader:'Sachin. S',dept:'Integrated M.Sc Mathematics and Computing',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Kirubavathi G',date:'21 Aug 2026'},
+  {id:'T198',name:'Status: 6 Found',leader:'Rahul L S',dept:'Computer Science & Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T199',name:'Team Kernels',leader:'Rohith Kumar S S',dept:'Department Of Mathematics',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:4,females:2,mentor:'Mr. Ramaguru Radhakrishnan',date:'21 Aug 2026'},
+  {id:'T200',name:'ThinkSeekers',leader:'Divyanandh J',dept:'Electrical And Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Shanmugha Sundaram R.',date:'21 Aug 2026'},
+  {id:'T201',name:'Runtime Terrors',leader:'ARWINDH C N',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T202',name:'INGLORIOUS HACKERS',leader:'SOWBARNIYAA C',dept:'ELECTRONICS AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'DR. HARIKUMAR M. E',date:'21 Aug 2026'},
+  {id:'T203',name:'Voltforge',leader:'Iniya P',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr T Mohanraj',date:'21 Aug 2026'},
+  {id:'T204',name:'TEAM 47',leader:'Nikhil RM',dept:'AIDS(AARS)',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Male',males:6,females:0,mentor:'C Dhivya',date:'21 Aug 2026'},
+  {id:'T205',name:'EDITH',leader:'Sanjay MS',dept:'Computer science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'N Radika',date:'21 Aug 2026'},
+  {id:'T206',name:'Byte Force',leader:'Kaushika R',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Nalinadevi K',date:'21 Aug 2026'},
+  {id:'T207',name:'Aura',leader:'NIMAL DANYATH K',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Vandhana S',date:'21 Aug 2026'},
+  {id:'T208',name:'TECH & TORT',leader:'S.SHIVADAS',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'S SHANMUGA PRIYA',date:'21 Aug 2026'},
+  {id:'T209',name:'Strategic Minds',leader:'D Geethasree',dept:'Electronics and communication',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'21 Aug 2026'},
+  {id:'T210',name:'BrillianTech',leader:'Vismay A',dept:'Department of Artificial Intelligence (Amrita School of Artificial Intelligence)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Ayan Kumar Banerjee',date:'21 Aug 2026'},
+  {id:'T211',name:'Nexovate',leader:'Balam Sharmitha',dept:'AI and Data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'21 Aug 2026'},
+  {id:'T212',name:'Cortex Crew',leader:'SRI RAGHAV VATSAN S',dept:'B.Tech in Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. SUMAN DUTTA',date:'21 Aug 2026'},
+  {id:'T213',name:'Immatures',leader:'Vivethasri C',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Abhijith A',date:'21 Aug 2026'},
+  {id:'T214',name:'Vulcan',leader:'Jeevanayagam S',dept:'ELC',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T215',name:'Codeverse',leader:'Kvsp praneeth',dept:'Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Suma dutta',date:'21 Aug 2026'},
+  {id:'T216',name:'Jaguar',leader:'Harshan Rameshkumar',dept:'Mechanical engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T217',name:'Zyph',leader:'S Rithekaa',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T218',name:'Kilowatt crew',leader:'S KAVIN MUTHUVEL',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Rajapandian',date:'21 Aug 2026'},
+  {id:'T219',name:'Runtime Terror',leader:'Kanishk Rungta',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T220',name:'Chill Guys',leader:'Tharunsaai J',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Sabarish B A',date:'21 Aug 2026'},
+  {id:'T221',name:'NestHive',leader:'Naziya N',dept:'Computer Science And Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Nil',date:'21 Aug 2026'},
+  {id:'T222',name:'CodeX',leader:'Priyadharshini Gopinathan',dept:'Computer science engineering (AI)',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'Abhishek S',date:'21 Aug 2026'},
+  {id:'T223',name:'Tech Titans',leader:'Harshad Pranav',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Shankar kumaran',date:'21 Aug 2026'},
+  {id:'T224',name:'Code Syndicate',leader:'Mithun Karthik Dhaneshkumar',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Saru Meena R',date:'21 Aug 2026'},
+  {id:'T225',name:'Midnight Merge',leader:'Abishree S',dept:'Aritificial Intelligence and Data Science(Cyber Physical Systems and Security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Neelesh Ashok',date:'21 Aug 2026'},
+  {id:'T226',name:'IntelliHive',leader:'Divya Sri K',dept:'DEPARTMENT OF MATHEMATICS',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr.P.Kavitha',date:'21 Aug 2026'},
+  {id:'T227',name:'BharatBytes',leader:'B Abhishek Bharathi',dept:'Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T228',name:'PRIZEMONEYPLEASE',leader:'Ananya H',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr. Manikandan',date:'21 Aug 2026'},
+  {id:'T229',name:'Byte Builders',leader:'Pratiyush Kumar',dept:'B.Tech - Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T230',name:'Tech Breakers',leader:'Adithya K',dept:'B.Tech (Automation and Robotics)',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.A.Sumesh',date:'21 Aug 2026'},
+  {id:'T231',name:'FnF',leader:'SREEHARI S',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T232',name:'LOGIC LOOM',leader:'DARSHAN.B',dept:'ELECTRONICS AND ELECTRICAL ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.A MANIKANDAN',date:'21 Aug 2026'},
+  {id:'T233',name:'Vertex',leader:'Prajith S',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Snigdhatanu Acharya',date:'21 Aug 2026'},
+  {id:'T234',name:'SIH bottlers',leader:'Shasuwanth veerasekharan',dept:'Artificial intelligence engeneering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Hima Vyshnavi',date:'21 Aug 2026'},
+  {id:'T235',name:'Code Storm',leader:'Subash Chandra Bose G',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Harikumar M E',date:'21 Aug 2026'},
+  {id:'T236',name:'Pheonix',leader:'Aiswarya S',dept:'Automation and Robotics',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr A N Amudhan, Mrs K Sivaselvi, Dr Subodh Raj M S',date:'21 Aug 2026'},
+  {id:'T237',name:'KRYPTA',leader:'MADDELA DINESH KUMAR',dept:'Amrita School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Satish S',date:'21 Aug 2026'},
+  {id:'T238',name:'Caelum',leader:'R Vishal',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Jeyakumar G',date:'21 Aug 2026'},
+  {id:'T239',name:'Bitflip',leader:'V Harshini',dept:'Electronics and Communication (Computer and Communication) Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Harikumar M. E.',date:'21 Aug 2026'},
+  {id:'T240',name:'Team YouThink',leader:'Sivani M S',dept:'Electrical and computer engineering (ELC)',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.M.S.Sivagama Sundari',date:'21 Aug 2026'},
+  {id:'T241',name:'MISSONI ROOM',leader:'DHIVAGAR S',dept:'ELECTRONICS AND COMMUNICATION ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Kamatchi S',date:'21 Aug 2026'},
+  {id:'T242',name:'Quantum Hex',leader:'Parameshvar',dept:'BSc Physics (Hons)',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T243',name:'BugSmiths',leader:'Maghasri Mathiarasan',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Bagavathi C',date:'21 Aug 2026'},
+  {id:'T244',name:'IdliSambar.json',leader:'Yashas Senthil Kumar',dept:'Computer Science and Engineering (CSE Core)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Anbazhagan Mahadevan [CSE]',date:'21 Aug 2026'},
+  {id:'T245',name:'Teslomania',leader:'Sivasankari S',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'21 Aug 2026'},
+  {id:'T246',name:'TETRIX',leader:'Poonthalir.S.T',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Binoy B.Nair',date:'21 Aug 2026'},
+  {id:'T247',name:'BEYOND BINARY',leader:'LATHIKA SRI K',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'21 Aug 2026'},
+  {id:'T248',name:'DESTINY',leader:'RAHUL SANJIV R',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Sumit Kumar Jha',date:'21 Aug 2026'},
+  {id:'T249',name:'AeroResQ',leader:'SHAUREYA S',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'-',date:'21 Aug 2026'},
+  {id:'T250',name:'Tuff Indian Hackers',leader:'Sohan Ghosh',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Girish kumar',date:'21 Aug 2026'},
+  {id:'T251',name:'Power',leader:'Saana Poovaiah N',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T252',name:'Error 404: Team Not Found',leader:'B.Dudhimant',dept:'EEE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Jay Kumar sir',date:'21 Aug 2026'},
+  {id:'T253',name:'HydraX',leader:'K.B.Samyuktha',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'21 Aug 2026'},
+  {id:'T254',name:'GridX',leader:'Kankanala Jgnana Sri Sai Apoorv',dept:'Aie',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'21 Aug 2026'},
+  {id:'T255',name:'TerraMinds',leader:'Pittu. Harsha Vardhan Reddy',dept:'School of AI (AIDS(CPS&S))',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Manimaran Sir.',date:'21 Aug 2026'},
+  {id:'T256',name:'ForgeByte',leader:'Girisudhan V',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Ganesan M',date:'21 Aug 2026'},
+  {id:'T257',name:'Codex',leader:'Giri Prasath P',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Ms.Nalinadevi K',date:'21 Aug 2026'},
+  {id:'T258',name:'Code Blooded',leader:'Kuppachi Venkata Pranava Karthik',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Shanmugha Priya',date:'21 Aug 2026'},
+  {id:'T259',name:'AltF4',leader:'Kavin Karthik V',dept:'Computer Science and Engineering (Artificial intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'21 Aug 2026'},
+  {id:'T260',name:'Runtime Rebels',leader:'Boomika Devi K M S',dept:'Electrical and computer engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr S Sampath Kumar',date:'21 Aug 2026'},
+  {id:'T261',name:'Arcana',leader:'Harshith KV',dept:'School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Suman Dutta',date:'21 Aug 2026'},
+  {id:'T262',name:'CODERS',leader:'V.VELAVAN',dept:'Artificial intelligence and data science (Cyber physical system and Cyber security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Nithya Krish',date:'21 Aug 2026'},
+  {id:'T263',name:'Infinity Squad',leader:'Swetha T',dept:'Chemical engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'21 Aug 2026'},
+  {id:'T264',name:'Tech Titans',leader:'Iniya Srilekha Balasubramaniam',dept:'B.Tech- Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T265',name:'DebugDynasty',leader:'Oviyaa P',dept:'Computer Science And Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Arjun P K',date:'22 Aug 2026'},
+  {id:'T266',name:'Code Outbreakers',leader:'Surendra T',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T267',name:'Virelith',leader:'Indirajith R',dept:'CSEAI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sripriyan K',date:'22 Aug 2026'},
+  {id:'T268',name:'DataDrift',leader:'A Vinisha',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T269',name:'INNOVITA',leader:'Krishiva Venkatesh',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Mohan Kumar',date:'22 Aug 2026'},
+  {id:'T270',name:'CODE_BLUE',leader:'Harish Raghul T',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr Gowtham R',date:'22 Aug 2026'},
+  {id:'T271',name:'Lowkey',leader:'Dharshan P S',dept:'Computer and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Aditya S',date:'22 Aug 2026'},
+  {id:'T272',name:'Runtime Terror',leader:'Sujitkumar S',dept:'School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rohini S',date:'22 Aug 2026'},
+  {id:'T273',name:'RetroFit',leader:'Dharshanashri S',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T274',name:'CTRL_ALT_ROOT',leader:'Tejesh Reddy Ankalagari',dept:'B.Tech Computer Science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Jayakumar',date:'22 Aug 2026'},
+  {id:'T275',name:'TechNova',leader:'Roshini A Thirumalai',dept:'Artificial Intelligence and Data Science -Core',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Muthukrishnaraj',date:'22 Aug 2026'},
+  {id:'T276',name:'MILVEX',leader:'C INDRAJITH',dept:'CHEMICAL ENGINEERING AND MATERIALS SCIENCE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'HAREESH PADHYATH',date:'22 Aug 2026'},
+  {id:'T277',name:'Hackhive',leader:'Sasmitha',dept:'Integrated Msc Data Science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.A.Sumesh',date:'22 Aug 2026'},
+  {id:'T278',name:'The Apex Six',leader:'Sanjay R',dept:'ELECTRICAL AND ELECTRONICS ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T279',name:'ParellelX',leader:'B S Bharath Kumar Reddy',dept:'TIFAC-CORE in Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ramaguru Radhakrishnan',date:'22 Aug 2026'},
+  {id:'T280',name:'HackHive',leader:'Prakalya M',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Kamatchi S, Assistant Professor [Selection Grade], Department of ECE,',date:'22 Aug 2026'},
+  {id:'T281',name:'C3-CODECOFFEECHAOS',leader:'Konde Purna Suvan Reddy',dept:'AID-A',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'22 Aug 2026'},
+  {id:'T282',name:'Byte Force',leader:'SAMITHA RAJESH',dept:'Electrical and computer engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T283',name:'The resolution engine',leader:'Dhyanesh Raja M S',dept:'Electrical and computer engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Shanmuga Sundaram R',date:'22 Aug 2026'},
+  {id:'T284',name:'Innovatrix',leader:'Swetha Rani A',dept:'Department of Mathematics - Data science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:1,females:5,mentor:'Subburaj.S',date:'22 Aug 2026'},
+  {id:'T285',name:'HexaNova',leader:'Sayantika Das',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr.Shunmuga Velayutham',date:'22 Aug 2026'},
+  {id:'T286',name:'SRARS - D',leader:'Ridhu Pharan',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T287',name:'Sysiphus Crew',leader:'Mula Venkata Surya Mahendra',dept:'CSE(AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T288',name:'Orion',leader:'Kavya Kartik',dept:'Aerospace Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Jinraj V Pushpangathan',date:'22 Aug 2026'},
+  {id:'T289',name:'LORD',leader:'S.ASWATH',dept:'CSE CORE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:1,females:5,mentor:'Saurabh Srivastava',date:'22 Aug 2026'},
+  {id:'T290',name:'BRAVO SIX',leader:'KARTHIK U',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Aditya S',date:'22 Aug 2026'},
+  {id:'T291',name:'Team Hail Mary',leader:'Mernidi Sai Vital Ashish',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Mahadevan Lakshmanan',date:'22 Aug 2026'},
+  {id:'T292',name:'Unauthorized Access',leader:'Vishal Kumar S',dept:'Computer Science with Cyber Security',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr Sindhu V',date:'22 Aug 2026'},
+  {id:'T293',name:'Ex Nihilo',leader:'P ROHIT',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. SABARISH B.A.',date:'22 Aug 2026'},
+  {id:'T294',name:'Narrow Crew',leader:'Kousik Kumar',dept:'Automation and Robotics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Prabhu S.',date:'22 Aug 2026'},
+  {id:'T295',name:'​The Glitch Guild',leader:'Abi A',dept:'Int.M.sc.DATA SCIENCE',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:3,females:3,mentor:'MAGESHWARI',date:'22 Aug 2026'},
+  {id:'T296',name:'Codeplexers',leader:'Vamsi Sriram N',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T297',name:'Logic Loop',leader:'Thejaswin K T',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T298',name:'Hacktivators',leader:'Aditya Sajiv',dept:'CSE-CORE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Bharati D',date:'22 Aug 2026'},
+  {id:'T299',name:'Binary Brains',leader:'Aditya Ajit Dubal',dept:'Electrical and Computer Engeenering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.N.Sankar',date:'22 Aug 2026'},
+  {id:'T300',name:'LE DENIER',leader:'Vainavee A K',dept:'ECE',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T301',name:'BLACK HATS',leader:'AGILAN',dept:'B.TECH AUTOMATION AND ROBOTICS',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T302',name:'Byte busters',leader:'Surya Narayanan T',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T303',name:'Bugged Minds',leader:'Sarvesh Subramanian S',dept:'Computer Science and Engineering (Cybersecurity)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Krishnan K',date:'22 Aug 2026'},
+  {id:'T304',name:'penguin.exe',leader:'Haindhavi KR',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T305',name:'Ctrl Freaks',leader:'Janadhanya M',dept:'Integrated MSc Mathematics and Computing',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:1,females:5,mentor:'Dr. Kirubavathi G',date:'22 Aug 2026'},
+  {id:'T306',name:'Algorythm',leader:'Srisha Satish Kanna',dept:'AIM',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T307',name:'Hexacore',leader:'Midhun M',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T308',name:'Thinknova',leader:'Lakshitha Kumar V M',dept:'Integrated Msc Data Science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'22 Aug 2026'},
+  {id:'T309',name:'Hack elite',leader:'Shiwani K',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Mr. Appu Rshikesan Paduthol',date:'22 Aug 2026'},
+  {id:'T310',name:'Hacktivators',leader:'Aditya Sajiv',dept:'CSE(Core)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Bharathi D',date:'22 Aug 2026'},
+  {id:'T311',name:'Mindmesh',leader:'Gopiga Preethi',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T312',name:'MEDICA ROOTS',leader:'Shwetha S',dept:'B.Tech Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Ayswarya R Kurup',date:'22 Aug 2026'},
+  {id:'T313',name:'Synergy Squad',leader:'Srinika P',dept:'ELECTRICAL AND COMPUTER ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr.Sampath kumar',date:'22 Aug 2026'},
+  {id:'T314',name:'Hack-a-Thorn',leader:'Mohit Jangra',dept:'Civil Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T315',name:'Zero Glitch',leader:'Avinash K S',dept:'ELECTRICAL AND COMPUTER ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T316',name:'InnoVexa',leader:'Grandhi Naga Sree Aishini',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ms. K Abhirami',date:'22 Aug 2026'},
+  {id:'T317',name:'Tech Indians',leader:'Madhumitha R',dept:'ELECTRICAL AND ELECTRONICS ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'M Jayakumar',date:'22 Aug 2026'},
+  {id:'T318',name:'HEXACORE',leader:'K Shrivinay',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T319',name:'404 founders',leader:'Rishikesh',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.M.Anbazhagan',date:'22 Aug 2026'},
+  {id:'T320',name:'Hexanova innovation',leader:'K C SIVARAM',dept:'Civil engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T321',name:'DR DOOM',leader:'Aakash Gs',dept:'ARTIFICIAL INTELLIGENCE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'ANJANA SANKAR',date:'22 Aug 2026'},
+  {id:'T322',name:'Nexus',leader:'Parthiv PC',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T323',name:'Alloy Minds',leader:'Aravind Shanmugham',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'THENARASU M',date:'22 Aug 2026'},
+  {id:'T324',name:'_Init_ to win it',leader:'Vedhanth M R',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Anand R',date:'22 Aug 2026'},
+  {id:'T325',name:'The Bug Bashers',leader:'Nandika T',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Amudhan',date:'22 Aug 2026'},
+  {id:'T326',name:'Runtime Renegrades',leader:'Rohit R',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rithvik M',date:'22 Aug 2026'},
+  {id:'T327',name:'Odyssix',leader:'Harish D',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T328',name:'TechVortex',leader:'Nikitha Varshini Parthiban',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T329',name:'Krayons',leader:'G A YUVAN',dept:'Automation and Robotics',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Amudhan AN',date:'22 Aug 2026'},
+  {id:'T330',name:'The Invictus',leader:'Suthasrinitha',dept:'Artificial Intelligence and DataScience',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:1,females:5,mentor:'Sundaresan',date:'22 Aug 2026'},
+  {id:'T331',name:'Excelsior',leader:'Akshat Pawar',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ritwik M',date:'22 Aug 2026'},
+  {id:'T332',name:'Dynamic Drifters',leader:'Sivasree Nandhu Binu',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. C. Shunmuga Velayutham',date:'22 Aug 2026'},
+  {id:'T333',name:'HexaForge',leader:'K S Sowparnika',dept:'BTech Civil engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Nanthakumar Poorasu',date:'22 Aug 2026'},
+  {id:'T334',name:'Avishkar',leader:'Abhinav Arunachalam I S',dept:'Aerospace Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Krishna Kumar',date:'22 Aug 2026'},
+  {id:'T335',name:'KalkiCodeX',leader:'Chanakaya Jarubala',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T336',name:'Hexacore',leader:'Sreya R Sunil',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T337',name:'Radiants',leader:'ragav s',dept:'artificial intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sunil Kumar S',date:'22 Aug 2026'},
+  {id:'T338',name:'Technosaur',leader:'Padmesh Sivalingam',dept:'Computer Science Engineering With Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sunil Kumar S',date:'22 Aug 2026'},
+  {id:'T339',name:'NEX GEN',leader:'S. Dharani Prasad',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T340',name:'Team Workflow',leader:'Gokul Santhosh V',dept:'5 year Int Msc data science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:4,females:2,mentor:'Tilaga',date:'22 Aug 2026'},
+  {id:'T341',name:'Ethos Minds',leader:'Vimaladhithan Velayya',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Manikandan A',date:'22 Aug 2026'},
+  {id:'T342',name:'QBic Innovators',leader:'Saadhana Rajmohan',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T343',name:'Commit and Conquer',leader:'Shivamihit Govindaraju',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Puvaneshwari',date:'22 Aug 2026'},
+  {id:'T344',name:'Tech Titans',leader:'Diya N Dileep',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T345',name:'Alpha Quintet',leader:'Vignes V M',dept:'Computer Science and Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rahul Satheesh',date:'22 Aug 2026'},
+  {id:'T346',name:'Pheonix',leader:'Shrijan Veeresh',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Panduranga Ravi Teja',date:'22 Aug 2026'},
+  {id:'T347',name:'TechSolvers',leader:'Shreeya B',dept:'Electrical and Computer Engineering (EEE)',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr. P. Arun Mozhi Devan',date:'22 Aug 2026'},
+  {id:'T348',name:'Nexus',leader:'Harshini V.B',dept:'Msc Integrated Data science, Maths department',school:'School of Physical Sciences (PS)',size:6,mix:'All-Female',males:0,females:6,mentor:'Gnana prasanambikai',date:'22 Aug 2026'},
+  {id:'T349',name:'Fight Club',leader:'Vishnu Saravana Kumaran',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. J.Uma',date:'22 Aug 2026'},
+  {id:'T350',name:'Royal Challengers',leader:'KACHA JASWANTH SATYA KUMAR',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.Govindarajan',date:'22 Aug 2026'},
+  {id:'T351',name:'Blueprint Breakers',leader:'Vyshanth P S',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T352',name:'Nullpointerexception',leader:'Padhmavathi',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T353',name:'Binary Bandits',leader:'Sakthi Sriram S',dept:'Master of Technology in Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. B. Sabarish Narayanan',date:'22 Aug 2026'},
+  {id:'T354',name:'Recursive Renagades',leader:'Siva Krithick K',dept:'B.TECH. COMPUTER SCIENCE AND ENGINEERING(ARTIFICIAL INTELLIGENCE)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Unnikrishnan P',date:'22 Aug 2026'},
+  {id:'T355',name:'VisionZ',leader:'Hridija Banerjee',dept:'Department of Chemical engineering and material science engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Hridija Banerjee',date:'22 Aug 2026'},
+  {id:'T356',name:'Parallax',leader:'Vishnu Murukan',dept:'Artificial Intelligence and Data Science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Sundaresan S.',date:'22 Aug 2026'},
+  {id:'T357',name:'Code Blooded',leader:'Mahakisore M',dept:'Computer Science and Engineering ( Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Abhijeet Sir',date:'22 Aug 2026'},
+  {id:'T358',name:'Sixth Sense',leader:'K.A.Tirunavukkarasu',dept:'Computer Science and Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Akhil V.M.',date:'22 Aug 2026'},
+  {id:'T359',name:'Phantom Void',leader:'Gathin PV',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Nalinadevi',date:'22 Aug 2026'},
+  {id:'T360',name:'Rookie Coders',leader:'Mihir Rajput',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'T. Senthil kumar',date:'22 Aug 2026'},
+  {id:'T361',name:'Innovexa',leader:'Chakradhar Reddy V',dept:'Computer Science and Engineering(Cyber Security)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rohini Murugesan',date:'22 Aug 2026'},
+  {id:'T362',name:'BINARY BRAINS',leader:'Chaarushree Dharmendrakumar',dept:'Chemical engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Anitha anbazhagan',date:'22 Aug 2026'},
+  {id:'T363',name:'HackNox',leader:'C.R.Niteshraj',dept:'Mechanical Department',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Rakesh Kumar Sidharthan',date:'22 Aug 2026'},
+  {id:'T364',name:'Nexra',leader:'Jaiya Anish S',dept:'Computer Science and Engineering [CSE]',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Ms.Bharathi.D',date:'22 Aug 2026'},
+  {id:'T365',name:'Vireon',leader:'C Likhitha',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T366',name:'HackProcessingUnit',leader:'Adarsh S',dept:'Integrated MSc Data Science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr. M. Thilaga',date:'22 Aug 2026'},
+  {id:'T367',name:'Bytecore',leader:'Rithan S',dept:'Computer Science (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'Premjith B',date:'22 Aug 2026'},
+  {id:'T368',name:'The Bug Slayers',leader:'Moorti S P',dept:'Computer Science Engineering (CSE)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Bindu K.R, Assistant Professor, School of Computing, Coimbatore',date:'22 Aug 2026'},
+  {id:'T369',name:'Innoverse',leader:'Madhu Shree K M',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr Anbazhagan M',date:'22 Aug 2026'},
+  {id:'T370',name:'ByteForce Nexus',leader:'Sri Hari Ramu',dept:'AIDS robotics',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Suman dutta',date:'22 Aug 2026'},
+  {id:'T371',name:'Skill issue detected',leader:'Lathika',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Vedaj j padman',date:'22 Aug 2026'},
+  {id:'T372',name:'Nexora_6',leader:'Vineeth Kumar S A',dept:'B.Tech AI Data Science (Core)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. A. Muthukrishnaraj',date:'22 Aug 2026'},
+  {id:'T373',name:'InfineX',leader:'Prathiksha K S',dept:'B.Tech Civil Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:1,females:5,mentor:'',date:'22 Aug 2026'},
+  {id:'T374',name:'AI CRUISERS',leader:'Hamsitha S U',dept:'Artificial Intelligence (AI) and Data Science (Medical Engineering)',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Female',males:0,females:6,mentor:'Prem Jagadeesan',date:'22 Aug 2026'},
+  {id:'T375',name:'Solstice',leader:'Sai Hruthik Gunuputi Penchal',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr Anbazhagan',date:'22 Aug 2026'},
+  {id:'T376',name:'404 Founders',leader:'Vivin Muthukumaravel',dept:'Computer Science Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rahul',date:'22 Aug 2026'},
+  {id:'T377',name:'Bhuvansankar S',leader:'Bhuvansankar S',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.N.Praveenkumar',date:'22 Aug 2026'},
+  {id:'T378',name:'200 OK',leader:'Thilak Sujan K S',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T379',name:'Solution Squad',leader:'M V Sai Kartik',dept:'Computer Science Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. M.Rohini',date:'22 Aug 2026'},
+  {id:'T380',name:'Hackhive',leader:'Shanthibhushan V',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Mohanrajan',date:'22 Aug 2026'},
+  {id:'T381',name:'Syntax Syndicate',leader:'AKSHAYA A',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. A. Manikandan',date:'22 Aug 2026'},
+  {id:'T382',name:'BinaryBrains',leader:'Sai Abinav S',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Mr. Sowmyaa Vaatsan',date:'22 Aug 2026'},
+  {id:'T383',name:'Builders',leader:'Mithuraa Senthilkumar',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T384',name:'Brute Elites',leader:'Geetha lakshmi mayukhi pynampuram',dept:'Computer science engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Pandranga ravi teja',date:'22 Aug 2026'},
+  {id:'T385',name:'The Nexus',leader:'Rohit M',dept:'Integrated Msc Datascience',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr. Venkat Raman',date:'22 Aug 2026'},
+  {id:'T386',name:'YOUNG INNOVATORS',leader:'SAHANAA KAVIRAJ',dept:'ECE ELECTRONICS AND COMMUNICATION',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T387',name:'Dynamic Drifters',leader:'Sivasree Nandhu',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'C Shunmuga Velapriya',date:'22 Aug 2026'},
+  {id:'T388',name:'Fight club',leader:'Praneesh Venkateshan G',dept:'Mechanical Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T389',name:'Bit Bandits',leader:'Govind Nair',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T390',name:'Fauzi',leader:'Manda Rupa sri vyshnavi',dept:'Computer science and engineering',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T391',name:'Latent',leader:'Akshara Sree R',dept:'B.tech Artificial intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:2,females:4,mentor:'Ms.Sruthi S',date:'22 Aug 2026'},
+  {id:'T392',name:'REZO',leader:'Yashwanth PT',dept:'CSE-AI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Prem Jagadeesan',date:'22 Aug 2026'},
+  {id:'T393',name:'ENFIELD EMPIRE',leader:'NAVANESHVAR.J',dept:'CSE/AI',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T394',name:'Geeks',leader:'Aditya shankar ponugumatla',dept:'Computer science and engineering (core)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Gireesh kumar T',date:'22 Aug 2026'},
+  {id:'T395',name:'HACKNOVA',leader:'SRUTHICA .M S',dept:'computer science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:1,females:5,mentor:'',date:'22 Aug 2026'},
+  {id:'T396',name:'PRESTOFIRE',leader:'KARTHIKA S',dept:'MTECH Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Panduranga Ravi Teja',date:'22 Aug 2026'},
+  {id:'T397',name:'Circuit Breakers',leader:'Harish Pidikiti',dept:'Electrical and Electronics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T398',name:'Tech titans',leader:'Sreekuttan.K',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr.B.Sabarish Narayanan',date:'22 Aug 2026'},
+  {id:'T399',name:'Mission Impossible',leader:'Adhiv Elisha J',dept:'BTECH AUTOMATION AND ROBOTICS',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rakesh Kumar ( Mech dept)',date:'22 Aug 2026'},
+  {id:'T400',name:'Nexora',leader:'Pillari Kethan',dept:'Cybersecurity',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Bharath Ram',date:'22 Aug 2026'},
+  {id:'T401',name:'ASTRA',leader:'ANANTHAKUMAR SARAVANAN',dept:'ELECTRICAL AND ELECTRONICS ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Kavitha D',date:'22 Aug 2026'},
+  {id:'T402',name:'Spidey coder',leader:'Samrutha Govarthana S',dept:'Artificial intelligence and Data science (robotics)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Sathish S',date:'22 Aug 2026'},
+  {id:'T403',name:'Breakpoint',leader:'M K Chanjanaa',dept:'Electrical and computer engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T404',name:'Bro Code',leader:'Arun Aathithyaa G',dept:'Computer science and engineering (AI)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Vipin Das',date:'22 Aug 2026'},
+  {id:'T405',name:'Agentic Coven',leader:'Guru Baskar',dept:'Electrical and Electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Vedaj J Padman',date:'22 Aug 2026'},
+  {id:'T406',name:'Terra Gaurdians',leader:'Sidhant Thakur',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'Prajna Dora',date:'22 Aug 2026'},
+  {id:'T407',name:'Pixels',leader:'Ravishanmugam K',dept:'Computer Science Engineering-Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Abhijith A',date:'22 Aug 2026'},
+  {id:'T408',name:'Hacksmits',leader:'Avishi Goyal',dept:'Electronics and Communication',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Rahul Yadav',date:'22 Aug 2026'},
+  {id:'T409',name:'Short Circuit',leader:'Nalaballi Dhatri',dept:'Electronics and communication engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'22 Aug 2026'},
+  {id:'T410',name:'Hack Nova',leader:'Pranayaa A S',dept:'Computer Science and Engineering (Core)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Akhil V P',date:'22 Aug 2026'},
+  {id:'T411',name:'EVolveX',leader:'Dhiyayanth',dept:'Electrical and Electronic engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Selvakumar',date:'22 Aug 2026'},
+  {id:'T412',name:'Axioms',leader:'Sudharshan.K',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'Mentor Needed',date:'22 Aug 2026'},
+  {id:'T413',name:'MARQ\'s Lab',leader:'Moorthy Neeraj',dept:'Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T414',name:'Data wizards',leader:'Parkavi R',dept:'Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T415',name:'extremelyAndGinormouslyGiantLizards',leader:'P Sanjay',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T416',name:'PragatiBytes',leader:'Prakateessh C.M.',dept:'Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T417',name:'Half Squadron',leader:'V R Bhirugu Dev',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Anu G Kumar',date:'22 Aug 2026'},
+  {id:'T418',name:'Void stack',leader:'Dhananjay Kamalesh',dept:'Computer Science Engineering (AI)',school:'School of Computing (SC)',size:6,mix:'All-Male',males:6,females:0,mentor:'Rateesh S',date:'22 Aug 2026'},
+  {id:'T419',name:'Teen Titans',leader:'Dharshan M',dept:'Automation and Robotics',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:2,females:4,mentor:'Dr.RakeshKumar',date:'22 Aug 2026'},
+  {id:'T420',name:'Innovatrix',leader:'Mahadev M',dept:'Artificial Intelligence and Data Science (Medical Engineering)',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr. Milton Mondal',date:'22 Aug 2026'},
+  {id:'T421',name:'HackNova',leader:'M.Pranavi',dept:'Artificial Intelligence and data science',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:4,females:2,mentor:'Dr.Suman Dutta',date:'22 Aug 2026'},
+  {id:'T422',name:'Team zenith',leader:'Y Vignesh Bhupal Reddy',dept:'CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'DIVYA BHARATHI P',date:'22 Aug 2026'},
+  {id:'T423',name:'Team Meridian',leader:'Ragauv Sairam R S',dept:'Btech COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Rithvik M',date:'22 Aug 2026'},
+  {id:'T424',name:'Team Invictus',leader:'Viswanadha Neha Deepthi',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'',date:'22 Aug 2026'},
+  {id:'T425',name:'QUANTUM MINDS',leader:'Vijay prakash SV',dept:'COMPUTER SCIENCE CSE CORE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'M.SENTHILKUMAR',date:'22 Aug 2026'},
+  {id:'T426',name:'Infinite loops',leader:'Mugilan N',dept:'Electrical and electronics engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr T S Boopathi',date:'22 Aug 2026'},
+  {id:'T427',name:'NextStep',leader:'Mahalingam S',dept:'M.Tech COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:1,females:5,mentor:'Dr. T. Senthil kumar',date:'22 Aug 2026'},
+  {id:'T428',name:'Cipher',leader:'Harita J',dept:'Electrical and Computer Engineering [EEE]',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Ranjith R',date:'22 Aug 2026'},
+  {id:'T429',name:'Finsentry',leader:'Manoj N',dept:'Electrical and Computer Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Ms. G Saisuryaa (Sr. Gr) and Dr. Rajesh T (Post Doc)',date:'22 Aug 2026'},
+  {id:'T430',name:'Neural Nexus',leader:'K S Aparna',dept:'Integrated Msc Data Science',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:2,females:4,mentor:'G Kirubavathi',date:'22 Aug 2026'},
+  {id:'T431',name:'67Blades',leader:'Eshanika Bright',dept:'Mechanical engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T432',name:'Strike Out',leader:'Yashwanthi B K',dept:'B.Tech CSE(CYS)',school:'School of Computing (SC)',size:6,mix:'All-Female',males:0,females:6,mentor:'Dr.Sindhu V',date:'22 Aug 2026'},
+  {id:'T433',name:'Netrix',leader:'Prasanna B',dept:'B.Tech CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T434',name:'Quantum Tech',leader:'Vishwanathan V',dept:'Computer Science',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'M.Senthil kumar',date:'22 Aug 2026'},
+  {id:'T435',name:'Lightning logics',leader:'GOVARDAN S',dept:'AUTOMATION AND ROBOTICS',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T436',name:'HUD-Mayhem',leader:'Vinudharshini P P',dept:'Computer Science Engineering (Artificial Intelligence)',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Anand Kumar V',date:'22 Aug 2026'},
+  {id:'T437',name:'Pixie Chicks',leader:'Naveen P Pillai',dept:'Department of Mathematics',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. T Palanisamy',date:'22 Aug 2026'},
+  {id:'T438',name:'DATA CREW',leader:'R MONISH',dept:'Integrated Msc Datascience',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:2,females:4,mentor:'Palanisamy T',date:'22 Aug 2026'},
+  {id:'T439',name:'Cyber Squad',leader:'Janani Harishmitha B',dept:'Artificial intelligence and Data science (Cyber physical system and security)',school:'School of Artificial Intelligence (AI)',size:6,mix:'All-Female',males:0,females:6,mentor:'Nalini D',date:'22 Aug 2026'},
+  {id:'T440',name:'TechTonic',leader:'Sriram S',dept:'Computer Science Engineering with Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T441',name:'Meridians',leader:'Sidharth G K',dept:'Computer Science and Engineering - Artificial Intelligence',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'Ratheesh S',date:'22 Aug 2026'},
+  {id:'T442',name:'Ignis Tech',leader:'Rutav Desai',dept:'Computer Science and Engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:3,females:3,mentor:'',date:'22 Aug 2026'},
+  {id:'T443',name:'Innovatrix',leader:'Tharunima M',dept:'Aerospace Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T444',name:'6ixer',leader:'Sidambarisvar B',dept:'CSE',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'-',date:'22 Aug 2026'},
+  {id:'T445',name:'Team Catalysts',leader:'Sam Sanjay E I',dept:'Aerospace Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'Unnikrishnan D',date:'22 Aug 2026'},
+  {id:'T446',name:'Trade-off Mavericks',leader:'A R Abhinavendra',dept:'Electronics and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'Dr. Ganesan M.',date:'22 Aug 2026'},
+  {id:'T447',name:'Symbiotix',leader:'Akash G',dept:'MSc Applied Statistics And Data Analytics',school:'School of Physical Sciences (PS)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T448',name:'KYNEX',leader:'KAVINSIDDHARTH S',dept:'MECHANICAL ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T449',name:'TEAM X',leader:'KRISHNA TEJA',dept:'Computer Science and engineering',school:'School of Computing (SC)',size:6,mix:'Mixed',males:5,females:1,mentor:'',date:'22 Aug 2026'},
+  {id:'T450',name:'Team Nexora',leader:'AKILAN T',dept:'COMPUTER SCIENCE AND ENGINEERING',school:'School of Computing (SC)',size:6,mix:'Mixed',males:4,females:2,mentor:'',date:'22 Aug 2026'},
+  {id:'T451',name:'Odyssey',leader:'Yuthikhaa V',dept:'Computer and Communication Engineering',school:'School of Engineering (EN)',size:6,mix:'All-Female',males:0,females:6,mentor:'Suguna G.',date:'22 Aug 2026'},
+  {id:'T452',name:'Blank',leader:'Aditya S',dept:'B.tech Aerospace Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Dr. Jinraj V Pushpangathan & Dr. Resmi V L',date:'22 Aug 2026'},
+  {id:'T453',name:'ChatGPTers',leader:'Teja Prakash',dept:'School of artificial intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'Milton Mondal',date:'22 Aug 2026'},
+  {id:'T454',name:'HEXABYTE',leader:'Aiswarya C A',dept:'Btech',school:'School of Computing (SC)',size:6,mix:'Mixed',males:2,females:4,mentor:'',date:'22 Aug 2026'},
+  {id:'T455',name:'LUMORA',leader:'Thirupugazhl S D',dept:'ELECTRICAL AND ELECTRONICS ENGINEERING',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:1,females:5,mentor:'',date:'22 Aug 2026'},
+  {id:'T456',name:'Zero bug',leader:'Sarweshwaran.G.P',dept:'Automation and Robotics Engineering',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:3,females:3,mentor:'Unnikrishnan.D',date:'22 Aug 2026'},
+  {id:'T457',name:'Code stromers',leader:'V.Siri Chandana rao',dept:'Elc A',school:'School of Engineering (EN)',size:6,mix:'Mixed',males:5,females:1,mentor:'S.Sathish',date:'22 Aug 2026'},
+  {id:'T458',name:'Green Algorithm',leader:'NALLAKALUVA LOKESH REDDY',dept:'School of Artificial Intelligence',school:'School of Artificial Intelligence (AI)',size:6,mix:'Mixed',males:5,females:1,mentor:'S.Sathish',date:'23 Aug 2026'}
+];
+
+const maroon = '#8A1834';
+const maroonDeep = '#5E0F23';
+const gold = '#BD8C34';
+
+// ---- Branch list (custom bars) ----
+const branchEl = document.getElementById('branchList');
+const maxCount = Math.max(...DATA.branches.map(b=>b.count));
+DATA.branches.forEach(b=>{
+  const pct = (b.count/maxCount*100).toFixed(1);
+  branchEl.innerHTML += `
+    <div class="branch-row">
+      <div><span class="code">${b.code}</span></div>
+      <div>
+        <div class="bartrack"><div class="barfill" style="width:${pct}%"></div></div>
+        <div class="branch-name">${b.name}</div>
+      </div>
+      <div class="count">${b.count}</div>
+    </div>`;
+});
+
+// ---- Gender donut (pure SVG) ----
+const total = DATA.gender.Male + DATA.gender.Female;
+const donutSvg = document.getElementById('genderDonut');
+const r = 55, cx = 70, cy = 70, circumference = 2*Math.PI*r;
+const malePct = DATA.gender.Male/total;
+const maleLen = malePct*circumference;
+donutSvg.innerHTML = `
+  <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${gold}" stroke-width="20"/>
+  <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${maroon}" stroke-width="20"
+    stroke-dasharray="${maleLen} ${circumference-maleLen}"
+    transform="rotate(-90 ${cx} ${cy})"/>
+  <text x="${cx}" y="${cy-3}" text-anchor="middle" class="donut-center-num">${(malePct*100).toFixed(0)}%</text>
+  <text x="${cx}" y="${cy+14}" text-anchor="middle" style="font-size:10px;fill:#6E6469;font-family:'Inter',sans-serif;">male</text>
+`;
+const donutLegend = document.getElementById('donutLegend');
+[['Male',DATA.gender.Male,maroon],['Female',DATA.gender.Female,gold]].forEach(([label,val,color])=>{
+  donutLegend.innerHTML += `<div class="item"><span class="sw" style="background:${color}"></span>
+    <span class="l-label">${label}</span></div><div class="l-val" style="margin:-6px 0 8px 18px;">${val} · ${(val/total*100).toFixed(1)}%</div>`;
+});
+
+// ---- Team mix bar ----
+const mixColors = {'Mixed':'#D8C9A3','All-Female':gold,'All-Male':maroon};
+const mixTotal = Object.values(DATA.mix).reduce((a,b)=>a+b,0);
+const mixBarEl = document.getElementById('mixBar');
+const mixLegendEl = document.getElementById('mixLegend');
+Object.entries(DATA.mix).forEach(([k,v])=>{
+  const pct=(v/mixTotal*100).toFixed(1);
+  mixBarEl.innerHTML += `<div style="width:${pct}%;background:${mixColors[k]}"></div>`;
+  mixLegendEl.innerHTML += `<div class="item"><span class="dot" style="background:${mixColors[k]}"></span>${k} — ${v} (${pct}%)</div>`;
+});
+
+// ---- Team homogeneity list ----
+const homogEl = document.getElementById('homogList');
+const homogMax = Math.max(...DATA.homogeneity.map(d=>d.count));
+DATA.homogeneity.forEach(d=>{
+  const pct=(d.count/homogMax*100).toFixed(1);
+  homogEl.innerHTML += `
+    <div class="stat-row">
+      <div class="lbl">${d.label}</div>
+      <div class="bartrack"><div class="barfill" style="width:${pct}%"></div></div>
+      <div class="count">${d.count}</div>
+    </div>`;
+});
+
+// ---- Participation by school list ----
+const schoolEl = document.getElementById('schoolList');
+const schoolMax = Math.max(...DATA.schools.map(d=>d.count));
+DATA.schools.forEach(d=>{
+  const pct=(d.count/schoolMax*100).toFixed(1);
+  schoolEl.innerHTML += `
+    <div class="stat-row">
+      <div class="lbl">${d.label}</div>
+      <div class="bartrack"><div class="barfill" style="width:${pct}%"></div></div>
+      <div class="count">${d.count}</div>
+    </div>`;
+});
+
+// ---- Class-year list ----
+const yearEl = document.getElementById('yearList');
+const yearMax = Math.max(...DATA.classYears.map(d=>d.count));
+DATA.classYears.forEach(d=>{
+  const pct=(d.count/yearMax*100).toFixed(1);
+  yearEl.innerHTML += `
+    <div class="stat-row">
+      <div class="lbl">${d.label}</div>
+      <div class="bartrack"><div class="barfill" style="width:${pct}%"></div></div>
+      <div class="count">${d.count}</div>
+    </div>`;
+});
+
+// ---- Team Explorer ----
+(function(){
+  const PAGE_SIZE = 8;
+  let page = 1;
+
+  const uniq = (key) => [...new Set(TEAMS.map(t=>t[key]).filter(Boolean))].sort();
+  const fillSelect = (sel, values) => {
+    values.forEach(v=>{
+      const opt = document.createElement('option');
+      opt.value = v; opt.textContent = v;
+      sel.appendChild(opt);
+    });
+  };
+  fillSelect(document.getElementById('expSchool'), uniq('school'));
+  fillSelect(document.getElementById('expMix'), uniq('mix'));
+
+  const mixStyle = (m) => {
+    if(m === 'All-Female') return `background:${gold_soft()};color:${maroonDeep};border:1px solid ${gold};`;
+    if(m === 'All-Male') return `background:#E7EEF5;color:#345;border:1px solid #789;`;
+    return `background:#F1ECE5;color:${'#6E6469'};border:1px solid #D8C9A3;`;
+  };
+  function gold_soft(){ return getComputedStyle(document.documentElement).getPropertyValue('--gold-soft') || '#F1E4C6'; }
+
+  function getFiltered(){
+    const q = document.getElementById('expSearch').value.trim().toLowerCase();
+    const school = document.getElementById('expSchool').value;
+    const mix = document.getElementById('expMix').value;
+    const mentorFilter = document.getElementById('expMentor').value;
+
+    return TEAMS.filter(t=>{
+      if(school && t.school!==school) return false;
+      if(mix && t.mix!==mix) return false;
+      if(mentorFilter === 'yes' && !t.mentor) return false;
+      if(mentorFilter === 'no' && t.mentor) return false;
+      if(q){
+        const hay = `${t.id} ${t.name} ${t.leader} ${t.dept} ${t.school} ${t.mentor}`.toLowerCase();
+        if(!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }
+
+  function render(){
+    const filtered = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    if(page > totalPages) page = totalPages;
+    if(page < 1) page = 1;
+    const start = (page-1) * PAGE_SIZE;
+    const pageRows = filtered.slice(start, start + PAGE_SIZE);
+
+    const body = document.getElementById('expBody');
+    body.innerHTML = pageRows.map((t,i)=>`
+      <tr style="border-top:1px solid var(--line);${i%2? 'background:#FCFAF6;':''}">
+        <td style="padding:10px 12px;color:var(--faint);font-family:'IBM Plex Mono',monospace;font-size:11.5px;">${t.id}</td>
+        <td style="padding:9px 12px;font-weight:600;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.name}">${t.name}</td>
+        <td style="padding:9px 12px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.leader}">${t.leader}</td>
+        <td style="padding:9px 12px;color:var(--muted);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.dept}">${t.dept}</td>
+        <td style="padding:9px 12px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.school}">${t.school}</td>
+        <td style="padding:9px 12px;"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;${mixStyle(t.mix)}">${t.mix} (${t.males}M/${t.females}F)</span></td>
+        <td style="padding:9px 12px;color:var(--muted);max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.mentor}">${t.mentor || '—'}</td>
+        <td style="padding:9px 12px;color:var(--muted);white-space:nowrap;">${t.date}</td>
+      </tr>`).join('');
+
+    document.getElementById('explorerCount').textContent = `${filtered.length} of ${TEAMS.length} teams`;
+    document.getElementById('expPageLabel').textContent = `Page ${page} of ${totalPages}`;
+    document.getElementById('expPrev').disabled = page <= 1;
+    document.getElementById('expNext').disabled = page >= totalPages;
+    document.getElementById('expPrev').style.opacity = page <= 1 ? '0.4' : '1';
+    document.getElementById('expNext').style.opacity = page >= totalPages ? '0.4' : '1';
+  }
+
+  document.getElementById('expSearch').addEventListener('input', ()=>{ page = 1; render(); });
+  document.querySelectorAll('.exp-filter').forEach(el=>el.addEventListener('change', ()=>{ page = 1; render(); }));
+  document.getElementById('expPrev').addEventListener('click', ()=>{ page--; render(); });
+  document.getElementById('expNext').addEventListener('click', ()=>{ page++; render(); });
+  render();
+})();
+</script>
+
+</body>
+</html>
