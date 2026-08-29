@@ -1033,7 +1033,7 @@ window.teamsData = [
       "Bharat Balaji Rao [CB.SC.U4CSE25311]"
     ],
     "status": "On board",
-    "mentor": "No Mentor"
+    "mentor": "Dr. V. C. Diniesh"
   },
   {
     "id": "SIH26-A0H-T071",
@@ -4228,20 +4228,6 @@ window.teamsData = [
     "mentor": "No Mentor"
   },
   {
-    "id": "-",
-    "name": "Bugged Minds",
-    "leader": "Sarvesh Subramanian S [CB.SC.U4CYS26052]",
-    "members": [
-      "S Jayas [CB.EN.U4CHE26135]",
-      "O OM NIMALAN [CB.EN.U4EEE26223]",
-      "A SSRADDHA [CB.EN.U4ECE26301]",
-      "Abhishek Alfred Raj M [CB.EN.U4CHE26102]",
-      "LINGESHWARAN KATHIRVEL [CB.EN.U4CHE26154]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Krishnan K"
-  },
-  {
     "id": "SIH26-A0H-T264",
     "name": "penguin.exe",
     "leader": "Haindhavi KR [CB.SC.U4CSE24224]",
@@ -6368,5 +6354,19 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "Dr. Unnikrishnan D."
+  },
+  {
+    "id": "SIH26-A0H-T396",
+    "name": "Bugged Minds",
+    "leader": "Sarvesh Subramanian S [CB.SC.U4CYS26052]",
+    "members": [
+      "S Jayas [CB.EN.U4CHE26135]",
+      "O OM NIMALAN [CB.EN.U4EEE26223]",
+      "A SSRADDHA [CB.EN.U4ECE26301]",
+      "Abhishek Alfred Raj M [CB.EN.U4CHE26102]",
+      "LINGESHWARAN KATHIRVEL [CB.EN.U4CHE26154]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Krishnan K"
   }
 ];
