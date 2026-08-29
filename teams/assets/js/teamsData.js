@@ -6363,7 +6363,7 @@ window.teamsData = [
       "Aswath P [CB.SC.U4CSE2710]",
       "Aakash T Anish [CB.SC.U4CSE26704]",
       "Sachin Karthikeyan [CB.SC.U4AIE26157]",
-      "Varshita S [CB.SC.U4CSE26063]",
+      "Varshita Ummaneni [CB.SC.U4CSE26561]",
       "Sree Gugan VS [CB.SC.U4CSE26254]"
     ],
     "status": "On board",
