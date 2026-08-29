@@ -2744,7 +2744,7 @@ window.teamsData = [
     "mentor": "AKHIL K J"
   },
   {
-    "id": "-",
+    "id": "SIH26-A0H-T396",
     "name": "Innova",
     "leader": "Prajit [cb.ps.i5mat26011]",
     "members": [
@@ -2754,7 +2754,7 @@ window.teamsData = [
       "Diya Mahaalakshmi. R [CB.PS.I5MAT26012]",
       "Sruthy Devaraj [CB.PS.I5MAT26018]"
     ],
-    "status": "Off board",
+    "status": "On board",
     "mentor": "Dr. Kirubavathi G"
   },
   {
