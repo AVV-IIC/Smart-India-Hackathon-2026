@@ -211,12 +211,12 @@ window.teamsData = [
   },
   {
     "id": "SIH26-A0H-T014",
-    "name": "The outliers",
+    "name": "Outliers",
     "leader": "Rithwik vallala [Cb.sc.u4cse25361]",
     "members": [
       "K vishanth [Cb.sc.u4 cse25364]",
       "N yashika [Cb.sc.u4cse25365]",
-      "Aashman singh [Cb.sc.u4cse25345]",
+      "Rithanya [Cb.sc.u4cse25345]",
       "Divyendrhaa Muthusamy [CB.SC.U4CSE25318]",
       "Roohith [Cb.sc.u4cse25348]"
     ],
@@ -982,7 +982,7 @@ window.teamsData = [
   {
     "id": "SIH26-A0H-T067",
     "name": "TEAM ZENITH",
-    "leader": "Abishek N [CB.SC.U4CSE25313]",
+    "leader": "Abishek N [CB.SC.U4CSE25005]",
     "members": [
       "Augustine P S [cb.sc.u4cse26307]",
       "Eshaan Parihariya [cb.sc.u4cse26021]",
@@ -2568,7 +2568,7 @@ window.teamsData = [
     "members": [
       "N. Sakthiyavaani [cb.sc.u4cys24042]",
       "Jishnu Nambiar [cb.sc.u4cse24019]",
-      "Ketaki Athalekar [cb.en.u4eee24123]",
+      "Dominic Karol Peter [CB.SC.U4CSE24013]",
       "TANUSH PAVAN V [cb.en.u4eee24147]",
       "Srisanth P A [cb.sc.u4cse24550]"
     ],
@@ -2601,7 +2601,7 @@ window.teamsData = [
       "Adhirai V [CB.EN.U4ECE25002]"
     ],
     "status": "On board",
-    "mentor": "No Mentor"
+    "mentor": "Dr. Ganesan M."
   },
   {
     "id": "SIH26-A0H-T167",
@@ -3819,7 +3819,7 @@ window.teamsData = [
       "K MIDUNRAJA [CB.SC.U4CSE24324]"
     ],
     "status": "On board",
-    "mentor": "No Mentor"
+    "mentor": "Dr. Anbazhagan M."
   },
   {
     "id": "-",
@@ -4238,7 +4238,7 @@ window.teamsData = [
       "Abhishek Alfred Raj M [CB.EN.U4CHE26102]",
       "LINGESHWARAN KATHIRVEL [CB.EN.U4CHE26154]"
     ],
-    "status": "Off board",
+    "status": "On board",
     "mentor": "Dr. Krishnan K"
   },
   {
@@ -4561,7 +4561,7 @@ window.teamsData = [
       "R Rahul [CB.EN.U4ECE25241]"
     ],
     "status": "On board",
-    "mentor": "No Mentor"
+    "mentor": "Dr. Ashok P."
   },
   {
     "id": "SIH26-A0H-T283",
@@ -4691,7 +4691,7 @@ window.teamsData = [
   },
   {
     "id": "SIH26-A0H-T289",
-    "name": "omone sec",
+    "name": "Radiants",
     "leader": "Ragav S [cb.sc.u4aie24041]",
     "members": [
       "Naveen u [cb.sc.u4aie24035]",
@@ -5891,7 +5891,7 @@ window.teamsData = [
       "VURIBINDI ROHAN REDDY [CB.SC.U4CSE24359]"
     ],
     "status": "On board",
-    "mentor": "Divya Bharathi P"
+    "mentor": "Dr. Divya Bharathi P"
   },
   {
     "id": "-",
@@ -6297,7 +6297,7 @@ window.teamsData = [
       "Daksha S B [CB.EN.U4CCE24147]"
     ],
     "status": "On board",
-    "mentor": "Suguna G."
+    "mentor": "No Mentor"
   },
   {
     "id": "SIH26-A0H-T391",
