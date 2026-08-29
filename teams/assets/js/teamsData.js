@@ -2860,7 +2860,7 @@ window.teamsData = [
     "name": "EDITH",
     "leader": "Sanjay MS [CB.SC.U4CSE24248]",
     "members": [
-      "Bhuvan [CB.SC.U4CSE24218]",
+      "Bhuvaneshwaran GN [CB.SC.U4CSE24218]",
       "Lakshya [CB.SC.U4CSE24728]",
       "Sri harini [CB.SC.U4CSE24654]",
       "Sriya K [CB.SC.U4CSE24657]",
@@ -5345,7 +5345,7 @@ window.teamsData = [
       "Eshika MR [CB.PS.I5DAS25011]"
     ],
     "status": "On board",
-    "mentor": "No Mentor"
+    "mentor": "Dr. Venkat Raman"
   },
   {
     "id": "SIH26-A0H-T333",
