@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart India Hackathon 2026 - Finalized Teams Dashboard</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- Header Section with PNG Image Banner -->
+    <header class="header-wrapper">
+      <div class="header-top-row">
+        <span class="header-badge">SIH 2026 Directory</span>
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <span id="themeIcon" class="theme-icon">🌙</span>
+          <span id="themeText" class="theme-text">Dark Mode</span>
+        </button>
+      </div>
+
+      <div class="header-banner-container">
+        <img src="assets/images/Finalized_sih_2026_header.png" alt="Smart India Hackathon 2026 Header"
+          class="header-png" />
+      </div>
+
+      <div class="header-content">
+        <h1 class="header-title">Smart India Hackathon - 2026</h1>
+        <p class="header-subtitle">Internal Hackathon Finalised Teams Directory</p>
+      </div>
+    </header>
+
+    <!-- Minimalist KPI Summary Grid -->
+    <section class="stats-grid" aria-label="Hackathon Statistics Overview">
+      <div class="stat-card" style="cursor: pointer;" title="Click to view all teams">
+        <span class="stat-label">Total Teams</span>
+        <span class="stat-value" id="totalTeamsCount">455</span>
+      </div>
+
+      <div class="stat-card" style="cursor: pointer;" title="Click to filter On Board teams">
+        <span class="stat-label">On Board Teams</span>
+        <span class="stat-value" style="color: var(--success);" id="onBoardCount">395</span>
+      </div>
+
+      <div class="stat-card" style="cursor: pointer;" title="Click to filter Off Board teams">
+        <span class="stat-label">Off Board Teams</span>
+        <span class="stat-value" style="color: var(--danger);" id="offBoardCount">60</span>
+      </div>
+
+      <div class="stat-card" style="cursor: pointer;" title="Click to filter teams with assigned mentors">
+        <span class="stat-label">Mentors Assigned</span>
+        <span class="stat-value" style="color: var(--info);" id="mentorsCount">326</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-label">Total Participants</span>
+        <span class="stat-value" style="color: #7c3aed;" id="participantsCount">2370</span>
+      </div>
+    </section>
+
+    <!-- Professional Search & Filtering Controls -->
+    <section class="controls-card">
+      <div class="controls-top">
+        <div class="search-box">
+          <input type="text" id="searchInput" class="search-input"
+            placeholder="Search by Team ID, Team Name, Roll Number, Member, or Mentor... (Press '/' to focus)" />
+          <button id="searchClearBtn" class="search-clear-btn" title="Clear Search">Clear</button>
+        </div>
+
+        <div class="controls-actions">
+          <select id="deptSelect" class="select-control" aria-label="Filter by Department">
+            <option value="all">All Departments</option>
+          </select>
+
+          <select id="pageSizeSelect" class="select-control" aria-label="Rows per page">
+            <option value="15">15 per page</option>
+            <option value="25" selected>25 per page</option>
+            <option value="50">50 per page</option>
+            <option value="100">100 per page</option>
+            <option value="all">Show All</option>
+          </select>
+
+          <button id="exportCsvBtn" class="btn-secondary" title="Export current view to CSV">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Export CSV
+          </button>
+
+          <button id="resetFiltersBtn" class="btn-secondary">Reset Filters</button>
+        </div>
+      </div>
+
+      <div class="filter-pills-row">
+        <div class="filter-pills">
+          <button class="pill-btn active" data-filter="all">All Teams <span class="pill-badge">455</span></button>
+          <button class="pill-btn" data-filter="on">On Board <span class="pill-badge">395</span></button>
+          <button class="pill-btn" data-filter="off">Off Board <span class="pill-badge">60</span></button>
+          <button class="pill-btn" data-filter="mentor">Has Mentor <span class="pill-badge">326</span></button>
+          <button class="pill-btn" data-filter="nomentor">No Mentor <span class="pill-badge">129</span></button>
+        </div>
+
+        <div id="resultsMeta" class="results-meta">Showing 455 of 455 teams</div>
+      </div>
+    </section>
+
+    <!-- Main Teams Table -->
+    <main class="table-card">
+      <div class="table-responsive">
+        <table class="teams-table" id="teamTable">
+          <thead>
+            <tr>
+              <th data-sort="id">Team Number <span class="sort-icon"></span></th>
+              <th data-sort="name">Team Name <span class="sort-icon"></span></th>
+              <th data-sort="leader">Team Leader <span class="sort-icon"></span></th>
+              <th>TM#1</th>
+              <th>TM#2</th>
+              <th>TM#3</th>
+              <th>TM#4</th>
+              <th>TM#5</th>
+              <th data-sort="status">Status <span class="sort-icon"></span></th>
+              <th data-sort="mentor">Mentor Name <span class="sort-icon"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamically Rendered by script.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination-bar">
+        <div id="pageRangeText" class="results-meta">Showing 1-25 of 455 teams</div>
+        <div id="paginationControls" class="pagination-controls">
+          <!-- Dynamically Rendered Page Buttons -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Analytics Dashboard Charts Section -->
+    <section class="charts-section">
+      <div class="section-title">
+        <span>Analytics Breakdown</span>
+        <span style="font-size: 12px; font-weight: 500; color: var(--text-muted); margin-left: 8px;">(Click any chart
+          segment to filter records)</span>
+      </div>
+
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-card-title">Teams by Composition</div>
+          <div class="chart-canvas-container">
+            <canvas id="teamChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card-title">Status Distribution</div>
+          <div class="chart-canvas-container">
+            <canvas id="statusChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card-title">Teams by Department</div>
+          <div class="chart-canvas-container">
+            <canvas id="deptChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card-title">Top 10 Mentors</div>
+          <div class="chart-canvas-container">
+            <canvas id="mentorChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Smart India Hackathon - Amrita Vishwa Vidyapeetham | SPOC: Mr.Ramaguru Radhakrishnan</p>
+    </footer>
+
+  </div>
+
+  <!-- Team Details Modal Overlay -->
+  <div id="teamModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle" class="modal-title">Team Details</h2>
+          <span id="modalTeamId" class="team-id-code"
+            style="margin-top: 6px; display: inline-block;">SIH26-A0H-T001</span>
+        </div>
+        <button id="modalCloseBtn" class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-grid">
+          <div class="modal-field">
+            <div class="modal-field-label">Status</div>
+            <div id="modalStatus" class="modal-field-value">On Board</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Mentor</div>
+            <div id="modalMentor" class="modal-field-value">Dr. Resma Madhu P. K.</div>
+          </div>
+          <div class="modal-field" style="grid-column: span 2;">
+            <div class="modal-field-label">Team Leader</div>
+            <div id="modalLeader" class="modal-field-value">-</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="modal-field-label" style="margin-bottom: 8px;">Team Leader & Members</div>
+          <div id="modalMembersList" class="modal-members-list">
+            <!-- Members list loaded dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid var(--border-color); padding-top: 14px;">
+        <button id="copyTeamBtn" class="btn-primary">Copy Team Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast-notification" aria-live="polite"></div>
+
+  <!-- Third Party Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Application Data & Logic Scripts -->
+  <script src="assets/js/teamsData.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
