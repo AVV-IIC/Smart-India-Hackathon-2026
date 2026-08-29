@@ -4158,20 +4158,6 @@ window.teamsData = [
     "mentor": "No Mentor"
   },
   {
-    "id": "-",
-    "name": "Hacktivators",
-    "leader": "Aditya Sajiv [CB.SC.U4CSE26701]",
-    "members": [
-      "Aswath P [CB.SC.U4CSE2710]",
-      "Aakash T Anish [CB.SC.U4CSE26704]",
-      "Sachin Karthikeyan [CB.SC.U4AIE26157]",
-      "Varshita S [CB.SC.U4CSE26063]",
-      "Sree Gugan VS [CB.SC.U4CSE26254]"
-    ],
-    "status": "Off board",
-    "mentor": "Bharati D"
-  },
-  {
     "id": "SIH26-A0H-T260",
     "name": "Binary Brains",
     "leader": "Aditya Ajit Dubal [CB.EN.U4ELC26103]",
@@ -6368,5 +6354,19 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "Dr. Krishnan K"
+  },
+  {
+    "id": "SIH26-A0H-T397",
+    "name": "Hacktivators",
+    "leader": "Aditya Sajiv [CB.SC.U4CSE26701]",
+    "members": [
+      "Aswath P [CB.SC.U4CSE2710]",
+      "Aakash T Anish [CB.SC.U4CSE26704]",
+      "Sachin Karthikeyan [CB.SC.U4AIE26157]",
+      "Varshita S [CB.SC.U4CSE26063]",
+      "Sree Gugan VS [CB.SC.U4CSE26254]"
+    ],
+    "status": "On board",
+    "mentor": "Bharati D"
   }
 ];
