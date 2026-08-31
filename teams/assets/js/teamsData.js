@@ -4248,7 +4248,7 @@ window.teamsData = [
     "members": [
       "M R Bharath [CB.AI.U4AIM24022]",
       "Harshath A [CB.AI.U4AIM24015]",
-      "Pranesh Kishore Kumar [CB.AI.U4AIM24056]",
+      "Pranesh Kishor Kumar [CB.AI.U4AIM24056]",
       "Kishore S [CB.AI.U4AIM24020]",
       "Sunath Reha Sreekumar [CB.AI.U4AIM24146]"
     ],
@@ -4684,7 +4684,7 @@ window.teamsData = [
       "Vani Shree S [CB.SC.U4AIE24059]",
       "Aamith Kishore T J [CB.SC.U4AIE24001]",
       "Prajit T [CB.SC.U4AIE24062]",
-      "Sighakolli Dheeraj Venkata Sai [CB.SC.U4IAE24050]"
+      "Sighakolli Dheeraj Venkata Sai [CB.SC.U4AIE24050]"
     ],
     "status": "On board",
     "mentor": "Sunil Kumar S"
