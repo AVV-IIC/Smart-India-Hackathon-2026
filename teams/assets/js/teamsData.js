@@ -3312,7 +3312,7 @@ window.teamsData = [
       "PVN KRISHNA SATISH [CB.AI.U4CPS25036]",
       "M SUJAN [CB.AI.U4AID25129]",
       "TVSS PHANINDRA GUPTHA [CB.AI.U4AID25055]",
-      "T MONISA REDDY [CB.AI.U4AEE25051]"
+      "T MONISA REDDY [CB.EN.U4AEE25051]"
     ],
     "status": "On board",
     "mentor": "Sathish S"
@@ -5132,7 +5132,7 @@ window.teamsData = [
       "RAM ESWAR P [CB.AI.U4AID25147]",
       "Abhishek S [CB.AI.U4AID25101]",
       "Harsha sree A [CB.AI.U4AID25105]",
-      "Ch Sahasra [CB.AI.U4AAR24012]"
+      "Ch Sahasra [CB.AI.U4AAR25012]"
     ],
     "status": "On board",
     "mentor": "Dr. Suman Dutta"
