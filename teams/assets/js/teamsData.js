@@ -1015,7 +1015,7 @@ window.teamsData = [
       "Naga Anmisha.Kodambakkam [CB.AI.U4QTS26026]",
       "Hema Varsha.M [CB.AI.U4QTS26020]",
       "B.Hosni [CB.SC.U4CYS26073]",
-      "Lakshanya Izhan Seliyan.I [CB.AI.U4QTS26029]",
+      "Lakshanya Ilhan Sezhiyan [CB.AI.U4QTS26029]",
       "Akshitha Venkatesh Devithulasimani [CB.AI.U4AAR26006]"
     ],
     "status": "On board",
@@ -3577,7 +3577,7 @@ window.teamsData = [
       "Nalin Gugan S U [CB.EN.U4ECE24035]",
       "J Lalith Narayan [CB.EN.U4ECE24215]",
       "Gowrishankar B [CB.EN.U4ECE24009]",
-      "Lakshmi V A [CB.EN.U4ECE2426]",
+      "Lakshmi V A [CB.EN.U4ECE24026]",
       "Nishanth C [CB.EN.U4ECE24038]"
     ],
     "status": "On board",
