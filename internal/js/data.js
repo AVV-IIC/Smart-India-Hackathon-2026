@@ -3452,7 +3452,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "NEKKANTI SAI SAMEERA RAM",
+          "name": "Nekkanti Sai Sameera Ram",
           "gender": "F",
           "roll": "CB.SC.U4CSE25735",
           "branch": "CSE",
@@ -3462,7 +3462,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "TUMATI SIRI HAASINEE",
+          "name": "Tumati Siri Haasinee",
           "gender": "F",
           "roll": "CB.SC.U4CSE25461",
           "branch": "CSE",
@@ -3513,7 +3513,7 @@ const DATA = {
     {
       "id": "7",
       "team": "ARISTELLA",
-      "leader": "A PARDHAV REDDY",
+      "leader": "A Pardhav Reddy",
       "wa_raw": "9182147221",
       "wa_norm": "9182147221",
       "wa_issues": [],
@@ -3527,7 +3527,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "A PARDHAV REDDY",
+          "name": "A Pardhav Reddy",
           "gender": "M",
           "roll": "CB.AI.U4CPS25059",
           "branch": "CPS",
@@ -3537,7 +3537,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "DHIREN VASUDEVA",
+          "name": "Dhiren Vasudeva",
           "gender": "M",
           "roll": "CB.AI.U4CPS25014",
           "branch": "CPS",
@@ -3547,7 +3547,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "CHUNDURU VENKATA ABHIRAM",
+          "name": "Chunduru Venkata Abhiram",
           "gender": "M",
           "roll": "CB.AI.U4CPS25012",
           "branch": "CPS",
@@ -3557,7 +3557,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "POOVYA S",
+          "name": "Poovya S",
           "gender": "F",
           "roll": "CB.AI.U4CPS25061",
           "branch": "CPS",
@@ -3567,7 +3567,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "MADHUMITHA S",
+          "name": "Madhumitha S",
           "gender": "F",
           "roll": "CB.AI.U4CPS25026",
           "branch": "CPS",
@@ -3577,7 +3577,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MAHIZHA S",
+          "name": "Mahizha S",
           "gender": "F",
           "roll": "CB.AIU4CPS25027",
           "branch": "CPS",
@@ -3598,7 +3598,7 @@ const DATA = {
     {
       "id": "8",
       "team": "Code Psychics",
-      "leader": "GARREPALLI VARSHITH",
+      "leader": "Garrepalli Varshith",
       "wa_raw": "6302068797",
       "wa_norm": "6302068797",
       "wa_issues": [],
@@ -3612,7 +3612,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "GARREPALLI VARSHITH",
+          "name": "Garrepalli Varshith",
           "gender": "M",
           "roll": "CB.SC.U4CSE24413",
           "branch": "CSE",
@@ -3662,7 +3662,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "kankatala Ganesh Giridhar",
+          "name": "Kankatala Ganesh Giridhar",
           "gender": "M",
           "roll": "CB.SC.U4CSE24519",
           "branch": "CSE",
@@ -3853,7 +3853,7 @@ const DATA = {
     {
       "id": "11",
       "team": "suhana",
-      "leader": "suhan deb",
+      "leader": "Suhan Deb",
       "wa_raw": "9774152756",
       "wa_norm": "9774152756",
       "wa_issues": [],
@@ -3869,7 +3869,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "suhan deb",
+          "name": "Suhan Deb",
           "gender": "M",
           "roll": "CB.AI.U4AID26042",
           "branch": "AID",
@@ -3879,7 +3879,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Arnav todi",
+          "name": "Arnav Todi",
           "gender": "M",
           "roll": "CB.AI.U4QTS26006",
           "branch": "QTS",
@@ -3899,7 +3899,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Aashman singh",
+          "name": "Aashman Singh",
           "gender": "M",
           "roll": "CB.SC.U4AIE26072",
           "branch": "AIE",
@@ -3909,7 +3909,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Vansh kumar singh",
+          "name": "Vansh Kumar Singh",
           "gender": "M",
           "roll": "CB.SC.U4AIE26175",
           "branch": "AIE",
@@ -3976,7 +3976,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Ratchitha kathiravan vedhavalli",
+          "name": "Ratchitha Kathiravan Vedhavalli",
           "gender": "F",
           "roll": "CB.AI.U4AID26032",
           "branch": "AID",
@@ -4051,7 +4051,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "KK SIVAADHITHIAN",
+          "name": "KK Sivaadhithian",
           "gender": "M",
           "roll": "CB.SC.U4CSE25332",
           "branch": "CSE",
@@ -4176,7 +4176,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Katha Mallikarjuna reddy",
+          "name": "Katha Mallikarjuna Reddy",
           "gender": "M",
           "roll": "CB.EN.U4CCE25159",
           "branch": "CCE",
@@ -4223,7 +4223,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "JADEN MAHESH",
+          "name": "Jaden Mahesh",
           "gender": "M",
           "roll": "CB.AI.U4AID26156",
           "branch": "AID",
@@ -4233,7 +4233,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "HEMANTHKUMAR S",
+          "name": "Hemanthkumar S",
           "gender": "M",
           "roll": "CB.AI.U4AID26155",
           "branch": "AID",
@@ -4243,7 +4243,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NETHRA SK",
+          "name": "Nethra SK",
           "gender": "F",
           "roll": "CB.AI.U4AID26161",
           "branch": "AID",
@@ -4253,7 +4253,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "AKSHIDHA R",
+          "name": "Akshidha R",
           "gender": "F",
           "roll": "CB.AI.U4AID26177",
           "branch": "AID",
@@ -4393,7 +4393,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "VISVA THOMAS CHRISTOBER",
+          "name": "Visva Thomas Christober",
           "gender": "M",
           "roll": "CB.SC.U4CYS26166",
           "branch": "CYS",
@@ -4539,7 +4539,7 @@ const DATA = {
     {
       "id": "19",
       "team": "The outliers",
-      "leader": "Rithwik vallala",
+      "leader": "Rithwik Vallala",
       "wa_raw": "9515274364",
       "wa_norm": "9515274364",
       "wa_issues": [],
@@ -4553,9 +4553,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Rithwik vallala",
+          "name": "Rithwik Vallala",
           "gender": "M",
-          "roll": "Cb.sc.u4cse25361",
+          "roll": "CB.SC.U4CSE25361",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -4563,9 +4563,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "K vishanth",
+          "name": "K Vishanth",
           "gender": "M",
-          "roll": "Cb.sc.u4 cse25364",
+          "roll": "CB.SC.U4 CSE25364",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -4573,9 +4573,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "N yashika",
+          "name": "N Yashika",
           "gender": "F",
-          "roll": "Cb.sc.u4cse25365",
+          "roll": "CB.SC.U4CSE25365",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -4583,9 +4583,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Aashman singh",
+          "name": "Aashman Singh",
           "gender": "F",
-          "roll": "Cb.sc.u4cse25345",
+          "roll": "CB.SC.U4CSE25345",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -4605,7 +4605,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Roohith",
           "gender": "M",
-          "roll": "Cb.sc.u4cse25348",
+          "roll": "CB.SC.U4CSE25348",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -4624,7 +4624,7 @@ const DATA = {
     {
       "id": "20",
       "team": "Code Alchemy",
-      "leader": "Sandhiya.D",
+      "leader": "Sandhiya.d",
       "wa_raw": "9445640893",
       "wa_norm": "9445640893",
       "wa_issues": [],
@@ -4640,7 +4640,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sandhiya.D",
+          "name": "Sandhiya.d",
           "gender": "F",
           "roll": "CB.SC.U4AIE24353",
           "branch": "AIE",
@@ -4650,7 +4650,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "POOJA.N",
+          "name": "Pooja.n",
           "gender": "F",
           "roll": "CB.SC.U4AIE24242",
           "branch": "AIE",
@@ -4660,7 +4660,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "JENISHAA BHARATHI.M",
+          "name": "Jenishaa Bharathi.m",
           "gender": "F",
           "roll": "CB.SC.U4AIE24221",
           "branch": "AIE",
@@ -4670,7 +4670,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NAVEEN.K",
+          "name": "Naveen.k",
           "gender": "M",
           "roll": "CB.SC.U4AIE24235",
           "branch": "AIE",
@@ -4680,7 +4680,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SUBASH.B",
+          "name": "Subash.b",
           "gender": "M",
           "roll": "CB.SC.U4AIE24254",
           "branch": "AIE",
@@ -4690,7 +4690,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SAI KUSHAL.B",
+          "name": "Sai Kushal.b",
           "gender": "M",
           "roll": "CB.SC.U4AIE24252",
           "branch": "AIE",
@@ -4711,7 +4711,7 @@ const DATA = {
     {
       "id": "21",
       "team": "THE NEURONEX LEGION",
-      "leader": "R. HARSHAN",
+      "leader": "R. Harshan",
       "wa_raw": "9943466966",
       "wa_norm": "9943466966",
       "wa_issues": [],
@@ -4725,7 +4725,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "R. HARSHAN",
+          "name": "R. Harshan",
           "gender": "M",
           "roll": "CB.AI.U4AID26055",
           "branch": "AID",
@@ -4735,7 +4735,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "PRANAV SRIRAM B",
+          "name": "Pranav Sriram B",
           "gender": "M",
           "roll": "CB.AI.U4AID26028",
           "branch": "AID",
@@ -4745,7 +4745,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "G. PRANAAV",
+          "name": "G. Pranaav",
           "gender": "M",
           "roll": "CB.AI.U4AID26027",
           "branch": "AID",
@@ -4755,7 +4755,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "R. MANIKANDAN",
+          "name": "R. Manikandan",
           "gender": "M",
           "roll": "CB.AI.U4AID26030",
           "branch": "AID",
@@ -4765,7 +4765,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "YASHVI V PATEL",
+          "name": "Yashvi V Patel",
           "gender": "F",
           "roll": "CB.AI.U4AID26066",
           "branch": "AID",
@@ -4775,7 +4775,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SEELAM JAYAHASINI",
+          "name": "Seelam Jayahasini",
           "gender": "F",
           "roll": "CB.AI.U4AID26038",
           "branch": "AID",
@@ -4796,7 +4796,7 @@ const DATA = {
     {
       "id": "22",
       "team": "ByteBrains",
-      "leader": "SHRI THANISHKA",
+      "leader": "Shri Thanishka",
       "wa_raw": "9363753232",
       "wa_norm": "9363753232",
       "wa_issues": [],
@@ -4812,7 +4812,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SHRI THANISHKA",
+          "name": "Shri Thanishka",
           "gender": "F",
           "roll": "CB.AI.U4AIM25038",
           "branch": "AIM",
@@ -4822,7 +4822,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RAJAPRIYA VR",
+          "name": "Rajapriya VR",
           "gender": "F",
           "roll": "CB.AI.U4AIM25032",
           "branch": "AIM",
@@ -4832,7 +4832,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "HEMANTH S",
+          "name": "Hemanth S",
           "gender": "M",
           "roll": "CB.AI.U4CPS25019",
           "branch": "CPS",
@@ -4842,7 +4842,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NAVANEET",
+          "name": "Navaneet",
           "gender": "M",
           "roll": "CB.AI.U4AID25037",
           "branch": "AID",
@@ -4852,7 +4852,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "KANISH VISYANTH C",
+          "name": "Kanish Visyanth C",
           "gender": "M",
           "roll": "CB.AI.U4AID25020",
           "branch": "AID",
@@ -4862,7 +4862,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "NETHAAJI S",
+          "name": "Nethaaji S",
           "gender": "M",
           "roll": "CB.AI.U4AID25040",
           "branch": "AID",
@@ -5166,9 +5166,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "V.Saketh",
+          "name": "V.saketh",
           "gender": "M",
-          "roll": "cb.sc.u4cse24558",
+          "roll": "CB.SC.U4CSE24558",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -5176,9 +5176,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Y.Jothibasu",
+          "name": "Y.jothibasu",
           "gender": "M",
-          "roll": "cb.sc.u4cse24559",
+          "roll": "CB.SC.U4CSE24559",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -5186,9 +5186,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "S.Suraj",
+          "name": "S.suraj",
           "gender": "M",
-          "roll": "cb.sc.u4cse24549",
+          "roll": "CB.SC.U4CSE24549",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -5196,9 +5196,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "T.Kumar",
+          "name": "T.kumar",
           "gender": "M",
-          "roll": "cb.sc.u4cse24552",
+          "roll": "CB.SC.U4CSE24552",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -5206,9 +5206,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "V.Rohith",
+          "name": "V.rohith",
           "gender": "M",
-          "roll": "cb.sc.u4cse24561",
+          "roll": "CB.SC.U4CSE24561",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -5251,7 +5251,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Saran karthik kanda Samy kalai Selvi",
+          "name": "Saran Karthik Kanda Samy Kalai Selvi",
           "gender": "M",
           "roll": "CB.PS.I5DAS23054",
           "branch": "DAS",
@@ -5312,7 +5312,7 @@ const DATA = {
     {
       "id": "28",
       "team": "CHRONOS",
-      "leader": "ROHITH B",
+      "leader": "Rohith B",
       "wa_raw": "8220453357",
       "wa_norm": "8220453357",
       "wa_issues": [],
@@ -5326,7 +5326,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ROHITH B",
+          "name": "Rohith B",
           "gender": "M",
           "roll": "CB.SC.U4CSE26044",
           "branch": "CSE",
@@ -5423,7 +5423,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Keerthana Vonteddu",
           "gender": "F",
-          "roll": "CB.sc.u4cse26666",
+          "roll": "CB.SC.U4CSE26666",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -5441,7 +5441,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Kurapati joshna vaishnavi",
+          "name": "Kurapati Joshna Vaishnavi",
           "gender": "F",
           "roll": "CB.AI.U4QTS26064",
           "branch": "QTS",
@@ -5451,7 +5451,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Batchu Jatin naga Sai",
+          "name": "Batchu Jatin Naga Sai",
           "gender": "M",
           "roll": "CB.AI.U4QTS26009",
           "branch": "QTS",
@@ -5461,7 +5461,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Maddali bhaskara sathvik phanindhra gupta",
+          "name": "Maddali Bhaskara Sathvik Phanindhra Gupta",
           "gender": "M",
           "roll": "CB.SC.U4AIE26031",
           "branch": "AIE",
@@ -5591,7 +5591,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MUDUNURI SIVA SAI MANI KAUSHIK VARMA",
+          "name": "Mudunuri Siva Sai Mani Kaushik Varma",
           "gender": "M",
           "roll": "CB.AI.U4AID26022",
           "branch": "AID",
@@ -5611,7 +5611,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "DEVARAKONDA GANGA BHAVANI",
+          "name": "Devarakonda Ganga Bhavani",
           "gender": "F",
           "roll": "CB.AI.U4AID26007",
           "branch": "AID",
@@ -5621,7 +5621,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ΤΕΤALILAKSHΜΙ ΑΝΑΝΥΑ",
+          "name": "Τετalilakshμι Ανανυα",
           "gender": "F",
           "roll": "CB.AI.U4AID26045",
           "branch": "AID",
@@ -5668,7 +5668,7 @@ const DATA = {
           "slot": "Leader",
           "name": "R Gagan Chowdary",
           "gender": "M",
-          "roll": "cb.ai.u4aid25145",
+          "roll": "CB.AI.U4AID25145",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 2,
@@ -5761,7 +5761,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ADHI ARUNASALAM A",
+          "name": "Adhi Arunasalam A",
           "gender": "M",
           "roll": "CB.SC.U4CYS25003",
           "branch": "CYS",
@@ -5771,7 +5771,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "P K PRANAV",
+          "name": "P K Pranav",
           "gender": "M",
           "roll": "CB.SC.U4CYS25037",
           "branch": "CYS",
@@ -5801,7 +5801,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "HARSHINI B",
+          "name": "Harshini B",
           "gender": "F",
           "roll": "CB.SC.U4CYS25023",
           "branch": "CYS",
@@ -5866,7 +5866,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sangamithra  C V",
+          "name": "Sangamithra C V",
           "gender": "F",
           "roll": "CB.AI.U4AIM25048",
           "branch": "AIM",
@@ -5907,7 +5907,7 @@ const DATA = {
     {
       "id": "35",
       "team": "Syntax",
-      "leader": "NIKIL J A",
+      "leader": "Nikil J A",
       "wa_raw": "7373400404",
       "wa_norm": "7373400404",
       "wa_issues": [],
@@ -5923,7 +5923,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "NIKIL J A",
+          "name": "Nikil J A",
           "gender": "M",
           "roll": "CB.SC.U4CSE26434",
           "branch": "CSE",
@@ -6192,7 +6192,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Thejaswi.S",
+          "name": "Thejaswi.s",
           "gender": "F",
           "roll": "CB.AI.U4AAR26057",
           "branch": "AAR",
@@ -6202,7 +6202,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Rithick.M",
+          "name": "Rithick.m",
           "gender": "M",
           "roll": "CB.AI.U4AAR26045",
           "branch": "AAR",
@@ -6212,7 +6212,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Likitth.S",
+          "name": "Likitth.s",
           "gender": "M",
           "roll": "CB.AI.U4AAR26031",
           "branch": "AAR",
@@ -6222,7 +6222,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Priyadharshini.S",
+          "name": "Priyadharshini.s",
           "gender": "F",
           "roll": "CB.AI.U4AAR26042",
           "branch": "AAR",
@@ -6423,7 +6423,7 @@ const DATA = {
     {
       "id": "41",
       "team": "Team syntax",
-      "leader": "Roahith p",
+      "leader": "Roahith P",
       "wa_raw": "9489003557",
       "wa_norm": "9489003557",
       "wa_issues": [],
@@ -6437,7 +6437,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Roahith p",
+          "name": "Roahith P",
           "gender": "M",
           "roll": "CB.EN.U4CCE26144",
           "branch": "CCE",
@@ -6552,7 +6552,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "V.Sachin",
+          "name": "V.sachin",
           "gender": "M",
           "roll": "CB.AI.U4QTS26051",
           "branch": "QTS",
@@ -6659,7 +6659,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Sudhiksha c",
+          "name": "Sudhiksha C",
           "gender": "F",
           "roll": "CB.EN.U4ECE24109",
           "branch": "ECE",
@@ -6680,7 +6680,7 @@ const DATA = {
     {
       "id": "44",
       "team": "ARSEN",
-      "leader": "SUJITHKANNAN M R",
+      "leader": "Sujithkannan M R",
       "wa_raw": "8825663534",
       "wa_norm": "8825663534",
       "wa_issues": [],
@@ -6696,7 +6696,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SUJITHKANNAN M R",
+          "name": "Sujithkannan M R",
           "gender": "M",
           "roll": "CB.EN.U4ARE24049",
           "branch": "ARE",
@@ -6706,7 +6706,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "JAISIVANI S",
+          "name": "Jaisivani S",
           "gender": "F",
           "roll": "CB.EN.U4ARE24014",
           "branch": "ARE",
@@ -6716,7 +6716,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "CHARU SRI R",
+          "name": "Charu Sri R",
           "gender": "F",
           "roll": "CB.EN.U4ARE24063",
           "branch": "ARE",
@@ -6726,7 +6726,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "THEJASHWINI K S",
+          "name": "Thejashwini K S",
           "gender": "F",
           "roll": "CB.EN.U4ARE24052",
           "branch": "ARE",
@@ -6736,7 +6736,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SRI KRISHNA P",
+          "name": "Sri Krishna P",
           "gender": "M",
           "roll": "CB.SC.U4AIE24054",
           "branch": "AIE",
@@ -6746,7 +6746,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "YUVANTHIIKAA G",
+          "name": "Yuvanthiikaa G",
           "gender": "F",
           "roll": "CB.EN.U4ARE24060",
           "branch": "ARE",
@@ -6831,7 +6831,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "ROHIT DHANYAA K",
+          "name": "Rohit Dhanyaa K",
           "gender": "M",
           "roll": "CB.EN.U4EEE26131",
           "branch": "EEE",
@@ -7024,7 +7024,7 @@ const DATA = {
     {
       "id": "48",
       "team": "F0rg3d",
-      "leader": "Haranya R.N",
+      "leader": "Haranya R.n",
       "wa_raw": "9500367419",
       "wa_norm": "9500367419",
       "wa_issues": [],
@@ -7038,7 +7038,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Haranya R.N",
+          "name": "Haranya R.n",
           "gender": "F",
           "roll": "CB.EN.U4ECE25122",
           "branch": "ECE",
@@ -7109,7 +7109,7 @@ const DATA = {
     {
       "id": "49",
       "team": "NEXUS SIX",
-      "leader": "HARISH G",
+      "leader": "Harish G",
       "wa_raw": "9360991945",
       "wa_norm": "9360991945",
       "wa_issues": [],
@@ -7123,7 +7123,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "HARISH G",
+          "name": "Harish G",
           "gender": "M",
           "roll": "CB.EN.U4CCE26125",
           "branch": "CCE",
@@ -7143,7 +7143,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SANJANA G",
+          "name": "Sanjana G",
           "gender": "F",
           "roll": "CB.EN.U4ARE26056",
           "branch": "ARE",
@@ -7155,7 +7155,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Mukesh",
           "gender": "M",
-          "roll": "Cb.ai.u4aid26131",
+          "roll": "CB.AI.U4AID26131",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 1,
@@ -7165,7 +7165,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Varun",
           "gender": "M",
-          "roll": "Cb.ai.u4aid26127",
+          "roll": "CB.AI.U4AID26127",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 1,
@@ -7388,7 +7388,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Kishor kumar U",
+          "name": "Kishor Kumar U",
           "gender": "M",
           "roll": "CB.EN.U4ARE24019",
           "branch": "ARE",
@@ -7643,7 +7643,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "JAISHIVRAJ B S",
+          "name": "Jaishivraj B S",
           "gender": "M",
           "roll": "CB.AI.U4AID26014",
           "branch": "AID",
@@ -7653,7 +7653,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "DUPPALA TARUN SAI SIDDHARTH",
+          "name": "Duppala Tarun Sai Siddharth",
           "gender": "M",
           "roll": "CB.EN.U4ELC26061",
           "branch": "ELC",
@@ -7673,7 +7673,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "LARANYAH M",
+          "name": "Laranyah M",
           "gender": "F",
           "roll": "CB.AI.U4AID26079",
           "branch": "AID",
@@ -7683,7 +7683,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "DHARSANA P R",
+          "name": "Dharsana P R",
           "gender": "F",
           "roll": "CB.EN.U4ELC26013",
           "branch": "ELC",
@@ -7878,7 +7878,7 @@ const DATA = {
     {
       "id": "58",
       "team": "Vanguard",
-      "leader": "Ashwin.G",
+      "leader": "Ashwin.g",
       "wa_raw": "9282130456",
       "wa_norm": "9282130456",
       "wa_issues": [],
@@ -7892,7 +7892,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Ashwin.G",
+          "name": "Ashwin.g",
           "gender": "M",
           "roll": "CB.AI.U4CPS26007",
           "branch": "CPS",
@@ -7902,7 +7902,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Jencii.S",
+          "name": "Jencii.s",
           "gender": "F",
           "roll": "CB.EN.U4ELC26020",
           "branch": "ELC",
@@ -7932,7 +7932,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Pranav.U",
+          "name": "Pranav.u",
           "gender": "M",
           "roll": "CB.EN.U4ELC26036",
           "branch": "ELC",
@@ -7942,7 +7942,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Srijan.G.S",
+          "name": "Srijan.g.s",
           "gender": "M",
           "roll": "CB.AI.U4AAR26053",
           "branch": "AAR",
@@ -8102,7 +8102,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Tanay darshan V",
+          "name": "Tanay Darshan V",
           "gender": "M",
           "roll": "CB.AI.U4AID24059",
           "branch": "AID",
@@ -8133,7 +8133,7 @@ const DATA = {
     {
       "id": "61",
       "team": "RepublicOfCode",
-      "leader": "KALWAKOL ABHIJITH",
+      "leader": "Kalwakol Abhijith",
       "wa_raw": "8919721319",
       "wa_norm": "8919721319",
       "wa_issues": [],
@@ -8147,7 +8147,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KALWAKOL ABHIJITH",
+          "name": "Kalwakol Abhijith",
           "gender": "M",
           "roll": "CB.SC.U4CYS25027",
           "branch": "CYS",
@@ -8167,7 +8167,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Dulipudi Yashwanth kumar",
+          "name": "Dulipudi Yashwanth Kumar",
           "gender": "M",
           "roll": "CB.SC.U4CYS25017",
           "branch": "CYS",
@@ -8530,7 +8530,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Shree sowbika S Y",
+          "name": "Shree Sowbika S Y",
           "gender": "F",
           "roll": "CB.AI.U4AID24053",
           "branch": "AID",
@@ -8577,7 +8577,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Akshithaa UD",
           "gender": "F",
-          "roll": "cb.ai.u4qts26004",
+          "roll": "CB.AI.U4QTS26004",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8585,9 +8585,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "J R KANISHKA",
+          "name": "J R Kanishka",
           "gender": "F",
-          "roll": "cb.ai.u4qts26021",
+          "roll": "CB.AI.U4QTS26021",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8595,9 +8595,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "K MOHITH REDDY",
+          "name": "K Mohith Reddy",
           "gender": "M",
-          "roll": "cb.ai.u4qts26024",
+          "roll": "CB.AI.U4QTS26024",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8605,9 +8605,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SK RAYYAN VALI",
+          "name": "SK Rayyan Vali",
           "gender": "M",
-          "roll": "cb.ai.u4qts26066",
+          "roll": "CB.AI.U4QTS26066",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8615,9 +8615,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "PRAGADEESH ABINANDH A",
+          "name": "Pragadeesh Abinandh A",
           "gender": "M",
-          "roll": "cb.ai.u4qts26037",
+          "roll": "CB.AI.U4QTS26037",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8627,7 +8627,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "S Sanjay",
           "gender": "M",
-          "roll": "cb.ai.u4qts26043",
+          "roll": "CB.AI.U4QTS26043",
           "branch": "QTS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -8682,7 +8682,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "A.Mokshitha Reddy",
+          "name": "A.mokshitha Reddy",
           "gender": "F",
           "roll": "CB.SC.U4CSE26301",
           "branch": "CSE",
@@ -8733,7 +8733,7 @@ const DATA = {
     {
       "id": "68",
       "team": "Undefined",
-      "leader": "Vishal viswanath",
+      "leader": "Vishal Viswanath",
       "wa_raw": "6374936215",
       "wa_norm": "6374936215",
       "wa_issues": [],
@@ -8747,7 +8747,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Vishal viswanath",
+          "name": "Vishal Viswanath",
           "gender": "M",
           "roll": "CB.SC.U4CSE26067",
           "branch": "CSE",
@@ -9075,7 +9075,7 @@ const DATA = {
     {
       "id": "72",
       "team": "Syntax who?",
-      "leader": "T S ABHIJITH",
+      "leader": "T S Abhijith",
       "wa_raw": "9361774980",
       "wa_norm": "9361774980",
       "wa_issues": [],
@@ -9092,7 +9092,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "T S ABHIJITH",
+          "name": "T S Abhijith",
           "gender": "M",
           "roll": "CB.SC.U4CYS26059",
           "branch": "CYS",
@@ -9102,7 +9102,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ASVIKA PRANAVIKA",
+          "name": "Asvika Pranavika",
           "gender": "F",
           "roll": "CB.SC.U4CYS26009",
           "branch": "CYS",
@@ -9112,7 +9112,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ARUN N",
+          "name": "Arun N",
           "gender": "M",
           "roll": "CB.SC.U4CYS260102",
           "branch": "CYS",
@@ -9122,7 +9122,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "YASHASWINI P",
+          "name": "Yashaswini P",
           "gender": "F",
           "roll": "CB.SC.U4CYS26167",
           "branch": "CYS",
@@ -9132,7 +9132,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "DEEKSHA G",
+          "name": "Deeksha G",
           "gender": "F",
           "roll": "CB.SC.U4260109",
           "branch": null,
@@ -9142,7 +9142,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "KAASNI KARTHICK",
+          "name": "Kaasni Karthick",
           "gender": "F",
           "roll": "CB.SC.U4CYS26020",
           "branch": "CYS",
@@ -9163,7 +9163,7 @@ const DATA = {
     {
       "id": "73",
       "team": "Nexora",
-      "leader": "Nirlep  Boddupally",
+      "leader": "Nirlep Boddupally",
       "wa_raw": "70934 08976",
       "wa_norm": "7093408976",
       "wa_issues": [],
@@ -9181,7 +9181,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Nirlep  Boddupally",
+          "name": "Nirlep Boddupally",
           "gender": "M",
           "roll": "CB.SC.U4CSE25613",
           "branch": "CSE",
@@ -9191,7 +9191,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "cheruvu sri venkata sai kailash",
+          "name": "Cheruvu Sri Venkata Sai Kailash",
           "gender": "M",
           "roll": "CB.SC.U4CSE25515",
           "branch": "CSE",
@@ -9201,7 +9201,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ELLEN JAMES",
+          "name": "Ellen James",
           "gender": "F",
           "roll": "CB.SC.U4CSE25618",
           "branch": "CSE",
@@ -9221,7 +9221,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Sai harshitha.k",
+          "name": "Sai Harshitha.k",
           "gender": "F",
           "roll": "CB.SC.U4CSE25351",
           "branch": "CSE",
@@ -9280,7 +9280,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Augustine P S",
           "gender": "M",
-          "roll": "cb.sc.u4cse26307",
+          "roll": "CB.SC.U4CSE26307",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -9290,7 +9290,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Eshaan Parihariya",
           "gender": "M",
-          "roll": "cb.sc.u4cse26021",
+          "roll": "CB.SC.U4CSE26021",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -9298,9 +9298,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Santosh charan doradla",
+          "name": "Santosh Charan Doradla",
           "gender": "M",
-          "roll": "cb.sc.u4cse26513",
+          "roll": "CB.SC.U4CSE26513",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -9310,7 +9310,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Sushil V",
           "gender": "M",
-          "roll": "cb.en.u4ece26059",
+          "roll": "CB.EN.U4ECE26059",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -9365,7 +9365,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Rupa kandula",
+          "name": "Rupa Kandula",
           "gender": "F",
           "roll": "CB.SC.U4AIE24122",
           "branch": "AIE",
@@ -9385,7 +9385,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sahaana Shri S.K",
+          "name": "Sahaana Shri S.k",
           "gender": "F",
           "roll": "CB.SC.U4AIE24149",
           "branch": "AIE",
@@ -9395,7 +9395,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Sriram krishna",
+          "name": "Sriram Krishna",
           "gender": "M",
           "roll": "CB.SC.U4AIE24127",
           "branch": "AIE",
@@ -9405,7 +9405,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Yogesh jk",
+          "name": "Yogesh Jk",
           "gender": "M",
           "roll": "CB.SC.U4AIE24161",
           "branch": "AIE",
@@ -9426,7 +9426,7 @@ const DATA = {
     {
       "id": "76",
       "team": "Enthusiasts",
-      "leader": "Sri Dhiksha.M",
+      "leader": "Sri Dhiksha.m",
       "wa_raw": "9845687976",
       "wa_norm": "9845687976",
       "wa_issues": [],
@@ -9440,7 +9440,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sri Dhiksha.M",
+          "name": "Sri Dhiksha.m",
           "gender": "F",
           "roll": "CB.SC.U4CYS26055",
           "branch": "CYS",
@@ -9450,7 +9450,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Naga Anmisha.Kodambakkam",
+          "name": "Naga Anmisha.kodambakkam",
           "gender": "F",
           "roll": "CB.AI.U4QTS26026",
           "branch": "QTS",
@@ -9460,7 +9460,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Hema Varsha.M",
+          "name": "Hema Varsha.m",
           "gender": "F",
           "roll": "CB.AI.U4QTS26020",
           "branch": "QTS",
@@ -9470,7 +9470,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "B.Hosni",
+          "name": "B.hosni",
           "gender": "F",
           "roll": "CB.SC.U4CYS26073",
           "branch": "CYS",
@@ -9480,7 +9480,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Lakshanya Izhan Seliyan.I",
+          "name": "Lakshanya Izhan Seliyan.i",
           "gender": "F",
           "roll": "CB.AI.U4QTS26029",
           "branch": "QTS",
@@ -9632,7 +9632,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SHREE NIVASHINI K",
+          "name": "Shree Nivashini K",
           "gender": "F",
           "roll": "CB.EN.U4ECE25019",
           "branch": "ECE",
@@ -9642,7 +9642,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "N M PRAGADEESH",
+          "name": "N M Pragadeesh",
           "gender": "M",
           "roll": "CB.EN.U4MEE25023",
           "branch": "MEE",
@@ -9652,7 +9652,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "EDARA RITU REDDY",
+          "name": "Edara Ritu Reddy",
           "gender": "F",
           "roll": "CB.EN.U4ECE25011",
           "branch": "ECE",
@@ -10028,7 +10028,7 @@ const DATA = {
     {
       "id": "83",
       "team": "Quantum Codex",
-      "leader": "ASWATH G",
+      "leader": "Aswath G",
       "wa_raw": "8056196024",
       "wa_norm": "8056196024",
       "wa_issues": [],
@@ -10042,7 +10042,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ASWATH G",
+          "name": "Aswath G",
           "gender": "M",
           "roll": "CB.SC.U4CSE26206",
           "branch": "CSE",
@@ -10052,7 +10052,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RAGHUNATHAN. B K",
+          "name": "Raghunathan. B K",
           "gender": "M",
           "roll": "CB.SC.U4CSE26240",
           "branch": "CSE",
@@ -10062,7 +10062,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "B RISHI",
+          "name": "B Rishi",
           "gender": "M",
           "roll": "CB.SC.U4CSE26208",
           "branch": "CSE",
@@ -10072,7 +10072,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "N PRABHAS REDDY",
+          "name": "N Prabhas Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CSE26230",
           "branch": "CSE",
@@ -10082,7 +10082,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "PRIYADHARANI A",
+          "name": "Priyadharani A",
           "gender": "F",
           "roll": "CB.SC.U4CSE26235",
           "branch": "CSE",
@@ -10092,7 +10092,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MEHA MAHESH",
+          "name": "Meha Mahesh",
           "gender": "F",
           "roll": "CB.SC.U4CSE26227",
           "branch": "CSE",
@@ -10285,7 +10285,7 @@ const DATA = {
     {
       "id": "86",
       "team": "APEX WOLVES",
-      "leader": "VINAY VG",
+      "leader": "Vinay VG",
       "wa_raw": "9345862760*",
       "wa_norm": "9345862760",
       "wa_issues": [],
@@ -10299,7 +10299,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "VINAY VG",
+          "name": "Vinay VG",
           "gender": "M",
           "roll": "CB.EN.U4ECE26356",
           "branch": "ECE",
@@ -10609,7 +10609,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Haridasu Bala sri siva sai surya tej",
+          "name": "Haridasu Bala Sri Siva Sai Surya Tej",
           "gender": "M",
           "roll": "CB.AI.U4AID25017",
           "branch": "AID",
@@ -10646,7 +10646,7 @@ const DATA = {
           "slot": "Leader",
           "name": "S Vinay Siddharth",
           "gender": "M",
-          "roll": "Cb.en.u4ece26341",
+          "roll": "CB.EN.U4ECE26341",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -10666,7 +10666,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "S Shaashwath",
           "gender": "M",
-          "roll": "Cb.en.u4ece26347",
+          "roll": "CB.EN.U4ECE26347",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -10674,9 +10674,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Gayatri girish",
+          "name": "Gayatri Girish",
           "gender": "F",
-          "roll": "Cb.en.u4ece26314",
+          "roll": "CB.EN.U4ECE26314",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -10686,7 +10686,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Dharaneesh Vel",
           "gender": "M",
-          "roll": "Cb.en.u4ece26312",
+          "roll": "CB.EN.U4ECE26312",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -10694,9 +10694,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Aruhi bourasui",
+          "name": "Aruhi Bourasui",
           "gender": "F",
-          "roll": "Cb.en.u4ece26307",
+          "roll": "CB.EN.U4ECE26307",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -11018,7 +11018,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Nageswar.P",
+          "name": "Nageswar.p",
           "gender": "M",
           "roll": "CB.SC.U4AIE26040",
           "branch": "AIE",
@@ -11038,7 +11038,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MithunJai",
+          "name": "Mithunjai",
           "gender": "M",
           "roll": "CB.SC.U4AIE26141",
           "branch": "AIE",
@@ -11316,7 +11316,7 @@ const DATA = {
     {
       "id": "98",
       "team": "EIDOS",
-      "leader": "AYSHA RUMANA M",
+      "leader": "Aysha Rumana M",
       "wa_raw": "+91 76039 25015",
       "wa_norm": "7603925015",
       "wa_issues": [
@@ -11335,7 +11335,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "AYSHA RUMANA M",
+          "name": "Aysha Rumana M",
           "gender": "F",
           "roll": "CB.EN.U4CHE26105",
           "branch": "CHE",
@@ -11345,7 +11345,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "DHARSHAN VINOTH KANNAN",
+          "name": "Dharshan Vinoth Kannan",
           "gender": "M",
           "roll": "CB.EN.U4CHE26107",
           "branch": "CHE",
@@ -11355,7 +11355,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SAI SUJATA VAISHNAVI VELURI",
+          "name": "Sai Sujata Vaishnavi Veluri",
           "gender": "F",
           "roll": "CB.EN.U4CHE26138",
           "branch": "CHE",
@@ -11365,7 +11365,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NITHIN KRISHNA S",
+          "name": "Nithin Krishna S",
           "gender": "M",
           "roll": "CB.EN.U4CHE26123",
           "branch": "CHE",
@@ -11375,7 +11375,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SHRINIDHI KANNAN",
+          "name": "Shrinidhi Kannan",
           "gender": "F",
           "roll": "CB.EN.U4CHE26141",
           "branch": "CHE",
@@ -11385,7 +11385,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "ALVIN ANI KURIAKOSE",
+          "name": "Alvin Ani Kuriakose",
           "gender": "M",
           "roll": "CB.EN.U4CHE26103",
           "branch": "CHE",
@@ -11406,7 +11406,7 @@ const DATA = {
     {
       "id": "99",
       "team": "INFIX",
-      "leader": "Shagarika p",
+      "leader": "Shagarika P",
       "wa_raw": "8248455894",
       "wa_norm": "8248455894",
       "wa_issues": [],
@@ -11422,9 +11422,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Shagarika p",
+          "name": "Shagarika P",
           "gender": "F",
-          "roll": "cb.en.u4cce26135",
+          "roll": "CB.EN.U4CCE26135",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -11432,7 +11432,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "vaisanth raghav.M",
+          "name": "Vaisanth Raghav.m",
           "gender": "M",
           "roll": "CB.EN.U4ECE26324",
           "branch": "ECE",
@@ -11442,7 +11442,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Saran kumar.S",
+          "name": "Saran Kumar.s",
           "gender": "M",
           "roll": "CB.EN.U4ECE26345",
           "branch": "ECE",
@@ -11452,7 +11452,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Pooja.S",
+          "name": "Pooja.s",
           "gender": "F",
           "roll": "CB.EN.U4CCE26137",
           "branch": "CCE",
@@ -11462,7 +11462,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Lekhashree.R",
+          "name": "Lekhashree.r",
           "gender": "F",
           "roll": "CB.EN.U4CCE26139",
           "branch": "CCE",
@@ -11472,7 +11472,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Niranjan.S",
+          "name": "Niranjan.s",
           "gender": "M",
           "roll": "CB.EN.U4ECE26037",
           "branch": "ECE",
@@ -11645,7 +11645,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Aakarsh.J",
+          "name": "Aakarsh.j",
           "gender": "M",
           "roll": "CB.AI.U4AAR26002",
           "branch": "AAR",
@@ -11753,7 +11753,7 @@ const DATA = {
     {
       "id": "103",
       "team": "TExperts",
-      "leader": "BAVAN VIJAYA RAJA M K",
+      "leader": "Bavan Vijaya Raja M K",
       "wa_raw": "8428421937",
       "wa_norm": "8428421937",
       "wa_issues": [],
@@ -11769,7 +11769,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "BAVAN VIJAYA RAJA M K",
+          "name": "Bavan Vijaya Raja M K",
           "gender": "M",
           "roll": "CB.EN.U4CCE25107",
           "branch": "CCE",
@@ -11864,7 +11864,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "PRAKALYA D",
+          "name": "Prakalya D",
           "gender": "F",
           "roll": "CB.AI.U4CPS26038",
           "branch": "CPS",
@@ -11874,7 +11874,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "AAYUSH SAHOO",
+          "name": "Aayush Sahoo",
           "gender": "M",
           "roll": "CB.AI.U4CPS26002",
           "branch": "CPS",
@@ -11884,7 +11884,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MOHAMED AKRAM",
+          "name": "Mohamed Akram",
           "gender": "M",
           "roll": "CB.AI.U4CPS26074",
           "branch": "CPS",
@@ -11894,7 +11894,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "MADHAV MANOHAR",
+          "name": "Madhav Manohar",
           "gender": "M",
           "roll": "CB.AI.U4CPS26031",
           "branch": "CPS",
@@ -11904,7 +11904,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MADDELA VISWATEJA",
+          "name": "Maddela Viswateja",
           "gender": "M",
           "roll": "CB.AI.U4CPS26028",
           "branch": "CPS",
@@ -11961,7 +11961,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Abhinivesh.P",
+          "name": "Abhinivesh.p",
           "gender": "M",
           "roll": "CB.EN.U4CIE26001",
           "branch": "CIE",
@@ -11981,7 +11981,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Shreya .S",
+          "name": "Shreya .s",
           "gender": "F",
           "roll": "CB.EN.U4CIE26060",
           "branch": "CIE",
@@ -11991,7 +11991,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Nekaasri P.M.",
+          "name": "Nekaasri P.m.",
           "gender": "F",
           "roll": "CB.EN.U4CIE26042",
           "branch": "CIE",
@@ -12097,7 +12097,7 @@ const DATA = {
     {
       "id": "107",
       "team": "VisionX",
-      "leader": "GUHAN V",
+      "leader": "Guhan V",
       "wa_raw": "9342207034",
       "wa_norm": "9342207034",
       "wa_issues": [],
@@ -12111,7 +12111,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "GUHAN V",
+          "name": "Guhan V",
           "gender": "M",
           "roll": "CB.SC.U4CSE25214",
           "branch": "CSE",
@@ -12121,7 +12121,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "PRANIGA R",
+          "name": "Praniga R",
           "gender": "F",
           "roll": "CB.SC.U4CSE25237",
           "branch": "CSE",
@@ -12131,7 +12131,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NARESH S K",
+          "name": "Naresh S K",
           "gender": "M",
           "roll": "CB.SC.U4CSE25230",
           "branch": "CSE",
@@ -12141,7 +12141,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "S JISHNU",
+          "name": "S Jishnu",
           "gender": "M",
           "roll": "CB.SC.U4CSE25240",
           "branch": "CSE",
@@ -12151,7 +12151,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "AKHILAN M J",
+          "name": "Akhilan M J",
           "gender": "M",
           "roll": "CB.SC.U4CSE25202",
           "branch": "CSE",
@@ -12161,7 +12161,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "BHAVATHARANI S",
+          "name": "Bhavatharani S",
           "gender": "F",
           "roll": "CB.SC.U4CSE25207",
           "branch": "CSE",
@@ -12182,7 +12182,7 @@ const DATA = {
     {
       "id": "108",
       "team": "DE~PULGA",
-      "leader": "SOBHITH SANKAR",
+      "leader": "Sobhith Sankar",
       "wa_raw": "8129925738",
       "wa_norm": "8129925738",
       "wa_issues": [],
@@ -12196,7 +12196,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SOBHITH SANKAR",
+          "name": "Sobhith Sankar",
           "gender": "M",
           "roll": "CB.SC.U4CSE25156",
           "branch": "CSE",
@@ -12206,7 +12206,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "AADI U.R",
+          "name": "Aadi U.r",
           "gender": "M",
           "roll": "CB.SC.U4CSE25102",
           "branch": "CSE",
@@ -12216,7 +12216,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SHARRU SHIVAANI S",
+          "name": "Sharru Shivaani S",
           "gender": "F",
           "roll": "CB.EN.U4CCE25048",
           "branch": "CCE",
@@ -12226,7 +12226,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MALAVIKA M MENON",
+          "name": "Malavika M Menon",
           "gender": "F",
           "roll": "CB.EN.U4ECE25026",
           "branch": "ECE",
@@ -12236,7 +12236,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "KARTHIK M",
+          "name": "Karthik M",
           "gender": "M",
           "roll": "CB,SC,U4CSE25127",
           "branch": "CSE",
@@ -12246,7 +12246,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "GOKUL B NAIR",
+          "name": "Gokul B Nair",
           "gender": "M",
           "roll": "CB.SC.U4CSE25320",
           "branch": "CSE",
@@ -12267,7 +12267,7 @@ const DATA = {
     {
       "id": "109",
       "team": "ZENITH",
-      "leader": "SARUMATHI R N",
+      "leader": "Sarumathi R N",
       "wa_raw": "9943028469",
       "wa_norm": "9943028469",
       "wa_issues": [],
@@ -12281,7 +12281,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SARUMATHI R N",
+          "name": "Sarumathi R N",
           "gender": "F",
           "roll": "CB.SC.U4CSE26754",
           "branch": "CSE",
@@ -12291,7 +12291,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "SABITHA J",
+          "name": "Sabitha J",
           "gender": "F",
           "roll": "CB.SC.U4CSE26749",
           "branch": "CSE",
@@ -12301,7 +12301,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "KAVYA NAGAVARDINI N",
+          "name": "Kavya Nagavardini N",
           "gender": "F",
           "roll": "CB.SC.U4CSE26736",
           "branch": "CSE",
@@ -12311,7 +12311,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SAHITHYA S",
+          "name": "Sahithya S",
           "gender": "F",
           "roll": "CB.SC.U4CSE26747",
           "branch": "CSE",
@@ -12321,7 +12321,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "KRISHNA MANOJ JADHAO",
+          "name": "Krishna Manoj Jadhao",
           "gender": "M",
           "roll": "CB.SC.U4CSE26728",
           "branch": "CSE",
@@ -12331,7 +12331,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MAKEKENA CHERISH",
+          "name": "Makekena Cherish",
           "gender": "M",
           "roll": "CB.SC.U4CSE26226",
           "branch": "CSE",
@@ -12463,7 +12463,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Shabarish",
           "gender": "M",
-          "roll": "Cb.sc.u4cys25161",
+          "roll": "CB.SC.U4CYS25161",
           "branch": "CYS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -12473,7 +12473,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "M Faheem",
           "gender": "M",
-          "roll": "Cb.sc.u4cys25033",
+          "roll": "CB.SC.U4CYS25033",
           "branch": "CYS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -12503,7 +12503,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Sakthi Sudhan",
           "gender": "M",
-          "roll": "Cb.sc.u4cse25764",
+          "roll": "CB.SC.U4CSE25764",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -12607,7 +12607,7 @@ const DATA = {
     {
       "id": "113",
       "team": "CTRL+ALT+CREATE",
-      "leader": "AKASHH RAMESH CHANDAR",
+      "leader": "Akashh Ramesh Chandar",
       "wa_raw": "6383464128",
       "wa_norm": "6383464128",
       "wa_issues": [],
@@ -12621,7 +12621,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "AKASHH RAMESH CHANDAR",
+          "name": "Akashh Ramesh Chandar",
           "gender": "M",
           "roll": "CB.EN.U4ECE25204",
           "branch": "ECE",
@@ -12651,7 +12651,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "JAGAN N G",
+          "name": "Jagan N G",
           "gender": "M",
           "roll": "CB.EN.U4ECE25133",
           "branch": "ECE",
@@ -12692,7 +12692,7 @@ const DATA = {
     {
       "id": "114",
       "team": "AURA [Amrita University Rocketry Association]",
-      "leader": "V VISHVANTH RAM",
+      "leader": "V Vishvanth Ram",
       "wa_raw": "9385919142",
       "wa_norm": "9385919142",
       "wa_issues": [],
@@ -12706,7 +12706,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "V VISHVANTH RAM",
+          "name": "V Vishvanth Ram",
           "gender": "M",
           "roll": "CB.EN.U4AEE26062",
           "branch": "AEE",
@@ -12736,7 +12736,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "DHILIB S M",
+          "name": "Dhilib S M",
           "gender": "M",
           "roll": "CB.EN.U4AEE26009",
           "branch": "AEE",
@@ -12756,7 +12756,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SUDEESHKUMAR U",
+          "name": "Sudeeshkumar U",
           "gender": "M",
           "roll": "CB.EN.U4AEE26054",
           "branch": "AEE",
@@ -12777,7 +12777,7 @@ const DATA = {
     {
       "id": "115",
       "team": "Game of Codes",
-      "leader": "Ch.Sai Varun",
+      "leader": "Ch.sai Varun",
       "wa_raw": "8919791246",
       "wa_norm": "8919791246",
       "wa_issues": [],
@@ -12791,7 +12791,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Ch.Sai Varun",
+          "name": "Ch.sai Varun",
           "gender": "M",
           "roll": "CB.SC.U4CSE25514",
           "branch": "CSE",
@@ -12801,7 +12801,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "M.Hemachandra",
+          "name": "M.hemachandra",
           "gender": "M",
           "roll": "CB.SC.U4CSE25032",
           "branch": "CSE",
@@ -12811,7 +12811,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "N.Srujitha",
+          "name": "N.srujitha",
           "gender": "F",
           "roll": "CB.SC.U4CSE25039",
           "branch": "CSE",
@@ -12831,7 +12831,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "IN.Vanshika",
+          "name": "In.vanshika",
           "gender": "F",
           "roll": "CB.SC.U4CSE25626",
           "branch": "CSE",
@@ -12841,7 +12841,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "BS.Radhakrishnan",
+          "name": "Bs.radhakrishnan",
           "gender": "M",
           "roll": "CB.SC.U4CSE25013",
           "branch": "CSE",
@@ -12902,7 +12902,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Sririthika.L",
+          "name": "Sririthika.l",
           "gender": "F",
           "roll": "CB.SC.U4CSE26559",
           "branch": "CSE",
@@ -12971,7 +12971,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Krishnamohan Ambaty",
           "gender": "M",
-          "roll": "Cb.ai.u4cps25001",
+          "roll": "CB.AI.U4CPS25001",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -12981,7 +12981,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Kashish Mehra",
           "gender": "F",
-          "roll": "Cb.ai.u4aar25023",
+          "roll": "CB.AI.U4AAR25023",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -12991,7 +12991,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Gadde Ajith Chowdari",
           "gender": "M",
-          "roll": "Cb.ai.u4aar25015",
+          "roll": "CB.AI.U4AAR25015",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -13001,7 +13001,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Anjali M",
           "gender": "F",
-          "roll": "Cb.ai.u4aar25006",
+          "roll": "CB.AI.U4AAR25006",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -13011,7 +13011,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Shreya S Nair",
           "gender": "F",
-          "roll": "Cb.ai.u4aar25049",
+          "roll": "CB.AI.U4AAR25049",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -13021,7 +13021,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Arunitha Sudev",
           "gender": "F",
-          "roll": "Cb.ai.u4aar25007",
+          "roll": "CB.AI.U4AAR25007",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -13146,7 +13146,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Nirupama Mahesh",
           "gender": "F",
-          "roll": "cb.en.u4che26122",
+          "roll": "CB.EN.U4CHE26122",
           "branch": "CHE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13156,7 +13156,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Janastuthy V",
           "gender": "F",
-          "roll": "cb.en.u4che26021",
+          "roll": "CB.EN.U4CHE26021",
           "branch": "CHE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13166,7 +13166,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Gayatri Krishnan",
           "gender": "F",
-          "roll": "cb.en.u4che26019",
+          "roll": "CB.EN.U4CHE26019",
           "branch": "CHE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13176,7 +13176,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "G Niveditha Rajmohan",
           "gender": "F",
-          "roll": "cb.en.u4che26016",
+          "roll": "CB.EN.U4CHE26016",
           "branch": "CHE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13186,7 +13186,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Vani Sreeram",
           "gender": "F",
-          "roll": "cb.en.u4eee261444",
+          "roll": "CB.EN.U4EEE261444",
           "branch": "EEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13196,7 +13196,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Haripriya Harish",
           "gender": "F",
-          "roll": "cb.en.u4che26109",
+          "roll": "CB.EN.U4CHE26109",
           "branch": "CHE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -13259,7 +13259,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "AMITH K S",
+          "name": "Amith K S",
           "gender": "M",
           "roll": "CB.SC.U4CYS24106",
           "branch": "CYS",
@@ -13669,7 +13669,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "S GANESH SAI RAJ",
+          "name": "S Ganesh Sai Raj",
           "gender": "M",
           "roll": "CB.SC.U4AIE26055",
           "branch": "AIE",
@@ -13679,7 +13679,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "DEVADHARSHAN R S",
+          "name": "Devadharshan R S",
           "gender": "M",
           "roll": "CB.EN.U4ELC26110",
           "branch": "ELC",
@@ -13689,7 +13689,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MOWLIYA S",
+          "name": "Mowliya S",
           "gender": "M",
           "roll": "CB.AI.U4AID26021",
           "branch": "AID",
@@ -13815,7 +13815,7 @@ const DATA = {
     {
       "id": "127",
       "team": "JARVIX",
-      "leader": "Lalith sudharsan M M",
+      "leader": "Lalith Sudharsan M M",
       "wa_raw": "9360407609",
       "wa_norm": "9360407609",
       "wa_issues": [],
@@ -13831,7 +13831,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Lalith sudharsan M M",
+          "name": "Lalith Sudharsan M M",
           "gender": "M",
           "roll": "CB.AI.U4AAR26029",
           "branch": "AAR",
@@ -13841,7 +13841,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Talluri charan Vignesh",
+          "name": "Talluri Charan Vignesh",
           "gender": "M",
           "roll": "CB.AI.U4AAR26056",
           "branch": "AAR",
@@ -13881,7 +13881,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Devalla havisha",
+          "name": "Devalla Havisha",
           "gender": "F",
           "roll": "CB.AI.U4AAR26017",
           "branch": "AAR",
@@ -13966,7 +13966,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Shabharish .J.M",
+          "name": "Shabharish .j.m",
           "gender": "M",
           "roll": "CB.SC.U4CYS26156",
           "branch": "CYS",
@@ -13987,7 +13987,7 @@ const DATA = {
     {
       "id": "129",
       "team": "BRAVITS",
-      "leader": "SANJAY S M",
+      "leader": "Sanjay S M",
       "wa_raw": "8870555969",
       "wa_norm": "8870555969",
       "wa_issues": [],
@@ -14001,7 +14001,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SANJAY S M",
+          "name": "Sanjay S M",
           "gender": "M",
           "roll": "CB.AI.U4QTS25038",
           "branch": "QTS",
@@ -14011,7 +14011,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "THANUSHREE S",
+          "name": "Thanushree S",
           "gender": "F",
           "roll": "CB.AI.U4QTS25044",
           "branch": "QTS",
@@ -14021,7 +14021,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SATHYA K",
+          "name": "Sathya K",
           "gender": "F",
           "roll": "CB.SC.U4AIE25154",
           "branch": "AIE",
@@ -14031,7 +14031,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "RAGUL PONRAJ",
+          "name": "Ragul Ponraj",
           "gender": "M",
           "roll": "CB.AI.U4AAR25040",
           "branch": "AAR",
@@ -14041,7 +14041,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "BAVISH NITHIN R",
+          "name": "Bavish Nithin R",
           "gender": "M",
           "roll": "CB.AI.U4AAR25010",
           "branch": "AAR",
@@ -14051,7 +14051,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S SRIVIKASH",
+          "name": "S Srivikash",
           "gender": "M",
           "roll": "CB.AI.U4AAR25044",
           "branch": "AAR",
@@ -14138,7 +14138,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Varshini.V.R",
+          "name": "Varshini.v.r",
           "gender": "F",
           "roll": "CB.PS.I5DAS26054",
           "branch": "DAS",
@@ -14274,7 +14274,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "P.Rupesh",
+          "name": "P.rupesh",
           "gender": "M",
           "roll": "CB.SC.U4CSE26742",
           "branch": "CSE",
@@ -14284,7 +14284,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "P.Bhaskar krishna murthy",
+          "name": "P.bhaskar Krishna Murthy",
           "gender": "M",
           "roll": "CB.SC.U4CSE26541",
           "branch": "CSE",
@@ -14294,7 +14294,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "P.Jishnu",
+          "name": "P.jishnu",
           "gender": "M",
           "roll": "CB.SC.U4CSE26646",
           "branch": "CSE",
@@ -14304,7 +14304,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "M.Akshay Kumar Reddy",
+          "name": "M.akshay Kumar Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CSE26526",
           "branch": "CSE",
@@ -14314,7 +14314,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S.Lakshita",
+          "name": "S.lakshita",
           "gender": "F",
           "roll": "CB.EN.U4ECE26243",
           "branch": "ECE",
@@ -14592,7 +14592,7 @@ const DATA = {
     {
       "id": "136",
       "team": "FAST AND CURIOUS",
-      "leader": "NITHIN KARTHIK SONAI",
+      "leader": "Nithin Karthik Sonai",
       "wa_raw": "7540092035",
       "wa_norm": "7540092035",
       "wa_issues": [],
@@ -14608,7 +14608,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "NITHIN KARTHIK SONAI",
+          "name": "Nithin Karthik Sonai",
           "gender": "M",
           "roll": "CB.EN.U4CIE26044",
           "branch": "CIE",
@@ -14618,7 +14618,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "R. SAKTHIVEL",
+          "name": "R. Sakthivel",
           "gender": "M",
           "roll": "CB.EN.U4CIE26051",
           "branch": "CIE",
@@ -14628,7 +14628,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "A.NITHISH KUMAR",
+          "name": "A.nithish Kumar",
           "gender": "M",
           "roll": "CB.EN.U4CIE26045",
           "branch": "CIE",
@@ -14638,7 +14638,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "S.ABISHEK",
+          "name": "S.abishek",
           "gender": "M",
           "roll": "CB.EN.U4CIE26054",
           "branch": "CIE",
@@ -14648,7 +14648,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "R.THARUN",
+          "name": "R.tharun",
           "gender": "M",
           "roll": "CB.EN.U4AIE26051",
           "branch": "AIE",
@@ -14658,7 +14658,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "T.D.AMUDHINI",
+          "name": "T.d.amudhini",
           "gender": "F",
           "roll": "CB.EN.U4CHE26153",
           "branch": "CHE",
@@ -14766,7 +14766,7 @@ const DATA = {
     {
       "id": "138",
       "team": "Quantumaniacs",
-      "leader": "H DHARSHAN",
+      "leader": "H Dharshan",
       "wa_raw": "7069318874",
       "wa_norm": "7069318874",
       "wa_issues": [],
@@ -14782,7 +14782,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "H DHARSHAN",
+          "name": "H Dharshan",
           "gender": "M",
           "roll": "CB.SC.U4CSE24223",
           "branch": "CSE",
@@ -14792,7 +14792,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "NAVEEN SS",
+          "name": "Naveen SS",
           "gender": "M",
           "roll": "CB.SC.U4CSE24264",
           "branch": "CSE",
@@ -14812,7 +14812,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "M SIDDHARTH",
+          "name": "M Siddharth",
           "gender": "M",
           "roll": "CB.SC.U4CSE24234",
           "branch": "CSE",
@@ -15027,7 +15027,7 @@ const DATA = {
     {
       "id": "141",
       "team": "TheSixthSense",
-      "leader": "K.J.Jayashree",
+      "leader": "K.j.jayashree",
       "wa_raw": "8939634925",
       "wa_norm": "8939634925",
       "wa_issues": [],
@@ -15041,7 +15041,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "K.J.Jayashree",
+          "name": "K.j.jayashree",
           "gender": "F",
           "roll": "CB.SC.U4CSE24515",
           "branch": "CSE",
@@ -15061,7 +15061,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Mani nila S",
+          "name": "Mani Nila S",
           "gender": "F",
           "roll": "CB.SC.U4CSE24526",
           "branch": "CSE",
@@ -15136,7 +15136,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Gagandeep UVS",
+          "name": "Gagandeep Uvs",
           "gender": "M",
           "roll": "CB.SC.U4CSE26616",
           "branch": "CSE",
@@ -15197,7 +15197,7 @@ const DATA = {
     {
       "id": "143",
       "team": "Stark Minds",
-      "leader": "ABISHEKAPRIYAN P",
+      "leader": "Abishekapriyan P",
       "wa_raw": "7339512823",
       "wa_norm": "7339512823",
       "wa_issues": [],
@@ -15211,7 +15211,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ABISHEKAPRIYAN P",
+          "name": "Abishekapriyan P",
           "gender": "M",
           "roll": "CB.EN.U4CCE25002",
           "branch": "CCE",
@@ -15221,7 +15221,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RAKSHAN R",
+          "name": "Rakshan R",
           "gender": "M",
           "roll": "CB.EN.U4CCE25042",
           "branch": "CCE",
@@ -15231,7 +15231,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "THARUN SS",
+          "name": "Tharun SS",
           "gender": "M",
           "roll": "CB.EN.U4CCE25152",
           "branch": "CCE",
@@ -15251,7 +15251,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "RITHIGHASRI. E",
+          "name": "Rithighasri. E",
           "gender": "F",
           "roll": "CB.EN.U4ECE25145",
           "branch": "ECE",
@@ -15261,7 +15261,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "DARSANI K",
+          "name": "Darsani K",
           "gender": "F",
           "roll": "CB.EN.U4ECE25009",
           "branch": "ECE",
@@ -15369,7 +15369,7 @@ const DATA = {
     {
       "id": "145",
       "team": "Dark protocol",
-      "leader": "Sattineni Venkata Satya Tulasi ram",
+      "leader": "Sattineni Venkata Satya Tulasi Ram",
       "wa_raw": "9154426905",
       "wa_norm": "9154426905",
       "wa_issues": [],
@@ -15383,9 +15383,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sattineni Venkata Satya Tulasi ram",
+          "name": "Sattineni Venkata Satya Tulasi Ram",
           "gender": "M",
-          "roll": "cb.ai.u4cps25046",
+          "roll": "CB.AI.U4CPS25046",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15395,7 +15395,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Nehasri Mullapudi",
           "gender": "F",
-          "roll": "cb.ai.u4cps25031",
+          "roll": "CB.AI.U4CPS25031",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15405,7 +15405,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Nithin",
           "gender": "M",
-          "roll": "cb.ai.u4cps25033",
+          "roll": "CB.AI.U4CPS25033",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15415,7 +15415,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Pavna Preethikha M",
           "gender": "F",
-          "roll": "cb.ai.u4cps25024",
+          "roll": "CB.AI.U4CPS25024",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15425,7 +15425,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Pranavi Reddy Y",
           "gender": "F",
-          "roll": "cb.ai.u4aid25061",
+          "roll": "CB.AI.U4AID25061",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15435,7 +15435,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Satwik Mortha",
           "gender": "M",
-          "roll": "cb.ai.u4aid25032",
+          "roll": "CB.AI.U4AID25032",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 2,
@@ -15565,7 +15565,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Poojashree.A.R.G",
+          "name": "Poojashree.a.r.g",
           "gender": "F",
           "roll": "CB.SC.U4CSE26233",
           "branch": "CSE",
@@ -15575,7 +15575,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Lakshana Sasvitha S.S",
+          "name": "Lakshana Sasvitha S.s",
           "gender": "F",
           "roll": "CB.SC.U4CYS26027",
           "branch": "CYS",
@@ -15585,7 +15585,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "M.Chethana",
+          "name": "M.chethana",
           "gender": "F",
           "roll": "CB.SC.U4CYS26028",
           "branch": "CYS",
@@ -15595,7 +15595,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "M.K.Kesava pritha",
+          "name": "M.k.kesava Pritha",
           "gender": "F",
           "roll": "CB.SC.U4CYS26024",
           "branch": "CYS",
@@ -15605,7 +15605,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "N.Ananya",
+          "name": "N.ananya",
           "gender": "F",
           "roll": "CB.SC.U4CYS26006",
           "branch": "CYS",
@@ -15652,9 +15652,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Aditya kumar singh",
+          "name": "Aditya Kumar Singh",
           "gender": "M",
-          "roll": "cb.sc.u4aie26106",
+          "roll": "CB.SC.U4AIE26106",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -15662,9 +15662,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Durai pradhoosh M.A",
+          "name": "Durai Pradhoosh M.a",
           "gender": "M",
-          "roll": "cb.sc.u4aie26138",
+          "roll": "CB.SC.U4AIE26138",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -15682,7 +15682,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Sattiraju Raajna sri",
+          "name": "Sattiraju Raajna Sri",
           "gender": "F",
           "roll": "CB.SC.U4AIE26159",
           "branch": "AIE",
@@ -15731,7 +15731,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Sanjith K R",
           "gender": "M",
-          "roll": "cb.sc.u4aie26059",
+          "roll": "CB.SC.U4AIE26059",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -15741,7 +15741,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Sabharish S",
           "gender": "M",
-          "roll": "cb.sc.u4aie26056",
+          "roll": "CB.SC.U4AIE26056",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -15827,7 +15827,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Vishwa Suriyaa TSK",
+          "name": "Vishwa Suriyaa Tsk",
           "gender": "M",
           "roll": "CB.SC.U4CYS26165",
           "branch": "CYS",
@@ -15888,7 +15888,7 @@ const DATA = {
     {
       "id": "151",
       "team": "Point break",
-      "leader": "Karthik arunkumar",
+      "leader": "Karthik Arunkumar",
       "wa_raw": "9879203327",
       "wa_norm": "9879203327",
       "wa_issues": [],
@@ -15904,7 +15904,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Karthik arunkumar",
+          "name": "Karthik Arunkumar",
           "gender": "M",
           "roll": "CB.AI.U4QTS26069",
           "branch": "QTS",
@@ -16175,7 +16175,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "S.Guru Sanjay",
+          "name": "S.guru Sanjay",
           "gender": "M",
           "roll": "CB.EN.U4EEE26210",
           "branch": "EEE",
@@ -16262,7 +16262,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RUPESH S",
+          "name": "Rupesh S",
           "gender": "M",
           "roll": "CB.SC.U4CYS26143",
           "branch": "CYS",
@@ -16323,7 +16323,7 @@ const DATA = {
     {
       "id": "156",
       "team": "DAKOTA",
-      "leader": "V RAGGHUL",
+      "leader": "V Ragghul",
       "wa_raw": "9363759225",
       "wa_norm": "9363759225",
       "wa_issues": [],
@@ -16337,7 +16337,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "V RAGGHUL",
+          "name": "V Ragghul",
           "gender": "M",
           "roll": "CB.SC.U4CSE26163",
           "branch": "CSE",
@@ -16367,7 +16367,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Yadlapalli vedhitha",
+          "name": "Yadlapalli Vedhitha",
           "gender": "F",
           "roll": "CB.SC.U4CSE26167",
           "branch": "CSE",
@@ -16377,7 +16377,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "P.Dhivyes",
+          "name": "P.dhivyes",
           "gender": "M",
           "roll": "CB.SC.U4CSE26145",
           "branch": "CSE",
@@ -16604,7 +16604,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "U K SUJAN",
+          "name": "U K Sujan",
           "gender": "M",
           "roll": "CB.EN.U4EEE25148",
           "branch": "EEE",
@@ -16614,7 +16614,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "PRAGATHEESWAR VEL S V",
+          "name": "Pragatheeswar Vel S V",
           "gender": "M",
           "roll": "CB.EN.U4EEE25135",
           "branch": "EEE",
@@ -16624,7 +16624,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "FAIZA RAZAAN U",
+          "name": "Faiza Razaan U",
           "gender": "F",
           "roll": "CB.EN.U4EEE25115",
           "branch": "EEE",
@@ -16634,7 +16634,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "VAISHNAVI NATARAJAN",
+          "name": "Vaishnavi Natarajan",
           "gender": "F",
           "roll": "CB.EN.U4EEE25150",
           "branch": "EEE",
@@ -16665,7 +16665,7 @@ const DATA = {
     {
       "id": "160",
       "team": "Code Mode",
-      "leader": "Gopikrishnan.R",
+      "leader": "Gopikrishnan.r",
       "wa_raw": "8838854989",
       "wa_norm": "8838854989",
       "wa_issues": [],
@@ -16681,7 +16681,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Gopikrishnan.R",
+          "name": "Gopikrishnan.r",
           "gender": "M",
           "roll": "CB.AI.U4AID26112",
           "branch": "AID",
@@ -16703,7 +16703,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Sujith.s",
           "gender": "M",
-          "roll": "cb.en.u4mee26143",
+          "roll": "CB.EN.U4MEE26143",
           "branch": "MEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -16752,7 +16752,7 @@ const DATA = {
     {
       "id": "161",
       "team": "CODEXCAPE",
-      "leader": "MUKHIL HARSHINI SENTHUR SELVAM",
+      "leader": "Mukhil Harshini Senthur Selvam",
       "wa_raw": "9003957879",
       "wa_norm": "9003957879",
       "wa_issues": [],
@@ -16766,7 +16766,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "MUKHIL HARSHINI SENTHUR SELVAM",
+          "name": "Mukhil Harshini Senthur Selvam",
           "gender": "F",
           "roll": "CB.EN.U4CHE26119",
           "branch": "CHE",
@@ -16816,7 +16816,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Nirmala devi",
+          "name": "Nirmala Devi",
           "gender": "F",
           "roll": "CB.EN.U4CHE26121",
           "branch": "CHE",
@@ -17074,7 +17074,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S.V.Saksvin",
+          "name": "S.v.saksvin",
           "gender": "M",
           "roll": "CB.SC.U4CYS26149",
           "branch": "CYS",
@@ -17121,7 +17121,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "T.Roopa",
+          "name": "T.roopa",
           "gender": "F",
           "roll": "CB.AI.U4QTS26049",
           "branch": "QTS",
@@ -17131,7 +17131,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S.Panvitha",
+          "name": "S.panvitha",
           "gender": "F",
           "roll": "CB.AI.U4QTS26063",
           "branch": "QTS",
@@ -17182,7 +17182,7 @@ const DATA = {
     {
       "id": "166",
       "team": "Stack Overflowed",
-      "leader": "REDDY UDAY SAI",
+      "leader": "Reddy Uday Sai",
       "wa_raw": "9059453524",
       "wa_norm": "9059453524",
       "wa_issues": [],
@@ -17196,7 +17196,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "REDDY UDAY SAI",
+          "name": "Reddy Uday Sai",
           "gender": "M",
           "roll": "CB.SC.P2CSE26025",
           "branch": "CSE",
@@ -17216,7 +17216,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "TEJASWINI",
+          "name": "Tejaswini",
           "gender": "F",
           "roll": "CB.SC.P2AIE26039",
           "branch": "AIE",
@@ -17226,7 +17226,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ARAVIND",
+          "name": "Aravind",
           "gender": "M",
           "roll": "CB.SC.P2AIE26006",
           "branch": "AIE",
@@ -17236,7 +17236,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SANJAY",
+          "name": "Sanjay",
           "gender": "M",
           "roll": "CB.SC.P2AIE26034",
           "branch": "AIE",
@@ -17246,7 +17246,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "GURU PRASAD",
+          "name": "Guru Prasad",
           "gender": "M",
           "roll": "CB.SC.P2CSE26006",
           "branch": "CSE",
@@ -17285,7 +17285,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Sarnitha B",
           "gender": "F",
-          "roll": "cb.sc.u4cse26154",
+          "roll": "CB.SC.U4CSE26154",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17295,7 +17295,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Swetha P",
           "gender": "F",
-          "roll": "cb.ai.u4cps26058",
+          "roll": "CB.AI.U4CPS26058",
           "branch": "CPS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17323,7 +17323,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Sadhanaa Sree B.S.",
+          "name": "Sadhanaa Sree B.s.",
           "gender": "F",
           "roll": "CB.AI.U4CPS26071",
           "branch": "CPS",
@@ -17370,7 +17370,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Aakaash V",
           "gender": "M",
-          "roll": "cb.ai.u4aid26101",
+          "roll": "CB.AI.U4AID26101",
           "branch": "AID",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17378,9 +17378,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Dev vignesh",
+          "name": "Dev Vignesh",
           "gender": "M",
-          "roll": "CB.en.u4ece26113",
+          "roll": "CB.EN.U4ECE26113",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17390,7 +17390,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Ashwin",
           "gender": "M",
-          "roll": "CB.en.u4ece26206",
+          "roll": "CB.EN.U4ECE26206",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17398,9 +17398,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Devyansh T.B",
+          "name": "Devyansh T.b",
           "gender": "M",
-          "roll": "CB.en.u4ece26160",
+          "roll": "CB.EN.U4ECE26160",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17408,7 +17408,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Arushi pandey",
+          "name": "Arushi Pandey",
           "gender": "F",
           "roll": "CB.SC.U4AIE26007",
           "branch": "AIE",
@@ -17524,7 +17524,7 @@ const DATA = {
     {
       "id": "170",
       "team": "Catalysts",
-      "leader": "JEEVA RAKSHITHA M",
+      "leader": "Jeeva Rakshitha M",
       "wa_raw": "8072968590",
       "wa_norm": "8072968590",
       "wa_issues": [],
@@ -17538,9 +17538,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "JEEVA RAKSHITHA M",
+          "name": "Jeeva Rakshitha M",
           "gender": "F",
-          "roll": "cb.en.u4cce26016",
+          "roll": "CB.EN.U4CCE26016",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17548,9 +17548,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "KAVISRI S",
+          "name": "Kavisri S",
           "gender": "F",
-          "roll": "cb.en.u4cce26131",
+          "roll": "CB.EN.U4CCE26131",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17560,7 +17560,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Shruthi Lakshmi V P",
           "gender": "F",
-          "roll": "cb.en.u4cce26151",
+          "roll": "CB.EN.U4CCE26151",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17568,9 +17568,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "D THAARIGAA",
+          "name": "D Thaarigaa",
           "gender": "F",
-          "roll": "cb.en.u4cce26003",
+          "roll": "CB.EN.U4CCE26003",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17578,9 +17578,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "HARINI M",
+          "name": "Harini M",
           "gender": "F",
-          "roll": "cb.en.u4cce26023",
+          "roll": "CB.EN.U4CCE26023",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17588,9 +17588,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "ISHA ABANAA S",
+          "name": "Isha Abanaa S",
           "gender": "F",
-          "roll": "Cb.en.u4cce26014",
+          "roll": "CB.EN.U4CCE26014",
           "branch": "CCE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17609,7 +17609,7 @@ const DATA = {
     {
       "id": "171",
       "team": "HackNova-X",
-      "leader": "P.SARAVANA SELVAN",
+      "leader": "P.saravana Selvan",
       "wa_raw": "9751674003",
       "wa_norm": "9751674003",
       "wa_issues": [],
@@ -17626,9 +17626,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "P.SARAVANA SELVAN",
+          "name": "P.saravana Selvan",
           "gender": "M",
-          "roll": "cb.en.u4ece26146",
+          "roll": "CB.EN.U4ECE26146",
           "branch": "ECE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17636,7 +17636,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "NITHIN KUMAR .R",
+          "name": "Nithin Kumar .r",
           "gender": "M",
           "roll": "CB.EN.U4ECE26038",
           "branch": "ECE",
@@ -17666,7 +17666,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Nithin Dharsan .S",
+          "name": "Nithin Dharsan .s",
           "gender": "M",
           "roll": "CB.EN.U4ECE26234",
           "branch": "ECE",
@@ -17676,7 +17676,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Dinesh kumar.S",
+          "name": "Dinesh Kumar.s",
           "gender": "M",
           "roll": "CB.EN.U4ECE26120",
           "branch": "ECE",
@@ -17761,7 +17761,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Puranapanda SriRama Sai Karthikeya",
+          "name": "Puranapanda Srirama Sai Karthikeya",
           "gender": "M",
           "roll": "CB.SC.U4CSE25344",
           "branch": "CSE",
@@ -17826,7 +17826,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "B ASWIN",
+          "name": "B Aswin",
           "gender": "M",
           "roll": "CB.SC.U4AIE25006",
           "branch": "AIE",
@@ -17889,7 +17889,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Alen Jomon",
           "gender": "M",
-          "roll": "cb.sc.u4cse26006",
+          "roll": "CB.SC.U4CSE26006",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17899,7 +17899,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "S R Srineevasan",
           "gender": "M",
-          "roll": "cb.sc.u4cse26047",
+          "roll": "CB.SC.U4CSE26047",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17909,7 +17909,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Anamika V M",
           "gender": "F",
-          "roll": "cb.sc.u4cse26007",
+          "roll": "CB.SC.U4CSE26007",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17919,7 +17919,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Sibiharan S M",
           "gender": "M",
-          "roll": "cb.sc.u4cse26053",
+          "roll": "CB.SC.U4CSE26053",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17929,7 +17929,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Abijith Raja S",
           "gender": "M",
-          "roll": "cb.sc.u4cse26003",
+          "roll": "CB.SC.U4CSE26003",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -17939,7 +17939,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Ananya L",
           "gender": "F",
-          "roll": "cb.sc.u4cse26008",
+          "roll": "CB.SC.U4CSE26008",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -18002,7 +18002,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SHRE RAAM P J",
+          "name": "Shre Raam P J",
           "gender": "M",
           "roll": "CB.SC.U4CSE24548",
           "branch": "CSE",
@@ -18043,7 +18043,7 @@ const DATA = {
     {
       "id": "176",
       "team": "Innovision",
-      "leader": "MADDIPATLA PHANI PRIYA",
+      "leader": "Maddipatla Phani Priya",
       "wa_raw": "8639137949",
       "wa_norm": "8639137949",
       "wa_issues": [],
@@ -18057,7 +18057,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "MADDIPATLA PHANI PRIYA",
+          "name": "Maddipatla Phani Priya",
           "gender": "F",
           "roll": "CB.SC.U4AIE26140",
           "branch": "AIE",
@@ -18067,7 +18067,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "BHAVANI MULUPURU",
+          "name": "Bhavani Mulupuru",
           "gender": "F",
           "roll": "CB.SC.U4AIE26113",
           "branch": "AIE",
@@ -18077,7 +18077,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "POLEPALLI KARTHEEKA",
+          "name": "Polepalli Kartheeka",
           "gender": "F",
           "roll": "CB.SC.U4AIE26147",
           "branch": "AIE",
@@ -18087,7 +18087,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "LATHIKA RAMESH",
+          "name": "Lathika Ramesh",
           "gender": "F",
           "roll": "CB.SC.U4AIE26152",
           "branch": "AIE",
@@ -18097,7 +18097,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ANICH RUBEKH T",
+          "name": "Anich Rubekh T",
           "gender": "M",
           "roll": "CB.SC.U4AIE26108",
           "branch": "AIE",
@@ -18107,7 +18107,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MOLAKALA HARSHITH REDDY",
+          "name": "Molakala Harshith Reddy",
           "gender": "M",
           "roll": "CB.SC.U4AIE26178",
           "branch": "AIE",
@@ -18267,7 +18267,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Subika S.A",
+          "name": "Subika S.a",
           "gender": "F",
           "roll": "CB.SC.U4CSE26054",
           "branch": "CSE",
@@ -18298,7 +18298,7 @@ const DATA = {
     {
       "id": "179",
       "team": "The hacksmiths",
-      "leader": "Chittem Amrutha varshini",
+      "leader": "Chittem Amrutha Varshini",
       "wa_raw": "9281486034",
       "wa_norm": "9281486034",
       "wa_issues": [],
@@ -18312,7 +18312,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Chittem Amrutha varshini",
+          "name": "Chittem Amrutha Varshini",
           "gender": "F",
           "roll": "CB.SC.U4CSE26017",
           "branch": "CSE",
@@ -18352,7 +18352,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Dharshini.S",
+          "name": "Dharshini.s",
           "gender": "F",
           "roll": "CB.SC.U4CSE26018",
           "branch": "CSE",
@@ -18419,7 +18419,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "JAYYANI SHREE.J",
+          "name": "Jayyani Shree.j",
           "gender": "F",
           "roll": "CB.SC.U4CSE26029",
           "branch": "CSE",
@@ -18429,7 +18429,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "VARSHITHA S",
+          "name": "Varshitha S",
           "gender": "F",
           "roll": "CB.SC.U4CSE26063",
           "branch": "CSE",
@@ -18439,7 +18439,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "J PADMAJA IRENE",
+          "name": "J Padmaja Irene",
           "gender": "F",
           "roll": "CB.SC.U4CSE26027",
           "branch": "CSE",
@@ -18449,7 +18449,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SREE AMBARISH V R",
+          "name": "Sree Ambarish V R",
           "gender": "M",
           "roll": "CB.EN.U4ECE26250",
           "branch": "ECE",
@@ -18559,7 +18559,7 @@ const DATA = {
     {
       "id": "182",
       "team": "RAVENS",
-      "leader": "MITHUL PRANAV D",
+      "leader": "Mithul Pranav D",
       "wa_raw": "9342259745",
       "wa_norm": "9342259745",
       "wa_issues": [],
@@ -18573,7 +18573,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "MITHUL PRANAV D",
+          "name": "Mithul Pranav D",
           "gender": "M",
           "roll": "CB.EN.U4CCE26029",
           "branch": "CCE",
@@ -18583,7 +18583,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "PRANEESH SAKTHI V S",
+          "name": "Praneesh Sakthi V S",
           "gender": "M",
           "roll": "CB.EN.U4CCE26037",
           "branch": "CCE",
@@ -18593,7 +18593,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "G. NITHINDURGA REDDY",
+          "name": "G. Nithindurga Reddy",
           "gender": "M",
           "roll": "CB.EN.U4CCE26009",
           "branch": "CCE",
@@ -18603,7 +18603,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "YADUR VEDA S",
+          "name": "Yadur Veda S",
           "gender": "F",
           "roll": "CB.EN.U4CCE26063",
           "branch": "CCE",
@@ -18613,7 +18613,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "GEVESH SUDHIR PRAKASH",
+          "name": "Gevesh Sudhir Prakash",
           "gender": "M",
           "roll": "CB.EN.U4CCE26010",
           "branch": "CCE",
@@ -18623,7 +18623,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "RUBIGA R K",
+          "name": "Rubiga R K",
           "gender": "F",
           "roll": "CB.EN.U4CCE26040",
           "branch": "CCE",
@@ -18644,7 +18644,7 @@ const DATA = {
     {
       "id": "183",
       "team": "Straw Hats",
-      "leader": "G.Manu Deep Reddy",
+      "leader": "G.manu Deep Reddy",
       "wa_raw": "9391205961",
       "wa_norm": "9391205961",
       "wa_issues": [],
@@ -18658,7 +18658,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "G.Manu Deep Reddy",
+          "name": "G.manu Deep Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CSE26618",
           "branch": "CSE",
@@ -18668,7 +18668,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "K.Sri Akshith kumar",
+          "name": "K.sri Akshith Kumar",
           "gender": "M",
           "roll": "CB.SC.U4CSE26628",
           "branch": "CSE",
@@ -18678,7 +18678,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "A.Nikhilesh Reddy",
+          "name": "A.nikhilesh Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CSE26606",
           "branch": "CSE",
@@ -18698,7 +18698,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "S.Shruthi",
+          "name": "S.shruthi",
           "gender": "F",
           "roll": "CB.SC.U4CSE26651",
           "branch": "CSE",
@@ -18708,7 +18708,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S.Goutham",
+          "name": "S.goutham",
           "gender": "M",
           "roll": "CB.SC.U4CSE26122",
           "branch": "CSE",
@@ -18729,7 +18729,7 @@ const DATA = {
     {
       "id": "184",
       "team": "Basileus",
-      "leader": "BHARANIDHARAN",
+      "leader": "Bharanidharan",
       "wa_raw": "7305225162",
       "wa_norm": "7305225162",
       "wa_issues": [],
@@ -18745,7 +18745,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "BHARANIDHARAN",
+          "name": "Bharanidharan",
           "gender": "M",
           "roll": "CB.EN.U4EEE26047",
           "branch": "EEE",
@@ -18755,7 +18755,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RUBESH KUMAR SARAVANAN",
+          "name": "Rubesh Kumar Saravanan",
           "gender": "M",
           "roll": "CB.EN.U4EEE26030",
           "branch": "EEE",
@@ -18765,7 +18765,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "TAWFIQ FARHAN",
+          "name": "Tawfiq Farhan",
           "gender": "M",
           "roll": "CB.EN.U4EEE26048",
           "branch": "EEE",
@@ -18775,7 +18775,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MONISH",
+          "name": "Monish",
           "gender": "M",
           "roll": "CB.EN.U4EEE26019",
           "branch": "EEE",
@@ -18785,7 +18785,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "DARSHAN A",
+          "name": "Darshan A",
           "gender": "M",
           "roll": "CB.EN.U4EEE26208",
           "branch": "EEE",
@@ -18795,7 +18795,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SHAJINI SHANMUGA SUNDARAM",
+          "name": "Shajini Shanmuga Sundaram",
           "gender": "F",
           "roll": "CB.EN.U4ECE26248",
           "branch": "ECE",
@@ -18903,7 +18903,7 @@ const DATA = {
     {
       "id": "186",
       "team": "Team Matrix",
-      "leader": "DHEERAJ KUMAR REDDY PAMURI",
+      "leader": "Dheeraj Kumar Reddy Pamuri",
       "wa_raw": "9121581551",
       "wa_norm": "9121581551",
       "wa_issues": [],
@@ -18917,7 +18917,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "DHEERAJ KUMAR REDDY PAMURI",
+          "name": "Dheeraj Kumar Reddy Pamuri",
           "gender": "M",
           "roll": "CB.AI.U4AIM25025",
           "branch": "AIM",
@@ -18927,7 +18927,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "VISHNU VARDHAN REDDY DEREDDY",
+          "name": "Vishnu Vardhan Reddy Dereddy",
           "gender": "M",
           "roll": "CB.AI.U4AIM25008",
           "branch": "AIM",
@@ -18937,7 +18937,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "VARUN SHANKAR KAKANI",
+          "name": "Varun Shankar Kakani",
           "gender": "M",
           "roll": "CB.AI.U4AIM25046",
           "branch": "AIM",
@@ -18947,7 +18947,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NIHARIKA REPAKA",
+          "name": "Niharika Repaka",
           "gender": "F",
           "roll": "CB.AI.U4AIM25034",
           "branch": "AIM",
@@ -18957,7 +18957,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "NIKHIL KASHYAP HARI PRASAD",
+          "name": "Nikhil Kashyap Hari Prasad",
           "gender": "M",
           "roll": "CB.AI.U4AIM24012",
           "branch": "AIM",
@@ -18967,7 +18967,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "PREM SAI KUMAR REDDY LAKKI REDDY",
+          "name": "Prem Sai Kumar Reddy Lakki Reddy",
           "gender": "M",
           "roll": "CB.AI.U4AIM24125",
           "branch": "AIM",
@@ -19016,7 +19016,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "N. Sakthiyavaani",
           "gender": "F",
-          "roll": "cb.sc.u4cys24042",
+          "roll": "CB.SC.U4CYS24042",
           "branch": "CYS",
           "program": "U4",
           "yearOfStudy": 3,
@@ -19026,7 +19026,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Jishnu Nambiar",
           "gender": "M",
-          "roll": "cb.sc.u4cse24019",
+          "roll": "CB.SC.U4CSE24019",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -19036,7 +19036,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Ketaki Athalekar",
           "gender": "F",
-          "roll": "cb.en.u4eee24123",
+          "roll": "CB.EN.U4EEE24123",
           "branch": "EEE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -19044,9 +19044,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "TANUSH PAVAN V",
+          "name": "Tanush Pavan V",
           "gender": "M",
-          "roll": "cb.en.u4eee24147",
+          "roll": "CB.EN.U4EEE24147",
           "branch": "EEE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -19056,7 +19056,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Srisanth P A",
           "gender": "M",
-          "roll": "cb.sc.u4cse24550",
+          "roll": "CB.SC.U4CSE24550",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -19075,7 +19075,7 @@ const DATA = {
     {
       "id": "188",
       "team": "HackNova",
-      "leader": "Swetha.P.M",
+      "leader": "Swetha.p.m",
       "wa_raw": "9384142105",
       "wa_norm": "9384142105",
       "wa_issues": [],
@@ -19091,7 +19091,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Swetha.P.M",
+          "name": "Swetha.p.m",
           "gender": "F",
           "roll": "CB.AI.U4AAR26055",
           "branch": "AAR",
@@ -19111,7 +19111,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Rituraj kunwar",
+          "name": "Rituraj Kunwar",
           "gender": "F",
           "roll": "CB.AI.U4AAR26065",
           "branch": "AAR",
@@ -19162,7 +19162,7 @@ const DATA = {
     {
       "id": "189",
       "team": "Nexcore",
-      "leader": "MONISH V P",
+      "leader": "Monish V P",
       "wa_raw": "8122146122",
       "wa_norm": "8122146122",
       "wa_issues": [],
@@ -19176,7 +19176,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "MONISH V P",
+          "name": "Monish V P",
           "gender": "M",
           "roll": "CB.EN.U4ECE25028",
           "branch": "ECE",
@@ -19332,7 +19332,7 @@ const DATA = {
     {
       "id": "191",
       "team": "Logic Lords",
-      "leader": "A.Kamalesh",
+      "leader": "A.kamalesh",
       "wa_raw": "6381891678",
       "wa_norm": "6381891678",
       "wa_issues": [],
@@ -19346,7 +19346,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "A.Kamalesh",
+          "name": "A.kamalesh",
           "gender": "M",
           "roll": "CB.AI.U4QTS26023",
           "branch": "QTS",
@@ -19396,7 +19396,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "A.Praveenya Sri",
+          "name": "A.praveenya Sri",
           "gender": "F",
           "roll": "CB.AI.U4AAR26003",
           "branch": "AAR",
@@ -19417,7 +19417,7 @@ const DATA = {
     {
       "id": "192",
       "team": "NullByte Exploiters",
-      "leader": "EZHIL PRASAATH SE",
+      "leader": "Ezhil Prasaath SE",
       "wa_raw": "6383720169",
       "wa_norm": "6383720169",
       "wa_issues": [],
@@ -19431,7 +19431,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "EZHIL PRASAATH SE",
+          "name": "Ezhil Prasaath SE",
           "gender": "M",
           "roll": "CB.SC.P2CYS26026",
           "branch": "CYS",
@@ -19538,7 +19538,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Pon kavya G",
+          "name": "Pon Kavya G",
           "gender": "F",
           "roll": "CB.SC.U4CYS25019",
           "branch": "CYS",
@@ -19636,7 +19636,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Shobika N.S.",
+          "name": "Shobika N.s.",
           "gender": "F",
           "roll": "CB.EN.U4CCE26051",
           "branch": "CCE",
@@ -19646,7 +19646,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Tabasvini.C",
+          "name": "Tabasvini.c",
           "gender": "F",
           "roll": "CB.EN.U4CCE26055",
           "branch": "CCE",
@@ -19656,7 +19656,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Samritha.D.R",
+          "name": "Samritha.d.r",
           "gender": "F",
           "roll": "CB.EN.U4CCE26047",
           "branch": "CCE",
@@ -19677,7 +19677,7 @@ const DATA = {
     {
       "id": "195",
       "team": "Bots with dots",
-      "leader": "R.Rakshana",
+      "leader": "R.rakshana",
       "wa_raw": "9894223472",
       "wa_norm": "9894223472",
       "wa_issues": [],
@@ -19693,7 +19693,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "R.Rakshana",
+          "name": "R.rakshana",
           "gender": "F",
           "roll": "CB.EN.U4CCE26041",
           "branch": "CCE",
@@ -19703,7 +19703,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Surya M.K",
+          "name": "Surya M.k",
           "gender": "M",
           "roll": "CB.EN.U4CCE26024",
           "branch": "CCE",
@@ -19713,7 +19713,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S.Shampritha",
+          "name": "S.shampritha",
           "gender": "F",
           "roll": "CB.EN.U4CCE26051",
           "branch": "CCE",
@@ -19723,7 +19723,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "R.Cibi pranav",
+          "name": "R.cibi Pranav",
           "gender": "M",
           "roll": "CB.EN.U4CCE26039",
           "branch": "CCE",
@@ -19733,7 +19733,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "P.Nithya shree",
+          "name": "P.nithya Shree",
           "gender": "F",
           "roll": "CB.EN.U4CCE26034",
           "branch": "CCE",
@@ -19743,7 +19743,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "M.Mahendra varma",
+          "name": "M.mahendra Varma",
           "gender": "M",
           "roll": "CB.EN.U4CCE26026",
           "branch": "CCE",
@@ -19802,7 +19802,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Vibha pillai",
+          "name": "Vibha Pillai",
           "gender": "F",
           "roll": "CB.PS.U4PHY26022",
           "branch": "PHY",
@@ -19812,7 +19812,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Nandhana s nair",
+          "name": "Nandhana S Nair",
           "gender": "F",
           "roll": "CB.PS.U4PHY26013",
           "branch": "PHY",
@@ -19853,7 +19853,7 @@ const DATA = {
     {
       "id": "197",
       "team": "SIX ERRORS",
-      "leader": "ASWANTH JAIN C",
+      "leader": "Aswanth Jain C",
       "wa_raw": "6379763605",
       "wa_norm": "6379763605",
       "wa_issues": [],
@@ -19867,7 +19867,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ASWANTH JAIN C",
+          "name": "Aswanth Jain C",
           "gender": "M",
           "roll": "CB.EN.U4CCE25006",
           "branch": "CCE",
@@ -19877,7 +19877,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "AATHMIKA SHREE G",
+          "name": "Aathmika Shree G",
           "gender": "F",
           "roll": "CB.EN.U4CCE25001",
           "branch": "CCE",
@@ -19887,7 +19887,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "DASARI SAI GEETHIKA",
+          "name": "Dasari Sai Geethika",
           "gender": "F",
           "roll": "CB.EN.U4CCE25016",
           "branch": "CCE",
@@ -19897,7 +19897,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NIKKIL PRITHVIN R R",
+          "name": "Nikkil Prithvin R R",
           "gender": "M",
           "roll": "CB.EN.U4CCE25061",
           "branch": "CCE",
@@ -19907,7 +19907,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ITHYAASH S",
+          "name": "Ithyaash S",
           "gender": "M",
           "roll": "CB.EN.U4CCE25023",
           "branch": "CCE",
@@ -19917,7 +19917,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "DINESH RAJ R",
+          "name": "Dinesh Raj R",
           "gender": "M",
           "roll": "CB.EN.U4CCE25018",
           "branch": "CCE",
@@ -19960,7 +19960,7 @@ const DATA = {
           "slot": "Leader",
           "name": "A Tharun",
           "gender": "M",
-          "roll": "cb.sc.u4cse26201",
+          "roll": "CB.SC.U4CSE26201",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -20029,7 +20029,7 @@ const DATA = {
     {
       "id": "199",
       "team": "VisionX",
-      "leader": "JAMPANA AAMUKTHA",
+      "leader": "Jampana Aamuktha",
       "wa_raw": "7780647879",
       "wa_norm": "7780647879",
       "wa_issues": [],
@@ -20043,7 +20043,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "JAMPANA AAMUKTHA",
+          "name": "Jampana Aamuktha",
           "gender": "F",
           "roll": "CB.SC.P2CYS26027",
           "branch": "CYS",
@@ -20132,7 +20132,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Prajit",
           "gender": "M",
-          "roll": "cb.ps.i5mat26011",
+          "roll": "CB.PS.I5MAT26011",
           "branch": "MAT",
           "program": "I5",
           "yearOfStudy": 1,
@@ -20152,7 +20152,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Sachin",
           "gender": "M",
-          "roll": "cb.ps.i5mat26013",
+          "roll": "CB.PS.I5MAT26013",
           "branch": "MAT",
           "program": "I5",
           "yearOfStudy": 1,
@@ -20460,7 +20460,7 @@ const DATA = {
     {
       "id": "204",
       "team": "Runtime Terrors",
-      "leader": "ARWINDH C N",
+      "leader": "Arwindh C N",
       "wa_raw": "90420 71701",
       "wa_norm": "9042071701",
       "wa_issues": [],
@@ -20476,7 +20476,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ARWINDH C N",
+          "name": "Arwindh C N",
           "gender": "M",
           "roll": "CB.SCU4CSE242407",
           "branch": "CSE",
@@ -20506,7 +20506,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SaiYogeshwer M",
+          "name": "Saiyogeshwer M",
           "gender": "M",
           "roll": "CB.SC.U4CSE24247",
           "branch": "CSE",
@@ -20526,7 +20526,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "BATCHALI SRIRAMA NARENDRA",
+          "name": "Batchali Srirama Narendra",
           "gender": "M",
           "roll": "CB.SC.U4CSE24209",
           "branch": "CSE",
@@ -20547,7 +20547,7 @@ const DATA = {
     {
       "id": "205",
       "team": "INGLORIOUS HACKERS",
-      "leader": "SOWBARNIYAA C",
+      "leader": "Sowbarniyaa C",
       "wa_raw": "6381872170",
       "wa_norm": "6381872170",
       "wa_issues": [],
@@ -20561,7 +20561,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SOWBARNIYAA C",
+          "name": "Sowbarniyaa C",
           "gender": "F",
           "roll": "CB.EN.U4CCE25050",
           "branch": "CCE",
@@ -20571,7 +20571,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "HARYSHWA B",
+          "name": "Haryshwa B",
           "gender": "M",
           "roll": "CB.EN.U4CCE25022",
           "branch": "CCE",
@@ -20581,7 +20581,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "JAI NIVAS V",
+          "name": "Jai Nivas V",
           "gender": "M",
           "roll": "CB.EN.U4CCE25025",
           "branch": "CCE",
@@ -20591,7 +20591,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "PRITHI SRI S G",
+          "name": "Prithi Sri S G",
           "gender": "F",
           "roll": "CB.EN.U4CCE25039",
           "branch": "CCE",
@@ -20601,7 +20601,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "S S ROOPESH",
+          "name": "S S Roopesh",
           "gender": "M",
           "roll": "CB.EN.U4CCE25045",
           "branch": "CCE",
@@ -20611,7 +20611,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SHIVARAMAN S",
+          "name": "Shivaraman S",
           "gender": "M",
           "roll": "CB.EN.U4CCE25049",
           "branch": "CCE",
@@ -20765,7 +20765,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sanjay sri BS",
+          "name": "Sanjay Sri BS",
           "gender": "M",
           "roll": "CB.AI.U4AAR26048",
           "branch": "AAR",
@@ -20850,7 +20850,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sri harini",
+          "name": "Sri Harini",
           "gender": "F",
           "roll": "CB.SC.U4CSE24654",
           "branch": "CSE",
@@ -20976,7 +20976,7 @@ const DATA = {
     {
       "id": "210",
       "team": "Aura",
-      "leader": "NIMAL DANYATH K",
+      "leader": "Nimal Danyath K",
       "wa_raw": "6282374586",
       "wa_norm": "6282374586",
       "wa_issues": [],
@@ -20990,7 +20990,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "NIMAL DANYATH K",
+          "name": "Nimal Danyath K",
           "gender": "M",
           "roll": "CB.SC.U4CSE24033",
           "branch": "CSE",
@@ -21000,7 +21000,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "CHAVALI ANANTA ADITYA",
+          "name": "Chavali Ananta Aditya",
           "gender": "M",
           "roll": "CB.SC.U4CSE24008",
           "branch": "CSE",
@@ -21010,7 +21010,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "PARTHIVSURYA K B",
+          "name": "Parthivsurya K B",
           "gender": "M",
           "roll": "CB.SC.U4CSE24535",
           "branch": "CSE",
@@ -21020,7 +21020,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "RUTHWIK NARAYAN P",
+          "name": "Ruthwik Narayan P",
           "gender": "M",
           "roll": "CB.SC.U4CSE24043",
           "branch": "CSE",
@@ -21030,7 +21030,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "NEERAJA K",
+          "name": "Neeraja K",
           "gender": "F",
           "roll": "CB.SC.U4CSE24529",
           "branch": "CSE",
@@ -21040,7 +21040,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "NIKHIL RAJ L",
+          "name": "Nikhil Raj L",
           "gender": "M",
           "roll": "CB.SC.U4CSE24026",
           "branch": "CSE",
@@ -21061,7 +21061,7 @@ const DATA = {
     {
       "id": "211",
       "team": "TECH & TORT",
-      "leader": "S.SHIVADAS",
+      "leader": "S.shivadas",
       "wa_raw": "6379760955",
       "wa_norm": "6379760955",
       "wa_issues": [],
@@ -21075,7 +21075,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "S.SHIVADAS",
+          "name": "S.shivadas",
           "gender": "M",
           "roll": "CB.SC.U4CSE26346",
           "branch": "CSE",
@@ -21085,7 +21085,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "R AKSITH",
+          "name": "R Aksith",
           "gender": "M",
           "roll": "CB.SC.U4CSE26041",
           "branch": "CSE",
@@ -21095,7 +21095,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "B DEEPAN",
+          "name": "B Deepan",
           "gender": "M",
           "roll": "CB.SC.U4CSE26207",
           "branch": "CSE",
@@ -21105,7 +21105,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "AYUSH SARASWAT",
+          "name": "Ayush Saraswat",
           "gender": "M",
           "roll": "CB.SC.U4CSE26014",
           "branch": "CSE",
@@ -21115,7 +21115,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SRIYA SAJEEV",
+          "name": "Sriya Sajeev",
           "gender": "F",
           "roll": "CB.LW.I5BBL26038",
           "branch": "BBL",
@@ -21125,7 +21125,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "ATHIRA KRISHNA MP",
+          "name": "Athira Krishna MP",
           "gender": "F",
           "roll": "CB.LW.I5BBL26056",
           "branch": "BBL",
@@ -21193,7 +21193,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "A S ASMITHA",
+          "name": "A S Asmitha",
           "gender": "F",
           "roll": "CB.EN.U4CHE26005",
           "branch": "CHE",
@@ -21355,7 +21355,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "CHITTURI PRANAVI",
+          "name": "Chitturi Pranavi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25015",
           "branch": "CSE",
@@ -21365,7 +21365,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "CHINTHAKUNTA  KEERTHIKA",
+          "name": "Chinthakunta Keerthika",
           "gender": "F",
           "roll": "CB.SC.U4CSE25014",
           "branch": "CSE",
@@ -21375,7 +21375,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "APPALLE SPOORTHI",
+          "name": "Appalle Spoorthi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25004",
           "branch": "CSE",
@@ -21385,7 +21385,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "KOPPARAPU VRINDA VAISHNAVI",
+          "name": "Kopparapu Vrinda Vaishnavi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25422",
           "branch": "CSE",
@@ -21406,7 +21406,7 @@ const DATA = {
     {
       "id": "215",
       "team": "Cortex Crew",
-      "leader": "SRI RAGHAV VATSAN S",
+      "leader": "Sri Raghav Vatsan S",
       "wa_raw": "9345972781",
       "wa_norm": "9345972781",
       "wa_issues": [],
@@ -21420,7 +21420,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SRI RAGHAV VATSAN S",
+          "name": "Sri Raghav Vatsan S",
           "gender": "M",
           "roll": "CB.AI.U4AID25151",
           "branch": "AID",
@@ -21430,7 +21430,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "HARISH KUMAAR S",
+          "name": "Harish Kumaar S",
           "gender": "M",
           "roll": "CB.AI.U4AID25117",
           "branch": "AID",
@@ -21440,7 +21440,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "KAVIPRANIDAN J T",
+          "name": "Kavipranidan J T",
           "gender": "M",
           "roll": "CB.AI.U4AID25022",
           "branch": "AID",
@@ -21450,7 +21450,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NAWIN K G",
+          "name": "Nawin K G",
           "gender": "M",
           "roll": "CB.AI.U4AID25135",
           "branch": "AID",
@@ -21460,7 +21460,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ASMITHA T",
+          "name": "Asmitha T",
           "gender": "F",
           "roll": "CB.AI.U4AID25109",
           "branch": "AID",
@@ -21470,7 +21470,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "JENUPALLIHARINI",
+          "name": "Jenupalliharini",
           "gender": "F",
           "roll": "CB.AI.U4AID25121",
           "branch": "AID",
@@ -21698,7 +21698,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Mukesh reddy",
+          "name": "Mukesh Reddy",
           "gender": "M",
           "roll": "CB.AI.U4AID25010",
           "branch": "AID",
@@ -21708,7 +21708,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Yaswanth reddy",
+          "name": "Yaswanth Reddy",
           "gender": "M",
           "roll": "CB.AI.U4AID25015",
           "branch": "AID",
@@ -21860,7 +21860,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Inba Shanmuga  S S",
+          "name": "Inba Shanmuga S S",
           "gender": "M",
           "roll": "CB.AI.U4AID26056",
           "branch": "AID",
@@ -21921,7 +21921,7 @@ const DATA = {
     {
       "id": "221",
       "team": "Kilowatt crew",
-      "leader": "S KAVIN MUTHUVEL",
+      "leader": "S Kavin Muthuvel",
       "wa_raw": "6369111957",
       "wa_norm": "6369111957",
       "wa_issues": [],
@@ -21935,7 +21935,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "S KAVIN MUTHUVEL",
+          "name": "S Kavin Muthuvel",
           "gender": "M",
           "roll": "CB.EN.U4EEE26033",
           "branch": "EEE",
@@ -21945,7 +21945,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "DHARUN S",
+          "name": "Dharun S",
           "gender": "M",
           "roll": "CB.EN.U4EEE26008",
           "branch": "EEE",
@@ -21955,7 +21955,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "KOVARTHAN SIVARAJ",
+          "name": "Kovarthan Sivaraj",
           "gender": "M",
           "roll": "CB.EN.U4EEE26014",
           "branch": "EEE",
@@ -21965,7 +21965,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SAAMRITHAA BK",
+          "name": "Saamrithaa BK",
           "gender": "F",
           "roll": "CB.EN.U4EEE26232",
           "branch": "EEE",
@@ -22204,7 +22204,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Sri karthik P",
+          "name": "Sri Karthik P",
           "gender": "M",
           "roll": "CB.SC.U4CSE25056",
           "branch": "CSE",
@@ -22244,7 +22244,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Mithunvarshan sp",
+          "name": "Mithunvarshan Sp",
           "gender": "M",
           "roll": "CB.EN.U4ECE25148",
           "branch": "ECE",
@@ -22329,7 +22329,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Yatham vyshnavi",
+          "name": "Yatham Vyshnavi",
           "gender": "F",
           "roll": "CB.SC.U4CYS26168",
           "branch": "CYS",
@@ -22368,7 +22368,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Harshad Pranav",
           "gender": "M",
-          "roll": "cb.sc.u4cse26127",
+          "roll": "CB.SC.U4CSE26127",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -22376,9 +22376,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Abinaya.S",
+          "name": "Abinaya.s",
           "gender": "F",
-          "roll": "cb.sc.u426103",
+          "roll": "CB.SC.U426103",
           "branch": null,
           "program": null,
           "yearOfStudy": null,
@@ -22388,7 +22388,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Nesika T",
           "gender": "F",
-          "roll": "cb.sc.u4cse26142",
+          "roll": "CB.SC.U4CSE26142",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -22396,9 +22396,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Aagash.A",
+          "name": "Aagash.a",
           "gender": "M",
-          "roll": "cb.sc.u4cse26101",
+          "roll": "CB.SC.U4CSE26101",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -22406,9 +22406,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Vikaskumar kuttiyapan",
+          "name": "Vikaskumar Kuttiyapan",
           "gender": "M",
-          "roll": "cb.sc.u4cse26165",
+          "roll": "CB.SC.U4CSE26165",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -22418,7 +22418,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Gurudeep AS",
           "gender": "M",
-          "roll": "cb.sc.u4cse26125",
+          "roll": "CB.SC.U4CSE26125",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -23040,7 +23040,7 @@ const DATA = {
     {
       "id": "234",
       "team": "FnF",
-      "leader": "SREEHARI S",
+      "leader": "Sreehari S",
       "wa_raw": "8925109806",
       "wa_norm": "8925109806",
       "wa_issues": [],
@@ -23056,7 +23056,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SREEHARI S",
+          "name": "Sreehari S",
           "gender": "M",
           "roll": "CB.SC.U4CSE25757",
           "branch": "CSE",
@@ -23066,7 +23066,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "REHAN SV",
+          "name": "Rehan SV",
           "gender": "M",
           "roll": "CB.SC.U4CSE25744",
           "branch": "CSE",
@@ -23076,7 +23076,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SAI GANESAN RAMANAN",
+          "name": "Sai Ganesan Ramanan",
           "gender": "M",
           "roll": "CB.SC.U4CSE25749",
           "branch": "CSE",
@@ -23086,7 +23086,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "DAYITHA DILEEP",
+          "name": "Dayitha Dileep",
           "gender": "F",
           "roll": "CB.SC.U4CSE25709",
           "branch": "CSE",
@@ -23096,7 +23096,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "GAYATRI SUBIN NAIR",
+          "name": "Gayatri Subin Nair",
           "gender": "F",
           "roll": "CB.SC.U4CSE25715",
           "branch": "CSE",
@@ -23106,7 +23106,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SHIVANI B",
+          "name": "Shivani B",
           "gender": "F",
           "roll": "CB.SC.U4CSE25752",
           "branch": "CSE",
@@ -23127,7 +23127,7 @@ const DATA = {
     {
       "id": "235",
       "team": "LOGIC LOOM",
-      "leader": "DARSHAN.B",
+      "leader": "Darshan.b",
       "wa_raw": "8610002887",
       "wa_norm": "8610002887",
       "wa_issues": [],
@@ -23141,7 +23141,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "DARSHAN.B",
+          "name": "Darshan.b",
           "gender": "M",
           "roll": "CB.EN.U4CCE25015",
           "branch": "CCE",
@@ -23151,7 +23151,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "AUSTUS SAMUVEL D",
+          "name": "Austus Samuvel D",
           "gender": "M",
           "roll": "CB.EN.U4CCE25008",
           "branch": "CCE",
@@ -23161,7 +23161,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "PRITHIVRAM B",
+          "name": "Prithivram B",
           "gender": "M",
           "roll": "CB.EN.U4CCE25040",
           "branch": "CCE",
@@ -23171,7 +23171,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MAHATHI S",
+          "name": "Mahathi S",
           "gender": "F",
           "roll": "CB.EN.U4CCE25028",
           "branch": "CCE",
@@ -23181,7 +23181,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ANUMITHA S",
+          "name": "Anumitha S",
           "gender": "F",
           "roll": "CB.EN.U4CCE25005",
           "branch": "CCE",
@@ -23191,7 +23191,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "BADHMA SREE VIGNESH S",
+          "name": "Badhma Sree Vignesh S",
           "gender": "M",
           "roll": "CB.EN.U4CCE25009",
           "branch": "CCE",
@@ -23297,7 +23297,7 @@ const DATA = {
     {
       "id": "237",
       "team": "SIH bottlers",
-      "leader": "Shasuwanth veerasekharan",
+      "leader": "Shasuwanth Veerasekharan",
       "wa_raw": "9633056059",
       "wa_norm": "9633056059",
       "wa_issues": [],
@@ -23311,7 +23311,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Shasuwanth veerasekharan",
+          "name": "Shasuwanth Veerasekharan",
           "gender": "M",
           "roll": "CB.SC.U4AIE26062",
           "branch": "AIE",
@@ -23341,7 +23341,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Shruthi.R",
+          "name": "Shruthi.r",
           "gender": "F",
           "roll": "CB.EN.U4ELC26146",
           "branch": "ELC",
@@ -23361,7 +23361,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "K V RUBIKA",
+          "name": "K V Rubika",
           "gender": "F",
           "roll": "CB.SC.U4CSE26623",
           "branch": "CSE",
@@ -23406,7 +23406,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Sudharsan kathir S K",
+          "name": "Sudharsan Kathir S K",
           "gender": "M",
           "roll": "CB.EN.U4ECE26252",
           "branch": "ECE",
@@ -23552,7 +23552,7 @@ const DATA = {
     {
       "id": "240",
       "team": "KRYPTA",
-      "leader": "MADDELA DINESH KUMAR",
+      "leader": "Maddela Dinesh Kumar",
       "wa_raw": "9182762759",
       "wa_norm": "9182762759",
       "wa_issues": [],
@@ -23566,7 +23566,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "MADDELA DINESH KUMAR",
+          "name": "Maddela Dinesh Kumar",
           "gender": "M",
           "roll": "CB.AI.U4AID25126",
           "branch": "AID",
@@ -23576,7 +23576,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "P PARDHIV SESHA SAI",
+          "name": "P Pardhiv Sesha Sai",
           "gender": "M",
           "roll": "CB.AI.U4AAR25035",
           "branch": "AAR",
@@ -23586,7 +23586,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "PVN KRISHNA SATISH",
+          "name": "Pvn Krishna Satish",
           "gender": "M",
           "roll": "CB.AI.U4CPS25036",
           "branch": "CPS",
@@ -23596,7 +23596,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "M SUJAN",
+          "name": "M Sujan",
           "gender": "M",
           "roll": "CB.AI.U4AID25129",
           "branch": "AID",
@@ -23606,7 +23606,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "TVSS PHANINDRA GUPTHA",
+          "name": "Tvss Phanindra Guptha",
           "gender": "M",
           "roll": "CB.AI.U4AID25055",
           "branch": "AID",
@@ -23616,7 +23616,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "T MONISA REDDY",
+          "name": "T Monisa Reddy",
           "gender": "F",
           "roll": "CB.AI.U4AEE25051",
           "branch": "AEE",
@@ -23892,7 +23892,7 @@ const DATA = {
     {
       "id": "244",
       "team": "MISSONI ROOM",
-      "leader": "DHIVAGAR S",
+      "leader": "Dhivagar S",
       "wa_raw": "6369044020*",
       "wa_norm": "6369044020",
       "wa_issues": [],
@@ -23906,7 +23906,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "DHIVAGAR S",
+          "name": "Dhivagar S",
           "gender": "M",
           "roll": "CB.EN.U4ECE25119",
           "branch": "ECE",
@@ -23916,7 +23916,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "DHYANESH K B",
+          "name": "Dhyanesh K B",
           "gender": "M",
           "roll": "CB.EN.U4ECE25120",
           "branch": "ECE",
@@ -23926,7 +23926,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ADHAVAN K B",
+          "name": "Adhavan K B",
           "gender": "M",
           "roll": "CB.EN.U4ECE25219",
           "branch": "ECE",
@@ -23936,7 +23936,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "OSHIN M",
+          "name": "Oshin M",
           "gender": "F",
           "roll": "CB.EN.U4CCE25035",
           "branch": "CCE",
@@ -23946,7 +23946,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "MITHUN R PREM",
+          "name": "Mithun R Prem",
           "gender": "M",
           "roll": "CB.EN.U4ECE25132",
           "branch": "ECE",
@@ -23956,7 +23956,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "AKKSHITA T",
+          "name": "Akkshita T",
           "gender": "F",
           "roll": "CB.EN.U4CCE25003",
           "branch": "CCE",
@@ -24275,7 +24275,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "VARUN NAIR",
+          "name": "Varun Nair",
           "gender": "M",
           "roll": "CB.EN.U4EEE24052",
           "branch": "EEE",
@@ -24285,7 +24285,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "M.SIDDHARTH",
+          "name": "M.siddharth",
           "gender": "M",
           "roll": "CB.EN.U4EEE24046",
           "branch": "EEE",
@@ -24305,7 +24305,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "GAURAV KURIAN VACHAPARAMBIL",
+          "name": "Gaurav Kurian Vachaparambil",
           "gender": "M",
           "roll": "CB.EN.U4EEE24114",
           "branch": "EEE",
@@ -24326,7 +24326,7 @@ const DATA = {
     {
       "id": "249",
       "team": "TETRIX",
-      "leader": "Poonthalir.S.T",
+      "leader": "Poonthalir.s.t",
       "wa_raw": "+91 73588 10385",
       "wa_norm": "7358810385",
       "wa_issues": [
@@ -24345,7 +24345,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Poonthalir.S.T",
+          "name": "Poonthalir.s.t",
           "gender": "F",
           "roll": "CB.SC.U4CSE25549",
           "branch": "CSE",
@@ -24355,7 +24355,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Krithikk.V",
+          "name": "Krithikk.v",
           "gender": "M",
           "roll": "CB.SC.U4CSE25530",
           "branch": "CSE",
@@ -24365,7 +24365,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Nagul Nikaythan.G",
+          "name": "Nagul Nikaythan.g",
           "gender": "M",
           "roll": "CB.EN.U4ECE25029",
           "branch": "ECE",
@@ -24375,7 +24375,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Athul.G",
+          "name": "Athul.g",
           "gender": "M",
           "roll": "CB.EN.U4ECE25056",
           "branch": "ECE",
@@ -24385,7 +24385,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "S.K.Pranav",
+          "name": "S.k.pranav",
           "gender": "M",
           "roll": "CB.EN.U4ECE25036",
           "branch": "ECE",
@@ -24416,7 +24416,7 @@ const DATA = {
     {
       "id": "250",
       "team": "BEYOND BINARY",
-      "leader": "LATHIKA SRI K",
+      "leader": "Lathika Sri K",
       "wa_raw": "6374797673",
       "wa_norm": "6374797673",
       "wa_issues": [],
@@ -24433,7 +24433,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "LATHIKA SRI K",
+          "name": "Lathika Sri K",
           "gender": "F",
           "roll": "CB.SC.U4CSE25531",
           "branch": "CSE",
@@ -24443,7 +24443,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ANISHA NK",
+          "name": "Anisha NK",
           "gender": "F",
           "roll": "CB.SC.U4CSE25531",
           "branch": "CSE",
@@ -24453,7 +24453,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NAVANEETHAKRISHNAN V",
+          "name": "Navaneethakrishnan V",
           "gender": "M",
           "roll": "CB.SC.U4CSE25537",
           "branch": "CSE",
@@ -24463,7 +24463,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ADHTIH THIRUKUMARAN S",
+          "name": "Adhtih Thirukumaran S",
           "gender": "M",
           "roll": "CB.SC.U4CSE25501",
           "branch": "CSE",
@@ -24473,7 +24473,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "RITIKAARTHINI S",
+          "name": "Ritikaarthini S",
           "gender": "F",
           "roll": "CB.SC.U4CSE25546",
           "branch": "CSE",
@@ -24483,7 +24483,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "AMOTHINI BATHRA  KN",
+          "name": "Amothini Bathra KN",
           "gender": "F",
           "roll": "CB.SC.U4CSE25503",
           "branch": "CSE",
@@ -24504,7 +24504,7 @@ const DATA = {
     {
       "id": "251",
       "team": "DESTINY",
-      "leader": "RAHUL SANJIV R",
+      "leader": "Rahul Sanjiv R",
       "wa_raw": "9047332096",
       "wa_norm": "9047332096",
       "wa_issues": [],
@@ -24518,7 +24518,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "RAHUL SANJIV R",
+          "name": "Rahul Sanjiv R",
           "gender": "M",
           "roll": "CB.EN.U4ELC26038",
           "branch": "ELC",
@@ -24589,7 +24589,7 @@ const DATA = {
     {
       "id": "252",
       "team": "AeroResQ",
-      "leader": "SHAUREYA S",
+      "leader": "Shaureya S",
       "wa_raw": "9443539653",
       "wa_norm": "9443539653",
       "wa_issues": [],
@@ -24603,7 +24603,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SHAUREYA S",
+          "name": "Shaureya S",
           "gender": "M",
           "roll": "CB.EN.U4ECE25043",
           "branch": "ECE",
@@ -24613,7 +24613,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "RUBHIGA S",
+          "name": "Rubhiga S",
           "gender": "F",
           "roll": "CB.EN.U4ECE25034",
           "branch": "ECE",
@@ -24623,7 +24623,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S KAVIN PRANAV",
+          "name": "S Kavin Pranav",
           "gender": "M",
           "roll": "CB.EN.U4ECE25038",
           "branch": "ECE",
@@ -24633,7 +24633,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SANJAY S",
+          "name": "Sanjay S",
           "gender": "M",
           "roll": "CB.EN.U4ECE25041",
           "branch": "ECE",
@@ -24643,7 +24643,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "THARUN K M",
+          "name": "Tharun K M",
           "gender": "M",
           "roll": "CB.EN.U4ECE25051",
           "branch": "ECE",
@@ -24653,7 +24653,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "KESAVAN TMR",
+          "name": "Kesavan Tmr",
           "gender": "M",
           "roll": "CB.EN.U4ECE25023",
           "branch": "ECE",
@@ -24846,7 +24846,7 @@ const DATA = {
     {
       "id": "255",
       "team": "Error 404: Team Not Found",
-      "leader": "B.Dudhimant",
+      "leader": "B.dudhimant",
       "wa_raw": "8392016254*",
       "wa_norm": "8392016254",
       "wa_issues": [],
@@ -24860,7 +24860,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "B.Dudhimant",
+          "name": "B.dudhimant",
           "gender": "M",
           "roll": "CB.EN.U4EEE26148",
           "branch": "EEE",
@@ -24931,7 +24931,7 @@ const DATA = {
     {
       "id": "256",
       "team": "HydraX",
-      "leader": "K.B.Samyuktha",
+      "leader": "K.b.samyuktha",
       "wa_raw": "8825607487",
       "wa_norm": "8825607487",
       "wa_issues": [],
@@ -24947,7 +24947,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "K.B.Samyuktha",
+          "name": "K.b.samyuktha",
           "gender": "F",
           "roll": "CB.SC.U4CSE25522",
           "branch": "CSE",
@@ -25044,7 +25044,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Chakka satya Lakshmi vaishnavi",
+          "name": "Chakka Satya Lakshmi Vaishnavi",
           "gender": "F",
           "roll": "CB.EN.U4CCE25109",
           "branch": "CCE",
@@ -25550,7 +25550,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Boomika Devi K M S",
           "gender": "F",
-          "roll": "cb.en.u4elc26009",
+          "roll": "CB.EN.U4ELC26009",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 1,
@@ -25560,7 +25560,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Chiranjeevi K M",
           "gender": "M",
-          "roll": "cb.en.u4elc26011",
+          "roll": "CB.EN.U4ELC26011",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 1,
@@ -25568,9 +25568,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Shanmuga nishanth B",
+          "name": "Shanmuga Nishanth B",
           "gender": "M",
-          "roll": "cb.en.u4elc26145",
+          "roll": "CB.EN.U4ELC26145",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 1,
@@ -25580,7 +25580,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Sree Lidhesh T",
           "gender": "M",
-          "roll": "cb.en.u4elc26147",
+          "roll": "CB.EN.U4ELC26147",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 1,
@@ -25590,7 +25590,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Mirshali S",
           "gender": "F",
-          "roll": "cb.en.u4elc26129",
+          "roll": "CB.EN.U4ELC26129",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 1,
@@ -25704,7 +25704,7 @@ const DATA = {
     {
       "id": "265",
       "team": "CODERS",
-      "leader": "V.VELAVAN",
+      "leader": "V.velavan",
       "wa_raw": "9567506342",
       "wa_norm": "9567506342",
       "wa_issues": [],
@@ -25718,7 +25718,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "V.VELAVAN",
+          "name": "V.velavan",
           "gender": "M",
           "roll": "CB.AI.U4CPS26065",
           "branch": "CPS",
@@ -25738,7 +25738,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Bhavan Kailash TGR",
+          "name": "Bhavan Kailash Tgr",
           "gender": "M",
           "roll": "CB.AI.U4AIM26047",
           "branch": "AIM",
@@ -25748,7 +25748,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Thaanes.T",
+          "name": "Thaanes.t",
           "gender": "M",
           "roll": "CB.AI.U4AIM26050",
           "branch": "AIM",
@@ -25758,7 +25758,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Jayitri Sai.U",
+          "name": "Jayitri Sai.u",
           "gender": "F",
           "roll": "CB.AI.U4CPS26020",
           "branch": "CPS",
@@ -25768,7 +25768,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Vyshnavi Chowdhary.K",
+          "name": "Vyshnavi Chowdhary.k",
           "gender": "F",
           "roll": "CB.AI.U4CPS26022",
           "branch": "CPS",
@@ -25835,7 +25835,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sri karthika",
+          "name": "Sri Karthika",
           "gender": "F",
           "roll": "CB.EN.U4CHE26043",
           "branch": "CHE",
@@ -25894,7 +25894,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Iniya Srilekha Balasubramaniam",
           "gender": "F",
-          "roll": "cb.sc.u4cse25323",
+          "roll": "CB.SC.U4CSE25323",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -25904,7 +25904,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "S K Rubini",
           "gender": "F",
-          "roll": "cb.sc.u4cse25547",
+          "roll": "CB.SC.U4CSE25547",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -25912,7 +25912,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "M.A.Tharun",
+          "name": "M.a.tharun",
           "gender": "M",
           "roll": "CB.SC.U4CSE25429",
           "branch": "CSE",
@@ -25924,7 +25924,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Prasannaa Sudhagar",
           "gender": "M",
-          "roll": "cb.sc.u4cse25446",
+          "roll": "CB.SC.U4CSE25446",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -25934,7 +25934,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Himanshu R",
           "gender": "M",
-          "roll": "cb.sc.u4cse25417",
+          "roll": "CB.SC.U4CSE25417",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -25942,9 +25942,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Varun Satyaa P.S.",
+          "name": "Varun Satyaa P.s.",
           "gender": "M",
-          "roll": "cb.sc.u4cse26264",
+          "roll": "CB.SC.U4CSE26264",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -26293,7 +26293,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Pretheev v",
+          "name": "Pretheev V",
           "gender": "M",
           "roll": "CB.SC.U4CSE25341",
           "branch": "CSE",
@@ -26338,7 +26338,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Raja Raja Shree.A",
+          "name": "Raja Raja Shree.a",
           "gender": "F",
           "roll": "CB.EN U4CCE26065",
           "branch": "CCE",
@@ -26348,7 +26348,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S.Kanishka",
+          "name": "S.kanishka",
           "gender": "F",
           "roll": "CB.EN.U4ECE26024",
           "branch": "ECE",
@@ -26368,7 +26368,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "K.Vikas.Nair",
+          "name": "K.vikas.nair",
           "gender": "M",
           "roll": "CB.EN.U4ECE26022",
           "branch": "ECE",
@@ -26721,7 +26721,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "K MIDUNRAJA",
+          "name": "K Midunraja",
           "gender": "M",
           "roll": "CB.SC.U4CSE24324",
           "branch": "CSE",
@@ -26773,7 +26773,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "YASHRAJ PRAKASH",
+          "name": "Yashraj Prakash",
           "gender": "M",
           "roll": "CB.SC.U4CSE26366",
           "branch": "CSE",
@@ -26813,9 +26813,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "CB.SC.U4CSE26604",
+          "name": "Cb.sc.u4cse26604",
           "gender": "M",
-          "roll": "Adityaa Vaishnave K",
+          "roll": "ADITYAA VAISHNAVE K",
           "branch": null,
           "program": null,
           "yearOfStudy": null,
@@ -26919,7 +26919,7 @@ const DATA = {
     {
       "id": "279",
       "team": "MILVEX",
-      "leader": "C INDRAJITH",
+      "leader": "C Indrajith",
       "wa_raw": "6238678231",
       "wa_norm": "6238678231",
       "wa_issues": [],
@@ -26935,7 +26935,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "C INDRAJITH",
+          "name": "C Indrajith",
           "gender": "M",
           "roll": "CB.EN.U4CHE24008",
           "branch": "CHE",
@@ -26945,7 +26945,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ABHINAV R",
+          "name": "Abhinav R",
           "gender": "M",
           "roll": "CB.EN.U4CHE24038",
           "branch": "CHE",
@@ -26955,7 +26955,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "PRAANESH S",
+          "name": "Praanesh S",
           "gender": "M",
           "roll": "CB.EN.U4CHE24035",
           "branch": "CHE",
@@ -26965,7 +26965,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ANUSRI B",
+          "name": "Anusri B",
           "gender": "F",
           "roll": "CB.EN.U4CHE24007",
           "branch": "CHE",
@@ -26975,7 +26975,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SULAKSHA G",
+          "name": "Sulaksha G",
           "gender": "F",
           "roll": "CB.EN.U4CHE24056",
           "branch": "CHE",
@@ -26985,7 +26985,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "HARITHA D",
+          "name": "Haritha D",
           "gender": "F",
           "roll": "CB.EN.U4CHE24010",
           "branch": "CHE",
@@ -27206,7 +27206,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "NIVEDITHA KRISHNA",
+          "name": "Niveditha Krishna",
           "gender": "F",
           "roll": "CB.SC.U4CYS25133",
           "branch": "CYS",
@@ -27226,7 +27226,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MARIDI KARE SREE SAI DHEERAJ",
+          "name": "Maridi Kare Sree Sai Dheeraj",
           "gender": "M",
           "roll": "CB.SC.U4CYS24039",
           "branch": "CYS",
@@ -27236,7 +27236,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ANUSHREE R",
+          "name": "Anushree R",
           "gender": "F",
           "roll": "CB.SC.U4CYS25006",
           "branch": "CYS",
@@ -27246,7 +27246,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "DEVADARSHINI S",
+          "name": "Devadarshini S",
           "gender": "F",
           "roll": "CB.SC.U4CYS25013",
           "branch": "CYS",
@@ -27291,7 +27291,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Gowthamkumar  V",
+          "name": "Gowthamkumar V",
           "gender": "M",
           "roll": "CB.SC.U4CYS26017",
           "branch": "CYS",
@@ -27439,7 +27439,7 @@ const DATA = {
     {
       "id": "285",
       "team": "Byte Force",
-      "leader": "SAMITHA RAJESH",
+      "leader": "Samitha Rajesh",
       "wa_raw": "8610878514*",
       "wa_norm": "8610878514",
       "wa_issues": [],
@@ -27455,7 +27455,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SAMITHA RAJESH",
+          "name": "Samitha Rajesh",
           "gender": "F",
           "roll": "CB.EN.U4ELC26041",
           "branch": "ELC",
@@ -27465,7 +27465,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ASHMITTA ARULPRAKASAM",
+          "name": "Ashmitta Arulprakasam",
           "gender": "F",
           "roll": "CB.EN.U4ELC26060",
           "branch": "ELC",
@@ -27475,7 +27475,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "TANISHAA SP",
+          "name": "Tanishaa SP",
           "gender": "F",
           "roll": "CB.EN.U4ELC26052",
           "branch": "ELC",
@@ -27485,7 +27485,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "REVANTH REDDY",
+          "name": "Revanth Reddy",
           "gender": "M",
           "roll": "CB.EN.U4ELC26059",
           "branch": "ELC",
@@ -27495,7 +27495,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "NISHOK PK",
+          "name": "Nishok PK",
           "gender": "M",
           "roll": "CB.EN.U4ELC26031",
           "branch": "ELC",
@@ -27505,7 +27505,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "K M SANTHOSH NADARAJAN",
+          "name": "K M Santhosh Nadarajan",
           "gender": "M",
           "roll": "CB.EN.U4ELC26021",
           "branch": "ELC",
@@ -27560,7 +27560,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Nithin sathya rupan N",
+          "name": "Nithin Sathya Rupan N",
           "gender": "M",
           "roll": "CB. EN. U4ELC25125",
           "branch": "ELC",
@@ -27570,7 +27570,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Saai  sakthi vel S",
+          "name": "Saai Sakthi Vel S",
           "gender": "M",
           "roll": "CB.EN.U4ELC25131",
           "branch": "ELC",
@@ -27665,7 +27665,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Libika sri S",
+          "name": "Libika Sri S",
           "gender": "F",
           "roll": "CB.PS.I5DAS25015",
           "branch": "DAS",
@@ -28045,7 +28045,7 @@ const DATA = {
     {
       "id": "292",
       "team": "LORD",
-      "leader": "S.ASWATH",
+      "leader": "S.aswath",
       "wa_raw": "9842309103",
       "wa_norm": "9842309103",
       "wa_issues": [],
@@ -28059,7 +28059,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "S.ASWATH",
+          "name": "S.aswath",
           "gender": "M",
           "roll": "CB.SC.U4CSE26607",
           "branch": "CSE",
@@ -28069,7 +28069,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Ishi gupta",
+          "name": "Ishi Gupta",
           "gender": "F",
           "roll": "CB.SC.U4CYS26114",
           "branch": "CYS",
@@ -28099,7 +28099,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Sahasra gandla",
+          "name": "Sahasra Gandla",
           "gender": "F",
           "roll": "CB.SC.U4CYS26113",
           "branch": "CYS",
@@ -28130,7 +28130,7 @@ const DATA = {
     {
       "id": "293",
       "team": "BRAVO SIX",
-      "leader": "KARTHIK U",
+      "leader": "Karthik U",
       "wa_raw": "6374236118",
       "wa_norm": "6374236118",
       "wa_issues": [],
@@ -28144,7 +28144,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KARTHIK U",
+          "name": "Karthik U",
           "gender": "M",
           "roll": "CB.SC.U4CSE25524",
           "branch": "CSE",
@@ -28154,7 +28154,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Kavyashree kabilan",
+          "name": "Kavyashree Kabilan",
           "gender": "F",
           "roll": "CB.SC.U4CSE25526",
           "branch": "CSE",
@@ -28164,7 +28164,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Navadeep murugan",
+          "name": "Navadeep Murugan",
           "gender": "M",
           "roll": "CB.EN.U4CCE25123",
           "branch": "CCE",
@@ -28174,7 +28174,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sitesh Saravanan selvambal",
+          "name": "Sitesh Saravanan Selvambal",
           "gender": "M",
           "roll": "CB.EN.U4CCE25158",
           "branch": "CCE",
@@ -28385,7 +28385,7 @@ const DATA = {
     {
       "id": "296",
       "team": "Ex Nihilo",
-      "leader": "P ROHIT",
+      "leader": "P Rohit",
       "wa_raw": "9360403351",
       "wa_norm": "9360403351",
       "wa_issues": [],
@@ -28401,7 +28401,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "P ROHIT",
+          "name": "P Rohit",
           "gender": "M",
           "roll": "CB.SC.U4CSE26435",
           "branch": "CSE",
@@ -28411,7 +28411,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "JEREMIAH C BERLY",
+          "name": "Jeremiah C Berly",
           "gender": "M",
           "roll": "CB.EN.U4ECE26120",
           "branch": "ECE",
@@ -28421,7 +28421,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S ANOUSHKA",
+          "name": "S Anoushka",
           "gender": "F",
           "roll": "CB.EN.U4ECE26141",
           "branch": "ECE",
@@ -28431,7 +28431,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "VISHNU A RAMANATHAN",
+          "name": "Vishnu A Ramanathan",
           "gender": "M",
           "roll": "CB.SC.U4CSE26467",
           "branch": "CSE",
@@ -28441,7 +28441,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "VN DHARSHAN",
+          "name": "VN Dharshan",
           "gender": "M",
           "roll": "CB.AI.U4QTS26054",
           "branch": "QTS",
@@ -28451,7 +28451,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "V HARIVARSHA",
+          "name": "V Harivarsha",
           "gender": "M",
           "roll": "CB.SC.U4CSE26058",
           "branch": "CSE",
@@ -28583,7 +28583,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MUKESHKUMAR R",
+          "name": "Mukeshkumar R",
           "gender": "M",
           "roll": "CB.PS.I5DAS25120",
           "branch": "DAS",
@@ -28603,7 +28603,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NITISH SARAVANA",
+          "name": "Nitish Saravana",
           "gender": "M",
           "roll": "CB.PS.I5DAS25139",
           "branch": "DAS",
@@ -28939,7 +28939,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Abishree P.M",
+          "name": "Abishree P.m",
           "gender": "F",
           "roll": "CB.EN.U4ELC26102",
           "branch": "ELC",
@@ -29016,7 +29016,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Yatin Ramjat .P",
+          "name": "Yatin Ramjat .p",
           "gender": "M",
           "roll": "CB.EN.U4ECE26158",
           "branch": "ECE",
@@ -29036,7 +29036,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ABHINAV KARTHIK M",
+          "name": "Abhinav Karthik M",
           "gender": "M",
           "roll": "CB.EN.U4EEE26002",
           "branch": "EEE",
@@ -29077,7 +29077,7 @@ const DATA = {
     {
       "id": "304",
       "team": "BLACK HATS",
-      "leader": "AGILAN",
+      "leader": "Agilan",
       "wa_raw": "7418517989",
       "wa_norm": "7418517989",
       "wa_issues": [],
@@ -29094,7 +29094,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "AGILAN",
+          "name": "Agilan",
           "gender": "M",
           "roll": "CB.EN.U4ARE26039",
           "branch": "ARE",
@@ -29104,7 +29104,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "SUDHIT P B",
+          "name": "Sudhit P B",
           "gender": "M",
           "roll": "CB.EN.U4ARE26042",
           "branch": "ARE",
@@ -29114,7 +29114,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ASHIK",
+          "name": "Ashik",
           "gender": "M",
           "roll": "CB.EN.U4ARE26040",
           "branch": "ARE",
@@ -29124,7 +29124,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NAVEEN",
+          "name": "Naveen",
           "gender": "M",
           "roll": "CB.EN.U4ARE26023",
           "branch": "ARE",
@@ -29134,7 +29134,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "KARTHIGA",
+          "name": "Karthiga",
           "gender": "F",
           "roll": "CB.EN.U4CHE26157",
           "branch": "CHE",
@@ -29211,7 +29211,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "AnanthVarshan",
+          "name": "Ananthvarshan",
           "gender": "M",
           "roll": "CB.SC.U4CSE24405",
           "branch": "CSE",
@@ -29290,7 +29290,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "O OM NIMALAN",
+          "name": "O OM Nimalan",
           "gender": "M",
           "roll": "CB.EN.U4EEE26223",
           "branch": "EEE",
@@ -29300,7 +29300,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "A SSRADDHA",
+          "name": "A Ssraddha",
           "gender": "F",
           "roll": "CB.EN.U4ECE26301",
           "branch": "ECE",
@@ -29320,7 +29320,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "LINGESHWARAN KATHIRVEL",
+          "name": "Lingeshwaran Kathirvel",
           "gender": "M",
           "roll": "CB.EN.U4CHE26154",
           "branch": "CHE",
@@ -29377,7 +29377,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Vikash chowdri",
+          "name": "Vikash Chowdri",
           "gender": "M",
           "roll": "CB.SC.U4CSE24261",
           "branch": "CSE",
@@ -29656,7 +29656,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Nandha Krishna  M B",
+          "name": "Nandha Krishna M B",
           "gender": "M",
           "roll": "CB.EN.U4EEE25028",
           "branch": "EEE",
@@ -29724,7 +29724,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Shreenithin.S.B",
+          "name": "Shreenithin.s.b",
           "gender": "M",
           "roll": "CB.PS.I5DAS26137",
           "branch": "DAS",
@@ -30100,7 +30100,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S.Prithika Rakshambigai",
+          "name": "S.prithika Rakshambigai",
           "gender": "F",
           "roll": "CB.EN.U4CCE26147",
           "branch": "CCE",
@@ -30244,7 +30244,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Santosh.S",
+          "name": "Santosh.s",
           "gender": "M",
           "roll": "CB.EN.U4EEE26236",
           "branch": "EEE",
@@ -30264,7 +30264,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "A SivaNithi Maaran",
+          "name": "A Sivanithi Maaran",
           "gender": "M",
           "roll": "CB.EN.U4EEE26202",
           "branch": "EEE",
@@ -30434,7 +30434,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "M.Mithul Kiruthik",
+          "name": "M.mithul Kiruthik",
           "gender": "M",
           "roll": "CB.EN.U4EEE26123",
           "branch": "EEE",
@@ -30535,7 +30535,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "S M HARSHIKAA",
+          "name": "S M Harshikaa",
           "gender": "F",
           "roll": "CB.EN.U4CCE26045",
           "branch": "CCE",
@@ -30574,7 +30574,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Rishikesh",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26343",
+          "roll": "CB.SC.U4CSE26343",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30582,9 +30582,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Sai pritheev .S",
+          "name": "Sai Pritheev .s",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26349",
+          "roll": "CB.SC.U4CSE26349",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30592,9 +30592,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Advaith .J",
+          "name": "Advaith .j",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26305",
+          "roll": "CB.SC.U4CSE26305",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30602,9 +30602,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sathya dev .M.H",
+          "name": "Sathya Dev .m.h",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26352",
+          "roll": "CB.SC.U4CSE26352",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30612,9 +30612,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Rithvikaa .M.S",
+          "name": "Rithvikaa .m.s",
           "gender": "F",
-          "roll": "Cb.sc.u4cse26331",
+          "roll": "CB.SC.U4CSE26331",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30622,9 +30622,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Charvi pundir",
+          "name": "Charvi Pundir",
           "gender": "F",
-          "roll": "Cb.sc.u4cys26108",
+          "roll": "CB.SC.U4CYS26108",
           "branch": "CYS",
           "program": "U4",
           "yearOfStudy": 1,
@@ -30643,7 +30643,7 @@ const DATA = {
     {
       "id": "323",
       "team": "Hexanova innovation",
-      "leader": "K C SIVARAM",
+      "leader": "K C Sivaram",
       "wa_raw": "6385855299",
       "wa_norm": "6385855299",
       "wa_issues": [],
@@ -30659,7 +30659,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "K C SIVARAM",
+          "name": "K C Sivaram",
           "gender": "M",
           "roll": "CB.EN.U4CIE26026",
           "branch": "CIE",
@@ -30689,7 +30689,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "S.Janani",
+          "name": "S.janani",
           "gender": "F",
           "roll": "CB.EN.U4CIE26057",
           "branch": "CIE",
@@ -30754,7 +30754,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MITHUL AKSHAY AM",
+          "name": "Mithul Akshay AM",
           "gender": "M",
           "roll": "CB.SC.U4AIE24135",
           "branch": "AIE",
@@ -30764,7 +30764,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "SREE HARSHITH S",
+          "name": "Sree Harshith S",
           "gender": "M",
           "roll": "CB.SC.U4AIE24053",
           "branch": "AIE",
@@ -30774,7 +30774,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NILA B",
+          "name": "Nila B",
           "gender": "F",
           "roll": "CB.SC.U4AIE24036",
           "branch": "AIE",
@@ -30784,7 +30784,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "THARUN P V",
+          "name": "Tharun P V",
           "gender": "M",
           "roll": "CB.SC.U4AIE24037",
           "branch": "AIE",
@@ -30794,7 +30794,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "PRAPANJAN I",
+          "name": "Prapanjan I",
           "gender": "M",
           "roll": "CB.AI.U4AID24140",
           "branch": "AID",
@@ -30926,7 +30926,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ROSHAN JAI S",
+          "name": "Roshan Jai S",
           "gender": "M",
           "roll": "CB.EN.U4MEE24036",
           "branch": "MEE",
@@ -30936,7 +30936,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ANKIT KUMAR PATEL",
+          "name": "Ankit Kumar Patel",
           "gender": "M",
           "roll": "CB.EN.U4MEE24107",
           "branch": "MEE",
@@ -30946,7 +30946,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "K HARESH",
+          "name": "K Haresh",
           "gender": "M",
           "roll": "CB.EN.U4MEE24126",
           "branch": "MEE",
@@ -30956,7 +30956,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "KRUPA KIRTI PATIL",
+          "name": "Krupa Kirti Patil",
           "gender": "F",
           "roll": "CB.EN.U4MEE24131",
           "branch": "MEE",
@@ -30966,7 +30966,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "KOLLA PURNIMA SAI TEJASWINI",
+          "name": "Kolla Purnima Sai Tejaswini",
           "gender": "F",
           "roll": "CB.EN.U4MEE24161",
           "branch": "MEE",
@@ -31224,7 +31224,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Geetha lakshmi mayukhi pynampuram",
+          "name": "Geetha Lakshmi Mayukhi Pynampuram",
           "gender": "F",
           "roll": "CB.SC.U4CSE26514",
           "branch": "CSE",
@@ -31378,7 +31378,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "C.Lasya Priya",
+          "name": "C.lasya Priya",
           "gender": "F",
           "roll": "CB.SC.U4CSE26769",
           "branch": "CSE",
@@ -31419,7 +31419,7 @@ const DATA = {
     {
       "id": "332",
       "team": "Krayons",
-      "leader": "G A YUVAN",
+      "leader": "G A Yuvan",
       "wa_raw": "8667222010",
       "wa_norm": "8667222010",
       "wa_issues": [],
@@ -31433,7 +31433,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "G A YUVAN",
+          "name": "G A Yuvan",
           "gender": "M",
           "roll": "CB EN.U4ARE25014",
           "branch": "ARE",
@@ -31826,7 +31826,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Harish s",
+          "name": "Harish S",
           "gender": "M",
           "roll": "CB.EN.U4MEE26109",
           "branch": "MEE",
@@ -32125,7 +32125,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Ragav S",
           "gender": "M",
-          "roll": "cb.sc.u4aie24041",
+          "roll": "CB.SC.U4AIE24041",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -32133,9 +32133,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Naveen u",
+          "name": "Naveen U",
           "gender": "M",
-          "roll": "cb.sc.u4aie24035",
+          "roll": "CB.SC.U4AIE24035",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -32143,9 +32143,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "deeksha p",
+          "name": "Deeksha P",
           "gender": "F",
-          "roll": "cb.sc.u4aie24015",
+          "roll": "CB.SC.U4AIE24015",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -32153,9 +32153,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "srinithi k",
+          "name": "Srinithi K",
           "gender": "F",
-          "roll": "cb.sc.u4aie24055",
+          "roll": "CB.SC.U4AIE24055",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -32163,9 +32163,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "bhuvaneswaran s",
+          "name": "Bhuvaneswaran S",
           "gender": "M",
-          "roll": "cb.sc.u4aie4012",
+          "roll": "CB.SC.U4AIE4012",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": null,
@@ -32175,7 +32175,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Nithin Krishnappa",
           "gender": "M",
-          "roll": "cb.sc.u4aie24142",
+          "roll": "CB.SC.U4AIE24142",
           "branch": "AIE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -32336,7 +32336,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "T. R. Akshaj rao",
+          "name": "T. R. Akshaj Rao",
           "gender": "M",
           "roll": "CB.EN.U4EEE26040",
           "branch": "EEE",
@@ -32391,7 +32391,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "HARINI KATHIRESAN",
+          "name": "Harini Kathiresan",
           "gender": "F",
           "roll": "CBPSI5DAS25112",
           "branch": "DAS",
@@ -32496,7 +32496,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Samiksha balamurugan",
+          "name": "Samiksha Balamurugan",
           "gender": "F",
           "roll": "CB.EN.U4CCE25138",
           "branch": "CCE",
@@ -32516,7 +32516,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "VIKAS KRISHNA KUMAR",
+          "name": "Vikas Krishna Kumar",
           "gender": "M",
           "roll": "CB.EN.U4CCE25155",
           "branch": "CCE",
@@ -32775,7 +32775,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Dhairya setiya",
+          "name": "Dhairya Setiya",
           "gender": "M",
           "roll": "CB.EN.U4ELC26111",
           "branch": "ELC",
@@ -32990,7 +32990,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "SHRIYA BALAN",
+          "name": "Shriya Balan",
           "gender": "F",
           "roll": "CB.EN.U4ELC25137",
           "branch": "ELC",
@@ -33000,7 +33000,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "S.Madhuritika",
+          "name": "S.madhuritika",
           "gender": "F",
           "roll": "CB.EN.U4ELC25118",
           "branch": "ELC",
@@ -33010,7 +33010,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "D.SONIYA TASLIM",
+          "name": "D.soniya Taslim",
           "gender": "F",
           "roll": "CB.SC.U4CSE25711",
           "branch": "CSE",
@@ -33020,7 +33020,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "G.Harshini Royal",
+          "name": "G.harshini Royal",
           "gender": "F",
           "roll": "CB.SC.U4CYS25021",
           "branch": "CYS",
@@ -33051,7 +33051,7 @@ const DATA = {
     {
       "id": "351",
       "team": "Nexus",
-      "leader": "Harshini V.B",
+      "leader": "Harshini V.b",
       "wa_raw": "9042476929",
       "wa_norm": "9042476929",
       "wa_issues": [],
@@ -33065,7 +33065,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Harshini V.B",
+          "name": "Harshini V.b",
           "gender": "F",
           "roll": "CB. PS. I5DAS26008",
           "branch": "DAS",
@@ -33200,7 +33200,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Shri Aishwarya .P",
+          "name": "Shri Aishwarya .p",
           "gender": "F",
           "roll": "CB.SC.U4CSE24050",
           "branch": "CSE",
@@ -33221,7 +33221,7 @@ const DATA = {
     {
       "id": "353",
       "team": "Royal Challengers",
-      "leader": "KACHA JASWANTH SATYA KUMAR",
+      "leader": "Kacha Jaswanth Satya Kumar",
       "wa_raw": "9392793166",
       "wa_norm": "9392793166",
       "wa_issues": [],
@@ -33235,7 +33235,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KACHA JASWANTH SATYA KUMAR",
+          "name": "Kacha Jaswanth Satya Kumar",
           "gender": "M",
           "roll": "CB.SC.U4CSE25025",
           "branch": "CSE",
@@ -33245,7 +33245,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "BAPATU SATWIKA",
+          "name": "Bapatu Satwika",
           "gender": "F",
           "roll": "CB.SC.U4CSE25010",
           "branch": "CSE",
@@ -33255,7 +33255,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "MITTA ROCHAN",
+          "name": "Mitta Rochan",
           "gender": "M",
           "roll": "CB.SC.U4CSE25033",
           "branch": "CSE",
@@ -33265,7 +33265,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MADDI NAGESWARAO",
+          "name": "Maddi Nageswarao",
           "gender": "M",
           "roll": "CB.SC.U4CSE25663",
           "branch": "CSE",
@@ -33275,7 +33275,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SURYADEVARA SANDEEP",
+          "name": "Suryadevara Sandeep",
           "gender": "M",
           "roll": "CB.SC.U4CSE25759",
           "branch": "CSE",
@@ -33285,7 +33285,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SUREDDI SHARATH KUMAR",
+          "name": "Sureddi Sharath Kumar",
           "gender": "M",
           "roll": "CB.SC.U4CSE25058",
           "branch": "CSE",
@@ -33907,7 +33907,7 @@ const DATA = {
     {
       "id": "361",
       "team": "Sixth Sense",
-      "leader": "K.A.Tirunavukkarasu",
+      "leader": "K.a.tirunavukkarasu",
       "wa_raw": "8925306458",
       "wa_norm": "8925306458",
       "wa_issues": [],
@@ -33923,7 +33923,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "K.A.Tirunavukkarasu",
+          "name": "K.a.tirunavukkarasu",
           "gender": "M",
           "roll": "CB.SC.U4AIE26067",
           "branch": "AIE",
@@ -34028,7 +34028,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "LOHIT KUMAR R E",
+          "name": "Lohit Kumar R E",
           "gender": "M",
           "roll": "CB.SC.U4CSE25636",
           "branch": "CSE",
@@ -34048,7 +34048,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "A.S.K.Nayanida",
+          "name": "A.s.k.nayanida",
           "gender": "F",
           "roll": "CB.SC.U4CSE25601",
           "branch": "CSE",
@@ -34133,7 +34133,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Patnam Venkata HarinI",
+          "name": "Patnam Venkata Harini",
           "gender": "F",
           "roll": "CB.SC.U4CSE26232",
           "branch": "CSE",
@@ -34198,7 +34198,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "G.Sai Dakshith Reddy",
+          "name": "G.sai Dakshith Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CYS26016",
           "branch": "CYS",
@@ -34208,7 +34208,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "P.Venkata Saketh Reddy",
+          "name": "P.venkata Saketh Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CYS26039",
           "branch": "CYS",
@@ -34228,7 +34228,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "P.Dimple Prasanna",
+          "name": "P.dimple Prasanna",
           "gender": "F",
           "roll": "CB.AI.U4CPS26035",
           "branch": "CPS",
@@ -34273,7 +34273,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Varishh JBM",
+          "name": "Varishh Jbm",
           "gender": "M",
           "roll": "CB.EN.U4CHE26149",
           "branch": "CHE",
@@ -34293,7 +34293,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Akhilesh.B",
+          "name": "Akhilesh.b",
           "gender": "M",
           "roll": "CB.PS.I5DAS26101",
           "branch": "DAS",
@@ -34303,7 +34303,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "G.Ragashri",
+          "name": "G.ragashri",
           "gender": "F",
           "roll": "CB.EN.U4CHE26017",
           "branch": "CHE",
@@ -34313,7 +34313,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Raghav Hari Shankar C.B",
+          "name": "Raghav Hari Shankar C.b",
           "gender": "M",
           "roll": "CB.AI.U4AIM26036",
           "branch": "AIM",
@@ -34334,7 +34334,7 @@ const DATA = {
     {
       "id": "366",
       "team": "HackNox",
-      "leader": "C.R.Niteshraj",
+      "leader": "C.r.niteshraj",
       "wa_raw": "8012389632",
       "wa_norm": "8012389632",
       "wa_issues": [],
@@ -34348,7 +34348,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "C.R.Niteshraj",
+          "name": "C.r.niteshraj",
           "gender": "M",
           "roll": "CB.EN.U4ARE24029",
           "branch": "ARE",
@@ -34358,7 +34358,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MADAN GOKUL R",
+          "name": "Madan Gokul R",
           "gender": "M",
           "roll": "CB.EN.U4ARE24022",
           "branch": "ARE",
@@ -34368,7 +34368,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "KARNA KRANTHI KOUSHIK REDDY",
+          "name": "Karna Kranthi Koushik Reddy",
           "gender": "M",
           "roll": "CB.EN.U4ARE24017",
           "branch": "ARE",
@@ -34378,7 +34378,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "PARTHASARATHI N G",
+          "name": "Parthasarathi N G",
           "gender": "M",
           "roll": "CB.EN.U4ARE24032",
           "branch": "ARE",
@@ -34388,7 +34388,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "PIRIKTHISHA P",
+          "name": "Pirikthisha P",
           "gender": "F",
           "roll": "CB.EN.U4ARE24035",
           "branch": "ARE",
@@ -34398,7 +34398,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SIVASUNDHARAM G",
+          "name": "Sivasundharam G",
           "gender": "M",
           "roll": "CB.EN.U4ARE24048",
           "branch": "ARE",
@@ -34443,7 +34443,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "S.K.Sivani",
+          "name": "S.k.sivani",
           "gender": "F",
           "roll": "CB.EN.U4EEE26032",
           "branch": "EEE",
@@ -34453,7 +34453,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "JINUVANTH S",
+          "name": "Jinuvanth S",
           "gender": "M",
           "roll": "CB.SC.U4CSE26319",
           "branch": "CSE",
@@ -34463,7 +34463,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SANJEEVI V VAIDYANATHAN",
+          "name": "Sanjeevi V Vaidyanathan",
           "gender": "M",
           "roll": "CB.SC.U4CSE26752",
           "branch": "CSE",
@@ -34645,7 +34645,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "GOPIKA G PANIKAR",
+          "name": "Gopika G Panikar",
           "gender": "F",
           "roll": "CB.PS.I5DAS23030",
           "branch": "DAS",
@@ -34710,7 +34710,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Karnasula Jaya sai venkatesh",
+          "name": "Karnasula Jaya Sai Venkatesh",
           "gender": "M",
           "roll": "CB.SC.U4CYS24125",
           "branch": "CYS",
@@ -34797,7 +34797,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "RakshithKumar M",
+          "name": "Rakshithkumar M",
           "gender": "M",
           "roll": "CB.SC.U4CSE24438",
           "branch": "CSE",
@@ -34959,7 +34959,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "V R YASSWANT",
+          "name": "V R Yasswant",
           "gender": "M",
           "roll": "CB.AI.U4AID25156",
           "branch": "AID",
@@ -34969,7 +34969,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "RAM ESWAR P",
+          "name": "Ram Eswar P",
           "gender": "M",
           "roll": "CB.AI.U4AID25147",
           "branch": "AID",
@@ -34989,7 +34989,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Harsha sree A",
+          "name": "Harsha Sree A",
           "gender": "F",
           "roll": "CB.AI.U4AID25105",
           "branch": "AID",
@@ -35046,7 +35046,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Narendra soni",
+          "name": "Narendra Soni",
           "gender": "M",
           "roll": "CB.SC.U4CSE26169",
           "branch": "CSE",
@@ -35066,7 +35066,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Jahnavi kamma",
+          "name": "Jahnavi Kamma",
           "gender": "F",
           "roll": "CB.SC.U4CSE26171",
           "branch": "CSE",
@@ -35408,7 +35408,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Pinisetti srihaasini",
+          "name": "Pinisetti Srihaasini",
           "gender": "F",
           "roll": "CB.SC.U4AIE25167",
           "branch": "AIE",
@@ -35493,7 +35493,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Abhinav.P.P",
+          "name": "Abhinav.p.p",
           "gender": "M",
           "roll": "CB.EN.U4CCE26103",
           "branch": "CCE",
@@ -35742,7 +35742,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "RAMADURGAM PRADYUMNA",
+          "name": "Ramadurgam Pradyumna",
           "gender": "M",
           "roll": "CB.SC.U4CYS24047",
           "branch": "CYS",
@@ -35762,7 +35762,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SEETHAL BIJU",
+          "name": "Seethal Biju",
           "gender": "F",
           "roll": "CB.SC.U4CYS24052",
           "branch": "CYS",
@@ -35878,7 +35878,7 @@ const DATA = {
     {
       "id": "384",
       "team": "Syntax Syndicate",
-      "leader": "AKSHAYA A",
+      "leader": "Akshaya A",
       "wa_raw": "9952256937",
       "wa_norm": "9952256937",
       "wa_issues": [],
@@ -35894,7 +35894,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "AKSHAYA A",
+          "name": "Akshaya A",
           "gender": "F",
           "roll": "CB.EN.U4ELC25002",
           "branch": "ELC",
@@ -35904,7 +35904,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "K SUJAI KARTHICK",
+          "name": "K Sujai Karthick",
           "gender": "M",
           "roll": "CB.EN.U4CCE25117",
           "branch": "CCE",
@@ -35914,7 +35914,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "DHIVYAN K",
+          "name": "Dhivyan K",
           "gender": "M",
           "roll": "CB.EN.U4CCE25113",
           "branch": "CCE",
@@ -35934,7 +35934,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "SAHANA GANDHI",
+          "name": "Sahana Gandhi",
           "gender": "F",
           "roll": "CB.EN.U4ELC25033",
           "branch": "ELC",
@@ -36019,7 +36019,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Varunikaa kousikan",
+          "name": "Varunikaa Kousikan",
           "gender": "F",
           "roll": "CB.EN.U4ECE26156",
           "branch": "ECE",
@@ -36106,7 +36106,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "K.Hasini",
+          "name": "K.hasini",
           "gender": "F",
           "roll": "CB.SC.U4CSE24123",
           "branch": "CSE",
@@ -36137,7 +36137,7 @@ const DATA = {
     {
       "id": "387",
       "team": "Brute Elites",
-      "leader": "Geetha lakshmi mayukhi pynampuram",
+      "leader": "Geetha Lakshmi Mayukhi Pynampuram",
       "wa_raw": "9032509036",
       "wa_norm": "9032509036",
       "wa_issues": [],
@@ -36154,9 +36154,9 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Geetha lakshmi mayukhi pynampuram",
+          "name": "Geetha Lakshmi Mayukhi Pynampuram",
           "gender": "F",
-          "roll": "Cb.sc.u4cse26514",
+          "roll": "CB.SC.U4CSE26514",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36164,9 +36164,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Kamalapuram venkata vineel",
+          "name": "Kamalapuram Venkata Vineel",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26569",
+          "roll": "CB.SC.U4CSE26569",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36174,9 +36174,9 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Kuchi joohita",
+          "name": "Kuchi Joohita",
           "gender": "F",
-          "roll": "Cb.sc.u4cse26524",
+          "roll": "CB.SC.U4CSE26524",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36184,9 +36184,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Bongu sasanth",
+          "name": "Bongu Sasanth",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26506",
+          "roll": "CB.SC.U4CSE26506",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36194,9 +36194,9 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Mullapudi g krishna Chaitanya",
+          "name": "Mullapudi G Krishna Chaitanya",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26534",
+          "roll": "CB.SC.U4CSE26534",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36204,9 +36204,9 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Pragada purnesh naidu",
+          "name": "Pragada Purnesh Naidu",
           "gender": "M",
-          "roll": "Cb.sc.u4cse26542",
+          "roll": "CB.SC.U4CSE26542",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -36310,7 +36310,7 @@ const DATA = {
     {
       "id": "389",
       "team": "YOUNG INNOVATORS",
-      "leader": "SAHANAA KAVIRAJ",
+      "leader": "Sahanaa Kaviraj",
       "wa_raw": "9663906415",
       "wa_norm": "9663906415",
       "wa_issues": [],
@@ -36324,7 +36324,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SAHANAA KAVIRAJ",
+          "name": "Sahanaa Kaviraj",
           "gender": "F",
           "roll": "CB.EN.U4ECE26045",
           "branch": "ECE",
@@ -36334,7 +36334,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "HANUMITHAN ASHOKKUMAR LAVANYA",
+          "name": "Hanumithan Ashokkumar Lavanya",
           "gender": "M",
           "roll": "CB.EN.U4ECE26064",
           "branch": "ECE",
@@ -36344,7 +36344,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NANDHA VIKASH V",
+          "name": "Nandha Vikash V",
           "gender": "M",
           "roll": "CB.EN.U4ECE26034",
           "branch": "ECE",
@@ -36354,7 +36354,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SHRUTHI RANJANE B.S",
+          "name": "Shruthi Ranjane B.s",
           "gender": "F",
           "roll": "CB.EN.U4ECE26052",
           "branch": "ECE",
@@ -36364,7 +36364,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "V GAUTHAM",
+          "name": "V Gautham",
           "gender": "M",
           "roll": "CB.EN.U4ECE26056",
           "branch": "ECE",
@@ -36374,7 +36374,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "VARUN C",
+          "name": "Varun C",
           "gender": "M",
           "roll": "CB.EN.U4ECE26259",
           "branch": "ECE",
@@ -36467,7 +36467,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Lakshya anuraj",
+          "name": "Lakshya Anuraj",
           "gender": "M",
           "roll": "CB.SC.U4CSE26426",
           "branch": "CSE",
@@ -36663,7 +36663,7 @@ const DATA = {
     {
       "id": "393",
       "team": "Fauzi",
-      "leader": "Manda Rupa sri vyshnavi",
+      "leader": "Manda Rupa Sri Vyshnavi",
       "wa_raw": "9317682456",
       "wa_norm": "9317682456",
       "wa_issues": [],
@@ -36679,7 +36679,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Manda Rupa sri vyshnavi",
+          "name": "Manda Rupa Sri Vyshnavi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25134",
           "branch": "CSE",
@@ -36689,7 +36689,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "kadambari sai srija",
+          "name": "Kadambari Sai Srija",
           "gender": "F",
           "roll": "CB.SC.U4CSE25630",
           "branch": "CSE",
@@ -36699,7 +36699,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Kuruba sanjana",
+          "name": "Kuruba Sanjana",
           "gender": "F",
           "roll": "CB.SC.U4CSE25633",
           "branch": "CSE",
@@ -36709,7 +36709,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Gadwal Sai joshika",
+          "name": "Gadwal Sai Joshika",
           "gender": "F",
           "roll": "CB.SC.U4CSE25117",
           "branch": "CSE",
@@ -36861,7 +36861,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "VimalHariHar S K",
+          "name": "Vimalharihar S K",
           "gender": "M",
           "roll": "CB.SC.U4CSE23254",
           "branch": "CSE",
@@ -36871,7 +36871,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "ADITHYAA SEYYONE D R",
+          "name": "Adithyaa Seyyone D R",
           "gender": "M",
           "roll": "CB.SC.U4CSE23305",
           "branch": "CSE",
@@ -36922,7 +36922,7 @@ const DATA = {
     {
       "id": "396",
       "team": "ENFIELD EMPIRE",
-      "leader": "NAVANESHVAR.J",
+      "leader": "Navaneshvar.j",
       "wa_raw": "9080831881",
       "wa_norm": "9080831881",
       "wa_issues": [],
@@ -36938,7 +36938,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "NAVANESHVAR.J",
+          "name": "Navaneshvar.j",
           "gender": "M",
           "roll": "CB.SC.U4AIE26177",
           "branch": "AIE",
@@ -36948,7 +36948,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MUKILAN.C",
+          "name": "Mukilan.c",
           "gender": "M",
           "roll": "CB.SC.U4AIE26143",
           "branch": "AIE",
@@ -36958,7 +36958,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "M.R.PRINCE IVAN",
+          "name": "M.r.prince Ivan",
           "gender": "M",
           "roll": "CB.SC.U4AIE26139",
           "branch": "AIE",
@@ -36968,7 +36968,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "RAM MURTI",
+          "name": "Ram Murti",
           "gender": "M",
           "roll": "CB.SC.U4AIE26153",
           "branch": "AIE",
@@ -36988,7 +36988,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "Abarna balamurugan",
+          "name": "Abarna Balamurugan",
           "gender": "F",
           "roll": "CB.AI.U4AIM26001",
           "branch": "AIM",
@@ -37009,7 +37009,7 @@ const DATA = {
     {
       "id": "397",
       "team": "Geeks",
-      "leader": "Aditya shankar ponugumatla",
+      "leader": "Aditya Shankar Ponugumatla",
       "wa_raw": "8122417986",
       "wa_norm": "8122417986",
       "wa_issues": [],
@@ -37023,7 +37023,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Aditya shankar ponugumatla",
+          "name": "Aditya Shankar Ponugumatla",
           "gender": "M",
           "roll": "CB.SC.U4CSE26106",
           "branch": "CSE",
@@ -37094,7 +37094,7 @@ const DATA = {
     {
       "id": "398",
       "team": "HACKNOVA",
-      "leader": "SRUTHICA .M S",
+      "leader": "Sruthica .m S",
       "wa_raw": "9791699077",
       "wa_norm": "9791699077",
       "wa_issues": [],
@@ -37110,7 +37110,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SRUTHICA .M S",
+          "name": "Sruthica .m S",
           "gender": "F",
           "roll": "CB.SC.U4CSE25657",
           "branch": "CSE",
@@ -37120,7 +37120,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MAHITHA.S",
+          "name": "Mahitha.s",
           "gender": "F",
           "roll": "CB.SC.U4CSE25638",
           "branch": "CSE",
@@ -37130,7 +37130,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "MAHASRI MURUGESAN",
+          "name": "Mahasri Murugesan",
           "gender": "F",
           "roll": "CB.SC.U4CSE25637",
           "branch": "CSE",
@@ -37140,7 +37140,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "VENKAT RAJARAM S",
+          "name": "Venkat Rajaram S",
           "gender": "M",
           "roll": "CB.SC.U4CYS25141",
           "branch": "CYS",
@@ -37150,7 +37150,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "TEJASHREE KRISHNAN",
+          "name": "Tejashree Krishnan",
           "gender": "F",
           "roll": "CB.SC.U4CYS25123",
           "branch": "CYS",
@@ -37160,7 +37160,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "DHARSHINI S",
+          "name": "Dharshini S",
           "gender": "F",
           "roll": "CB.SC.U4CSE25116",
           "branch": "CSE",
@@ -37181,7 +37181,7 @@ const DATA = {
     {
       "id": "399",
       "team": "PRESTOFIRE",
-      "leader": "KARTHIKA S",
+      "leader": "Karthika S",
       "wa_raw": "9003704528",
       "wa_norm": "9003704528",
       "wa_issues": [],
@@ -37195,7 +37195,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KARTHIKA S",
+          "name": "Karthika S",
           "gender": "F",
           "roll": "CB.SC.P2CSE26011",
           "branch": "CSE",
@@ -37205,7 +37205,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "MONISH KUMAR T K",
+          "name": "Monish Kumar T K",
           "gender": "M",
           "roll": "CB.SC.P2CSE26036",
           "branch": "CSE",
@@ -37215,7 +37215,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NIVETHA S",
+          "name": "Nivetha S",
           "gender": "F",
           "roll": "CB.SC.P2CSE26022",
           "branch": "CSE",
@@ -37225,7 +37225,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NIRANJANA N",
+          "name": "Niranjana N",
           "gender": "F",
           "roll": "CB.SC.P2CSE26021",
           "branch": "CSE",
@@ -37235,7 +37235,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "JAIDEEP",
+          "name": "Jaideep",
           "gender": "M",
           "roll": "CB.SC.P2CSE26007",
           "branch": "CSE",
@@ -37245,7 +37245,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SIBI CHANDARU C",
+          "name": "Sibi Chandaru C",
           "gender": "M",
           "roll": "CB.SC.P2CSE26027",
           "branch": "CSE",
@@ -37292,7 +37292,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Vivin.S",
+          "name": "Vivin.s",
           "gender": "M",
           "roll": "CB.EN.U4EEE24054",
           "branch": "EEE",
@@ -37302,7 +37302,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Harshini.S",
+          "name": "Harshini.s",
           "gender": "M",
           "roll": "CB.EN.U4EEE24021",
           "branch": "EEE",
@@ -37312,7 +37312,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Swetha.R",
+          "name": "Swetha.r",
           "gender": "F",
           "roll": "CB.EN.U4EEE24064",
           "branch": "EEE",
@@ -37322,7 +37322,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Nabinath.S",
+          "name": "Nabinath.s",
           "gender": "M",
           "roll": "CB.EN.U4EEE24028",
           "branch": "EEE",
@@ -37353,7 +37353,7 @@ const DATA = {
     {
       "id": "401",
       "team": "Tech titans",
-      "leader": "Sreekuttan.K",
+      "leader": "Sreekuttan.k",
       "wa_raw": "7994885211",
       "wa_norm": "7994885211",
       "wa_issues": [],
@@ -37367,7 +37367,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sreekuttan.K",
+          "name": "Sreekuttan.k",
           "gender": "M",
           "roll": "CB.EN.U4ECE24249",
           "branch": "ECE",
@@ -37377,7 +37377,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Rosan laxman.C.V",
+          "name": "Rosan Laxman.c.v",
           "gender": "M",
           "roll": "CB.EN.U4ECE24240",
           "branch": "ECE",
@@ -37387,7 +37387,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Pradeesh.S.S",
+          "name": "Pradeesh.s.s",
           "gender": "M",
           "roll": "CB.EN.U4ECE24234",
           "branch": "ECE",
@@ -37397,7 +37397,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Shoban siddarth.R",
+          "name": "Shoban Siddarth.r",
           "gender": "M",
           "roll": "CB.EN.U4ECE24246",
           "branch": "ECE",
@@ -37407,7 +37407,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Vikash.G.S",
+          "name": "Vikash.g.s",
           "gender": "M",
           "roll": "CB.EN.U4ECE24258",
           "branch": "ECE",
@@ -37579,7 +37579,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Mohit battu",
+          "name": "Mohit Battu",
           "gender": "M",
           "roll": "CB.SC.U4CYS25058",
           "branch": "CYS",
@@ -37599,7 +37599,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T399",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -37610,7 +37610,7 @@ const DATA = {
     {
       "id": "404",
       "team": "ASTRA",
-      "leader": "ANANTHAKUMAR SARAVANAN",
+      "leader": "Ananthakumar Saravanan",
       "wa_raw": "9042782321",
       "wa_norm": "9042782321",
       "wa_issues": [],
@@ -37624,7 +37624,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "ANANTHAKUMAR SARAVANAN",
+          "name": "Ananthakumar Saravanan",
           "gender": "M",
           "roll": "CB.EN.U4EEE24106",
           "branch": "EEE",
@@ -37634,7 +37634,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "NITHYASHREE R",
+          "name": "Nithyashree R",
           "gender": "F",
           "roll": "CB.EN.U4CCE24036",
           "branch": "CCE",
@@ -37684,7 +37684,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T400",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -37731,7 +37731,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Naveen Kumar P",
           "gender": "M",
-          "roll": "cb.ai.u4aar25032",
+          "roll": "CB.AI.U4AAR25032",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -37739,9 +37739,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "UmaMageswari M",
+          "name": "Umamageswari M",
           "gender": "F",
-          "roll": "cb.ai.u4aar25055",
+          "roll": "CB.AI.U4AAR25055",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -37751,7 +37751,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Aadhithya K S",
           "gender": "M",
-          "roll": "cb.ai.u4aar25001",
+          "roll": "CB.AI.U4AAR25001",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -37761,7 +37761,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Aadhitya S",
           "gender": "M",
-          "roll": "cb.ai.u4aar25002",
+          "roll": "CB.AI.U4AAR25002",
           "branch": "AAR",
           "program": "U4",
           "yearOfStudy": 2,
@@ -37769,7 +37769,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T401",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -37836,7 +37836,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "S SHRINATH RAJ",
+          "name": "S Shrinath Raj",
           "gender": "M",
           "roll": "CB.EN.U4EEE24041",
           "branch": "EEE",
@@ -37846,7 +37846,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "V JEYASURYA",
+          "name": "V Jeyasurya",
           "gender": "M",
           "roll": "CB.EN.U4EEE24022",
           "branch": "EEE",
@@ -37856,7 +37856,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T402",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -37941,7 +37941,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T403",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -37968,7 +37968,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Guru Baskar",
           "gender": "M",
-          "roll": "Cb.en.u4elc25056",
+          "roll": "CB.EN.U4ELC25056",
           "branch": "ELC",
           "program": "U4",
           "yearOfStudy": 2,
@@ -37978,7 +37978,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Kinnera Deepthi",
           "gender": "F",
-          "roll": "Cb.sc.p2cse25018",
+          "roll": "CB.SC.P2CSE25018",
           "branch": "CSE",
           "program": "P2",
           "yearOfStudy": 2,
@@ -37988,7 +37988,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Seema Haasini",
           "gender": "F",
-          "roll": "Cb.sc.u4cse25455",
+          "roll": "CB.SC.U4CSE25455",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 2,
@@ -38016,7 +38016,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "EDALA.KARTHIKEYA VENKATA DURGA PRASAD",
+          "name": "Edala.karthikeya Venkata Durga Prasad",
           "gender": "M",
           "roll": "CB.SC.U4CSE25617",
           "branch": "CSE",
@@ -38026,7 +38026,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T404",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38114,7 +38114,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T405",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38199,7 +38199,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T406",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38244,7 +38244,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Prakshit yadav",
+          "name": "Prakshit Yadav",
           "gender": "M",
           "roll": "CB.SC.U4AIE26047",
           "branch": "AIE",
@@ -38254,7 +38254,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Adithyanarayan raj",
+          "name": "Adithyanarayan Raj",
           "gender": "M",
           "roll": "CB.EN.U4MEE26004",
           "branch": "MEE",
@@ -38284,7 +38284,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T407",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38362,7 +38362,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "D.Bhuvaneswari",
+          "name": "D.bhuvaneswari",
           "gender": "F",
           "roll": "CB.EN.U4ECE24210",
           "branch": "ECE",
@@ -38372,7 +38372,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T408",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -38459,7 +38459,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T409",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38544,7 +38544,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T410",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38555,7 +38555,7 @@ const DATA = {
     {
       "id": "415",
       "team": "Axioms",
-      "leader": "Sudharshan.K",
+      "leader": "Sudharshan.k",
       "wa_raw": "9994951909",
       "wa_norm": "9994951909",
       "wa_issues": [],
@@ -38569,7 +38569,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sudharshan.K",
+          "name": "Sudharshan.k",
           "gender": "M",
           "roll": "CB.SC.U4CSE25763",
           "branch": "CSE",
@@ -38589,7 +38589,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Muhil Prithivi.M",
+          "name": "Muhil Prithivi.m",
           "gender": "M",
           "roll": "CB.SC.U4CSE25730",
           "branch": "CSE",
@@ -38609,7 +38609,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "VISHALINI.K",
+          "name": "Vishalini.k",
           "gender": "F",
           "roll": "CB.EN.U4ECE26357",
           "branch": "ECE",
@@ -38619,7 +38619,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "ALLEN JOEL.T",
+          "name": "Allen Joel.t",
           "gender": "M",
           "roll": "CB.SC.U4CYS25057",
           "branch": "CYS",
@@ -38629,7 +38629,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T411",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38716,7 +38716,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T412",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -38781,7 +38781,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "Poornima paidy",
+          "name": "Poornima Paidy",
           "gender": "F",
           "roll": "CB.SC.U4AIE24343",
           "branch": "AIE",
@@ -38801,7 +38801,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T413",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -38889,7 +38889,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T414",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -38900,7 +38900,7 @@ const DATA = {
     {
       "id": "419",
       "team": "PragatiBytes",
-      "leader": "Prakateessh C.M.",
+      "leader": "Prakateessh C.m.",
       "wa_raw": "9715618557",
       "wa_norm": "9715618557",
       "wa_issues": [],
@@ -38916,7 +38916,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Prakateessh C.M.",
+          "name": "Prakateessh C.m.",
           "gender": "M",
           "roll": "CB.AI.U4AIM24110",
           "branch": "AIM",
@@ -38976,7 +38976,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T415",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -39063,7 +39063,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T416",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39108,7 +39108,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "V.Ritheesh",
+          "name": "V.ritheesh",
           "gender": "M",
           "roll": "CB.SC.U4AIE26069",
           "branch": "AIE",
@@ -39148,7 +39148,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T417",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39233,7 +39233,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T418",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39278,7 +39278,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "Susanth M.K.",
+          "name": "Susanth M.k.",
           "gender": "M",
           "roll": "CB.AI.U4AIM24148",
           "branch": "AIM",
@@ -39318,7 +39318,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T419",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39329,7 +39329,7 @@ const DATA = {
     {
       "id": "424",
       "team": "HackNova",
-      "leader": "M.Pranavi",
+      "leader": "M.pranavi",
       "wa_raw": "9121222783",
       "wa_norm": "9121222783",
       "wa_issues": [],
@@ -39345,7 +39345,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "M.Pranavi",
+          "name": "M.pranavi",
           "gender": "F",
           "roll": "CB.AI.U4AID25130",
           "branch": "AID",
@@ -39355,7 +39355,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "KAravind guptha",
+          "name": "Karavind Guptha",
           "gender": "M",
           "roll": "CB.AI.U4AID25125",
           "branch": "AID",
@@ -39365,7 +39365,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "B.Lalith",
+          "name": "B.lalith",
           "gender": "M",
           "roll": "CB.AI.U4AID25111",
           "branch": "AID",
@@ -39375,7 +39375,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "P.Sri Harshini",
+          "name": "P.sri Harshini",
           "gender": "F",
           "roll": "CB.AI.U4AID25042",
           "branch": "AID",
@@ -39385,7 +39385,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "H.Sumanth",
+          "name": "H.sumanth",
           "gender": "M",
           "roll": "CB.AI.U4AID25016",
           "branch": "AID",
@@ -39395,7 +39395,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "P.Sathwik",
+          "name": "P.sathwik",
           "gender": "M",
           "roll": "CB.AI.U4AID25041",
           "branch": "AID",
@@ -39405,7 +39405,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T420",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39440,7 +39440,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "DARSINI R",
+          "name": "Darsini R",
           "gender": "F",
           "roll": "CB.SC.U4CSE24313",
           "branch": "CSE",
@@ -39450,7 +39450,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NIDHISH KIRAN MH",
+          "name": "Nidhish Kiran MH",
           "gender": "M",
           "roll": "CB.SC.U4CSE24334",
           "branch": "CSE",
@@ -39460,7 +39460,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "NIRANJANA R",
+          "name": "Niranjana R",
           "gender": "F",
           "roll": "CB.SC.U4CSE24335",
           "branch": "CSE",
@@ -39470,7 +39470,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "NANDHANA R",
+          "name": "Nandhana R",
           "gender": "F",
           "roll": "CB.SC.U4CSE24332",
           "branch": "CSE",
@@ -39480,7 +39480,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "VURIBINDI ROHAN REDDY",
+          "name": "Vuribindi Rohan Reddy",
           "gender": "M",
           "roll": "CB.SC.U4CSE24359",
           "branch": "CSE",
@@ -39490,7 +39490,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T421",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39583,7 +39583,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T422",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39670,7 +39670,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T423",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -39681,7 +39681,7 @@ const DATA = {
     {
       "id": "428",
       "team": "QUANTUM MINDS",
-      "leader": "Vijay prakash SV",
+      "leader": "Vijay Prakash SV",
       "wa_raw": "8220618544",
       "wa_norm": "8220618544",
       "wa_issues": [],
@@ -39698,7 +39698,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Vijay prakash SV",
+          "name": "Vijay Prakash SV",
           "gender": "M",
           "roll": "CB SC.U4CSE26663",
           "branch": "CSE",
@@ -39708,7 +39708,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "VIJAY PRAKASH SV",
+          "name": "Vijay Prakash SV",
           "gender": "M",
           "roll": "CB.SC.U4CSE26663",
           "branch": "CSE",
@@ -39748,7 +39748,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "NAVANEETH K",
+          "name": "Navaneeth K",
           "gender": "M",
           "roll": "CB.SC.U4CSE26625",
           "branch": "CSE",
@@ -39758,7 +39758,7 @@ const DATA = {
         }
       ],
       "onboard": "Off board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T424",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39833,7 +39833,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "A Adhithya pillai",
+          "name": "A Adhithya Pillai",
           "gender": "M",
           "roll": "CB.SC.U4CSC26401",
           "branch": "CSC",
@@ -39843,7 +39843,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T425",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -39854,7 +39854,7 @@ const DATA = {
     {
       "id": "430",
       "team": "NextStep",
-      "leader": "Mahalingam  S",
+      "leader": "Mahalingam S",
       "wa_raw": "8682007553",
       "wa_norm": "8682007553",
       "wa_issues": [],
@@ -39870,7 +39870,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Mahalingam  S",
+          "name": "Mahalingam S",
           "gender": "M",
           "roll": "CB.SC.P2CSE26016",
           "branch": "CSE",
@@ -39880,7 +39880,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Aishwarya  S",
+          "name": "Aishwarya S",
           "gender": "F",
           "roll": "CB.SC.P2AIE26003",
           "branch": "AIE",
@@ -39890,7 +39890,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "poonkuzhali  J.V",
+          "name": "Poonkuzhali J.v",
           "gender": "F",
           "roll": "CB.SC.P2AIE26044",
           "branch": "AIE",
@@ -39930,7 +39930,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T426",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40015,7 +40015,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T427",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40100,7 +40100,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T428",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40187,7 +40187,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T429",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40224,7 +40224,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "G.Sanjay",
+          "name": "G.sanjay",
           "gender": "M",
           "roll": "CB.EN.U4MEE25010",
           "branch": "MEE",
@@ -40274,7 +40274,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T430",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -40361,7 +40361,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T431",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40448,7 +40448,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T432",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -40536,7 +40536,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T433",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40547,7 +40547,7 @@ const DATA = {
     {
       "id": "438",
       "team": "Lightning logics",
-      "leader": "GOVARDAN S",
+      "leader": "Govardan S",
       "wa_raw": "6380955965",
       "wa_norm": "6380955965",
       "wa_issues": [],
@@ -40563,7 +40563,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "GOVARDAN S",
+          "name": "Govardan S",
           "gender": "M",
           "roll": "CB.EN.U4ARE25057",
           "branch": "ARE",
@@ -40573,7 +40573,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "PRAJESH RAAGAV K",
+          "name": "Prajesh Raagav K",
           "gender": "M",
           "roll": "CB.EN.U4ARE23038",
           "branch": "ARE",
@@ -40583,7 +40583,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "NAVANEETHAVALLI",
+          "name": "Navaneethavalli",
           "gender": "F",
           "roll": "CB.EN.U4ARE23002",
           "branch": "ARE",
@@ -40593,7 +40593,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Sridhar.V.R",
+          "name": "Sridhar.v.r",
           "gender": "M",
           "roll": "CB.EN.U4ARE25048",
           "branch": "ARE",
@@ -40613,7 +40613,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "SIDDHARTH T",
+          "name": "Siddharth T",
           "gender": "M",
           "roll": "CB.EN.U4ARE25045",
           "branch": "ARE",
@@ -40623,7 +40623,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T434",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -40710,7 +40710,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T435",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40795,7 +40795,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T436",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40806,7 +40806,7 @@ const DATA = {
     {
       "id": "441",
       "team": "DATA CREW",
-      "leader": "SREEMATHI GANESAN",
+      "leader": "Sreemathi Ganesan",
       "wa_raw": "7339112225",
       "wa_norm": "7339112225",
       "wa_issues": [],
@@ -40822,7 +40822,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "SREEMATHI GANESAN",
+          "name": "Sreemathi Ganesan",
           "gender": "F",
           "roll": "CB.PS.I5DAS24044",
           "branch": "DAS",
@@ -40832,7 +40832,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "V SUDHARSHANA",
+          "name": "V Sudharshana",
           "gender": "F",
           "roll": "CB.PS.I5DAS24051",
           "branch": "DAS",
@@ -40842,7 +40842,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "VIDYALAKSHMI M K",
+          "name": "Vidyalakshmi M K",
           "gender": "F",
           "roll": "CB.PS.I5DAS24052",
           "branch": "DAS",
@@ -40852,7 +40852,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "MONISH R",
+          "name": "Monish R",
           "gender": "M",
           "roll": "CB.PS.I5DAS24033",
           "branch": "DAS",
@@ -40862,7 +40862,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "MITHUN D",
+          "name": "Mithun D",
           "gender": "M",
           "roll": "CB.PS.I5DAS24022",
           "branch": "DAS",
@@ -40872,7 +40872,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "L KARPAKAM",
+          "name": "L Karpakam",
           "gender": "F",
           "roll": "CB.PS.I5DAS24018",
           "branch": "DAS",
@@ -40882,7 +40882,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T437",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -40937,7 +40937,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Shanmadhi.K",
+          "name": "Shanmadhi.k",
           "gender": "F",
           "roll": "CB.AI.U4CPS26051",
           "branch": "CPS",
@@ -40967,7 +40967,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T438",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41052,7 +41052,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T439",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41137,7 +41137,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T440",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41222,7 +41222,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T441",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41251,7 +41251,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Tharunima M",
           "gender": "F",
-          "roll": "cb.en.u4aee26060",
+          "roll": "CB.EN.U4AEE26060",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41259,9 +41259,9 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Sanjay krishnan V",
+          "name": "Sanjay Krishnan V",
           "gender": "M",
-          "roll": "cb.en.u4aee26045",
+          "roll": "CB.EN.U4AEE26045",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41271,7 +41271,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Vishwaja S",
           "gender": "F",
-          "roll": "cb.en.u4aee26065",
+          "roll": "CB.EN.U4AEE26065",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41279,9 +41279,9 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Praveen kumar M",
+          "name": "Praveen Kumar M",
           "gender": "M",
-          "roll": "cb.en.u4aee26031",
+          "roll": "CB.EN.U4AEE26031",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41291,7 +41291,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Jagat S R",
           "gender": "M",
-          "roll": "cb.en.u4aee26020",
+          "roll": "CB.EN.U4AEE26020",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41301,7 +41301,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Jaswant Anandhi Ramesh",
           "gender": "M",
-          "roll": "cb.en.u4aee26023",
+          "roll": "CB.EN.U4AEE26023",
           "branch": "AEE",
           "program": "U4",
           "yearOfStudy": 1,
@@ -41309,7 +41309,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T442",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -41336,7 +41336,7 @@ const DATA = {
           "slot": "Leader",
           "name": "Sidambarisvar B",
           "gender": "M",
-          "roll": "cb.sc.u4cse24751",
+          "roll": "CB.SC.U4CSE24751",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -41346,7 +41346,7 @@ const DATA = {
           "slot": "Member 1",
           "name": "Mithesh Srinivas",
           "gender": "M",
-          "roll": "cb.sc.u4cse24715",
+          "roll": "CB.SC.U4CSE24715",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -41356,7 +41356,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Niranjan Reddy",
           "gender": "M",
-          "roll": "cb.sc.u4cse24735",
+          "roll": "CB.SC.U4CSE24735",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -41366,7 +41366,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Bharath Govindaraj",
           "gender": "M",
-          "roll": "cb.sc.u4cse24005",
+          "roll": "CB.SC.U4CSE24005",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -41376,7 +41376,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Harini G",
           "gender": "F",
-          "roll": "cb.sc.u4cse24619",
+          "roll": "CB.SC.U4CSE24619",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -41386,7 +41386,7 @@ const DATA = {
           "slot": "Member 5",
           "name": "Booma S",
           "gender": "F",
-          "roll": "cb.sc.u4cse614",
+          "roll": "CB.SC.U4CSE614",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": null,
@@ -41394,7 +41394,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T443",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41479,7 +41479,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T444",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41514,7 +41514,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "KABILAN O",
+          "name": "Kabilan O",
           "gender": "M",
           "roll": "CB.EN.U4ECE24024",
           "branch": "ECE",
@@ -41534,7 +41534,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "SANDEEP K",
+          "name": "Sandeep K",
           "gender": "M",
           "roll": "CB.EN.U4ECE24049",
           "branch": "ECE",
@@ -41544,7 +41544,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "PRANAV NARAYAN P M",
+          "name": "Pranav Narayan P M",
           "gender": "M",
           "roll": "CB.EN.U4ECE24042",
           "branch": "ECE",
@@ -41554,7 +41554,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "THAMMANA SHASHIDHAR",
+          "name": "Thammana Shashidhar",
           "gender": "M",
           "roll": "CB.EN.U4ECE24054",
           "branch": "ECE",
@@ -41564,7 +41564,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T445",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -41613,7 +41613,7 @@ const DATA = {
           "slot": "Member 2",
           "name": "Anandha Vardhini G",
           "gender": "F",
-          "roll": "Cb.ps.p2asd25007",
+          "roll": "CB.PS.P2ASD25007",
           "branch": "ASD",
           "program": "P2",
           "yearOfStudy": 2,
@@ -41623,7 +41623,7 @@ const DATA = {
           "slot": "Member 3",
           "name": "Vishaal P",
           "gender": "M",
-          "roll": "Cb.ps.p2asd26017",
+          "roll": "CB.PS.P2ASD26017",
           "branch": "ASD",
           "program": "P2",
           "yearOfStudy": 1,
@@ -41651,7 +41651,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T446",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -41662,7 +41662,7 @@ const DATA = {
     {
       "id": "451",
       "team": "KYNEX",
-      "leader": "KAVINSIDDHARTH S",
+      "leader": "Kavinsiddharth S",
       "wa_raw": "9842763194",
       "wa_norm": "9842763194",
       "wa_issues": [],
@@ -41678,7 +41678,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KAVINSIDDHARTH S",
+          "name": "Kavinsiddharth S",
           "gender": "M",
           "roll": "CB.EN.U4MEE24130",
           "branch": "MEE",
@@ -41688,7 +41688,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "VITHYAA R K",
+          "name": "Vithyaa R K",
           "gender": "F",
           "roll": "CB.EN.U4MEE24154",
           "branch": "MEE",
@@ -41698,7 +41698,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "CHARUNETRA R S",
+          "name": "Charunetra R S",
           "gender": "F",
           "roll": "CB.EN.U4MEE24116",
           "branch": "MEE",
@@ -41708,7 +41708,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "DARSHAN C",
+          "name": "Darshan C",
           "gender": "M",
           "roll": "CB.EN.U4MEE24119",
           "branch": "MEE",
@@ -41718,7 +41718,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "ADITHYA DHANANJAYAN",
+          "name": "Adithya Dhananjayan",
           "gender": "M",
           "roll": "CB.EN.U4MEE24156",
           "branch": "MEE",
@@ -41728,7 +41728,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "BALU J",
+          "name": "Balu J",
           "gender": "M",
           "roll": "CB.EN.U4MEE24111",
           "branch": "MEE",
@@ -41738,7 +41738,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T447",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -41749,7 +41749,7 @@ const DATA = {
     {
       "id": "452",
       "team": "TEAM X",
-      "leader": "KRISHNA TEJA",
+      "leader": "Krishna Teja",
       "wa_raw": "9985087899",
       "wa_norm": "9985087899",
       "wa_issues": [],
@@ -41766,7 +41766,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "KRISHNA TEJA",
+          "name": "Krishna Teja",
           "gender": "M",
           "roll": "CB.SC.U4CSE24743",
           "branch": "CSE",
@@ -41776,7 +41776,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "HARSHA CHOWDARY",
+          "name": "Harsha Chowdary",
           "gender": "M",
           "roll": "CB.SC.U4CSE24717",
           "branch": "CSE",
@@ -41786,7 +41786,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "MANASWINI YOSHITHA",
+          "name": "Manaswini Yoshitha",
           "gender": "F",
           "roll": "CB.SC.U4CSE24716",
           "branch": "CSE",
@@ -41796,7 +41796,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ABHINAV",
+          "name": "Abhinav",
           "gender": "M",
           "roll": "CB.SC.U4CSE24702",
           "branch": "CSE",
@@ -41806,7 +41806,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "PRANAVA.M",
+          "name": "Pranava.m",
           "gender": "M",
           "roll": "CB.SC.U4CSE24730",
           "branch": "CSE",
@@ -41816,7 +41816,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "RAJENDRA",
+          "name": "Rajendra",
           "gender": "M",
           "roll": "CB.SC.U4CSE24511",
           "branch": "CSE",
@@ -41826,7 +41826,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T448",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -41837,7 +41837,7 @@ const DATA = {
     {
       "id": "453",
       "team": "Team Nexora",
-      "leader": "AKILAN T",
+      "leader": "Akilan T",
       "wa_raw": "95004 48935",
       "wa_norm": "9500448935",
       "wa_issues": [],
@@ -41854,7 +41854,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "AKILAN T",
+          "name": "Akilan T",
           "gender": "M",
           "roll": "CB.SC.U4CSE25704",
           "branch": "CSE",
@@ -41864,7 +41864,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "ROHITH V S",
+          "name": "Rohith V S",
           "gender": "M",
           "roll": "CB.SC.U4CSE25747",
           "branch": "CSE",
@@ -41874,7 +41874,7 @@ const DATA = {
         },
         {
           "slot": "Member 2",
-          "name": "RITHANYA DEVI",
+          "name": "Rithanya Devi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25745",
           "branch": "CSE",
@@ -41884,7 +41884,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "ABINITHI",
+          "name": "Abinithi",
           "gender": "F",
           "roll": "CB.SC.U4CSE25401",
           "branch": "CSE",
@@ -41894,7 +41894,7 @@ const DATA = {
         },
         {
           "slot": "Member 4",
-          "name": "GOWSIK",
+          "name": "Gowsik",
           "gender": "M",
           "roll": "CB.SC.U4CSE25419",
           "branch": "CSE",
@@ -41904,7 +41904,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "MUGAASH",
+          "name": "Mugaash",
           "gender": "M",
           "roll": "CB.SC.U4CSE25437",
           "branch": "CSE",
@@ -41914,7 +41914,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T449",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -41999,7 +41999,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T450",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -42084,7 +42084,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T451",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -42169,7 +42169,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T452",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
@@ -42238,7 +42238,7 @@ const DATA = {
           "slot": "Member 4",
           "name": "Abhay K V",
           "gender": "M",
-          "roll": "Cb.sc.u4cse24001",
+          "roll": "CB.SC.U4CSE24001",
           "branch": "CSE",
           "program": "U4",
           "yearOfStudy": 3,
@@ -42256,7 +42256,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T453",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -42343,7 +42343,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T454",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": false,
@@ -42354,7 +42354,7 @@ const DATA = {
     {
       "id": "459",
       "team": "Zero bug",
-      "leader": "Sarweshwaran.G.P",
+      "leader": "Sarweshwaran.g.p",
       "wa_raw": "9363887189",
       "wa_norm": "9363887189",
       "wa_issues": [],
@@ -42368,7 +42368,7 @@ const DATA = {
       "members": [
         {
           "slot": "Leader",
-          "name": "Sarweshwaran.G.P",
+          "name": "Sarweshwaran.g.p",
           "gender": "M",
           "roll": "CB.EN.U4ARE25042",
           "branch": "ARE",
@@ -42378,7 +42378,7 @@ const DATA = {
         },
         {
           "slot": "Member 1",
-          "name": "Maanasha.S",
+          "name": "Maanasha.s",
           "gender": "F",
           "roll": "CB.EN.U4ARE25025",
           "branch": "ARE",
@@ -42398,7 +42398,7 @@ const DATA = {
         },
         {
           "slot": "Member 3",
-          "name": "Roopali.S",
+          "name": "Roopali.s",
           "gender": "F",
           "roll": "CB.EN.U4ARE25037",
           "branch": "ARE",
@@ -42418,7 +42418,7 @@ const DATA = {
         },
         {
           "slot": "Member 5",
-          "name": "A.Gokula Krishnan",
+          "name": "A.gokula Krishnan",
           "gender": "M",
           "roll": "CB.EN.U4ARE25001",
           "branch": "ARE",
@@ -42428,7 +42428,7 @@ const DATA = {
         }
       ],
       "onboard": "On board",
-      "formatted_id": "-",
+      "formatted_id": "SIH26-A0H-T455",
       "accepted": "Not Accepted",
       "id_error": false,
       "has_mentor": true,
