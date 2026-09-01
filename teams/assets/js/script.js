@@ -241,6 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
           team.name,
           team.problemStatement || '',
           team.accepted || '',
+          team.githubUsername || '',
           team.leader,
           ...team.members,
           team.mentor || '',
@@ -450,14 +451,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     modalMentor.textContent = team.mentor || 'No Mentor Assigned';
-    if (modalLeader) modalLeader.textContent = team.leader;
+    const ghTag = team.githubUsername ? ` (@${team.githubUsername})` : '';
+    if (modalLeader) modalLeader.textContent = team.leader + ghTag;
 
     modalMembersList.innerHTML = '';
     
     // Leader entry
     const leaderDiv = document.createElement('div');
     leaderDiv.className = 'modal-member-item';
-    leaderDiv.innerHTML = `<span class="member-role-badge">Leader</span> <span>${team.leader}</span>`;
+    const ghDisplay = team.githubUsername ? ` <span style="color: var(--text-muted); font-size: 0.85em; font-family: monospace;">(@${team.githubUsername})</span>` : '';
+    leaderDiv.innerHTML = `<span class="member-role-badge">Leader</span> <span>${team.leader}${ghDisplay}</span>`;
     modalMembersList.appendChild(leaderDiv);
 
     // Members entries
@@ -485,7 +488,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyTeamBtn) {
     copyTeamBtn.addEventListener('click', () => {
       if (!selectedModalTeam) return;
-      const textToCopy = `Team ID: ${selectedModalTeam.id}\nTeam Name: ${selectedModalTeam.name}\nProblem Statement: ${selectedModalTeam.problemStatement || '-'}\nAccepted: ${selectedModalTeam.accepted || 'Not Accepted'}\nLeader: ${selectedModalTeam.leader}\nMembers:\n${selectedModalTeam.members.join('\n')}\nStatus: ${selectedModalTeam.status}\nMentor: ${selectedModalTeam.mentor}`;
+      const ghText = selectedModalTeam.githubUsername ? ` (${selectedModalTeam.githubUsername})` : '';
+      const textToCopy = `Team ID: ${selectedModalTeam.id}\nTeam Name: ${selectedModalTeam.name}\nProblem Statement: ${selectedModalTeam.problemStatement || '-'}\nAccepted: ${selectedModalTeam.accepted || 'Not Accepted'}\nLeader: ${selectedModalTeam.leader}${ghText}\nMembers:\n${selectedModalTeam.members.join('\n')}\nStatus: ${selectedModalTeam.status}\nMentor: ${selectedModalTeam.mentor}`;
       navigator.clipboard.writeText(textToCopy).then(() => {
         const origText = copyTeamBtn.textContent;
         copyTeamBtn.textContent = 'Copied to Clipboard';
