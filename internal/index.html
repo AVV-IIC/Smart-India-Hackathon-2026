@@ -40,12 +40,12 @@
 
         <select id="analysisScopeSelect" class="filter-select" style="font-weight:700;border-color:var(--accent-blue);color:var(--accent-blue);padding:10px 18px;">
           <option value="all" selected>All Registered Teams (455 Teams)</option>
-          <option value="accepted">Accepted Teams Only (346 Teams)</option>
-          <option value="not_accepted">Not Accepted Teams Only (109 Teams)</option>
-          <option value="onboard">On Board Teams Only (398 Teams)</option>
-          <option value="offboard">Off Board Teams Only (57 Teams)</option>
-          <option value="has_mentor">Has Mentor Assigned (330 Teams)</option>
-          <option value="no_mentor">No Mentor Assigned (125 Teams)</option>
+          <option value="accepted">Accepted Teams Only (349 Teams)</option>
+          <option value="not_accepted">Not Accepted Teams Only (106 Teams)</option>
+          <option value="onboard">On Board Teams Only (388 Teams)</option>
+          <option value="offboard">Off Board Teams Only (67 Teams)</option>
+          <option value="has_mentor">Has Mentor Assigned (326 Teams)</option>
+          <option value="no_mentor">No Mentor Assigned (129 Teams)</option>
           <option value="id_error">ID Error Teams Only (6 Teams)</option>
           <option value="b1">Single Branch Teams (259 Teams)</option>
           <option value="b2">Teams with 2 Branches (119 Teams)</option>
@@ -62,22 +62,25 @@
           All Teams <span class="pill-count">455</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="accepted">
-          Accepted <span class="pill-count">346</span>
+          Accepted <span class="pill-count">349</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="not_accepted">
-          Not Accepted <span class="pill-count">109</span>
+          Not Accepted <span class="pill-count">106</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="onboard">
-          On Board <span class="pill-count">398</span>
+          On Board <span class="pill-count">388</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="offboard">
-          Off Board <span class="pill-count">57</span>
+          Off Board <span class="pill-count">67</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="has_mentor">
-          Has Mentor <span class="pill-count">330</span>
+          Has Mentor <span class="pill-count">326</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="no_mentor">
-          No Mentor <span class="pill-count">125</span>
+          No Mentor <span class="pill-count">129</span>
+        </button>
+        <button class="filter-pill scope-btn" data-scope="id_error">
+          ID Error <span class="pill-count">6</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="b1">
           1 Branch <span class="pill-count">259</span>
@@ -111,27 +114,27 @@
       </div>
       <div class="metric-card">
         <div class="metric-label">ACCEPTED TEAMS</div>
-        <div class="metric-val blue" id="metricAcceptedTeams">346</div>
+        <div class="metric-val blue" id="metricAcceptedTeams">349</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">ID ERRORS</div>
-        <div class="metric-val orange" id="metricIdErrors">0</div>
+        <div class="metric-val orange" id="metricIdErrors">6</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">ON BOARD TEAMS</div>
-        <div class="metric-val green" id="metricOnBoard">398</div>
+        <div class="metric-val green" id="metricOnBoard">388</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">OFF BOARD TEAMS</div>
-        <div class="metric-val red" id="metricOffBoard">57</div>
+        <div class="metric-val red" id="metricOffBoard">67</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">MENTORS ASSIGNED</div>
-        <div class="metric-val blue" id="metricMentorsAssigned">330</div>
+        <div class="metric-val blue" id="metricMentorsAssigned">326</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">TOTAL PARTICIPANTS</div>
-        <div class="metric-val purple" id="metricTotalParticipants">2076</div>
+        <div class="metric-val purple" id="metricTotalParticipants">2730</div>
       </div>
       <div class="metric-card" style="border-color:var(--accent-blue-border);">
         <div class="metric-label">MALE : FEMALE RATIO</div>
@@ -188,25 +191,25 @@
             All Teams <span class="pill-count" id="pillCountAll">455</span>
           </div>
           <div class="filter-pill" data-pill="accepted">
-            Accepted <span class="pill-count" id="pillCountAccepted">346</span>
+            Accepted <span class="pill-count" id="pillCountAccepted">349</span>
           </div>
           <div class="filter-pill" data-pill="id_error">
             ID Error <span class="pill-count" id="pillCountIdError">6</span>
           </div>
           <div class="filter-pill" data-pill="not_accepted">
-            Not Accepted <span class="pill-count" id="pillCountNotAccepted">109</span>
+            Not Accepted <span class="pill-count" id="pillCountNotAccepted">106</span>
           </div>
           <div class="filter-pill" data-pill="onboard">
-            On Board <span class="pill-count" id="pillCountOnBoard">398</span>
+            On Board <span class="pill-count" id="pillCountOnBoard">388</span>
           </div>
           <div class="filter-pill" data-pill="offboard">
-            Off Board <span class="pill-count" id="pillCountOffBoard">57</span>
+            Off Board <span class="pill-count" id="pillCountOffBoard">67</span>
           </div>
           <div class="filter-pill" data-pill="has_mentor">
-            Has Mentor <span class="pill-count" id="pillCountHasMentor">330</span>
+            Has Mentor <span class="pill-count" id="pillCountHasMentor">326</span>
           </div>
           <div class="filter-pill" data-pill="no_mentor">
-            No Mentor <span class="pill-count" id="pillCountNoMentor">125</span>
+            No Mentor <span class="pill-count" id="pillCountNoMentor">129</span>
           </div>
         </div>
 

@@ -244,13 +244,13 @@ function updateScopeBanner() {
 
   const scopeNames = {
     'all': 'All Registered Teams (455 Teams)',
-    'accepted': 'Accepted Teams Only (346 Teams)',
-    'not_accepted': 'Not Accepted Teams Only (109 Teams)',
-    'onboard': 'On Board Teams Only (398 Teams)',
-    'offboard': 'Off Board Teams Only (57 Teams)',
-    'has_mentor': 'Teams with Mentor Assigned (330 Teams)',
-    'no_mentor': 'Teams Needing Mentor (125 Teams)',
-    'id_error': 'Teams with ID Error Flags (6 Teams)',
+    'accepted': `Accepted Teams Only (${DATA.summary.accepted_teams} Teams)`,
+    'not_accepted': `Not Accepted Teams Only (${DATA.summary.not_accepted_teams} Teams)`,
+    'onboard': `On Board Teams Only (${DATA.summary.onboard_teams} Teams)`,
+    'offboard': `Off Board Teams Only (${DATA.summary.offboard_teams} Teams)`,
+    'has_mentor': `Teams with Mentor Assigned (${DATA.summary.mentor_assigned_teams} Teams)`,
+    'no_mentor': `Teams Needing Mentor (${DATA.summary.no_mentor_teams} Teams)`,
+    'id_error': `Teams with ID Error Flags (${DATA.summary.id_error_teams} Teams)`,
     'b1': 'Teams Represented by a Single Branch (259 Teams)',
     'b2': 'Teams with 2 Branches (119 Teams)',
     'b3': 'Teams with 3 Branches (50 Teams)',
@@ -308,14 +308,31 @@ function updateTopMetrics() {
 
 function updatePillCounts() {
   const summary = DATA.summary;
-  document.getElementById('pillCountAll').textContent = summary.total_registrations;
-  document.getElementById('pillCountAccepted').textContent = summary.accepted_teams;
-  document.getElementById('pillCountIdError').textContent = summary.id_error_teams;
-  document.getElementById('pillCountNotAccepted').textContent = summary.not_accepted_teams;
-  document.getElementById('pillCountOnBoard').textContent = summary.onboard_teams;
-  document.getElementById('pillCountOffBoard').textContent = summary.offboard_teams;
-  document.getElementById('pillCountHasMentor').textContent = summary.mentor_assigned_teams;
-  document.getElementById('pillCountNoMentor').textContent = summary.no_mentor_teams;
+  if (!summary) return;
+  
+  const pAll = document.getElementById('pillCountAll');
+  if (pAll) pAll.textContent = summary.total_registrations;
+  
+  const pAcc = document.getElementById('pillCountAccepted');
+  if (pAcc) pAcc.textContent = summary.accepted_teams;
+  
+  const pErr = document.getElementById('pillCountIdError');
+  if (pErr) pErr.textContent = summary.id_error_teams;
+  
+  const pNot = document.getElementById('pillCountNotAccepted');
+  if (pNot) pNot.textContent = summary.not_accepted_teams;
+  
+  const pOn = document.getElementById('pillCountOnBoard');
+  if (pOn) pOn.textContent = summary.onboard_teams;
+  
+  const pOff = document.getElementById('pillCountOffBoard');
+  if (pOff) pOff.textContent = summary.offboard_teams;
+  
+  const pHm = document.getElementById('pillCountHasMentor');
+  if (pHm) pHm.textContent = summary.mentor_assigned_teams;
+  
+  const pNm = document.getElementById('pillCountNoMentor');
+  if (pNm) pNm.textContent = summary.no_mentor_teams;
 }
 
 function populateDepartmentDropdown() {
@@ -816,16 +833,6 @@ function renderCompositionTab() {
 
   const scoped = getScopedTeams();
 
-  // Helper map for School resolution by roll prefix
-  const schoolMap = {
-    'SC': 'School of Computing',
-    'EN': 'School of Engineering',
-    'AI': 'School of Artificial Intelligence',
-    'PS': 'School of Physical Sciences',
-    'LW': 'School of Law',
-    'AH': 'Center for Allied Health Sciences'
-  };
-
   const schoolStats = {
     'School of Computing': { code: 'SC', count: 0, male: 0, female: 0, teams: new Set() },
     'School of Engineering': { code: 'EN', count: 0, male: 0, female: 0, teams: new Set() },
@@ -878,7 +885,6 @@ function renderCompositionTab() {
       else if (prog === 'I5') int5yrCount++;
       else if (prog === 'P2') pg2yrCount++;
 
-      // Resolve School from roll prefix e.g. CB.EN.U4... or CB.SC...
       let sName = 'School of Engineering';
       if (r.includes('.SC.')) sName = 'School of Computing';
       else if (r.includes('.EN.')) sName = 'School of Engineering';
@@ -929,7 +935,6 @@ function renderCompositionTab() {
   const overallMPct = totalMembers > 0 ? ((totalScopedMale / totalMembers) * 100).toFixed(1) : '0.0';
   const overallFPct = totalMembers > 0 ? ((totalScopedFemale / totalMembers) * 100).toFixed(1) : '0.0';
 
-  // Render School Distribution Table Rows
   const sortedSchools = Object.entries(schoolStats).sort((a,b) => b[1].count - a[1].count);
   let schoolRowsHtml = sortedSchools.map(([sName, sData]) => {
     const sRatio = sData.female > 0 ? `${(sData.male / sData.female).toFixed(2)} : 1` : `${sData.male} : 0`;
@@ -956,7 +961,6 @@ function renderCompositionTab() {
     `;
   }).join('');
 
-  // Render Yearwise Matrix Table Rows with M:F Ratio
   const sortedYears = Object.keys(yearStats).sort((a,b) => String(a).localeCompare(String(b)));
   
   let yearRowsHtml = sortedYears.map(y => {
@@ -983,16 +987,15 @@ function renderCompositionTab() {
     `;
   }).join('');
 
-  // Render Category M:F Ratio Comparison Table across all categories
   const categoryRatios = [
     { label: 'All Registered Teams (455)', filter: t => true },
-    { label: 'Accepted Teams Only (346)', filter: t => t.accepted === 'Accepted' },
-    { label: 'Not Accepted Teams (109)', filter: t => t.accepted !== 'Accepted' },
-    { label: 'On Board Teams (398)', filter: t => t.onboard === 'On board' },
-    { label: 'Off Board Teams (57)', filter: t => t.onboard === 'Off board' },
-    { label: 'Has Mentor Assigned (330)', filter: t => t.has_mentor },
-    { label: 'No Mentor Teams (125)', filter: t => !t.has_mentor },
-    { label: 'ID Error Teams (6)', filter: t => t.id_error },
+    { label: `Accepted Teams Only (${DATA.summary.accepted_teams})`, filter: t => t.accepted === 'Accepted' },
+    { label: `Not Accepted Teams (${DATA.summary.not_accepted_teams})`, filter: t => t.accepted !== 'Accepted' },
+    { label: `On Board Teams (${DATA.summary.onboard_teams})`, filter: t => t.onboard === 'On board' },
+    { label: `Off Board Teams (${DATA.summary.offboard_teams})`, filter: t => t.onboard === 'Off board' },
+    { label: `Has Mentor Assigned (${DATA.summary.mentor_assigned_teams})`, filter: t => t.has_mentor },
+    { label: `No Mentor Teams (${DATA.summary.no_mentor_teams})`, filter: t => !t.has_mentor },
+    { label: `ID Error Teams (${DATA.summary.id_error_teams})`, filter: t => t.id_error },
     { label: 'Single Branch Teams (259)', filter: t => t.num_branches === 1 },
     { label: '2 Branches Teams (119)', filter: t => t.num_branches === 2 },
     { label: '3 Branches Teams (50)', filter: t => t.num_branches === 3 },
@@ -1017,7 +1020,6 @@ function renderCompositionTab() {
     `;
   }).join('');
 
-  // Render Interdisciplinary Branch Diversity Category Rows
   const divCategories = [
     { key: 1, label: '259 teams consist of members from a single branch.', bdata: branchDiversity[1] },
     { key: 2, label: '119 teams consist of members from two branches.', bdata: branchDiversity[2] },
@@ -1051,7 +1053,6 @@ function renderCompositionTab() {
     `;
   }).join('');
 
-  // Render Branch Breakdown Rows
   const sortedBranches = Object.entries(branchCounts).sort((a,b) => b[1].count - a[1].count);
   let branchRowsHtml = sortedBranches.map(([branch, bdata]) => {
     const share = totalMembers > 0 ? ((bdata.count / totalMembers) * 100).toFixed(1) : '0.0';
@@ -1131,7 +1132,7 @@ function renderCompositionTab() {
       </div>
     </div>
 
-    <!-- Academic Program Breakdown Cards (4-yr UG, 5-yr Integrated, 2-yr PG) -->
+    <!-- Academic Program Breakdown Cards -->
     <div class="analytics-grid" style="margin-bottom:24px;">
       <div class="chart-card">
         <h3>Academic Programme Breakdown</h3>
@@ -1325,7 +1326,6 @@ function renderMentorsTab() {
   const assigned = scoped.filter(t => t.has_mentor);
   const unassigned = scoped.filter(t => !t.has_mentor);
 
-  // Group assigned mentors
   const mentorCounts = {};
   assigned.forEach(t => {
     const m = t.mentor || 'Assigned Mentor';
@@ -1357,7 +1357,10 @@ function renderMentorsTab() {
 
   container.innerHTML = `
     <div class="chart-card" style="margin-bottom:20px;">
-      <h3>Mentor Allocation Analysis (Scoped View)</h3>
+      <h3>Faculty Mentor Allocation Analysis (Scoped View)</h3>
+      <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:12px;">
+        💡 <strong>Mentor Allocation Note:</strong> 326 represents unique teams with an assigned faculty mentor in baseline data (total raw mentor allocations across sheets = 333).
+      </p>
       <div class="metrics-grid" style="grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));">
         <div class="metric-card"><div class="metric-label">Scoped Teams</div><div class="metric-val default">${scoped.length}</div></div>
         <div class="metric-card"><div class="metric-label">Assigned Mentors</div><div class="metric-val blue">${assigned.length} Teams</div></div>
@@ -1418,7 +1421,6 @@ function renderTimelineTab() {
 
   const scoped = getScopedTeams();
 
-  // Compute submission dates for scoped teams
   const dateCounts = {};
   scoped.forEach(t => {
     if (t.start) {
@@ -1477,7 +1479,6 @@ function renderGithubTab() {
   const scoped = getScopedTeams();
   const githubTeams = scoped.filter(t => t.github_username);
 
-  // Group PS IDs for scoped teams
   const psCounts = {};
   scoped.forEach(t => {
     if (t.problem_statement) {
