@@ -36,18 +36,16 @@
             <h3 style="font-size:15px;font-weight:700;color:var(--text-main);margin:0;">Global Analysis Scope Choice Selector</h3>
             <p style="font-size:12px;color:var(--text-muted);margin:0;">Select a choice below to instantly filter &amp; re-calculate ALL analytical views, M:F gender ratios, yearwise stats, branch diversity, and tables for the chosen scope.</p>
           </div>
-        </div>
-
-        <select id="analysisScopeSelect" class="filter-select" style="font-weight:700;border-color:var(--accent-blue);color:var(--accent-blue);padding:10px 18px;">
-          <option value="all" selected>All Registered Teams (463 Teams)</option>
-          <option value="accepted">Accepted Teams Only (351 Teams)</option>
+              <select id="analysisScopeSelect" class="filter-select" style="font-weight:700;border-color:var(--accent-blue);color:var(--accent-blue);padding:10px 18px;">
+          <option value="all" selected>All Registered Teams (467 Teams)</option>
+          <option value="accepted">Accepted Teams Only (355 Teams)</option>
           <option value="not_accepted">Not Accepted Teams Only (112 Teams)</option>
-          <option value="onboard">On Board Teams Only (402 Teams)</option>
-          <option value="offboard">Off Board Teams Only (61 Teams)</option>
+          <option value="onboard">On Board Teams Only (407 Teams)</option>
+          <option value="offboard">Off Board Teams Only (60 Teams)</option>
           <option value="has_mentor">Has Mentor Assigned (327 Teams)</option>
-          <option value="no_mentor">No Mentor Assigned (136 Teams)</option>
+          <option value="no_mentor">No Mentor Assigned (140 Teams)</option>
           <option value="id_error">ID Error Teams Only (0 Teams)</option>
-          <option value="b1">Single Branch Teams (267 Teams)</option>
+          <option value="b1">Single Branch Teams (271 Teams)</option>
           <option value="b2">Teams with 2 Branches (119 Teams)</option>
           <option value="b3">Teams with 3 Branches (50 Teams)</option>
           <option value="b4">Teams with 4 Branches (21 Teams)</option>
@@ -59,31 +57,31 @@
       <!-- Scope Choice Buttons Bar -->
       <div class="pills-group" style="padding-top:4px;">
         <button class="filter-pill scope-btn active" data-scope="all">
-          All Teams <span class="pill-count">463</span>
+          All Teams <span class="pill-count">467</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="accepted">
-          Accepted <span class="pill-count">351</span>
+          Accepted <span class="pill-count">355</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="not_accepted">
           Not Accepted <span class="pill-count">112</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="onboard">
-          On Board <span class="pill-count">402</span>
+          On Board <span class="pill-count">407</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="offboard">
-          Off Board <span class="pill-count">61</span>
+          Off Board <span class="pill-count">60</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="has_mentor">
           Has Mentor <span class="pill-count">327</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="no_mentor">
-          No Mentor <span class="pill-count">136</span>
+          No Mentor <span class="pill-count">140</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="id_error">
           ID Error <span class="pill-count">0</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="b1">
-          1 Branch <span class="pill-count">267</span>
+          1 Branch <span class="pill-count">271</span>
         </button>
         <button class="filter-pill scope-btn" data-scope="b2">
           2 Branches <span class="pill-count">119</span>
@@ -110,11 +108,11 @@
     <div class="metrics-grid">
       <div class="metric-card">
         <div class="metric-label">SCOPED TEAMS</div>
-        <div class="metric-val default" id="metricTotalTeams">463</div>
+        <div class="metric-val default" id="metricTotalTeams">467</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">ACCEPTED TEAMS</div>
-        <div class="metric-val blue" id="metricAcceptedTeams">351</div>
+        <div class="metric-val blue" id="metricAcceptedTeams">355</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">ID ERRORS</div>
@@ -122,11 +120,11 @@
       </div>
       <div class="metric-card">
         <div class="metric-label">ON BOARD TEAMS</div>
-        <div class="metric-val green" id="metricOnBoard">402</div>
+        <div class="metric-val green" id="metricOnBoard">407</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">OFF BOARD TEAMS</div>
-        <div class="metric-val red" id="metricOffBoard">61</div>
+        <div class="metric-val red" id="metricOffBoard">60</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">MENTORS ASSIGNED</div>
@@ -134,7 +132,7 @@
       </div>
       <div class="metric-card">
         <div class="metric-label">TOTAL PARTICIPANTS</div>
-        <div class="metric-val purple" id="metricTotalParticipants">2738</div>
+        <div class="metric-val purple" id="metricTotalParticipants">2742</div>
       </div>
       <div class="metric-card" style="border-color:var(--accent-blue-border);">
         <div class="metric-label">MALE : FEMALE RATIO</div>
@@ -147,7 +145,7 @@
     <div class="tabbar-container">
       <div class="tabbar">
         <button class="tabbtn active" data-tab="overview">Overview</button>
-        <button class="tabbtn" data-tab="directory">Team Directory <span class="tab-badge">463</span></button>
+        <button class="tabbtn" data-tab="directory">Team Directory <span class="tab-badge">467</span></button>
         <button class="tabbtn" data-tab="veracity">Data Veracity <span class="tab-badge">Flags</span></button>
         <button class="tabbtn" data-tab="composition">M:F Ratio &amp; Diversity</button>
         <button class="tabbtn" data-tab="mentors">Mentors</button>
@@ -188,10 +186,10 @@
       <div class="pills-row">
         <div class="pills-group">
           <div class="filter-pill active" data-pill="all">
-            All Teams <span class="pill-count" id="pillCountAll">463</span>
+            All Teams <span class="pill-count" id="pillCountAll">467</span>
           </div>
           <div class="filter-pill" data-pill="accepted">
-            Accepted <span class="pill-count" id="pillCountAccepted">351</span>
+            Accepted <span class="pill-count" id="pillCountAccepted">355</span>
           </div>
           <div class="filter-pill" data-pill="id_error">
             ID Error <span class="pill-count" id="pillCountIdError">0</span>
@@ -200,21 +198,21 @@
             Not Accepted <span class="pill-count" id="pillCountNotAccepted">112</span>
           </div>
           <div class="filter-pill" data-pill="onboard">
-            On Board <span class="pill-count" id="pillCountOnBoard">402</span>
+            On Board <span class="pill-count" id="pillCountOnBoard">407</span>
           </div>
           <div class="filter-pill" data-pill="offboard">
-            Off Board <span class="pill-count" id="pillCountOffBoard">61</span>
+            Off Board <span class="pill-count" id="pillCountOffBoard">60</span>
           </div>
           <div class="filter-pill" data-pill="has_mentor">
             Has Mentor <span class="pill-count" id="pillCountHasMentor">327</span>
           </div>
           <div class="filter-pill" data-pill="no_mentor">
-            No Mentor <span class="pill-count" id="pillCountNoMentor">136</span>
+            No Mentor <span class="pill-count" id="pillCountNoMentor">140</span>
           </div>
         </div>
 
         <div class="showing-counter" id="showingCounter">
-          Showing 1-25 of 463 teams (Total: 463)
+          Showing 1-25 of 467 teams (Total: 467)
         </div>
       </div>
     </div>
