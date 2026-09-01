@@ -54,7 +54,7 @@ const DATA = {
     "onboard_but_flagged": 169,
     "accepted_teams": 349,
     "not_accepted_teams": 106,
-    "id_error_teams": 6,
+    "id_error_teams": 0,
     "onboard_teams": 388,
     "offboard_teams": 67,
     "mentor_assigned_teams": 327,
@@ -10899,9 +10899,7 @@ const DATA = {
       "email": "cb.sc.u4aie26148@cb.students.amrita.edu",
       "start": "2026-08-20 17:28:33",
       "end": "2026-08-20 17:30:02",
-      "flags": [
-        "ID_ERROR"
-      ],
+      "flags": [],
       "members": [
         {
           "slot": "Leader",
@@ -10967,7 +10965,7 @@ const DATA = {
       "onboard": "Off board",
       "formatted_id": "SIH26-A0H-T090",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": false,
       "problem_statement": "SIH26039",
       "github_username": "adityahimanshuhamsaneni-creator",
@@ -11157,8 +11155,7 @@ const DATA = {
       "start": "2026-08-20 17:33:04",
       "end": "2026-08-20 18:02:17",
       "flags": [
-        "no_mentor_assigned",
-        "ID_ERROR"
+        "no_mentor_assigned"
       ],
       "members": [
         {
@@ -11225,7 +11222,7 @@ const DATA = {
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T093",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": true,
       "problem_statement": "SIH26199",
       "github_username": "anisha2708",
@@ -15382,9 +15379,7 @@ const DATA = {
       "email": "cb.ai.u4cps25046@cb.students.amrita.edu",
       "start": "2026-08-21 11:04:05",
       "end": "2026-08-21 11:04:38",
-      "flags": [
-        "ID_ERROR"
-      ],
+      "flags": [],
       "members": [
         {
           "slot": "Leader",
@@ -15450,7 +15445,7 @@ const DATA = {
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T142",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": true,
       "problem_statement": "SIH26014",
       "github_username": "sasmithak3105-dotcom",
@@ -16940,9 +16935,7 @@ const DATA = {
       "email": "cb.sc.u4cse26442@cb.students.amrita.edu",
       "start": "2026-08-21 14:07:23",
       "end": "2026-08-21 14:08:04",
-      "flags": [
-        "ID_ERROR"
-      ],
+      "flags": [],
       "members": [
         {
           "slot": "Leader",
@@ -17008,7 +17001,7 @@ const DATA = {
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T160",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": true,
       "problem_statement": "SIH26189",
       "github_username": "MITHUL125",
@@ -22282,9 +22275,7 @@ const DATA = {
       "email": "cb.sc.u4aie26049@cb.students.amrita.edu",
       "start": "2026-08-21 21:15:58",
       "end": "2026-08-21 21:16:13",
-      "flags": [
-        "ID_ERROR"
-      ],
+      "flags": [],
       "members": [
         {
           "slot": "Leader",
@@ -22350,7 +22341,7 @@ const DATA = {
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T222",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": true,
       "problem_statement": "SIH26007",
       "github_username": "dudhimant2018-ctrl",
@@ -29274,8 +29265,7 @@ const DATA = {
       "start": "2026-08-22 13:10:26",
       "end": "2026-08-22 13:29:47",
       "flags": [
-        "whatsapp_format_issue",
-        "ID_ERROR"
+        "whatsapp_format_issue"
       ],
       "members": [
         {
@@ -29342,7 +29332,7 @@ const DATA = {
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T303",
       "accepted": "Accepted",
-      "id_error": true,
+      "id_error": false,
       "has_mentor": false,
       "problem_statement": "SIH26008",
       "github_username": "padhmavathinallaiyan-prog",
