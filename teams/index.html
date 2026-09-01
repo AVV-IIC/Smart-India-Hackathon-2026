@@ -47,24 +47,34 @@
         <span class="stat-value" id="totalTeamsCount">455</span>
       </div>
 
+      <div class="stat-card" style="cursor: pointer;" title="Click to filter Accepted teams">
+        <span class="stat-label">Accepted Teams</span>
+        <span class="stat-value" style="color: #2563eb;" id="acceptedTeamsCount">346</span>
+      </div>
+
+      <div class="stat-card" style="cursor: pointer;" title="Click to filter ID Error teams">
+        <span class="stat-label">ID Errors</span>
+        <span class="stat-value" style="color: #d97706;" id="idErrorCount">6</span>
+      </div>
+
       <div class="stat-card" style="cursor: pointer;" title="Click to filter On Board teams">
         <span class="stat-label">On Board Teams</span>
-        <span class="stat-value" style="color: var(--success);" id="onBoardCount">395</span>
+        <span class="stat-value" style="color: var(--success);" id="onBoardCount">398</span>
       </div>
 
       <div class="stat-card" style="cursor: pointer;" title="Click to filter Off Board teams">
         <span class="stat-label">Off Board Teams</span>
-        <span class="stat-value" style="color: var(--danger);" id="offBoardCount">60</span>
+        <span class="stat-value" style="color: var(--danger);" id="offBoardCount">57</span>
       </div>
 
       <div class="stat-card" style="cursor: pointer;" title="Click to filter teams with assigned mentors">
         <span class="stat-label">Mentors Assigned</span>
-        <span class="stat-value" style="color: var(--info);" id="mentorsCount">326</span>
+        <span class="stat-value" style="color: var(--info);" id="mentorsCount">330</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" title="Total Participants in Form Submitting Teams">
         <span class="stat-label">Total Participants</span>
-        <span class="stat-value" style="color: #7c3aed;" id="participantsCount">2370</span>
+        <span class="stat-value" style="color: #7c3aed;" id="participantsCount">2076</span>
       </div>
     </section>
 
@@ -107,10 +117,13 @@
       <div class="filter-pills-row">
         <div class="filter-pills">
           <button class="pill-btn active" data-filter="all">All Teams <span class="pill-badge">455</span></button>
-          <button class="pill-btn" data-filter="on">On Board <span class="pill-badge">395</span></button>
-          <button class="pill-btn" data-filter="off">Off Board <span class="pill-badge">60</span></button>
-          <button class="pill-btn" data-filter="mentor">Has Mentor <span class="pill-badge">326</span></button>
-          <button class="pill-btn" data-filter="nomentor">No Mentor <span class="pill-badge">129</span></button>
+          <button class="pill-btn" data-filter="accepted">Accepted <span class="pill-badge">346</span></button>
+          <button class="pill-btn" data-filter="iderror">ID Error <span class="pill-badge">6</span></button>
+          <button class="pill-btn" data-filter="notaccepted">Not Accepted <span class="pill-badge">109</span></button>
+          <button class="pill-btn" data-filter="on">On Board <span class="pill-badge">398</span></button>
+          <button class="pill-btn" data-filter="off">Off Board <span class="pill-badge">57</span></button>
+          <button class="pill-btn" data-filter="mentor">Has Mentor <span class="pill-badge">330</span></button>
+          <button class="pill-btn" data-filter="nomentor">No Mentor <span class="pill-badge">125</span></button>
         </div>
 
         <div id="resultsMeta" class="results-meta">Showing 455 of 455 teams</div>
@@ -125,6 +138,8 @@
             <tr>
               <th data-sort="id">Team Number <span class="sort-icon"></span></th>
               <th data-sort="name">Team Name <span class="sort-icon"></span></th>
+              <th data-sort="problemStatement">Problem Statement <span class="sort-icon"></span></th>
+              <th data-sort="accepted">Accepted <span class="sort-icon"></span></th>
               <th data-sort="leader">Team Leader <span class="sort-icon"></span></th>
               <th>TM#1</th>
               <th>TM#2</th>
@@ -180,13 +195,20 @@
         </div>
 
         <div class="chart-card">
-          <div class="chart-card-title">Top 10 Mentors</div>
+          <div class="chart-card-title">Accepted vs Not Accepted</div>
           <div class="chart-canvas-container">
-            <canvas id="mentorChart"></canvas>
+            <canvas id="acceptedChart"></canvas>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Explanatory Note Card -->
+    <div class="info-note-card">
+      <p><strong>Note:</strong> The Onboarded refers to the teams which have contacted the represented coordinators and
+        added to the group and the accepted referes the teams that have filled the forms and gave the correct git hub
+        ids..</p>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -212,6 +234,14 @@
           <div class="modal-field">
             <div class="modal-field-label">Status</div>
             <div id="modalStatus" class="modal-field-value">On Board</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Accepted</div>
+            <div id="modalAddedNuu" class="modal-field-value">Added</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Problem Statement</div>
+            <div id="modalProblemStatement" class="modal-field-value">-</div>
           </div>
           <div class="modal-field">
             <div class="modal-field-label">Mentor</div>

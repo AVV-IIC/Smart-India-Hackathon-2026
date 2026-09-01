@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // KPI Elements
   const totalTeamsCountEl = document.getElementById('totalTeamsCount');
+  const acceptedTeamsCountEl = document.getElementById('acceptedTeamsCount');
+  const idErrorCountEl = document.getElementById('idErrorCount');
   const onBoardCountEl = document.getElementById('onBoardCount');
   const offBoardCountEl = document.getElementById('offBoardCount');
   const mentorsCountEl = document.getElementById('mentorsCount');
@@ -49,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalTitle = document.getElementById('modalTitle');
   const modalTeamId = document.getElementById('modalTeamId');
   const modalStatus = document.getElementById('modalStatus');
+  const modalAddedNuu = document.getElementById('modalAddedNuu');
+  const modalProblemStatement = document.getElementById('modalProblemStatement');
   const modalMentor = document.getElementById('modalMentor');
   const modalLeader = document.getElementById('modalLeader');
   const modalMembersList = document.getElementById('modalMembersList');
@@ -164,16 +168,20 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateKPIs() {
     ensureDataLoaded();
     const total = state.teams.length;
+    const acceptedCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
+    const idErrorCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'id error').length;
     const onBoard = state.teams.filter(t => t.status.toLowerCase().includes('on')).length;
     const offBoard = total - onBoard;
     const mentorsAssigned = state.teams.filter(t => t.mentor && t.mentor !== 'No Mentor').length;
     
     let totalParticipants = 0;
-    state.teams.filter(t => t.status.toLowerCase().includes('on')).forEach(t => {
+    state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted' || (t.accepted || '').toLowerCase() === 'id error').forEach(t => {
       totalParticipants += 1 + t.members.length;
     });
 
     if (totalTeamsCountEl) totalTeamsCountEl.textContent = total;
+    if (acceptedTeamsCountEl) acceptedTeamsCountEl.textContent = acceptedCount;
+    if (idErrorCountEl) idErrorCountEl.textContent = idErrorCount;
     if (onBoardCountEl) onBoardCountEl.textContent = onBoard;
     if (offBoardCountEl) offBoardCountEl.textContent = offBoard;
     if (mentorsCountEl) mentorsCountEl.textContent = mentorsAssigned;
@@ -187,6 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = pill.getAttribute('data-filter');
       let count = 0;
       if (filter === 'all') count = state.teams.length;
+      else if (filter === 'accepted') count = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
+      else if (filter === 'iderror') count = state.teams.filter(t => t.idError).length;
+      else if (filter === 'notaccepted') count = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'not accepted').length;
       else if (filter === 'on') count = state.teams.filter(t => t.status.toLowerCase().includes('on')).length;
       else if (filter === 'off') count = state.teams.filter(t => t.status.toLowerCase().includes('off')).length;
       else if (filter === 'mentor') count = state.teams.filter(t => t.mentor && t.mentor !== 'No Mentor').length;
@@ -209,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     state.filteredTeams = state.teams.filter(team => {
       // Status Filter
+      if (state.statusFilter === 'accepted' && (team.accepted || '').toLowerCase() !== 'accepted') return false;
+      if (state.statusFilter === 'iderror' && !team.idError) return false;
+      if (state.statusFilter === 'notaccepted' && (team.accepted || '').toLowerCase() !== 'not accepted') return false;
       if (state.statusFilter === 'on' && !team.status.toLowerCase().includes('on')) return false;
       if (state.statusFilter === 'off' && !team.status.toLowerCase().includes('off')) return false;
       if (state.statusFilter === 'mentor' && (!team.mentor || team.mentor === 'No Mentor')) return false;
@@ -225,6 +239,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchable = [
           team.id,
           team.name,
+          team.problemStatement || '',
+          team.accepted || '',
           team.leader,
           ...team.members,
           team.mentor || '',
@@ -237,9 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
       return true;
     });
 
-    // Sorting: On "all" view, On-board teams come first. On specific filter views, sort naturally by selected column.
+    // Sorting: On "all" and "notaccepted" view, On-board teams come first. On specific filter views, sort naturally by selected column.
     state.filteredTeams.sort((a, b) => {
-      if (state.statusFilter === 'all') {
+      if (state.statusFilter === 'all' || state.statusFilter === 'notaccepted') {
         const aOn = a.status.toLowerCase().includes('on') ? 0 : 1;
         const bOn = b.status.toLowerCase().includes('on') ? 0 : 1;
         if (aOn !== bOn) return aOn - bOn;
@@ -295,6 +311,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOn = team.status.toLowerCase().includes('on');
       const badgeClass = isOn ? 'badge-on' : 'badge-off';
 
+      let addedBadgeClass = 'badge-off';
+      let addedText = team.accepted || 'Not Accepted';
+      const statusLower = (team.accepted || '').toLowerCase();
+      if (statusLower === 'accepted') {
+        if (team.idError) {
+          addedText = 'Accepted (ID Error)';
+          addedBadgeClass = 'badge-warning';
+        } else {
+          addedText = 'Accepted';
+          addedBadgeClass = 'badge-on';
+        }
+      }
+
+      const psDisplay = (team.problemStatement && team.problemStatement !== '-')
+        ? `<span class="team-id-code" style="background: var(--bg-main); color: var(--text-secondary); border-color: var(--border-color);">${highlightText(team.problemStatement, q)}</span>`
+        : `<span style="color: var(--text-muted);">-</span>`;
+
       const mentorHtml = (team.mentor && team.mentor !== 'No Mentor')
         ? `<span class="mentor-text mentor-assigned">${highlightText(team.mentor, q)}</span>`
         : `<span class="mentor-text mentor-none">No Mentor</span>`;
@@ -302,6 +335,8 @@ document.addEventListener('DOMContentLoaded', () => {
       tr.innerHTML = `
         <td><span class="team-id-code">${highlightText(team.id, q)}</span></td>
         <td><span class="team-title">${highlightText(team.name, q)}</span></td>
+        <td>${psDisplay}</td>
+        <td><span class="badge ${addedBadgeClass}">${highlightText(team.accepted || 'Not Accepted', q)}</span></td>
         <td><span class="member-chip">${highlightText(team.leader, q)}</span></td>
         <td><span class="member-chip">${highlightText(team.members[0] || '-', q)}</span></td>
         <td><span class="member-chip">${highlightText(team.members[1] || '-', q)}</span></td>
@@ -394,6 +429,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const isOn = team.status.toLowerCase().includes('on');
     modalStatus.innerHTML = `<span class="badge ${isOn ? 'badge-on' : 'badge-off'}">${team.status}</span>`;
+    
+    if (modalAddedNuu) {
+      let addedBadgeClass = 'badge-off';
+      let addedText = team.accepted || 'Not Accepted';
+      const statusLower = (team.accepted || '').toLowerCase();
+      if (statusLower === 'accepted') {
+        if (team.idError) {
+          addedText = 'Accepted (ID Error)';
+          addedBadgeClass = 'badge-warning';
+        } else {
+          addedText = 'Accepted';
+          addedBadgeClass = 'badge-on';
+        }
+      }
+      modalAddedNuu.innerHTML = `<span class="badge ${addedBadgeClass}">${addedText}</span>`;
+    }
+    if (modalProblemStatement) {
+      modalProblemStatement.textContent = team.problemStatement || '-';
+    }
+
     modalMentor.textContent = team.mentor || 'No Mentor Assigned';
     if (modalLeader) modalLeader.textContent = team.leader;
 
@@ -430,7 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyTeamBtn) {
     copyTeamBtn.addEventListener('click', () => {
       if (!selectedModalTeam) return;
-      const textToCopy = `Team ID: ${selectedModalTeam.id}\nTeam Name: ${selectedModalTeam.name}\nLeader: ${selectedModalTeam.leader}\nMembers:\n${selectedModalTeam.members.join('\n')}\nStatus: ${selectedModalTeam.status}\nMentor: ${selectedModalTeam.mentor}`;
+      const textToCopy = `Team ID: ${selectedModalTeam.id}\nTeam Name: ${selectedModalTeam.name}\nProblem Statement: ${selectedModalTeam.problemStatement || '-'}\nAccepted: ${selectedModalTeam.accepted || 'Not Accepted'}\nLeader: ${selectedModalTeam.leader}\nMembers:\n${selectedModalTeam.members.join('\n')}\nStatus: ${selectedModalTeam.status}\nMentor: ${selectedModalTeam.mentor}`;
       navigator.clipboard.writeText(textToCopy).then(() => {
         const origText = copyTeamBtn.textContent;
         copyTeamBtn.textContent = 'Copied to Clipboard';
@@ -447,10 +502,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const headers = ['Team ID', 'Team Name', 'Leader', 'Member 1', 'Member 2', 'Member 3', 'Member 4', 'Member 5', 'Status', 'Mentor'];
+    const headers = ['Team ID', 'Team Name', 'Problem Statement', 'Accepted', 'Leader', 'Member 1', 'Member 2', 'Member 3', 'Member 4', 'Member 5', 'Status', 'Mentor'];
     const rows = state.filteredTeams.map(t => [
       t.id || '',
       t.name || '',
+      t.problemStatement || '-',
+      t.accepted || 'Not Accepted',
       t.leader || '',
       t.members[0] || '',
       t.members[1] || '',
@@ -553,9 +610,11 @@ document.addEventListener('DOMContentLoaded', () => {
     statCards.forEach((card, idx) => {
       card.classList.remove('active-card');
       if (filterVal === 'all' && idx === 0) card.classList.add('active-card');
-      else if (filterVal === 'on' && idx === 1) card.classList.add('active-card');
-      else if (filterVal === 'off' && idx === 2) card.classList.add('active-card');
-      else if (filterVal === 'mentor' && idx === 3) card.classList.add('active-card');
+      else if (filterVal === 'accepted' && idx === 1) card.classList.add('active-card');
+      else if (filterVal === 'iderror' && idx === 2) card.classList.add('active-card');
+      else if (filterVal === 'on' && idx === 3) card.classList.add('active-card');
+      else if (filterVal === 'off' && idx === 4) card.classList.add('active-card');
+      else if (filterVal === 'mentor' && idx === 5) card.classList.add('active-card');
     });
 
     state.statusFilter = filterVal;
@@ -573,9 +632,11 @@ document.addEventListener('DOMContentLoaded', () => {
   statCards.forEach((card, idx) => {
     card.addEventListener('click', () => {
       if (idx === 0) setStatusFilter('all');
-      else if (idx === 1) setStatusFilter('on');
-      else if (idx === 2) setStatusFilter('off');
-      else if (idx === 3) setStatusFilter('mentor');
+      else if (idx === 1) setStatusFilter('accepted');
+      else if (idx === 2) setStatusFilter('iderror');
+      else if (idx === 3) setStatusFilter('on');
+      else if (idx === 4) setStatusFilter('off');
+      else if (idx === 5) setStatusFilter('mentor');
     });
   });
 
@@ -722,6 +783,45 @@ document.addEventListener('DOMContentLoaded', () => {
               if (idx === 0) setStatusFilter('on');
               else setStatusFilter('off');
               showToast(`Filtered by ${idx === 0 ? 'On Board' : 'Off Board'} status`);
+            }
+          },
+          plugins: {
+            legend: { position: "bottom", labels: { color: textColor, font: { family: 'Inter' } } }
+          }
+        }
+      });
+    }
+
+    // Chart 2.5: Accepted vs Not Accepted
+    const acceptedCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
+    const idErrorCount = state.teams.filter(t => t.idError).length;
+    const notAcceptedCount = state.teams.length - acceptedCount;
+
+    if (chartInstances.acceptedChart) chartInstances.acceptedChart.destroy();
+    const ctxAccepted = document.getElementById("acceptedChart")?.getContext("2d");
+    if (ctxAccepted) {
+      chartInstances.acceptedChart = new Chart(ctxAccepted, {
+        type: "doughnut",
+        data: {
+          labels: ["Accepted (Valid ID)", "Accepted (ID Error)", "Not Accepted"],
+          datasets: [{
+            data: [acceptedCount - idErrorCount, idErrorCount, notAcceptedCount],
+            backgroundColor: ["#16a34a", "#d97706", "#dc2626"],
+            borderWidth: 2,
+            borderColor: chartBorderColor
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          onClick: (evt, activeEls) => {
+            if (activeEls.length > 0) {
+              const idx = activeEls[0].index;
+              if (idx === 0) setStatusFilter('accepted');
+              else if (idx === 1) setStatusFilter('iderror');
+              else setStatusFilter('notaccepted');
+              const labels = ['Accepted', 'ID Error', 'Not Accepted'];
+              showToast(`Filtered by ${labels[idx]} status`);
             }
           },
           plugins: {
