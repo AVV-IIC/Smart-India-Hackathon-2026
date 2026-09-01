@@ -249,9 +249,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return true;
     });
 
-    // Sorting: On "all" and "notaccepted" view, On-board teams come first. On specific filter views, sort naturally by selected column.
+    // Sorting: On "all" view, Accepted teams come first. On "notaccepted" view, On-board teams come first.
     state.filteredTeams.sort((a, b) => {
-      if (state.statusFilter === 'all' || state.statusFilter === 'notaccepted') {
+      if (state.statusFilter === 'all') {
+        const aAcc = (a.accepted || '').toLowerCase() === 'accepted' ? 0 : 1;
+        const bAcc = (b.accepted || '').toLowerCase() === 'accepted' ? 0 : 1;
+        if (aAcc !== bAcc) return aAcc - bAcc;
+      }
+      if (state.statusFilter === 'notaccepted') {
         const aOn = a.status.toLowerCase().includes('on') ? 0 : 1;
         const bOn = b.status.toLowerCase().includes('on') ? 0 : 1;
         if (aOn !== bOn) return aOn - bOn;

@@ -36,24 +36,6 @@ window.teamsData = [
     "githubUsername": "NivedithaSinija"
   },
   {
-    "id": "SIH26-A0H-T003",
-    "name": "LumberJack",
-    "leader": "Gautam Arun [CB.EN.U4CCE25019]",
-    "members": [
-      "NEKKANTI SAI SAMEERA RAM [CB.SC.U4CSE25735]",
-      "TUMATI SIRI HAASINEE [CB.SC.U4CSE25461]",
-      "Mahashivanee M [CB.SC.U4CSE25726]",
-      "C M Vijay Subramanian [CB.EN.U4CCE25013]",
-      "Darshan R [CB.EN.U4CCE24144]"
-    ],
-    "status": "On board",
-    "mentor": "Ramaguru Radhakrishnan",
-    "problemStatement": "-",
-    "accepted": "Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T004",
     "name": "ARISTELLA",
     "leader": "A PARDHAV REDDY [CB.AI.U4CPS25059]",
@@ -198,24 +180,6 @@ window.teamsData = [
     "githubUsername": "sanjay3941"
   },
   {
-    "id": "SIH26-A0H-T012",
-    "name": "Arcane",
-    "leader": "Ritu Ramesh [CB.AI.U4AID26033]",
-    "members": [
-      "VISVA THOMAS CHRISTOBER [CB.SC.U4CYS26166]",
-      "Shreehari Manoj Kumar [CB.SC.U4CYS26170]",
-      "Nandana Nair [CB.SC.U4CYS26129]",
-      "Pritesh Devaprasad [CB.SC.U4CYS26139]",
-      "Vipin Sudhakar [CB.AI.U4AID25166]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Suman Dutta",
-    "problemStatement": "-",
-    "accepted": "Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T013",
     "name": "PIKACHU",
     "leader": "Srinithi J [CB.SC.U4CSE25458]",
@@ -250,24 +214,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "rit894"
-  },
-  {
-    "id": "SIH26-A0H-T015",
-    "name": "Code Alchemy",
-    "leader": "Sandhiya.D [CB.SC.U4AIE24353]",
-    "members": [
-      "POOJA.N [CB.SC.U4AIE24242]",
-      "JENISHAA BHARATHI.M [CB.SC.U4AIE24221]",
-      "NAVEEN.K [CB.SC.U4AIE24235]",
-      "SUBASH.B [CB.SC.U4AIE24254]",
-      "SAI KUSHAL.B [CB.SC.U4AIE24252]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Keerthika T.",
-    "problemStatement": "-",
-    "accepted": "Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T016",
@@ -324,24 +270,6 @@ window.teamsData = [
     "githubUsername": "PranavYogesh4"
   },
   {
-    "id": "SIH26-A0H-T019",
-    "name": "HydraSoft",
-    "leader": "Sreekanth S [CB.SC.U4CYS25149]",
-    "members": [
-      "Aadidevan [CB.SC.U4CYS25101]",
-      "Arul Kishor [CB.SC.U4CYS25065]",
-      "Midhun Chelat [CB.SC.U4CYS25164]",
-      "Rishijith K [CB.SC.U4CYS25047]",
-      "Bhava Sathwika [CB.SC.U4CYS25151]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T020",
     "name": "HexNova",
     "leader": "Akula Manideep [CB.SC.U4CSE24462]",
@@ -376,42 +304,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "gitt-dp"
-  },
-  {
-    "id": "SIH26-A0H-T022",
-    "name": "YinMnBlu",
-    "leader": "Pavithran A [CB.PS.I5DAS23028]",
-    "members": [
-      "Saran karthik kanda Samy kalai Selvi [CB.PS.I5DAS23054]",
-      "Sibin Zion C [CB.PS.I5DAS23008]",
-      "Rohit SD [CB.PS.I5DAS23025]",
-      "Samyuktha TR [CB.PS.I5DAS23016]",
-      "Darshan S [CB.PS.I5DAS23044]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. M. Thilaga",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T023",
-    "name": "CHRONOS",
-    "leader": "ROHITH B [CB.SC.U4CSE26044]",
-    "members": [
-      "Elankadhir A [CB.SC.U4CSE26020]",
-      "J Nithin Christ [CB.SC.U4CSE26026]",
-      "K B Aathika [CB.SC.U4CSE26419]",
-      "Kamireddy Harshini [CB.SC.U4CSE26219]",
-      "Vathsal [CB.SC.U4CSE26322]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Bagavathi Sivakumar P.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T024",
@@ -810,24 +702,6 @@ window.teamsData = [
     "githubUsername": "Akhil6106"
   },
   {
-    "id": "SIH26-A0H-T046",
-    "name": "CodeNova",
-    "leader": "Dilipkumar A [CB.EN.U4CCE26118]",
-    "members": [
-      "Abhijith S [CB.EN.U4CCE26101]",
-      "Muhammad Rayyan K A [CB.EN.U4CCE26030]",
-      "Harshini A P [CB.SC.U4AIE26126]",
-      "Prakalya A S [CB.SC.U4AIE26149]",
-      "Sarvesh S [CB.EN.U4CCE26148]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Prabhu E.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T047",
     "name": "RoboTechs",
     "leader": "Anaswar Mahesh [CB.EN.U4ARE24005]",
@@ -1062,24 +936,6 @@ window.teamsData = [
     "githubUsername": "Srishanth-2006"
   },
   {
-    "id": "SIH26-A0H-T060",
-    "name": "HELIX",
-    "leader": "Akshithaa UD [cb.ai.u4qts26004]",
-    "members": [
-      "J R KANISHKA [cb.ai.u4qts26021]",
-      "K MOHITH REDDY [cb.ai.u4qts26024]",
-      "SK RAYYAN VALI [cb.ai.u4qts26066]",
-      "PRAGADEESH ABINANDH A [cb.ai.u4qts26037]",
-      "S Sanjay [cb.ai.u4qts26043]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Neelesh Ashok",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T061",
     "name": "Nexora Labs",
     "leader": "Siddhesh Bala B [CB.AI.U4AID26142]",
@@ -1278,24 +1134,6 @@ window.teamsData = [
     "githubUsername": "Saikhaushik1138"
   },
   {
-    "id": "SIH26-A0H-T072",
-    "name": "Nithiin K",
-    "leader": "Nithiin K [CB.SC.U4CSE26643]",
-    "members": [
-      "S Kaveen [CB.SC.U4CSE26045]",
-      "Bhavana K [CB.SC.U4CSE26610]",
-      "Rithu R [CB.SC.U4CSE26650]",
-      "Freya [CB.SC.U4CSE26615]",
-      "Meghna [CB.SC.U4CSE26637]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T073",
     "name": "Team Antares",
     "leader": "Kaevin P [CB.SC.U4CSE26218]",
@@ -1404,24 +1242,6 @@ window.teamsData = [
     "githubUsername": "adhithya009"
   },
   {
-    "id": "SIH26-A0H-T079",
-    "name": "APEX WOLVES",
-    "leader": "VINAY VG [CB.EN.U4ECE26356]",
-    "members": [
-      "Abhinav K [CB.EN.U4ECE26204]",
-      "Abhinavv D B [CB.EN.U4ECE26205]",
-      "Samyukda Kathir [CB.EN.U4ECE26343]",
-      "Reebasree N [CB.EN.U4ECE26338]",
-      "Sukil T [CB.SC.U4CSE26656]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Ashok P.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T080",
     "name": "Quadrix",
     "leader": "Palella Bhanu Prasad [CB.AI.U4CPS25034]",
@@ -1438,24 +1258,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "BhanuPrasadPalella-01"
-  },
-  {
-    "id": "SIH26-A0H-T081",
-    "name": "cuda cub",
-    "leader": "S Vinay Siddharth [Cb.en.u4ece26341]",
-    "members": [
-      "M Shri Harish [CB.EN.U4ECE26349]",
-      "S Shaashwath [Cb.en.u4ece26347]",
-      "Gayatri girish [Cb.en.u4ece26314]",
-      "Dharaneesh Vel [Cb.en.u4ece26312]",
-      "Aruhi bourasui [Cb.en.u4ece26307]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Sowmyaa Vathsan M S",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T082",
@@ -1528,24 +1330,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "Kamalaakasthuri"
-  },
-  {
-    "id": "SIH26-A0H-T086",
-    "name": "Viveka",
-    "leader": "Sharan S [CB.EN.U4ECE26049]",
-    "members": [
-      "Poorvaj Challa [CB.EN.U4ECE26040]",
-      "Jishnu Prabu K [CB.EN.U4ECE26018]",
-      "Bhalasubramaniyan Ramakrishnan [CB.EN.U4ECE26009]",
-      "G Sharmili [CB.EN.U4ECE26014]",
-      "Bharanidharan S [CB.EN.U4ECE26011]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Ganesan M.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T087",
@@ -1818,24 +1602,6 @@ window.teamsData = [
     "githubUsername": "akashh-salem"
   },
   {
-    "id": "SIH26-A0H-T102",
-    "name": "AURA [Amrita University Rocketry Association]",
-    "leader": "V VISHVANTH RAM [CB.EN.U4AEE26062]",
-    "members": [
-      "Janaa Sivakumar [CB.EN.U4AEE26022]",
-      "Shyamkrishna Mahesh [CB.EN.U4AEE26052]",
-      "DHILIB S M [CB.EN.U4AEE26009]",
-      "Srileka T [CB.EN.U4AEE26053]",
-      "SUDEESHKUMAR U [CB.EN.U4AEE26054]"
-    ],
-    "status": "On board",
-    "mentor": "Unnikrishnan D.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T103",
     "name": "Game of Codes",
     "leader": "Ch.Sai Varun [CB.SC.U4CSE25514]",
@@ -2106,24 +1872,6 @@ window.teamsData = [
     "githubUsername": "scandy2007"
   },
   {
-    "id": "SIH26-A0H-T118",
-    "name": "Zenith",
-    "leader": "Lakshmi Krishna B [CB.PS.I5MAT26007]",
-    "members": [
-      "Anumithra A [CB.PS.I5MAT26001]",
-      "Donadi Niveditha [CB.PS.I5MAT26026]",
-      "Niranjana S [CB.PS.I5DAS26024]",
-      "Aishwaryarani S [CB.PS.I5MAT26002]",
-      "Varshini.V.R [CB.PS.I5DAS26054]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T119",
     "name": "Faze Clan",
     "leader": "Yashvardhan Deep [CB.SC.U4CYS24062]",
@@ -2356,24 +2104,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "Abishekapriyan P"
-  },
-  {
-    "id": "SIH26-A0H-T132",
-    "name": "M6 STAMND",
-    "leader": "Tanishq Borah [CB.PS.I5MAT26019]",
-    "members": [
-      "Mohit Vaswani [CB.PS.I5MAT26010]",
-      "Kocherla Shivanand [CB.PS.I5MAT26006]",
-      "Aman Roshan P. [CB.PS.I5MAT26027]",
-      "Nandhika Sethilkumar [CB.PS.I5MAT26025]",
-      "Dhanush Karan [CB.PS.I5MAT26003]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T133",
@@ -2970,24 +2700,6 @@ window.teamsData = [
     "githubUsername": "itsriteshs"
   },
   {
-    "id": "SIH26-A0H-T166",
-    "name": "Nexcore",
-    "leader": "MONISH V P [CB.EN.U4ECE25028]",
-    "members": [
-      "Kavin K [CB.EN.U4ECE25021]",
-      "Amitesh P U [CB.EN.U4ECE25032]",
-      "Sriram J [CB.EN.U4ECE25047]",
-      "Seshavarshan K [CB.EN.U4ECE25018]",
-      "Adhirai V [CB.EN.U4ECE25002]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Ganesan M.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T167",
     "name": "Hexagon",
     "leader": "Shashwat Gaur [CB.SC.U4CSE26455]",
@@ -3184,42 +2896,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "divi1317"
-  },
-  {
-    "id": "SIH26-A0H-T178",
-    "name": "Runtime Terrors",
-    "leader": "ARWINDH C N [CB.SCU4CSE242407]",
-    "members": [
-      "Sridharan Kannan [CB.SC.U4CSE24253]",
-      "Raghav VS [CB.SC.U4CSE24243]",
-      "SaiYogeshwer M [CB.SC.U4CSE24247]",
-      "Kavinaya S [CB.SC.U4CSE24724]",
-      "BATCHALI SRIRAMA NARENDRA [CB.SC.U4CSE24209]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T179",
-    "name": "INGLORIOUS HACKERS",
-    "leader": "SOWBARNIYAA C [CB.EN.U4CCE25050]",
-    "members": [
-      "HARYSHWA B [CB.EN.U4CCE25022]",
-      "JAI NIVAS V [CB.EN.U4CCE25025]",
-      "PRITHI SRI S G [CB.EN.U4CCE25039]",
-      "S S ROOPESH [CB.EN.U4CCE25045]",
-      "SHIVARAMAN S [CB.EN.U4CCE25049]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Harikumar M. E.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T180",
@@ -3564,24 +3240,6 @@ window.teamsData = [
     "githubUsername": "divya7ishere"
   },
   {
-    "id": "SIH26-A0H-T199",
-    "name": "BharatBytes",
-    "leader": "B Abhishek Bharathi [CB.AI.U4QTS25009]",
-    "members": [
-      "Arya G Guddad [CB.AI.U4QTS25008]",
-      "Ujwal Tatavarthi [CB.AI.U4QTS25046]",
-      "Tanvi Manoj [CB.AI.U4QTS25043]",
-      "Chinmay Kumar [CB.PS.I5MAT25002]",
-      "Hridhya H [CB.PS.U4PHY25005]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T200",
     "name": "PRIZEMONEYPLEASE",
     "leader": "Ananya H [CB.EN.U4CCE25104]",
@@ -3760,60 +3418,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "Harshini-V2105"
-  },
-  {
-    "id": "SIH26-A0H-T210",
-    "name": "Team YouThink",
-    "leader": "Sivani M S [CB.EN.U4ELC25053]",
-    "members": [
-      "P Swetha [CB.EN.U4ELC25039]",
-      "Jaikrishnan K M [CB.EN.U4MEE25013]",
-      "Madhavan L [CB.EN.U4MEE25020]",
-      "Saishanker R [CB.EN.U4MEE25033]",
-      "Vaishnav K [CB.EN.U4MEE25045]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. M. S. Sivagama Sundari",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T211",
-    "name": "MISSONI ROOM",
-    "leader": "DHIVAGAR S [CB.EN.U4ECE25119]",
-    "members": [
-      "DHYANESH K B [CB.EN.U4ECE25120]",
-      "ADHAVAN K B [CB.EN.U4ECE25219]",
-      "OSHIN M [CB.EN.U4CCE25035]",
-      "MITHUN R PREM [CB.EN.U4ECE25132]",
-      "AKKSHITA T [CB.EN.U4CCE25003]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Kamatchi S.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T212",
-    "name": "Quantum Hex",
-    "leader": "Parameshvar [CB.PS.U4PHY26009]",
-    "members": [
-      "Deevika Hari [CB.PS.U4PHY26005]",
-      "Vibha Pillai [CB.PS.U4PHY26022]",
-      "Malavika A [CB.PS.U4PHY26024]",
-      "Vedha Senaw [CB.PS.U4PHY26023]",
-      "Ritvik [CB.PS.U4PHY26012]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T213",
@@ -4173,7 +3777,7 @@ window.teamsData = [
     "problemStatement": "SIH26001",
     "accepted": "Accepted",
     "idError": false,
-    "githubUsername": "Iniya Srilekha Balasubramaniam"
+    "githubUsername": "Iniya-008"
   },
   {
     "id": "SIH26-A0H-T233",
@@ -4554,24 +4158,6 @@ window.teamsData = [
     "githubUsername": "U-KARTHIK"
   },
   {
-    "id": "SIH26-A0H-T254",
-    "name": "Team Hail Mary",
-    "leader": "Mernidi Sai Vital Ashish [CB.EN.U4MEE24158]",
-    "members": [
-      "Pedarla Sai Sumedh [CB.EN.U4ARE24033]",
-      "Vishnushankar Sajan [CB.EN.U4MEE24153]",
-      "Minakshi Santosh [CB.EN.U4ARE24024]",
-      "Jonnalagada Madhava Sarma [CB.EN.U4MEE24125]",
-      "Kandiraju Savanth [CB.EN.U4MEE24128]"
-    ],
-    "status": "On board",
-    "mentor": "Mahadevan Lakshmanan",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T255",
     "name": "Unauthorized Access",
     "leader": "Vishal Kumar S [CB.SC.U4CYS24157]",
@@ -4608,24 +4194,6 @@ window.teamsData = [
     "githubUsername": "rohitp1406"
   },
   {
-    "id": "SIH26-A0H-T257",
-    "name": "Narrow Crew",
-    "leader": "Kousik Kumar [CB.EN.U4ARE25022]",
-    "members": [
-      "Pawan D Sencha [CB.EN.U4ARE25034]",
-      "Manu K [CB.EN.U4ARE25026]",
-      "Haripranav Rajesh [CB.SC.U4CSE25322]",
-      "Mihika K [CB.EN.U4MEE25022]",
-      "Axit Kandwal [CB.SC.U4AIE25005]"
-    ],
-    "status": "On board",
-    "mentor": "Prabhu S.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T258",
     "name": "\u200bThe Glitch Guild",
     "leader": "Abi A [CB.PS.I5DAS25102]",
@@ -4644,24 +4212,6 @@ window.teamsData = [
     "githubUsername": "mukeshkumarrviiic-dot"
   },
   {
-    "id": "SIH26-A0H-T259",
-    "name": "Logic Loop",
-    "leader": "Thejaswin K T [CB.EN.U4ELC25144]",
-    "members": [
-      "Jwala Surya Pratap Boggarapu [CB.EN.U4ELC25116]",
-      "Nandhika CS [CB.EN.U4ELC25122]",
-      "Adithya Venkat [CB.EN.U4ELC25102]",
-      "Pranavanath Ryali [CB.EN.U4ELC25128]",
-      "Navin Rubag [CB.EN.U4ELC24160]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T260",
     "name": "Binary Brains",
     "leader": "Aditya Ajit Dubal [CB.EN.U4ELC26103]",
@@ -4678,24 +4228,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "ad8tya1234"
-  },
-  {
-    "id": "SIH26-A0H-T261",
-    "name": "LE DENIER",
-    "leader": "Vainavee A K [CB.EN.U4ECE26155]",
-    "members": [
-      "Yatin Ramjat .P [CB.EN.U4ECE26158]",
-      "Gugan C S [CB.EN.U4ECE26116]",
-      "ABHINAV KARTHIK M [CB.EN.U4EEE26002]",
-      "Akash S [CB.EN.U4ECE26104]",
-      "Aadhithyaa S R [CB.EN.U4ECE26102]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T262",
@@ -4822,24 +4354,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "lakshithakumar1610"
-  },
-  {
-    "id": "SIH26-A0H-T269",
-    "name": "Hack elite",
-    "leader": "Shiwani K [CB.EN.U4CCE26019]",
-    "members": [
-      "Preethi Sanjana S T [CB.EN.U4CCE26038]",
-      "Aishwarya R [CB.EN.U4CCE26138]",
-      "Rosini R S [CB.EN.U4CCE26043]",
-      "Shivani A M [CB.EN.U4CCE26025]",
-      "Kavya B R [CB.EN.U4CCE26020]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Appu Rshikesan Paduthol",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T270",
@@ -5238,24 +4752,6 @@ window.teamsData = [
     "githubUsername": "dharaniprasad04-stack"
   },
   {
-    "id": "SIH26-A0H-T292",
-    "name": "Team Workflow",
-    "leader": "Gokul Santhosh V [CBPSI5DAS25111]",
-    "members": [
-      "HARINI KATHIRESAN [CBPSI5DAS25112]",
-      "Shahana [CBPSI5DAS25027]",
-      "Sarvajith [CBPSI5DAS140]",
-      "Ranjith [CBPSI5DAS25126]",
-      "Nikhil [CBPSI5DAS25017]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. M. Thilaga",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T293",
     "name": "Ethos Minds",
     "leader": "Vimaladhithan Velayya [CB.EN.U4CCE25156]",
@@ -5290,42 +4786,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "SaadhanaRajmohan"
-  },
-  {
-    "id": "SIH26-A0H-T295",
-    "name": "Commit and Conquer",
-    "leader": "Shivamihit Govindaraju [CB.EN.U4ECE26148]",
-    "members": [
-      "Rithvik Kumar [CB.EN.U4ECE26140]",
-      "Oviyaa S [CB.SC.U4CSE26072]",
-      "Ayesha Siddiqua I [CB.SC.U4CSE26013]",
-      "Kapil Kumaran K S [CB.EN.U4MEE26117]",
-      "Deepak E R [CB.SC.U4CSE26611]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Puvaneshwari P.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T296",
-    "name": "Tech Titans",
-    "leader": "Diya N Dileep [CB.EN.U4ELC26114]",
-    "members": [
-      "Besta Bhavishra [CB.EN.U4ELC26160]",
-      "Krishna Mithra M [CB.EN.U4ELC26162]",
-      "Ramanan V [CB.EN.U4ELC26136]",
-      "Dharanidharan M [CB.EN.U4ELC26112]",
-      "Dhairya setiya [CB.EN.U4ELC26111]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T297",
@@ -5454,24 +4914,6 @@ window.teamsData = [
     "githubUsername": "padhmavathinallaiyan-prog"
   },
   {
-    "id": "SIH26-A0H-T304",
-    "name": "Binary Bandits",
-    "leader": "Sakthi Sriram S [CB.SC.P2AIE26036]",
-    "members": [
-      "Pranesh S N [CB.EN.U4ECE26134]",
-      "Jeffrey Immanuel J [CB.EN.U4ARE26026]",
-      "Sanjay B Nair [CB.EN.U4ECE26145]",
-      "Ritanya Sree S [CB.EN.U4ECE26138]",
-      "Yazhini B [CB.AI.U4AIM26062]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Sabarish Narayanan B.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T305",
     "name": "Recursive Renagades",
     "leader": "Siva Krithick K [CB.SC.U4AIE25157]",
@@ -5488,24 +4930,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "siva-krithick"
-  },
-  {
-    "id": "SIH26-A0H-T306",
-    "name": "VisionZ",
-    "leader": "Hridija Banerjee [CB.EN.P2MSE26003]",
-    "members": [
-      "Prajit S D [CB.EN.U4ELC26032]",
-      "A Ritesh [CB.EN.U4ELC26001]",
-      "Varathuru Thejaswini [CB.EN.U4ARE26071]",
-      "Lishaan M [CB.PS.I5MAT26008]",
-      "M S Chittesh [CB.EN.U4ECE26030]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T307",
@@ -5688,24 +5112,6 @@ window.teamsData = [
     "githubUsername": "adarsh27062005-prog"
   },
   {
-    "id": "SIH26-A0H-T317",
-    "name": "Bytecore",
-    "leader": "Rithan S [CB.SC.U4AIE24348]",
-    "members": [
-      "Kiruthika K [CB.SC.U4AIE24329]",
-      "Karnasula Jaya sai venkatesh [CB.SC.U4CYS24125]",
-      "L Sahana [CB.SC.U4CYS24036]",
-      "Roahiyaa T [CB.SC.U4AIE24043]",
-      "S Dharshini [CB.SC.U4CYS24115]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Premjith B",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T318",
     "name": "The Bug Slayers",
     "leader": "Moorti S P [CB.SC.U4CSE24429]",
@@ -5868,60 +5274,6 @@ window.teamsData = [
     "githubUsername": "ThilakSujan"
   },
   {
-    "id": "SIH26-A0H-T327",
-    "name": "Solution Squad",
-    "leader": "M V Sai Kartik [CB.SC.U4CSE24744]",
-    "members": [
-      "Rudraraju Navya Sree [CB.SC.U4CYS24049]",
-      "RAMADURGAM PRADYUMNA [CB.SC.U4CYS24047]",
-      "Siddardh Abhisshek [CB.SC.U4CYS24159]",
-      "SEETHAL BIJU [CB.SC.U4CYS24052]",
-      "Sivasubramani K J [CB.SC.U4CSE24752]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. M.Rohini",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T328",
-    "name": "Hackhive",
-    "leader": "Shanthibhushan V [CB.EN.U4EEE26034]",
-    "members": [
-      "Shrish O V [CB.EN.U4EEE26036]",
-      "Sadhana [CB.EN.U4EEE26233]",
-      "Shree Varnikaa B [CB.EN.U4EEE26035]",
-      "Pravin M V [CB.AI.U4AID26163]",
-      "Sivashri S P [CB.EN.U4EEE26038]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Mohanrajan S. R",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T329",
-    "name": "Syntax Syndicate",
-    "leader": "AKSHAYA A [CB.EN.U4ELC25002]",
-    "members": [
-      "K SUJAI KARTHICK [CB.EN.U4CCE25117]",
-      "DHIVYAN K [CB.EN.U4CCE25113]",
-      "Janardhanan Ranganathan [CB.EN.U4CCE25116]",
-      "SAHANA GANDHI [CB.EN.U4ELC25033]",
-      "Priya R [CB.SC.U4CSE25648]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. A. Manikandan",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T330",
     "name": "BinaryBrains",
     "leader": "Sai Abinav S [CB.EN.U4CCE26046]",
@@ -5938,24 +5290,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "Saiabinav-2708"
-  },
-  {
-    "id": "SIH26-A0H-T331",
-    "name": "Builders",
-    "leader": "Mithuraa Senthilkumar [CB.SC.U4CSE24527]",
-    "members": [
-      "Karthikkha Shree [CB.SC.U4CSE24520]",
-      "Dhanushri Anitha Prasanna [CB.SC.U4CSE24011]",
-      "Harshitha [CB.SC.U4CSE24624]",
-      "K.Hasini [CB.SC.U4CSE24123]",
-      "Manasha P Y [CB.SC.U4CSE24525]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T332",
@@ -6102,24 +5436,6 @@ window.teamsData = [
     "githubUsername": "sruthicasathish-stack"
   },
   {
-    "id": "SIH26-A0H-T340",
-    "name": "PRESTOFIRE",
-    "leader": "KARTHIKA S [CB.SC.P2CSE26011]",
-    "members": [
-      "MONISH KUMAR T K [CB.SC.P2CSE26036]",
-      "NIVETHA S [CB.SC.P2CSE26022]",
-      "NIRANJANA N [CB.SC.P2CSE26021]",
-      "JAIDEEP [CB.SC.P2CSE26007]",
-      "SIBI CHANDARU C [CB.SC.P2CSE26027]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T341",
     "name": "Circuit Breakers",
     "leader": "Harish Pidikiti [CB.EN.U4EEE24020]",
@@ -6136,24 +5452,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "harishpidikiti_06"
-  },
-  {
-    "id": "SIH26-A0H-T342",
-    "name": "Tech titans",
-    "leader": "Sreekuttan.K [CB.EN.U4ECE24249]",
-    "members": [
-      "Rosan laxman.C.V [CB.EN.U4ECE24240]",
-      "Pradeesh.S.S [CB.EN.U4ECE24234]",
-      "Shoban siddarth.R [CB.EN.U4ECE24246]",
-      "Vikash.G.S [CB.EN.U4ECE24258]",
-      "Charvitha [CB.EN.U4ECE24256]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Sabarish Narayanan B",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T343",
@@ -6264,24 +5562,6 @@ window.teamsData = [
     "githubUsername": "gurubaskar6699-debug"
   },
   {
-    "id": "SIH26-A0H-T349",
-    "name": "Terra Gaurdians",
-    "leader": "Sidhant Thakur [CB.SC.U4CSE24320]",
-    "members": [
-      "Gonuguntla Harsha Vardhan [CB.SC.U4CSE24320]",
-      "Revathi N S [CB.SC.U4CSE24342]",
-      "Pabolu Amrutha Sai Spandana [CB.SC.U4CSE24336]",
-      "Sabbella Vaishnavi [CB.SC.U4CSE24363]",
-      "Mallidi Sai Krishna Reddy [CB.SC.U4CSE24463]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Sushrutha Shivanna",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T350",
     "name": "Pixels",
     "leader": "Ravishanmugam K [CB.SC.U4AIE24347]",
@@ -6298,42 +5578,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "Ravish2807"
-  },
-  {
-    "id": "SIH26-A0H-T351",
-    "name": "Hacksmits",
-    "leader": "Avishi Goyal [CB.EN.U4CCE26110]",
-    "members": [
-      "Chhavi Taori [CB.AI.U4AIM26008]",
-      "Prakshit yadav [CB.SC.U4AIE26047]",
-      "Adithyanarayan raj [CB.EN.U4MEE26004]",
-      "Karan Gera [CB.AI.U4QTS26025]",
-      "Pratik Sundar Barik [CB.EN.U4ELC26134]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T352",
-    "name": "Short Circuit",
-    "leader": "Nalaballi Dhatri [CB.EN.U4ECE24034]",
-    "members": [
-      "Pushpitha Kasu [CB.EN.U4ECE24044]",
-      "Katamalli Nikhil Sri Bharadwaj [CB.EN.U4ECE24218]",
-      "Todeti Jaswantha Simha [CB.EN.U4ECE24056]",
-      "Pasala Madhumitha [CB.EN.U4ECE24231]",
-      "D.Bhuvaneswari [CB.EN.U4ECE24210]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T353",
@@ -6426,24 +5670,6 @@ window.teamsData = [
     "githubUsername": "fingernailz"
   },
   {
-    "id": "SIH26-A0H-T358",
-    "name": "PragatiBytes",
-    "leader": "Prakateessh C.M. [CB.AI.U4AIM24110]",
-    "members": [
-      "Akhillesh Varathan C S [CB.AI.U4AIM24102]",
-      "Nikitha Sree T Y [CB.AI.U4AIM24132]",
-      "R Ashwika [CB.AI.U4AIM24138]",
-      "Sakthikailash S V [CB.AI.U4AIM24140]",
-      "Vedang Pratap Singh [CB.AI.U4AIM24151]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T359",
     "name": "Half Squadron",
     "leader": "V R Bhirugu Dev [CB.EN.U4ELC24156]",
@@ -6478,42 +5704,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "mdharshan369"
-  },
-  {
-    "id": "SIH26-A0H-T361",
-    "name": "Aesthetic Agents",
-    "leader": "Mahadev M [CB.AI.U4AIM24025]",
-    "members": [
-      "Nithin S. [CB.AI.U4AIM24133]",
-      "Susanth M.K. [CB.AI.U4AIM24148]",
-      "Kailash S. [CB.AI.U4AIM24017]",
-      "Amirthavarshini [CB.AI.U4AIM24154]",
-      "Shwetha P. [CB.AI.U4AIM24042]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Milton Mondal",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
-    "id": "SIH26-A0H-T362",
-    "name": "HackNova",
-    "leader": "M.Pranavi [CB.AI.U4AID25130]",
-    "members": [
-      "KAravind guptha [CB.AI.U4AID25125]",
-      "B.Lalith [CB.AI.U4AID25111]",
-      "P.Sri Harshini [CB.AI.U4AID25042]",
-      "H.Sumanth [CB.AI.U4AID25016]",
-      "P.Sathwik [CB.AI.U4AID25041]"
-    ],
-    "status": "On board",
-    "mentor": "Dr.Suman Dutta",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T363",
@@ -6570,24 +5760,6 @@ window.teamsData = [
     "githubUsername": "Priya73873-bit"
   },
   {
-    "id": "SIH26-A0H-T366",
-    "name": "NextStep",
-    "leader": "Mahalingam S [CB.SC.P2CSE26016]",
-    "members": [
-      "Aishwarya S [CB.SC.P2AIE26003]",
-      "poonkuzhali J.V [CB.SC.P2AIE26044]",
-      "Deepthi V [CB.SC.P2AIE26010]",
-      "Harisha F [CB.SC.P2AIE26015]",
-      "Shrikavi R [CB.SC.P2AIE26027]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. T. Senthil kumar",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T367",
     "name": "Cipher",
     "leader": "Harita J [CB.EN.U4ELC25013]",
@@ -6640,24 +5812,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "AparnaKS30"
-  },
-  {
-    "id": "SIH26-A0H-T370",
-    "name": "67Blades",
-    "leader": "Eshanika Bright [CB.EN.U4MEE25009]",
-    "members": [
-      "G.Sanjay [CB.EN.U4MEE25010]",
-      "Srijith V [CB.EN.U4MEE25040]",
-      "Neranjan Prakash [CB.EN.U4MEE25026]",
-      "Bharat S [CB.EN.U4MEE25007]",
-      "Shree Hari N S [CB.EN.U4MEE25035]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T371",
@@ -6786,24 +5940,6 @@ window.teamsData = [
     "githubUsername": "Sreemathiganesan"
   },
   {
-    "id": "SIH26-A0H-T378",
-    "name": "Cyber Squad",
-    "leader": "Janani Harishmitha B [CB.AI.U4CPS26019]",
-    "members": [
-      "Sree Thanishka M B [CB.AI.U4CPS26055]",
-      "Thalacheeru Manaswini [CB.AI.U4CPS26059]",
-      "Shanmadhi.K [CB.AI.U4CPS26051]",
-      "Tulasi Gayatri Sree [CB.AI.U4CPS26062]",
-      "Shivani A [CB.AI.CPS26052]"
-    ],
-    "status": "On board",
-    "mentor": "Nalini D",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T379",
     "name": "TechTonic",
     "leader": "Sriram S [CB.SC.U4AIE24066]",
@@ -6930,24 +6066,6 @@ window.teamsData = [
     "githubUsername": "abhinavendra26"
   },
   {
-    "id": "SIH26-A0H-T386",
-    "name": "Symbiotix",
-    "leader": "Akash G [CB.PS.P2ASD25004]",
-    "members": [
-      "Kashyap [CB.PS.P2ASD25016]",
-      "Anandha Vardhini G [Cb.ps.p2asd25007]",
-      "Vishaal P [Cb.ps.p2asd26017]",
-      "Sourav [CB.PS.P2ASD25023]",
-      "Dhanush [CB.PS.P2DLS25026]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T387",
     "name": "KYNEX",
     "leader": "KAVINSIDDHARTH S [CB.EN.U4MEE24130]",
@@ -6964,24 +6082,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "kavin-siddharth"
-  },
-  {
-    "id": "SIH26-A0H-T388",
-    "name": "TEAM X",
-    "leader": "KRISHNA TEJA [CB.SC.U4CSE24743]",
-    "members": [
-      "HARSHA CHOWDARY [CB.SC.U4CSE24717]",
-      "MANASWINI YOSHITHA [CB.SC.U4CSE24716]",
-      "ABHINAV [CB.SC.U4CSE24702]",
-      "PRANAVA.M [CB.SC.U4CSE24730]",
-      "RAJENDRA [CB.SC.U4CSE24511]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T389",
@@ -7056,24 +6156,6 @@ window.teamsData = [
     "githubUsername": "teja-787"
   },
   {
-    "id": "SIH26-A0H-T393",
-    "name": "HEXABYTE",
-    "leader": "Aiswarya C A [CB.SC.U4CSE24705]",
-    "members": [
-      "Divya Vijayakumar [CB.SC.U4CSE24714]",
-      "Shradha Shivraj [CB.SC.U4CSE24749]",
-      "Adithya Prasad [CB.SC.U4CSE24603]",
-      "Abhay K V [Cb.sc.u4cse24001]",
-      "Tejasi Biju [CB.SC.U4CSE24153]"
-    ],
-    "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
-  },
-  {
     "id": "SIH26-A0H-T394",
     "name": "LUMORA",
     "leader": "Thirupugazhl S D [CB.EN.U4EEE24149]",
@@ -7090,24 +6172,6 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "THIRUPUGAZHL-SD"
-  },
-  {
-    "id": "SIH26-A0H-T395",
-    "name": "Zero bug",
-    "leader": "Sarweshwaran.G.P [CB.EN.U4ARE25042]",
-    "members": [
-      "Maanasha.S [CB.EN.U4ARE25025]",
-      "Thushhar Vinoth [CB.EN.U4ARE25058]",
-      "Roopali.S [CB.EN.U4ARE25037]",
-      "Harshitha Kothandam Sisikuma [CB.EN.U4ARE25021]",
-      "A.Gokula Krishnan [CB.EN.U4ARE25001]"
-    ],
-    "status": "On board",
-    "mentor": "Dr. Unnikrishnan D.",
-    "problemStatement": "-",
-    "accepted": "Not Accepted",
-    "idError": false,
-    "githubUsername": ""
   },
   {
     "id": "SIH26-A0H-T396",
@@ -7162,6 +6226,150 @@ window.teamsData = [
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "prajit24680"
+  },
+  {
+    "id": "SIH26-A0H-T500",
+    "name": "Aurez",
+    "leader": "Dakshatha G [CB.AC.U4DES25003]",
+    "members": [
+      "Jinal R [CB.AC.U4DES25005]",
+      "Jamuna Busetty [CB.AC.U4DES25004]",
+      "Pavnassri S [CB.AC.U4DES25007]",
+      "Tharunetha [CB.AC.U4DES25008]",
+      "Nivesh Sanjay R [CB.AC.U4DES25006]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26225",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "DakshathaG"
+  },
+  {
+    "id": "SIH26-A0H-T501",
+    "name": "Paru",
+    "leader": "Laranya K [CB.AC.U5ARC26019]",
+    "members": [
+      "Khadeeja Ameer [CB.AC.U5ARC26016]",
+      "Ritu Sree S [CB.AC.U5ARC26030]",
+      "Kharnigah K [CB.AC.U5ARC26017]",
+      "Kanishka.S [CB.AC.U5ARC26015]",
+      "Kowshica.KB [CB.AC.U5ARC26018]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26116",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "LaranyaK"
+  },
+  {
+    "id": "SIH26-A0H-T502",
+    "name": "Nexora",
+    "leader": "Subashreeka D S [CB.AC.U5ARC26035]",
+    "members": [
+      "P.Charnita [CB.AC.U5ARC26008]",
+      "Keerthi Sree.S.T [CB.AC.U5ARC26040]",
+      "M Prithiviraj [CB.AC.U5ARC26028]",
+      "Gnana prabu k [CB.AC.U5ARC26013]",
+      "Alagarasi R M [CB.AC.U5ARC26031]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26044",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "SubashreekaDS"
+  },
+  {
+    "id": "SIH26-A0H-T503",
+    "name": "ArchiTechs",
+    "leader": "Ashwin Krishna [CB.AC.U5ARC24004]",
+    "members": [
+      "Aparna Sudeep [CB.AC.U5ARC24003]",
+      "Nandakishore A [CB.AC.U5ARC25014]",
+      "Sriram Nandhakishore S N [CB.AC.U5ARC25018]",
+      "Shivani C V [CB.AC.U5ARC25022]",
+      "Haris Sridhar S [CB.AC.U5ARC25017]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26229",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "AshwinKrishna"
+  },
+  {
+    "id": "SIH26-A0H-T504",
+    "name": "SthapatyaX",
+    "leader": "Shivane S M [CB.AC.U5ARC24022]",
+    "members": [
+      "SANJANA S [CB.AC.U5ARC24021]",
+      "A. RENITA ASHLEY [CB.AC.U5ARC24001]",
+      "NETHRA SHREE SAKTHI M [CB.AC.U5ARC24018]",
+      "NEERAJ R B [CB.AC.U5ARC24017]",
+      "DINESH M [CB.AC.U5ARC204009]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26200",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "ShivaneSM"
+  },
+  {
+    "id": "SIH26-A0H-T505",
+    "name": "Archi_talezz",
+    "leader": "THIRUVIKRAMAN R [CB.AC.U5ARC25028]",
+    "members": [
+      "Shree Sahana [CB.AC.U5ARC25024]",
+      "Pydisetty Vallabha Hari [CB.AC.U5ARC25033]",
+      "Trisha Kumari Sharma [CB.AC.U5ARC25029]",
+      "Mahaa Sri [CB.AC.U5ARC25012]",
+      "Jangala Ganesh Sri Susanth [CB.AC.U5ARC25010]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26009",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "ThiruvikramanR"
+  },
+  {
+    "id": "SIH26-A0H-T506",
+    "name": "SHANKR",
+    "leader": "Aswath S [CB.AC.U5ARC26006]",
+    "members": [
+      "Navadharaneesh N [CB.AC.U5ARC26025]",
+      "Haasya Gandham [CB.AC.U4DES26004]",
+      "Rohit S [CB.AC.U5ARC26032]",
+      "M.Sai Srujana Varshini [CB.AC.U5ARC26023]",
+      "Kamalika [CB.AC.U5ARC26014]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26176",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "AswathS"
+  },
+  {
+    "id": "SIH26-A0H-T507",
+    "name": "Quantum",
+    "leader": "Nikitha P [CB.AC.U4DES26011]",
+    "members": [
+      "K.Akshitha [CB.AC.U4DES26008]",
+      "Prakalya M [CB.AC.U4DES26019]",
+      "Sushma R [CB.AC.U5ARC26021]",
+      "Rathivarthini J [CB.AC.U4DES26019]",
+      "Mahitha R A [CB.AC.U4DES26013]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26114",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "NikithaP"
   },
   {
     "id": "-",
@@ -8190,147 +7398,939 @@ window.teamsData = [
     "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T500",
-    "name": "Aurez",
-    "leader": "Dakshatha G [CB.AC.U4DES25003]",
+    "id": "SIH26-A0H-T003",
+    "name": "LumberJack",
+    "leader": "Gautam Arun [CB.EN.U4CCE25019]",
     "members": [
-      "Jinal R [CB.AC.U4DES25005]",
-      "Jamuna Busetty [CB.AC.U4DES25004]",
-      "Pavnassri S [CB.AC.U4DES25007]",
-      "Tharunetha [CB.AC.U4DES25008]",
-      "Nivesh Sanjay R [CB.AC.U4DES25006]"
+      "NEKKANTI SAI SAMEERA RAM [CB.SC.U4CSE25735]",
+      "TUMATI SIRI HAASINEE [CB.SC.U4CSE25461]",
+      "Mahashivanee M [CB.SC.U4CSE25726]",
+      "C M Vijay Subramanian [CB.EN.U4CCE25013]",
+      "Darshan R [CB.EN.U4CCE24144]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Ramaguru Radhakrishnan",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "DakshathaG"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T501",
-    "name": "Paru",
-    "leader": "Laranya K [CB.AC.U5ARC26019]",
+    "id": "SIH26-A0H-T012",
+    "name": "Arcane",
+    "leader": "Ritu Ramesh [CB.AI.U4AID26033]",
     "members": [
-      "Khadeeja Ameer [CB.AC.U5ARC26016]",
-      "Ritu Sree S [CB.AC.U5ARC26030]",
-      "Kharnigah K [CB.AC.U5ARC26017]",
-      "Kanishka.S [CB.AC.U5ARC26015]",
-      "Kowshica.KB [CB.AC.U5ARC26018]"
+      "VISVA THOMAS CHRISTOBER [CB.SC.U4CYS26166]",
+      "Shreehari Manoj Kumar [CB.SC.U4CYS26170]",
+      "Nandana Nair [CB.SC.U4CYS26129]",
+      "Pritesh Devaprasad [CB.SC.U4CYS26139]",
+      "Vipin Sudhakar [CB.AI.U4AID25166]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Dr. Suman Dutta",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "LaranyaK"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T502",
-    "name": "Nexora",
-    "leader": "Subashreeka D S [CB.AC.U5ARC26035]",
+    "id": "SIH26-A0H-T015",
+    "name": "Code Alchemy",
+    "leader": "Sandhiya.D [CB.SC.U4AIE24353]",
     "members": [
-      "P.Charnita [CB.AC.U5ARC26008]",
-      "Keerthi Sree.S.T [CB.AC.U5ARC26040]",
-      "M Prithiviraj [CB.AC.U5ARC26028]",
-      "Gnana prabu k [CB.AC.U5ARC26013]",
-      "Alagarasi R M [CB.AC.U5ARC26031]"
+      "POOJA.N [CB.SC.U4AIE24242]",
+      "JENISHAA BHARATHI.M [CB.SC.U4AIE24221]",
+      "NAVEEN.K [CB.SC.U4AIE24235]",
+      "SUBASH.B [CB.SC.U4AIE24254]",
+      "SAI KUSHAL.B [CB.SC.U4AIE24252]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Dr. Keerthika T.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "SubashreekaDS"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T503",
-    "name": "ArchiTechs",
-    "leader": "Ashwin Krishna [CB.AC.U5ARC24004]",
+    "id": "SIH26-A0H-T019",
+    "name": "HydraSoft",
+    "leader": "Sreekanth S [CB.SC.U4CYS25149]",
     "members": [
-      "Aparna Sudeep [CB.AC.U5ARC24003]",
-      "Nandakishore A [CB.AC.U5ARC25014]",
-      "Sriram Nandhakishore S N [CB.AC.U5ARC25018]",
-      "Shivani C V [CB.AC.U5ARC25022]",
-      "Haris Sridhar S [CB.AC.U5ARC25017]"
+      "Aadidevan [CB.SC.U4CYS25101]",
+      "Arul Kishor [CB.SC.U4CYS25065]",
+      "Midhun Chelat [CB.SC.U4CYS25164]",
+      "Rishijith K [CB.SC.U4CYS25047]",
+      "Bhava Sathwika [CB.SC.U4CYS25151]"
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "AshwinKrishna"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T504",
-    "name": "SthapatyaX",
-    "leader": "Shivane S M [CB.AC.U5ARC24022]",
+    "id": "SIH26-A0H-T022",
+    "name": "YinMnBlu",
+    "leader": "Pavithran A [CB.PS.I5DAS23028]",
     "members": [
-      "SANJANA S [CB.AC.U5ARC24021]",
-      "A. RENITA ASHLEY [CB.AC.U5ARC24001]",
-      "NETHRA SHREE SAKTHI M [CB.AC.U5ARC24018]",
-      "NEERAJ R B [CB.AC.U5ARC24017]",
-      "DINESH M [CB.AC.U5ARC204009]"
+      "Saran karthik kanda Samy kalai Selvi [CB.PS.I5DAS23054]",
+      "Sibin Zion C [CB.PS.I5DAS23008]",
+      "Rohit SD [CB.PS.I5DAS23025]",
+      "Samyuktha TR [CB.PS.I5DAS23016]",
+      "Darshan S [CB.PS.I5DAS23044]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Dr. M. Thilaga",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "ShivaneSM"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T505",
-    "name": "Archi_talezz",
-    "leader": "THIRUVIKRAMAN R [CB.AC.U5ARC25028]",
+    "id": "SIH26-A0H-T023",
+    "name": "CHRONOS",
+    "leader": "ROHITH B [CB.SC.U4CSE26044]",
     "members": [
-      "Shree Sahana [CB.AC.U5ARC25024]",
-      "Pydisetty Vallabha Hari [CB.AC.U5ARC25033]",
-      "Trisha Kumari Sharma [CB.AC.U5ARC25029]",
-      "Mahaa Sri [CB.AC.U5ARC25012]",
-      "Jangala Ganesh Sri Susanth [CB.AC.U5ARC25010]"
+      "Elankadhir A [CB.SC.U4CSE26020]",
+      "J Nithin Christ [CB.SC.U4CSE26026]",
+      "K B Aathika [CB.SC.U4CSE26419]",
+      "Kamireddy Harshini [CB.SC.U4CSE26219]",
+      "Vathsal [CB.SC.U4CSE26322]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Dr. Bagavathi Sivakumar P.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "ThiruvikramanR"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T506",
-    "name": "SHANKR",
-    "leader": "Aswath S [CB.AC.U5ARC26006]",
+    "id": "SIH26-A0H-T046",
+    "name": "CodeNova",
+    "leader": "Dilipkumar A [CB.EN.U4CCE26118]",
     "members": [
-      "Navadharaneesh N [CB.AC.U5ARC26025]",
-      "Haasya Gandham [CB.AC.U4DES26004]",
-      "Rohit S [CB.AC.U5ARC26032]",
-      "M.Sai Srujana Varshini [CB.AC.U5ARC26023]",
-      "Kamalika [CB.AC.U5ARC26014]"
+      "Abhijith S [CB.EN.U4CCE26101]",
+      "Muhammad Rayyan K A [CB.EN.U4CCE26030]",
+      "Harshini A P [CB.SC.U4AIE26126]",
+      "Prakalya A S [CB.SC.U4AIE26149]",
+      "Sarvesh S [CB.EN.U4CCE26148]"
     ],
     "status": "On board",
-    "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "mentor": "Dr. Prabhu E.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "AswathS"
+    "githubUsername": ""
   },
   {
-    "id": "SIH26-A0H-T507",
-    "name": "Quantum",
-    "leader": "Nikitha P [CB.AC.U4DES26011]",
+    "id": "SIH26-A0H-T060",
+    "name": "HELIX",
+    "leader": "Akshithaa UD [cb.ai.u4qts26004]",
     "members": [
-      "K.Akshitha [CB.AC.U4DES26008]",
-      "Prakalya M [CB.AC.U4DES26019]",
-      "Sushma R [CB.AC.U5ARC26021]",
-      "Rathivarthini J [CB.AC.U4DES26019]",
-      "Mahitha R A [CB.AC.U4DES26013]"
+      "J R KANISHKA [cb.ai.u4qts26021]",
+      "K MOHITH REDDY [cb.ai.u4qts26024]",
+      "SK RAYYAN VALI [cb.ai.u4qts26066]",
+      "PRAGADEESH ABINANDH A [cb.ai.u4qts26037]",
+      "S Sanjay [cb.ai.u4qts26043]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Neelesh Ashok",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T072",
+    "name": "Nithiin K",
+    "leader": "Nithiin K [CB.SC.U4CSE26643]",
+    "members": [
+      "S Kaveen [CB.SC.U4CSE26045]",
+      "Bhavana K [CB.SC.U4CSE26610]",
+      "Rithu R [CB.SC.U4CSE26650]",
+      "Freya [CB.SC.U4CSE26615]",
+      "Meghna [CB.SC.U4CSE26637]"
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26101",
-    "accepted": "Accepted",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
     "idError": false,
-    "githubUsername": "NikithaP"
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T079",
+    "name": "APEX WOLVES",
+    "leader": "VINAY VG [CB.EN.U4ECE26356]",
+    "members": [
+      "Abhinav K [CB.EN.U4ECE26204]",
+      "Abhinavv D B [CB.EN.U4ECE26205]",
+      "Samyukda Kathir [CB.EN.U4ECE26343]",
+      "Reebasree N [CB.EN.U4ECE26338]",
+      "Sukil T [CB.SC.U4CSE26656]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Ashok P.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T081",
+    "name": "cuda cub",
+    "leader": "S Vinay Siddharth [Cb.en.u4ece26341]",
+    "members": [
+      "M Shri Harish [CB.EN.U4ECE26349]",
+      "S Shaashwath [Cb.en.u4ece26347]",
+      "Gayatri girish [Cb.en.u4ece26314]",
+      "Dharaneesh Vel [Cb.en.u4ece26312]",
+      "Aruhi bourasui [Cb.en.u4ece26307]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Sowmyaa Vathsan M S",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T086",
+    "name": "Viveka",
+    "leader": "Sharan S [CB.EN.U4ECE26049]",
+    "members": [
+      "Poorvaj Challa [CB.EN.U4ECE26040]",
+      "Jishnu Prabu K [CB.EN.U4ECE26018]",
+      "Bhalasubramaniyan Ramakrishnan [CB.EN.U4ECE26009]",
+      "G Sharmili [CB.EN.U4ECE26014]",
+      "Bharanidharan S [CB.EN.U4ECE26011]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Ganesan M.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T102",
+    "name": "AURA [Amrita University Rocketry Association]",
+    "leader": "V VISHVANTH RAM [CB.EN.U4AEE26062]",
+    "members": [
+      "Janaa Sivakumar [CB.EN.U4AEE26022]",
+      "Shyamkrishna Mahesh [CB.EN.U4AEE26052]",
+      "DHILIB S M [CB.EN.U4AEE26009]",
+      "Srileka T [CB.EN.U4AEE26053]",
+      "SUDEESHKUMAR U [CB.EN.U4AEE26054]"
+    ],
+    "status": "On board",
+    "mentor": "Unnikrishnan D.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T118",
+    "name": "Zenith",
+    "leader": "Lakshmi Krishna B [CB.PS.I5MAT26007]",
+    "members": [
+      "Anumithra A [CB.PS.I5MAT26001]",
+      "Donadi Niveditha [CB.PS.I5MAT26026]",
+      "Niranjana S [CB.PS.I5DAS26024]",
+      "Aishwaryarani S [CB.PS.I5MAT26002]",
+      "Varshini.V.R [CB.PS.I5DAS26054]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T132",
+    "name": "M6 STAMND",
+    "leader": "Tanishq Borah [CB.PS.I5MAT26019]",
+    "members": [
+      "Mohit Vaswani [CB.PS.I5MAT26010]",
+      "Kocherla Shivanand [CB.PS.I5MAT26006]",
+      "Aman Roshan P. [CB.PS.I5MAT26027]",
+      "Nandhika Sethilkumar [CB.PS.I5MAT26025]",
+      "Dhanush Karan [CB.PS.I5MAT26003]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T166",
+    "name": "Nexcore",
+    "leader": "MONISH V P [CB.EN.U4ECE25028]",
+    "members": [
+      "Kavin K [CB.EN.U4ECE25021]",
+      "Amitesh P U [CB.EN.U4ECE25032]",
+      "Sriram J [CB.EN.U4ECE25047]",
+      "Seshavarshan K [CB.EN.U4ECE25018]",
+      "Adhirai V [CB.EN.U4ECE25002]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Ganesan M.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T178",
+    "name": "Runtime Terrors",
+    "leader": "ARWINDH C N [CB.SCU4CSE242407]",
+    "members": [
+      "Sridharan Kannan [CB.SC.U4CSE24253]",
+      "Raghav VS [CB.SC.U4CSE24243]",
+      "SaiYogeshwer M [CB.SC.U4CSE24247]",
+      "Kavinaya S [CB.SC.U4CSE24724]",
+      "BATCHALI SRIRAMA NARENDRA [CB.SC.U4CSE24209]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T179",
+    "name": "INGLORIOUS HACKERS",
+    "leader": "SOWBARNIYAA C [CB.EN.U4CCE25050]",
+    "members": [
+      "HARYSHWA B [CB.EN.U4CCE25022]",
+      "JAI NIVAS V [CB.EN.U4CCE25025]",
+      "PRITHI SRI S G [CB.EN.U4CCE25039]",
+      "S S ROOPESH [CB.EN.U4CCE25045]",
+      "SHIVARAMAN S [CB.EN.U4CCE25049]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Harikumar M. E.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T199",
+    "name": "BharatBytes",
+    "leader": "B Abhishek Bharathi [CB.AI.U4QTS25009]",
+    "members": [
+      "Arya G Guddad [CB.AI.U4QTS25008]",
+      "Ujwal Tatavarthi [CB.AI.U4QTS25046]",
+      "Tanvi Manoj [CB.AI.U4QTS25043]",
+      "Chinmay Kumar [CB.PS.I5MAT25002]",
+      "Hridhya H [CB.PS.U4PHY25005]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T210",
+    "name": "Team YouThink",
+    "leader": "Sivani M S [CB.EN.U4ELC25053]",
+    "members": [
+      "P Swetha [CB.EN.U4ELC25039]",
+      "Jaikrishnan K M [CB.EN.U4MEE25013]",
+      "Madhavan L [CB.EN.U4MEE25020]",
+      "Saishanker R [CB.EN.U4MEE25033]",
+      "Vaishnav K [CB.EN.U4MEE25045]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. M. S. Sivagama Sundari",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T211",
+    "name": "MISSONI ROOM",
+    "leader": "DHIVAGAR S [CB.EN.U4ECE25119]",
+    "members": [
+      "DHYANESH K B [CB.EN.U4ECE25120]",
+      "ADHAVAN K B [CB.EN.U4ECE25219]",
+      "OSHIN M [CB.EN.U4CCE25035]",
+      "MITHUN R PREM [CB.EN.U4ECE25132]",
+      "AKKSHITA T [CB.EN.U4CCE25003]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Kamatchi S.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T212",
+    "name": "Quantum Hex",
+    "leader": "Parameshvar [CB.PS.U4PHY26009]",
+    "members": [
+      "Deevika Hari [CB.PS.U4PHY26005]",
+      "Vibha Pillai [CB.PS.U4PHY26022]",
+      "Malavika A [CB.PS.U4PHY26024]",
+      "Vedha Senaw [CB.PS.U4PHY26023]",
+      "Ritvik [CB.PS.U4PHY26012]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T254",
+    "name": "Team Hail Mary",
+    "leader": "Mernidi Sai Vital Ashish [CB.EN.U4MEE24158]",
+    "members": [
+      "Pedarla Sai Sumedh [CB.EN.U4ARE24033]",
+      "Vishnushankar Sajan [CB.EN.U4MEE24153]",
+      "Minakshi Santosh [CB.EN.U4ARE24024]",
+      "Jonnalagada Madhava Sarma [CB.EN.U4MEE24125]",
+      "Kandiraju Savanth [CB.EN.U4MEE24128]"
+    ],
+    "status": "On board",
+    "mentor": "Mahadevan Lakshmanan",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T257",
+    "name": "Narrow Crew",
+    "leader": "Kousik Kumar [CB.EN.U4ARE25022]",
+    "members": [
+      "Pawan D Sencha [CB.EN.U4ARE25034]",
+      "Manu K [CB.EN.U4ARE25026]",
+      "Haripranav Rajesh [CB.SC.U4CSE25322]",
+      "Mihika K [CB.EN.U4MEE25022]",
+      "Axit Kandwal [CB.SC.U4AIE25005]"
+    ],
+    "status": "On board",
+    "mentor": "Prabhu S.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T259",
+    "name": "Logic Loop",
+    "leader": "Thejaswin K T [CB.EN.U4ELC25144]",
+    "members": [
+      "Jwala Surya Pratap Boggarapu [CB.EN.U4ELC25116]",
+      "Nandhika CS [CB.EN.U4ELC25122]",
+      "Adithya Venkat [CB.EN.U4ELC25102]",
+      "Pranavanath Ryali [CB.EN.U4ELC25128]",
+      "Navin Rubag [CB.EN.U4ELC24160]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T261",
+    "name": "LE DENIER",
+    "leader": "Vainavee A K [CB.EN.U4ECE26155]",
+    "members": [
+      "Yatin Ramjat .P [CB.EN.U4ECE26158]",
+      "Gugan C S [CB.EN.U4ECE26116]",
+      "ABHINAV KARTHIK M [CB.EN.U4EEE26002]",
+      "Akash S [CB.EN.U4ECE26104]",
+      "Aadhithyaa S R [CB.EN.U4ECE26102]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T269",
+    "name": "Hack elite",
+    "leader": "Shiwani K [CB.EN.U4CCE26019]",
+    "members": [
+      "Preethi Sanjana S T [CB.EN.U4CCE26038]",
+      "Aishwarya R [CB.EN.U4CCE26138]",
+      "Rosini R S [CB.EN.U4CCE26043]",
+      "Shivani A M [CB.EN.U4CCE26025]",
+      "Kavya B R [CB.EN.U4CCE26020]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Appu Rshikesan Paduthol",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T292",
+    "name": "Team Workflow",
+    "leader": "Gokul Santhosh V [CBPSI5DAS25111]",
+    "members": [
+      "HARINI KATHIRESAN [CBPSI5DAS25112]",
+      "Shahana [CBPSI5DAS25027]",
+      "Sarvajith [CBPSI5DAS140]",
+      "Ranjith [CBPSI5DAS25126]",
+      "Nikhil [CBPSI5DAS25017]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. M. Thilaga",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T295",
+    "name": "Commit and Conquer",
+    "leader": "Shivamihit Govindaraju [CB.EN.U4ECE26148]",
+    "members": [
+      "Rithvik Kumar [CB.EN.U4ECE26140]",
+      "Oviyaa S [CB.SC.U4CSE26072]",
+      "Ayesha Siddiqua I [CB.SC.U4CSE26013]",
+      "Kapil Kumaran K S [CB.EN.U4MEE26117]",
+      "Deepak E R [CB.SC.U4CSE26611]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Puvaneshwari P.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T296",
+    "name": "Tech Titans",
+    "leader": "Diya N Dileep [CB.EN.U4ELC26114]",
+    "members": [
+      "Besta Bhavishra [CB.EN.U4ELC26160]",
+      "Krishna Mithra M [CB.EN.U4ELC26162]",
+      "Ramanan V [CB.EN.U4ELC26136]",
+      "Dharanidharan M [CB.EN.U4ELC26112]",
+      "Dhairya setiya [CB.EN.U4ELC26111]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T304",
+    "name": "Binary Bandits",
+    "leader": "Sakthi Sriram S [CB.SC.P2AIE26036]",
+    "members": [
+      "Pranesh S N [CB.EN.U4ECE26134]",
+      "Jeffrey Immanuel J [CB.EN.U4ARE26026]",
+      "Sanjay B Nair [CB.EN.U4ECE26145]",
+      "Ritanya Sree S [CB.EN.U4ECE26138]",
+      "Yazhini B [CB.AI.U4AIM26062]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Sabarish Narayanan B.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T306",
+    "name": "VisionZ",
+    "leader": "Hridija Banerjee [CB.EN.P2MSE26003]",
+    "members": [
+      "Prajit S D [CB.EN.U4ELC26032]",
+      "A Ritesh [CB.EN.U4ELC26001]",
+      "Varathuru Thejaswini [CB.EN.U4ARE26071]",
+      "Lishaan M [CB.PS.I5MAT26008]",
+      "M S Chittesh [CB.EN.U4ECE26030]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T317",
+    "name": "Bytecore",
+    "leader": "Rithan S [CB.SC.U4AIE24348]",
+    "members": [
+      "Kiruthika K [CB.SC.U4AIE24329]",
+      "Karnasula Jaya sai venkatesh [CB.SC.U4CYS24125]",
+      "L Sahana [CB.SC.U4CYS24036]",
+      "Roahiyaa T [CB.SC.U4AIE24043]",
+      "S Dharshini [CB.SC.U4CYS24115]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Premjith B",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T327",
+    "name": "Solution Squad",
+    "leader": "M V Sai Kartik [CB.SC.U4CSE24744]",
+    "members": [
+      "Rudraraju Navya Sree [CB.SC.U4CYS24049]",
+      "RAMADURGAM PRADYUMNA [CB.SC.U4CYS24047]",
+      "Siddardh Abhisshek [CB.SC.U4CYS24159]",
+      "SEETHAL BIJU [CB.SC.U4CYS24052]",
+      "Sivasubramani K J [CB.SC.U4CSE24752]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. M.Rohini",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T328",
+    "name": "Hackhive",
+    "leader": "Shanthibhushan V [CB.EN.U4EEE26034]",
+    "members": [
+      "Shrish O V [CB.EN.U4EEE26036]",
+      "Sadhana [CB.EN.U4EEE26233]",
+      "Shree Varnikaa B [CB.EN.U4EEE26035]",
+      "Pravin M V [CB.AI.U4AID26163]",
+      "Sivashri S P [CB.EN.U4EEE26038]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Mohanrajan S. R",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T329",
+    "name": "Syntax Syndicate",
+    "leader": "AKSHAYA A [CB.EN.U4ELC25002]",
+    "members": [
+      "K SUJAI KARTHICK [CB.EN.U4CCE25117]",
+      "DHIVYAN K [CB.EN.U4CCE25113]",
+      "Janardhanan Ranganathan [CB.EN.U4CCE25116]",
+      "SAHANA GANDHI [CB.EN.U4ELC25033]",
+      "Priya R [CB.SC.U4CSE25648]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. A. Manikandan",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T331",
+    "name": "Builders",
+    "leader": "Mithuraa Senthilkumar [CB.SC.U4CSE24527]",
+    "members": [
+      "Karthikkha Shree [CB.SC.U4CSE24520]",
+      "Dhanushri Anitha Prasanna [CB.SC.U4CSE24011]",
+      "Harshitha [CB.SC.U4CSE24624]",
+      "K.Hasini [CB.SC.U4CSE24123]",
+      "Manasha P Y [CB.SC.U4CSE24525]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T340",
+    "name": "PRESTOFIRE",
+    "leader": "KARTHIKA S [CB.SC.P2CSE26011]",
+    "members": [
+      "MONISH KUMAR T K [CB.SC.P2CSE26036]",
+      "NIVETHA S [CB.SC.P2CSE26022]",
+      "NIRANJANA N [CB.SC.P2CSE26021]",
+      "JAIDEEP [CB.SC.P2CSE26007]",
+      "SIBI CHANDARU C [CB.SC.P2CSE26027]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T342",
+    "name": "Tech titans",
+    "leader": "Sreekuttan.K [CB.EN.U4ECE24249]",
+    "members": [
+      "Rosan laxman.C.V [CB.EN.U4ECE24240]",
+      "Pradeesh.S.S [CB.EN.U4ECE24234]",
+      "Shoban siddarth.R [CB.EN.U4ECE24246]",
+      "Vikash.G.S [CB.EN.U4ECE24258]",
+      "Charvitha [CB.EN.U4ECE24256]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Sabarish Narayanan B",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T349",
+    "name": "Terra Gaurdians",
+    "leader": "Sidhant Thakur [CB.SC.U4CSE24320]",
+    "members": [
+      "Gonuguntla Harsha Vardhan [CB.SC.U4CSE24320]",
+      "Revathi N S [CB.SC.U4CSE24342]",
+      "Pabolu Amrutha Sai Spandana [CB.SC.U4CSE24336]",
+      "Sabbella Vaishnavi [CB.SC.U4CSE24363]",
+      "Mallidi Sai Krishna Reddy [CB.SC.U4CSE24463]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Sushrutha Shivanna",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T351",
+    "name": "Hacksmits",
+    "leader": "Avishi Goyal [CB.EN.U4CCE26110]",
+    "members": [
+      "Chhavi Taori [CB.AI.U4AIM26008]",
+      "Prakshit yadav [CB.SC.U4AIE26047]",
+      "Adithyanarayan raj [CB.EN.U4MEE26004]",
+      "Karan Gera [CB.AI.U4QTS26025]",
+      "Pratik Sundar Barik [CB.EN.U4ELC26134]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T352",
+    "name": "Short Circuit",
+    "leader": "Nalaballi Dhatri [CB.EN.U4ECE24034]",
+    "members": [
+      "Pushpitha Kasu [CB.EN.U4ECE24044]",
+      "Katamalli Nikhil Sri Bharadwaj [CB.EN.U4ECE24218]",
+      "Todeti Jaswantha Simha [CB.EN.U4ECE24056]",
+      "Pasala Madhumitha [CB.EN.U4ECE24231]",
+      "D.Bhuvaneswari [CB.EN.U4ECE24210]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T358",
+    "name": "PragatiBytes",
+    "leader": "Prakateessh C.M. [CB.AI.U4AIM24110]",
+    "members": [
+      "Akhillesh Varathan C S [CB.AI.U4AIM24102]",
+      "Nikitha Sree T Y [CB.AI.U4AIM24132]",
+      "R Ashwika [CB.AI.U4AIM24138]",
+      "Sakthikailash S V [CB.AI.U4AIM24140]",
+      "Vedang Pratap Singh [CB.AI.U4AIM24151]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T361",
+    "name": "Aesthetic Agents",
+    "leader": "Mahadev M [CB.AI.U4AIM24025]",
+    "members": [
+      "Nithin S. [CB.AI.U4AIM24133]",
+      "Susanth M.K. [CB.AI.U4AIM24148]",
+      "Kailash S. [CB.AI.U4AIM24017]",
+      "Amirthavarshini [CB.AI.U4AIM24154]",
+      "Shwetha P. [CB.AI.U4AIM24042]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Milton Mondal",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T362",
+    "name": "HackNova",
+    "leader": "M.Pranavi [CB.AI.U4AID25130]",
+    "members": [
+      "KAravind guptha [CB.AI.U4AID25125]",
+      "B.Lalith [CB.AI.U4AID25111]",
+      "P.Sri Harshini [CB.AI.U4AID25042]",
+      "H.Sumanth [CB.AI.U4AID25016]",
+      "P.Sathwik [CB.AI.U4AID25041]"
+    ],
+    "status": "On board",
+    "mentor": "Dr.Suman Dutta",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T366",
+    "name": "NextStep",
+    "leader": "Mahalingam S [CB.SC.P2CSE26016]",
+    "members": [
+      "Aishwarya S [CB.SC.P2AIE26003]",
+      "poonkuzhali J.V [CB.SC.P2AIE26044]",
+      "Deepthi V [CB.SC.P2AIE26010]",
+      "Harisha F [CB.SC.P2AIE26015]",
+      "Shrikavi R [CB.SC.P2AIE26027]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. T. Senthil kumar",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T370",
+    "name": "67Blades",
+    "leader": "Eshanika Bright [CB.EN.U4MEE25009]",
+    "members": [
+      "G.Sanjay [CB.EN.U4MEE25010]",
+      "Srijith V [CB.EN.U4MEE25040]",
+      "Neranjan Prakash [CB.EN.U4MEE25026]",
+      "Bharat S [CB.EN.U4MEE25007]",
+      "Shree Hari N S [CB.EN.U4MEE25035]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T378",
+    "name": "Cyber Squad",
+    "leader": "Janani Harishmitha B [CB.AI.U4CPS26019]",
+    "members": [
+      "Sree Thanishka M B [CB.AI.U4CPS26055]",
+      "Thalacheeru Manaswini [CB.AI.U4CPS26059]",
+      "Shanmadhi.K [CB.AI.U4CPS26051]",
+      "Tulasi Gayatri Sree [CB.AI.U4CPS26062]",
+      "Shivani A [CB.AI.CPS26052]"
+    ],
+    "status": "On board",
+    "mentor": "Nalini D",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T386",
+    "name": "Symbiotix",
+    "leader": "Akash G [CB.PS.P2ASD25004]",
+    "members": [
+      "Kashyap [CB.PS.P2ASD25016]",
+      "Anandha Vardhini G [Cb.ps.p2asd25007]",
+      "Vishaal P [Cb.ps.p2asd26017]",
+      "Sourav [CB.PS.P2ASD25023]",
+      "Dhanush [CB.PS.P2DLS25026]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T388",
+    "name": "TEAM X",
+    "leader": "KRISHNA TEJA [CB.SC.U4CSE24743]",
+    "members": [
+      "HARSHA CHOWDARY [CB.SC.U4CSE24717]",
+      "MANASWINI YOSHITHA [CB.SC.U4CSE24716]",
+      "ABHINAV [CB.SC.U4CSE24702]",
+      "PRANAVA.M [CB.SC.U4CSE24730]",
+      "RAJENDRA [CB.SC.U4CSE24511]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T393",
+    "name": "HEXABYTE",
+    "leader": "Aiswarya C A [CB.SC.U4CSE24705]",
+    "members": [
+      "Divya Vijayakumar [CB.SC.U4CSE24714]",
+      "Shradha Shivraj [CB.SC.U4CSE24749]",
+      "Adithya Prasad [CB.SC.U4CSE24603]",
+      "Abhay K V [Cb.sc.u4cse24001]",
+      "Tejasi Biju [CB.SC.U4CSE24153]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T395",
+    "name": "Zero bug",
+    "leader": "Sarweshwaran.G.P [CB.EN.U4ARE25042]",
+    "members": [
+      "Maanasha.S [CB.EN.U4ARE25025]",
+      "Thushhar Vinoth [CB.EN.U4ARE25058]",
+      "Roopali.S [CB.EN.U4ARE25037]",
+      "Harshitha Kothandam Sisikuma [CB.EN.U4ARE25021]",
+      "A.Gokula Krishnan [CB.EN.U4ARE25001]"
+    ],
+    "status": "On board",
+    "mentor": "Dr. Unnikrishnan D.",
+    "problemStatement": "-",
+    "accepted": "Not Accepted",
+    "idError": false,
+    "githubUsername": ""
   }
 ];
