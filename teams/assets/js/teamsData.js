@@ -8188,5 +8188,149 @@ window.teamsData = [
     "accepted": "Not Accepted",
     "idError": false,
     "githubUsername": ""
+  },
+  {
+    "id": "SIH26-A0H-T500",
+    "name": "Aurez",
+    "leader": "Dakshatha G [CB.AC.U4DES25003]",
+    "members": [
+      "Jinal R [CB.AC.U4DES25005]",
+      "Jamuna Busetty [CB.AC.U4DES25004]",
+      "Pavnassri S [CB.AC.U4DES25007]",
+      "Tharunetha [CB.AC.U4DES25008]",
+      "Nivesh Sanjay R [CB.AC.U4DES25006]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "DakshathaG"
+  },
+  {
+    "id": "SIH26-A0H-T501",
+    "name": "Paru",
+    "leader": "Laranya K [CB.AC.U5ARC26019]",
+    "members": [
+      "Khadeeja Ameer [CB.AC.U5ARC26016]",
+      "Ritu Sree S [CB.AC.U5ARC26030]",
+      "Kharnigah K [CB.AC.U5ARC26017]",
+      "Kanishka.S [CB.AC.U5ARC26015]",
+      "Kowshica.KB [CB.AC.U5ARC26018]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "LaranyaK"
+  },
+  {
+    "id": "SIH26-A0H-T502",
+    "name": "Nexora",
+    "leader": "Subashreeka D S [CB.AC.U5ARC26035]",
+    "members": [
+      "P.Charnita [CB.AC.U5ARC26008]",
+      "Keerthi Sree.S.T [CB.AC.U5ARC26040]",
+      "M Prithiviraj [CB.AC.U5ARC26028]",
+      "Gnana prabu k [CB.AC.U5ARC26013]",
+      "Alagarasi R M [CB.AC.U5ARC26031]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "SubashreekaDS"
+  },
+  {
+    "id": "SIH26-A0H-T503",
+    "name": "ArchiTechs",
+    "leader": "Ashwin Krishna [CB.AC.U5ARC24004]",
+    "members": [
+      "Aparna Sudeep [CB.AC.U5ARC24003]",
+      "Nandakishore A [CB.AC.U5ARC25014]",
+      "Sriram Nandhakishore S N [CB.AC.U5ARC25018]",
+      "Shivani C V [CB.AC.U5ARC25022]",
+      "Haris Sridhar S [CB.AC.U5ARC25017]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "AshwinKrishna"
+  },
+  {
+    "id": "SIH26-A0H-T504",
+    "name": "SthapatyaX",
+    "leader": "Shivane S M [CB.AC.U5ARC24022]",
+    "members": [
+      "SANJANA S [CB.AC.U5ARC24021]",
+      "A. RENITA ASHLEY [CB.AC.U5ARC24001]",
+      "NETHRA SHREE SAKTHI M [CB.AC.U5ARC24018]",
+      "NEERAJ R B [CB.AC.U5ARC24017]",
+      "DINESH M [CB.AC.U5ARC204009]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "ShivaneSM"
+  },
+  {
+    "id": "SIH26-A0H-T505",
+    "name": "Archi_talezz",
+    "leader": "THIRUVIKRAMAN R [CB.AC.U5ARC25028]",
+    "members": [
+      "Shree Sahana [CB.AC.U5ARC25024]",
+      "Pydisetty Vallabha Hari [CB.AC.U5ARC25033]",
+      "Trisha Kumari Sharma [CB.AC.U5ARC25029]",
+      "Mahaa Sri [CB.AC.U5ARC25012]",
+      "Jangala Ganesh Sri Susanth [CB.AC.U5ARC25010]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "ThiruvikramanR"
+  },
+  {
+    "id": "SIH26-A0H-T506",
+    "name": "SHANKR",
+    "leader": "Aswath S [CB.AC.U5ARC26006]",
+    "members": [
+      "Navadharaneesh N [CB.AC.U5ARC26025]",
+      "Haasya Gandham [CB.AC.U4DES26004]",
+      "Rohit S [CB.AC.U5ARC26032]",
+      "M.Sai Srujana Varshini [CB.AC.U5ARC26023]",
+      "Kamalika [CB.AC.U5ARC26014]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "AswathS"
+  },
+  {
+    "id": "SIH26-A0H-T507",
+    "name": "Quantum",
+    "leader": "Nikitha P [CB.AC.U4DES26011]",
+    "members": [
+      "K.Akshitha [CB.AC.U4DES26008]",
+      "Prakalya M [CB.AC.U4DES26019]",
+      "Sushma R [CB.AC.U5ARC26021]",
+      "Rathivarthini J [CB.AC.U4DES26019]",
+      "Mahitha R A [CB.AC.U4DES26013]"
+    ],
+    "status": "On board",
+    "mentor": "No Mentor",
+    "problemStatement": "SIH26101",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "NikithaP"
   }
 ];
