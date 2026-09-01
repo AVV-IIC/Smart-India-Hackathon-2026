@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // KPI Elements
   const totalTeamsCountEl = document.getElementById('totalTeamsCount');
   const acceptedTeamsCountEl = document.getElementById('acceptedTeamsCount');
-  const idErrorCountEl = document.getElementById('idErrorCount');
   const onBoardCountEl = document.getElementById('onBoardCount');
   const offBoardCountEl = document.getElementById('offBoardCount');
   const mentorsCountEl = document.getElementById('mentorsCount');
@@ -169,19 +168,17 @@ document.addEventListener('DOMContentLoaded', () => {
     ensureDataLoaded();
     const total = state.teams.length;
     const acceptedCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
-    const idErrorCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'id error').length;
     const onBoard = state.teams.filter(t => t.status.toLowerCase().includes('on')).length;
     const offBoard = total - onBoard;
     const mentorsAssigned = state.teams.filter(t => t.mentor && t.mentor !== 'No Mentor').length;
     
     let totalParticipants = 0;
-    state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted' || (t.accepted || '').toLowerCase() === 'id error').forEach(t => {
+    state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').forEach(t => {
       totalParticipants += 1 + t.members.length;
     });
 
     if (totalTeamsCountEl) totalTeamsCountEl.textContent = total;
     if (acceptedTeamsCountEl) acceptedTeamsCountEl.textContent = acceptedCount;
-    if (idErrorCountEl) idErrorCountEl.textContent = idErrorCount;
     if (onBoardCountEl) onBoardCountEl.textContent = onBoard;
     if (offBoardCountEl) offBoardCountEl.textContent = offBoard;
     if (mentorsCountEl) mentorsCountEl.textContent = mentorsAssigned;
@@ -196,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let count = 0;
       if (filter === 'all') count = state.teams.length;
       else if (filter === 'accepted') count = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
-      else if (filter === 'iderror') count = state.teams.filter(t => t.idError).length;
       else if (filter === 'notaccepted') count = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'not accepted').length;
       else if (filter === 'on') count = state.teams.filter(t => t.status.toLowerCase().includes('on')).length;
       else if (filter === 'off') count = state.teams.filter(t => t.status.toLowerCase().includes('off')).length;
@@ -221,7 +217,6 @@ document.addEventListener('DOMContentLoaded', () => {
     state.filteredTeams = state.teams.filter(team => {
       // Status Filter
       if (state.statusFilter === 'accepted' && (team.accepted || '').toLowerCase() !== 'accepted') return false;
-      if (state.statusFilter === 'iderror' && !team.idError) return false;
       if (state.statusFilter === 'notaccepted' && (team.accepted || '').toLowerCase() !== 'not accepted') return false;
       if (state.statusFilter === 'on' && !team.status.toLowerCase().includes('on')) return false;
       if (state.statusFilter === 'off' && !team.status.toLowerCase().includes('off')) return false;
@@ -316,13 +311,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let addedText = team.accepted || 'Not Accepted';
       const statusLower = (team.accepted || '').toLowerCase();
       if (statusLower === 'accepted') {
-        if (team.idError) {
-          addedText = 'Accepted (ID Error)';
-          addedBadgeClass = 'badge-warning';
-        } else {
-          addedText = 'Accepted';
-          addedBadgeClass = 'badge-on';
-        }
+        addedText = 'Accepted';
+        addedBadgeClass = 'badge-on';
       }
 
       const psDisplay = (team.problemStatement && team.problemStatement !== '-')
@@ -436,13 +426,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let addedText = team.accepted || 'Not Accepted';
       const statusLower = (team.accepted || '').toLowerCase();
       if (statusLower === 'accepted') {
-        if (team.idError) {
-          addedText = 'Accepted (ID Error)';
-          addedBadgeClass = 'badge-warning';
-        } else {
-          addedText = 'Accepted';
-          addedBadgeClass = 'badge-on';
-        }
+        addedText = 'Accepted';
+        addedBadgeClass = 'badge-on';
       }
       modalAddedNuu.innerHTML = `<span class="badge ${addedBadgeClass}">${addedText}</span>`;
     }
@@ -798,7 +783,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Chart 2.5: Accepted vs Not Accepted
     const acceptedCount = state.teams.filter(t => (t.accepted || '').toLowerCase() === 'accepted').length;
-    const idErrorCount = state.teams.filter(t => t.idError).length;
     const notAcceptedCount = state.teams.length - acceptedCount;
 
     if (chartInstances.acceptedChart) chartInstances.acceptedChart.destroy();
@@ -807,10 +791,10 @@ document.addEventListener('DOMContentLoaded', () => {
       chartInstances.acceptedChart = new Chart(ctxAccepted, {
         type: "doughnut",
         data: {
-          labels: ["Accepted (Valid ID)", "Accepted (ID Error)", "Not Accepted"],
+          labels: ["Accepted", "Not Accepted"],
           datasets: [{
-            data: [acceptedCount - idErrorCount, idErrorCount, notAcceptedCount],
-            backgroundColor: ["#16a34a", "#d97706", "#dc2626"],
+            data: [acceptedCount, notAcceptedCount],
+            backgroundColor: ["#16a34a", "#dc2626"],
             borderWidth: 2,
             borderColor: chartBorderColor
           }]
@@ -822,9 +806,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (activeEls.length > 0) {
               const idx = activeEls[0].index;
               if (idx === 0) setStatusFilter('accepted');
-              else if (idx === 1) setStatusFilter('iderror');
               else setStatusFilter('notaccepted');
-              const labels = ['Accepted', 'ID Error', 'Not Accepted'];
+              const labels = ['Accepted', 'Not Accepted'];
               showToast(`Filtered by ${labels[idx]} status`);
             }
           },
