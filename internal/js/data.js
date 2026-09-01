@@ -1,7 +1,7 @@
 const DATA = {
-  "generated": "1 Sep 2026 (Final 355 Accepted Teams Update)",
+  "generated": "1 Sep 2026 (Final 354 Accepted Teams Update)",
   "summary": {
-    "total_registrations": 467,
+    "total_registrations": 465,
     "total_students_declared": 2730,
     "unique_roll_numbers": 2690,
     "duplicate_roll_instances": 35,
@@ -42,7 +42,7 @@ const DATA = {
       "P2": 25
     },
     "female_led_pct": 29.0,
-    "single_branch_teams": 271,
+    "single_branch_teams": 269,
     "max_branches_in_one_team": 6,
     "id_sequence_gaps": 0,
     "exact_duplicate_rows": 0,
@@ -52,19 +52,19 @@ const DATA = {
     "offboard_no_mentor": 10,
     "offboard_flagged": 37,
     "onboard_but_flagged": 169,
-    "accepted_teams": 355,
-    "not_accepted_teams": 112,
+    "accepted_teams": 354,
+    "not_accepted_teams": 111,
     "id_error_teams": 0,
-    "onboard_teams": 407,
+    "onboard_teams": 405,
     "offboard_teams": 60,
     "mentor_assigned_teams": 327,
-    "no_mentor_teams": 140,
-    "total_participants_accepted": 2070,
-    "total_participants_all": 2742,
-    "github_count": 347,
-    "ps_count": 355,
+    "no_mentor_teams": 138,
+    "total_participants_accepted": 2074,
+    "total_participants_all": 2740,
+    "github_count": 346,
+    "ps_count": 354,
     "branch_diversity_counts": {
-      "1": 271,
+      "1": 269,
       "2": 119,
       "3": 50,
       "4": 21,
@@ -20191,11 +20191,11 @@ const DATA = {
       ],
       "onboard": "On board",
       "formatted_id": "SIH26-A0H-T197",
-      "accepted": "Not Accepted",
+      "accepted": "Accepted",
       "id_error": false,
       "has_mentor": true,
-      "problem_statement": "SIH26106",
-      "github_username": "Abishree5229",
+      "problem_statement": "SIH26027",
+      "github_username": "prajit24680",
       "num_branches": 1
     },
     {
@@ -34669,8 +34669,8 @@ const DATA = {
       "accepted": "Accepted",
       "id_error": false,
       "has_mentor": true,
-      "problem_statement": "SIH26021",
-      "github_username": "priya73873-bit",
+      "problem_statement": "SIH26038",
+      "github_username": "adarsh27062005-prog",
       "num_branches": 1
     },
     {
@@ -42473,41 +42473,6 @@ const DATA = {
     },
     {
       "id": "457",
-      "team": "Adarsh S",
-      "leader": "Adarsh S",
-      "wa_raw": "",
-      "wa_norm": "",
-      "wa_issues": [],
-      "dept_raw": "Computer Science and Engineering",
-      "mentor": "Unassigned",
-      "submitter": "ADARSH S [CB.PS.I5DAS23037]",
-      "email": "cb.ps.i5das23037@cb.students.amrita.edu",
-      "start": "2026-08-29 18:19:21",
-      "end": "2026-08-29 18:25:07",
-      "flags": [],
-      "members": [
-        {
-          "slot": "Leader",
-          "name": "Adarsh S",
-          "gender": "M",
-          "roll": "CB.PS.I5DAS23037",
-          "branch": "CSE",
-          "program": "UG",
-          "yearOfStudy": 2,
-          "rollStatus": "ok"
-        }
-      ],
-      "onboard": "On board",
-      "formatted_id": "SIH26-A0H-T316",
-      "accepted": "Accepted",
-      "id_error": false,
-      "has_mentor": false,
-      "problem_statement": "SIH26038",
-      "github_username": "adarsh27062005-prog",
-      "num_branches": 1
-    },
-    {
-      "id": "458",
       "team": "Sai Harshil",
       "leader": "Sai Harshil",
       "wa_raw": "",
@@ -42542,42 +42507,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "459",
-      "team": "Prajit Anand",
-      "leader": "Prajit Anand",
-      "wa_raw": "",
-      "wa_norm": "",
-      "wa_issues": [],
-      "dept_raw": "Computer Science and Engineering",
-      "mentor": "Unassigned",
-      "submitter": "Prajit [CB.PS.I5MAT26011]",
-      "email": "cb.en.u4aee26011@cb.students.amrita.edu",
-      "start": "-",
-      "end": "-",
-      "flags": [],
-      "members": [
-        {
-          "slot": "Leader",
-          "name": "Prajit Anand",
-          "gender": "M",
-          "roll": "CB.PS.I5MAT26011",
-          "branch": "CSE",
-          "program": "UG",
-          "yearOfStudy": 1,
-          "rollStatus": "ok"
-        }
-      ],
-      "onboard": "On board",
-      "formatted_id": "SIH26-A0H-T398",
-      "accepted": "Accepted",
-      "id_error": false,
-      "has_mentor": false,
-      "problem_statement": "SIH26027",
-      "github_username": "prajit24680",
-      "num_branches": 1
-    },
-    {
-      "id": "460",
+      "id": "458",
       "team": "Dakshatha G",
       "leader": "Dakshatha G",
       "wa_raw": "",
@@ -42612,7 +42542,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "461",
+      "id": "459",
       "team": "Laranya k",
       "leader": "Laranya k",
       "wa_raw": "",
@@ -42647,7 +42577,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "462",
+      "id": "460",
       "team": "Subashreeka D S",
       "leader": "Subashreeka D S",
       "wa_raw": "",
@@ -42682,7 +42612,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "463",
+      "id": "461",
       "team": "Ashwin Krishna",
       "leader": "Ashwin Krishna",
       "wa_raw": "",
@@ -42717,7 +42647,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "464",
+      "id": "462",
       "team": "Shivane S M",
       "leader": "Shivane S M",
       "wa_raw": "",
@@ -42752,7 +42682,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "465",
+      "id": "463",
       "team": "R.Thiruvikraman",
       "leader": "R.Thiruvikraman",
       "wa_raw": "",
@@ -42787,7 +42717,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "466",
+      "id": "464",
       "team": "Aswath S",
       "leader": "Aswath S",
       "wa_raw": "",
@@ -42822,7 +42752,7 @@ const DATA = {
       "num_branches": 1
     },
     {
-      "id": "467",
+      "id": "465",
       "team": "Nikitha P",
       "leader": "Nikitha P",
       "wa_raw": "",
