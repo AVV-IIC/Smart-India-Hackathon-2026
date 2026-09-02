@@ -186,30 +186,227 @@ Updated Date: 2nd Sep 2026
             line-height: 1.6;
         }
 
+        /* FAQ & Accordion Styles */
         .faq-item {
-            margin-bottom: 18px;
-            padding-bottom: 14px;
-            border-bottom: 1px solid #f1f3f4;
+            margin-bottom: 12px;
+            border: 1px solid #e8eaed;
+            border-radius: 10px;
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
         }
 
-        .faq-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        .faq-item:hover {
+            border-color: #1a73e8;
+            box-shadow: 0 3px 8px rgba(26, 115, 232, 0.1);
         }
 
         .faq-question {
             font-weight: 700;
-            color: #202124;
-            margin-bottom: 6px;
+            color: #1a237e;
+            padding: 14px 18px;
+            background-color: #f8f9fa;
+            cursor: pointer;
             display: flex;
-            align-items: flex-start;
-            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            user-select: none;
+            font-size: 14.5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+        }
+
+        .faq-toggle-icon {
+            font-size: 14px;
+            transition: transform 0.25s ease;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(180deg);
         }
 
         .faq-answer {
-            color: #5f6368;
-            padding-left: 24px;
+            display: none;
+            padding: 16px 18px;
+            color: #3c4043;
+            background-color: #ffffff;
+            border-top: 1px solid #e8eaed;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .faq-list-items {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .faq-list-items li {
+            margin-bottom: 6px;
+        }
+
+        .faq-search-box {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 14px;
+            border: 1.5px solid #dadce0;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .faq-search-box:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        }
+
+        .header-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Mobile View Optimization */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px 8px;
+                padding: 0;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 13.5px;
+                margin-bottom: 15px;
+            }
+
+            .track-tabs-wrapper {
+                flex-direction: column;
+                gap: 12px;
+                margin: 15px auto;
+            }
+
+            .track-tabs-container {
+                width: 100%;
+                max-width: 100%;
+                gap: 8px;
+            }
+
+            .track-tab {
+                padding: 12px 10px;
+                font-size: 14px;
+            }
+
+            .top-info-btns {
+                width: 100%;
+                justify-content: space-between;
+                gap: 8px;
+            }
+
+            .info-btn {
+                flex: 1;
+                justify-content: center;
+                padding: 10px 12px;
+                font-size: 13.5px;
+            }
+
+            .search-box-container {
+                padding: 14px;
+                margin-bottom: 20px;
+            }
+
+            .search-input-wrapper {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .search-input {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 13.5px;
+            }
+
+            .btn-search {
+                width: 100%;
+            }
+
+            .hall-tabs-container {
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .hall-tab {
+                width: 100%;
+                padding: 12px;
+                font-size: 13.5px;
+                box-sizing: border-box;
+            }
+
+            .panel-details {
+                padding: 10px;
+                border-radius: 8px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                min-width: 620px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                font-size: 12.5px;
+            }
+
+            .modal-overlay {
+                padding: 10px;
+            }
+
+            .modal-card {
+                max-width: 100%;
+                width: 100%;
+                max-height: 92vh;
+                border-radius: 12px;
+            }
+
+            .modal-header {
+                padding: 14px 16px;
+            }
+
+            .modal-title {
+                font-size: 16px;
+            }
+
+            .modal-body {
+                padding: 14px;
+            }
+
+            .faq-question {
+                font-size: 13.5px;
+                padding: 12px 14px;
+            }
+
+            .faq-answer {
+                font-size: 13px;
+                padding: 12px 14px;
+            }
         }
 
         .instruction-section {
@@ -1474,6 +1671,20 @@ Updated Date: 2nd Sep 2026
             }
         }
 
+        function toggleFaq(headerElem) {
+            const item = headerElem.parentElement;
+            item.classList.toggle('active');
+        }
+
+        function filterFaqs() {
+            const input = document.getElementById('faq-search').value.toLowerCase();
+            const items = document.querySelectorAll('#faq-modal .faq-item');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? 'block' : 'none';
+            });
+        }
+
         window.addEventListener('click', (e) => {
             if (e.target.classList.contains('modal-overlay')) {
                 e.target.classList.remove('active');
@@ -1482,7 +1693,7 @@ Updated Date: 2nd Sep 2026
         });
     </script>
 
-    <!-- FAQs Modal
+    <!-- FAQs Modal -->
     <div id="faq-modal" class="modal-overlay">
         <div class="modal-card">
             <div class="modal-header">
@@ -1490,35 +1701,150 @@ Updated Date: 2nd Sep 2026
                 <button class="modal-close-btn" onclick="closeModal('faq-modal')">&times;</button>
             </div>
             <div class="modal-body">
+                <input type="text" id="faq-search" class="faq-search-box" placeholder="🔍 Search FAQ questions..." onkeyup="filterFaqs()" />
+                
                 <div class="faq-item">
-                    <div class="faq-question">⏱️ What is the duration for each team presentation?</div>
-                    <div class="faq-answer">Each team is allotted 20 minutes in total (12–15 minutes for project presentation/demo and 5–8 minutes for Jury Q&A).</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>💻 1. When are the Software Presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The presentation dates for the Software Track are <strong>4th, 5th, and 6th September 2026</strong>.
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">📊 What are the PPT presentation guidelines?</div>
-                    <div class="faq-answer">Presentations must strictly adhere to the official SIH 2026 PPT template format. Custom designs or single-slide presentations are not permitted.</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>⚙️ 2. Remaining Hardware presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The remaining presentation dates for the Hardware Track are <strong>4th and 5th September 2026</strong>.
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">🔧 Where should Hardware Track teams present?</div>
-                    <div class="faq-answer">Hardware teams must present at their assigned venue (Saraswathi Hall HW#P1 or Viveka Hall HW#P2). Teams should arrive 15 minutes before their slot to set up prototype hardware.</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📅 3. Schedule for the software presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Software Track presentations will begin on <strong>4th September 2026 at 3:00 PM</strong>.
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">💻 Where can I find Software Track panel details?</div>
-                    <div class="faq-answer">Software Track jury panels and hall allocations are currently being finalized and will be updated on the Software Track tab soon.</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>✏️ 4. Till when can we edit the presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can edit your PPT slide decks <strong>till 7:00 AM on the date of your presentation</strong>.
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">⚡ How does real-time volunteer editing mode work?</div>
-                    <div class="faq-answer">Authorized volunteers can append <code>?mode=volunteer</code> to the page URL to unlock interactive status updates (Scheduled → Ongoing → Completed).</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🪪 5. Is uniform and ID cards Mandatory?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Yes</strong>, mandatory for all students. However, concession can be given to 1st Year B.Tech students and M.Tech students.
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">🚫 Why is a team listed in the Rejected Teams section?</div>
-                    <div class="faq-answer">Teams are recorded under Rejected Teams if they fail to meet mandatory requirements, such as template mismatches, missing GitHub repositories, or withdrawing from the hackathon.</div>
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>👥 6. Should all the members be available during the presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>No.</strong> Concession can be given if a valid reason is submitted, but it is highly preferred for all team members to present together.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>⚖️ 7. Evaluation Criteria?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The jury will evaluate projects based on the following key metrics:
+                        <ul class="faq-list-items">
+                            <li>🎯 <strong>Relevance to Problem Statement</strong></li>
+                            <li>💡 <strong>Innovation & Uniqueness</strong></li>
+                            <li>⚙️ <strong>Technical Complexity</strong></li>
+                            <li>🏗️ <strong>Feasibility & Implementation</strong></li>
+                            <li>📈 <strong>Impact & Benefits</strong></li>
+                            <li>🤝 <strong>Team Work & Presentation</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📝 8. Does OD's will be provided for preparation for presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>NO.</strong> Preparation for your presentation is in your own hands. ODs will be issued <strong>only for your designated presenting slot</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🤖 9. On what basis is the ppt decided if it is AI generated?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        That will be evaluated and answered <strong>in person</strong> during your presentation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📑 10. Submission for second problem statement and its ppt?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Information regarding the second problem statement submission and its PPT will be communicated <strong>after 11th of September 2026</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>💻 11. Do the presenting team bring laptops for presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>One laptop is strongly advised to be brought</strong> by the team loaded with the updated PPT, just in case of an emergency.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🧪 12. Will Lab evaluations or Tests be rescheduled?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        If there is an evaluation scheduled, make sure team members attend the evaluation. The rescheduling depends strictly on <strong>judges' availability</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🎥 13. Any youtube related Queries?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        All information regarding YouTube video requirements will be updated later.
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- Instructions Modal
+    <!-- Instructions Modal -->
     <div id="instructions-modal" class="modal-overlay">
         <div class="modal-card">
             <div class="modal-header">
@@ -1554,7 +1880,7 @@ Updated Date: 2nd Sep 2026
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div style="text-align: center;">
         <p>&copy; SIH 2026 - Internal Hackathon <br /> Institution's Innovation Council. <br /> Amrita Vishwa

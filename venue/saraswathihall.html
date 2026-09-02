@@ -229,6 +229,12 @@
       opacity: 0.92;
       box-shadow: none !important;
     }
+    @media (max-width: 768px) {
+      body { margin: 10px 8px; }
+      .panel-details { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table { min-width: 620px; }
+      th, td { padding: 7px 6px; font-size: 12.5px; }
+    }
   </style>
   <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
@@ -237,7 +243,7 @@
 
 <body>
   <p align="center">
-    <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
+    <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" style="max-width: 100%; height: auto;" />
   </p>
 
   <div class="nav-bar">
