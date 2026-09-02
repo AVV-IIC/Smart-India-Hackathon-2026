@@ -219,7 +219,45 @@ Updated Date: 1st Sep 2026
             /* Forest Green */
             color: #FFFFFF;
         }
+
+        /* Role & Realtime Badge Styles */
+        .role-banner-container {
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        .mode-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .mode-volunteer {
+            background-color: #e6f4ea;
+            color: #137333;
+            border: 1px solid #ceebe1;
+        }
+
+        .mode-participant {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border: 1px solid #d2e3fc;
+        }
+
+        .status-btn.read-only {
+            cursor: default !important;
+            pointer-events: none !important;
+            opacity: 0.92;
+            box-shadow: none !important;
+        }
     </style>
+    <!-- Firebase SDK (Compat version for single HTML file integration) -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 </head>
 
 <body>
@@ -227,6 +265,8 @@ Updated Date: 1st Sep 2026
         <img alt="header" src="../Assets/images/header.png" width="1200" />
     </p>
     <h2>Smart India Hackathon - 2026<br /> Internal Hackathon - Panel Details</h2>
+
+    <div id="role-banner" class="role-banner-container"></div>
 
 
     <label for="panel-select">Choose a Panel:</label>
@@ -1559,7 +1599,73 @@ Updated Date: 1st Sep 2026
             'Completed': 'status-completed'
         };
 
+        // URL Query Parameter Role Detection (Zero Login)
+        // Access via: venue/index.html?mode=volunteer or ?key=sih_vol_2026
+        const urlParams = new URLSearchParams(window.location.search);
+        const isVolunteer = urlParams.get('mode') === 'volunteer' ||
+                            urlParams.get('key') === 'sih_vol_2026' ||
+                            urlParams.get('role') === 'volunteer' ||
+                            urlParams.has('volunteer');
+
+        // Firebase Configuration (Supports window.FIREBASE_CONFIG or default setup)
+        const firebaseConfig = window.FIREBASE_CONFIG || {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "sih-2026.firebaseapp.com",
+            databaseURL: "https://sih-2026-default-rtdb.firebaseio.com",
+            projectId: "sih-2026",
+            storageBucket: "sih-2026.appspot.com",
+            messagingSenderId: "1234567890",
+            appId: "1:1234567890:web:abcdef"
+        };
+
+        let db = null;
+        let firebaseInitialized = false;
+
+        if (typeof firebase !== 'undefined' && firebaseConfig.databaseURL && !firebaseConfig.databaseURL.includes("YOUR_")) {
+            try {
+                if (!firebase.apps.length) {
+                    firebase.initializeApp(firebaseConfig);
+                }
+                db = firebase.database();
+                firebaseInitialized = true;
+            } catch (e) {
+                console.warn("Firebase initialization skipped or errored:", e);
+            }
+        }
+
+        function applyRoleUI() {
+            const banner = document.getElementById('role-banner');
+            if (banner) {
+                if (isVolunteer) {
+                    banner.innerHTML = '<span class="mode-badge mode-volunteer">⚡ Volunteer Edit Mode Active (Realtime Sync Enabled)</span>';
+                } else {
+                    banner.innerHTML = '<span class="mode-badge mode-participant">👁 Live Schedule View (Read-Only)</span>';
+                }
+            }
+
+            document.querySelectorAll('.status-btn').forEach(btn => {
+                if (!isVolunteer) {
+                    btn.classList.add('read-only');
+                    btn.setAttribute('title', 'Read-only schedule view');
+                } else {
+                    btn.classList.remove('read-only');
+                    btn.setAttribute('title', 'Click to toggle: Scheduled → Ongoing → Completed');
+                }
+            });
+        }
+
+        function updateButtonStatus(teamId, status) {
+            if (!STATUS_CLASSES[status]) return;
+            const btn = document.querySelector(`.status-btn[data-team="${teamId}"]`);
+            if (btn) {
+                btn.textContent = status;
+                btn.className = 'status-btn ' + STATUS_CLASSES[status] + (isVolunteer ? '' : ' read-only');
+            }
+        }
+
         function toggleStatus(btn) {
+            if (!isVolunteer) return;
+
             const teamId = btn.getAttribute('data-team');
             const current = btn.textContent.trim();
             let nextIdx = (STATUSES.indexOf(current) + 1) % STATUSES.length;
@@ -1571,6 +1677,9 @@ Updated Date: 1st Sep 2026
 
             if (teamId) {
                 localStorage.setItem('sih_status_' + teamId, nextStatus);
+                if (firebaseInitialized && db) {
+                    db.ref('statuses/' + teamId).set(nextStatus);
+                }
             }
         }
 
@@ -1581,14 +1690,35 @@ Updated Date: 1st Sep 2026
                     const saved = localStorage.getItem('sih_status_' + teamId);
                     if (saved && STATUS_CLASSES[saved]) {
                         btn.textContent = saved;
-                        btn.className = 'status-btn ' + STATUS_CLASSES[saved];
+                        btn.className = 'status-btn ' + STATUS_CLASSES[saved] + (isVolunteer ? '' : ' read-only');
                     }
                 }
             });
         }
 
+        function initRealtimeSync() {
+            if (firebaseInitialized && db) {
+                db.ref('statuses').on('value', (snapshot) => {
+                    const data = snapshot.val() || {};
+                    Object.keys(data).forEach(teamId => {
+                        updateButtonStatus(teamId, data[teamId]);
+                        localStorage.setItem('sih_status_' + teamId, data[teamId]);
+                    });
+                });
+            } else {
+                loadSavedStatuses();
+                window.addEventListener('storage', (e) => {
+                    if (e.key && e.key.startsWith('sih_status_')) {
+                        const teamId = e.key.replace('sih_status_', '');
+                        updateButtonStatus(teamId, e.newValue);
+                    }
+                });
+            }
+        }
+
         window.addEventListener('DOMContentLoaded', () => {
-            loadSavedStatuses();
+            applyRoleUI();
+            initRealtimeSync();
         });
     </script>
     <div style="text-align: center;">
