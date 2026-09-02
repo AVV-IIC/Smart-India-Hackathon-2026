@@ -1,0 +1,338 @@
+<!-- 
+Authors: Mr. Ramaguru Radhakrishnan 
+Created Date: 31st Aug 2026 
+Updated Date: 2nd Sep 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SIH 2026 - Rejected Teams</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fcfcfc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #202124;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            background: #ffffff;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 9px 10px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .col-sno {
+            width: 50px;
+            text-align: center;
+        }
+
+        .col-team-no {
+            width: 140px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .col-team-name {
+            width: 160px;
+            word-break: break-word;
+            font-weight: 600;
+        }
+
+        .col-leader {
+            width: 220px;
+            word-break: break-word;
+        }
+
+        .problem-cell {
+            width: auto;
+            font-size: 13.5px;
+            line-height: 1.4;
+            word-break: break-word;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .col-reason {
+            width: 220px;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: #fce446;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .highlightc {
+            background-color: #d93025;
+            color: #FFFFFF;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .status-btn {
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-warning {
+            background-color: #d93025;
+            color: #FFFFFF;
+        }
+
+        .role-banner-container {
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        .mode-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .mode-volunteer {
+            background-color: #e6f4ea;
+            color: #137333;
+            border: 1px solid #ceebe1;
+        }
+
+        .mode-participant {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border: 1px solid #d2e3fc;
+        }
+    </style>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+</head>
+
+<body>
+    <p align="center">
+        <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
+    </p>
+
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link" id="back-home-link">← Back to All Panels</a>
+        <div>
+            <a href="saraswathihall.html" class="nav-link" style="margin-right: 15px;">🏛️ Saraswathi Hall</a>
+            <a href="vivekahall.html" class="nav-link">🏛️ Viveka Hall</a>
+        </div>
+    </div>
+
+    <h2>Smart India Hackathon - 2026<br /> Internal Hackathon - Rejected Teams</h2>
+    <div id="role-banner" class="role-banner-container"></div>
+
+    <div class="panel-details">
+        <h3>🚫 Rejected Teams Details <span class="highlightc">Rejected</span></h3>
+        <p><strong>Status:</strong> <span class="highlight"
+                style="background-color: #fad2cf; color: #c5221f;">Disqualified / Rejection Recorded</span></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-sno">S.No</th>
+                    <th class="col-team-no">Team Number</th>
+                    <th class="col-team-name">Team Name</th>
+                    <th class="col-leader">Team Leader Name</th>
+                    <th class="problem-cell">Problem ID and Title</th>
+                    <th class="col-reason">Rejection Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sno">1</td>
+                    <td class="col-team-no">SIH26-A0H-T235</td>
+                    <td class="col-team-name">INNOVITA</td>
+                    <td class="col-leader">Krishiva Venkatesh [CB.EN.U4ECE26027]</td>
+                    <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
+                        Vegetables in North Eastern Region.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">not matching sih template</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">2</td>
+                    <td class="col-team-no">SIH26-A0H-T138</td>
+                    <td class="col-team-name">The Bit Reactor</td>
+                    <td class="col-leader">Yazhini S K [CB.EN.U4CHE26052]</td>
+                    <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
+                        Vegetables in North Eastern Region.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">has withdrawed from hackathon</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-sno">3</td>
+                    <td class="col-team-no">SIH26-A0H-T222</td>
+                    <td class="col-team-name">Error 404: Team Not Found</td>
+                    <td class="col-leader">B.Dudhimant [CB.EN.U4EEE26148]</td>
+                    <td class="problem-cell">SIH26007 - Development of Automated Smart Waste Segregation System.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">files not updated within
+                            deadline</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">4</td>
+                    <td class="col-team-no">SIH26-A0H-T303</td>
+                    <td class="col-team-name">Nullpointerexception</td>
+                    <td class="col-leader">Padhmavathi [CB.EN.U4EEE25031]</td>
+                    <td class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining
+                        Industry: Early Detection and Safety Management System.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">files not updated within
+                            deadline</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">5</td>
+                    <td class="col-team-no">SIH26-A0H-T267</td>
+                    <td class="col-team-name">Hexacore</td>
+                    <td class="col-leader">Midhun M [CB.EN.U4EEE25026]</td>
+                    <td class="problem-cell">SIH26029 - Automated High-Current Short-Circuit Test System for MCCBs and
+                        Fuses.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">repo not found</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">6</td>
+                    <td class="col-team-no">SIH26-A0H-T291</td>
+                    <td class="col-team-name">NEX GEN</td>
+                    <td class="col-leader">S. Dharani Prasad [CB.EN.U4EEE26111]</td>
+                    <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural
+                        and Mining-Affected Areas.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">ppt has one slide and also file names
+                            are named wrong</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">7</td>
+                    <td class="col-team-no">SIH26-A0H-T111</td>
+                    <td class="col-team-name">ReVolt — Revolutionize.Innovate.Impact</td>
+                    <td class="col-leader">Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]</td>
+                    <td class="problem-cell">SIH26049 - Design and development of electrical equipment to withstand low
+                        temperatures (up to -40 deg C) for High Altitude Areas (HAA).</td>
+                    <td class="col-reason"><span class="status-btn status-warning">repo not found</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">8</td>
+                    <td class="col-team-no">SIH26-A0H-T033</td>
+                    <td class="col-team-name">Syntax Error</td>
+                    <td class="col-leader">Ashwanth S [CB.AI.U4AAR26009]</td>
+                    <td class="problem-cell">SIH26112 - Design and Develop a Modular Autonomous Mobile Robot (AMR)
+                        Platform for Smart Warehouses and Industrial Logistics.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">files not updated within
+                            deadline</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sno">9</td>
+                    <td class="col-team-no">SIH26-A0H-T221</td>
+                    <td class="col-team-name">Power</td>
+                    <td class="col-leader">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
+                    <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural
+                        and Mining-Affected Areas.</td>
+                    <td class="col-reason"><span class="status-btn status-warning">ai made ppt</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const isVolunteer = urlParams.get('mode') === 'volunteer' ||
+            urlParams.get('key') === 'sih_vol_2026' ||
+            urlParams.get('role') === 'volunteer' ||
+            urlParams.has('volunteer');
+
+        function applyRoleUI() {
+            const banner = document.getElementById('role-banner');
+            if (banner) {
+                banner.innerHTML = isVolunteer ?
+                    '<span class="mode-badge mode-volunteer">⚡ Volunteer Edit Mode Active</span>' :
+                    '<span class="mode-badge mode-participant">👁 Live Schedule Directory (Read-Only)</span>';
+            }
+
+            if (isVolunteer) {
+                const backLink = document.getElementById('back-home-link');
+                if (backLink) backLink.href = 'index.html?mode=volunteer';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', applyRoleUI);
+    </script>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <p>&copy; SIH 2026 - Internal Hackathon <br /> Institution's Innovation Council. <br /> Amrita Vishwa
+            Vidyapeetham Coimbatore.</p>
+    </div>
+</body>
+
+</html>

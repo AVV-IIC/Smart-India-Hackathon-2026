@@ -98,7 +98,7 @@ Updated Date: 2nd Sep 2026
             justify-content: center;
             gap: 15px;
             margin: 0 auto 30px auto;
-            max-width: 700px;
+            max-width: 900px;
         }
 
         .hall-tab {
@@ -499,16 +499,16 @@ Updated Date: 2nd Sep 2026
                 Hall (HW#P1)</button>
             <button id="hall-tab-viveka" class="hall-tab" onclick="switchHall('viveka')">🏛️ Viveka Hall
                 (HW#P2)</button>
+            <button id="hall-tab-rejected" class="hall-tab" onclick="switchHall('rejected')">🚫 Rejected
+                Teams</button>
         </div>
 
         <!-- Hall 1: Saraswathi Hall Schedule Table -->
         <div id="hall-content-saraswathi" class="panel-details">
             <div class="hall-header-bar">
                 <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightc">Scheduled</span></h3>
-                <a href="saraswathihall.html" class="btn-page-link panel-link">Open Saraswathi Hall Standalone Page
-                    ↗</a>
             </div>
-            <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span>
+            <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
             </p>
             <p><strong>Venue:</strong> <span class="highlight">Saraswathi Hall (AB1)</span></p>
 
@@ -609,12 +609,9 @@ Updated Date: 2nd Sep 2026
                     <tr>
                         <td class="col-sno">10</td>
                         <td class="col-time">12:00 PM - 12:20 PM</td>
-                        <td class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying
-                            and compact packaging system to preserve and process agricultural produce at source.</td>
-                        <td class="col-team-no">SIH26-A0H-T094</td>
-                        <td class="col-team-name">Adesh kumar [CB.EN.U4CIE26002]</td>
-                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T094"
-                                onclick="toggleStatus(this)">Scheduled</button></td>
+                        <td class="problem-cell">-</td>
+                        <td class="col-team-no">-</td>
+                        <td class="col-team-name">-</td>
                     </tr>
                     <tr class="break-row">
                         <td class="col-sno">11</td>
@@ -624,32 +621,40 @@ Updated Date: 2nd Sep 2026
                     <tr>
                         <td class="col-sno">12</td>
                         <td class="col-time">01:30 PM - 01:50 PM</td>
-                        <td rowspan="3" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying
+                        <td rowspan="4" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying
                             and compact packaging system to preserve and process agricultural produce at source.</td>
+                        <td class="col-team-no">SIH26-A0H-T094</td>
+                        <td class="col-team-name">Adesh kumar [CB.EN.U4CIE26002]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T094"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
                         <td class="col-team-no">SIH26-A0H-T098</td>
                         <td class="col-team-name">Parthasarathy P [CB.EN.U4EEE24033]</td>
                         <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T098"
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr>
-                        <td class="col-sno">13</td>
-                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
                         <td class="col-team-no">SIH26-A0H-T135</td>
                         <td class="col-team-name">Karri Jahnavi [CB.SC.U4CYS26022]</td>
                         <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T135"
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr>
-                        <td class="col-sno">14</td>
-                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
                         <td class="col-team-no">SIH26-A0H-T253</td>
                         <td class="col-team-name">KARTHIK U [CB.SC.U4CSE25524]</td>
                         <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T253"
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr>
-                        <td class="col-sno">15</td>
-                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
                         <td class="problem-cell">SIH26178 - A resilient, AI-powered environmental monitoring network
                             that provides early warnings for critical climate threats using edge AI.</td>
                         <td class="col-team-no">SIH26-A0H-T355</td>
@@ -658,23 +663,13 @@ Updated Date: 2nd Sep 2026
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr>
-                        <td class="col-sno">16</td>
-                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="col-sno">17</td>
+                        <td class="col-time">03:10 PM - 03:30 PM</td>
                         <td class="problem-cell">SIH26210 - Student Innovation: Swadeshi for Atmanirbhar Bharat -
                             Agriculture & Water Management.</td>
                         <td class="col-team-no">SIH26-A0H-T039</td>
                         <td class="col-team-name">SUJITHKANNAN M R [CB.EN.U4ARE24049]</td>
                         <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T039"
-                                onclick="toggleStatus(this)">Scheduled</button></td>
-                    </tr>
-                    <tr>
-                        <td class="col-sno">17</td>
-                        <td class="col-time">03:10 PM - 03:30 PM</td>
-                        <td class="problem-cell">SIH26113 - Human augmentation technologies for healthcare,
-                            rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
-                        <td class="col-team-no">SIH26-A0H-T279</td>
-                        <td class="col-team-name">Aravind Shanmugham [CB.EN.U4MEE24007]</td>
-                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T279"
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr class="break-row">
@@ -685,7 +680,17 @@ Updated Date: 2nd Sep 2026
                     <tr>
                         <td class="col-sno">19</td>
                         <td class="col-time">03:50 PM - 04:10 PM</td>
-                        <td rowspan="2" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring
+                        <td class="problem-cell">SIH26113 - Human augmentation technologies for healthcare,
+                            rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
+                        <td class="col-team-no">SIH26-A0H-T279</td>
+                        <td class="col-team-name">Aravind Shanmugham [CB.EN.U4MEE24007]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T279"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">20</td>
+                        <td class="col-time">04:10 PM - 04:30 PM</td>
+                        <td rowspan="1" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring
                             System for Rural and Mining-Affected Areas.</td>
                         <td class="col-team-no">SIH26-A0H-T206</td>
                         <td class="col-team-name">Aiswarya S [CB.EN.U4ARE26006]</td>
@@ -693,12 +698,11 @@ Updated Date: 2nd Sep 2026
                                 onclick="toggleStatus(this)">Scheduled</button></td>
                     </tr>
                     <tr>
-                        <td class="col-sno">20</td>
-                        <td class="col-time">04:10 PM - 04:30 PM</td>
-                        <td class="col-team-no">SIH26-A0H-T221</td>
-                        <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
-                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T221"
-                                onclick="toggleStatus(this)">Scheduled</button></td>
+                        <td class="col-sno">21</td>
+                        <td class="col-time">04:30 PM - 04:50 PM</td>
+                        <td rowspan="1" class="problem-cell">-</td>
+                        <td class="col-team-no">-</td>
+                        <td class="col-team-name">-</td>
                     </tr>
                 </tbody>
             </table>
@@ -708,9 +712,8 @@ Updated Date: 2nd Sep 2026
         <div id="hall-content-viveka" class="panel-details" style="display: none;">
             <div class="hall-header-bar">
                 <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightc">Scheduled</span></h3>
-                <a href="vivekahall.html" class="btn-page-link panel-link">Open Viveka Hall Standalone Page ↗</a>
             </div>
-            <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span>
+            <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
             </p>
             <p><strong>Venue:</strong> <span class="highlight">Viveka Hall (AB1)</span></p>
 
@@ -768,7 +771,7 @@ Updated Date: 2nd Sep 2026
                 <tr>
                     <td class="col-sno">6</td>
                     <td class="col-time">10:40 AM - 11:00 AM</td>
-                    <td rowspan="3" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
+                    <td rowspan="2" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
                     <td class="col-team-no">SIH26-A0H-T114</td>
                     <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T114" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -784,7 +787,7 @@ Updated Date: 2nd Sep 2026
                     <td class="col-sno">8</td>
                     <td class="col-time">11:20 AM - 11:40 AM</td>
                     <td class="col-team-no">—</td>
-                    <td class="col-team-name">Slot Reserved (SIH26008)</td>
+                    <td class="col-team-name">—</td>
                     <td class="col-status">—</td>
                 </tr>
                 <tr>
@@ -881,7 +884,7 @@ Updated Date: 2nd Sep 2026
                     <tr>
                         <td class="col-sno">20</td>
                         <td class="col-time">04:10 PM - 04:30 PM</td>
-                        <td rowspan="2" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for
+                        <td rowspan="1" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for
                             Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
                         <td class="col-team-no">SIH26-A0H-T314</td>
                         <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]</td>
@@ -892,8 +895,103 @@ Updated Date: 2nd Sep 2026
                         <td class="col-sno">21</td>
                         <td class="col-time">04:30 PM - 04:50 PM</td>
                         <td class="col-team-no">—</td>
-                        <td class="col-team-name">Slot Reserved (SIH26004)</td>
+                        <td class="col-team-name">—</td>
                         <td class="col-status">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Hall 3: Rejected Teams Schedule Table -->
+        <div id="hall-content-rejected" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>🚫 Rejected Teams <span class="highlightc" style="background-color: #d93025;">Rejected</span></h3>
+            </div>
+            <p><strong>Status:</strong> <span class="highlight" style="background-color: #fad2cf; color: #c5221f;">Disqualified / Rejection Recorded</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team Name</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="problem-cell">Problem ID and Title</th>
+                        <th class="col-status">Rejection Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-team-no">SIH26-A0H-T235</td>
+                        <td class="col-team-name">INNOVITA</td>
+                        <td class="col-team-name">Krishiva Venkatesh [CB.EN.U4ECE26027]</td>
+                        <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region.</td>
+                        <td class="col-status"><span class="status-btn status-warning">not matching sih template</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-team-no">SIH26-A0H-T138</td>
+                        <td class="col-team-name">The Bit Reactor</td>
+                        <td class="col-team-name">Yazhini S K [CB.EN.U4CHE26052]</td>
+                        <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region.</td>
+                        <td class="col-status"><span class="status-btn status-warning">has withdrawed from hackathon</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-team-no">SIH26-A0H-T222</td>
+                        <td class="col-team-name">Error 404: Team Not Found</td>
+                        <td class="col-team-name">B.Dudhimant [CB.EN.U4EEE26148]</td>
+                        <td class="problem-cell">SIH26007 - Development of Automated Smart Waste Segregation System.</td>
+                        <td class="col-status"><span class="status-btn status-warning">files not updated within deadline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-team-no">SIH26-A0H-T303</td>
+                        <td class="col-team-name">Nullpointerexception</td>
+                        <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
+                        <td class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
+                        <td class="col-status"><span class="status-btn status-warning">files not updated within deadline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-team-no">SIH26-A0H-T267</td>
+                        <td class="col-team-name">Hexacore</td>
+                        <td class="col-team-name">Midhun M [CB.EN.U4EEE25026]</td>
+                        <td class="problem-cell">SIH26029 - Automated High-Current Short-Circuit Test System for MCCBs and Fuses.</td>
+                        <td class="col-status"><span class="status-btn status-warning">repo not found</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-team-no">SIH26-A0H-T291</td>
+                        <td class="col-team-name">NEX GEN</td>
+                        <td class="col-team-name">S. Dharani Prasad [CB.EN.U4EEE26111]</td>
+                        <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.</td>
+                        <td class="col-status"><span class="status-btn status-warning">ppt has one slide and also file names are named wrong</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-team-no">SIH26-A0H-T111</td>
+                        <td class="col-team-name">ReVolt — Revolutionize.Innovate.Impact</td>
+                        <td class="col-team-name">Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]</td>
+                        <td class="problem-cell">SIH26049 - Design and development of electrical equipment to withstand low temperatures (up to -40 deg C) for High Altitude Areas (HAA).</td>
+                        <td class="col-status"><span class="status-btn status-warning">repo not found</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-team-no">SIH26-A0H-T033</td>
+                        <td class="col-team-name">Syntax Error</td>
+                        <td class="col-team-name">Ashwanth S [CB.AI.U4AAR26009]</td>
+                        <td class="problem-cell">SIH26112 - Design and Develop a Modular Autonomous Mobile Robot (AMR) Platform for Smart Warehouses and Industrial Logistics.</td>
+                        <td class="col-status"><span class="status-btn status-warning">files not updated within deadline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-team-no">SIH26-A0H-T221</td>
+                        <td class="col-team-name">Power</td>
+                        <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
+                        <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.</td>
+                        <td class="col-status"><span class="status-btn status-warning">ai made ppt</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -971,19 +1069,28 @@ Updated Date: 2nd Sep 2026
         function switchHall(hall) {
             const sarTab = document.getElementById('hall-tab-saraswathi');
             const vivTab = document.getElementById('hall-tab-viveka');
+            const rejTab = document.getElementById('hall-tab-rejected');
             const sarContent = document.getElementById('hall-content-saraswathi');
             const vivContent = document.getElementById('hall-content-viveka');
+            const rejContent = document.getElementById('hall-content-rejected');
+
+            sarTab.classList.remove('active');
+            vivTab.classList.remove('active');
+            if (rejTab) rejTab.classList.remove('active');
+
+            sarContent.style.display = 'none';
+            vivContent.style.display = 'none';
+            if (rejContent) rejContent.style.display = 'none';
 
             if (hall === 'saraswathi') {
                 sarTab.classList.add('active');
-                vivTab.classList.remove('active');
                 sarContent.style.display = 'block';
-                vivContent.style.display = 'none';
-            } else {
+            } else if (hall === 'viveka') {
                 vivTab.classList.add('active');
-                sarTab.classList.remove('active');
                 vivContent.style.display = 'block';
-                sarContent.style.display = 'none';
+            } else if (hall === 'rejected') {
+                if (rejTab) rejTab.classList.add('active');
+                if (rejContent) rejContent.style.display = 'block';
             }
         }
 
@@ -998,15 +1105,15 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T158", leader: "Tevin Titus [CB.EN.U4MEE24150]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:00 AM - 11:20 AM", file: "saraswathihall.html" },
             { id: "SIH26-A0H-T200", leader: "ANANYA H [CB.EN.U4CCE25104]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:20 AM - 11:40 AM", file: "saraswathihall.html" },
             { id: "SIH26-A0H-T394", leader: "Thirupugazhl S D [CB.EN.U4EEE24149]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:40 AM - 12:00 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "12:00 PM - 12:20 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Healthcare Tech", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
-            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Healthcare Tech", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:30 PM - 04:50 PM", file: "saraswathihall.html" },
 
             // Viveka Hall (HW#P2)
             { id: "SIH26-A0H-T036", leader: "Roahith P [CB.EN.U4CCE26144]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:00 AM - 09:20 AM", file: "vivekahall.html" },
@@ -1022,7 +1129,18 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T287", leader: "K.S.Sowparnika [CB.EN.U4CIE26028]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:50 PM - 03:10 PM", file: "vivekahall.html" },
             { id: "SIH26-A0H-T130", leader: "V Karthik Chockalingam [CB.SC.U4CSE26659]", problem: "SIH26098 - Precision Guidance and Smart Fuze Integration System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Defense Tech", time: "03:10 PM - 03:30 PM", file: "vivekahall.html" },
             { id: "SIH26-A0H-T353", leader: "Dhiyayanth [CB.EN.U4EEE25113]", problem: "SIH26220 - Swadeshi: Renewable & Sustainable Energy Systems.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Energy Tech", time: "03:50 PM - 04:10 PM", file: "vivekahall.html" },
-            { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" }
+            { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" },
+
+            // Rejected Teams
+            { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T138", leader: "Yazhini S K [CB.EN.U4CHE26052]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T222", leader: "B.Dudhimant [CB.EN.U4EEE26148]", problem: "SIH26007 - Development of Automated Smart Waste Segregation System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T303", leader: "Padhmavathi [CB.EN.U4EEE25031]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T267", leader: "Midhun M [CB.EN.U4EEE25026]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T291", leader: "S. Dharani Prasad [CB.EN.U4EEE26111]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T111", leader: "Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]", problem: "SIH26049 - Design and development of electrical equipment.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T033", leader: "Ashwanth S [CB.AI.U4AAR26009]", problem: "SIH26112 - Modular Autonomous Mobile Robot Platform.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" }
         ];
 
         function escapeHtml(str) {
