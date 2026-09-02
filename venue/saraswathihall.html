@@ -57,28 +57,6 @@ Updated Date: 2nd Sep 2026
             text-decoration: underline;
         }
 
-        .nav-hall-links {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .hall-pill {
-            padding: 5px 12px;
-            background-color: #f1f3f4;
-            color: #3c4043;
-            border-radius: 16px;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .hall-pill:hover, .hall-pill.active {
-            background-color: #1a73e8;
-            color: #ffffff;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -116,7 +94,7 @@ Updated Date: 2nd Sep 2026
             vertical-align: middle;
             text-align: left;
         }
-        .col-team-no { width: 140px; white-space: nowrap; }
+        .col-team-no { width: 140px; white-space: nowrap; font-weight: bold; }
         .col-team-name { width: auto; word-break: break-word; }
         .col-status { width: 110px; text-align: center; white-space: nowrap; }
 
@@ -135,25 +113,6 @@ Updated Date: 2nd Sep 2026
             font-weight: 500;
             display: inline-block;
         }
-
-        .gh-link {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .gh-link:hover { text-decoration: underline; }
-
-        .gh-repo-btn {
-            display: inline-block;
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 3px;
-            margin-right: 6px;
-        }
-
-        .gh-repo-btn:hover { text-decoration: underline; }
 
         /* Interactive Status Button Styles */
         .status-btn {
@@ -211,7 +170,7 @@ Updated Date: 2nd Sep 2026
 
 <body>
     <p align="center">
-        <img alt="header" src="../Assets/images/header.png" width="1200" />
+        <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
     </p>
 
     <!-- Navigation Bar -->
@@ -243,125 +202,125 @@ Updated Date: 2nd Sep 2026
                     <td class="col-sno">1</td>
                     <td class="col-time">09:00 AM - 09:20 AM</td>
                     <td rowspan="7" class="problem-cell">SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.</td>
-                    <td class="col-team-no"><a href="https://github.com/Jayabalan-D/SIH26-A0H-T038" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T038</a></td>
-                    <td class="col-team-name">Jayabalan Dharmadurai [CB.EN.U4ECE24124]<br /><a href="https://github.com/Jayabalan-D/SIH26-A0H-T038" target="_blank" class="gh-repo-btn">🔗 Jayabalan-D</a></td>
+                    <td class="col-team-no">SIH26-A0H-T038</td>
+                    <td class="col-team-name">Jayabalan Dharmadurai [CB.EN.U4ECE24124]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T038" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">2</td>
                     <td class="col-time">09:20 AM - 09:40 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/dudhimant2018-ctrl/SIH26-A0H-T222" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T222</a></td>
-                    <td class="col-team-name">B Dudhimnt [CB.EN.U4EEE26148]<br /><a href="https://github.com/dudhimant2018-ctrl/SIH26-A0H-T222" target="_blank" class="gh-repo-btn">🔗 dudhimant2018-ctrl</a></td>
+                    <td class="col-team-no">SIH26-A0H-T222</td>
+                    <td class="col-team-name">B Dudhimnt [CB.EN.U4EEE26148]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T222" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">3</td>
                     <td class="col-time">09:40 AM - 10:00 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/psdharshan07/SIH26-A0H-T237" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T237</a></td>
-                    <td class="col-team-name">Dharshan P S [CB.EN.U4CCE25112]<br /><a href="https://github.com/psdharshan07/SIH26-A0H-T237" target="_blank" class="gh-repo-btn">🔗 psdharshan07</a></td>
+                    <td class="col-team-no">SIH26-A0H-T237</td>
+                    <td class="col-team-name">Dharshan P S [CB.EN.U4CCE25112]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T237" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">4</td>
                     <td class="col-time">10:00 AM - 10:20 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/GopigaPreethi/SIH26-A0H-T270" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T270</a></td>
-                    <td class="col-team-name">Gopiga Preethi M [CB.EN.U4ECE26213]<br /><a href="https://github.com/GopigaPreethi/SIH26-A0H-T270" target="_blank" class="gh-repo-btn">🔗 GopigaPreethi</a></td>
+                    <td class="col-team-no">SIH26-A0H-T270</td>
+                    <td class="col-team-name">Gopiga Preethi M [CB.EN.U4ECE26213]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T270" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">5</td>
                     <td class="col-time">10:40 AM - 11:00 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/prathiksha6/SIH26-A0H-T322" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T322</a></td>
-                    <td class="col-team-name">PRATHIKSHA K S [CB.EN.U4CIE26048]<br /><a href="https://github.com/prathiksha6/SIH26-A0H-T322" target="_blank" class="gh-repo-btn">🔗 prathiksha6</a></td>
+                    <td class="col-team-no">SIH26-A0H-T322</td>
+                    <td class="col-team-name">PRATHIKSHA K S [CB.EN.U4CIE26048]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T322" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">6</td>
                     <td class="col-time">11:00 AM - 11:20 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/Bhuvansakthi2006/SIH26-A0H-T325" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T325</a></td>
-                    <td class="col-team-name">Bhuvansankar S [CB.EN.U4EEE24009]<br /><a href="https://github.com/Bhuvansakthi2006/SIH26-A0H-T325" target="_blank" class="gh-repo-btn">🔗 Bhuvansakthi2006</a></td>
+                    <td class="col-team-no">SIH26-A0H-T325</td>
+                    <td class="col-team-name">Bhuvansankar S [CB.EN.U4EEE24009]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T325" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">7</td>
                     <td class="col-time">11:20 AM - 11:40 AM</td>
-                    <td class="col-team-no"><a href="https://github.com/haritajayabal/SIH26-A0H-T367" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T367</a></td>
-                    <td class="col-team-name">Harita J [CB.EN.U4ELC25007]<br /><a href="https://github.com/haritajayabal/SIH26-A0H-T367" target="_blank" class="gh-repo-btn">🔗 haritajayabal</a></td>
+                    <td class="col-team-no">SIH26-A0H-T367</td>
+                    <td class="col-team-name">Harita J [CB.EN.U4ELC25007]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T367" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">8</td>
                     <td class="col-time">11:40 AM - 12:00 PM</td>
                     <td rowspan="3" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
-                    <td class="col-team-no"><a href="https://github.com/visaonth22/SIH26-A0H-T114" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T114</a></td>
-                    <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]<br /><a href="https://github.com/visaonth22/SIH26-A0H-T114" target="_blank" class="gh-repo-btn">🔗 visaonth22</a></td>
+                    <td class="col-team-no">SIH26-A0H-T114</td>
+                    <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T114" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">9</td>
                     <td class="col-time">12:00 PM - 12:20 PM</td>
-                    <td class="col-team-no"><a href="https://github.com/mithunkarthik07/SIH26-A0H-T196" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T196</a></td>
-                    <td class="col-team-name">Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]<br /><a href="https://github.com/mithunkarthik07/SIH26-A0H-T196" target="_blank" class="gh-repo-btn">🔗 mithunkarthik07</a></td>
+                    <td class="col-team-no">SIH26-A0H-T196</td>
+                    <td class="col-team-name">Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T196" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">10</td>
                     <td class="col-time">01:30 PM - 01:50 PM</td>
-                    <td class="col-team-no"><a href="https://github.com/padhmavathinallaiyan-prog/Nullpointerexception" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T303</a></td>
-                    <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]<br /><a href="https://github.com/padhmavathinallaiyan-prog/Nullpointerexception" target="_blank" class="gh-repo-btn">🔗 padhmavathinallaiyan-prog</a></td>
+                    <td class="col-team-no">SIH26-A0H-T303</td>
+                    <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T303" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">11</td>
                     <td class="col-time">01:50 PM - 02:10 PM</td>
                     <td rowspan="1" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
-                    <td class="col-team-no"><a href="https://github.com/JaiyaAnishS/SIH26-A0H-T314" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T314</a></td>
-                    <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]<br /><a href="https://github.com/JaiyaAnishS/SIH26-A0H-T314" target="_blank" class="gh-repo-btn">🔗 JaiyaAnishS</a></td>
+                    <td class="col-team-no">SIH26-A0H-T314</td>
+                    <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T314" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">12</td>
                     <td class="col-time">02:10 PM - 02:30 PM</td>
                     <td rowspan="4" class="problem-cell">SIH26172 - Low Latency and Efficient Voice Activator for Edge Devices.</td>
-                    <td class="col-team-no"><a href="https://github.com/deepakraja-13/SIH26-A0H-T041" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T041</a></td>
-                    <td class="col-team-name">DEEPAK RAJA KN [CB.EN.U4ECE25117]<br /><a href="https://github.com/deepakraja-13/SIH26-A0H-T041" target="_blank" class="gh-repo-btn">🔗 deepakraja-13</a></td>
+                    <td class="col-team-no">SIH26-A0H-T041</td>
+                    <td class="col-team-name">DEEPAK RAJA KN [CB.EN.U4ECE25117]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T041" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">13</td>
                     <td class="col-time">02:30 PM - 02:50 PM</td>
-                    <td class="col-team-no"><a href="https://github.com/dhyaneshraja/SIH26-A0H-T247" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T247</a></td>
-                    <td class="col-team-name">Dhyanesh Raja M S [CB.EN.U4ELC25114]<br /><a href="https://github.com/dhyaneshraja/SIH26-A0H-T247" target="_blank" class="gh-repo-btn">🔗 dhyaneshraja</a></td>
+                    <td class="col-team-no">SIH26-A0H-T247</td>
+                    <td class="col-team-name">Dhyanesh Raja M S [CB.EN.U4ELC25114]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T247" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">14</td>
                     <td class="col-time">02:50 PM - 03:10 PM</td>
-                    <td class="col-team-no"><a href="https://github.com/kavyakartik/SIH26-A0H-T251" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T251</a></td>
-                    <td class="col-team-name">Kavya Kartik [CB.EN.U4AEE26026]<br /><a href="https://github.com/kavyakartik/SIH26-A0H-T251" target="_blank" class="gh-repo-btn">🔗 kavyakartik</a></td>
+                    <td class="col-team-no">SIH26-A0H-T251</td>
+                    <td class="col-team-name">Kavya Kartik [CB.EN.U4AEE26026]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T251" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">15</td>
                     <td class="col-time">03:10 PM - 03:30 PM</td>
-                    <td class="col-team-no"><a href="https://github.com/vedhanthmr/SIH26-A0H-T280" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T280</a></td>
-                    <td class="col-team-name">Vedhanth M R [CB.EN.U4ELC24046]<br /><a href="https://github.com/vedhanthmr/SIH26-A0H-T280" target="_blank" class="gh-repo-btn">🔗 vedhanthmr</a></td>
+                    <td class="col-team-no">SIH26-A0H-T280</td>
+                    <td class="col-team-name">Vedhanth M R [CB.EN.U4ELC24046]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T280" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">16</td>
                     <td class="col-time">03:50 PM - 04:10 PM</td>
                     <td rowspan="1" class="problem-cell">SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.</td>
-                    <td class="col-team-no"><a href="https://github.com/sarv33h/SIH26-A0H-T396" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T396</a></td>
-                    <td class="col-team-name">Sarvesh Subramanian S [CB.EN.U4EEE26223]<br /><a href="https://github.com/sarv33h/SIH26-A0H-T396" target="_blank" class="gh-repo-btn">🔗 sarv33h</a></td>
+                    <td class="col-team-no">SIH26-A0H-T396</td>
+                    <td class="col-team-name">Sarvesh Subramanian S [CB.EN.U4EEE26223]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T396" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">17</td>
                     <td class="col-time">04:10 PM - 04:30 PM</td>
                     <td rowspan="1" class="problem-cell">SIH26215 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Transportation & Logistics.</td>
-                    <td class="col-team-no"><a href="https://github.com/Adi-0202/SIH26-A0H-T122" target="_blank" class="gh-link" title="Open GitHub Repository">SIH26-A0H-T122</a></td>
-                    <td class="col-team-name">Aditya S [CB.AI.U4AID24104]<br /><a href="https://github.com/Adi-0202/SIH26-A0H-T122" target="_blank" class="gh-repo-btn">🔗 Adi-0202</a></td>
+                    <td class="col-team-no">SIH26-A0H-T122</td>
+                    <td class="col-team-name">Aditya S [CB.AI.U4AID24104]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T122" onclick="toggleStatus(this)" title="Click to toggle: Scheduled → Ongoing → Completed">Scheduled</button></td>
                 </tr>
             </tbody>
@@ -421,7 +380,6 @@ Updated Date: 2nd Sep 2026
                 }
             });
 
-            // Preserve volunteer query parameter in navigation links
             if (isVolunteer) {
                 document.querySelectorAll('a[href]').forEach(link => {
                     const href = link.getAttribute('href');
@@ -497,7 +455,8 @@ Updated Date: 2nd Sep 2026
     </script>
 
     <div style="text-align: center;">
-        <p>&copy; 2026 Ramaguru Radhakrishnan - SPOC, SIH.</p>
+        <p>&copy;SIH 2026 - Internal Hackathon <br/> Institution's Innovation Council. <br/> Amrita Vishwa Vidyapeetham Coimbatore.
+        <br/> SPOC: Mr. Ramaguru Radhakrishnan</p>
     </div>
 </body>
 
