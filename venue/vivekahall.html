@@ -90,6 +90,7 @@ Updated Date: 2nd Sep 2026
         .status-scheduled { background-color: #1a73e8; color: #FFFFFF; }
         .status-ongoing { background-color: #e37400; color: #FFFFFF; }
         .status-completed { background-color: #137333; color: #FFFFFF; }
+        .status-warning { background-color: #d93025; color: #FFFFFF; }
 
         .role-banner-container { text-align: center; margin: 10px 0 20px 0; }
         .mode-badge {
@@ -182,7 +183,7 @@ Updated Date: 2nd Sep 2026
                 <tr>
                     <td class="col-sno">6</td>
                     <td class="col-time">10:40 AM - 11:00 AM</td>
-                    <td rowspan="5" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
+                    <td rowspan="3" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
                     <td class="col-team-no">SIH26-A0H-T114</td>
                     <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
                     <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T114" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -197,23 +198,25 @@ Updated Date: 2nd Sep 2026
                 <tr>
                     <td class="col-sno">8</td>
                     <td class="col-time">11:20 AM - 11:40 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T303</td>
-                    <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T303" onclick="toggleStatus(this)">Scheduled</button></td>
+                    <td class="col-team-no">—</td>
+                    <td class="col-team-name">Slot Reserved (SIH26008)</td>
+                    <td class="col-status">—</td>
                 </tr>
                 <tr>
                     <td class="col-sno">9</td>
                     <td class="col-time">11:40 AM - 12:00 PM</td>
-                    <td class="col-team-no">—</td>
-                    <td class="col-team-name">Slot Reserved (SIH26008)</td>
-                    <td class="col-status">—</td>
+                    <td class="problem-cell">SIH26181 - A secure, AI-powered Personal Health Companion that delivers real-time, privacy-preserving health monitoring and early warning capabilities, helping individuals recognize health risks before they become emergencies. The solution should improve resilience during heat waves, floods, pollution events, and other disasters common in India while enabling continuous health support through on-device intelligence.</td>
+                    <td class="col-team-no">SIH26-A0H-T091</td>
+                    <td class="col-team-name">Rohit Lal P P [CB.EN.U4ECE26225]</td>
+                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T091" onclick="toggleStatus(this)">Scheduled</button></td>
                 </tr>
                 <tr>
                     <td class="col-sno">10</td>
                     <td class="col-time">12:00 PM - 12:20 PM</td>
-                    <td class="col-team-no">—</td>
-                    <td class="col-team-name">Slot Reserved (SIH26008)</td>
-                    <td class="col-status">—</td>
+                    <td class="problem-cell">SIH26215 - AI-Based Predictive Modelling for Early Forecasting of Bovine Mastitis in Indian Dairy Farms.</td>
+                    <td class="col-team-no">SIH26-A0H-T276</td>
+                    <td class="col-team-name">K Shrivinay [CB.EN.U4ECE26225]</td>
+                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T276" onclick="toggleStatus(this)">Scheduled</button></td>
                 </tr>
                 <tr class="break-row">
                     <td class="col-sno">11</td>
@@ -303,7 +306,12 @@ Updated Date: 2nd Sep 2026
         const STATUS_CLASSES = {
             'Scheduled': 'status-scheduled',
             'Ongoing': 'status-ongoing',
-            'Completed': 'status-completed'
+            'Completed': 'status-completed',
+            'ppt not submitted': 'status-warning',
+            'ai made ppt': 'status-warning',
+            'ppt has only one slide': 'status-warning',
+            'no repo found': 'status-warning',
+            'repo not found': 'status-warning'
         };
 
         const urlParams = new URLSearchParams(window.location.search);
