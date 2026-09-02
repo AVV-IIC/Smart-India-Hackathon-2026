@@ -1,7 +1,7 @@
 <!-- 
-Authors: Mr. Ramaguru Radhakrishnan 
+Authors: 
 Created Date: 31st Aug 2026 
-Updated Date: 1st Sep 2026
+Updated Date: 2nd Sep 2026
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,1189 +14,1064 @@ Updated Date: 1st Sep 2026
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-        }
-
-        #searchInput {
-            width: 400px;
-            padding: 8px;
-            margin-bottom: 20px;
-            font-size: 16px;
+            background-color: #f8f9fa;
         }
 
         h2 {
             text-align: center;
             color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #5f6368;
+            font-size: 15px;
             margin-bottom: 25px;
         }
 
+        /* Role & Realtime Badge Styles */
+        .role-banner-container { text-align: center; margin: 10px 0 20px 0; }
+        .mode-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 13.5px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        .mode-volunteer { background-color: #e6f4ea; color: #137333; border: 1px solid #ceebe1; }
+        .mode-participant { background-color: #e8f0fe; color: #1a73e8; border: 1px solid #d2e3fc; }
+
+        /* Track Selection Section */
+        .track-tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto 30px auto;
+            max-width: 600px;
+        }
+
+        .track-tab {
+            flex: 1;
+            padding: 16px 20px;
+            font-size: 16.5px;
+            font-weight: 700;
+            border-radius: 10px;
+            border: 2px solid #1a73e8;
+            background-color: #ffffff;
+            color: #1a73e8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .track-tab.active {
+            background-color: #1a73e8;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
+        }
+
+        .track-tab:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hall Selection Buttons */
+        .hall-tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto 30px auto;
+            max-width: 700px;
+        }
+
+        .hall-tab {
+            flex: 1;
+            padding: 12px 18px;
+            font-size: 14.5px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid #dadce0;
+            background-color: #ffffff;
+            color: #3c4043;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .hall-tab.active {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-color: #1a73e8;
+            font-weight: 700;
+        }
+
+        .hall-tab:hover {
+            background-color: #f1f3f4;
+        }
+
+        /* Search Section Styling */
+        .search-box-container {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #202124;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 11px 16px;
+            font-size: 14.5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .search-input:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        }
+
+        .btn-search {
+            background-color: #1a73e8;
+            color: #ffffff;
+            border: none;
+            padding: 11px 22px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-search:hover {
+            background-color: #1557b0;
+        }
+
+        .search-results {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .search-no-match {
+            background-color: #fce8e6;
+            color: #c5221f;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            border: 1px solid #fad2cf;
+        }
+
+        .search-match-header {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #5f6368;
+            margin-bottom: 10px;
+        }
+
+        .search-result-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            border-left: 4px solid #1a73e8;
+            border-radius: 6px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+        }
+
+        .search-res-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .search-res-id {
+            font-weight: 700;
+            color: #1a73e8;
+            font-size: 15px;
+        }
+
+        .search-res-panel {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+
+        .search-res-leader, .search-res-problem, .search-res-time {
+            font-size: 13.5px;
+            color: #3c4043;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .search-res-action {
+            margin-top: 10px;
+        }
+
+        .btn-goto-venue {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-goto-venue:hover {
+            background-color: #1557b0;
+        }
+
+        /* Schedule Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 25px;
+            background: #ffffff;
         }
 
-        table,
-        th,
-        td {
+        table, th, td {
             border: 1px solid #ddd;
         }
 
-        th,
-        td {
-            padding: 10px;
+        th, td {
+            padding: 9px 10px;
             text-align: left;
+            vertical-align: middle;
+            font-size: 14px;
         }
 
         th {
             background-color: #f4f4f4;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .panel-details {
-            margin-top: 20px;
-        }
-
-        .problem-cell {
-            vertical-align: middle;
-            text-align: left;
-        }
-
-        .highlight {
-            background-color: #fce446;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        .highlightc {
-            background-color: #008000;
-            color: #FFFFFF;
-            /* white text */
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        .not-reported {
-            background-color: #CC0000;
-            /* deep red */
-            color: #FFFFFF;
-            /* white text for readability */
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        .deadline-missed {
-            background-color: #800080;
-            /* purple */
-            color: #FFFFFF;
-            /* white text for contrast */
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        .gh-link {
-            color: #1a73e8;
-            text-decoration: none;
             font-weight: bold;
         }
 
-        .gh-link:hover {
-            text-decoration: underline;
+        tr:hover {
+            background-color: #f8f9fa;
         }
 
-        .gh-repo-btn {
+        .col-sno { width: 50px; text-align: center; }
+        .col-time { width: 155px; white-space: nowrap; }
+        .col-pid, .problem-cell {
+            width: 32%;
+            font-size: 13.5px;
+            line-height: 1.4;
+            word-break: break-word;
+            vertical-align: middle;
+            text-align: left;
+        }
+        .col-team-no { width: 140px; white-space: nowrap; font-weight: bold; }
+        .col-team-name { width: auto; word-break: break-word; }
+        .col-status { width: 110px; text-align: center; white-space: nowrap; }
+
+        .break-row {
+            background-color: #fff8e1 !important;
+            color: #b06000;
+            font-weight: bold;
+        }
+        .break-text {
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .highlight { background-color: #fce446; padding: 2px 4px; border-radius: 3px; }
+        .highlightc { background-color: #008000; color: #FFFFFF; padding: 3px 8px; border-radius: 4px; font-size: 13px; font-weight: 500; display: inline-block; }
+
+        /* Interactive Status Button Styles */
+        .status-btn {
+            border: none;
+            border-radius: 4px;
+            padding: 5px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
             display: inline-block;
-            color: #1a73e8;
-            font-size: 12.5px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-right: 6px;
+            min-width: 95px;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            user-select: none;
         }
 
-        .gh-repo-btn:hover {
-            text-decoration: underline;
+        .status-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .status-btn:active { transform: translateY(0); }
+
+        .status-scheduled { background-color: #1a73e8; color: #FFFFFF; }
+        .status-ongoing { background-color: #e37400; color: #FFFFFF; }
+        .status-completed { background-color: #137333; color: #FFFFFF; }
+
+        .status-btn.read-only {
+            cursor: default !important;
+            pointer-events: none !important;
+            opacity: 0.92;
+            box-shadow: none !important;
+        }
+
+        .hall-header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .btn-page-link {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-page-link:hover {
+            background-color: #1557b0;
+        }
+
+        /* Software Track Placeholder Box */
+        .software-placeholder-card {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 2px dashed #1a73e8;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .software-placeholder-card h3 {
+            color: #1a73e8;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .software-placeholder-card p {
+            color: #5f6368;
+            font-size: 15px;
+            line-height: 1.5;
         }
     </style>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 </head>
 
 <body>
     <p align="center">
-        <img alt="header" src="../Assets/images/header.png" width="1200" />
+        <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
     </p>
-    <h2>Smart India Hackathon - 2026<br /> Internal Hackathon - Panel Details</h2>
 
+    <h2>Smart India Hackathon - 2026</h2>
+    <p class="subtitle">Internal Hackathon — Venue & Jury Panel Directory</p>
 
-    <label for="panel-select">Choose a Panel:</label>
-    <select id="panel-select" onchange="showPanel()">
-        <option value="">--Select a Panel--</option>
-        <option value="HW#P1">HW#P1</option>
-        <option value="HW#P2A">HW#P2A</option>
-        <option value="HW#P2B">HW#P2B</option>
-        <option value="HW#P3">HW#P3</option>
-        <option value="HW#P4">HW#P4</option>
-        <option value="HW#P5">HW#P5</option>
-    </select>
+    <div id="role-banner" class="role-banner-container"></div>
 
-    <div id="HW#P1" class="panel-details" style="display: none;">
-        <h3>HW#P1 - AI / IoT (Digital Twin & CV) <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Saraswati Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>09:00 AM - 09:20 AM</td>
-                    <td rowspan="7" class="problem-cell">SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog
-                        and Low-Visibility Conditions in Open Cast Iron Ore Mines.</td>
-                    <td><a href="https://github.com/Jayabalan-D/SIH26-A0H-T038" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T038</a></td>
-                    <td>Jayabalan Dharmadurai [CB.EN.U4ECE24124] <br /><a
-                            href="https://github.com/Jayabalan-D/SIH26-A0H-T038" target="_blank" class="gh-repo-btn">🔗
-                            Jayabalan-D</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:20 AM - 09:40 AM</td>
-
-                    <td><a href="https://github.com/dudhimant2018-ctrl/SIH26-A0H-T222" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T222</a></td>
-                    <td>B Dudhimnt [CB.EN.U4EEE26148] <br /><a
-                            href="https://github.com/dudhimant2018-ctrl/SIH26-A0H-T222" target="_blank"
-                            class="gh-repo-btn">🔗 dudhimant2018-ctrl</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>09:40 AM - 10:00 AM</td>
-
-                    <td><a href="https://github.com/psdharshan07/SIH26-A0H-T237" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T237</a></td>
-                    <td>Dharshan P S [CB.EN.U4CCE25112] <br /><a href="https://github.com/psdharshan07/SIH26-A0H-T237"
-                            target="_blank" class="gh-repo-btn">🔗 psdharshan07</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>10:00 AM - 10:20 AM</td>
-
-                    <td><a href="https://github.com/GopigaPreethi/SIH26-A0H-T270" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T270</a></td>
-                    <td>Gopiga Preethi M [CB.EN.U4ECE26213] <br /><a
-                            href="https://github.com/GopigaPreethi/SIH26-A0H-T270" target="_blank"
-                            class="gh-repo-btn">🔗 GopigaPreethi</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>10:40 AM - 11:00 AM</td>
-
-                    <td><a href="https://github.com/prathiksha6/SIH26-A0H-T322" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T322</a></td>
-                    <td>PRATHIKSHA K S [CB.EN.U4CIE26048] <br /><a href="https://github.com/prathiksha6/SIH26-A0H-T322"
-                            target="_blank" class="gh-repo-btn">🔗 prathiksha6</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>11:00 AM - 11:20 AM</td>
-
-                    <td><a href="https://github.com/Bhuvansakthi2006/SIH26-A0H-T325" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T325</a></td>
-                    <td>Bhuvansankar S [CB.EN.U4EEE24009] <br /><a
-                            href="https://github.com/Bhuvansakthi2006/SIH26-A0H-T325" target="_blank"
-                            class="gh-repo-btn">🔗 Bhuvansakthi2006</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>11:20 AM - 11:40 AM</td>
-
-                    <td><a href="https://github.com/haritajayabal/SIH26-A0H-T367" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T367</a></td>
-                    <td>Harita J [CB.EN.U4ELC25007] <br /><a href="https://github.com/haritajayabal/SIH26-A0H-T367"
-                            target="_blank" class="gh-repo-btn">🔗 haritajayabal</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>11:40 AM - 12:00 PM</td>
-                    <td rowspan="3" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron
-                        Ore Mining Industry: Early Detection and Safety Management System.</td>
-                    <td><a href="https://github.com/visaonth22/SIH26-A0H-T114" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T114</a></td>
-                    <td>Visaonth J [CB.EN.U4ECE25255] <br /><a href="https://github.com/visaonth22/SIH26-A0H-T114"
-                            target="_blank" class="gh-repo-btn">🔗 visaonth22</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>12:00 PM - 12:20 PM</td>
-
-                    <td><a href="https://github.com/mithunkarthik07/SIH26-A0H-T196" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T196</a></td>
-                    <td>Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030] <br /><a
-                            href="https://github.com/mithunkarthik07/SIH26-A0H-T196" target="_blank"
-                            class="gh-repo-btn">🔗 mithunkarthik07</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>01:30 PM - 01:50 PM</td>
-
-                    <td><a href="https://github.com/padhmavathinallaiyan-prog/Nullpointerexception" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T303</a></td>
-                    <td>Padhmavathi [CB.EN.U4EEE25031] <br /><a
-                            href="https://github.com/padhmavathinallaiyan-prog/Nullpointerexception" target="_blank"
-                            class="gh-repo-btn">🔗 padhmavathinallaiyan-prog</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>01:50 PM - 02:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for
-                        Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
-                    <td><a href="https://github.com/JaiyaAnishS/SIH26-A0H-T314" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T314</a></td>
-                    <td>Jaiya Anish S [CB.SC.U4CSE26721] <br /><a href="https://github.com/JaiyaAnishS/SIH26-A0H-T314"
-                            target="_blank" class="gh-repo-btn">🔗 JaiyaAnishS</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>02:10 PM - 02:30 PM</td>
-                    <td rowspan="4" class="problem-cell">SIH26172 - Low Latency and Efficient Voice Activator for Edge
-                        Devices.</td>
-                    <td><a href="https://github.com/deepakraja-13/SIH26-A0H-T041" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T041</a></td>
-                    <td>DEEPAK RAJA KN [CB.EN.U4ECE25117] <br /><a
-                            href="https://github.com/deepakraja-13/SIH26-A0H-T041" target="_blank"
-                            class="gh-repo-btn">🔗 deepakraja-13</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>02:30 PM - 02:50 PM</td>
-
-                    <td><a href="https://github.com/dhyaneshraja/SIH26-A0H-T247" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T247</a></td>
-                    <td>Dhyanesh Raja M S [CB.EN.U4ELC25114] <br /><a
-                            href="https://github.com/dhyaneshraja/SIH26-A0H-T247" target="_blank" class="gh-repo-btn">🔗
-                            dhyaneshraja</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>02:50 PM - 03:10 PM</td>
-
-                    <td><a href="https://github.com/kavyakartik/SIH26-A0H-T251" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T251</a></td>
-                    <td>Kavya Kartik [CB.EN.U4AEE26026] <br /><a href="https://github.com/kavyakartik/SIH26-A0H-T251"
-                            target="_blank" class="gh-repo-btn">🔗 kavyakartik</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>03:10 PM - 03:30 PM</td>
-
-                    <td><a href="https://github.com/vedhanthmr/SIH26-A0H-T280" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T280</a></td>
-                    <td>Vedhanth M R [CB.EN.U4ELC24046] <br /><a href="https://github.com/vedhanthmr/SIH26-A0H-T280"
-                            target="_blank" class="gh-repo-btn">🔗 vedhanthmr</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>03:50 PM - 04:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter
-                        Wristband with AI-Based Quantitative Reading.</td>
-                    <td><a href="https://github.com/sarv33h/SIH26-A0H-T396" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T396</a></td>
-                    <td>Sarvesh Subramanian S [CB.EN.U4EEE26223] <br /><a
-                            href="https://github.com/sarv33h/SIH26-A0H-T396" target="_blank" class="gh-repo-btn">🔗
-                            sarv33h</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>04:10 PM - 04:30 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26215 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Transportation & Logistics.</td>
-                    <td><a href="https://github.com/Adi-0202/SIH26-A0H-T122" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T122</a></td>
-                    <td>Aditya S [CB.AI.U4AID24104] <br /><a href="https://github.com/Adi-0202/SIH26-A0H-T122"
-                            target="_blank" class="gh-repo-btn">🔗 Adi-0202</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Step 1: Track Selection -->
+    <div class="track-tabs-container">
+        <button id="tab-hardware" class="track-tab active" onclick="switchTrack('hardware')">⚙️ Hardware Track</button>
+        <button id="tab-software" class="track-tab" onclick="switchTrack('software')">💻 Software Track</button>
     </div>
 
-    <div id="HW#P2A" class="panel-details" style="display: none;">
-        <h3>HW#P2A - AI / IoT <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Viveka Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>09:00 AM - 09:20 AM</td>
-                    <td rowspan="6" class="problem-cell">SIH26052 - To develop an AI/ML-enabled adaptive noise
-                        cancellation (ANC) system that effectively suppresses stationary, non-stationary, and impulsive
-                        defence noises while maintaining high speech intelligibility and real-time performance on
-                        embedded hardware.</td>
-                    <td><a href="https://github.com/Sudheeswar-Reddy/SIH26-A0H-T035" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T035</a></td>
-                    <td>Thulasiram Sudheeswar Reddy [CB.AI.U4AAR25053] <br /><a
-                            href="https://github.com/Sudheeswar-Reddy/SIH26-A0H-T035" target="_blank"
-                            class="gh-repo-btn">🔗 Sudheeswar-Reddy</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:20 AM - 09:40 AM</td>
+    <!-- Hardware Track Content Area -->
+    <div id="hardware-track-content">
+        <!-- Search Section -->
+        <div class="search-box-container">
+            <div class="search-title">🔍 Find Your Team Venue & Presentation Schedule</div>
+            <div class="search-input-wrapper">
+                <input type="text" id="search-team-input" class="search-input" placeholder="Enter Team ID (e.g. SIH26-A0H-T038) or Leader Name..." onkeypress="handleSearchKeyPress(event)" />
+                <button class="btn-search" onclick="searchTeamVenue()">Search</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
 
-                    <td><a href="https://github.com/knownone-dot/SIH26-A0H-T070" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T070</a></td>
-                    <td>Pranav Balaji T [CB.EN.U4EEE25153] <br /><a
-                            href="https://github.com/knownone-dot/SIH26-A0H-T070" target="_blank" class="gh-repo-btn">🔗
-                            knownone-dot</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>09:40 AM - 10:00 AM</td>
+        <!-- Step 2: Available Halls Tabs -->
+        <div class="hall-tabs-container">
+            <button id="hall-tab-saraswathi" class="hall-tab active" onclick="switchHall('saraswathi')">🏛️ Saraswathi Hall (HW#P1)</button>
+            <button id="hall-tab-viveka" class="hall-tab" onclick="switchHall('viveka')">🏛️ Viveka Hall (HW#P2)</button>
+        </div>
 
-                    <td><a href="https://github.com/akashh-salem/SIH26-A0H-T101" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T101</a></td>
-                    <td>Akashh Ramesh Chandar [CB.EN.U4ECE25204] <br /><a
-                            href="https://github.com/akashh-salem/SIH26-A0H-T101" target="_blank" class="gh-repo-btn">🔗
-                            akashh-salem</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>10:00 AM - 10:20 AM</td>
+        <!-- Hall 1: Saraswathi Hall Schedule Table -->
+        <div id="hall-content-saraswathi" class="panel-details">
+            <div class="hall-header-bar">
+                <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+                <a href="saraswathihall.html" class="btn-page-link panel-link">Open Saraswathi Hall Standalone Page ↗</a>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">Saraswathi Hall (AB1)</span></p>
 
-                    <td><a href="https://github.com/Poonthalir17/SIH26-A0H-T216" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T216</a></td>
-                    <td>Poonthalir.S.T [CB.SC.U4CSE25549] <br /><a href="https://github.com/Poonthalir17/SIH26-A0H-T216"
-                            target="_blank" class="gh-repo-btn">🔗 Poonthalir17</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>10:40 AM - 11:00 AM</td>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td class="problem-cell">SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.</td>
+                        <td class="col-team-no">SIH26-A0H-T396</td>
+                        <td class="col-team-name">Sarvesh Subramanian S [CB.EN.U4EEE26223]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T396" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td rowspan="2" class="problem-cell">SIH26110 - Development of a Low-Cost Light-weight Milk Chilling Can for Small-Scale Dairy Farmers.</td>
+                        <td class="col-team-no">SIH26-A0H-T192</td>
+                        <td class="col-team-name">S KAVIN MUTHUVEL [CB.EN.U4EEE26033]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T192" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T241</td>
+                        <td class="col-team-name">C INDRAJITH [CB.EN.U4CHE24008]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T241" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td rowspan="2" class="problem-cell">SIH26226 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Space Technology & Exploration Systems.</td>
+                        <td class="col-team-no">SIH26-A0H-T151</td>
+                        <td class="col-team-name">Adhithyan A S [CB.PS.I5MAT25001]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T151" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T391</td>
+                        <td class="col-team-name">Aditya S [CB.EN.U4AEE24002]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T391" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td colspan="4" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="problem-cell">SIH26212 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Clean & Green Tech.</td>
+                        <td class="col-team-no">SIH26-A0H-T185</td>
+                        <td class="col-team-name">D Geethasree [CB.EN.U4ECE26208]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T185" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td rowspan="5" class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region.</td>
+                        <td class="col-team-no">SIH26-A0H-T138</td>
+                        <td class="col-team-name">Yazhini [CB.EN.U4CHE26052]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T138" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T158</td>
+                        <td class="col-team-name">Tevin Titus [CB.EN.U4MEE24150]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T158" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T200</td>
+                        <td class="col-team-name">ANANYA H [CB.EN.U4CCE25104]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T200" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="4" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T235</td>
+                        <td class="col-team-name">Krishiva Venkatesh [CB.EN.U4ECE26027]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T235" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T394</td>
+                        <td class="col-team-name">Thirupugazhl S D [CB.EN.U4EEE24149]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T394" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td rowspan="4" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying and compact packaging system to preserve and process agricultural produce at source.</td>
+                        <td class="col-team-no">SIH26-A0H-T094</td>
+                        <td class="col-team-name">Adesh kumar [CB.EN.U4CIE26002]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T094" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T098</td>
+                        <td class="col-team-name">Parthasarathy P [CB.EN.U4EEE24033]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T098" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T135</td>
+                        <td class="col-team-name">Karri Jahnavi [CB.SC.U4CYS26022]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T135" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">17</td>
+                        <td class="col-time">03:10 PM - 03:30 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T253</td>
+                        <td class="col-team-name">KARTHIK U [CB.SC.U4CSE25524]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T253" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">18</td>
+                        <td class="col-time">03:30 PM - 03:50 PM</td>
+                        <td colspan="4" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">19</td>
+                        <td class="col-time">03:50 PM - 04:10 PM</td>
+                        <td class="problem-cell">SIH26178 - A resilient, AI-powered environmental monitoring network that provides early warnings for critical climate threats using edge AI.</td>
+                        <td class="col-team-no">SIH26-A0H-T355</td>
+                        <td class="col-team-name">Moorthy Neeraj [CB.AI.U4AID25031]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T355" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">20</td>
+                        <td class="col-time">04:10 PM - 04:30 PM</td>
+                        <td class="problem-cell">SIH26210 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Agriculture & Water Management.</td>
+                        <td class="col-team-no">SIH26-A0H-T039</td>
+                        <td class="col-team-name">SUJITHKANNAN M R [CB.EN.U4ARE24049]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T039" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">21</td>
+                        <td class="col-time">04:30 PM - 04:50 PM</td>
+                        <td class="problem-cell">SIH26113 - Human augmentation technologies for healthcare, rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
+                        <td class="col-team-no">SIH26-A0H-T279</td>
+                        <td class="col-team-name">Aravind Shanmugham [CB.EN.U4MEE24007]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T279" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">22</td>
+                        <td class="col-time">04:50 PM - 05:10 PM</td>
+                        <td rowspan="3" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.</td>
+                        <td class="col-team-no">SIH26-A0H-T206</td>
+                        <td class="col-team-name">Aiswarya S [CB.EN.U4ARE26006]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T206" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">23</td>
+                        <td class="col-time">05:10 PM - 05:30 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T221</td>
+                        <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T221" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">24</td>
+                        <td class="col-time">05:30 PM - 05:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T291</td>
+                        <td class="col-team-name">S. Dharani Prasad [CB.EN.U4EEE26111]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T291" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                    <td><a href="https://github.com/Ridhu-star/SIH26-A0H-T249" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T249</a></td>
-                    <td>Ridhu Pharan Anandakumar [CB.EN.U4ECE23133] <br /><a
-                            href="https://github.com/Ridhu-star/SIH26-A0H-T249" target="_blank" class="gh-repo-btn">🔗
-                            Ridhu-star</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>11:00 AM - 11:20 AM</td>
+        <!-- Hall 2: Viveka Hall Schedule Table -->
+        <div id="hall-content-viveka" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+                <a href="vivekahall.html" class="btn-page-link panel-link">Open Viveka Hall Standalone Page ↗</a>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">Viveka Hall (AB1)</span></p>
 
-                    <td><a href="https://github.com/abhinavendra26/SIH26-A0H-T385" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T385</a></td>
-                    <td>A R Abhinavendra [CB.EN.U4ECE24002] <br /><a
-                            href="https://github.com/abhinavendra26/SIH26-A0H-T385" target="_blank"
-                            class="gh-repo-btn">🔗 abhinavendra26</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>11:20 AM - 11:40 AM</td>
-                    <td rowspan="1" class="problem-cell">SIH26178 - A resilient, AI-powered environmental monitoring
-                        network that provides early warnings for critical climate threats (wildfires, floods, and severe
-                        heatwaves) using edge AI for rapid disaster response in India.</td>
-                    <td><a href="https://github.com/NeerajMoorthy/SIH26-A0H-T355" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T355</a></td>
-                    <td>Moorthy Neeraj [CB.AI.U4AID25031] <br /><a
-                            href="https://github.com/NeerajMoorthy/SIH26-A0H-T355" target="_blank"
-                            class="gh-repo-btn">🔗 NeerajMoorthy</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>11:40 AM - 12:00 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26088 - Multilingual Cooperative Governance & Legal
-                        Assistance Chatbot.</td>
-                    <td><a href="https://github.com/scandy2007/SIH26-A0H-T117" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T117</a></td>
-                    <td>SANJAY S M [CB.AI.U4QTS25038] <br /><a href="https://github.com/scandy2007/SIH26-A0H-T117"
-                            target="_blank" class="gh-repo-btn">🔗 scandy2007</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>12:00 PM - 12:20 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26109 - AI-Based Predictive Modelling for Early Forecasting
-                        of Bovine Mastitis in Indian Dairy Farms.</td>
-                    <td><a href="https://github.com/vinaykuppu-lab/SIH26-A0H-T276" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T276</a></td>
-                    <td>K Shrivinay [CB.EN.U4ECE26225] <br /><a href="https://github.com/vinaykuppu-lab/SIH26-A0H-T276"
-                            target="_blank" class="gh-repo-btn">🔗 vinaykuppu-lab</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>01:30 PM - 01:50 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26113 - Human augmentation technologies for healthcare,
-                        rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
-                    <td><a href="https://github.com/aravind24007/SIH26-A0H-T279" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T279</a></td>
-                    <td>Aravind Shanmugham [CB.EN.U4MEE24007] <br /><a
-                            href="https://github.com/aravind24007/SIH26-A0H-T279" target="_blank" class="gh-repo-btn">🔗
-                            aravind24007</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="4" class="problem-cell">SIH26039 - AI-Powered Underground Mine Safety, Monitoring and Rescue System.</td>
+                        <td class="col-team-no">SIH26-A0H-T036</td>
+                        <td class="col-team-name">Roahith P [CB.EN.U4CCE26144]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T036" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T090</td>
+                        <td class="col-team-name">Aditya Hamsaneni [CB.AI.U4AAR26004]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T090" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T278</td>
+                        <td class="col-team-name">Parthiv PC [CB.EN.U4ELC26132]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T278" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T298</td>
+                        <td class="col-team-name">Shreeya. B [CB.EN.U4ELC25135]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T298" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td colspan="4" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
+                        <td class="col-team-no">SIH26-A0H-T114</td>
+                        <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T114" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T196</td>
+                        <td class="col-team-name">Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T196" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T303</td>
+                        <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T303" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">Slot Reserved (SIH26008)</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">Slot Reserved (SIH26008)</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="4" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td class="problem-cell">SIH26109 - AI-Based Predictive Modelling for Early Forecasting of Bovine Mastitis in Indian Dairy Farms.</td>
+                        <td class="col-team-no">SIH26-A0H-T276</td>
+                        <td class="col-team-name">K Shrivinay [CB.EN.U4ECE26225]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T276" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">SIH26064 - Low-Cost Deployable Seafloor Metal Detection Sensor for Ocean Resource Exploration.</td>
+                        <td class="col-team-no">SIH26-A0H-T201</td>
+                        <td class="col-team-name">Adithya K [CB.EN.U4ARE26003]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T201" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td rowspan="3" class="problem-cell">SIH26025 - Mine Subsidence Monitoring System.</td>
+                        <td class="col-team-no">SIH26-A0H-T226</td>
+                        <td class="col-team-name">Girisudhan V [CB.EN.U4ECE24016]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T226" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T285</td>
+                        <td class="col-team-name">Suthasrinitha [CB.AI.U4AID25153]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T285" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T287</td>
+                        <td class="col-team-name">K.S.Sowparnika [CB.EN.U4CIE26028]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T287" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">17</td>
+                        <td class="col-time">03:10 PM - 03:30 PM</td>
+                        <td class="problem-cell">SIH26098 - Precision Guidance and Smart Fuze Integration System for Defense Munitions.</td>
+                        <td class="col-team-no">SIH26-A0H-T130</td>
+                        <td class="col-team-name">V Karthik Chockalingam [CB.SC.U4CSE26659]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T130" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">18</td>
+                        <td class="col-time">03:30 PM - 03:50 PM</td>
+                        <td colspan="4" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">19</td>
+                        <td class="col-time">03:50 PM - 04:10 PM</td>
+                        <td class="problem-cell">SIH26220 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Renewable & Sustainable Energy Systems.</td>
+                        <td class="col-team-no">SIH26-A0H-T353</td>
+                        <td class="col-team-name">Dhiyayanth [CB.EN.U4EEE25113]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T353" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">20</td>
+                        <td class="col-time">04:10 PM - 04:30 PM</td>
+                        <td rowspan="2" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
+                        <td class="col-team-no">SIH26-A0H-T314</td>
+                        <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T314" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">21</td>
+                        <td class="col-time">04:30 PM - 04:50 PM</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">Slot Reserved (SIH26004)</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div id="HW#P2B" class="panel-details" style="display: none;">
-        <h3>HW#P2B - AI / Cyber <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Viveka Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>01:50 PM - 02:10 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26026 - Development of Mobile (Quadruped)/Handheld
-                        Device/System for Real-Time Detection of Narcotics and Explosives across Indian Railways.</td>
-                    <td><a href="https://github.com/aysharumannaa-hub/SIH26-A0H-T087" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T087</a></td>
-                    <td>AYSHA RUMANA M [CB.EN.U4CHE26105] <br /><a
-                            href="https://github.com/aysharumannaa-hub/SIH26-A0H-T087" target="_blank"
-                            class="gh-repo-btn">🔗 aysharumannaa-hub</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>02:10 PM - 02:30 PM</td>
-
-                    <td><a href="https://github.com/kaviyarasan200824-eng/SIH26-A0H-T162" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T162</a></td>
-                    <td>S Bharanidharan [CB.EN.U4EEE26047] <br /><a
-                            href="https://github.com/kaviyarasan200824-eng/SIH26-A0H-T162" target="_blank"
-                            class="gh-repo-btn">🔗 kaviyarasan200824-eng</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>02:30 PM - 02:50 PM</td>
-                    <td rowspan="3" class="problem-cell">SIH26179 - To build an AI-powered retail intelligence platform
-                        that delivers real-time shopper behavior insights using smart edge-hardware systems.</td>
-                    <td><a href="https://github.com/Vamsi0413F/SIH26-A0H-T034" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T034</a></td>
-                    <td>Raghammudi Veda Vamsi krishna [CB.SC.U4CSE25346] <br /><a
-                            href="https://github.com/Vamsi0413F/SIH26-A0H-T034" target="_blank" class="gh-repo-btn">🔗
-                            Vamsi0413F</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>02:50 PM - 03:10 PM</td>
-
-                    <td><a href="https://github.com/Harshini-V2105/SIH26-A0H-T209" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T209</a></td>
-                    <td>V Harshini [CB.EN.U4CCE25059] <br /><a href="https://github.com/Harshini-V2105/SIH26-A0H-T209"
-                            target="_blank" class="gh-repo-btn">🔗 Harshini-V2105</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>03:10 PM - 03:30 PM</td>
-
-                    <td><a href="https://github.com/Manoj-N366/SIH26-A0H-T368" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T368</a></td>
-                    <td>Manoj Narayanasamy [CB.EN.U4ELC24126] <br /><a
-                            href="https://github.com/Manoj-N366/SIH26-A0H-T368" target="_blank" class="gh-repo-btn">🔗
-                            Manoj-N366</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>03:50 PM - 04:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26181 - A secure, AI-powered Personal Health Companion that
-                        delivers real-time, on-device health monitoring and personalized recommendations to help
-                        individuals recognize health risks before they become emergencies.</td>
-                    <td><a href="https://github.com/Secantwave/SIH26-A0H-T091" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T091</a></td>
-                    <td>ROHIT LAL P P [CB.EN.U4ELC25129] <br /><a href="https://github.com/Secantwave/SIH26-A0H-T091"
-                            target="_blank" class="gh-repo-btn">🔗 Secantwave</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="HW#P3" class="panel-details" style="display: none;">
-        <h3>HW#P3 - Agri & Clean Tech <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Achala Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>09:00 AM - 09:20 AM</td>
-                    <td rowspan="5" class="problem-cell">SIH26180 - A field-deployable AI-powered Smart Farming
-                        Assistant that helps farmers detect and manage early-stage crop diseases and pest infestations
-                        through real-time, on-device analysis.</td>
-                    <td><a href="https://github.com/divi1317/SIH26-A0H-T177" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T177</a></td>
-                    <td>DIVYANANDH J [CB.EN.U4ELC25008] <br /><a href="https://github.com/divi1317/SIH26-A0H-T177"
-                            target="_blank" class="gh-repo-btn">🔗 divi1317</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:20 AM - 09:40 AM</td>
-
-                    <td><a href="https://github.com/9884919915/SIH26-A0H-T180" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T180</a></td>
-                    <td>Iniya P [CB.EN.U4MEE26211] <br /><a href="https://github.com/9884919915/SIH26-A0H-T180"
-                            target="_blank" class="gh-repo-btn">🔗 9884919915</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>09:40 AM - 10:00 AM</td>
-
-                    <td><a href="https://github.com/Subashhhhhhhh/SIH26-A0H-T205" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T205</a></td>
-                    <td>Subash Chandra Bose G [CB.EN.U4ECE26251] <br /><a
-                            href="https://github.com/Subashhhhhhhh/SIH26-A0H-T205" target="_blank"
-                            class="gh-repo-btn">🔗 Subashhhhhhhh</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>10:00 AM - 10:20 AM</td>
-
-                    <td><a href="https://github.com/SaadhanaRajmohan/SIH26-A0H-T294" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T294</a></td>
-                    <td>Saadhana Rajmohan [CB.EN.U4MEE25144] <br /><a
-                            href="https://github.com/SaadhanaRajmohan/SIH26-A0H-T294" target="_blank"
-                            class="gh-repo-btn">🔗 SaadhanaRajmohan</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>10:40 AM - 11:00 AM</td>
-
-                    <td><a href="https://github.com/frozegov-stack/SIH26-A0H-T374" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T374</a></td>
-                    <td>Lightning logics [CB.EN.U4ARE25057] <br /><a
-                            href="https://github.com/frozegov-stack/SIH26-A0H-T374" target="_blank"
-                            class="gh-repo-btn">🔗 frozegov-stack</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>11:00 AM - 11:20 AM</td>
-                    <td rowspan="5" class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for
-                        Fresh Vegetables in North Eastern Region.</td>
-                    <td><a href="https://github.com/yazh-codx/SIH26-A0H-T138" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T138</a></td>
-                    <td>Yazhini [CB.EN.U4CHE26052] <br /><a href="https://github.com/yazh-codx/SIH26-A0H-T138"
-                            target="_blank" class="gh-repo-btn">🔗 yazh-codx</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>11:20 AM - 11:40 AM</td>
-
-                    <td><a href="https://github.com/TevinTitus/SIH26-A0H-T158" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T158</a></td>
-                    <td>Tevin Titus [CB.EN.U4MEE24150] <br /><a href="https://github.com/TevinTitus/SIH26-A0H-T158"
-                            target="_blank" class="gh-repo-btn">🔗 TevinTitus</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>11:40 AM - 12:00 PM</td>
-
-                    <td><a href="https://github.com/ananyaa2307_dev!/SIH26-A0H-T200" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T200</a></td>
-                    <td>ANANYA H [CB.EN.U4CCE25104] <br /><a href="https://github.com/ananyaa2307_dev!/SIH26-A0H-T200"
-                            target="_blank" class="gh-repo-btn">🔗 ananyaa2307\_dev!</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>12:00 PM - 12:20 PM</td>
-
-                    <td><a href="https://github.com/vkrishiva-png/SIH26-A0H-T235" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T235</a></td>
-                    <td>Krishiva Venkatesh [CB.EN.U4ECE26027] <br /><a
-                            href="https://github.com/vkrishiva-png/SIH26-A0H-T235" target="_blank"
-                            class="gh-repo-btn">🔗 vkrishiva-png</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>01:30 PM - 01:50 PM</td>
-
-                    <td><a href="https://github.com/THIRUPUGAZHL-SD/SIH26-A0H-T394" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T394</a></td>
-                    <td>Thirupugazhl S D [CB.EN.U4EEE24149] <br /><a
-                            href="https://github.com/THIRUPUGAZHL-SD/SIH26-A0H-T394" target="_blank"
-                            class="gh-repo-btn">🔗 THIRUPUGAZHL-SD</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>01:50 PM - 02:10 PM</td>
-                    <td rowspan="4" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying and
-                        compact packaging system to preserve and process agricultural produce at source.</td>
-                    <td><a href="https://github.com/adeshkumar0712-cpu/SIH26-A0H-T094" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T094</a></td>
-                    <td>Adesh kumar [CB.EN.U4CIE26002] <br /><a
-                            href="https://github.com/adeshkumar0712-cpu/SIH26-A0H-T094" target="_blank"
-                            class="gh-repo-btn">🔗 adeshkumar0712-cpu</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>02:10 PM - 02:30 PM</td>
-
-                    <td><a href="https://github.com/Parthasarathy1705/SIH26-A0H-T098" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T098</a></td>
-                    <td>Parthasarathy P [CB.EN.U4EEE24033] <br /><a
-                            href="https://github.com/Parthasarathy1705/SIH26-A0H-T098" target="_blank"
-                            class="gh-repo-btn">🔗 Parthasarathy1705</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>02:30 PM - 02:50 PM</td>
-
-                    <td><a href="https://github.com/JAAN-crypto/SIH26-A0H-T135" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T135</a></td>
-                    <td>Karri Jahnavi [CB.SC.U4CYS26022] <br /><a href="https://github.com/JAAN-crypto/SIH26-A0H-T135"
-                            target="_blank" class="gh-repo-btn">🔗 JAAN-crypto</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>02:50 PM - 03:10 PM</td>
-
-                    <td><a href="https://github.com/U-KARTHIK/SIH26-A0H-T253" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T253</a></td>
-                    <td>KARTHIK U [CB.SC.U4CSE25524] <br /><a href="https://github.com/U-KARTHIK/SIH26-A0H-T253"
-                            target="_blank" class="gh-repo-btn">🔗 U-KARTHIK</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>03:10 PM - 03:30 PM</td>
-                    <td rowspan="3" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring
-                        System for Rural and Mining-Affected Areas.</td>
-                    <td><a href="https://github.com/AiswaryaSenthil01/SIH26-A0H-T206" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T206</a></td>
-                    <td>Aiswarya S [CB.EN.U4ARE26006] <br /><a
-                            href="https://github.com/AiswaryaSenthil01/SIH26-A0H-T206" target="_blank"
-                            class="gh-repo-btn">🔗 AiswaryaSenthil01</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>03:50 PM - 04:10 PM</td>
-
-                    <td><a href="https://github.com/saanapoovaiah31-create/SIH26-A0H-T221" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T221</a></td>
-                    <td>Saana Poovaiah N [CB.EN.U4MEE24142] <br /><a
-                            href="https://github.com/saanapoovaiah31-create/SIH26-A0H-T221" target="_blank"
-                            class="gh-repo-btn">🔗 saanapoovaiah31-create</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>04:10 PM - 04:30 PM</td>
-
-                    <td><a href="https://github.com/dharaniprasad04-stack/SIH26-A0H-T291" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T291</a></td>
-                    <td>S. Dharani Prasad [CB.EN.U4EEE26111] <br /><a
-                            href="https://github.com/dharaniprasad04-stack/SIH26-A0H-T291" target="_blank"
-                            class="gh-repo-btn">🔗 dharaniprasad04-stack</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>04:30 PM - 04:50 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26210 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Agriculture & Water Management.</td>
-                    <td><a href="https://github.com/agritsujith/SIH26-A0H-T039" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T039</a></td>
-                    <td>SUJITHKANNAN M R [CB.EN.U4ARE24049] <br /><a
-                            href="https://github.com/agritsujith/SIH26-A0H-T039" target="_blank" class="gh-repo-btn">🔗
-                            agritsujith</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>04:50 PM - 05:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26212 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Clean & Green Tech.</td>
-                    <td><a href="https://github.com/Geethadasari-ui/SIH26-A0H-T185" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T185</a></td>
-                    <td>D Geethasree [CB.EN.U4ECE26208] <br /><a
-                            href="https://github.com/Geethadasari-ui/SIH26-A0H-T185" target="_blank"
-                            class="gh-repo-btn">🔗 Geethadasari-ui</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>05:10 PM - 05:30 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26110 - Development of a Low-Cost Light-weight Milk Chilling
-                        Can for Small-Scale Dairy Farmers.</td>
-                    <td><a href="https://github.com/therealolaw/SIH26-A0H-T192" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T192</a></td>
-                    <td>S KAVIN MUTHUVEL [CB.EN.U4EEE26033] <br /><a
-                            href="https://github.com/therealolaw/SIH26-A0H-T192" target="_blank" class="gh-repo-btn">🔗
-                            therealolaw</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>05:30 PM - 05:50 PM</td>
-
-                    <td><a href="https://github.com/CIndrajith/SIH26-A0H-T241" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T241</a></td>
-                    <td>C INDRAJITH [CB.EN.U4CHE24008] <br /><a href="https://github.com/CIndrajith/SIH26-A0H-T241"
-                            target="_blank" class="gh-repo-btn">🔗 CIndrajith</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="HW#P4" class="panel-details" style="display: none;">
-        <h3>HW#P4 - Robotics & Drones <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Pragna Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>09:00 AM - 09:20 AM</td>
-                    <td rowspan="3" class="problem-cell">SIH26177 - A deployable AI-powered autonomous drone that aids
-                        search-and-rescue operations in disaster zones through real-time multi-modal sensing.</td>
-                    <td><a href="https://github.com/rahulsanjiv-r/SIH26-A0H-T218" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T218</a></td>
-                    <td>RAHUL SANJIV R [CB.EN.U4ELC26038] <br /><a
-                            href="https://github.com/rahulsanjiv-r/SIH26-A0H-T218" target="_blank"
-                            class="gh-repo-btn">🔗 rahulsanjiv-r</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:20 AM - 09:40 AM</td>
-
-                    <td><a href="https://github.com/ThilakSujan/SIH26-A0H-T326" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T326</a></td>
-                    <td>Thilak Sujan K S [CB.EN.U4CCE24056] <br /><a
-                            href="https://github.com/ThilakSujan/SIH26-A0H-T326" target="_blank" class="gh-repo-btn">🔗
-                            ThilakSujan</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>09:40 AM - 10:00 AM</td>
-
-                    <td><a href="https://github.com/yuthikhaa7/SIH26-A0H-T390" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T390</a></td>
-                    <td>Yuthikhaa V [CB.EN.U4CCE24062] <br /><a href="https://github.com/yuthikhaa7/SIH26-A0H-T390"
-                            target="_blank" class="gh-repo-btn">🔗 yuthikhaa7</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>10:00 AM - 10:20 AM</td>
-                    <td rowspan="4" class="problem-cell">SIH26112 - Design and Develop a Modular Autonomous Mobile Robot
-                        (AMR) Platform for Smart Warehouses and Industrial Logistics.</td>
-                    <td><a href="https://github.com/ashwanth-fr/SIH26-A0H-T033" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T033</a></td>
-                    <td>Ashwanth S [CB.AI.U4AAR26009] <br /><a href="https://github.com/ashwanth-fr/SIH26-A0H-T033"
-                            target="_blank" class="gh-repo-btn">🔗 ashwanth-fr</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>10:40 AM - 11:00 AM</td>
-
-                    <td><a href="https://github.com/AnaswarMahesh/SIH26-A0H-T047" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T047</a></td>
-                    <td>Anaswar Mahesh [CB.EN.U4ARE24005] <br /><a
-                            href="https://github.com/AnaswarMahesh/SIH26-A0H-T047" target="_blank"
-                            class="gh-repo-btn">🔗 AnaswarMahesh</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>11:00 AM - 11:20 AM</td>
-
-                    <td><a href="https://github.com/avinashshanthi37@gmail.com/SIH26-A0H-T273" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T273</a></td>
-                    <td>Avinash K S [CB.EN.U4ELC26107] <br /><a
-                            href="https://github.com/avinashshanthi37@gmail.com/SIH26-A0H-T273" target="_blank"
-                            class="gh-repo-btn">🔗 avinashshanthi37-jpg</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>11:20 AM - 11:40 AM</td>
-
-                    <td><a href="https://github.com/vyshanth-mech/SIH26-A0H-T302" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T302</a></td>
-                    <td>Vyshanth P S [CB.EN.U4MEE25052] <br /><a href="https://github.com/vyshanth-mech/SIH26-A0H-T302"
-                            target="_blank" class="gh-repo-btn">🔗 vyshanth-mech</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>11:40 AM - 12:00 PM</td>
-                    <td rowspan="4" class="problem-cell">SIH26039 - AI-Powered Underground Mine Safety, Monitoring and
-                        Rescue System.</td>
-                    <td><a href="https://github.com/Roahith/SIH26-A0H-T036" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T036</a></td>
-                    <td>Roahith P [CB.EN.U4CCE26144] <br /><a href="https://github.com/Roahith/SIH26-A0H-T036"
-                            target="_blank" class="gh-repo-btn">🔗 Roahith</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>12:00 PM - 12:20 PM</td>
-
-                    <td><a href="https://github.com/adityahimanshuhamsaneni-creator/SIH26-A0H-T090" target="_blank"
-                            class="gh-link" title="Open GitHub Repository">SIH26-A0H-T090</a></td>
-                    <td>Aditya Hamsaneni [CB.AI.U4AAR26004] <br /><a
-                            href="https://github.com/adityahimanshuhamsaneni-creator/SIH26-A0H-T090" target="_blank"
-                            class="gh-repo-btn">🔗 adityahimanshuhamsaneni-creator</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>01:30 PM - 01:50 PM</td>
-
-                    <td><a href="https://github.com/parthivpc/SIH26-A0H-T278" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T278</a></td>
-                    <td>Parthiv PC [CB.EN.U4ELC26132] <br /><a href="https://github.com/parthivpc/SIH26-A0H-T278"
-                            target="_blank" class="gh-repo-btn">🔗 parthivpc</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>01:50 PM - 02:10 PM</td>
-
-                    <td><a href="https://github.com/Shreeyah05/SIH26-A0H-T298" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T298</a></td>
-                    <td>Shreeya. B [CB.EN.U4ELC25135] <br /><a href="https://github.com/Shreeyah05/SIH26-A0H-T298"
-                            target="_blank" class="gh-repo-btn">🔗 Shreeyah05</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>02:10 PM - 02:30 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26065 - Autonomous Low-Cost Ocean Observation Platform for
-                        Polar and Southern Oceans.</td>
-                    <td><a href="https://github.com/Dakshi146/SIH26-A0H-T144" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T144</a></td>
-                    <td>M Dakshinesh [CB.EN.U4EEE25127] <br /><a href="https://github.com/Dakshi146/SIH26-A0H-T144"
-                            target="_blank" class="gh-repo-btn">🔗 Dakshi146</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>02:30 PM - 02:50 PM</td>
-
-                    <td><a href="https://github.com/ananthak432/SIH26-A0H-T345" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T345</a></td>
-                    <td>ANANTHAKUMAR SARAVANAN [CB.EN.U4EEE24106] <br /><a
-                            href="https://github.com/ananthak432/SIH26-A0H-T345" target="_blank" class="gh-repo-btn">🔗
-                            ananthak432</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>02:50 PM - 03:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26064 - Low-Cost Deployable Seafloor Metal Detection Sensor
-                        for Ocean Resource Exploration.</td>
-                    <td><a href="https://github.com/adithyak1112008-oss/SIH26-A0H-T201" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T201</a></td>
-                    <td>Adithya K [CB.EN.U4ARE26003] <br /><a
-                            href="https://github.com/adithyak1112008-oss/SIH26-A0H-T201" target="_blank"
-                            class="gh-repo-btn">🔗 adithyak1112008-oss</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>03:10 PM - 03:30 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26058 - Development of a Low-Power, Real-Time Adaptive
-                        Software-Defined Sonar Transmitter for Underwater Target Characterization and Acoustic Mapping.
-                    </td>
-                    <td><a href="https://github.com/adhithya009/SIH26-A0H-T078" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T078</a></td>
-                    <td>Adhithya R [CB.EN.U4ELC24028] <br /><a href="https://github.com/adhithya009/SIH26-A0H-T078"
-                            target="_blank" class="gh-repo-btn">🔗 adhithya009</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>03:50 PM - 04:10 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26185 - Helmet mounted conformal antenna for tactical
-                        communications in urban CQB operations.</td>
-                    <td><a href="https://github.com/Vinudharshini18/SIH26-A0H-T375" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T375</a></td>
-                    <td>Vinudharshini P P [CB.SC.U4AIE25161] <br /><a
-                            href="https://github.com/Vinudharshini18/SIH26-A0H-T375" target="_blank"
-                            class="gh-repo-btn">🔗 Vinudharshini18</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>04:10 PM - 04:30 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26226 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Space Technology & Exploration Systems.</td>
-                    <td><a href="https://github.com/asoneinstein-design/SIH26-A0H-T151" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T151</a></td>
-                    <td>Adhithyan A S [CB.PS.I5MAT25001] <br /><a
-                            href="https://github.com/asoneinstein-design/SIH26-A0H-T151" target="_blank"
-                            class="gh-repo-btn">🔗 asoneinstein-design</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>04:30 PM - 04:50 PM</td>
-
-                    <td><a href="https://github.com/adityabuildsystem/SIH26-A0H-T391" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T391</a></td>
-                    <td>Aditya S [CB.EN.U4AEE24002] <br /><a href="https://github.com/adityabuildsystem/SIH26-A0H-T391"
-                            target="_blank" class="gh-repo-btn">🔗 adityabuildsystem</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="HW#P5" class="panel-details" style="display: none;">
-        <h3>HW#P5 - ECE / EEE <span class="highlightc">Scheduled</span></h3>
-        <p><strong>Date:</strong> <span class="highlight">3 and 5 Sep 2026 (According to Judges Availability)</span></p>
-        <p><strong>Venue:</strong> <span class="highlight">Seminar Hall</span></p>
-        <p><strong>Jury</strong> <span class="highlight">—</span></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Time</th>
-                    <th>Problem ID and Title</th>
-                    <th>Team Number</th>
-                    <th>Team Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>09:00 AM - 09:20 AM</td>
-                    <td rowspan="5" class="problem-cell">SIH26049 - Modifications to improve the reliability,
-                        efficiency, and lifespan of electrical and electronic equipment and systems in the ambient
-                        condition of subzero temperature and low pressure of High Altitude Areas (HAA) and Super High
-                        Altitude Areas (SHAA) of Ladakh region.</td>
-                    <td><a href="https://github.com/Ishani-123-2007/SIH26-A0H-T111" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T111</a></td>
-                    <td>Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25136] <br /><a
-                            href="https://github.com/Ishani-123-2007/SIH26-A0H-T111" target="_blank"
-                            class="gh-repo-btn">🔗 Ishani-123-2007</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:20 AM - 09:40 AM</td>
-
-                    <td><a href="https://github.com/ksanjeevkumar19235/SIH26-A0H-T146" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T146</a></td>
-                    <td>K Sanjeev Kumar [CB.EN.U4EEE26117] <br /><a
-                            href="https://github.com/ksanjeevkumar19235/SIH26-A0H-T146" target="_blank"
-                            class="gh-repo-btn">🔗 ksanjeevkumar19235</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>09:40 AM - 10:00 AM</td>
-
-                    <td><a href="https://github.com/sivasankari0109/SIH26-A0H-T215" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T215</a></td>
-                    <td>Sivasankari S [CB.EN.U4EEE24141] <br /><a
-                            href="https://github.com/sivasankari0109/SIH26-A0H-T215" target="_blank"
-                            class="gh-repo-btn">🔗 sivasankari0109</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>10:00 AM - 10:20 AM</td>
-
-                    <td><a href="https://github.com/harishpidikiti_06/SIH26-A0H-T341" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T341</a></td>
-                    <td>Harish Pidikiti [CB.EN.U4EEE24020] <br /><a
-                            href="https://github.com/harishpidikiti_06/SIH26-A0H-T341" target="_blank"
-                            class="gh-repo-btn">🔗 harishpidikiti\_06</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>10:40 AM - 11:00 AM</td>
-
-                    <td><a href="https://github.com/kavin-siddharth /SIH26-A0H-T387" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T387</a></td>
-                    <td>KAVINSIDDHARTH S [CB.EN.U4MEE24130] <br /><a
-                            href="https://github.com/kavin-siddharth /SIH26-A0H-T387" target="_blank"
-                            class="gh-repo-btn">🔗 kavin-siddharth</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>11:00 AM - 11:20 AM</td>
-                    <td rowspan="3" class="problem-cell">SIH26025 - Development of an AI-enabled Low Cost Real Time Mine
-                        Subsidence Monitoring, Alert and Alarm System using LiDAR, InSAR and Tiltmeters.</td>
-                    <td><a href="https://github.com/Vaggiri/SIH26-A0H-T226" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T226</a></td>
-                    <td>Girisudhan V [CB.EN.U4ECE24016] <br /><a href="https://github.com/Vaggiri/SIH26-A0H-T226"
-                            target="_blank" class="gh-repo-btn">🔗 Vaggiri</a> <span class="highlightc">Scheduled</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>11:20 AM - 11:40 AM</td>
-
-                    <td><a href="https://github.com/nitha-k07x/SIH26-A0H-T285" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T285</a></td>
-                    <td>Suthasrinitha [CB.AI.U4AID25153] <br /><a href="https://github.com/nitha-k07x/SIH26-A0H-T285"
-                            target="_blank" class="gh-repo-btn">🔗 nitha-k07x</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>11:40 AM - 12:00 PM</td>
-
-                    <td><a href="https://github.com/Sowparnika05/SIH26-A0H-T287" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T287</a></td>
-                    <td>K.S.Sowparnika [CB.EN.U4CIE26028] <br /><a href="https://github.com/Sowparnika05/SIH26-A0H-T287"
-                            target="_blank" class="gh-repo-btn">🔗 Sowparnika05</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>12:00 PM - 12:20 PM</td>
-                    <td rowspan="3" class="problem-cell">SIH26029 - Automated High-Current Short-Circuit Test System for
-                        IEC 60898-1:2015 MCB Testing with Real-Time Data Capture and Protection.</td>
-                    <td><a href="https://github.com/jeevan866/SIH26-A0H-T189" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T189</a></td>
-                    <td>Jeevanayagam S [CB.EN.U4ELC25015] <br /><a href="https://github.com/jeevan866/SIH26-A0H-T189"
-                            target="_blank" class="gh-repo-btn">🔗 jeevan866</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>01:30 PM - 01:50 PM</td>
-
-                    <td><a href="https://github.com/Midhun-Hexacore/SIH26-A0H-T267" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T267</a></td>
-                    <td>Midhun M [CB.EN.U4EEE25026] <br /><a href="https://github.com/Midhun-Hexacore/SIH26-A0H-T267"
-                            target="_blank" class="gh-repo-btn">🔗 Midhun-Hexacore</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>01:50 PM - 02:10 PM</td>
-
-                    <td><a href="https://github.com/chanjanaa-13/SIH26-A0H-T347" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T347</a></td>
-                    <td>M K Chanjanaa [CB.EN.U4ELC24021] <br /><a href="https://github.com/chanjanaa-13/SIH26-A0H-T347"
-                            target="_blank" class="gh-repo-btn">🔗 chanjanaa-13</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>02:10 PM - 02:30 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26098 - Development of a Low-Cost Precision Guidance and
-                        Smart Electronic Fuze System for a 155 mm Artillery Shell.</td>
-                    <td><a href="https://github.com/ValKarCho95/SIH26-A0H-T130" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T130</a></td>
-                    <td>V Karthik Chockalingam [CB.SC.U4CSE26659] <br /><a
-                            href="https://github.com/ValKarCho95/SIH26-A0H-T130" target="_blank" class="gh-repo-btn">🔗
-                            ValKarCho95</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>02:30 PM - 02:50 PM</td>
-                    <td rowspan="1" class="problem-cell">SIH26220 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Renewable & Sustainable Energy.</td>
-                    <td><a href="https://github.com/dhiyayanth/SIH26-A0H-T353" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T353</a></td>
-                    <td>Dhiyayanth [CB.EN.U4EEE25113] <br /><a href="https://github.com/dhiyayanth/SIH26-A0H-T353"
-                            target="_blank" class="gh-repo-btn">🔗 dhiyayanth</a> <span
-                            class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>02:50 PM - 03:10 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26222 - Student Innovation: Swadeshi for Atmanirbhar Bharat
-                        - Smart Education & Digital Learning.</td>
-                    <td><a href="https://github.com/savethaaravindann/SIH26-A0H-T074" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T074</a></td>
-                    <td>Savetha Aravindan [CB.EN.U4ELC26149] <br /><a
-                            href="https://github.com/savethaaravindann/SIH26-A0H-T074" target="_blank"
-                            class="gh-repo-btn">🔗 savethaaravindann</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>03:10 PM - 03:30 PM</td>
-
-                    <td><a href="https://github.com/sailaswaran/SIH26-A0H-T083" target="_blank" class="gh-link"
-                            title="Open GitHub Repository">SIH26-A0H-T083</a></td>
-                    <td>SriSailaswaran A [CB.EN.U4EEE25044] <br /><a
-                            href="https://github.com/sailaswaran/SIH26-A0H-T083" target="_blank" class="gh-repo-btn">🔗
-                            sailaswaran</a> <span class="highlightc">Scheduled</span></td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Software Track Content Area -->
+    <div id="software-track-content" style="display: none;">
+        <div class="software-placeholder-card">
+            <h3>💻 Software Track Schedules</h3>
+            <p>Software track jury panels and hall allocations are currently being finalized.<br />Please check back soon for live schedule updates!</p>
+        </div>
     </div>
 
     <script>
-        function showPanel() {
-            const selectElement = document.getElementById('panel-select');
-            const selectedPanelId = selectElement.value;
-            const panels = document.getElementsByClassName('panel-details');
+        const STATUSES = ['Scheduled', 'Ongoing', 'Completed'];
+        const STATUS_CLASSES = {
+            'Scheduled': 'status-scheduled',
+            'Ongoing': 'status-ongoing',
+            'Completed': 'status-completed'
+        };
 
-            for (let i = 0; i < panels.length; i++) {
-                panels[i].style.display = 'none';
-            }
+        const urlParams = new URLSearchParams(window.location.search);
+        const isVolunteer = urlParams.get('mode') === 'volunteer' ||
+                            urlParams.get('key') === 'sih_vol_2026' ||
+                            urlParams.get('role') === 'volunteer' ||
+                            urlParams.has('volunteer');
 
-            if (selectedPanelId) {
-                const selectedPanel = document.getElementById(selectedPanelId);
-                if (selectedPanel) {
-                    selectedPanel.style.display = 'block';
-                }
+        const firebaseConfig = window.FIREBASE_CONFIG || {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "sih-2026.firebaseapp.com",
+            databaseURL: "https://sih-2026-default-rtdb.firebaseio.com",
+            projectId: "sih-2026",
+            storageBucket: "sih-2026.appspot.com",
+            messagingSenderId: "1234567890",
+            appId: "1:1234567890:web:abcdef"
+        };
+
+        let db = null;
+        let firebaseInitialized = false;
+
+        if (typeof firebase !== 'undefined' && firebaseConfig.databaseURL && !firebaseConfig.databaseURL.includes("YOUR_")) {
+            try {
+                if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+                db = firebase.database();
+                firebaseInitialized = true;
+            } catch (e) { console.warn("Firebase skipped:", e); }
+        }
+
+        function switchTrack(track) {
+            const hwBtn = document.getElementById('tab-hardware');
+            const swBtn = document.getElementById('tab-software');
+            const hwContent = document.getElementById('hardware-track-content');
+            const swContent = document.getElementById('software-track-content');
+
+            if (track === 'hardware') {
+                hwBtn.classList.add('active');
+                swBtn.classList.remove('active');
+                hwContent.style.display = 'block';
+                swContent.style.display = 'none';
+            } else {
+                swBtn.classList.add('active');
+                hwBtn.classList.remove('active');
+                swContent.style.display = 'block';
+                hwContent.style.display = 'none';
             }
         }
+
+        function switchHall(hall) {
+            const sarTab = document.getElementById('hall-tab-saraswathi');
+            const vivTab = document.getElementById('hall-tab-viveka');
+            const sarContent = document.getElementById('hall-content-saraswathi');
+            const vivContent = document.getElementById('hall-content-viveka');
+
+            if (hall === 'saraswathi') {
+                sarTab.classList.add('active');
+                vivTab.classList.remove('active');
+                sarContent.style.display = 'block';
+                vivContent.style.display = 'none';
+            } else {
+                vivTab.classList.add('active');
+                sarTab.classList.remove('active');
+                vivContent.style.display = 'block';
+                sarContent.style.display = 'none';
+            }
+        }
+
+        const TEAMS_DATABASE = [
+            // Saraswathi Hall (HW#P1)
+            { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean & Green Tech", time: "09:00 AM - 09:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:20 AM - 09:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T241", leader: "C INDRAJITH [CB.EN.U4CHE24008]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:40 AM - 10:00 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T151", leader: "Adhithyan A S [CB.PS.I5MAT25001]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:00 AM - 10:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T391", leader: "Aditya S [CB.EN.U4AEE24002]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:20 AM - 10:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T185", leader: "D Geethasree [CB.EN.U4ECE26208]", problem: "SIH26212 - Swadeshi: Clean & Green Tech.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "11:00 AM - 11:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T138", leader: "Yazhini [CB.EN.U4CHE26052]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:20 AM - 11:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T158", leader: "Tevin Titus [CB.EN.U4MEE24150]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:40 AM - 12:00 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T200", leader: "ANANYA H [CB.EN.U4CCE25104]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "12:00 PM - 12:20 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T394", leader: "Thirupugazhl S D [CB.EN.U4EEE24149]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Healthcare Tech", time: "04:30 PM - 04:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:50 PM - 05:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "05:10 PM - 05:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T291", leader: "S. Dharani Prasad [CB.EN.U4EEE26111]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "05:30 PM - 05:50 PM", file: "saraswathihall.html" },
+
+            // Viveka Hall (HW#P2)
+            { id: "SIH26-A0H-T036", leader: "Roahith P [CB.EN.U4CCE26144]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:00 AM - 09:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T090", leader: "Aditya Hamsaneni [CB.AI.U4AAR26004]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:20 AM - 09:40 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T278", leader: "Parthiv PC [CB.EN.U4ELC26132]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:40 AM - 10:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T298", leader: "Shreeya. B [CB.EN.U4ELC25135]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "10:00 AM - 10:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T114", leader: "Visaonth J [CB.EN.U4ECE25255]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "10:40 AM - 11:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T196", leader: "Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "11:00 AM - 11:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T303", leader: "Padhmavathi [CB.EN.U4EEE25031]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "11:20 AM - 11:40 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T276", leader: "K Shrivinay [CB.EN.U4ECE26225]", problem: "SIH26109 - AI-Based Predictive Modelling for Bovine Mastitis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Agri Tech", time: "01:30 PM - 01:50 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T201", leader: "Adithya K [CB.EN.U4ARE26003]", problem: "SIH26064 - Seafloor Metal Detection Sensor.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Robotics / Sensors", time: "01:50 PM - 02:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T226", leader: "Girisudhan V [CB.EN.U4ECE24016]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:10 PM - 02:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T285", leader: "Suthasrinitha [CB.AI.U4AID25153]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:30 PM - 02:50 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T287", leader: "K.S.Sowparnika [CB.EN.U4CIE26028]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:50 PM - 03:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T130", leader: "V Karthik Chockalingam [CB.SC.U4CSE26659]", problem: "SIH26098 - Precision Guidance and Smart Fuze Integration System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Defense Tech", time: "03:10 PM - 03:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T353", leader: "Dhiyayanth [CB.EN.U4EEE25113]", problem: "SIH26220 - Swadeshi: Renewable & Sustainable Energy Systems.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Energy Tech", time: "03:50 PM - 04:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" }
+        ];
+
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function handleSearchKeyPress(e) {
+            if (e.key === 'Enter') {
+                searchTeamVenue();
+            }
+        }
+
+        function searchTeamVenue() {
+            const input = document.getElementById('search-team-input').value.trim().toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            
+            if (!input) {
+                resultsContainer.style.display = 'none';
+                resultsContainer.innerHTML = '';
+                return;
+            }
+            
+            const matches = TEAMS_DATABASE.filter(t => 
+                t.id.toLowerCase().includes(input) || 
+                t.leader.toLowerCase().includes(input) ||
+                t.problem.toLowerCase().includes(input)
+            );
+            
+            resultsContainer.style.display = 'block';
+            
+            if (matches.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="search-no-match">
+                        ⚠️ No team found matching "<strong>${escapeHtml(input)}</strong>". Please verify your Team ID or Team Leader Name.
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = `<div class="search-match-header">Found ${matches.length} matching team(s):</div>`;
+            matches.forEach(team => {
+                const linkHref = isVolunteer ? `${team.file}?mode=volunteer` : team.file;
+                html += `
+                    <div class="search-result-card">
+                        <div class="search-res-top">
+                            <span class="search-res-id">${escapeHtml(team.id)}</span>
+                            <span class="search-res-panel">${escapeHtml(team.panel)}</span>
+                        </div>
+                        <div class="search-res-leader">👤 <strong>Leader:</strong> ${escapeHtml(team.leader)}</div>
+                        <div class="search-res-problem">📋 <strong>Problem:</strong> ${escapeHtml(team.problem)}</div>
+                        <div class="search-res-time">⏰ <strong>Slot:</strong> ${escapeHtml(team.time)}</div>
+                        <div class="search-res-action">
+                            <a href="${linkHref}" class="btn-goto-venue">Go to Venue Schedule (${escapeHtml(team.domain)}) →</a>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            resultsContainer.innerHTML = html;
+        }
+
+        function applyRoleUI() {
+            const banner = document.getElementById('role-banner');
+            if (banner) {
+                banner.innerHTML = isVolunteer ?
+                    '<span class="mode-badge mode-volunteer">⚡ Volunteer Edit Mode Active (Realtime Sync Enabled)</span>' :
+                    '<span class="mode-badge mode-participant">👁 Live Schedule Directory (Read-Only)</span>';
+            }
+
+            document.querySelectorAll('.status-btn').forEach(btn => {
+                if (!isVolunteer) {
+                    btn.classList.add('read-only');
+                    btn.setAttribute('title', 'Read-only schedule view');
+                } else {
+                    btn.classList.remove('read-only');
+                    btn.setAttribute('title', 'Click to toggle: Scheduled → Ongoing → Completed');
+                }
+            });
+
+            if (isVolunteer) {
+                document.querySelectorAll('.panel-link').forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && !href.includes('?') && !href.startsWith('javascript')) {
+                        link.setAttribute('href', href + '?mode=volunteer');
+                    }
+                });
+            }
+        }
+
+        function updateButtonStatus(teamId, status) {
+            if (!STATUS_CLASSES[status]) return;
+            const btns = document.querySelectorAll(`.status-btn[data-team="${teamId}"]`);
+            btns.forEach(btn => {
+                btn.textContent = status;
+                btn.className = 'status-btn ' + STATUS_CLASSES[status] + (isVolunteer ? '' : ' read-only');
+            });
+        }
+
+        function toggleStatus(btn) {
+            if (!isVolunteer) return;
+            const teamId = btn.getAttribute('data-team');
+            const current = btn.textContent.trim();
+            let nextIdx = (STATUSES.indexOf(current) + 1) % STATUSES.length;
+            if (nextIdx === -1) nextIdx = 0;
+            const nextStatus = STATUSES[nextIdx];
+
+            updateButtonStatus(teamId, nextStatus);
+
+            if (teamId) {
+                localStorage.setItem('sih_status_' + teamId, nextStatus);
+                if (firebaseInitialized && db) db.ref('statuses/' + teamId).set(nextStatus);
+            }
+        }
+
+        function loadSavedStatuses() {
+            document.querySelectorAll('.status-btn').forEach(btn => {
+                const teamId = btn.getAttribute('data-team');
+                if (teamId) {
+                    const saved = localStorage.getItem('sih_status_' + teamId);
+                    if (saved && STATUS_CLASSES[saved]) {
+                        btn.textContent = saved;
+                        btn.className = 'status-btn ' + STATUS_CLASSES[saved] + (isVolunteer ? '' : ' read-only');
+                    }
+                }
+            });
+        }
+
+        function initRealtimeSync() {
+            if (firebaseInitialized && db) {
+                db.ref('statuses').on('value', (snapshot) => {
+                    const data = snapshot.val() || {};
+                    Object.keys(data).forEach(teamId => {
+                        updateButtonStatus(teamId, data[teamId]);
+                        localStorage.setItem('sih_status_' + teamId, data[teamId]);
+                    });
+                });
+            } else {
+                loadSavedStatuses();
+                window.addEventListener('storage', (e) => {
+                    if (e.key && e.key.startsWith('sih_status_')) {
+                        updateButtonStatus(e.key.replace('sih_status_', ''), e.newValue);
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            applyRoleUI();
+            initRealtimeSync();
+        });
     </script>
+
     <div style="text-align: center;">
         <p>&copy; SIH 2026 - Internal Hackathon <br/> Institution's Innovation Council. <br/> Amrita Vishwa Vidyapeetham Coimbatore.</p>
     </div>
