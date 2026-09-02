@@ -31,7 +31,7 @@ Updated Date: 2nd Sep 2026
         }
 
         /* Role & Realtime Badge Styles */
-        .role-banner-container { text-align: center; margin: 10px 0 25px 0; }
+        .role-banner-container { text-align: center; margin: 10px 0 20px 0; }
         .mode-badge {
             display: inline-block;
             padding: 6px 18px;
@@ -43,6 +43,141 @@ Updated Date: 2nd Sep 2026
         }
         .mode-volunteer { background-color: #e6f4ea; color: #137333; border: 1px solid #ceebe1; }
         .mode-participant { background-color: #e8f0fe; color: #1a73e8; border: 1px solid #d2e3fc; }
+
+        /* Search Section Styling */
+        .search-box-container {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #202124;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 11px 16px;
+            font-size: 14.5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .search-input:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        }
+
+        .btn-search {
+            background-color: #1a73e8;
+            color: #ffffff;
+            border: none;
+            padding: 11px 22px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-search:hover {
+            background-color: #1557b0;
+        }
+
+        .search-results {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .search-no-match {
+            background-color: #fce8e6;
+            color: #c5221f;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            border: 1px solid #fad2cf;
+        }
+
+        .search-match-header {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #5f6368;
+            margin-bottom: 10px;
+        }
+
+        .search-result-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            border-left: 4px solid #1a73e8;
+            border-radius: 6px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+        }
+
+        .search-res-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .search-res-id {
+            font-weight: 700;
+            color: #1a73e8;
+            font-size: 15px;
+        }
+
+        .search-res-panel {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+
+        .search-res-leader, .search-res-problem, .search-res-time {
+            font-size: 13.5px;
+            color: #3c4043;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .search-res-action {
+            margin-top: 10px;
+        }
+
+        .btn-goto-venue {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-goto-venue:hover {
+            background-color: #1557b0;
+        }
 
         /* Panel Cards Grid */
         .panel-grid {
@@ -112,28 +247,57 @@ Updated Date: 2nd Sep 2026
         .card-info {
             font-size: 13.5px;
             color: #3c4043;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .card-info p {
             margin: 5px 0;
         }
 
-        .btn-view-schedule {
-            display: block;
-            text-align: center;
-            background-color: #1a73e8;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 16px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background-color 0.2s ease;
+        /* Dual Action Button Group */
+        .card-btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
         }
 
-        .btn-view-schedule:hover {
+        .btn-schedule {
+            flex: 1;
+            text-align: center;
+            padding: 9px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 13.5px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .btn-hardware {
+            background-color: #1a73e8;
+            color: #ffffff;
+            border: 1px solid #1a73e8;
+        }
+
+        .btn-hardware:hover {
             background-color: #1557b0;
+            border-color: #1557b0;
+        }
+
+        .btn-software {
+            background-color: #f1f3f4;
+            color: #5f6368;
+            border: 1px solid #dadce0;
+            cursor: not-allowed;
+            opacity: 0.85;
+        }
+
+        .btn-software:hover {
+            background-color: #e8eaed;
         }
     </style>
 </head>
@@ -147,6 +311,16 @@ Updated Date: 2nd Sep 2026
     <p class="subtitle">Internal Hackathon — Venue & Jury Panel Directory</p>
 
     <div id="role-banner" class="role-banner-container"></div>
+
+    <!-- Search Section -->
+    <div class="search-box-container">
+        <div class="search-title">🔍 Find Your Team Venue & Presentation Schedule</div>
+        <div class="search-input-wrapper">
+            <input type="text" id="search-team-input" class="search-input" placeholder="Enter Team ID (e.g. SIH26-A0H-T038) or Leader Name..." onkeypress="handleSearchKeyPress(event)" />
+            <button class="btn-search" onclick="searchTeamVenue()">Search</button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
 
     <!-- Panel Cards Grid Directory -->
     <div class="panel-grid">
@@ -165,7 +339,10 @@ Updated Date: 2nd Sep 2026
                     <p><strong>Teams:</strong> 17 Registered Teams</p>
                 </div>
             </div>
-            <a href="saraswathihall.html" class="btn-view-schedule panel-link">View Panel Schedule →</a>
+            <div class="card-btn-group">
+                <a href="saraswathihall.html" class="btn-schedule btn-hardware panel-link">⚙️ Hardware</a>
+                <a href="javascript:void(0)" class="btn-schedule btn-software" onclick="alert('Software Schedule coming soon!')" title="Software Schedule coming soon">💻 Software</a>
+            </div>
         </div>
 
         <!-- Panel HW#P2 -->
@@ -182,7 +359,10 @@ Updated Date: 2nd Sep 2026
                     <p><strong>Teams:</strong> 16 Registered Teams</p>
                 </div>
             </div>
-            <a href="vivekahall.html" class="btn-view-schedule panel-link">View Panel Schedule →</a>
+            <div class="card-btn-group">
+                <a href="vivekahall.html" class="btn-schedule btn-hardware panel-link">⚙️ Hardware</a>
+                <a href="javascript:void(0)" class="btn-schedule btn-software" onclick="alert('Software Schedule coming soon!')" title="Software Schedule coming soon">💻 Software</a>
+            </div>
         </div>
 
         <!-- Panel HW#P3 -->
@@ -199,7 +379,10 @@ Updated Date: 2nd Sep 2026
                     <p><strong>Teams:</strong> 21 Registered Teams</p>
                 </div>
             </div>
-            <a href="achalahall.html" class="btn-view-schedule panel-link">View Panel Schedule →</a>
+            <div class="card-btn-group">
+                <a href="achalahall.html" class="btn-schedule btn-hardware panel-link">⚙️ Hardware</a>
+                <a href="javascript:void(0)" class="btn-schedule btn-software" onclick="alert('Software Schedule coming soon!')" title="Software Schedule coming soon">💻 Software</a>
+            </div>
         </div>
 
         <!-- Panel HW#P4 -->
@@ -216,7 +399,10 @@ Updated Date: 2nd Sep 2026
                     <p><strong>Teams:</strong> 18 Registered Teams</p>
                 </div>
             </div>
-            <a href="pragnahall.html" class="btn-view-schedule panel-link">View Panel Schedule →</a>
+            <div class="card-btn-group">
+                <a href="pragnahall.html" class="btn-schedule btn-hardware panel-link">⚙️ Hardware</a>
+                <a href="javascript:void(0)" class="btn-schedule btn-software" onclick="alert('Software Schedule coming soon!')" title="Software Schedule coming soon">💻 Software</a>
+            </div>
         </div>
 
         <!-- Panel HW#P5 -->
@@ -233,7 +419,10 @@ Updated Date: 2nd Sep 2026
                     <p><strong>Teams:</strong> 15 Registered Teams</p>
                 </div>
             </div>
-            <a href="seminarhall.html" class="btn-view-schedule panel-link">View Panel Schedule →</a>
+            <div class="card-btn-group">
+                <a href="seminarhall.html" class="btn-schedule btn-hardware panel-link">⚙️ Hardware</a>
+                <a href="javascript:void(0)" class="btn-schedule btn-software" onclick="alert('Software Schedule coming soon!')" title="Software Schedule coming soon">💻 Software</a>
+            </div>
         </div>
 
     </div>
@@ -244,6 +433,168 @@ Updated Date: 2nd Sep 2026
                             urlParams.get('key') === 'sih_vol_2026' ||
                             urlParams.get('role') === 'volunteer' ||
                             urlParams.has('volunteer');
+
+        const TEAMS_DATABASE = [
+            // Saraswathi Hall (HW#P1)
+            { id: "SIH26-A0H-T038", leader: "Jayabalan Dharmadurai [CB.EN.U4ECE24124]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "09:00 AM - 09:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T222", leader: "B Dudhimnt [CB.EN.U4EEE26148]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "09:20 AM - 09:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T237", leader: "Dharshan P S [CB.EN.U4CCE25112]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "09:40 AM - 10:00 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T270", leader: "Gopiga Preethi M [CB.EN.U4ECE26213]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "10:00 AM - 10:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T322", leader: "PRATHIKSHA K S [CB.EN.U4CIE26048]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "10:40 AM - 11:00 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T325", leader: "Bhuvansankar S [CB.EN.U4EEE24009]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "11:00 AM - 11:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T367", leader: "Harita J [CB.EN.U4ELC25007]", problem: "SIH26007 - Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "11:20 AM - 11:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T114", leader: "Visaonth J [CB.EN.U4ECE25255]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "11:40 AM - 12:00 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T196", leader: "Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "12:00 PM - 12:20 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T303", leader: "Padhmavathi [CB.EN.U4EEE25031]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T041", leader: "DEEPAK RAJA KN [CB.EN.U4ECE25117]", problem: "SIH26172 - Low Latency and Efficient Voice Activator for Edge Devices.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T247", leader: "Dhyanesh Raja M S [CB.EN.U4ELC25114]", problem: "SIH26172 - Low Latency and Efficient Voice Activator for Edge Devices.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T251", leader: "Kavya Kartik [CB.EN.U4AEE26026]", problem: "SIH26172 - Low Latency and Efficient Voice Activator for Edge Devices.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T280", leader: "Vedhanth M R [CB.EN.U4ELC24046]", problem: "SIH26172 - Low Latency and Efficient Voice Activator for Edge Devices.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T122", leader: "Aditya S [CB.AI.U4AID24104]", problem: "SIH26215 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Transportation & Logistics.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT (Digital Twin & CV)", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
+
+            // Viveka Hall (HW#P2)
+            { id: "SIH26-A0H-T035", leader: "Thulasiram Sudheeswar Reddy [CB.AI.U4AAR25053]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "09:00 AM - 09:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T070", leader: "Pranav Balaji T [CB.EN.U4EEE25153]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "09:20 AM - 09:40 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T101", leader: "Akashh Ramesh Chandar [CB.EN.U4ECE25204]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "09:40 AM - 10:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T216", leader: "Poonthalir.S.T [CB.SC.U4CSE25549]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "10:00 AM - 10:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T249", leader: "Ridhu Pharan Anandakumar [CB.EN.U4ECE23133]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "10:40 AM - 11:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T385", leader: "A R Abhinavendra [CB.EN.U4ECE24002]", problem: "SIH26052 - Adaptive noise cancellation (ANC) system.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "11:00 AM - 11:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "11:20 AM - 11:40 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T117", leader: "SANJAY S M [CB.AI.U4QTS25038]", problem: "SIH26088 - Multilingual Cooperative Governance & Legal Assistance Chatbot.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "11:40 AM - 12:00 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T276", leader: "K Shrivinay [CB.EN.U4ECE26225]", problem: "SIH26109 - AI-Based Predictive Modelling for Bovine Mastitis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "12:00 PM - 12:20 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "01:30 PM - 01:50 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T087", leader: "AYSHA RUMANA M [CB.EN.U4CHE26105]", problem: "SIH26026 - Mobile/Handheld Narcotics & Explosives Detection.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "01:50 PM - 02:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T162", leader: "S Bharanidharan [CB.EN.U4EEE26047]", problem: "SIH26026 - Mobile/Handheld Narcotics & Explosives Detection.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "02:10 PM - 02:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T034", leader: "Raghammudi Veda Vamsi krishna [CB.SC.U4CSE25346]", problem: "SIH26179 - AI-powered retail intelligence platform.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "02:30 PM - 02:50 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T209", leader: "V Harshini [CB.EN.U4CCE25059]", problem: "SIH26179 - AI-powered retail intelligence platform.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "02:50 PM - 03:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T368", leader: "Manoj Narayanasamy [CB.EN.U4ELC24126]", problem: "SIH26179 - AI-powered retail intelligence platform.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "03:10 PM - 03:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T091", leader: "ROHIT LAL P P [CB.EN.U4ELC25129]", problem: "SIH26181 - Personal Health Companion.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / IoT & Cyber", time: "03:50 PM - 04:10 PM", file: "vivekahall.html" },
+
+            // Achala Hall (HW#P3)
+            { id: "SIH26-A0H-T177", leader: "DIVYANANDH J [CB.EN.U4ELC25008]", problem: "SIH26180 - Smart Farming Assistant for crop diseases.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "09:00 AM - 09:20 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T180", leader: "Iniya P [CB.EN.U4MEE26211]", problem: "SIH26180 - Smart Farming Assistant for crop diseases.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "09:20 AM - 09:40 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T205", leader: "Subash Chandra Bose G [CB.EN.U4ECE26251]", problem: "SIH26180 - Smart Farming Assistant for crop diseases.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "09:40 AM - 10:00 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T294", leader: "Saadhana Rajmohan [CB.EN.U4MEE25144]", problem: "SIH26180 - Smart Farming Assistant for crop diseases.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "10:00 AM - 10:20 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T374", leader: "Lightning logics [CB.EN.U4ARE25057]", problem: "SIH26180 - Smart Farming Assistant for crop diseases.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "10:40 AM - 11:00 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T138", leader: "Yazhini [CB.EN.U4CHE26052]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "11:00 AM - 11:20 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T158", leader: "Tevin Titus [CB.EN.U4MEE24150]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "11:20 AM - 11:40 AM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T200", leader: "ANANYA H [CB.EN.U4CCE25104]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "11:40 AM - 12:00 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "12:00 PM - 12:20 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T394", leader: "Thirupugazhl S D [CB.EN.U4EEE24149]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "01:30 PM - 01:50 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "01:50 PM - 02:10 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "02:10 PM - 02:30 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "02:30 PM - 02:50 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "02:50 PM - 03:10 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "03:10 PM - 03:30 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "03:50 PM - 04:10 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T291", leader: "S. Dharani Prasad [CB.EN.U4EEE26111]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "04:10 PM - 04:30 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "04:30 PM - 04:50 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T185", leader: "D Geethasree [CB.EN.U4ECE26208]", problem: "SIH26212 - Swadeshi: Clean & Green Tech.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "04:50 PM - 05:10 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "05:10 PM - 05:30 PM", file: "achalahall.html" },
+            { id: "SIH26-A0H-T241", leader: "C INDRAJITH [CB.EN.U4CHE24008]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P3 - Achala Hall (AB3)", domain: "Agri & Clean Tech", time: "05:30 PM - 05:50 PM", file: "achalahall.html" },
+
+            // Pragna Hall (HW#P4)
+            { id: "SIH26-A0H-T218", leader: "RAHUL SANJIV R [CB.EN.U4ELC26038]", problem: "SIH26177 - Autonomous drone for search-and-rescue.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "09:00 AM - 09:20 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T326", leader: "Thilak Sujan K S [CB.EN.U4CCE24056]", problem: "SIH26177 - Autonomous drone for search-and-rescue.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "09:20 AM - 09:40 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T390", leader: "Yuthikhaa V [CB.EN.U4CCE24062]", problem: "SIH26177 - Autonomous drone for search-and-rescue.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "09:40 AM - 10:00 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T033", leader: "Ashwanth S [CB.AI.U4AAR26009]", problem: "SIH26112 - Modular Autonomous Mobile Robot (AMR) Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "10:00 AM - 10:20 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T047", leader: "Anaswar Mahesh [CB.EN.U4ARE24005]", problem: "SIH26112 - Modular Autonomous Mobile Robot (AMR) Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "10:40 AM - 11:00 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T273", leader: "Avinash K S [CB.EN.U4ELC26107]", problem: "SIH26112 - Modular Autonomous Mobile Robot (AMR) Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "11:00 AM - 11:20 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T302", leader: "Vyshanth P S [CB.EN.U4MEE25052]", problem: "SIH26112 - Modular Autonomous Mobile Robot (AMR) Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "11:20 AM - 11:40 AM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T036", leader: "Roahith P [CB.EN.U4CCE26144]", problem: "SIH26039 - Underground Mine Safety & Rescue System.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "11:40 AM - 12:00 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T090", leader: "Aditya Hamsaneni [CB.AI.U4AAR26004]", problem: "SIH26039 - Underground Mine Safety & Rescue System.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "12:00 PM - 12:20 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T278", leader: "Parthiv PC [CB.EN.U4ELC26132]", problem: "SIH26039 - Underground Mine Safety & Rescue System.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "01:30 PM - 01:50 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T298", leader: "Shreeya. B [CB.EN.U4ELC25135]", problem: "SIH26039 - Underground Mine Safety & Rescue System.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "01:50 PM - 02:10 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T144", leader: "M Dakshinesh [CB.EN.U4EEE25127]", problem: "SIH26065 - Autonomous Ocean Observation Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "02:10 PM - 02:30 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T345", leader: "ANANTHAKUMAR SARAVANAN [CB.EN.U4EEE24106]", problem: "SIH26065 - Autonomous Ocean Observation Platform.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "02:30 PM - 02:50 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T201", leader: "Adithya K [CB.EN.U4ARE26003]", problem: "SIH26064 - Seafloor Metal Detection Sensor.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "02:50 PM - 03:10 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T078", leader: "Adhithya R [CB.EN.U4ELC24028]", problem: "SIH26058 - Software-Defined Sonar Transmitter.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "03:10 PM - 03:30 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T375", leader: "Vinudharshini P P [CB.SC.U4AIE25161]", problem: "SIH26185 - Helmet mounted conformal antenna.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "03:50 PM - 04:10 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T151", leader: "Adhithyan A S [CB.PS.I5MAT25001]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "04:10 PM - 04:30 PM", file: "pragnahall.html" },
+            { id: "SIH26-A0H-T391", leader: "Aditya S [CB.EN.U4AEE24002]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P4 - Pragna Hall (AB3)", domain: "Robotics & Drones", time: "04:30 PM - 04:50 PM", file: "pragnahall.html" },
+
+            // Seminar Hall (HW#P5)
+            { id: "SIH26-A0H-T111", leader: "Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25136]", problem: "SIH26049 - Electrical equipment for High Altitude Areas (HAA).", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "09:00 AM - 09:20 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T146", leader: "K Sanjeev Kumar [CB.EN.U4EEE26117]", problem: "SIH26049 - Electrical equipment for High Altitude Areas (HAA).", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "09:20 AM - 09:40 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T215", leader: "Sivasankari S [CB.EN.U4EEE24141]", problem: "SIH26049 - Electrical equipment for High Altitude Areas (HAA).", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "09:40 AM - 10:00 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T341", leader: "Harish Pidikiti [CB.EN.U4EEE24020]", problem: "SIH26049 - Electrical equipment for High Altitude Areas (HAA).", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "10:00 AM - 10:20 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T387", leader: "KAVINSIDDHARTH S [CB.EN.U4MEE24130]", problem: "SIH26049 - Electrical equipment for High Altitude Areas (HAA).", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "10:40 AM - 11:00 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T226", leader: "Girisudhan V [CB.EN.U4ECE24016]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "11:00 AM - 11:20 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T285", leader: "Suthasrinitha [CB.AI.U4AID25153]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "11:20 AM - 11:40 AM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T287", leader: "K.S.Sowparnika [CB.EN.U4CIE26028]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "11:40 AM - 12:00 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T189", leader: "Jeevanayagam S [CB.EN.U4ELC25015]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "12:00 PM - 12:20 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T267", leader: "Midhun M [CB.EN.U4EEE25026]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "01:30 PM - 01:50 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T347", leader: "M K Chanjanaa [CB.EN.U4ELC24021]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "01:50 PM - 02:10 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T130", leader: "V Karthik Chockalingam [CB.SC.U4CSE26659]", problem: "SIH26098 - Precision Guidance and Smart Fuze System.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "02:10 PM - 02:30 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T353", leader: "Dhiyayanth [CB.EN.U4EEE25113]", problem: "SIH26220 - Swadeshi: Renewable & Sustainable Energy.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "02:30 PM - 02:50 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T074", leader: "Savetha Aravindan [CB.EN.U4ELC26149]", problem: "SIH26222 - Swadeshi: Smart Education & Digital Learning.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "02:50 PM - 03:10 PM", file: "seminarhall.html" },
+            { id: "SIH26-A0H-T083", leader: "SriSailaswaran A [CB.EN.U4EEE25044]", problem: "SIH26222 - Swadeshi: Smart Education & Digital Learning.", panel: "HW#P5 - Seminar Hall (AB3)", domain: "ECE / EEE", time: "03:10 PM - 03:30 PM", file: "seminarhall.html" }
+        ];
+
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function handleSearchKeyPress(e) {
+            if (e.key === 'Enter') {
+                searchTeamVenue();
+            }
+        }
+
+        function searchTeamVenue() {
+            const input = document.getElementById('search-team-input').value.trim().toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            
+            if (!input) {
+                resultsContainer.style.display = 'none';
+                resultsContainer.innerHTML = '';
+                return;
+            }
+            
+            const matches = TEAMS_DATABASE.filter(t => 
+                t.id.toLowerCase().includes(input) || 
+                t.leader.toLowerCase().includes(input) ||
+                t.problem.toLowerCase().includes(input)
+            );
+            
+            resultsContainer.style.display = 'block';
+            
+            if (matches.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="search-no-match">
+                        ⚠️ No team found matching "<strong>${escapeHtml(input)}</strong>". Please verify your Team ID or Team Leader Name.
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = `<div class="search-match-header">Found ${matches.length} matching team(s):</div>`;
+            matches.forEach(team => {
+                const linkHref = isVolunteer ? `${team.file}?mode=volunteer` : team.file;
+                html += `
+                    <div class="search-result-card">
+                        <div class="search-res-top">
+                            <span class="search-res-id">${escapeHtml(team.id)}</span>
+                            <span class="search-res-panel">${escapeHtml(team.panel)}</span>
+                        </div>
+                        <div class="search-res-leader">👤 <strong>Leader:</strong> ${escapeHtml(team.leader)}</div>
+                        <div class="search-res-problem">📋 <strong>Problem:</strong> ${escapeHtml(team.problem)}</div>
+                        <div class="search-res-time">⏰ <strong>Slot:</strong> ${escapeHtml(team.time)}</div>
+                        <div class="search-res-action">
+                            <a href="${linkHref}" class="btn-goto-venue">Go to Venue Schedule (${escapeHtml(team.domain)}) →</a>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            resultsContainer.innerHTML = html;
+        }
 
         window.addEventListener('DOMContentLoaded', () => {
             const banner = document.getElementById('role-banner');
@@ -257,7 +608,7 @@ Updated Date: 2nd Sep 2026
             if (isVolunteer) {
                 document.querySelectorAll('.panel-link').forEach(link => {
                     const href = link.getAttribute('href');
-                    if (href && !href.includes('?')) {
+                    if (href && !href.includes('?') && !href.startsWith('javascript')) {
                         link.setAttribute('href', href + '?mode=volunteer');
                     }
                 });
