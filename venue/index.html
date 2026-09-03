@@ -328,25 +328,7 @@ Updated Date: 2nd Sep 2026
             font-size: 13.5px;
         }
 
-        .search-box-container {
-            padding: 14px;
-            margin-bottom: 20px;
-        }
 
-        .search-input-wrapper {
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .search-input {
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 13.5px;
-        }
-
-        .btn-search {
-            width: 100%;
-        }
 
         .hall-tabs-container {
             flex-direction: column;
@@ -493,142 +475,7 @@ Updated Date: 2nd Sep 2026
         background-color: #f1f3f4;
     }
 
-    /* Search Section Styling */
-    .search-box-container {
-        max-width: 700px;
-        margin: 0 auto 30px auto;
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        border: 1px solid #e0e0e0;
-    }
 
-    .search-title {
-        font-size: 15px;
-        font-weight: 700;
-        color: #202124;
-        margin-bottom: 12px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .search-input-wrapper {
-        display: flex;
-        gap: 10px;
-    }
-
-    .search-input {
-        flex: 1;
-        padding: 11px 16px;
-        font-size: 14.5px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        outline: none;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .search-input:focus {
-        border-color: #1a73e8;
-        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
-    }
-
-    .btn-search {
-        background-color: #1a73e8;
-        color: #ffffff;
-        border: none;
-        padding: 11px 22px;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 14.5px;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-    }
-
-    .btn-search:hover {
-        background-color: #1557b0;
-    }
-
-    .search-results {
-        margin-top: 15px;
-        display: none;
-    }
-
-    .search-no-match {
-        background-color: #fce8e6;
-        color: #c5221f;
-        padding: 12px 16px;
-        border-radius: 6px;
-        font-size: 14px;
-        border: 1px solid #fad2cf;
-    }
-
-    .search-match-header {
-        font-size: 13.5px;
-        font-weight: 600;
-        color: #5f6368;
-        margin-bottom: 10px;
-    }
-
-    .search-result-card {
-        background-color: #f8f9fa;
-        border: 1px solid #dadce0;
-        border-left: 4px solid #1a73e8;
-        border-radius: 6px;
-        padding: 14px 16px;
-        margin-bottom: 10px;
-    }
-
-    .search-res-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 8px;
-    }
-
-    .search-res-id {
-        font-weight: 700;
-        color: #1a73e8;
-        font-size: 15px;
-    }
-
-    .search-res-panel {
-        background-color: #e8f0fe;
-        color: #1a73e8;
-        font-weight: 600;
-        font-size: 13px;
-        padding: 3px 10px;
-        border-radius: 12px;
-    }
-
-    .search-res-leader,
-    .search-res-problem,
-    .search-res-time {
-        font-size: 13.5px;
-        color: #3c4043;
-        margin-bottom: 5px;
-        line-height: 1.4;
-    }
-
-    .search-res-action {
-        margin-top: 10px;
-    }
-
-    .btn-goto-venue {
-        display: inline-block;
-        background-color: #1a73e8;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 6px 14px;
-        border-radius: 4px;
-        font-size: 13px;
-        font-weight: 600;
-    }
-
-    .btn-goto-venue:hover {
-        background-color: #1557b0;
-    }
 
     /* Schedule Table Styling */
     table {
@@ -871,17 +718,7 @@ Updated Date: 2nd Sep 2026
 
 <!-- Hardware Track Content Area -->
 <div id="hardware-track-content">
-    <!-- Search Section -->
-    <div class="search-box-container">
-        <div class="search-title">🔍 Find Your Team Venue & Presentation Schedule</div>
-        <div class="search-input-wrapper">
-            <input type="text" id="search-team-input" class="search-input"
-                placeholder="Enter Team ID (e.g. SIH26-A0H-T038) or Leader Name..."
-                onkeypress="handleSearchKeyPress(event)" />
-            <button class="btn-search" onclick="searchTeamVenue()">Search</button>
-        </div>
-        <div id="search-results" class="search-results"></div>
-    </div>
+
 
     <!-- Step 2: Available Halls Tabs -->
     <div class="hall-tabs-container">
@@ -1517,60 +1354,7 @@ Updated Date: 2nd Sep 2026
             .replace(/"/g, '&quot;');
     }
 
-    function handleSearchKeyPress(e) {
-        if (e.key === 'Enter') {
-            searchTeamVenue();
-        }
-    }
 
-    function searchTeamVenue() {
-        const input = document.getElementById('search-team-input').value.trim().toLowerCase();
-        const resultsContainer = document.getElementById('search-results');
-
-        if (!input) {
-            resultsContainer.style.display = 'none';
-            resultsContainer.innerHTML = '';
-            return;
-        }
-
-        const matches = TEAMS_DATABASE.filter(t =>
-            t.id.toLowerCase().includes(input) ||
-            t.leader.toLowerCase().includes(input) ||
-            t.problem.toLowerCase().includes(input)
-        );
-
-        resultsContainer.style.display = 'block';
-
-        if (matches.length === 0) {
-            resultsContainer.innerHTML = `
-                <div class="search-no-match">
-                    ⚠️ No team found matching "<strong>${escapeHtml(input)}</strong>". Please verify your Team ID or Team Leader Name.
-                </div>
-            `;
-            return;
-        }
-
-        let html = `<div class="search-match-header">Found ${matches.length} matching team(s):</div>`;
-        matches.forEach(team => {
-            const linkHref = isVolunteer ? `${team.file}?mode=volunteer` : team.file;
-            html += `
-                <div class="search-result-card">
-                    <div class="search-res-top">
-                        <span class="search-res-id">${escapeHtml(team.id)}</span>
-                        <span class="search-res-panel">${escapeHtml(team.panel)}</span>
-                    </div>
-                    <div class="search-res-leader">👤 <strong>Leader:</strong> ${escapeHtml(team.leader)}</div>
-                    <div class="search-res-problem">📋 <strong>Problem:</strong> ${escapeHtml(team.problem)}</div>
-                    <div class="search-res-time">⏰ <strong>Slot:</strong> ${escapeHtml(team.time)}</div>
-                    <div class="search-res-action">
-                        <a href="${linkHref}" class="btn-goto-venue">Go to Venue Schedule (${escapeHtml(team.domain)}) →</a>
-                    </div>
-                </div>
-            `;
-        });
-
-        resultsContainer.innerHTML = html;
-    }
 
     function applyRoleUI() {
         const banner = document.getElementById('role-banner');
