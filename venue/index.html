@@ -1319,10 +1319,624 @@ Updated Date: 2nd Sep 2026
 
     <!-- Software Track Content Area -->
     <div id="software-track-content" style="display: none;">
-        <div class="software-placeholder-card">
-            <h3>💻 Software Track Schedules</h3>
-            <p>Software track jury panels and hall allocations are currently being finalized.<br />Please check back
-                soon for live schedule updates!</p>
+        <!-- Step 2: Available Software Track Panels Tabs -->
+        <div class="hall-tabs-container">
+            <button id="sw-tab-panel1" class="hall-tab active" onclick="switchSoftwarePanel('panel1')">💻 SW#P1 (Panel 1)</button>
+            <button id="sw-tab-panel2" class="hall-tab" onclick="switchSoftwarePanel('panel2')">💻 SW#P2 (Panel 2)</button>
+            <button id="sw-tab-panel3" class="hall-tab" onclick="switchSoftwarePanel('panel3')">💻 SW#P3 (Panel 3)</button>
+            <button id="sw-tab-panel4" class="hall-tab" onclick="switchSoftwarePanel('panel4')">💻 SW#P4 (Panel 4)</button>
+        </div>
+
+        <!-- Software Panel 1 -->
+        <div id="sw-content-panel1" class="panel-details">
+            <div class="hall-header-bar">
+                <h3>SW#P1 - Software Panel 1 <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">4, 5 & 6 Sep 2026</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">[Software Venue 1 / Hall Name]</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="5" class="col-judge">J1</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T001</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T001" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T002</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T002" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T003</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T003" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T004</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T004" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T005</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T005" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="col-judge">J2</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T006</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T006" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T007</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T007" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T008</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T008" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T009</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T009" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T010</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T010" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="5" class="col-judge">J3</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T011</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T011" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T012</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T012" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T013</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T013" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T014</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T014" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW1-T015</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW1-T015" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Software Panel 2 -->
+        <div id="sw-content-panel2" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>SW#P2 - Software Panel 2 <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">4, 5 & 6 Sep 2026</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">[Software Venue 2 / Hall Name]</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="5" class="col-judge">J1</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T001</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T001" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T002</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T002" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T003</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T003" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T004</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T004" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T005</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T005" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="col-judge">J2</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T006</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T006" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T007</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T007" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T008</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T008" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T009</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T009" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T010</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T010" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="5" class="col-judge">J3</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T011</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T011" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T012</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T012" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T013</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T013" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T014</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T014" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW2-T015</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW2-T015" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Software Panel 3 -->
+        <div id="sw-content-panel3" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>SW#P3 - Software Panel 3 <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">4, 5 & 6 Sep 2026</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">[Software Venue 3 / Hall Name]</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="5" class="col-judge">J1</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T001</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T001" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T002</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T002" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T003</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T003" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T004</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T004" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T005</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T005" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="col-judge">J2</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T006</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T006" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T007</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T007" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T008</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T008" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T009</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T009" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T010</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T010" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="5" class="col-judge">J3</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T011</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T011" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T012</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T012" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T013</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T013" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T014</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T014" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW3-T015</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW3-T015" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Software Panel 4 -->
+        <div id="sw-content-panel4" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>SW#P4 - Software Panel 4 <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">4, 5 & 6 Sep 2026</span></p>
+            <p><strong>Venue:</strong> <span class="highlight">[Software Venue 4 / Hall Name]</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="5" class="col-judge">J1</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T001</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T001" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T002</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T002" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T003</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T003" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T004</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T004" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T005</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T005" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="col-judge">J2</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T006</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T006" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T007</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T007" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T008</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T008" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T009</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T009" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T010</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T010" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="5" class="col-judge">J3</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T011</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T011" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T012</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T012" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T013</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T013" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T014</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T014" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="problem-cell">[SIH26XXX - Problem Statement Title]</td>
+                        <td class="col-team-no">SIH26-SW4-T015</td>
+                        <td class="col-team-name">[Team Leader Name]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-SW4-T015" onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -1412,6 +2026,21 @@ Updated Date: 2nd Sep 2026
                 if (rejContent) rejContent.style.display = 'block';
             }
         }
+
+        function switchSoftwarePanel(panel) {
+            ['panel1', 'panel2', 'panel3', 'panel4'].forEach(p => {
+                const tab = document.getElementById('sw-tab-' + p);
+                const content = document.getElementById('sw-content-' + p);
+                if (tab) tab.classList.remove('active');
+                if (content) content.style.display = 'none';
+            });
+
+            const activeTab = document.getElementById('sw-tab-' + panel);
+            const activeContent = document.getElementById('sw-content-' + panel);
+            if (activeTab) activeTab.classList.add('active');
+            if (activeContent) activeContent.style.display = 'block';
+        }
+
 
         const TEAMS_DATABASE = [
             // Saraswathi Hall (HW#P1)
@@ -1765,15 +2394,14 @@ Updated Date: 2nd Sep 2026
     <div id="instructions-modal" class="modal-overlay">
         <div class="modal-card">
             <div class="modal-header">
-                <div class="modal-title">📋 Instructions to Participants</div>
+                <div class="modal-title">📋 Instructions to Participants – Day of Presentation</div>
                 <button class="modal-close-btn" onclick="closeModal('instructions-modal')">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="instruction-section">
                     <h4 class="instruction-heading">1. Reporting</h4>
                     <ul class="instruction-list">
-                        <li>All teams must report at the venue at least <strong>30 minutes</strong> before their
-                            allotted presentation time.</li>
+                        <li>All teams must report at the venue at least <strong>30 minutes</strong> before their allotted presentation time.</li>
                         <li>Teams must remain available at the venue until their evaluation is completed.</li>
                     </ul>
                 </div>
@@ -1781,23 +2409,18 @@ Updated Date: 2nd Sep 2026
                 <div class="instruction-section">
                     <h4 class="instruction-heading">2. Presentation Time</h4>
                     <ul class="instruction-list">
-                        <li>Each team will be given a maximum of <strong>10 minutes</strong> for their presentation.Teams must strictly adhere to the 10-minute time limit.
-                        </li>
+                        <li>Each team will be given a maximum of <strong>10 minutes</strong> for their presentation.</li>
+                        <li>Teams must strictly adhere to the 10-minute time limit.</li>
                         <li>Judges may stop the presentation if the allotted time is exceeded.</li>
-                        <li>Teams are advised to rehearse beforehand and ensure that their presentation is completed
-                            within the allotted time.</li>
+                        <li>Teams are advised to rehearse beforehand and ensure that their presentation is completed within the allotted time.</li>
                     </ul>
                 </div>
 
                 <div class="instruction-section">
                     <h4 class="instruction-heading">3. Presentation Setup</h4>
                     <ul class="instruction-list">
-                        <li>Carry the presentation in <strong>PPT/PDF format</strong> and keep a backup copy on a pen
-                            drive/cloud storage.</li>
-                        <li>Ensure that the presentation can be accessed and displayed without technical difficulties.
-                        </li>
-                        <li>Teams using hardware must bring all required components and accessories necessary for their
-                            presentation.</li>
+                        <li>Carry the presentation in <strong>PPT/PDF format</strong> and keep a backup copy on a pen drive/cloud storage.</li>
+                        <li>Ensure that the presentation can be accessed and displayed without technical difficulties.</li>
                     </ul>
                 </div>
 
@@ -1805,11 +2428,8 @@ Updated Date: 2nd Sep 2026
                     <h4 class="instruction-heading">4. GitHub Repository</h4>
                     <ul class="instruction-list">
                         <li>The team's GitHub repository must be updated before the presentation.</li>
-                        <li>The repository should contain all required project details, source code, documentation,
-                            relevant files, and other supporting materials.</li>
-                        <li>Ensure that the <strong>README</strong> file is complete and provides all necessary
-                            information about the project.</li>
-                        <li>The repository link must be accessible to the organizers and judges.</li>
+                        <li>Ensure that the <strong>README</strong> file is complete and provides all necessary information about the project.</li>
+                        <li>The repository will be once again verified after the presentation.</li>
                         <li>Judges may refer to the GitHub repository as part of the evaluation process.</li>
                     </ul>
                 </div>
@@ -1819,8 +2439,7 @@ Updated Date: 2nd Sep 2026
                     <ul class="instruction-list">
                         <li>All team members should be familiar with the project and its implementation.</li>
                         <li>Judges may direct questions to any member of the team.</li>
-                        <li>Team members should be able to clearly explain their individual contributions when asked.
-                        </li>
+                        <li>Team members should be able to clearly explain their individual contributions when asked.</li>
                     </ul>
                 </div>
 
@@ -1829,8 +2448,7 @@ Updated Date: 2nd Sep 2026
                     <ul class="instruction-list">
                         <li>Listen carefully to the questions and answer precisely and confidently.</li>
                         <li>If you do not know an answer, be honest rather than providing incorrect information.</li>
-                        <li>Teams should be prepared for questions related to their technical approach, innovation,
-                            feasibility, scalability, security, cost, implementation, and future development.</li>
+                        <li>Teams should be prepared for questions related to their technical approach, innovation, feasibility, scalability, security, cost, implementation, and future development.</li>
                     </ul>
                 </div>
 
@@ -1841,22 +2459,17 @@ Updated Date: 2nd Sep 2026
                         <li>Do not interrupt other teams during their presentations.</li>
                         <li>Follow the instructions of the coordinators, technical team, and judges.</li>
                         <li>Be respectful and professional while interacting with judges and other participants.</li>
-                        <li>All team members are required to wear their <strong>ID cards and uniform</strong> at all
-                            times during the presentation.</li>
                     </ul>
                 </div>
 
                 <div class="instruction-important-box">
                     <div class="important-title">⚠️ Important</div>
-                    <p>The presentation time is strictly limited to <strong>10 minutes</strong>. Plan, rehearse, and
-                        manage your time accordingly.</p>
-                    <p>Understand your problem. Present your solution clearly. Demonstrate your innovation. Be ready to
-                        answer questions and defend your technical decisions.</p>
+                    <p>The presentation time is strictly limited to <strong>10 minutes</strong>. Plan, rehearse, and manage your time accordingly.</p>
+                    <p>Understand your problem. Present your solution clearly. Demonstrate your innovation. Be ready to answer questions and defend your technical decisions.</p>
                 </div>
 
                 <div class="instruction-footer-note">
                     🌟 <strong>Best wishes to all teams! All the very best for the SIH Internal Hackathon!</strong> 🌟
-
                 </div>
             </div>
         </div>
