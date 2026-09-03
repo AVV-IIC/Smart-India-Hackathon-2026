@@ -744,9 +744,12 @@ Updated Date: 2nd Sep 2026
         .date-tabs-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            align-items: center;
+            position: relative;
             margin-bottom: 20px;
+            gap: 10px;
             flex-wrap: wrap;
+            width: 100%;
         }
 
         .date-tab {
@@ -974,6 +977,60 @@ Updated Date: 2nd Sep 2026
                 background-color: transparent;
             }
         }
+
+        /* Status Legend Boxes Styling */
+        .status-legend-wrapper {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .status-legend-box {
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            display: inline-block;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+            white-space: nowrap;
+        }
+
+        .legend-scheduled {
+            background-color: #1a73e8;
+            color: #ffffff;
+        }
+
+        .legend-completed {
+            background-color: #137333;
+            color: #ffffff;
+        }
+
+        .legend-withdrawn {
+            background-color: #e37400;
+            color: #ffffff;
+        }
+
+        .legend-didntshow {
+            background-color: #d93025;
+            color: #ffffff;
+        }
+
+        @media (max-width: 1024px) {
+            .date-tabs-container {
+                position: static;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .status-legend-wrapper {
+                position: static;
+                transform: none;
+                justify-content: center;
+            }
+        }
     </style>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
@@ -1044,6 +1101,12 @@ Updated Date: 2nd Sep 2026
                     Sep</button>
                 <button id="sar-date-tab-6" class="date-tab" onclick="switchHallDate('saraswathi', '6')">📅 6th
                     Sep</button>
+                <div id="sar-status-legend" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:17</span>
+                    <span class="status-legend-box legend-completed">Completed:12</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:01</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Turn Up:04</span>
+                </div>
             </div>
 
             <!-- Date 3rd Sep Content -->
@@ -1578,6 +1641,12 @@ Updated Date: 2nd Sep 2026
             <div class="date-tabs-container">
                 <button id="viv-date-tab-3" class="date-tab active completed" onclick="switchHallDate('viveka', '3')">📅
                     3rd Sep</button>
+                <div id="viv-status-legend" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Schedule:16</span>
+                    <span class="status-legend-box legend-completed">Completed:13</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:01</span>
+                    <span class="status-legend-box legend-didntshow">Re-Scheduled:02</span>
+                </div>
             </div>
 
             <!-- Date 3rd Sep Content -->
@@ -3030,6 +3099,12 @@ Updated Date: 2nd Sep 2026
             const activeContent = document.getElementById(`${prefix}-date-content-${date}`);
             if (activeTab) activeTab.classList.add('active');
             if (activeContent) activeContent.style.display = 'block';
+
+            // Show status legend ONLY on 3rd Sep, hide on 4th, 5th, 6th Sep
+            const legend = document.getElementById(`${prefix}-status-legend`);
+            if (legend) {
+                legend.style.display = (String(date) === '3') ? 'inline-flex' : 'none';
+            }
         }
 
         function switchSoftwareHall(hall) {
