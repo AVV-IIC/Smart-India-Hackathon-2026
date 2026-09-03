@@ -19,674 +19,744 @@ Updated Date: 2nd Sep 2026
             background-color: #f8f9fa;
         }
 
-    h2 {
-        text-align: center;
-        color: #1a73e8;
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        text-align: center;
-        color: #5f6368;
-        font-size: 15px;
-        margin-bottom: 25px;
-    }
-
-    /* Role & Realtime Badge Styles */
-    .role-banner-container {
-        text-align: center;
-        margin: 10px 0 20px 0;
-    }
-
-    .mode-badge {
-        display: inline-block;
-        padding: 6px 18px;
-        border-radius: 20px;
-        font-size: 13.5px;
-        font-weight: 600;
-        letter-spacing: 0.2px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    }
-
-    .mode-volunteer {
-        background-color: #e6f4ea;
-        color: #137333;
-        border: 1px solid #ceebe1;
-    }
-
-    .mode-participant {
-        background-color: #e8f0fe;
-        color: #1a73e8;
-        border: 1px solid #d2e3fc;
-    }
-
-    /* Track Selection Section */
-    .track-tabs-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin: 20px auto 30px auto;
-        max-width: 900px;
-        flex-wrap: wrap;
-    }
-
-    .track-tabs-container {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex: 1;
-        max-width: 600px;
-    }
-
-    .top-info-btns {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .info-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        padding: 12px 18px;
-        font-size: 14.5px;
-        font-weight: 600;
-        border-radius: 10px;
-        border: 1.5px solid #1a73e8;
-        background-color: #ffffff;
-        color: #1a73e8;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        white-space: nowrap;
-    }
-
-    .info-btn:hover {
-        background-color: #e8f0fe;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 10px rgba(26, 115, 232, 0.2);
-    }
-
-    /* Modal Styles */
-    .modal-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .modal-overlay.active {
-        display: flex;
-    }
-
-    .modal-card {
-        background: #ffffff;
-        border-radius: 14px;
-        max-width: 650px;
-        width: 100%;
-        max-height: 85vh;
-        overflow-y: auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        border: 1px solid #dadce0;
-        animation: modalFadeIn 0.25s ease-out;
-    }
-
-    @keyframes modalFadeIn {
-        from { opacity: 0; transform: scale(0.95) translateY(10px); }
-        to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-
-    .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 18px 24px;
-        border-bottom: 1px solid #e8eaed;
-        background-color: #f8f9fa;
-        border-top-left-radius: 14px;
-        border-top-right-radius: 14px;
-    }
-
-    .modal-title {
-        font-size: 18px;
-        font-weight: 700;
-        color: #1a73e8;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .modal-close-btn {
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #5f6368;
-        cursor: pointer;
-        padding: 0;
-        line-height: 1;
-        transition: color 0.2s ease;
-    }
-
-    .modal-close-btn:hover {
-        color: #d93025;
-    }
-
-    .modal-body {
-        padding: 24px;
-        color: #3c4043;
-        font-size: 14.5px;
-        line-height: 1.6;
-    }
-
-    /* FAQ & Accordion Styles */
-    .faq-item {
-        margin-bottom: 12px;
-        border: 1px solid #e8eaed;
-        border-radius: 10px;
-        background: #ffffff;
-        overflow: hidden;
-        transition: all 0.2s ease;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    }
-
-    .faq-item:hover {
-        border-color: #1a73e8;
-        box-shadow: 0 3px 8px rgba(26, 115, 232, 0.1);
-    }
-
-    .faq-question {
-        font-weight: 700;
-        color: #1a237e;
-        padding: 14px 18px;
-        background-color: #f8f9fa;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        user-select: none;
-        font-size: 14.5px;
-        transition: background-color 0.2s ease;
-    }
-
-    .faq-question:hover {
-        background-color: #e8f0fe;
-        color: #1a73e8;
-    }
-
-    .faq-toggle-icon {
-        font-size: 14px;
-        transition: transform 0.25s ease;
-        color: #1a73e8;
-        font-weight: bold;
-    }
-
-    .faq-item.active .faq-toggle-icon {
-        transform: rotate(180deg);
-    }
-
-    .faq-answer {
-        display: none;
-        padding: 16px 18px;
-        color: #3c4043;
-        background-color: #ffffff;
-        border-top: 1px solid #e8eaed;
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .faq-item.active .faq-answer {
-        display: block;
-        animation: fadeIn 0.2s ease;
-    }
-
-    .faq-list-items {
-        margin: 8px 0 0 0;
-        padding-left: 20px;
-    }
-
-    .faq-list-items li {
-        margin-bottom: 6px;
-    }
-
-    .faq-search-box {
-        width: 100%;
-        padding: 10px 14px;
-        font-size: 14px;
-        border: 1.5px solid #dadce0;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        box-sizing: border-box;
-        outline: none;
-        transition: border-color 0.2s ease;
-    }
-
-    .faq-search-box:focus {
-        border-color: #1a73e8;
-        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
-    }
-
-    .header-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    /* Mobile View Optimization */
-    @media (max-width: 768px) {
-        body {
-            margin: 10px 8px;
-            padding: 0;
-        }
-
         h2 {
-            font-size: 20px;
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 10px;
         }
 
         .subtitle {
-            font-size: 13.5px;
-            margin-bottom: 15px;
+            text-align: center;
+            color: #5f6368;
+            font-size: 15px;
+            margin-bottom: 25px;
         }
 
+        /* Role & Realtime Badge Styles */
+        .role-banner-container {
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        .mode-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 13.5px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .mode-volunteer {
+            background-color: #e6f4ea;
+            color: #137333;
+            border: 1px solid #ceebe1;
+        }
+
+        .mode-participant {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border: 1px solid #d2e3fc;
+        }
+
+        /* Track Selection Section */
         .track-tabs-wrapper {
-            flex-direction: column;
-            gap: 12px;
-            margin: 15px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 20px auto 30px auto;
+            max-width: 900px;
+            flex-wrap: wrap;
         }
 
         .track-tabs-container {
-            width: 100%;
-            max-width: 100%;
-            gap: 8px;
-        }
-
-        .track-tab {
-            padding: 12px 10px;
-            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex: 1;
+            max-width: 600px;
         }
 
         .top-info-btns {
-            width: 100%;
-            justify-content: space-between;
-            gap: 8px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
 
         .info-btn {
-            flex: 1;
-            justify-content: center;
-            padding: 10px 12px;
-            font-size: 13.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 12px 18px;
+            font-size: 14.5px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 1.5px solid #1a73e8;
+            background-color: #ffffff;
+            color: #1a73e8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            white-space: nowrap;
         }
 
-
-
-        .hall-tabs-container {
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 20px;
+        .info-btn:hover {
+            background-color: #e8f0fe;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(26, 115, 232, 0.2);
         }
 
-        .hall-tab {
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 12px;
-            font-size: 13.5px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
             box-sizing: border-box;
         }
 
-        .panel-details {
-            padding: 10px;
-            border-radius: 8px;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        table {
-            min-width: 620px;
-        }
-
-        th, td {
-            padding: 8px 6px;
-            font-size: 12.5px;
-        }
-
-        .modal-overlay {
-            padding: 10px;
+        .modal-overlay.active {
+            display: flex;
         }
 
         .modal-card {
-            max-width: 100%;
+            background: #ffffff;
+            border-radius: 14px;
+            max-width: 650px;
             width: 100%;
-            max-height: 92vh;
-            border-radius: 12px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid #dadce0;
+            animation: modalFadeIn 0.25s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
         }
 
         .modal-header {
-            padding: 14px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 24px;
+            border-bottom: 1px solid #e8eaed;
+            background-color: #f8f9fa;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
         }
 
         .modal-title {
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a73e8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .modal-close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #5f6368;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+
+        .modal-close-btn:hover {
+            color: #d93025;
         }
 
         .modal-body {
-            padding: 14px;
+            padding: 24px;
+            color: #3c4043;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        /* FAQ & Accordion Styles */
+        .faq-item {
+            margin-bottom: 12px;
+            border: 1px solid #e8eaed;
+            border-radius: 10px;
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-item:hover {
+            border-color: #1a73e8;
+            box-shadow: 0 3px 8px rgba(26, 115, 232, 0.1);
         }
 
         .faq-question {
-            font-size: 13.5px;
-            padding: 12px 14px;
+            font-weight: 700;
+            color: #1a237e;
+            padding: 14px 18px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            user-select: none;
+            font-size: 14.5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+        }
+
+        .faq-toggle-icon {
+            font-size: 14px;
+            transition: transform 0.25s ease;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(180deg);
         }
 
         .faq-answer {
-            font-size: 13px;
-            padding: 12px 14px;
+            display: none;
+            padding: 16px 18px;
+            color: #3c4043;
+            background-color: #ffffff;
+            border-top: 1px solid #e8eaed;
+            font-size: 14px;
+            line-height: 1.6;
         }
-    }
 
-    .instruction-section {
-        margin-bottom: 20px;
-    }
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
 
-    .instruction-section h4 {
-        color: #1a73e8;
-        font-size: 15.5px;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-    }
+        .faq-list-items {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+        }
 
-    .instruction-list {
-        padding-left: 20px;
-        margin: 0;
-    }
+        .faq-list-items li {
+            margin-bottom: 6px;
+        }
 
-    .instruction-list li {
-        margin-bottom: 8px;
-        color: #3c4043;
-    }
+        .faq-search-box {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 14px;
+            border: 1.5px solid #dadce0;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
 
-    .track-tab {
-        flex: 1;
-        padding: 16px 20px;
-        font-size: 16.5px;
-        font-weight: 700;
-        border-radius: 10px;
-        border: 2px solid #1a73e8;
-        background-color: #ffffff;
-        color: #1a73e8;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
+        .faq-search-box:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        }
 
-    .track-tab.active {
-        background-color: #1a73e8;
-        color: #ffffff;
-        box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
-    }
+        /* Instruction Modal Styles */
+        .instruction-section {
+            margin-bottom: 16px;
+            background: #ffffff;
+            border: 1px solid #e8eaed;
+            border-radius: 8px;
+            padding: 14px 18px;
+        }
 
-    .track-tab:hover {
-        transform: translateY(-2px);
-    }
+        .instruction-heading {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a237e;
+        }
 
-    /* Hall Selection Buttons */
-    .hall-tabs-container {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin: 0 auto 30px auto;
-        max-width: 900px;
-    }
+        .instruction-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #3c4043;
+            font-size: 14px;
+            line-height: 1.6;
+        }
 
-    .hall-tab {
-        flex: 1;
-        padding: 12px 18px;
-        font-size: 14.5px;
-        font-weight: 600;
-        border-radius: 8px;
-        border: 1px solid #dadce0;
-        background-color: #ffffff;
-        color: #3c4043;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        text-align: center;
-    }
+        .instruction-list li {
+            margin-bottom: 5px;
+        }
 
-    .hall-tab.active {
-        background-color: #e8f0fe;
-        color: #1a73e8;
-        border-color: #1a73e8;
-        font-weight: 700;
-    }
+        .instruction-important-box {
+            background-color: #fce8e6;
+            border: 1px solid #fad2cf;
+            border-left: 5px solid #d93025;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-top: 20px;
+            color: #5c1d19;
+        }
 
-    .hall-tab:hover {
-        background-color: #f1f3f4;
-    }
+        .instruction-important-box .important-title {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #c5221f;
+        }
+
+        .instruction-important-box p {
+            margin: 4px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .instruction-footer-note {
+            text-align: center;
+            margin-top: 18px;
+            padding: 12px;
+            background: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 8px;
+            font-size: 14.5px;
+        }
+
+        .header-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Mobile View Optimization */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px 8px;
+                padding: 0;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 13.5px;
+                margin-bottom: 15px;
+            }
+
+            .track-tabs-wrapper {
+                flex-direction: column;
+                gap: 12px;
+                margin: 15px auto;
+            }
+
+            .track-tabs-container {
+                width: 100%;
+                max-width: 100%;
+                gap: 8px;
+            }
+
+            .track-tab {
+                padding: 12px 10px;
+                font-size: 14px;
+            }
+
+            .top-info-btns {
+                width: 100%;
+                justify-content: space-between;
+                gap: 8px;
+            }
+
+            .info-btn {
+                flex: 1;
+                justify-content: center;
+                padding: 10px 12px;
+                font-size: 13.5px;
+            }
 
 
 
-    /* Schedule Table Styling */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 25px;
-        background: #ffffff;
-    }
+            .hall-tabs-container {
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 20px;
+            }
 
-    table,
-    th,
-    td {
-        border: 1px solid #ddd;
-    }
+            .hall-tab {
+                width: 100%;
+                padding: 12px;
+                font-size: 13.5px;
+                box-sizing: border-box;
+            }
 
-    th,
-    td {
-        padding: 9px 10px;
-        text-align: left;
-        vertical-align: middle;
-        font-size: 14px;
-    }
+            .panel-details {
+                padding: 10px;
+                border-radius: 8px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
 
-    th {
-        background-color: #f4f4f4;
-        font-weight: bold;
-    }
+            table {
+                min-width: 620px;
+            }
 
-    tr:hover {
-        background-color: #f8f9fa;
-    }
+            th,
+            td {
+                padding: 8px 6px;
+                font-size: 12.5px;
+            }
 
-    .col-sno {
-        width: 50px;
-        text-align: center;
-    }
+            .modal-overlay {
+                padding: 10px;
+            }
 
-    .col-time {
-        width: 155px;
-        white-space: nowrap;
-    }
+            .modal-card {
+                max-width: 100%;
+                width: 100%;
+                max-height: 92vh;
+                border-radius: 12px;
+            }
 
-    .col-judge {
-        width: 170px;
-        font-weight: 600;
-        color: #1a237e;
-        text-align: center;
-        vertical-align: middle;
-    }
+            .modal-header {
+                padding: 14px 16px;
+            }
 
-    .col-pid,
-    .problem-cell {
-        width: 30%;
-        font-size: 13.5px;
-        line-height: 1.4;
-        word-break: break-word;
-        vertical-align: middle;
-        text-align: left;
-    }
+            .modal-title {
+                font-size: 16px;
+            }
 
-    .col-team-no {
-        width: 140px;
-        white-space: nowrap;
-        font-weight: bold;
-    }
+            .modal-body {
+                padding: 14px;
+            }
 
-    .col-team-name {
-        width: auto;
-        word-break: break-word;
-    }
+            .faq-question {
+                font-size: 13.5px;
+                padding: 12px 14px;
+            }
 
-    .col-status {
-        width: 110px;
-        text-align: center;
-        white-space: nowrap;
-    }
+            .faq-answer {
+                font-size: 13px;
+                padding: 12px 14px;
+            }
+        }
 
-    .break-row {
-        background-color: #fff8e1 !important;
-        color: #b06000;
-        font-weight: bold;
-    }
+        .instruction-section {
+            margin-bottom: 20px;
+        }
 
-    .break-text {
-        text-align: center;
-        letter-spacing: 2px;
-        font-size: 13px;
-    }
+        .instruction-section h4 {
+            color: #1a73e8;
+            font-size: 15.5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-    .highlight {
-        background-color: #fce446;
-        padding: 2px 4px;
-        border-radius: 3px;
-    }
+        .instruction-list {
+            padding-left: 20px;
+            margin: 0;
+        }
 
-    .highlightc {
-        background-color: #1a73e8;
-        color: #FFFFFF;
-        padding: 3px 8px;
-        border-radius: 4px;
-        font-size: 13px;
-        font-weight: 500;
-        display: inline-block;
-    }
+        .instruction-list li {
+            margin-bottom: 8px;
+            color: #3c4043;
+        }
 
-    /* Interactive Status Button Styles */
-    .status-btn {
-        border: none;
-        border-radius: 4px;
-        padding: 5px 12px;
-        font-size: 13px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        display: inline-block;
-        min-width: 95px;
-        text-align: center;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        user-select: none;
-    }
+        .track-tab {
+            flex: 1;
+            padding: 16px 20px;
+            font-size: 16.5px;
+            font-weight: 700;
+            border-radius: 10px;
+            border: 2px solid #1a73e8;
+            background-color: #ffffff;
+            color: #1a73e8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
 
-    .status-btn:hover {
-        opacity: 0.9;
-        transform: translateY(-1px);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    }
+        .track-tab.active {
+            background-color: #1a73e8;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
+        }
 
-    .status-btn:active {
-        transform: translateY(0);
-    }
+        .track-tab:hover {
+            transform: translateY(-2px);
+        }
 
-    .status-scheduled {
-        background-color: #1a73e8;
-        color: #FFFFFF;
-    }
+        /* Hall Selection Buttons */
+        .hall-tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto 30px auto;
+            max-width: 900px;
+        }
 
-    .status-ongoing {
-        background-color: #e37400;
-        color: #FFFFFF;
-    }
+        .hall-tab {
+            flex: 1;
+            padding: 12px 18px;
+            font-size: 14.5px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid #dadce0;
+            background-color: #ffffff;
+            color: #3c4043;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
 
-    .status-completed {
-        background-color: #137333;
-        color: #FFFFFF;
-    }
+        .hall-tab.active {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-color: #1a73e8;
+            font-weight: 700;
+        }
 
-    .status-warning {
-        background-color: #d93025;
-        color: #FFFFFF;
-    }
-    .status-didntshowup{
-        background-color: red;
-        color: #FFFFFF;   
-    }
+        .hall-tab:hover {
+            background-color: #f1f3f4;
+        }
 
-    .status-btn.read-only {
-        cursor: default !important;
-        pointer-events: none !important;
-        opacity: 0.92;
-        box-shadow: none !important;
-    }
 
-    .hall-header-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
-    }
 
-    .btn-page-link {
-        display: inline-block;
-        background-color: #1a73e8;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 6px 14px;
-        border-radius: 6px;
-        font-size: 13px;
-        font-weight: 600;
-    }
+        /* Schedule Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            background: #ffffff;
+        }
 
-    .btn-page-link:hover {
-        background-color: #1557b0;
-    }
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
 
-    /* Software Track Placeholder Box */
-    .software-placeholder-card {
-        max-width: 600px;
-        margin: 40px auto;
-        background: #ffffff;
-        border-radius: 12px;
-        border: 2px dashed #1a73e8;
-        padding: 40px 25px;
-        text-align: center;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
+        th,
+        td {
+            padding: 9px 10px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 14px;
+        }
 
-    .software-placeholder-card h3 {
-        color: #1a73e8;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
 
-    .software-placeholder-card p {
-        color: #5f6368;
-        font-size: 15px;
-        line-height: 1.5;
-    }
-</style>
-<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .col-sno {
+            width: 50px;
+            text-align: center;
+        }
+
+        .col-time {
+            width: 155px;
+            white-space: nowrap;
+        }
+
+        .col-judge {
+            width: 170px;
+            font-weight: 600;
+            color: #1a237e;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .col-pid,
+        .problem-cell {
+            width: 30%;
+            font-size: 13.5px;
+            line-height: 1.4;
+            word-break: break-word;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .col-team-no {
+            width: 140px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .col-team-name {
+            width: auto;
+            word-break: break-word;
+        }
+
+        .col-status {
+            width: 110px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .break-row {
+            background-color: #fff8e1 !important;
+            color: #b06000;
+            font-weight: bold;
+        }
+
+        .break-text {
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .highlight {
+            background-color: #fce446;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .highlightc {
+            background-color: #1a73e8;
+            color: #FFFFFF;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        /* Interactive Status Button Styles */
+        .status-btn {
+            border: none;
+            border-radius: 4px;
+            padding: 5px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-block;
+            min-width: 95px;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            user-select: none;
+        }
+
+        .status-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .status-btn:active {
+            transform: translateY(0);
+        }
+
+        .status-scheduled {
+            background-color: #1a73e8;
+            color: #FFFFFF;
+        }
+
+        .status-ongoing {
+            background-color: #e37400;
+            color: #FFFFFF;
+        }
+
+        .status-completed {
+            background-color: #137333;
+            color: #FFFFFF;
+        }
+
+        .status-warning {
+            background-color: #d93025;
+            color: #FFFFFF;
+        }
+
+        .status-didntshowup {
+            background-color: red;
+            color: #FFFFFF;
+        }
+
+        .status-btn.read-only {
+            cursor: default !important;
+            pointer-events: none !important;
+            opacity: 0.92;
+            box-shadow: none !important;
+        }
+
+        .hall-header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .btn-page-link {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-page-link:hover {
+            background-color: #1557b0;
+        }
+
+        /* Software Track Placeholder Box */
+        .software-placeholder-card {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 2px dashed #1a73e8;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .software-placeholder-card h3 {
+            color: #1a73e8;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .software-placeholder-card p {
+            color: #5f6368;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    </style>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 
 </head>
 
@@ -695,952 +765,1118 @@ Updated Date: 2nd Sep 2026
         <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
     </p>
 
-<h2>Smart India Hackathon - 2026</h2>
-<p class="subtitle">Internal Hackathon — Venue & Jury Panel Directory</p>
+    <h2>Smart India Hackathon - 2026</h2>
+    <p class="subtitle">Internal Hackathon — Venue & Jury Panel Directory</p>
 
-<div id="role-banner" class="role-banner-container"></div>
+    <div id="role-banner" class="role-banner-container"></div>
 
-<!-- Step 1: Track Selection & Top Action Icons -->
-<div class="track-tabs-wrapper">
-    <div class="track-tabs-container">
-        <button id="tab-hardware" class="track-tab active" onclick="switchTrack('hardware')">⚙️ Hardware Track</button>
-        <button id="tab-software" class="track-tab" onclick="switchTrack('software')">💻 Software Track</button>
-    </div>
-    <div class="top-info-btns">
-        <button class="info-btn" onclick="openModal('faq-modal')" title="Frequently Asked Questions">
-            <span>❓</span> FAQs
-        </button>
-        <button class="info-btn" onclick="openModal('instructions-modal')" title="Event Instructions & Guidelines">
-            <span>📋</span> Instructions
-        </button>
-    </div>
-</div>
-
-<!-- Hardware Track Content Area -->
-<div id="hardware-track-content">
-
-
-    <!-- Step 2: Available Halls Tabs -->
-    <div class="hall-tabs-container">
-        <button id="hall-tab-saraswathi" class="hall-tab active" onclick="switchHall('saraswathi')">🏛️ Saraswathi
-            Hall (HW#P1)</button>
-        <button id="hall-tab-viveka" class="hall-tab" onclick="switchHall('viveka')">🏛️ Viveka Hall
-            (HW#P2)</button>
-        <button id="hall-tab-rejected" class="hall-tab" onclick="switchHall('rejected')">🚫 Rejected
-            Teams</button>
-    </div>
-
-    <!-- Hall 1: Saraswathi Hall Schedule Table -->
-    <div id="hall-content-saraswathi" class="panel-details">
-        <div class="hall-header-bar">
-            <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+    <!-- Step 1: Track Selection & Top Action Icons -->
+    <div class="track-tabs-wrapper">
+        <div class="track-tabs-container">
+            <button id="tab-hardware" class="track-tab active" onclick="switchTrack('hardware')">⚙️ Hardware
+                Track</button>
+            <button id="tab-software" class="track-tab" onclick="switchTrack('software')">💻 Software Track</button>
         </div>
-        <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
-        </p>
-        <table>
-            <thead>
-                <tr>
-                    <th class="col-sno">S.No</th>                     
-                    <th class="col-time">Timing</th>
-                    <th class="col-judge">Judge</th>
-                    <th class="col-pid">Problem ID and Title</th>
-                    <th class="col-team-no">Team Number</th>
-                    <th class="col-team-name">Team leader Name</th>
-                    <th class="col-status">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="col-sno">1</td>
-                    <td class="col-time">09:00 AM - 09:20 AM</td>
-                    <td rowspan="5" class="col-judge">J2</td>
-                    <td class="problem-cell">SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.</td>
-                    <td class="col-team-no">SIH26-A0H-T396</td>
-                    <td class="col-team-name">Sarvesh Subramanian S [CB.EN.U4EEE26223]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T396" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">2</td>
-                    <td class="col-time">09:20 AM - 09:40 AM</td>
-                    <td rowspan="2" class="problem-cell">SIH26110 - Development of a Low-Cost Light-weight Milk Chilling Can for Small-Scale Dairy Farmers.</td>
-                    <td class="col-team-no">SIH26-A0H-T192</td>
-                    <td class="col-team-name">S KAVIN MUTHUVEL [CB.EN.U4EEE26033]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T192" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">3</td>
-                    <td class="col-time">09:40 AM - 10:00 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T241</td>
-                    <td class="col-team-name">C INDRAJITH [CB.EN.U4CHE24008]</td>
-                    <td class="col-status"><button class="status-completed data-team="SIH26-A0H-T241" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">4</td>
-                    <td class="col-time">10:00 AM - 10:20 AM</td>
-                    <td rowspan="2" class="problem-cell">SIH26226 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Space Technology & Exploration Systems.</td>
-                    <td class="col-team-no">SIH26-A0H-T151</td>
-                    <td class="col-team-name">Adhithyan A S [CB.PS.I5MAT25001]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T151" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">5</td>
-                    <td class="col-time">10:20 AM - 10:40 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T391</td>
-                    <td class="col-team-name">Aditya S [CB.EN.U4AEE24002]</td>
-                    <td class="col-status"><button class="status-didntshowup" data-team="SIH26-A0H-T391" onclick="toggleStatus(this)">Didn't Show Up</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">6</td>
-                    <td class="col-time">10:40 AM - 11:00 AM</td>
-                    <td rowspan="5" class="col-judge">J1</td>
-                    <td class="problem-cell">SIH26212 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Clean & Green Tech.</td>
-                    <td class="col-team-no">SIH26-A0H-T185</td>
-                    <td class="col-team-name">D Geethasree [CB.EN.U4ECE26208]</td>
-                    <td class="col-status"><button class="status-completed data-team="SIH26-A0H-T185" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">7</td>
-                    <td class="col-time">11:00 AM - 11:20 AM</td>
-                    <td rowspan="3" class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region.</td>
-                    <td class="col-team-no">SIH26-A0H-T158</td>
-                    <td class="col-team-name">Tevin Titus [CB.EN.U4MEE24150]</td>
-                    <td class="col-status"><button class="status-btn status-didntshowup data-team="SIH26-A0H-T158" onclick="toggleStatus(this)">Withdrawn</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">8</td>
-                    <td class="col-time">11:20 AM - 11:40 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T200</td>
-                    <td class="col-team-name">ANANYA H [CB.EN.U4CCE25104]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T200" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">9</td>
-                    <td class="col-time">11:40 AM - 12:00 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T394</td>
-                    <td class="col-team-name">Thirupugazhl S D [CB.EN.U4EEE24149]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T394" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">10</td>
-                    <td class="col-time">12:00 PM - 12:20 PM</td>
-                    <td class="problem-cell">—</td>
-                    <td class="col-team-no">—</td>
-                    <td class="col-team-name">—</td>
-                    <td class="col-status">—</td>
-                </tr>
-                <tr class="break-row">
-                    <td class="col-sno">11</td>
-                    <td class="col-time">12:20 PM - 01:30 PM</td>
-                    <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
-                </tr>
-                <tr>
-                    <td class="col-sno">12</td>
-                    <td class="col-time">01:30 PM - 01:50 PM</td>
-                    <td rowspan="6" class="col-judge">J1</td>
-                    <td rowspan="4" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying and compact packaging system to preserve and process agricultural produce at source.</td>
-                    <td class="col-team-no">SIH26-A0H-T094</td>
-                    <td class="col-team-name">Adesh kumar [CB.EN.U4CIE26002]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T094" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">13</td>
-                    <td class="col-time">01:50 PM - 02:10 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T098</td>
-                    <td class="col-team-name">Parthasarathy P [CB.EN.U4EEE24033]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T098" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">14</td>
-                    <td class="col-time">02:10 PM - 02:30 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T135</td>
-                    <td class="col-team-name">Karri Jahnavi [CB.SC.U4CYS26022]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T135" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">15</td>
-                    <td class="col-time">02:30 PM - 02:50 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T253</td>
-                    <td class="col-team-name">KARTHIK U [CB.SC.U4CSE25524]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T253" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">16</td>
-                    <td class="col-time">02:50 PM - 03:10 PM</td>
-                    <td class="problem-cell">SIH26178 - A resilient, AI-powered environmental monitoring network that provides early warnings for critical climate threats using edge AI.</td>
-                    <td class="col-team-no">SIH26-A0H-T355</td>
-                    <td class="col-team-name">Moorthy Neeraj [CB.AI.U4AID25031]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T355" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">17</td>
-                    <td class="col-time">03:10 PM - 03:30 PM</td>
-                    <td class="problem-cell">SIH26210 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Agriculture & Water Management.</td>
-                    <td class="col-team-no">SIH26-A0H-T039</td>
-                    <td class="col-team-name">SUJITHKANNAN M R [CB.EN.U4ARE24049]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T039" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr class="break-row">
-                    <td class="col-sno">18</td>
-                    <td class="col-time">03:30 PM - 03:50 PM</td>
-                    <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                </tr>
-                <tr>
-                    <td class="col-sno">19</td>
-                    <td class="col-time">03:50 PM - 04:10 PM</td>
-                    <td rowspan="3" class="col-judge">J3</td>
-                    <td class="problem-cell">SIH26113 - Human augmentation technologies for healthcare, rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
-                    <td class="col-team-no">SIH26-A0H-T279</td>
-                    <td class="col-team-name">Aravind Shanmugham [CB.EN.U4MEE24007]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T279" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">20</td>
-                    <td class="col-time">04:10 PM - 04:30 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.</td>
-                    <td class="col-team-no">SIH26-A0H-T206</td>
-                    <td class="col-team-name">Aiswarya S [CB.EN.U4ARE26006]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T206" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">21</td>
-                    <td class="col-time">04:30 PM - 04:50 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T221</td>
-                    <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T221" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Hall 2: Viveka Hall Schedule Table -->
-    <div id="hall-content-viveka" class="panel-details" style="display: none;">
-        <div class="hall-header-bar">
-            <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+        <div class="top-info-btns">
+            <button class="info-btn" onclick="openModal('faq-modal')" title="Frequently Asked Questions">
+                <span>❓</span> FAQs
+            </button>
+            <button class="info-btn" onclick="openModal('instructions-modal')" title="Event Instructions & Guidelines">
+                <span>📋</span> Instructions
+            </button>
         </div>
-        <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
-        </p>
-        <table>
-            <thead>
-                <tr>
-                    <th class="col-sno">S.No</th>
-                    <th class="col-time">Timing</th>
-                    <th class="col-judge">Judge</th>
-                    <th class="col-pid">Problem ID and Title</th>
-                    <th class="col-team-no">Team Number</th>
-                    <th class="col-team-name">Team leader Name</th>
-                    <th class="col-status">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="col-sno">1</td>
-                    <td class="col-time">09:00 AM - 09:20 AM</td>
-                    <td rowspan="4" class="col-judge">J4</td>
-                    <td rowspan="4" class="problem-cell">SIH26039 - AI-Powered Underground Mine Safety, Monitoring and Rescue System.</td>
-                    <td class="col-team-no">SIH26-A0H-T036</td>
-                    <td class="col-team-name">Roahith P [CB.EN.U4CCE26144]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T036" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">2</td>
-                    <td class="col-time">09:20 AM - 09:40 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T090</td>
-                    <td class="col-team-name">Aditya Hamsaneni [CB.AI.U4AAR26004]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T090" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">3</td>
-                    <td class="col-time">09:40 AM - 10:00 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T278</td>
-                    <td class="col-team-name">Parthiv PC [CB.EN.U4ELC26132]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T278" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">4</td>
-                    <td class="col-time">10:00 AM - 10:20 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T298</td>
-                    <td class="col-team-name">Shreeya. B [CB.EN.U4ELC25135]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T298" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr class="break-row">
-                    <td class="col-sno">5</td>
-                    <td class="col-time">10:20 AM - 10:40 AM</td>
-                    <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                </tr>
-                <tr>
-                    <td class="col-sno">6</td>
-                    <td class="col-time">10:40 AM - 11:00 AM</td>
-                    <td rowspan="2" class="col-judge">J4</td>
-                    <td rowspan="2" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
-                    <td class="col-team-no">SIH26-A0H-T114</td>
-                    <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T114" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">7</td>
-                    <td class="col-time">11:00 AM - 11:20 AM</td>
-                    <td class="col-team-no">SIH26-A0H-T196</td>
-                    <td class="col-team-name">Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]</td>
-                    <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T196" onclick="toggleStatus(this)">Completed</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">8</td>
-                    <td class="col-time">11:20 AM - 11:40 AM</td>
-                    <td rowspan="2" class="col-judge">J5</td>
-                    <td class="problem-cell">SIH26181</td>
-                    <td class="col-team-no">SIH26-A0H-T091</td>
-                    <td class="col-team-name">Rohit Lal P P [CB.EN.U4ELC25129]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T091" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">9</td>
-                    <td class="col-time">11:40 AM - 12:00 PM</td>
-                    <td class="problem-cell">SIH26215</td>
-                    <td class="col-team-no">SIH26-A0H-T122</td>
-                    <td class="col-team-name">Aditya S [CB.AI.U4AID24104]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T122" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">10</td>
-                    <td class="col-time">12:00 PM - 12:20 PM</td>
-                    <td class="col-judge">—</td>
-                    <td class="problem-cell">—</td>
-                    <td class="col-team-no">—</td>
-                    <td class="col-team-name">—</td>
-                    <td class="col-status">—</td>
-                </tr>
-                <tr class="break-row">
-                    <td class="col-sno">11</td>
-                    <td class="col-time">12:20 PM - 01:30 PM</td>
-                    <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
-                </tr>
-                <tr>
-                    <td class="col-sno">12</td>
-                    <td class="col-time">01:30 PM - 01:50 PM</td>
-                    <td rowspan="6" class="col-judge">J6</td>
-                    <td class="problem-cell">SIH26109 - AI-Based Predictive Modelling for Early Forecasting of Bovine Mastitis in Indian Dairy Farms.</td>
-                    <td class="col-team-no">SIH26-A0H-T276</td>
-                    <td class="col-team-name">K Shrivinay [CB.EN.U4ECE26225]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T276" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">13</td>
-                    <td class="col-time">01:50 PM - 02:10 PM</td>
-                    <td class="problem-cell">SIH26064 - Low-Cost Deployable Seafloor Metal Detection Sensor for Ocean Resource Exploration.</td>
-                    <td class="col-team-no">SIH26-A0H-T201</td>
-                    <td class="col-team-name">Adithya K [CB.EN.U4ARE26003]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T201" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">14</td>
-                    <td class="col-time">02:10 PM - 02:30 PM</td>
-                    <td rowspan="3" class="problem-cell">SIH26025 - Mine Subsidence Monitoring System.</td>
-                    <td class="col-team-no">SIH26-A0H-T226</td>
-                    <td class="col-team-name">Girisudhan V [CB.EN.U4ECE24016]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T226" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">15</td>
-                    <td class="col-time">02:30 PM - 02:50 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T285</td>
-                    <td class="col-team-name">Suthasrinitha [CB.AI.U4AID25153]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T285" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">16</td>
-                    <td class="col-time">02:50 PM - 03:10 PM</td>
-                    <td class="col-team-no">SIH26-A0H-T287</td>
-                    <td class="col-team-name">K.S.Sowparnika [CB.EN.U4CIE26028]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T287" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">17</td>
-                    <td class="col-time">03:10 PM - 03:30 PM</td>
-                    <td class="problem-cell">SIH26098 - Precision Guidance and Smart Fuze Integration System for Defense Munitions.</td>
-                    <td class="col-team-no">SIH26-A0H-T130</td>
-                    <td class="col-team-name">V Karthik Chockalingam [CB.SC.U4CSE26659]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T130" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr class="break-row">
-                    <td class="col-sno">18</td>
-                    <td class="col-time">03:30 PM - 03:50 PM</td>
-                    <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                </tr>
-                <tr>
-                    <td class="col-sno">19</td>
-                    <td class="col-time">03:50 PM - 04:10 PM</td>
-                    <td rowspan="3" class="col-judge">J6</td>
-                    <td class="problem-cell">SIH26220 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Renewable & Sustainable Energy Systems.</td>
-                    <td class="col-team-no">SIH26-A0H-T353</td>
-                    <td class="col-team-name">Dhiyayanth [CB.EN.U4EEE25113]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T353" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">20</td>
-                    <td class="col-time">04:10 PM - 04:30 PM</td>
-                    <td rowspan="2" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
-                    <td class="col-team-no">SIH26-A0H-T314</td>
-                    <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]</td>
-                    <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T314" onclick="toggleStatus(this)">Scheduled</button></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">21</td>
-                    <td class="col-time">04:30 PM - 04:50 PM</td>
-                    <td class="col-team-no">—</td>
-                    <td class="col-team-name">Slot Reserved (SIH26004)</td>
-                    <td class="col-status">—</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 
-    <!-- Hall 3: Rejected Teams Schedule Table -->
-    <div id="hall-content-rejected" class="panel-details" style="display: none;">
-        <div class="hall-header-bar">
-            <h3>🚫 Rejected Teams <span class="highlightc" style="background-color: #d93025;">Rejected</span></h3>
+    <!-- Hardware Track Content Area -->
+    <div id="hardware-track-content">
+
+
+        <!-- Step 2: Available Halls Tabs -->
+        <div class="hall-tabs-container">
+            <button id="hall-tab-saraswathi" class="hall-tab active" onclick="switchHall('saraswathi')">🏛️ Saraswathi
+                Hall (HW#P1)</button>
+            <button id="hall-tab-viveka" class="hall-tab" onclick="switchHall('viveka')">🏛️ Viveka Hall
+                (HW#P2)</button>
+            <button id="hall-tab-rejected" class="hall-tab" onclick="switchHall('rejected')">🚫 Rejected
+                Teams</button>
         </div>
-        <p><strong>Status:</strong> <span class="highlight"
-                style="background-color: #fad2cf; color: #c5221f;">Rejection Recorded</span></p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th class="col-sno">S.No</th>
-                    <th class="col-team-no">Team Number</th>
-                    <th class="col-team-name">Team Name</th>
-                    <th class="col-team-name">Team leader Name</th>
-                    <th class="problem-cell">Problem ID and Title</th>
-                    <th class="col-status">Rejection Reason</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="col-sno">1</td>
-                    <td class="col-team-no">SIH26-A0H-T235</td>
-                    <td class="col-team-name">INNOVITA</td>
-                    <td class="col-team-name">Krishiva Venkatesh [CB.EN.U4ECE26027]</td>
-                    <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
-                        Vegetables in North Eastern Region.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated Presentation</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-sno">2</td>
-                    <td class="col-team-no">SIH26-A0H-T138</td>
-                    <td class="col-team-name">The Bit Reactor</td>
-                    <td class="col-team-name">Yazhini S K [CB.EN.U4CHE26052]</td>
-                    <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
-                        Vegetables in North Eastern Region.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Team Withdrawn</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">3</td>
-                    <td class="col-team-no">SIH26-A0H-T222</td>
-                    <td class="col-team-name">Error 404: Team Not Found</td>
-                    <td class="col-team-name">B.Dudhimant [CB.EN.U4EEE26148]</td>
-                    <td class="problem-cell">SIH26007 - Development of Automated Smart Waste Segregation System.
-                    </td>
-                    <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">4</td>
-                    <td class="col-team-no">SIH26-A0H-T303</td>
-                    <td class="col-team-name">Nullpointerexception</td>
-                    <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
-                    <td class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore
-                        Mining Industry: Early Detection and Safety Management System.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">5</td>
-                    <td class="col-team-no">SIH26-A0H-T267</td>
-                    <td class="col-team-name">Hexacore</td>
-                    <td class="col-team-name">Midhun M [CB.EN.U4EEE25026]</td>
-                    <td class="problem-cell">SIH26029 - Automated High-Current Short-Circuit Test System for MCCBs
-                        and Fuses.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Repository Not Found</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">6</td>
-                    <td class="col-team-no">SIH26-A0H-T291</td>
-                    <td class="col-team-name">NEX GEN</td>
-                    <td class="col-team-name">S. Dharani Prasad [CB.EN.U4EEE26111]</td>
-                    <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for
-                        Rural and Mining-Affected Areas.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated Presentation</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">7</td>
-                    <td class="col-team-no">SIH26-A0H-T111</td>
-                    <td class="col-team-name">ReVolt — Revolutionize.Innovate.Impact</td>
-                    <td class="col-team-name">Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]</td>
-                    <td class="problem-cell">SIH26049 - Design and development of electrical equipment to withstand
-                        low temperatures (up to -40 deg C) for High Altitude Areas (HAA).</td>
-                    <td class="col-status"><span class="status-btn status-warning">Repository Not Found</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">8</td>
-                    <td class="col-team-no">SIH26-A0H-T033</td>
-                    <td class="col-team-name">Syntax Error</td>
-                    <td class="col-team-name">Ashwanth S [CB.AI.U4AAR26009]</td>
-                    <td class="problem-cell">SIH26112 - Design and Develop a Modular Autonomous Mobile Robot (AMR)
-                        Platform for Smart Warehouses and Industrial Logistics.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
-                </tr>
-                <tr>
-                    <td class="col-sno">9</td>
-                    <td class="col-team-no">SIH26-A0H-T221</td>
-                    <td class="col-team-name">Power</td>
-                    <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
-                    <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for
-                        Rural and Mining-Affected Areas.</td>
-                    <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated Presentation</span></td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Hall 1: Saraswathi Hall Schedule Table -->
+        <div id="hall-content-saraswathi" class="panel-details">
+            <div class="hall-header-bar">
+                <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="5" class="col-judge">J2</td>
+                        <td class="problem-cell">SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with
+                            AI-Based Quantitative Reading.</td>
+                        <td class="col-team-no">SIH26-A0H-T396</td>
+                        <td class="col-team-name">Sarvesh Subramanian S [CB.EN.U4EEE26223]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T396"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td rowspan="2" class="problem-cell">SIH26110 - Development of a Low-Cost Light-weight Milk
+                            Chilling Can for Small-Scale Dairy Farmers.</td>
+                        <td class="col-team-no">SIH26-A0H-T192</td>
+                        <td class="col-team-name">S KAVIN MUTHUVEL [CB.EN.U4EEE26033]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T192"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T241</td>
+                        <td class="col-team-name">C INDRAJITH [CB.EN.U4CHE24008]</td>
+                        <td class="col-status"><button class="status-completed data-team=" SIH26-A0H-T241"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td rowspan="2" class="problem-cell">SIH26226 - Student Innovation: Swadeshi for Atmanirbhar
+                            Bharat - Space Technology & Exploration Systems.</td>
+                        <td class="col-team-no">SIH26-A0H-T151</td>
+                        <td class="col-team-name">Adhithyan A S [CB.PS.I5MAT25001]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T151"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T391</td>
+                        <td class="col-team-name">Aditya S [CB.EN.U4AEE24002]</td>
+                        <td class="col-status"><button class="status-didntshowup" data-team="SIH26-A0H-T391"
+                                onclick="toggleStatus(this)">Didn't Show Up</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="5" class="col-judge">J1</td>
+                        <td class="problem-cell">SIH26212 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Clean
+                            & Green Tech.</td>
+                        <td class="col-team-no">SIH26-A0H-T185</td>
+                        <td class="col-team-name">D Geethasree [CB.EN.U4ECE26208]</td>
+                        <td class="col-status"><button class="status-completed data-team=" SIH26-A0H-T185"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td rowspan="3" class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for
+                            Fresh Vegetables in North Eastern Region.</td>
+                        <td class="col-team-no">SIH26-A0H-T158</td>
+                        <td class="col-team-name">Tevin Titus [CB.EN.U4MEE24150]</td>
+                        <td class="col-status"><button class="status-btn status-didntshowup data-team=" SIH26-A0H-T158"
+                                onclick="toggleStatus(this)">Withdrawn</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T200</td>
+                        <td class="col-team-name">ANANYA H [CB.EN.U4CCE25104]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T200"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T394</td>
+                        <td class="col-team-name">Thirupugazhl S D [CB.EN.U4EEE24149]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T394"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="problem-cell">—</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">—</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="6" class="col-judge">J1</td>
+                        <td rowspan="4" class="problem-cell">SIH26022 - Design and develop a smart, solar-powered drying
+                            and compact packaging system to preserve and process agricultural produce at source.</td>
+                        <td class="col-team-no">SIH26-A0H-T094</td>
+                        <td class="col-team-name">Adesh kumar [CB.EN.U4CIE26002]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T094"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T098</td>
+                        <td class="col-team-name">Parthasarathy P [CB.EN.U4EEE24033]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T098"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T135</td>
+                        <td class="col-team-name">Karri Jahnavi [CB.SC.U4CYS26022]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T135"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T253</td>
+                        <td class="col-team-name">KARTHIK U [CB.SC.U4CSE25524]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T253"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="problem-cell">SIH26178 - A resilient, AI-powered environmental monitoring network
+                            that provides early warnings for critical climate threats using edge AI.</td>
+                        <td class="col-team-no">SIH26-A0H-T355</td>
+                        <td class="col-team-name">Moorthy Neeraj [CB.AI.U4AID25031]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T355"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">17</td>
+                        <td class="col-time">03:10 PM - 03:30 PM</td>
+                        <td class="problem-cell">SIH26210 - Student Innovation: Swadeshi for Atmanirbhar Bharat -
+                            Agriculture & Water Management.</td>
+                        <td class="col-team-no">SIH26-A0H-T039</td>
+                        <td class="col-team-name">SUJITHKANNAN M R [CB.EN.U4ARE24049]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T039"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">18</td>
+                        <td class="col-time">03:30 PM - 03:50 PM</td>
+                        <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">19</td>
+                        <td class="col-time">03:50 PM - 04:10 PM</td>
+                        <td rowspan="3" class="col-judge">J3</td>
+                        <td class="problem-cell">SIH26113 - Human augmentation technologies for healthcare,
+                            rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility.</td>
+                        <td class="col-team-no">SIH26-A0H-T279</td>
+                        <td class="col-team-name">Aravind Shanmugham [CB.EN.U4MEE24007]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T279"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">20</td>
+                        <td class="col-time">04:10 PM - 04:30 PM</td>
+                        <td rowspan="2" class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring
+                            System for Rural and Mining-Affected Areas.</td>
+                        <td class="col-team-no">SIH26-A0H-T206</td>
+                        <td class="col-team-name">Aiswarya S [CB.EN.U4ARE26006]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T206"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">21</td>
+                        <td class="col-time">04:30 PM - 04:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T221</td>
+                        <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T221"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Hall 2: Viveka Hall Schedule Table -->
+        <div id="hall-content-viveka" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightc">Scheduled</span></h3>
+            </div>
+            <p><strong>Date:</strong> <span class="highlight">3 Sep 2026</span>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-time">Timing</th>
+                        <th class="col-judge">Judge</th>
+                        <th class="col-pid">Problem ID and Title</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-time">09:00 AM - 09:20 AM</td>
+                        <td rowspan="4" class="col-judge">J4</td>
+                        <td rowspan="4" class="problem-cell">SIH26039 - AI-Powered Underground Mine Safety, Monitoring
+                            and Rescue System.</td>
+                        <td class="col-team-no">SIH26-A0H-T036</td>
+                        <td class="col-team-name">Roahith P [CB.EN.U4CCE26144]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T036"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-time">09:20 AM - 09:40 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T090</td>
+                        <td class="col-team-name">Aditya Hamsaneni [CB.AI.U4AAR26004]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T090"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-time">09:40 AM - 10:00 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T278</td>
+                        <td class="col-team-name">Parthiv PC [CB.EN.U4ELC26132]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T278"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-time">10:00 AM - 10:20 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T298</td>
+                        <td class="col-team-name">Shreeya. B [CB.EN.U4ELC25135]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T298"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">5</td>
+                        <td class="col-time">10:20 AM - 10:40 AM</td>
+                        <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-time">10:40 AM - 11:00 AM</td>
+                        <td rowspan="2" class="col-judge">J4</td>
+                        <td rowspan="2" class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in
+                            Iron Ore Mining Industry: Early Detection and Safety Management System.</td>
+                        <td class="col-team-no">SIH26-A0H-T114</td>
+                        <td class="col-team-name">Visaonth J [CB.EN.U4ECE25255]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T114"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-time">11:00 AM - 11:20 AM</td>
+                        <td class="col-team-no">SIH26-A0H-T196</td>
+                        <td class="col-team-name">Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T196"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-time">11:20 AM - 11:40 AM</td>
+                        <td rowspan="2" class="col-judge">J5</td>
+                        <td class="problem-cell">SIH26181</td>
+                        <td class="col-team-no">SIH26-A0H-T091</td>
+                        <td class="col-team-name">Rohit Lal P P [CB.EN.U4ELC25129]</td>
+                        <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T091"
+                                onclick="toggleStatus(this)">Completed</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-time">11:40 AM - 12:00 PM</td>
+                        <td class="problem-cell">SIH26215</td>
+                        <td class="col-team-no">SIH26-A0H-T122</td>
+                        <td class="col-team-name">Aditya S [CB.AI.U4AID24104]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T122"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">10</td>
+                        <td class="col-time">12:00 PM - 12:20 PM</td>
+                        <td class="col-judge">—</td>
+                        <td class="problem-cell">—</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">—</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">11</td>
+                        <td class="col-time">12:20 PM - 01:30 PM</td>
+                        <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">12</td>
+                        <td class="col-time">01:30 PM - 01:50 PM</td>
+                        <td rowspan="6" class="col-judge">J6</td>
+                        <td class="problem-cell">SIH26109 - AI-Based Predictive Modelling for Early Forecasting of
+                            Bovine Mastitis in Indian Dairy Farms.</td>
+                        <td class="col-team-no">SIH26-A0H-T276</td>
+                        <td class="col-team-name">K Shrivinay [CB.EN.U4ECE26225]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T276"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">13</td>
+                        <td class="col-time">01:50 PM - 02:10 PM</td>
+                        <td class="problem-cell">SIH26064 - Low-Cost Deployable Seafloor Metal Detection Sensor for
+                            Ocean Resource Exploration.</td>
+                        <td class="col-team-no">SIH26-A0H-T201</td>
+                        <td class="col-team-name">Adithya K [CB.EN.U4ARE26003]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T201"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">14</td>
+                        <td class="col-time">02:10 PM - 02:30 PM</td>
+                        <td rowspan="3" class="problem-cell">SIH26025 - Mine Subsidence Monitoring System.</td>
+                        <td class="col-team-no">SIH26-A0H-T226</td>
+                        <td class="col-team-name">Girisudhan V [CB.EN.U4ECE24016]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T226"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">15</td>
+                        <td class="col-time">02:30 PM - 02:50 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T285</td>
+                        <td class="col-team-name">Suthasrinitha [CB.AI.U4AID25153]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T285"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">16</td>
+                        <td class="col-time">02:50 PM - 03:10 PM</td>
+                        <td class="col-team-no">SIH26-A0H-T287</td>
+                        <td class="col-team-name">K.S.Sowparnika [CB.EN.U4CIE26028]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T287"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">17</td>
+                        <td class="col-time">03:10 PM - 03:30 PM</td>
+                        <td class="problem-cell">SIH26098 - Precision Guidance and Smart Fuze Integration System for
+                            Defense Munitions.</td>
+                        <td class="col-team-no">SIH26-A0H-T130</td>
+                        <td class="col-team-name">V Karthik Chockalingam [CB.SC.U4CSE26659]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T130"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="col-sno">18</td>
+                        <td class="col-time">03:30 PM - 03:50 PM</td>
+                        <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">19</td>
+                        <td class="col-time">03:50 PM - 04:10 PM</td>
+                        <td rowspan="3" class="col-judge">J6</td>
+                        <td class="problem-cell">SIH26220 - Student Innovation: Swadeshi for Atmanirbhar Bharat -
+                            Renewable & Sustainable Energy Systems.</td>
+                        <td class="col-team-no">SIH26-A0H-T353</td>
+                        <td class="col-team-name">Dhiyayanth [CB.EN.U4EEE25113]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T353"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">20</td>
+                        <td class="col-time">04:10 PM - 04:30 PM</td>
+                        <td rowspan="2" class="problem-cell">SIH26004 - AI-Assisted Early Detection System for
+                            Osteoarthritis (OA) Risk Markers in North Eastern Tribal Populations.</td>
+                        <td class="col-team-no">SIH26-A0H-T314</td>
+                        <td class="col-team-name">Jaiya Anish S [CB.SC.U4CSE26721]</td>
+                        <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T314"
+                                onclick="toggleStatus(this)">Scheduled</button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">21</td>
+                        <td class="col-time">04:30 PM - 04:50 PM</td>
+                        <td class="col-team-no">—</td>
+                        <td class="col-team-name">Slot Reserved (SIH26004)</td>
+                        <td class="col-status">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Hall 3: Rejected Teams Schedule Table -->
+        <div id="hall-content-rejected" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>🚫 Rejected Teams <span class="highlightc" style="background-color: #d93025;">Rejected</span></h3>
+            </div>
+            <p><strong>Status:</strong> <span class="highlight"
+                    style="background-color: #fad2cf; color: #c5221f;">Rejection Recorded</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team Name</th>
+                        <th class="col-team-name">Team leader Name</th>
+                        <th class="problem-cell">Problem ID and Title</th>
+                        <th class="col-status">Rejection Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-team-no">SIH26-A0H-T235</td>
+                        <td class="col-team-name">INNOVITA</td>
+                        <td class="col-team-name">Krishiva Venkatesh [CB.EN.U4ECE26027]</td>
+                        <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
+                            Vegetables in North Eastern Region.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated
+                                Presentation</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-team-no">SIH26-A0H-T138</td>
+                        <td class="col-team-name">The Bit Reactor</td>
+                        <td class="col-team-name">Yazhini S K [CB.EN.U4CHE26052]</td>
+                        <td class="problem-cell">SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh
+                            Vegetables in North Eastern Region.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-team-no">SIH26-A0H-T222</td>
+                        <td class="col-team-name">Error 404: Team Not Found</td>
+                        <td class="col-team-name">B.Dudhimant [CB.EN.U4EEE26148]</td>
+                        <td class="problem-cell">SIH26007 - Development of Automated Smart Waste Segregation System.
+                        </td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-team-no">SIH26-A0H-T303</td>
+                        <td class="col-team-name">Nullpointerexception</td>
+                        <td class="col-team-name">Padhmavathi [CB.EN.U4EEE25031]</td>
+                        <td class="problem-cell">SIH26008 - Belt Joint Rupture and Conveyor Belt Damages in Iron Ore
+                            Mining Industry: Early Detection and Safety Management System.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-team-no">SIH26-A0H-T267</td>
+                        <td class="col-team-name">Hexacore</td>
+                        <td class="col-team-name">Midhun M [CB.EN.U4EEE25026]</td>
+                        <td class="problem-cell">SIH26029 - Automated High-Current Short-Circuit Test System for MCCBs
+                            and Fuses.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Repository Not Found</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-team-no">SIH26-A0H-T291</td>
+                        <td class="col-team-name">NEX GEN</td>
+                        <td class="col-team-name">S. Dharani Prasad [CB.EN.U4EEE26111]</td>
+                        <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for
+                            Rural and Mining-Affected Areas.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated
+                                Presentation</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-team-no">SIH26-A0H-T111</td>
+                        <td class="col-team-name">ReVolt — Revolutionize.Innovate.Impact</td>
+                        <td class="col-team-name">Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]</td>
+                        <td class="problem-cell">SIH26049 - Design and development of electrical equipment to withstand
+                            low temperatures (up to -40 deg C) for High Altitude Areas (HAA).</td>
+                        <td class="col-status"><span class="status-btn status-warning">Repository Not Found</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-team-no">SIH26-A0H-T033</td>
+                        <td class="col-team-name">Syntax Error</td>
+                        <td class="col-team-name">Ashwanth S [CB.AI.U4AAR26009]</td>
+                        <td class="problem-cell">SIH26112 - Design and Develop a Modular Autonomous Mobile Robot (AMR)
+                            Platform for Smart Warehouses and Industrial Logistics.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">9</td>
+                        <td class="col-team-no">SIH26-A0H-T221</td>
+                        <td class="col-team-name">Power</td>
+                        <td class="col-team-name">Saana Poovaiah N [CB.EN.U4MEE24142]</td>
+                        <td class="problem-cell">SIH26040 - Smart Water Purification and Quality Monitoring System for
+                            Rural and Mining-Affected Areas.</td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated
+                                Presentation</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
-<!-- Software Track Content Area -->
-<div id="software-track-content" style="display: none;">
-    <div class="software-placeholder-card">
-        <h3>💻 Software Track Schedules</h3>
-        <p>Software track jury panels and hall allocations are currently being finalized.<br />Please check back
-            soon for live schedule updates!</p>
+    <!-- Software Track Content Area -->
+    <div id="software-track-content" style="display: none;">
+        <div class="software-placeholder-card">
+            <h3>💻 Software Track Schedules</h3>
+            <p>Software track jury panels and hall allocations are currently being finalized.<br />Please check back
+                soon for live schedule updates!</p>
+        </div>
     </div>
-</div>
 
-<script>
-    const STATUSES = ['Scheduled', 'Ongoing', 'Completed'];
-    const STATUS_CLASSES = {
-        'Scheduled': 'status-scheduled',
-        'Ongoing': 'status-ongoing',
-        'Completed': 'status-completed',
-        'ppt not submitted': 'status-warning',
-        'ai made ppt': 'status-warning',
-        'ppt has only one slide': 'status-warning',
-        'no repo found': 'status-warning',
-        'repo not found': 'status-warning'
-    };
+    <script>
+        const STATUSES = ['Scheduled', 'Ongoing', 'Completed'];
+        const STATUS_CLASSES = {
+            'Scheduled': 'status-scheduled',
+            'Ongoing': 'status-ongoing',
+            'Completed': 'status-completed',
+            'ppt not submitted': 'status-warning',
+            'ai made ppt': 'status-warning',
+            'ppt has only one slide': 'status-warning',
+            'no repo found': 'status-warning',
+            'repo not found': 'status-warning'
+        };
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const isVolunteer = urlParams.get('mode') === 'volunteer' ||
-        urlParams.get('key') === 'sih_vol_2026' ||
-        urlParams.get('role') === 'volunteer' ||
-        urlParams.has('volunteer');
+        const urlParams = new URLSearchParams(window.location.search);
+        const isVolunteer = urlParams.get('mode') === 'volunteer' ||
+            urlParams.get('key') === 'sih_vol_2026' ||
+            urlParams.get('role') === 'volunteer' ||
+            urlParams.has('volunteer');
 
-    const firebaseConfig = window.FIREBASE_CONFIG || {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "sih-2026.firebaseapp.com",
-        databaseURL: "https://sih-2026-default-rtdb.firebaseio.com",
-        projectId: "sih-2026",
-        storageBucket: "sih-2026.appspot.com",
-        messagingSenderId: "1234567890",
-        appId: "1:1234567890:web:abcdef"
-    };
+        const firebaseConfig = window.FIREBASE_CONFIG || {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "sih-2026.firebaseapp.com",
+            databaseURL: "https://sih-2026-default-rtdb.firebaseio.com",
+            projectId: "sih-2026",
+            storageBucket: "sih-2026.appspot.com",
+            messagingSenderId: "1234567890",
+            appId: "1:1234567890:web:abcdef"
+        };
 
-    let db = null;
-    let firebaseInitialized = false;
+        let db = null;
+        let firebaseInitialized = false;
 
-    if (typeof firebase !== 'undefined' && firebaseConfig.databaseURL && !firebaseConfig.databaseURL.includes("YOUR_")) {
-        try {
-            if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
-            db = firebase.database();
-            firebaseInitialized = true;
-        } catch (e) { console.warn("Firebase skipped:", e); }
-    }
-
-    function switchTrack(track) {
-        const hwBtn = document.getElementById('tab-hardware');
-        const swBtn = document.getElementById('tab-software');
-        const hwContent = document.getElementById('hardware-track-content');
-        const swContent = document.getElementById('software-track-content');
-
-        if (track === 'hardware') {
-            hwBtn.classList.add('active');
-            swBtn.classList.remove('active');
-            hwContent.style.display = 'block';
-            swContent.style.display = 'none';
-        } else {
-            swBtn.classList.add('active');
-            hwBtn.classList.remove('active');
-            swContent.style.display = 'block';
-            hwContent.style.display = 'none';
-        }
-    }
-
-    function switchHall(hall) {
-        const sarTab = document.getElementById('hall-tab-saraswathi');
-        const vivTab = document.getElementById('hall-tab-viveka');
-        const rejTab = document.getElementById('hall-tab-rejected');
-        const sarContent = document.getElementById('hall-content-saraswathi');
-        const vivContent = document.getElementById('hall-content-viveka');
-        const rejContent = document.getElementById('hall-content-rejected');
-
-        sarTab.classList.remove('active');
-        vivTab.classList.remove('active');
-        if (rejTab) rejTab.classList.remove('active');
-
-        sarContent.style.display = 'none';
-        vivContent.style.display = 'none';
-        if (rejContent) rejContent.style.display = 'none';
-
-        if (hall === 'saraswathi') {
-            sarTab.classList.add('active');
-            sarContent.style.display = 'block';
-        } else if (hall === 'viveka') {
-            vivTab.classList.add('active');
-            vivContent.style.display = 'block';
-        } else if (hall === 'rejected') {
-            if (rejTab) rejTab.classList.add('active');
-            if (rejContent) rejContent.style.display = 'block';
-        }
-    }
-
-    const TEAMS_DATABASE = [
-        // Saraswathi Hall (HW#P1)
-        { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean & Green Tech", time: "09:00 AM - 09:20 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:20 AM - 09:40 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T241", leader: "C INDRAJITH [CB.EN.U4CHE24008]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:40 AM - 10:00 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T151", leader: "Adhithyan A S [CB.PS.I5MAT25001]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:00 AM - 10:20 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T391", leader: "Aditya S [CB.EN.U4AEE24002]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:20 AM - 10:40 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T185", leader: "D Geethasree [CB.EN.U4ECE26208]", problem: "SIH26212 - Swadeshi: Clean & Green Tech.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "10:40 AM - 11:00 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T158", leader: "Tevin Titus [CB.EN.U4MEE24150]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:00 AM - 11:20 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T200", leader: "ANANYA H [CB.EN.U4CCE25104]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:20 AM - 11:40 AM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T394", leader: "Thirupugazhl S D [CB.EN.U4EEE24149]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:40 AM - 12:00 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Healthcare Tech", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
-        { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:30 PM - 04:50 PM", file: "saraswathihall.html" },
-
-        // Viveka Hall (HW#P2)
-        { id: "SIH26-A0H-T036", leader: "Roahith P [CB.EN.U4CCE26144]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:00 AM - 09:20 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T090", leader: "Aditya Hamsaneni [CB.AI.U4AAR26004]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:20 AM - 09:40 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T278", leader: "Parthiv PC [CB.EN.U4ELC26132]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:40 AM - 10:00 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T298", leader: "Shreeya. B [CB.EN.U4ELC25135]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "10:00 AM - 10:20 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T114", leader: "Visaonth J [CB.EN.U4ECE25255]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "10:40 AM - 11:00 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T196", leader: "Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "11:00 AM - 11:20 AM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T276", leader: "K Shrivinay [CB.EN.U4ECE26225]", problem: "SIH26109 - AI-Based Predictive Modelling for Bovine Mastitis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Agri Tech", time: "12:00 PM - 12:20 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T201", leader: "Adithya K [CB.EN.U4ARE26003]", problem: "SIH26064 - Seafloor Metal Detection Sensor.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Robotics / Sensors", time: "01:50 PM - 02:10 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T226", leader: "Girisudhan V [CB.EN.U4ECE24016]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:10 PM - 02:30 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T285", leader: "Suthasrinitha [CB.AI.U4AID25153]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:30 PM - 02:50 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T287", leader: "K.S.Sowparnika [CB.EN.U4CIE26028]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:50 PM - 03:10 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T130", leader: "V Karthik Chockalingam [CB.SC.U4CSE26659]", problem: "SIH26098 - Precision Guidance and Smart Fuze Integration System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Defense Tech", time: "03:10 PM - 03:30 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T353", leader: "Dhiyayanth [CB.EN.U4EEE25113]", problem: "SIH26220 - Swadeshi: Renewable & Sustainable Energy Systems.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Energy Tech", time: "03:50 PM - 04:10 PM", file: "vivekahall.html" },
-        { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" },
-
-        // Rejected Teams
-        { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T138", leader: "Yazhini S K [CB.EN.U4CHE26052]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T222", leader: "B.Dudhimant [CB.EN.U4EEE26148]", problem: "SIH26007 - Development of Automated Smart Waste Segregation System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T303", leader: "Padhmavathi [CB.EN.U4EEE25031]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T267", leader: "Midhun M [CB.EN.U4EEE25026]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T291", leader: "S. Dharani Prasad [CB.EN.U4EEE26111]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T111", leader: "Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]", problem: "SIH26049 - Design and development of electrical equipment.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T033", leader: "Ashwanth S [CB.AI.U4AAR26009]", problem: "SIH26112 - Modular Autonomous Mobile Robot Platform.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-        { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" }
-    ];
-
-    function escapeHtml(str) {
-        return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
-    }
-
-
-
-    function applyRoleUI() {
-        const banner = document.getElementById('role-banner');
-        if (banner) {
-            banner.innerHTML = isVolunteer ?
-                '<span class="mode-badge mode-volunteer">⚡ Volunteer Edit Mode Active (Realtime Sync Enabled)</span>' :
-                '<span class="mode-badge mode-participant">👁 Live Schedule Directory (Read-Only)</span>';
+        if (typeof firebase !== 'undefined' && firebaseConfig.databaseURL && !firebaseConfig.databaseURL.includes("YOUR_")) {
+            try {
+                if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+                db = firebase.database();
+                firebaseInitialized = true;
+            } catch (e) { console.warn("Firebase skipped:", e); }
         }
 
-        document.querySelectorAll('.status-btn').forEach(btn => {
-            if (!isVolunteer) {
-                btn.classList.add('read-only');
-                btn.setAttribute('title', 'Read-only schedule view');
+        function switchTrack(track) {
+            const hwBtn = document.getElementById('tab-hardware');
+            const swBtn = document.getElementById('tab-software');
+            const hwContent = document.getElementById('hardware-track-content');
+            const swContent = document.getElementById('software-track-content');
+
+            if (track === 'hardware') {
+                hwBtn.classList.add('active');
+                swBtn.classList.remove('active');
+                hwContent.style.display = 'block';
+                swContent.style.display = 'none';
             } else {
-                btn.classList.remove('read-only');
-                btn.setAttribute('title', 'Click to toggle: Scheduled → Ongoing → Completed');
+                swBtn.classList.add('active');
+                hwBtn.classList.remove('active');
+                swContent.style.display = 'block';
+                hwContent.style.display = 'none';
             }
-        });
+        }
 
-        if (isVolunteer) {
-            document.querySelectorAll('.panel-link').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && !href.includes('?') && !href.startsWith('javascript')) {
-                    link.setAttribute('href', href + '?mode=volunteer');
+        function switchHall(hall) {
+            const sarTab = document.getElementById('hall-tab-saraswathi');
+            const vivTab = document.getElementById('hall-tab-viveka');
+            const rejTab = document.getElementById('hall-tab-rejected');
+            const sarContent = document.getElementById('hall-content-saraswathi');
+            const vivContent = document.getElementById('hall-content-viveka');
+            const rejContent = document.getElementById('hall-content-rejected');
+
+            sarTab.classList.remove('active');
+            vivTab.classList.remove('active');
+            if (rejTab) rejTab.classList.remove('active');
+
+            sarContent.style.display = 'none';
+            vivContent.style.display = 'none';
+            if (rejContent) rejContent.style.display = 'none';
+
+            if (hall === 'saraswathi') {
+                sarTab.classList.add('active');
+                sarContent.style.display = 'block';
+            } else if (hall === 'viveka') {
+                vivTab.classList.add('active');
+                vivContent.style.display = 'block';
+            } else if (hall === 'rejected') {
+                if (rejTab) rejTab.classList.add('active');
+                if (rejContent) rejContent.style.display = 'block';
+            }
+        }
+
+        const TEAMS_DATABASE = [
+            // Saraswathi Hall (HW#P1)
+            { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean & Green Tech", time: "09:00 AM - 09:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:20 AM - 09:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T241", leader: "C INDRAJITH [CB.EN.U4CHE24008]", problem: "SIH26110 - Low-Cost Light-weight Milk Chilling Can.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "09:40 AM - 10:00 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T151", leader: "Adhithyan A S [CB.PS.I5MAT25001]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:00 AM - 10:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T391", leader: "Aditya S [CB.EN.U4AEE24002]", problem: "SIH26226 - Swadeshi: Space Technology & Exploration.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Space Tech", time: "10:20 AM - 10:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T185", leader: "D Geethasree [CB.EN.U4ECE26208]", problem: "SIH26212 - Swadeshi: Clean & Green Tech.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "10:40 AM - 11:00 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T158", leader: "Tevin Titus [CB.EN.U4MEE24150]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:00 AM - 11:20 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T200", leader: "ANANYA H [CB.EN.U4CCE25104]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:20 AM - 11:40 AM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T394", leader: "Thirupugazhl S D [CB.EN.U4EEE24149]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "11:40 AM - 12:00 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T094", leader: "Adesh kumar [CB.EN.U4CIE26002]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:30 PM - 01:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T098", leader: "Parthasarathy P [CB.EN.U4EEE24033]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "01:50 PM - 02:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T135", leader: "Karri Jahnavi [CB.SC.U4CYS26022]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:10 PM - 02:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T253", leader: "KARTHIK U [CB.SC.U4CSE25524]", problem: "SIH26022 - Solar-powered drying & packaging system.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "02:30 PM - 02:50 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T355", leader: "Moorthy Neeraj [CB.AI.U4AID25031]", problem: "SIH26178 - AI-powered environmental monitoring network.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "AI / IoT", time: "02:50 PM - 03:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T039", leader: "SUJITHKANNAN M R [CB.EN.U4ARE24049]", problem: "SIH26210 - Swadeshi: Agriculture & Water Management.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Agri Tech", time: "03:10 PM - 03:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T279", leader: "Aravind Shanmugham [CB.EN.U4MEE24007]", problem: "SIH26113 - Human augmentation technologies for healthcare.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Healthcare Tech", time: "03:50 PM - 04:10 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T206", leader: "Aiswarya S [CB.EN.U4ARE26006]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:10 PM - 04:30 PM", file: "saraswathihall.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification & Quality Monitoring.", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Clean Tech", time: "04:30 PM - 04:50 PM", file: "saraswathihall.html" },
+
+            // Viveka Hall (HW#P2)
+            { id: "SIH26-A0H-T036", leader: "Roahith P [CB.EN.U4CCE26144]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:00 AM - 09:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T090", leader: "Aditya Hamsaneni [CB.AI.U4AAR26004]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:20 AM - 09:40 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T278", leader: "Parthiv PC [CB.EN.U4ELC26132]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "09:40 AM - 10:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T298", leader: "Shreeya. B [CB.EN.U4ELC25135]", problem: "SIH26039 - AI-Powered Underground Mine Safety System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Mining Tech", time: "10:00 AM - 10:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T114", leader: "Visaonth J [CB.EN.U4ECE25255]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "10:40 AM - 11:00 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T196", leader: "Mithun Karthik Dhaneshkumar [CB.EN.U4CCE25030]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "11:00 AM - 11:20 AM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T276", leader: "K Shrivinay [CB.EN.U4ECE26225]", problem: "SIH26109 - AI-Based Predictive Modelling for Bovine Mastitis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Agri Tech", time: "12:00 PM - 12:20 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T201", leader: "Adithya K [CB.EN.U4ARE26003]", problem: "SIH26064 - Seafloor Metal Detection Sensor.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Robotics / Sensors", time: "01:50 PM - 02:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T226", leader: "Girisudhan V [CB.EN.U4ECE24016]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:10 PM - 02:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T285", leader: "Suthasrinitha [CB.AI.U4AID25153]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:30 PM - 02:50 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T287", leader: "K.S.Sowparnika [CB.EN.U4CIE26028]", problem: "SIH26025 - Mine Subsidence Monitoring System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Mining Tech", time: "02:50 PM - 03:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T130", leader: "V Karthik Chockalingam [CB.SC.U4CSE26659]", problem: "SIH26098 - Precision Guidance and Smart Fuze Integration System.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Defense Tech", time: "03:10 PM - 03:30 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T353", leader: "Dhiyayanth [CB.EN.U4EEE25113]", problem: "SIH26220 - Swadeshi: Renewable & Sustainable Energy Systems.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "Energy Tech", time: "03:50 PM - 04:10 PM", file: "vivekahall.html" },
+            { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis.", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" },
+
+            // Rejected Teams
+            { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T138", leader: "Yazhini S K [CB.EN.U4CHE26052]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T222", leader: "B.Dudhimant [CB.EN.U4EEE26148]", problem: "SIH26007 - Development of Automated Smart Waste Segregation System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T303", leader: "Padhmavathi [CB.EN.U4EEE25031]", problem: "SIH26008 - Belt Joint Rupture and Conveyor Belt Damages.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T267", leader: "Midhun M [CB.EN.U4EEE25026]", problem: "SIH26029 - Automated High-Current Short-Circuit Test System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T291", leader: "S. Dharani Prasad [CB.EN.U4EEE26111]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T111", leader: "Ishani Jyothirmayi Nambiar [CB.EN.U4EEE25122]", problem: "SIH26049 - Design and development of electrical equipment.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T033", leader: "Ashwanth S [CB.AI.U4AAR26009]", problem: "SIH26112 - Modular Autonomous Mobile Robot Platform.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T221", leader: "Saana Poovaiah N [CB.EN.U4MEE24142]", problem: "SIH26040 - Smart Water Purification and Quality Monitoring System.", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" }
+        ];
+
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+
+
+        function applyRoleUI() {
+            const banner = document.getElementById('role-banner');
+            if (banner) {
+                banner.innerHTML = isVolunteer ?
+                    '<span class="mode-badge mode-volunteer">⚡ Volunteer Edit Mode Active (Realtime Sync Enabled)</span>' :
+                    '<span class="mode-badge mode-participant">👁 Live Schedule Directory (Read-Only)</span>';
+            }
+
+            document.querySelectorAll('.status-btn').forEach(btn => {
+                if (!isVolunteer) {
+                    btn.classList.add('read-only');
+                    btn.setAttribute('title', 'Read-only schedule view');
+                } else {
+                    btn.classList.remove('read-only');
+                    btn.setAttribute('title', 'Click to toggle: Scheduled → Ongoing → Completed');
                 }
             });
-        }
-    }
 
-    function updateButtonStatus(teamId, status) {
-        if (!STATUS_CLASSES[status]) return;
-        const btns = document.querySelectorAll(`.status-btn[data-team="${teamId}"]`);
-        btns.forEach(btn => {
-            btn.textContent = status;
-            btn.className = 'status-btn ' + STATUS_CLASSES[status] + (isVolunteer ? '' : ' read-only');
-        });
-    }
-
-    function toggleStatus(btn) {
-        if (!isVolunteer) return;
-        const teamId = btn.getAttribute('data-team');
-        const current = btn.textContent.trim();
-        let nextIdx = (STATUSES.indexOf(current) + 1) % STATUSES.length;
-        if (nextIdx === -1) nextIdx = 0;
-        const nextStatus = STATUSES[nextIdx];
-
-        updateButtonStatus(teamId, nextStatus);
-
-        if (teamId) {
-            localStorage.setItem('sih_status_' + teamId, nextStatus);
-            if (firebaseInitialized && db) db.ref('statuses/' + teamId).set(nextStatus);
-        }
-    }
-
-    function loadSavedStatuses() {
-        document.querySelectorAll('.status-btn').forEach(btn => {
-            const teamId = btn.getAttribute('data-team');
-            if (teamId) {
-                const saved = localStorage.getItem('sih_status_' + teamId);
-                if (saved && STATUS_CLASSES[saved]) {
-                    btn.textContent = saved;
-                    btn.className = 'status-btn ' + STATUS_CLASSES[saved] + (isVolunteer ? '' : ' read-only');
-                }
-            }
-        });
-    }
-
-    function initRealtimeSync() {
-        if (firebaseInitialized && db) {
-            db.ref('statuses').on('value', (snapshot) => {
-                const data = snapshot.val() || {};
-                Object.keys(data).forEach(teamId => {
-                    updateButtonStatus(teamId, data[teamId]);
-                    localStorage.setItem('sih_status_' + teamId, data[teamId]);
+            if (isVolunteer) {
+                document.querySelectorAll('.panel-link').forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && !href.includes('?') && !href.startsWith('javascript')) {
+                        link.setAttribute('href', href + '?mode=volunteer');
+                    }
                 });
+            }
+        }
+
+        function updateButtonStatus(teamId, status) {
+            if (!STATUS_CLASSES[status]) return;
+            const btns = document.querySelectorAll(`.status-btn[data-team="${teamId}"]`);
+            btns.forEach(btn => {
+                btn.textContent = status;
+                btn.className = 'status-btn ' + STATUS_CLASSES[status] + (isVolunteer ? '' : ' read-only');
             });
-        } else {
-            loadSavedStatuses();
-            window.addEventListener('storage', (e) => {
-                if (e.key && e.key.startsWith('sih_status_')) {
-                    updateButtonStatus(e.key.replace('sih_status_', ''), e.newValue);
+        }
+
+        function toggleStatus(btn) {
+            if (!isVolunteer) return;
+            const teamId = btn.getAttribute('data-team');
+            const current = btn.textContent.trim();
+            let nextIdx = (STATUSES.indexOf(current) + 1) % STATUSES.length;
+            if (nextIdx === -1) nextIdx = 0;
+            const nextStatus = STATUSES[nextIdx];
+
+            updateButtonStatus(teamId, nextStatus);
+
+            if (teamId) {
+                localStorage.setItem('sih_status_' + teamId, nextStatus);
+                if (firebaseInitialized && db) db.ref('statuses/' + teamId).set(nextStatus);
+            }
+        }
+
+        function loadSavedStatuses() {
+            document.querySelectorAll('.status-btn').forEach(btn => {
+                const teamId = btn.getAttribute('data-team');
+                if (teamId) {
+                    const saved = localStorage.getItem('sih_status_' + teamId);
+                    if (saved && STATUS_CLASSES[saved]) {
+                        btn.textContent = saved;
+                        btn.className = 'status-btn ' + STATUS_CLASSES[saved] + (isVolunteer ? '' : ' read-only');
+                    }
                 }
             });
         }
-    }
 
-    window.addEventListener('DOMContentLoaded', () => {
-        applyRoleUI();
-        initRealtimeSync();
-    });
-
-    function openModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+        function initRealtimeSync() {
+            if (firebaseInitialized && db) {
+                db.ref('statuses').on('value', (snapshot) => {
+                    const data = snapshot.val() || {};
+                    Object.keys(data).forEach(teamId => {
+                        updateButtonStatus(teamId, data[teamId]);
+                        localStorage.setItem('sih_status_' + teamId, data[teamId]);
+                    });
+                });
+            } else {
+                loadSavedStatuses();
+                window.addEventListener('storage', (e) => {
+                    if (e.key && e.key.startsWith('sih_status_')) {
+                        updateButtonStatus(e.key.replace('sih_status_', ''), e.newValue);
+                    }
+                });
+            }
         }
-    }
 
-    function closeModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
-
-    function toggleFaq(headerElem) {
-        const item = headerElem.parentElement;
-        item.classList.toggle('active');
-    }
-
-    function filterFaqs() {
-        const input = document.getElementById('faq-search').value.toLowerCase();
-        const items = document.querySelectorAll('#faq-modal .faq-item');
-        items.forEach(item => {
-            const text = item.textContent.toLowerCase();
-            item.style.display = text.includes(input) ? 'block' : 'none';
+        window.addEventListener('DOMContentLoaded', () => {
+            applyRoleUI();
+            initRealtimeSync();
         });
-    }
 
-    window.addEventListener('click', (e) => {
-        if (e.target.classList.contains('modal-overlay')) {
-            e.target.classList.remove('active');
-            document.body.style.overflow = '';
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         }
-    });
-</script>
 
-<!-- FAQs Modal -->
-<div id="faq-modal" class="modal-overlay">
-    <div class="modal-card">
-        <div class="modal-header">
-            <div class="modal-title">❓ Frequently Asked Questions (FAQs)</div>
-            <button class="modal-close-btn" onclick="closeModal('faq-modal')">&times;</button>
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function toggleFaq(headerElem) {
+            const item = headerElem.parentElement;
+            item.classList.toggle('active');
+        }
+
+        function filterFaqs() {
+            const input = document.getElementById('faq-search').value.toLowerCase();
+            const items = document.querySelectorAll('#faq-modal .faq-item');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? 'block' : 'none';
+            });
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-overlay')) {
+                e.target.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    <!-- FAQs Modal -->
+    <div id="faq-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title">❓ Frequently Asked Questions (FAQs)</div>
+                <button class="modal-close-btn" onclick="closeModal('faq-modal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="faq-search" class="faq-search-box" placeholder="🔍 Search FAQ questions..."
+                    onkeyup="filterFaqs()" />
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>💻 1. When are the Software Presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The presentation dates for the Software Track are <strong>4th, 5th, and 6th September
+                            2026</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>⚙️ 2. Remaining Hardware presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The remaining presentation dates for the Hardware Track are <strong>4th and 5th September
+                            2026</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📅 3. Schedule for the software presentations?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Software Track presentations schedule will be published on 3:00 PM of 3rd September</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>✏️ 4. Till when can we edit the presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can edit your PPT slide decks <strong>till 7:00 AM on the date of your
+                            presentation</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🪪 5. Is uniform and ID cards Mandatory?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Yes</strong>, mandatory for all students. However, concession can be given to 1st Year
+                        B.Tech students and M.Tech students.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>👥 6. Should all the members be available during the presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>No.</strong> Concession can be given if a valid reason is submitted, but it is highly
+                        preferred for all team members to present together.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>⚖️ 7. Evaluation Criteria?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The jury will evaluate projects based on the following key metrics:
+                        <ul class="faq-list-items">
+                            <li>🎯 <strong>Relevance to Problem Statement</strong></li>
+                            <li>💡 <strong>Innovation & Uniqueness</strong></li>
+                            <li>⚙️ <strong>Technical Complexity</strong></li>
+                            <li>🏗️ <strong>Feasibility & Implementation</strong></li>
+                            <li>📈 <strong>Impact & Benefits</strong></li>
+                            <li>🤝 <strong>Team Work & Presentation</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📝 8. Does OD's will be provided for preparation for presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>NO.</strong> Preparation for your presentation is in your own hands. ODs will be issued
+                        <strong>only for your designated presenting slot</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🤖 9. On what basis is the ppt decided if it is AI generated?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        That will be evaluated and answered <strong>in person</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>📑 10. Submission for second problem statement and its ppt?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Information regarding the second problem statement submission and its PPT will be communicated
+                        <strong>after 11th of September 2026</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>💻 11. Do the presenting team bring laptops for presentation?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>One laptop is strongly advised to be brought</strong> by the team loaded with the
+                        updated PPT, just in case of an emergency.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🧪 12. Will Lab evaluations or Tests be rescheduled?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        If there is an evaluation scheduled, make sure team members attend the evaluation. The
+                        rescheduling depends strictly on <strong>judges' availability</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>🎥 13. Any youtube related Queries?</span>
+                        <span class="faq-toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        All information regarding YouTube video requirements will be updated later.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <input type="text" id="faq-search" class="faq-search-box" placeholder="🔍 Search FAQ questions..." onkeyup="filterFaqs()" />
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>💻 1. When are the Software Presentations?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    The presentation dates for the Software Track are <strong>4th, 5th, and 6th September 2026</strong>.
-                </div>
-            </div>
+    </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>⚙️ 2. Remaining Hardware presentations?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    The remaining presentation dates for the Hardware Track are <strong>4th and 5th September 2026</strong>.
-                </div>
+    <!-- Instructions Modal -->
+    <div id="instructions-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title">📋 Instructions to Participants</div>
+                <button class="modal-close-btn" onclick="closeModal('instructions-modal')">&times;</button>
             </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>📅 3. Schedule for the software presentations?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    Software Track presentations schedule will be published on 3:00 PM of 3rd September</strong>.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>✏️ 4. Till when can we edit the presentation?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    You can edit your PPT slide decks <strong>till 7:00 AM on the date of your presentation</strong>.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>🪪 5. Is uniform and ID cards Mandatory?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    <strong>Yes</strong>, mandatory for all students. However, concession can be given to 1st Year B.Tech students and M.Tech students.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>👥 6. Should all the members be available during the presentation?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    <strong>No.</strong> Concession can be given if a valid reason is submitted, but it is highly preferred for all team members to present together.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>⚖️ 7. Evaluation Criteria?</span>
-                    <span class="faq-toggle-icon">▼</span>
-                </div>
-                <div class="faq-answer">
-                    The jury will evaluate projects based on the following key metrics:
-                    <ul class="faq-list-items">
-                        <li>🎯 <strong>Relevance to Problem Statement</strong></li>
-                        <li>💡 <strong>Innovation & Uniqueness</strong></li>
-                        <li>⚙️ <strong>Technical Complexity</strong></li>
-                        <li>🏗️ <strong>Feasibility & Implementation</strong></li>
-                        <li>📈 <strong>Impact & Benefits</strong></li>
-                        <li>🤝 <strong>Team Work & Presentation</strong></li>
+            <div class="modal-body">
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">1. Reporting</h4>
+                    <ul class="instruction-list">
+                        <li>All teams must report at the venue at least <strong>30 minutes</strong> before their
+                            allotted presentation time.</li>
+                        <li>Teams must remain available at the venue until their evaluation is completed.</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>📝 8. Does OD's will be provided for preparation for presentation?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">2. Presentation Time</h4>
+                    <ul class="instruction-list">
+                        <li>Each team will be given a maximum of <strong>10 minutes</strong> for their presentation.Teams must strictly adhere to the 10-minute time limit.
+                        </li>
+                        <li>Judges may stop the presentation if the allotted time is exceeded.</li>
+                        <li>Teams are advised to rehearse beforehand and ensure that their presentation is completed
+                            within the allotted time.</li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    <strong>NO.</strong> Preparation for your presentation is in your own hands. ODs will be issued <strong>only for your designated presenting slot</strong>.
-                </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>🤖 9. On what basis is the ppt decided if it is AI generated?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">3. Presentation Setup</h4>
+                    <ul class="instruction-list">
+                        <li>Carry the presentation in <strong>PPT/PDF format</strong> and keep a backup copy on a pen
+                            drive/cloud storage.</li>
+                        <li>Ensure that the presentation can be accessed and displayed without technical difficulties.
+                        </li>
+                        <li>Teams using hardware must bring all required components and accessories necessary for their
+                            presentation.</li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    That will be evaluated and answered <strong>in person</strong>.
-                </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>📑 10. Submission for second problem statement and its ppt?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">4. GitHub Repository</h4>
+                    <ul class="instruction-list">
+                        <li>The team's GitHub repository must be updated before the presentation.</li>
+                        <li>The repository should contain all required project details, source code, documentation,
+                            relevant files, and other supporting materials.</li>
+                        <li>Ensure that the <strong>README</strong> file is complete and provides all necessary
+                            information about the project.</li>
+                        <li>The repository link must be accessible to the organizers and judges.</li>
+                        <li>Judges may refer to the GitHub repository as part of the evaluation process.</li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    Information regarding the second problem statement submission and its PPT will be communicated <strong>after 11th of September 2026</strong>.
-                </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>💻 11. Do the presenting team bring laptops for presentation?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">5. Team Participation</h4>
+                    <ul class="instruction-list">
+                        <li>All team members should be familiar with the project and its implementation.</li>
+                        <li>Judges may direct questions to any member of the team.</li>
+                        <li>Team members should be able to clearly explain their individual contributions when asked.
+                        </li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    <strong>One laptop is strongly advised to be brought</strong> by the team loaded with the updated PPT, just in case of an emergency.
-                </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>🧪 12. Will Lab evaluations or Tests be rescheduled?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">6. Questions from Judges</h4>
+                    <ul class="instruction-list">
+                        <li>Listen carefully to the questions and answer precisely and confidently.</li>
+                        <li>If you do not know an answer, be honest rather than providing incorrect information.</li>
+                        <li>Teams should be prepared for questions related to their technical approach, innovation,
+                            feasibility, scalability, security, cost, implementation, and future development.</li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    If there is an evaluation scheduled, make sure team members attend the evaluation. The rescheduling depends strictly on <strong>judges' availability</strong>.
-                </div>
-            </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>🎥 13. Any youtube related Queries?</span>
-                    <span class="faq-toggle-icon">▼</span>
+                <div class="instruction-section">
+                    <h4 class="instruction-heading">7. Professional Conduct</h4>
+                    <ul class="instruction-list">
+                        <li>Maintain professional decorum throughout the event.</li>
+                        <li>Do not interrupt other teams during their presentations.</li>
+                        <li>Follow the instructions of the coordinators, technical team, and judges.</li>
+                        <li>Be respectful and professional while interacting with judges and other participants.</li>
+                        <li>All team members are required to wear their <strong>ID cards and uniform</strong> at all
+                            times during the presentation.</li>
+                    </ul>
                 </div>
-                <div class="faq-answer">
-                    All information regarding YouTube video requirements will be updated later.
+
+                <div class="instruction-important-box">
+                    <div class="important-title">⚠️ Important</div>
+                    <p>The presentation time is strictly limited to <strong>10 minutes</strong>. Plan, rehearse, and
+                        manage your time accordingly.</p>
+                    <p>Understand your problem. Present your solution clearly. Demonstrate your innovation. Be ready to
+                        answer questions and defend your technical decisions.</p>
+                </div>
+
+                <div class="instruction-footer-note">
+                    🌟 <strong>Best wishes to all teams! All the very best for the SIH Internal Hackathon!</strong> 🌟
+
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
-<div style="text-align: center;">
-    <p>&copy; SIH 2026 - Internal Hackathon <br /> Institution's Innovation Council. <br /> Amrita Vishwa
-        Vidyapeetham Coimbatore.</p>
-</div>
+    <div style="text-align: center;">
+        <p>&copy; SIH 2026 - Internal Hackathon <br /> Institution's Innovation Council. <br /> Amrita Vishwa
+            Vidyapeetham Coimbatore.</p>
+    </div>
 
 </body>
 
