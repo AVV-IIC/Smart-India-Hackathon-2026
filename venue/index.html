@@ -639,6 +639,15 @@ Updated Date: 2nd Sep 2026
             padding: 2px 4px;
             border-radius: 3px;
         }
+        .highlightd {
+            background-color: green;
+            color: #FFFFFF;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+        }
 
         .highlightc {
             background-color: #1a73e8;
@@ -733,6 +742,7 @@ Updated Date: 2nd Sep 2026
         /* Date Sub-Tabs Styling */
         .date-tabs-container {
             display: flex;
+            justify-content: center;
             gap: 10px;
             margin-bottom: 20px;
             flex-wrap: wrap;
@@ -754,6 +764,27 @@ Updated Date: 2nd Sep 2026
             background-color: #1a73e8;
             color: #ffffff;
             border-color: #1a73e8;
+        }
+
+        .date-tab.completed {
+            border-color: green;
+            color: green;
+        }
+
+        .date-tab.completed.active {
+            background-color: green;
+            color: #ffffff;
+            border-color: green;
+        }
+
+        .date-tab.completed:hover {
+            background-color: #e6f4ea;
+            color: green;
+        }
+
+        .date-tab.completed.active:hover {
+            background-color: #0d652d;
+            color: #ffffff;
         }
 
         .date-tab:hover {
@@ -840,7 +871,7 @@ Updated Date: 2nd Sep 2026
         <!-- Hall 1: Saraswathi Hall Schedule Table -->
         <div id="hall-content-saraswathi" class="panel-details">
             <div class="date-tabs-container">
-                <button id="sar-date-tab-3" class="date-tab active" onclick="switchHallDate('saraswathi', '3')">📅 3rd Sep</button>
+                <button id="sar-date-tab-3" class="date-tab active completed" onclick="switchHallDate('saraswathi', '3')">📅 3rd Sep</button>
                 <button id="sar-date-tab-4" class="date-tab" onclick="switchHallDate('saraswathi', '4')">📅 4th Sep</button>
                 <button id="sar-date-tab-6" class="date-tab" onclick="switchHallDate('saraswathi', '6')">📅 6th Sep</button>
             </div>
@@ -848,7 +879,7 @@ Updated Date: 2nd Sep 2026
             <!-- Date 3rd Sep Content -->
             <div id="sar-date-content-3">
                 <div class="hall-header-bar">
-                    <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightc">Completed</span></h3>
+                    <h3>HW#P1 - Saraswathi Hall (AB1) <span class="highlightd">Completed</span></h3>
                 </div>
             <table>
                 <thead>
@@ -1333,13 +1364,13 @@ Updated Date: 2nd Sep 2026
         <!-- Hall 2: Viveka Hall Schedule Table -->
         <div id="hall-content-viveka" class="panel-details" style="display: none;">
             <div class="date-tabs-container">
-                <button id="viv-date-tab-3" class="date-tab active" onclick="switchHallDate('viveka', '3')">📅 3rd Sep</button>
+                <button id="viv-date-tab-3" class="date-tab active completed" onclick="switchHallDate('viveka', '3')">📅 3rd Sep</button>
             </div>
 
             <!-- Date 3rd Sep Content -->
             <div id="viv-date-content-3">
                 <div class="hall-header-bar">
-                    <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightc">Completed</span></h3>
+                    <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightd">Completed</span></h3>
                 </div>
                 </p>
             <table>
@@ -1664,7 +1695,7 @@ Updated Date: 2nd Sep 2026
     <div id="software-track-content" style="display: none;">
         <!-- Step 2: Available Software Halls Tabs -->
         <div class="hall-tabs-container">
-            <button id="sw-hall-tab-a203" class="hall-tab active" onclick="switchSoftwareHall('a203')">🏛️ SW#P1 - A203 (AB3)</button>
+            <button id="sw-hall-tab-a203" class="hall-tab active" onclick="switchSoftwareHall('a203')">🏛️ SW#P1 - A205 (AB3)</button>
             <button id="sw-hall-tab-a204" class="hall-tab" onclick="switchSoftwareHall('a204')">🏛️ SW#P2 - C205 (AB3)</button>
             <button id="sw-hall-tab-achala" class="hall-tab" onclick="switchSoftwareHall('achala')">🏛️ SW#P7 - Achala Hall (AB3)</button>
             <button id="sw-hall-tab-swp8" class="hall-tab" onclick="switchSoftwareHall('swp8')">🏛️ SW#P8 - Viveka Hall(AB1)</button>
@@ -1908,7 +1939,8 @@ Updated Date: 2nd Sep 2026
                             <td class="col-sno">2</td>
                             <td class="col-time">09:20 AM - 09:35 AM</td>
                             <td rowspan="8" class="col-judge">J16</td>
-                            <td class="problem-cell">SIH26200 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Space Technology & Exploration Systems.</td>
+                            <td class="problem-cell">SIH26200 - 	
+Student Innovation-Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.</td>
                             <td class="col-team-no">SIH26-A0H-T157</td>
                             <td class="col-team-name">MADDIPATLA PHANI PRIYA [CB.SC.U4AIE26140]</td>
                             <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T157" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -1932,7 +1964,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">5</td>
                             <td class="col-time">10:20 AM - 10:35 AM</td>
-                            <td class="problem-cell">SIH26162 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Clean & Green Tech.</td>
+                            <td class="problem-cell">SIH26162 - AI-Based Detection and Classification of Industrial Fires and Persistent Thermal Sources Using NASA FIRMS, OSM & Satellite Data.</td>
                             <td class="col-team-no">SIH26-A0H-T073</td>
                             <td class="col-team-name">Kaevin P [CB.SC.U4CSE26218]</td>
                             <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T073" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -1940,7 +1972,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">6</td>
                             <td class="col-time">10:40 AM - 10:55 AM</td>
-                            <td rowspan="4" class="problem-cell">SIH26032 - Development of an AI-enabled System for Automated Land Record Verification.</td>
+                            <td rowspan="4" class="problem-cell">SIH26032 - Farmers often face long waiting times, lack of information regarding procurement schedules, and uncertainty about procurement status..</td>
                             <td class="col-team-no">SIH26-A0H-T256</td>
                             <td class="col-team-name">P ROHIT [CB.SC.U4CSE26435]</td>
                             <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T256" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -2188,7 +2220,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">13</td>
                             <td class="col-time">01:50 PM - 02:05 PM</td>
-                            <td class="problem-cell">SIH26075 - CAPACITY CONNECT: A Digital Capacity Building and Learning Management Portal.</td>
+                            <td class="problem-cell">SIH26075 - Participants are invited to design and develop **CAPACITY CONNECT A Digital Capacity Building and Learning Management Portal** to support organizational training, competency development, and knowledge sharing through a centralized web-based platform..</td>
                             <td class="col-team-no">SIH26-A0H-T128</td>
                             <td class="col-team-name">Tanishq Rathi [CB.SC.U4CSE26762]</td>
                             <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T128" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -2232,7 +2264,7 @@ Updated Date: 2nd Sep 2026
                             <td class="col-sno">19</td>
                             <td class="col-time">03:50 PM - 04:05 PM</td>
                             <td rowspan="2" class="col-judge">J11</td>
-                            <td class="problem-cell">SIH26207 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Travel & Tourism.</td>
+                            <td class="problem-cell">SIH26207 - Student Innovation-Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.</td>
                             <td class="col-team-no">SIH26-A0H-T115</td>
                             <td class="col-team-name">Lalith sudharsan M M [CB.AI.U4AAR26029]</td>
                             <td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T115" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -2490,14 +2522,14 @@ Updated Date: 2nd Sep 2026
                         <td class="problem-cell">SIH26001 - AI-Based Early Warning and Landslide Risk Monitoring System in NER.</td>
                         <td class="col-team-no">SIH26-A0H-T085</td>
                         <td class="col-team-name">P Kamalaakasthuri [CB.EN.U4ELC26131]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
                     </tr>
                     <tr>
                         <td class="col-sno">2</td>
                         <td class="problem-cell">SIH26037 - Adaptive Path Planning and Collision Avoidance for Autonomous Vehicles on Unstructured Indian Roads.</td>
                         <td class="col-team-no">SIH26-A0H-T338</td>
                         <td class="col-team-name">Aditya shankar ponugumatla [CB.SC.U4CSE26106]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated Presentation</span></td>
                     </tr>
                     <tr>
                         <td class="col-sno">3</td>
@@ -2741,12 +2773,12 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T312", leader: "Chaarushree Dharmendrakumar [CB.EN.U4CHE26008]", problem: "SIH26032 - Development of an AI-enabled System for Automated Land ...", panel: "SW#P2 - C205 (AB3)", domain: "AI / Governance", time: "11:20 AM - 11:35 AM", file: "a204hall.html" },
             { id: "SIH26-A0H-T332", leader: "Rohit M [CB.PS.I5DAS25023]", problem: "SIH26032 - Development of an AI-enabled System for Automated Land ...", panel: "SW#P2 - C205 (AB3)", domain: "AI / Governance", time: "11:40 AM - 11:55 AM", file: "a204hall.html" },
             { id: "SIH26-A0H-T382", leader: "Tharunima M [cb.en.u4aee26060]", problem: "SIH26032 - Development of an AI-enabled System for Automated Land ...", panel: "SW#P2 - C205 (AB3)", domain: "AI / Governance", time: "12:00 PM - 12:15 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T063", leader: "Navikesh Saravanan [CB.SC.U4CSE25734]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "01:30 PM - 01:45 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T137", leader: "Ashwath Krishna B [CB.SC.U4CYS26105]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "01:50 PM - 02:05 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T160", leader: "MITHUL PRANAV D [CB.EN.U4CCE26029]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:10 PM - 02:25 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T238", leader: "Sujitkumar S [CB.AI.U4AID25052]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:30 PM - 02:45 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T293", leader: "Vimaladhithan Velayya [CB.EN.U4CCE25156]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:50 PM - 03:05 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T337", leader: "Akshara Sree R [CB.AI.U4AID25103]", problem: "SIH26189 - Smart India Hackathon Innovation", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "03:10 PM - 03:25 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T063", leader: "Navikesh Saravanan [CB.SC.U4CSE25734]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "01:30 PM - 01:45 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T137", leader: "Ashwath Krishna B [CB.SC.U4CYS26105]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "01:50 PM - 02:05 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T160", leader: "MITHUL PRANAV D [CB.EN.U4CCE26029]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:10 PM - 02:25 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T238", leader: "Sujitkumar S [CB.AI.U4AID25052]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:30 PM - 02:45 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T293", leader: "Vimaladhithan Velayya [CB.EN.U4CCE25156]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "02:50 PM - 03:05 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T337", leader: "Akshara Sree R [CB.AI.U4AID25103]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System", panel: "SW#P2 - C205 (AB3)", domain: "Software Tech", time: "03:10 PM - 03:25 PM", file: "a204hall.html" },
 
             // Software Track - SW#P7 - Achala Hall
             { id: "SIH26-A0H-T053", leader: "Ashwin.G [CB.AI.U4CPS26007]", problem: "SIH26001 - AI-Based Early Warning and Landslide Risk Monitoring Sy...", panel: "SW#P7 - Achala Hall (AB3)", domain: "AI / Agri Tech", time: "09:00 AM - 09:15 AM", file: "achalahall.html" },
@@ -2787,7 +2819,7 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T338", leader: "Aditya shankar ponugumatla [CB.SC.U4CSE26106]", problem: "SIH26037 - Adaptive Path Planning and Collision Avoidance for Auto...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T174", leader: "A Tharun [cb.sc.u4cse26201]", problem: "SIH26047 - Patient Case-Taking Software", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T301", leader: "KACHA JASWANTH SATYA KUMAR [CB.SC.U4CSE25025]", problem: "SIH26047 - Patient Case-Taking Software", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
-            { id: "SIH26-A0H-T049", leader: "Yazhidanya V [CB.EN.U4ECE26159]", problem: "SIH26076 - Development of personalized homepage for 'Mausam' mobil...'Mausam' mo...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+            { id: "SIH26-A0H-T049", leader: "Yazhidanya V [CB.EN.U4ECE26159]", problem: "SIH26076 - Development of personalized homepage for 'Mausam' mobile application", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T075", leader: "Gopika Sathish [CB.AI.U4AID26053]", problem: "SIH26085 - Urban Flood Nowcasting System (Drainage and Rainfall Co...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T120", leader: "Mokshit Sai J [CB.EN.U4ECE26231]", problem: "SIH26130 - Efficiency in streamlining industrial approvals, compli...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T398", leader: "Prajit [cb.ps.i5mat26011]", problem: "SIH26027 - AI-Powered Automatic Block Planning to Maximize Asset A...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
