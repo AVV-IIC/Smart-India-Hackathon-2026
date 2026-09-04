@@ -6258,7 +6258,7 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26116",
+    "problemStatement": "SIH26040",
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "LaranyaK"
@@ -6279,7 +6279,7 @@ window.teamsData = [
     "problemStatement": "SIH26044",
     "accepted": "Accepted",
     "idError": false,
-    "githubUsername": "SubashreekaDS"
+    "githubUsername": "sds-nexora"
   },
   {
     "id": "SIH26-A0H-T503",
@@ -6294,7 +6294,7 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26229",
+    "problemStatement": "SIH26197",
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "AshwinKrishna"
@@ -6312,7 +6312,7 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26200",
+    "problemStatement": "SIH26208",
     "accepted": "Accepted",
     "idError": false,
     "githubUsername": "ShivaneSM"
@@ -6330,10 +6330,10 @@ window.teamsData = [
     ],
     "status": "On board",
     "mentor": "No Mentor",
-    "problemStatement": "SIH26009",
+    "problemStatement": "SIH26114",
     "accepted": "Accepted",
     "idError": false,
-    "githubUsername": "ThiruvikramanR"
+    "githubUsername": "Thiruvikraman2538"
   },
   {
     "id": "SIH26-A0H-T506",
@@ -6351,7 +6351,7 @@ window.teamsData = [
     "problemStatement": "SIH26176",
     "accepted": "Accepted",
     "idError": false,
-    "githubUsername": "AswathS"
+    "githubUsername": "Aswath641006"
   },
   {
     "id": "SIH26-A0H-T507",
@@ -6369,7 +6369,25 @@ window.teamsData = [
     "problemStatement": "SIH26114",
     "accepted": "Accepted",
     "idError": false,
-    "githubUsername": "NikithaP"
+    "githubUsername": "Nikitha1916"
+  },
+    {
+    "id": "SIH26-A0H-T508",
+    "name": "Team Agri",
+    "leader": "Swathi L [CB.AG.U4AGR24159]",
+    "members": [
+      "Aakash.S.S [CB.AG.U4AGR25002]",
+      "Varun.M [CB.AG.U4AGR24163]",
+      "Nandita [CB.AG.U4AGR24145]",
+      "Thejunath.N [CB.AG.U4AGR25051]",
+      "Ranjan.M [CB.AG.U4AGR24152]"
+    ],
+    "status": "On board",
+    "mentor": "",
+    "problemStatement": "SIH26110",
+    "accepted": "Accepted",
+    "idError": false,
+    "githubUsername": "Swathil24159"
   },
   {
     "id": "-",
