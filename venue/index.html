@@ -412,20 +412,20 @@ Updated Date: 2nd Sep 2026
             }
 
             .panel-details {
-                padding: 10px;
+                padding: 8px;
                 border-radius: 8px;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
             }
 
             table {
-                min-width: 620px;
+                min-width: 580px;
             }
 
             th,
             td {
                 padding: 8px 6px;
-                font-size: 12.5px;
+                font-size: 12px;
             }
 
             .modal-overlay {
@@ -1029,6 +1029,56 @@ Updated Date: 2nd Sep 2026
                 position: static;
                 transform: none;
                 justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .search-container-wrapper {
+                width: 100%;
+                padding: 0 4px;
+                box-sizing: border-box;
+            }
+
+            .search-input-box {
+                font-size: 13px;
+                padding: 12px 34px 12px 36px;
+            }
+
+            .search-results-dropdown {
+                left: 4px;
+                right: 4px;
+                max-height: 340px;
+            }
+
+            .search-result-item {
+                padding: 10px 12px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .search-result-badge {
+                align-self: flex-start;
+            }
+
+            .status-legend-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                width: 100%;
+                margin-top: 4px;
+            }
+
+            .status-legend-box {
+                font-size: 11.5px;
+                padding: 5px 8px;
+                border-radius: 5px;
+                flex: 1 1 auto;
+                text-align: center;
+                min-width: 70px;
             }
         }
     </style>
@@ -1040,7 +1090,7 @@ Updated Date: 2nd Sep 2026
 
 <body>
     <p align="center">
-        <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" width="1200" />
+        <img alt="header" src="../teams/assets/images/Finalized_sih_2026_header.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </p>
 
     <h2>Smart India Hackathon - 2026</h2>
@@ -2000,7 +2050,7 @@ Updated Date: 2nd Sep 2026
     <div id="software-track-content" style="display: none;">
         <!-- Step 2: Available Software Halls Tabs -->
         <div class="hall-tabs-container">
-            <button id="sw-hall-tab-a203" class="hall-tab active" onclick="switchSoftwareHall('a203')">🏛️ SW#P1 - A205
+            <button id="sw-hall-tab-a205" class="hall-tab active" onclick="switchSoftwareHall('a205')">🏛️ SW#P1 - A205
                 (AB3)</button>
             <button id="sw-hall-tab-a204" class="hall-tab" onclick="switchSoftwareHall('a204')">🏛️ SW#P2 - C205
                 (AB3)</button>
@@ -2012,17 +2062,17 @@ Updated Date: 2nd Sep 2026
                 Rejected Teams</button>
         </div>
 
-        <!-- Software Hall 1: SW#P1 - A203 -->
-        <div id="sw-hall-content-a203" class="panel-details">
+        <!-- Software Hall 1: SW#P1 - A205 -->
+        <div id="sw-hall-content-a205" class="panel-details">
             <div class="date-tabs-container">
-                <button id="sw-a203-date-tab-4" class="date-tab active" onclick="switchSoftwareHallDate('a203', '4')">📅
+                <button id="sw-a205-date-tab-4" class="date-tab active" onclick="switchSoftwareHallDate('a205', '4')">📅
                     4th Sep</button>
-                <button id="sw-a203-date-tab-6" class="date-tab" onclick="switchSoftwareHallDate('a203', '6')">📅 6th
+                <button id="sw-a205-date-tab-6" class="date-tab" onclick="switchSoftwareHallDate('a205', '6')">📅 6th
                     Sep</button>
             </div>
 
             <!-- Date 4th Sep Content -->
-            <div id="sw-a203-date-content-4">
+            <div id="sw-a205-date-content-4">
                 <div class="hall-header-bar">
                     <h3>SW#P1 - Room A205 (AB3) <span class="highlightc">Scheduled</span></h3>
                 </div>
@@ -2222,12 +2272,12 @@ Updated Date: 2nd Sep 2026
             </div>
 
             <!-- Date 6th Sep Placeholder -->
-            <div id="sw-a203-date-content-6" style="display: none;">
+            <div id="sw-a205-date-content-6" style="display: none;">
                 <div class="hall-header-bar">
-                    <h3>SW#P1 - Room A203 (AB3) <span class="highlightc">Scheduled</span></h3>
+                    <h3>SW#P1 - Room A205 (AB3) <span class="highlightc">Scheduled</span></h3>
                 </div>
                 <div class="software-placeholder-card">
-                    <h3>🏛️ SW#P1 - A203 — 6th Sep Schedule</h3>
+                    <h3>🏛️ SW#P1 - A205 — 6th Sep Schedule</h3>
                     <p>Presentation schedules for 6th September 2026 are currently being finalized.<br />Please check
                         back soon for live schedule updates!</p>
                 </div>
@@ -2273,7 +2323,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">2</td>
                             <td class="col-time">09:20 AM - 09:35 AM</td>
-                            <td rowspan="8" class="col-judge">J16</td>
+                            <td rowspan="7" class="col-judge">J16</td>
                             <td class="problem-cell">SIH26200 -
                                 Student Innovation-Innovative ideas that help manage and generate renewable /sustainable
                                 sources more efficiently.</td>
@@ -2315,7 +2365,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">6</td>
                             <td class="col-time">10:40 AM - 10:55 AM</td>
-                            <td rowspan="4" class="problem-cell">SIH26032 - Farmers often face long waiting times, lack
+                            <td rowspan="3" class="problem-cell">SIH26032 - Farmers often face long waiting times, lack
                                 of information regarding procurement schedules, and uncertainty about procurement
                                 status..</td>
                             <td class="col-team-no">SIH26-A0H-T256</td>
@@ -2338,14 +2388,6 @@ Updated Date: 2nd Sep 2026
                             <td class="col-team-name">Rohit M [CB.PS.I5DAS25023]</td>
                             <td class="col-status"><button class="status-btn status-scheduled"
                                     data-team="SIH26-A0H-T332" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">9</td>
-                            <td class="col-time">11:40 AM - 11:55 AM</td>
-                            <td class="col-team-no">SIH26-A0H-T382</td>
-                            <td class="col-team-name">Tharunima M [cb.en.u4aee26060]</td>
-                            <td class="col-status"><button class="status-btn status-scheduled"
-                                    data-team="SIH26-A0H-T382" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
                             <td class="col-sno">10</td>
@@ -2953,14 +2995,16 @@ Updated Date: 2nd Sep 2026
                         <td class="problem-cell">SIH26047 - Patient Case-Taking Software.</td>
                         <td class="col-team-no">SIH26-A0H-T174</td>
                         <td class="col-team-name">A Tharun [cb.sc.u4cse26201]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated
+                                Presentation</span></td>
                     </tr>
                     <tr>
                         <td class="col-sno">4</td>
                         <td class="problem-cell">SIH26047 - Patient Case-Taking Software.</td>
                         <td class="col-team-no">SIH26-A0H-T301</td>
                         <td class="col-team-name">KACHA JASWANTH SATYA KUMAR [CB.SC.U4CSE25025]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Rejected - AI Generated
+                                Presentation</span></td>
                     </tr>
                     <tr>
                         <td class="col-sno">5</td>
@@ -2968,7 +3012,7 @@ Updated Date: 2nd Sep 2026
                             application.</td>
                         <td class="col-team-no">SIH26-A0H-T049</td>
                         <td class="col-team-name">Yazhidanya V [CB.EN.U4ECE26159]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
                     </tr>
                     <tr>
                         <td class="col-sno">6</td>
@@ -2976,23 +3020,7 @@ Updated Date: 2nd Sep 2026
                             Coupling).</td>
                         <td class="col-team-no">SIH26-A0H-T075</td>
                         <td class="col-team-name">Gopika Sathish [CB.AI.U4AID26053]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
-                    </tr>
-                    <tr>
-                        <td class="col-sno">7</td>
-                        <td class="problem-cell">SIH26130 - Efficiency in streamlining industrial approvals, compliance
-                            processes, and access to government support services.</td>
-                        <td class="col-team-no">SIH26-A0H-T120</td>
-                        <td class="col-team-name">Mokshit Sai J [CB.EN.U4ECE26231]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
-                    </tr>
-                    <tr>
-                        <td class="col-sno">8</td>
-                        <td class="problem-cell">SIH26027 - AI-Powered Automatic Block Planning to Maximize Asset
-                            Availability for Train Operations on Indian Railways.</td>
-                        <td class="col-team-no">SIH26-A0H-T398</td>
-                        <td class="col-team-name">Prajit [cb.ps.i5mat26011]</td>
-                        <td class="col-status"><span class="status-btn status-warning">Rejected</span></td>
+                        <td class="col-status"><span class="status-btn status-warning">Deadline Missed</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -3108,7 +3136,7 @@ Updated Date: 2nd Sep 2026
         }
 
         function switchSoftwareHall(hall) {
-            ['a203', 'a204', 'achala', 'swp8', 'rejected'].forEach(h => {
+            ['a205', 'a204', 'achala', 'swp8', 'rejected'].forEach(h => {
                 const tab = document.getElementById(`sw-hall-tab-${h}`);
                 const content = document.getElementById(`sw-hall-content-${h}`);
                 if (tab) tab.classList.remove('active');
@@ -3173,23 +3201,23 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T314", leader: "Jaiya Anish S [CB.SC.U4CSE26721]", problem: "SIH26004 - AI-Assisted Early Detection System for Osteoarthritis (...", panel: "HW#P2 - Viveka Hall (AB1)", domain: "AI / Healthcare", time: "04:10 PM - 04:30 PM", file: "vivekahall.html" },
             { id: "SIH26-A0H-T033", leader: "Ashwanth S [CB.AI.U4AAR26009]", problem: "SIH26112 - Design and Develop a Modular Autonomous Mobile Robot (A...", panel: "HW#P1 - Saraswathi Hall (AB1)", domain: "Robotics / Logistics", time: "03:50 PM - 04:05 PM", file: "saraswathihall.html" },
 
-            // Software Track - SW#P1 - A203
-            { id: "SIH26-A0H-T148", leader: "Thiruvenkadesuwaran S [CB.SC.U4CYS26162]", problem: "SIH26151 - Dark web threat actor de-anonymization", panel: "SW#P1 - A203 (AB3)", domain: "Cybersecurity", time: "09:00 AM - 09:20 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T069", leader: "Sri Dhiksha.M [CB.SC.U4CYS26055]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A203 (AB3)", domain: "Cybersecurity", time: "09:20 AM - 09:40 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T168", leader: "A.Kamalesh [CB.AI.U4QTS26023]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A203 (AB3)", domain: "Cybersecurity", time: "09:40 AM - 10:00 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T173", leader: "ASWANTH JAIN C [CB.EN.U4CCE25006]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A203 (AB3)", domain: "Cybersecurity", time: "10:00 AM - 10:20 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T182", leader: "Sanjay MS [CB.SC.U4CSE24248]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A203 (AB3)", domain: "AI / Smart Cities", time: "10:40 AM - 11:00 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T188", leader: "Vivethasri C [CB.AI.U4AID24162]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A203 (AB3)", domain: "AI / Smart Cities", time: "11:00 AM - 11:20 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T217", leader: "LATHIKA SRI K [CB.SC.U4CSE25531]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A203 (AB3)", domain: "AI / Smart Cities", time: "11:20 AM - 11:40 AM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T300", leader: "Vishnu Saravana Kumaran [CB.SC.U4CSE24060]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A203 (AB3)", domain: "AI / Smart Cities", time: "11:40 AM - 12:00 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T379", leader: "Sriram S [CB.SC.U4AIE24066]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A203 (AB3)", domain: "AI / Smart Cities", time: "12:00 PM - 12:20 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T009", leader: "Jaikiran J [CB.SC.U4CSE25324]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A203 (AB3)", domain: "Blockchain", time: "01:30 PM - 01:50 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T065", leader: "T S ABHIJITH [CB.SC.U4CYS26059]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A203 (AB3)", domain: "Blockchain", time: "01:50 PM - 02:10 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T147", leader: "Purvikka N. [CB.SC.U4CSE26442]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A203 (AB3)", domain: "Blockchain", time: "02:10 PM - 02:30 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T159", leader: "A K Vijeesh [CB.EN.U4ECE26202]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A203 (AB3)", domain: "Blockchain", time: "02:30 PM - 02:50 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T141", leader: "V RAGGHUL [CB.SC.U4CSE26163]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A203 (AB3)", domain: "AI / IoT", time: "02:50 PM - 03:10 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T356", leader: "Parkavi R [CB.SC.U4AIE24338]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A203 (AB3)", domain: "AI / IoT", time: "03:10 PM - 03:30 PM", file: "a203hall.html" },
-            { id: "SIH26-A0H-T372", leader: "Prasanna B [CB.SC.U4CSE24537]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A203 (AB3)", domain: "AI / IoT", time: "03:50 PM - 04:10 PM", file: "a203hall.html" },
+            // Software Track - SW#P1 - A205
+            { id: "SIH26-A0H-T148", leader: "Thiruvenkadesuwaran S [CB.SC.U4CYS26162]", problem: "SIH26151 - Dark web threat actor de-anonymization", panel: "SW#P1 - A205 (AB3)", domain: "Cybersecurity", time: "09:00 AM - 09:20 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T069", leader: "Sri Dhiksha.M [CB.SC.U4CYS26055]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A205 (AB3)", domain: "Cybersecurity", time: "09:20 AM - 09:40 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T168", leader: "A.Kamalesh [CB.AI.U4QTS26023]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A205 (AB3)", domain: "Cybersecurity", time: "09:40 AM - 10:00 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T173", leader: "ASWANTH JAIN C [CB.EN.U4CCE25006]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System", panel: "SW#P1 - A205 (AB3)", domain: "Cybersecurity", time: "10:00 AM - 10:20 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T182", leader: "Sanjay MS [CB.SC.U4CSE24248]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A205 (AB3)", domain: "AI / Smart Cities", time: "10:40 AM - 11:00 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T188", leader: "Vivethasri C [CB.AI.U4AID24162]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A205 (AB3)", domain: "AI / Smart Cities", time: "11:00 AM - 11:20 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T217", leader: "LATHIKA SRI K [CB.SC.U4CSE25531]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A205 (AB3)", domain: "AI / Smart Cities", time: "11:20 AM - 11:40 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T300", leader: "Vishnu Saravana Kumaran [CB.SC.U4CSE24060]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A205 (AB3)", domain: "AI / Smart Cities", time: "11:40 AM - 12:00 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T379", leader: "Sriram S [CB.SC.U4AIE24066]", problem: "SIH26153 - AI based Network Attack Forecasting from Network Traffi...", panel: "SW#P1 - A205 (AB3)", domain: "AI / Smart Cities", time: "12:00 PM - 12:20 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T009", leader: "Jaikiran J [CB.SC.U4CSE25324]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A205 (AB3)", domain: "Blockchain", time: "01:30 PM - 01:50 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T065", leader: "T S ABHIJITH [CB.SC.U4CYS26059]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A205 (AB3)", domain: "Blockchain", time: "01:50 PM - 02:10 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T147", leader: "Purvikka N. [CB.SC.U4CSE26442]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A205 (AB3)", domain: "Blockchain", time: "02:10 PM - 02:30 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T159", leader: "A K Vijeesh [CB.EN.U4ECE26202]", problem: "SIH26190 - Secure Digital Document Management System for Legal and...", panel: "SW#P1 - A205 (AB3)", domain: "Blockchain", time: "02:30 PM - 02:50 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T141", leader: "V RAGGHUL [CB.SC.U4CSE26163]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A205 (AB3)", domain: "AI / IoT", time: "02:50 PM - 03:10 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T356", leader: "Parkavi R [CB.SC.U4AIE24338]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A205 (AB3)", domain: "AI / IoT", time: "03:10 PM - 03:30 PM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T372", leader: "Prasanna B [CB.SC.U4CSE24537]", problem: "SIH26145 - AI-Based Detection of Cyber Threats in Unidirectional I...", panel: "SW#P1 - A205 (AB3)", domain: "AI / IoT", time: "03:50 PM - 04:10 PM", file: "a205hall.html" },
 
             // Software Track - SW#P2 - C205
             { id: "SIH26-A0H-T157", leader: "MADDIPATLA PHANI PRIYA [CB.SC.U4AIE26140]", problem: "SIH26200 - Student Innovation: Swadeshi for Atmanirbhar Bharat - S...", panel: "SW#P2 - C205 (AB3)", domain: "Space Tech", time: "09:00 AM - 09:15 AM", file: "a204hall.html" },
@@ -3465,8 +3493,8 @@ Updated Date: 2nd Sep 2026
                 switchHall('saraswathi');
             } else if (panelName.includes('Viveka Hall (AB1)') || panelName.includes('HW#P2')) {
                 switchHall('viveka');
-            } else if (panelName.includes('A203') || panelName.includes('SW#P1')) {
-                switchSoftwareHall('a203');
+            } else if (panelName.includes('A205') || panelName.includes('SW#P1')) {
+                switchSoftwareHall('a205');
             } else if (panelName.includes('C205') || panelName.includes('SW#P2')) {
                 switchSoftwareHall('a204');
             } else if (panelName.includes('Achala') || panelName.includes('SW#P7')) {
