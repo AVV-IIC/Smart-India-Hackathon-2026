@@ -1708,11 +1708,19 @@ Updated Date: 2nd Sep 2026
             <div class="date-tabs-container">
                 <button id="viv-date-tab-3" class="date-tab active completed" onclick="switchHallDate('viveka', '3')">📅
                     3rd Sep</button>
+                <button id="viv-date-tab-4" class="date-tab" onclick="switchHallDate('viveka', '4')">📅 4th
+                    Sep</button>
                 <div id="viv-status-legend-3" class="status-legend-wrapper">
                     <span class="status-legend-box legend-scheduled">Scheduled:16</span>
                     <span class="status-legend-box legend-completed">Completed:13</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:01</span>
                     <span class="status-legend-box legend-didntshow">Re-Scheduled:02</span>
+                </div>
+                <div id="viv-status-legend-4" class="status-legend-wrapper" style="display: none;">
+                    <span class="status-legend-box legend-scheduled">Scheduled:</span>
+                    <span class="status-legend-box legend-completed">Completed:</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
                 </div>
             </div>
 
@@ -2081,10 +2089,15 @@ Updated Date: 2nd Sep 2026
         <!-- Software Hall 1: SW#P1 - A205 -->
         <div id="sw-hall-content-a205" class="panel-details">
             <div class="date-tabs-container">
-                <button id="sw-a205-date-tab-4" class="date-tab active" onclick="switchSoftwareHallDate('a205', '4')">📅
+                <button id="sw-a205-date-tab-4" class="date-tab active completed" onclick="switchSoftwareHallDate('a205', '4')">📅
                     4th Sep</button>
                 <!-- <button id="sw-a205-date-tab-5" class="date-tab" onclick="switchSoftwareHallDate('a205', '5')">📅
                     5th Sep</button> -->
+                <div id="sw-a205-status-legend-4" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:16</span>
+                    <span class="status-legend-box legend-completed">Completed:15</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:01</span>
+                </div>
             </div>
 
             <!-- Date 4th Sep Content -->
@@ -2929,8 +2942,14 @@ Updated Date: 2nd Sep 2026
         <!-- Software Hall 4: SW#P8 -->
         <div id="sw-hall-content-swp8" class="panel-details" style="display: none;">
             <div class="date-tabs-container">
-                <button id="sw-swp8-date-tab-4" class="date-tab active" onclick="switchSoftwareHallDate('swp8', '4')">📅
+                <button id="sw-swp8-date-tab-4" class="date-tab active completed onclick="switchSoftwareHallDate('swp8', '4')">📅
                     4th Sep</button>
+                <div id="sw-swp8-status-legend-4" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:15</span>
+                    <span class="status-legend-box legend-completed">Completed:09</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:04</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:01</span>
+                </div>
             </div>
 
             <!-- Date 4th Sep Content -->
@@ -3349,14 +3368,18 @@ Updated Date: 2nd Sep 2026
             ['4', '5', '6'].forEach(d => {
                 const tab = document.getElementById(`sw-${hall}-date-tab-${d}`);
                 const content = document.getElementById(`sw-${hall}-date-content-${d}`);
+                const legend = document.getElementById(`sw-${hall}-status-legend-${d}`);
                 if (tab) tab.classList.remove('active');
                 if (content) content.style.display = 'none';
+                if (legend) legend.style.display = 'none';
             });
 
             const activeTab = document.getElementById(`sw-${hall}-date-tab-${date}`);
             const activeContent = document.getElementById(`sw-${hall}-date-content-${date}`);
+            const activeLegend = document.getElementById(`sw-${hall}-status-legend-${date}`);
             if (activeTab) activeTab.classList.add('active');
             if (activeContent) activeContent.style.display = 'block';
+            if (activeLegend) activeLegend.style.display = 'inline-flex';
         }
 
         const TEAMS_DATABASE = [
