@@ -771,23 +771,25 @@ Updated Date: 2nd Sep 2026
         }
 
         .date-tab.completed {
-            border-color: green;
-            color: green;
-        }
-
-        .date-tab.completed.active {
             background-color: green;
             color: #ffffff;
             border-color: green;
         }
 
+        .date-tab.completed.active {
+            background-color: #0d652d;
+            color: #ffffff;
+            border-color: #0d652d;
+            box-shadow: 0 2px 6px rgba(0, 128, 0, 0.4);
+        }
+
         .date-tab.completed:hover {
-            background-color: #e6f4ea;
-            color: green;
+            background-color: #0e7a33;
+            color: #ffffff;
         }
 
         .date-tab.completed.active:hover {
-            background-color: #0d652d;
+            background-color: #083b1a;
             color: #ffffff;
         }
 
@@ -1145,17 +1147,24 @@ Updated Date: 2nd Sep 2026
         <!-- Hall 1: Saraswathi Hall Schedule Table -->
         <div id="hall-content-saraswathi" class="panel-details">
             <div class="date-tabs-container">
-                <button id="sar-date-tab-3" class="date-tab active completed"
+                <button id="sar-date-tab-3" class="date-tab completed"
                     onclick="switchHallDate('saraswathi', '3')">📅 3rd Sep</button>
-                <button id="sar-date-tab-4" class="date-tab" onclick="switchHallDate('saraswathi', '4')">📅 4th
+                <button id="sar-date-tab-4" class="date-tab active completed" onclick="switchHallDate('saraswathi', '4')">📅 4th
                     Sep</button>
                 <button id="sar-date-tab-6" class="date-tab" onclick="switchHallDate('saraswathi', '6')">📅 6th
                     Sep</button>
-                <div id="sar-status-legend" class="status-legend-wrapper">
+
+                <div id="sar-status-legend-3" class="status-legend-wrapper">
                     <span class="status-legend-box legend-scheduled">Scheduled:17</span>
                     <span class="status-legend-box legend-completed">Completed:12</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:01</span>
                     <span class="status-legend-box legend-didntshow">Didn't Turn Up:04</span>
+                </div>
+                <div id="sar-status-legend-4" class="status-legend-wrapper" style="display: none;">
+                    <span class="status-legend-box legend-scheduled">Scheduled:5</span>
+                    <span class="status-legend-box legend-completed">Completed:3</span>
+                    <span class="status-legend-box legend-withdrawn">Didn't Turn Up:01</span>
+                    <span class="status-legend-box legend-didntshow">Re-Scheduled:01</span>
                 </div>
             </div>
 
@@ -1203,7 +1212,7 @@ Updated Date: 2nd Sep 2026
                             <td class="col-time">09:40 AM - 09:55 AM</td>
                             <td class="col-team-no">SIH26-A0H-T241</td>
                             <td class="col-team-name">C INDRAJITH [CB.EN.U4CHE24008]</td>
-                            <td class="col-status"><button class="status-completed data-team=" SIH26-A0H-T241"
+                            <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T241"
                                     onclick="toggleStatus(this)">Completed</button></td>
                         </tr>
                         <tr>
@@ -1232,7 +1241,7 @@ Updated Date: 2nd Sep 2026
                                 Clean & Green Tech.</td>
                             <td class="col-team-no">SIH26-A0H-T185</td>
                             <td class="col-team-name">D Geethasree [CB.EN.U4ECE26208]</td>
-                            <td class="col-status"><button class="status-completed data-team=" SIH26-A0H-T185"
+                            <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T185"
                                     onclick="toggleStatus(this)">Completed</button></td>
                         </tr>
                         <tr>
@@ -1242,7 +1251,7 @@ Updated Date: 2nd Sep 2026
                                 for Fresh Vegetables in NER.</td>
                             <td class="col-team-no">SIH26-A0H-T158</td>
                             <td class="col-team-name">Tevin Titus [CB.EN.U4MEE24150]</td>
-                            <td class="col-status"><button class="status-didntshowup data-team=" SIH26-A0H-T158"
+                            <td class="col-status"><button class="status-didntshowup" data-team="SIH26-A0H-T158"
                                     onclick="toggleStatus(this)">Withdrawn</button></td>
                         </tr>
                         <tr>
@@ -1250,7 +1259,7 @@ Updated Date: 2nd Sep 2026
                             <td class="col-time">11:20 AM - 11:35 AM</td>
                             <td class="col-team-no">SIH26-A0H-T200</td>
                             <td class="col-team-name">ANANYA H [CB.EN.U4CCE25104]</td>
-                            <td class="col-status"><button class="status-didntshowup data-team=" SIH26-A0H-T200"
+                            <td class="col-status"><button class="status-didntshowup" data-team="SIH26-A0H-T200"
                                     onclick="toggleStatus(this)">Didn't Show Up</button></td>
                         </tr>
                         <tr>
@@ -1327,8 +1336,8 @@ Updated Date: 2nd Sep 2026
                                 Smart Automation.</td>
                             <td class="col-team-no">SIH26-A0H-T039</td>
                             <td class="col-team-name">SUJITHKANNAN M R [CB.EN.U4ARE24049]</td>
-                            <td class="col-status"><button class="status-completed data-team=" SIH26-A0H-T039"
-                                    onclick="toggleStatus(this)">completed</button></td>
+                            <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T039"
+                                    onclick="toggleStatus(this)">Completed</button></td>
                         </tr>
                         <tr class="break-row">
                             <td class="col-sno">18</td>
@@ -1362,7 +1371,7 @@ Updated Date: 2nd Sep 2026
 
             <!-- Date 4th Sep Content -->
             <div id="sar-date-content-4" style="display: none;">
-                <div class="hall-header-bar">
+                <div class="hall-header-bar">   
                     <h3>HW#P1 - Saraswathi Hall (AB2) <span class="highlightc">Scheduled</span></h3>
                 </div>
                 <table>
@@ -1418,7 +1427,7 @@ Updated Date: 2nd Sep 2026
                             <td class="col-time">10:20 AM - 10:35 AM</td>
                             <td class="col-team-no">SIH26-A0H-T374</td>
                             <td class="col-team-name">GOVARDAN S [CB.EN.U4ARE25057]</td>
-                            <td class="col-status"><button class="status-didntshowup
+                            <td class="col-status"><button class="status-didntshowup"
                                     data-team="SIH26-A0H-T374" onclick="toggleStatus(this)">Didn't Show Up</button></td>
                         </tr>
                         <tr>
@@ -1691,8 +1700,8 @@ Updated Date: 2nd Sep 2026
             <div class="date-tabs-container">
                 <button id="viv-date-tab-3" class="date-tab active completed" onclick="switchHallDate('viveka', '3')">📅
                     3rd Sep</button>
-                <div id="viv-status-legend" class="status-legend-wrapper">
-                    <span class="status-legend-box legend-scheduled">Schedule:16</span>
+                <div id="viv-status-legend-3" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:16</span>
                     <span class="status-legend-box legend-completed">Completed:13</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:01</span>
                     <span class="status-legend-box legend-didntshow">Re-Scheduled:02</span>
@@ -1704,7 +1713,6 @@ Updated Date: 2nd Sep 2026
                 <div class="hall-header-bar">
                     <h3>HW#P2 - Viveka Hall (AB1) <span class="highlightd">Completed</span></h3>
                 </div>
-                </p>
                 <table>
                     <thead>
                         <tr>
@@ -3111,19 +3119,23 @@ Updated Date: 2nd Sep 2026
             ['3', '4', '5', '6'].forEach(d => {
                 const tab = document.getElementById(`${prefix}-date-tab-${d}`);
                 const content = document.getElementById(`${prefix}-date-content-${d}`);
+                const legend = document.getElementById(`${prefix}-status-legend-${d}`);
                 if (tab) tab.classList.remove('active');
                 if (content) content.style.display = 'none';
+                if (legend) legend.style.display = 'none';
             });
 
             const activeTab = document.getElementById(`${prefix}-date-tab-${date}`);
             const activeContent = document.getElementById(`${prefix}-date-content-${date}`);
+            const activeLegend = document.getElementById(`${prefix}-status-legend-${date}`);
+
             if (activeTab) activeTab.classList.add('active');
             if (activeContent) activeContent.style.display = 'block';
+            if (activeLegend) activeLegend.style.display = 'inline-flex';
 
-            // Show status legend ONLY on 3rd Sep, hide on 4th, 5th, 6th Sep
-            const legend = document.getElementById(`${prefix}-status-legend`);
-            if (legend) {
-                legend.style.display = (String(date) === '3') ? 'inline-flex' : 'none';
+            const legacyLegend = document.getElementById(`${prefix}-status-legend`);
+            if (legacyLegend) {
+                legacyLegend.style.display = (String(date) === '3') ? 'inline-flex' : 'none';
             }
         }
 
