@@ -2125,13 +2125,14 @@ Updated Date: 2nd Sep 2026
         <!-- Step 2: Available Software Halls Tabs -->
                         <div class="hall-tabs-container">
             <button id="sw-hall-tab-a205" class="hall-tab active" onclick="switchSoftwareHall('a205')">🏛️ SW#P1 - A205 (AB3)</button>
-            <button id="sw-hall-tab-a204" class="hall-tab" onclick="switchSoftwareHall('a204')">🏛️ SW#P2 - CSE Conf Hall (AB3)</button>
+            <button id="sw-hall-tab-a204" class="hall-tab" onclick="switchSoftwareHall('a204')">🏛️ SW#P2 - C205 (AB3)</button>
             <button id="sw-hall-tab-cyberconf" class="hall-tab" onclick="switchSoftwareHall('cyberconf')">🏢 SW#P3 - Cyber Security Conf Hall (AB3)</button>
             <button id="sw-hall-tab-f403" class="hall-tab" onclick="switchSoftwareHall('f403')">🏢 SW#P4 - Room F403 (AB3)</button>
             <button id="sw-hall-tab-f405" class="hall-tab" onclick="switchSoftwareHall('f405')">🏢 SW#P5 - Room F405 (AB3)</button>
             <button id="sw-hall-tab-acharya" class="hall-tab" onclick="switchSoftwareHall('acharya')">🏛️ SW#P6 - Acharya Hall (AB3)</button>
             <button id="sw-hall-tab-achala" class="hall-tab" onclick="switchSoftwareHall('achala')">🏛️ SW#P7 - Achala Hall (AB3)</button>
             <button id="sw-hall-tab-swp8" class="hall-tab" onclick="switchSoftwareHall('swp8')">🏛️ SW#P8 - Viveka Hall(AB1)</button>
+            <button id="sw-hall-tab-swp9" class="hall-tab" onclick="switchSoftwareHall('swp9')">🏛️ SW#P9 -TBD</button>
             <button id="sw-hall-tab-rejected" class="hall-tab" onclick="switchSoftwareHall('rejected')">🚫 Software Rejected Teams</button>
         </div>
 
@@ -2344,31 +2345,26 @@ Updated Date: 2nd Sep 2026
             </div>
         </div>
 
-<!-- Software Hall 2: SW#P2 - A204 -->
+<!-- Software Hall 2: SW#P2 - C205 -->
         <div id="sw-hall-content-a204" class="panel-details" style="display: none;">
             <div class="date-tabs-container">
-                <button id="sw-a204-date-tab-4" class="date-tab completed" onclick="switchSoftwareHallDate('a204', '4')">📅
+                <button id="sw-a204-date-tab-4" class="date-tab active completed" onclick="switchSoftwareHallDate('a204', '4')">📅
                     4th Sep</button>
-                <button id="sw-a204-date-tab-5" class="date-tab active" onclick="switchSoftwareHallDate('a204', '5')">📅
-                    5th Sep</button>
-                <div id="sw-a204-status-legend-4" class="status-legend-wrapper" style="display: none;">
-                    <span class="status-legend-box legend-scheduled">Scheduled:</span>
-                    <span class="status-legend-box legend-completed">Completed:</span>
+                <div id="sw-a204-status-legend-4" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:14</span>
+                    <span class="status-legend-box legend-completed">Completed:13</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
                     <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
                 </div>
-                <div id="sw-a204-status-legend-5" class="status-legend-wrapper">
-                    <span class="status-legend-box legend-scheduled">Scheduled:14</span>
-                    <span class="status-legend-box legend-completed">Completed:</span>
-                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
-                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
+                <div id="sw-a204-status-legend-5" class="status-legend-wrapper" style="display: none;">
+                    <span class="status-legend-box legend-scheduled">TBD</span>
                 </div>
             </div>
 
             <!-- Date 4th Sep Content -->
-            <div id="sw-a204-date-content-4" style="display: none;">
+            <div id="sw-a204-date-content-4">
                 <div class="hall-header-bar">
-                    <h3>SW#P2 - CSE Conference Hall (AB3) <span class="highlightc">Scheduled</span></h3>
+                    <h3>SW#P2 - Room C205 (AB3) <span class="highlightc">Scheduled</span></h3>
                 </div>
                 <table>
                     <thead>
@@ -2562,189 +2558,22 @@ Updated Date: 2nd Sep 2026
                 </table>
             </div>
 
-            <!-- Date 5th Sep Content -->
-            <div id="sw-a204-date-content-5">
+            <!-- Date 5th Sep Placeholder (TBD) -->
+            <div id="sw-a204-date-content-5" style="display: none;">
                 <div class="hall-header-bar">
-                    <h3>SW#P2 - CSE Conference Hall (AB3) <span class="highlightc">Scheduled</span></h3>
+                    <h3>SW#P2 - Room C205 (AB3) <span class="highlightc">TBD</span></h3>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="col-sno">S.No</th>
-                            <th class="col-time">Timing</th>
-                            <th class="col-judge">Judge</th>
-                            <th class="col-pid">Problem ID and Title</th>
-                            <th class="col-team-no">Team Number</th>
-                            <th class="col-team-name">Team leader Name</th>
-                            <th class="col-status">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="col-sno">1</td>
-                            <td class="col-time">09:00 AM - 09:20 AM</td>
-                            <td rowspan="4" class="col-judge">J19</td>
-                            <td rowspan="4" class="problem-cell">SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses</td>
-                            <td class="col-team-no">SIH26-A0H-T025</td>
-                            <td class="col-team-name">Anush Sivakumar [CB.SC.U4CSE25204]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T025" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">2</td>
-                            <td class="col-time">09:20 AM - 09:40 AM</td>
-                            <td class="col-team-no">SIH26-A0H-T042</td>
-                            <td class="col-team-name">Putta Sethu Sagar Reddy [CB.EN.U4ARE25035]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T042" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">3</td>
-                            <td class="col-time">09:40 AM - 10:00 AM</td>
-                            <td class="col-team-no">SIH26-A0H-T181</td>
-                            <td class="col-team-name">Nikhil Sesatheri R M [CB.AI.U4AAR26038]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T181" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">4</td>
-                            <td class="col-time">10:00 AM - 10:20 AM</td>
-                            <td class="col-team-no">SIH26-A0H-T219</td>
-                            <td class="col-team-name">SHAUREYA S [CB.EN.U4ECE25043]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T219" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr class="break-row">
-                            <td class="col-sno">5</td>
-                            <td class="col-time">10:20 AM - 10:40 AM</td>
-                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">6</td>
-                            <td class="col-time">10:40 AM - 11:00 AM</td>
-                            <td rowspan="5" class="col-judge">J19</td>
-                            <td class="problem-cell">SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses</td>
-                            <td class="col-team-no">SIH26-A0H-T284</td>
-                            <td class="col-team-name">G A YUVAN [CB.EN.U4ARE25014]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T284" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">7</td>
-                            <td class="col-time">11:00 AM - 11:20 AM</td>
-                            <td rowspan="2" class="problem-cell">SIH26171 - On-device Visual Perception for Light-weight Browser Agents</td>
-                            <td class="col-team-no">SIH26-A0H-T184</td>
-                            <td class="col-team-name">NIMAL DANYATH K [CB.SC.U4CSE24033]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T184" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">8</td>
-                            <td class="col-time">11:20 AM - 11:40 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T319</td>
-                            <td class="col-team-name">MADHU SHREE K M [CB.SC.U4CSE24328]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T319" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">9</td>
-                            <td class="col-time">11:40 AM - 12:00 PM</td>
-                            <td rowspan="2" class="problem-cell">SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial Structuring Assistant for Rural Micro-Entrepreneurs</td>
-                            <td class="col-team-no">SIH26-A0H-T076</td>
-                            <td class="col-team-name">Aswath G [CB.SC.U4CSE26206]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T076" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">10</td>
-                            <td class="col-time">12:00 PM - 12:20 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T360</td>
-                            <td class="col-team-name">Dharshan M [CB.EN.U4ARE25024]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T076" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr class="break-row">
-                            <td class="col-sno">11</td>
-                            <td class="col-time">12:20 PM - 01:30 PM</td>
-                            <td colspan="5" class="break-text">🍽️ LUNCH BREAK</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">12</td>
-                            <td class="col-time">01:30 PM - 01:50 PM</td>
-                            <td rowspan="6" class="col-judge">J19</td>
-                            <td rowspan="2" class="problem-cell">SIH26100 - AI-Powered Integrated Bid Compliance Verification Platform for GeM Procurement</td>
-                            <td class="col-team-no">SIH26-A0H-T045</td>
-                            <td class="col-team-name">Charugundla Akhil [CB.SC.U4CYS24010]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T045" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">13</td>
-                            <td class="col-time">01:50 PM - 02:10 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T190</td>
-                            <td class="col-team-name">KOTTHAMASU VENKATA SAI PAVANA PRANEETH [CB.AI.U4AID25026]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T190" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">14</td>
-                            <td class="col-time">02:10 PM - 02:30 PM</td>
-                            <td rowspan="2" class="problem-cell">SIH26055 - Smart Scan strategy for Electronic Warfare</td>
-                            <td class="col-team-no">SIH26-A0H-T014</td>
-                            <td class="col-team-name">VALLALA NAGA RITHWIK [CB.SC.U4CSE25361]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T014" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">15</td>
-                            <td class="col-time">02:30 PM - 02:50 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T359</td>
-                            <td class="col-team-name">V R Bhirugu Dev [CB.EN.U4ELC24156]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T359" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">16</td>
-                            <td class="col-time">02:50 PM - 03:10 PM</td>
-                            <td rowspan="2" class="problem-cell">SIH26056 - Development of a Real-time Airfare Price Index for India through Automated Web Scraping of Airline and OTA Platforms</td>
-                            <td class="col-team-no">SIH26-A0H-T175</td>
-                            <td class="col-team-name">Rahul L S [CB.SC.U4AIE24248]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T175" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">17</td>
-                            <td class="col-time">03:10 PM - 03:30 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T318</td>
-                            <td class="col-team-name">Moorthi S P [CB.SC.U4CSE24429]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T318" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr class="break-row">
-                            <td class="col-sno">18</td>
-                            <td class="col-time">03:30 PM - 03:50 PM</td>
-                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">19</td>
-                            <td class="col-time">03:50 PM - 04:10 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">20</td>
-                            <td class="col-time">04:10 PM - 04:30 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">21</td>
-                            <td class="col-time">04:30 PM - 04:50 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="software-placeholder-card">
+                    <h3>🏛️ SW#P2 - C205 — 5th Sep Schedule</h3>
+                    <p>Presentation schedules for 5th September 2026 are to be decided (TBD).<br />Please check
+                        back soon for live schedule updates!</p>
+                </div>
             </div>
 
             <!-- Date 6th Sep Placeholder -->
             <div id="sw-a204-date-content-6" style="display: none;">
                 <div class="hall-header-bar">
-                    <h3>SW#P2 - CSE Conference Hall (AB3) <span class="highlightc">Scheduled</span></h3>
+                    <h3>SW#P2 - Room C205 (AB3) <span class="highlightc">Scheduled</span></h3>
                 </div>
                 <div class="software-placeholder-card">
                     <h3>🏛️ SW#P2 - C205 — 6th Sep Schedule</h3>
@@ -2770,7 +2599,7 @@ Updated Date: 2nd Sep 2026
             <!-- Date 5th Sep Content -->
             <div id="sw-cyberconf-date-content-5">
                 <div class="hall-header-bar">
-                    <h3>SW#P3 - Cyber Security Conference Hall (AB3) <span class="highlightc">Scheduled</span></h3>
+                    <h3>SW#P3 - Cyber Security TBD  <span class="highlightc">Scheduled</span></h3>
                 </div>
                 <table>
                     <thead>
@@ -2867,80 +2696,33 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">12</td>
                             <td class="col-time">01:30 PM - 01:50 PM</td>
-                            <td rowspan="6" class="col-judge">J21</td>
-                            <td rowspan="3" class="problem-cell">SIH26171 - On-device Visual Perception for Light-weight Browser Agents</td>
-                            <td class="col-team-no">SIH26-A0H-T184</td>
-                            <td class="col-team-name">NIMAL DANYATH K [CB.SC.U4CSE24033]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T184" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">13</td>
-                            <td class="col-time">01:50 PM - 02:10 PM</td>
-                            <td class="col-team-no">SIH26-A0H-T319</td>
-                            <td class="col-team-name">Madhu Shree K M [CB.SC.U4CSE24328]</td>
-                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T319" onclick="toggleStatus(this)">Scheduled</button></td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">14</td>
-                            <td class="col-time">02:10 PM - 02:30 PM</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved (Buffer)</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">15</td>
-                            <td class="col-time">02:30 PM - 02:50 PM</td>
+                            <td rowspan="2" class="col-judge">J21</td>
                             <td rowspan="2" class="problem-cell">SIH26164 - Audio Forensics Platform for Advanced Deepfake Detection</td>
                             <td class="col-team-no">SIH26-A0H-T043</td>
                             <td class="col-team-name">Haranya R.N [CB.EN.U4ECE25122]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T043" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
-                            <td class="col-sno">16</td>
-                            <td class="col-time">02:50 PM - 03:10 PM</td>
+                            <td class="col-sno">13</td>
+                            <td class="col-time">01:50 PM - 02:10 PM</td>
                             <td class="col-team-no">SIH26-A0H-T119</td>
                             <td class="col-team-name">Yashvardhan Deep [CB.SC.U4CYS24062]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T119" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
-                            <td class="col-sno">17</td>
-                            <td class="col-time">03:10 PM - 03:30 PM</td>
-                            <td class="problem-cell">SIH26159 - Automated Red Teaming for Generative AI Models</td>
+                            <td class="col-sno">14</td>
+                            <td class="col-time">02:10 PM - 02:30 PM</td>
+                            <td rowspan="2" class="problem-cell">SIH26159 - Automated Red Teaming for Generative AI Models</td>
                             <td class="col-team-no">SIH26-A0H-T056</td>
                             <td class="col-team-name">KALWAKOL ABHIJITH [CB.SC.U4CYS25027]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T056" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
-                        <tr class="break-row">
-                            <td class="col-sno">18</td>
-                            <td class="col-time">03:30 PM - 03:50 PM</td>
-                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
-                        </tr>
                         <tr>
-                            <td class="col-sno">19</td>
-                            <td class="col-time">03:50 PM - 04:10 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">20</td>
-                            <td class="col-time">04:10 PM - 04:30 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
-                        </tr>
-                        <tr>
-                            <td class="col-sno">21</td>
-                            <td class="col-time">04:30 PM - 04:50 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
-                            <td class="col-status">—</td>
+                            <td class="col-sno">15</td>
+                            <td class="col-time">02:30 PM - 02:50 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T108</td>
+                            <td class="col-team-name">V M Nitesh [CB.SC.U4CYS24059] </td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T108" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -3230,7 +3012,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">9</td>
                             <td class="col-time">01:30 PM - 01:50 PM</td>
-                            <td rowspan="8" class="col-judge">J23</td>
+                            <td rowspan="9" class="col-judge">J23</td>
                             <td rowspan="5" class="problem-cell">SIH26167 - SatQuery AI - An Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis</td>
                             <td class="col-team-no">SIH26-A0H-T001</td>
                             <td class="col-team-name">Ragulkanna V U [CB.EN.U4ECE24045]</td>
@@ -3267,7 +3049,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">14</td>
                             <td class="col-time">03:10 PM - 03:30 PM</td>
-                            <td rowspan="3" class="problem-cell">SIH26176 - ORCA Marine EcOsystem Reasoning with Collaborative Agents</td>
+                            <td rowspan="4" class="problem-cell">SIH26176 - ORCA Marine EcOsystem Reasoning with Collaborative Agents</td>
                             <td class="col-team-no">SIH26-A0H-T061</td>
                             <td class="col-team-name">Siddhesh Bala B [CB.AI.U4AID26142]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T061" onclick="toggleStatus(this)">Scheduled</button></td>
@@ -3289,10 +3071,8 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">17</td>
                             <td class="col-time">04:10 PM - 04:30 PM</td>
-                            <td class="col-judge">—</td>
-                            <td class="problem-cell">—</td>
-                            <td class="col-team-no">—</td>
-                            <td class="col-team-name">Slot Reserved</td>
+                            <td class="col-team-no">SIH26-A0H-T286</td>
+                            <td class="col-team-name">Akshat Pawar [CB.SC.U4CSE25305]</td>
                             <td class="col-status">—</td>
                         </tr>
                         <tr>
@@ -4342,7 +4122,198 @@ Updated Date: 2nd Sep 2026
             </div>
         </div>
 
-</div>
+        <!-- Software Hall 9: SW#P9 - CSE Conf Hall -->
+        <div id="sw-hall-content-swp9" class="panel-details" style="display: none;">
+            <div class="date-tabs-container">
+                <button id="sw-swp9-date-tab-5" class="date-tab active"
+                    onclick="switchSoftwareHallDate('swp9', '5')">📅 5th Sep</button>
+                <div id="sw-swp9-status-legend-5" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:15</span>
+                    <span class="status-legend-box legend-completed">Completed:</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
+                </div>
+            </div>
+
+            <!-- Date 5th Sep Content -->
+            <div id="sw-swp9-date-content-5">
+                <div class="hall-header-bar">
+                    <h3>SW#P9 - TBD   <span class="highlightc">Scheduled</span></h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sno">S.No</th>
+                            <th class="col-time">Timing</th>
+                            <th class="col-judge">Judge</th>
+                            <th class="col-pid">Problem ID and Title</th>
+                            <th class="col-team-no">Team Number</th>
+                            <th class="col-team-name">Team leader Name</th>
+                            <th class="col-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sno">1</td>
+                            <td class="col-time">09:00 AM - 09:20 AM</td>
+                            <td rowspan="4" class="col-judge">J19</td>
+                            <td rowspan="4" class="problem-cell">SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses</td>
+                            <td class="col-team-no">SIH26-A0H-T025</td>
+                            <td class="col-team-name">Anush Sivakumar [CB.SC.U4CSE25204]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T025" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">2</td>
+                            <td class="col-time">09:20 AM - 09:40 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T042</td>
+                            <td class="col-team-name">Putta Sethu Sagar Reddy [CB.EN.U4ARE25035]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T042" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">3</td>
+                            <td class="col-time">09:40 AM - 10:00 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T181</td>
+                            <td class="col-team-name">Nikhil Sesatheri R M [CB.AI.U4AAR26038]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T181" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">4</td>
+                            <td class="col-time">10:00 AM - 10:20 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T219</td>
+                            <td class="col-team-name">SHAUREYA S [CB.EN.U4ECE25043]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T219" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="col-sno">5</td>
+                            <td class="col-time">10:20 AM - 10:40 AM</td>
+                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">6</td>
+                            <td class="col-time">10:40 AM - 11:00 AM</td>
+                            <td rowspan="5" class="col-judge">J19</td>
+                            <td class="problem-cell">SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses</td>
+                            <td class="col-team-no">SIH26-A0H-T284</td>
+                            <td class="col-team-name">G A YUVAN [CB.EN.U4ARE25014]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T284" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">7</td>
+                            <td class="col-time">11:00 AM - 11:20 AM</td>
+                            <td rowspan="2" class="problem-cell">SIH26171 - On-device Visual Perception for Light-weight Browser Agents</td>
+                            <td class="col-team-no">SIH26-A0H-T184</td>
+                            <td class="col-team-name">NIMAL DANYATH K [CB.SC.U4CSE24033]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T184" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">8</td>
+                            <td class="col-time">11:20 AM - 11:40 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T319</td>
+                            <td class="col-team-name">MADHU SHREE K M [CB.SC.U4CSE24328]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T319" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">9</td>
+                            <td class="col-time">11:40 AM - 12:00 PM</td>
+                            <td rowspan="2" class="problem-cell">SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial Structuring Assistant for Rural Micro-Entrepreneurs</td>
+                            <td class="col-team-no">SIH26-A0H-T076</td>
+                            <td class="col-team-name">Aswath G [CB.SC.U4CSE26206]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T076" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">10</td>
+                            <td class="col-time">12:00 PM - 12:20 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T360</td>
+                            <td class="col-team-name">Dharshan M [CB.EN.U4ARE25024]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T360" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="col-sno">11</td>
+                            <td class="col-time">12:20 PM - 01:30 PM</td>
+                            <td colspan="5" class="break-text">🍽️ LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">12</td>
+                            <td class="col-time">01:30 PM - 01:50 PM</td>
+                            <td rowspan="6" class="col-judge">J19</td>
+                            <td rowspan="2" class="problem-cell">SIH26100 - AI-Powered Integrated Bid Compliance Verification Platform for GeM Procurement</td>
+                            <td class="col-team-no">SIH26-A0H-T045</td>
+                            <td class="col-team-name">Charugundla Akhil [CB.SC.U4CYS24010]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T045" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">13</td>
+                            <td class="col-time">01:50 PM - 02:10 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T190</td>
+                            <td class="col-team-name">KOTTHAMASU VENKATA SAI PAVANA PRANEETH [CB.AI.U4AID25026]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T190" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">14</td>
+                            <td class="col-time">02:10 PM - 02:30 PM</td>
+                            <td rowspan="2" class="problem-cell">SIH26055 - Smart Scan strategy for Electronic Warfare</td>
+                            <td class="col-team-no">SIH26-A0H-T014</td>
+                            <td class="col-team-name">VALLALA NAGA RITHWIK [CB.SC.U4CSE25361]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T014" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">15</td>
+                            <td class="col-time">02:30 PM - 02:50 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T359</td>
+                            <td class="col-team-name">V R Bhirugu Dev [CB.EN.U4ELC24156]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T359" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">16</td>
+                            <td class="col-time">02:50 PM - 03:10 PM</td>
+                            <td rowspan="2" class="problem-cell">SIH26056 - Development of a Real-time Airfare Price Index for India through Automated Web Scraping of Airline and OTA Platforms</td>
+                            <td class="col-team-no">SIH26-A0H-T175</td>
+                            <td class="col-team-name">Rahul L S [CB.SC.U4AIE24248]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T175" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">17</td>
+                            <td class="col-time">03:10 PM - 03:30 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T318</td>
+                            <td class="col-team-name">Moorthi S P [CB.SC.U4CSE24429]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T318" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="col-sno">18</td>
+                            <td class="col-time">03:30 PM - 03:50 PM</td>
+                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">19</td>
+                            <td class="col-time">03:50 PM - 04:10 PM</td>
+                            <td class="col-judge">—</td>
+                            <td class="problem-cell">—</td>
+                            <td class="col-team-no">—</td>
+                            <td class="col-team-name">Slot Reserved</td>
+                            <td class="col-status">—</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">20</td>
+                            <td class="col-time">04:10 PM - 04:30 PM</td>
+                            <td class="col-judge">—</td>
+                            <td class="problem-cell">—</td>
+                            <td class="col-team-no">—</td>
+                            <td class="col-team-name">Slot Reserved</td>
+                            <td class="col-status">—</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">21</td>
+                            <td class="col-time">04:30 PM - 04:50 PM</td>
+                            <td class="col-judge">—</td>
+                            <td class="problem-cell">—</td>
+                            <td class="col-team-no">—</td>
+                            <td class="col-team-name">Slot Reserved</td>
+                            <td class="col-status">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <!-- Software Track Rejected Teams -->
         <div id="sw-hall-content-rejected" class="panel-details" style="display: none;">
@@ -4479,7 +4450,7 @@ Updated Date: 2nd Sep 2026
         }
 
         function switchSoftwareHall(hall) {
-            const halls = ['a205', 'a204', 'cyberconf', 'f403', 'f405', 'acharya', 'achala', 'swp8', 'rejected'];
+            const halls = ['a205', 'a204', 'cyberconf', 'f403', 'f405', 'acharya', 'achala', 'swp8', 'swp9', 'rejected'];
             halls.forEach(h => {
                 const tab = document.getElementById(`sw-hall-tab-${h}`);
                 const content = document.getElementById(`sw-hall-content-${h}`);
@@ -4589,34 +4560,34 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T141", leader: "Harshenee V [CB.SC.U4CYS25023]", problem: "SIH26177 - Agentic Workflows for Digital Forensics and Incident Res...", panel: "SW#P1 - Room A205 (AB3)", domain: "Cybersecurity / Blockchain", time: "02:50 PM - 03:05 PM", file: "a205hall.html" },
             { id: "SIH26-A0H-T356", leader: "C SAI CHARAN [CB.SC.U4CYS24011]", problem: "SIH26177 - Agentic Workflows for Digital Forensics and Incident Res...", panel: "SW#P1 - Room A205 (AB3)", domain: "Cybersecurity / Blockchain", time: "03:10 PM - 03:25 PM", file: "a205hall.html" },
             { id: "SIH26-A0H-T372", leader: "R HARIHARAN [CB.SC.U4CYS24045]", problem: "SIH26188 - AI-Based Fake Identity & Document Screening System.", panel: "SW#P1 - Room A205 (AB3)", domain: "Cyber Security / AI", time: "03:30 PM - 03:45 PM", file: "a205hall.html" },
-            { id: "SIH26-A0H-T157", leader: "MADDIPATLA PHANI PRIYA [CB.SC.U4AIE26140]", problem: "SIH26200 - Student Innovation-Innovative ideas that help manage and...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "09:20 AM - 09:35 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T057", leader: "Gowresh Krithik [CB.AI.U4AID26008]", problem: "SIH26198 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Sm...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "09:40 AM - 09:55 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T289", leader: "Ragav S [cb.sc.u4aie24041]", problem: "SIH26154 - Gen AI Platform for Automated Content Transformation.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "10:00 AM - 10:15 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T073", leader: "Kaevin P [CB.SC.U4CSE26218]", problem: "SIH26162 - AI-Based Detection and Classification of Industrial Fire...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Space Tech / Meteorology", time: "10:20 AM - 10:35 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T256", leader: "P ROHIT [CB.SC.U4CSE26435]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "AgriTech / Logistics", time: "10:40 AM - 10:55 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T312", leader: "Chaarushree Dharmendrakumar [CB.EN.U4CHE26008]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "AgriTech / Logistics", time: "11:00 AM - 11:15 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T332", leader: "Rohit M [CB.PS.I5DAS25023]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "AgriTech / Logistics", time: "11:20 AM - 11:35 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T063", leader: "Navikesh Saravanan [CB.SC.U4CSE25734]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "01:30 PM - 01:45 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T137", leader: "Ashwath Krishna B [CB.SC.U4CYS26105]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "01:50 PM - 02:05 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T160", leader: "MITHUL PRANAV D [CB.EN.U4CCE26029]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:10 PM - 02:25 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T238", leader: "Sujitkumar S [CB.AI.U4AID25052]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:30 PM - 02:45 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T293", leader: "Vimaladhithan Velayya [CB.EN.U4CCE25156]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:50 PM - 03:05 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T337", leader: "Akshara Sree R [CB.AI.U4AID25103]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "03:10 PM - 03:25 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T025", leader: "Anush Sivakumar [CB.SC.U4CSE25204]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Vehicles / Traffic AI", time: "09:00 AM - 09:20 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T042", leader: "Putta Sethu Sagar Reddy [CB.EN.U4ARE25035]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Vehicles / Traffic AI", time: "09:20 AM - 09:40 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T181", leader: "Nikhil Sesatheri R M [CB.AI.U4AAR26038]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Vehicles / Traffic AI", time: "09:40 AM - 10:00 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T219", leader: "SHAUREYA S [CB.EN.U4ECE25043]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Vehicles / Traffic AI", time: "10:00 AM - 10:20 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T284", leader: "G A YUVAN [CB.EN.U4ARE25014]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Vehicles / Traffic AI", time: "10:40 AM - 11:00 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T184", leader: "NIMAL DANYATH K [CB.SC.U4CSE24033]", problem: "SIH26171 - On-device Visual Perception for Light-weight Browser Agents", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "11:00 AM - 11:20 AM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T319", leader: "MADHU SHREE K M [CB.SC.U4CSE24328]", problem: "SIH26171 - On-device Visual Perception for Light-weight Browser Agents", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "11:20 AM - 11:40 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T076", leader: "Aswath G [CB.SC.U4CSE26206]", problem: "SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial St...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "11:40 AM - 12:00 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T360", leader: "Dharshan M [CB.EN.U4ARE25024]", problem: "SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial St...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "12:00 PM - 12:20 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T045", leader: "Charugundla Akhil [CB.SC.U4CYS24010]", problem: "SIH26100 - AI-Powered Integrated Bid Compliance Verification Platfo...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "01:30 PM - 01:50 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T190", leader: "KOTTHAMASU VENKATA SAI PAVANA PRANEETH [CB.AI.U4AID25026]", problem: "SIH26100 - AI-Powered Integrated Bid Compliance Verification Platfo...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "01:50 PM - 02:10 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T014", leader: "VALLALA NAGA RITHWIK [CB.SC.U4CSE25361]", problem: "SIH26055 - Smart Scan strategy for Electronic Warfare", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:10 PM - 02:30 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T359", leader: "V R Bhirugu Dev [CB.EN.U4ELC24156]", problem: "SIH26055 - Smart Scan strategy for Electronic Warfare", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:30 PM - 02:50 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T175", leader: "Rahul L S [CB.SC.U4AIE24248]", problem: "SIH26056 - Development of a Real-time Airfare Price Index for India...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "02:50 PM - 03:10 PM", file: "a204hall.html" },
-            { id: "SIH26-A0H-T318", leader: "Moorthi S P [CB.SC.U4CSE24429]", problem: "SIH26056 - Development of a Real-time Airfare Price Index for India...", panel: "SW#P2 - CSE Conference Hall (AB3)", domain: "Smart Automation / Robotics", time: "03:10 PM - 03:30 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T157", leader: "MADDIPATLA PHANI PRIYA [CB.SC.U4AIE26140]", problem: "SIH26200 - Student Innovation-Innovative ideas that help manage and...", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "09:20 AM - 09:35 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T057", leader: "Gowresh Krithik [CB.AI.U4AID26008]", problem: "SIH26198 - Student Innovation: Swadeshi for Atmanirbhar Bharat - Sm...", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "09:40 AM - 09:55 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T289", leader: "Ragav S [cb.sc.u4aie24041]", problem: "SIH26154 - Gen AI Platform for Automated Content Transformation.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "10:00 AM - 10:15 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T073", leader: "Kaevin P [CB.SC.U4CSE26218]", problem: "SIH26162 - AI-Based Detection and Classification of Industrial Fire...", panel: "SW#P2 - Room C205 (AB3)", domain: "Space Tech / Meteorology", time: "10:20 AM - 10:35 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T256", leader: "P ROHIT [CB.SC.U4CSE26435]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - Room C205 (AB3)", domain: "AgriTech / Logistics", time: "10:40 AM - 10:55 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T312", leader: "Chaarushree Dharmendrakumar [CB.EN.U4CHE26008]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - Room C205 (AB3)", domain: "AgriTech / Logistics", time: "11:00 AM - 11:15 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T332", leader: "Rohit M [CB.PS.I5DAS25023]", problem: "SIH26032 - Farmers often face long waiting times, lack of informati...", panel: "SW#P2 - Room C205 (AB3)", domain: "AgriTech / Logistics", time: "11:20 AM - 11:35 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T063", leader: "Navikesh Saravanan [CB.SC.U4CSE25734]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "01:30 PM - 01:45 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T137", leader: "Ashwath Krishna B [CB.SC.U4CYS26105]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "01:50 PM - 02:05 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T160", leader: "MITHUL PRANAV D [CB.EN.U4CCE26029]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "02:10 PM - 02:25 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T238", leader: "Sujitkumar S [CB.AI.U4AID25052]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "02:30 PM - 02:45 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T293", leader: "Vimaladhithan Velayya [CB.EN.U4CCE25156]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "02:50 PM - 03:05 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T337", leader: "Akshara Sree R [CB.AI.U4AID25103]", problem: "SIH26189 - AI-Powered Criminal Network Analysis System.", panel: "SW#P2 - Room C205 (AB3)", domain: "Smart Automation / Robotics", time: "03:10 PM - 03:25 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T025", leader: "Anush Sivakumar [CB.SC.U4CSE25204]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P9 - TBD  ", domain: "Smart Vehicles / Traffic AI", time: "09:00 AM - 09:20 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T042", leader: "Putta Sethu Sagar Reddy [CB.EN.U4ARE25035]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P9 - TBD  ", domain: "Smart Vehicles / Traffic AI", time: "09:20 AM - 09:40 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T181", leader: "Nikhil Sesatheri R M [CB.AI.U4AAR26038]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P9 - TBD  ", domain: "Smart Vehicles / Traffic AI", time: "09:40 AM - 10:00 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T219", leader: "SHAUREYA S [CB.EN.U4ECE25043]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P9 - TBD  ", domain: "Smart Vehicles / Traffic AI", time: "10:00 AM - 10:20 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T284", leader: "G A YUVAN [CB.EN.U4ARE25014]", problem: "SIH26123 - Edge-AI Based Distributed Fleet Coordination for Autonom...", panel: "SW#P9 - TBD  ", domain: "Smart Vehicles / Traffic AI", time: "10:40 AM - 11:00 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T184", leader: "NIMAL DANYATH K [CB.SC.U4CSE24033]", problem: "SIH26171 - On-device Visual Perception for Light-weight Browser Agents", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "11:00 AM - 11:20 AM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T319", leader: "MADHU SHREE K M [CB.SC.U4CSE24328]", problem: "SIH26171 - On-device Visual Perception for Light-weight Browser Agents", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "11:20 AM - 11:40 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T076", leader: "Aswath G [CB.SC.U4CSE26206]", problem: "SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial St...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "11:40 AM - 12:00 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T360", leader: "Dharshan M [CB.EN.U4ARE25024]", problem: "SIH26091 - AI-Driven Hyper-Local Business Advisory and Financial St...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "12:00 PM - 12:20 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T045", leader: "Charugundla Akhil [CB.SC.U4CYS24010]", problem: "SIH26100 - AI-Powered Integrated Bid Compliance Verification Platfo...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "01:30 PM - 01:50 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T190", leader: "KOTTHAMASU VENKATA SAI PAVANA PRANEETH [CB.AI.U4AID25026]", problem: "SIH26100 - AI-Powered Integrated Bid Compliance Verification Platfo...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "01:50 PM - 02:10 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T014", leader: "VALLALA NAGA RITHWIK [CB.SC.U4CSE25361]", problem: "SIH26055 - Smart Scan strategy for Electronic Warfare", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "02:10 PM - 02:30 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T359", leader: "V R Bhirugu Dev [CB.EN.U4ELC24156]", problem: "SIH26055 - Smart Scan strategy for Electronic Warfare", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "02:30 PM - 02:50 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T175", leader: "Rahul L S [CB.SC.U4AIE24248]", problem: "SIH26056 - Development of a Real-time Airfare Price Index for India...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "02:50 PM - 03:10 PM", file: "a204hall.html" },
+            { id: "SIH26-A0H-T318", leader: "Moorthi S P [CB.SC.U4CSE24429]", problem: "SIH26056 - Development of a Real-time Airfare Price Index for India...", panel: "SW#P9 - TBD  ", domain: "Smart Automation / Robotics", time: "03:10 PM - 03:30 PM", file: "a204hall.html" },
             { id: "SIH26-A0H-T028", leader: "S Ashvinsai [CB.SC.U4CYS25049]", problem: "SIH26104 - Developing an integrated, in-house, enterprise-scale Blo...", panel: "SW#P3 - Cyber Security Conf Hall (AB3)", domain: "Cybersecurity / Blockchain", time: "09:00 AM - 09:20 AM", file: "cyberconfhall.html" },
             { id: "SIH26-A0H-T233", leader: "Surendra T [CB.SC.U4CSE25263]", problem: "SIH26104 - Developing an integrated, in-house, enterprise-scale Blo...", panel: "SW#P3 - Cyber Security Conf Hall (AB3)", domain: "Cybersecurity / Blockchain", time: "09:20 AM - 09:40 AM", file: "cyberconfhall.html" },
             { id: "SIH26-A0H-T255", leader: "Vishal Kumar S [CB.SC.U4CYS24157]", problem: "SIH26104 - Developing an integrated, in-house, enterprise-scale Blo...", panel: "SW#P3 - Cyber Security Conf Hall (AB3)", domain: "Cybersecurity / Blockchain", time: "09:40 AM - 10:00 AM", file: "cyberconfhall.html" },
@@ -4940,10 +4911,20 @@ Updated Date: 2nd Sep 2026
                 switchSoftwareHall('a205');
             } else if (panelName.includes('C205') || panelName.includes('SW#P2')) {
                 switchSoftwareHall('a204');
+            } else if (panelName.includes('Cyber Security') || panelName.includes('SW#P3')) {
+                switchSoftwareHall('cyberconf');
+            } else if (panelName.includes('F403') || panelName.includes('SW#P4')) {
+                switchSoftwareHall('f403');
+            } else if (panelName.includes('F405') || panelName.includes('SW#P5')) {
+                switchSoftwareHall('f405');
+            } else if (panelName.includes('Acharya') || panelName.includes('SW#P6')) {
+                switchSoftwareHall('acharya');
             } else if (panelName.includes('Achala') || panelName.includes('SW#P7')) {
                 switchSoftwareHall('achala');
             } else if (panelName.includes('SW#P8') || panelName.includes('Viveka Hall(AB1)')) {
                 switchSoftwareHall('swp8');
+            } else if (panelName.includes('SW#P9') || panelName.includes('CSE Conf') || panelName.includes('CSE Conference')) {
+                switchSoftwareHall('swp9');
             } else if (panelName.includes('Rejected')) {
                 if (isSoftware) switchSoftwareHall('rejected');
                 else switchHall('rejected');
