@@ -2022,6 +2022,8 @@ Updated Date: 2nd Sep 2026
                 Hall(AB1)</button>
             <button id="sw-hall-tab-rejected" class="hall-tab" onclick="switchSoftwareHall('rejected')">🚫 Software
                 Rejected Teams</button>
+            <button id="sw-hall-tab-withdrawn" class="hall-tab" onclick="switchSoftwareHall('withdrawn')">⚠️ Software
+                Withdrawn Teams</button>
         </div>
 
         <!-- Software Hall 1: SW#P1 - A205 -->
@@ -3094,6 +3096,93 @@ Updated Date: 2nd Sep 2026
                 </tbody>
             </table>
         </div>
+
+        <!-- Software Track Withdrawn Teams -->
+        <div id="sw-hall-content-withdrawn" class="panel-details" style="display: none;">
+            <div class="hall-header-bar">
+                <h3>⚠️ Withdrawn Teams <span class="highlightc" style="background-color: #e37400;">Withdrawn</span></h3>
+            </div>
+            <p><strong>Status:</strong> <span class="highlight"
+                    style="background-color: #fef7e0; color: #b06000;">Withdrawal Recorded</span></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-sno">S.No</th>
+                        <th class="col-team-no">Team Number</th>
+                        <th class="col-team-name">Team Name</th>
+                        <th class="col-team-name">Team Leader Name</th>
+                        <th class="problem-cell">Problem ID and Title</th>
+                        <th class="col-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sno">1</td>
+                        <td class="col-team-no">SIH26-A0H-T334</td>
+                        <td class="col-team-name">Fight club</td>
+                        <td class="col-team-name">Praneesh Venkateshan G [CB.EN.U4MEE26131]</td>
+                        <td class="problem-cell">SIH26047 - Patient Case-Taking Software.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">2</td>
+                        <td class="col-team-no">SIH26-A0H-T299</td>
+                        <td class="col-team-name">Nexus</td>
+                        <td class="col-team-name">Harshini V.B [CB.PS.I5DAS26008]</td>
+                        <td class="problem-cell">SIH26001 - AI-Based Early Warning and Landslide Risk Monitoring System in NER.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">3</td>
+                        <td class="col-team-no">SIH26-A0H-T262</td>
+                        <td class="col-team-name">BLACK HATS</td>
+                        <td class="col-team-name">AGILAN [CB.EN.U4ARE26039]</td>
+                        <td class="problem-cell">SIH26066 - Development of AI-enabled Low Cost Real Time Mine Surface and Subsurface Hazards Early Warning System.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">4</td>
+                        <td class="col-team-no">SIH26-A0H-T365</td>
+                        <td class="col-team-name">Infinite loops</td>
+                        <td class="col-team-name">Mugilan N [CB.EN.U4EEE26020]</td>
+                        <td class="problem-cell">SIH26021 - AI-Powered Automated Attendance & Engagement Monitoring.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">5</td>
+                        <td class="col-team-no">SIH26-A0H-T324</td>
+                        <td class="col-team-name">Solstice</td>
+                        <td class="col-team-name">Sai Hruthik Gunuputi Penchal [CB.SC.U4CSE25623]</td>
+                        <td class="problem-cell">SIH26209 - Student Innovation: Swadeshi for Atmanirbhar Bharat.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">6</td>
+                        <td class="col-team-no">SIH26-A0H-T113</td>
+                        <td class="col-team-name">Algorithm Avengers</td>
+                        <td class="col-team-name">Abhinav N [CB.AI.U4AID26051]</td>
+                        <td class="problem-cell">SIH26073 - Automated Assessment Tool for Programming Assignments.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">7</td>
+                        <td class="col-team-no">SIH26-A0H-T321</td>
+                        <td class="col-team-name">Nexora_6</td>
+                        <td class="col-team-name">Vineeth Kumar S A [CB.AI.U4AID26165]</td>
+                        <td class="problem-cell">SIH26047 - Patient Case-Taking Software.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-sno">8</td>
+                        <td class="col-team-no">SIH26-A0H-T383</td>
+                        <td class="col-team-name">6ixer</td>
+                        <td class="col-team-name">Sidambarisvar B [cb.sc.u4cse24751]</td>
+                        <td class="problem-cell">SIH26101 - Smart Solution for Cyber Threat Detection.</td>
+                        <td class="col-status"><span class="status-btn status-withdrawn">Team Withdrawn</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
@@ -3209,7 +3298,7 @@ Updated Date: 2nd Sep 2026
         }
 
         function switchSoftwareHall(hall) {
-            ['a205', 'a204', 'achala', 'swp8', 'rejected'].forEach(h => {
+            ['a205', 'a204', 'achala', 'swp8', 'rejected', 'withdrawn'].forEach(h => {
                 const tab = document.getElementById(`sw-hall-tab-${h}`);
                 const content = document.getElementById(`sw-hall-content-${h}`);
                 if (tab) tab.classList.remove('active');
@@ -3355,6 +3444,16 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T075", leader: "Gopika Sathish [CB.AI.U4AID26053]", problem: "SIH26085 - Urban Flood Nowcasting System (Drainage and Rainfall Co...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T120", leader: "Mokshit Sai J [CB.EN.U4ECE26231]", problem: "SIH26130 - Efficiency in streamlining industrial approvals, compli...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
             { id: "SIH26-A0H-T398", leader: "Prajit [cb.ps.i5mat26011]", problem: "SIH26027 - AI-Powered Automatic Block Planning to Maximize Asset A...", panel: "Software Track Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
+
+            // Software Track - Withdrawn Teams
+            { id: "SIH26-A0H-T334", leader: "Praneesh Venkateshan G [CB.EN.U4MEE26131]", problem: "SIH26047 - Patient Case-Taking Software", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T299", leader: "Harshini V.B [CB.PS.I5DAS26008]", problem: "SIH26001 - AI-Based Early Warning and Landslide Risk Monitoring Sy...", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T262", leader: "AGILAN [CB.EN.U4ARE26039]", problem: "SIH26066 - Development of AI-enabled Low Cost Real Time Mine Su...", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T365", leader: "Mugilan N [CB.EN.U4EEE26020]", problem: "SIH26021 - AI-Powered Automated Attendance & Engagement Monitoring", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T324", leader: "Sai Hruthik Gunuputi Penchal [CB.SC.U4CSE25623]", problem: "SIH26209 - Student Innovation: Swadeshi for Atmanirbhar Bharat", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T113", leader: "Abhinav N [CB.AI.U4AID26051]", problem: "SIH26073 - Automated Assessment Tool for Programming Assignments", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T321", leader: "Vineeth Kumar S A [CB.AI.U4AID26165]", problem: "SIH26047 - Patient Case-Taking Software", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
+            { id: "SIH26-A0H-T383", leader: "Sidambarisvar B [cb.sc.u4cse24751]", problem: "SIH26101 - Smart Solution for Cyber Threat Detection", panel: "Software Track Withdrawn Teams", domain: "Withdrawn", time: "N/A", file: "withdrawnteams.html" },
 
             // Rejected Teams
             { id: "SIH26-A0H-T235", leader: "Krishiva Venkatesh [CB.EN.U4ECE26027]", problem: "SIH26005 - Solar-Powered Smart Mini Cold Storage System for Fresh ...", panel: "Rejected Teams", domain: "Rejected", time: "N/A", file: "rejectedteams.html" },
@@ -3578,6 +3677,8 @@ Updated Date: 2nd Sep 2026
                 switchSoftwareHall('achala');
             } else if (panelName.includes('SW#P8') || panelName.includes('Viveka Hall(AB1)')) {
                 switchSoftwareHall('swp8');
+            } else if (panelName.includes('Withdrawn')) {
+                if (isSoftware) switchSoftwareHall('withdrawn');
             } else if (panelName.includes('Rejected')) {
                 if (isSoftware) switchSoftwareHall('rejected');
                 else switchHall('rejected');
