@@ -13,6 +13,16 @@ Updated Date: 2nd Sep 2026
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>SIH 2026 - Jury Panel Details</title>
     <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -353,23 +363,25 @@ Updated Date: 2nd Sep 2026
         /* Mobile View Optimization */
         @media (max-width: 768px) {
             body {
-                margin: 10px 8px;
+                margin: 10px 6px;
                 padding: 0;
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 18px;
+                margin-bottom: 6px;
             }
 
             .subtitle {
-                font-size: 13.5px;
+                font-size: 13px;
                 margin-bottom: 15px;
             }
 
             .track-tabs-wrapper {
                 flex-direction: column;
-                gap: 12px;
-                margin: 15px auto;
+                gap: 10px;
+                margin: 12px auto;
+                width: 100%;
             }
 
             .track-tabs-container {
@@ -385,47 +397,61 @@ Updated Date: 2nd Sep 2026
 
             .top-info-btns {
                 width: 100%;
-                justify-content: space-between;
+                justify-content: center;
                 gap: 8px;
             }
 
             .info-btn {
                 flex: 1;
                 justify-content: center;
-                padding: 10px 12px;
-                font-size: 13.5px;
+                padding: 9px 10px;
+                font-size: 13px;
             }
 
-
-
             .hall-tabs-container {
-                flex-direction: column;
-                gap: 8px;
-                margin-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                margin-bottom: 16px;
+                width: 100%;
             }
 
             .hall-tab {
-                width: 100%;
-                padding: 12px;
-                font-size: 13.5px;
+                flex: 1 1 calc(50% - 6px);
+                min-width: 120px;
+                padding: 10px 8px;
+                font-size: 12.5px;
                 box-sizing: border-box;
+                text-align: center;
             }
 
             .panel-details {
-                padding: 8px;
+                padding: 6px;
                 border-radius: 8px;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
             }
 
             table {
-                min-width: 580px;
+                min-width: 500px;
+                width: 100%;
             }
 
             th,
             td {
-                padding: 8px 6px;
+                padding: 7px 5px;
                 font-size: 12px;
+            }
+
+            .status-btn, .col-status button {
+                padding: 4px 8px;
+                font-size: 11.5px;
+                min-width: 78px;
             }
 
             .modal-overlay {
@@ -433,32 +459,33 @@ Updated Date: 2nd Sep 2026
             }
 
             .modal-card {
-                max-width: 100%;
+                max-width: 95vw;
                 width: 100%;
-                max-height: 92vh;
+                max-height: 90vh;
                 border-radius: 12px;
             }
 
             .modal-header {
-                padding: 14px 16px;
+                padding: 12px 14px;
             }
 
             .modal-title {
-                font-size: 16px;
+                font-size: 15.5px;
             }
 
             .modal-body {
-                padding: 14px;
+                padding: 12px;
+                font-size: 13.5px;
             }
 
             .faq-question {
-                font-size: 13.5px;
-                padding: 12px 14px;
+                font-size: 13px;
+                padding: 10px 12px;
             }
 
             .faq-answer {
-                font-size: 13px;
-                padding: 12px 14px;
+                font-size: 12.5px;
+                padding: 10px 12px;
             }
         }
 
@@ -1029,8 +1056,13 @@ Updated Date: 2nd Sep 2026
         @media (max-width: 1024px) {
             .date-tabs-container {
                 position: static;
-                flex-direction: column;
-                gap: 12px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                width: 100%;
             }
 
             .status-legend-wrapper {
@@ -1039,6 +1071,7 @@ Updated Date: 2nd Sep 2026
                 justify-content: center;
                 width: 100%;
                 flex-wrap: wrap;
+                margin-top: 6px;
             }
         }
 
@@ -1051,13 +1084,22 @@ Updated Date: 2nd Sep 2026
 
             .search-input-box {
                 font-size: 13px;
-                padding: 12px 34px 12px 36px;
+                padding: 10px 32px 10px 36px;
+            }
+
+            .search-icon-inside {
+                left: 14px;
+                font-size: 15px;
+            }
+
+            .search-clear-btn {
+                right: 14px;
             }
 
             .search-results-dropdown {
                 left: 4px;
                 right: 4px;
-                max-height: 340px;
+                max-height: 320px;
             }
 
             .search-result-item {
@@ -1075,17 +1117,50 @@ Updated Date: 2nd Sep 2026
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 6px;
+                gap: 5px;
                 width: 100%;
-                margin-top: 4px;
+                margin-top: 6px;
             }
 
             .status-legend-box {
-                font-size: 11.5px;
-                padding: 5px 8px;
+                font-size: 11px;
+                padding: 4px 7px;
                 border-radius: 5px;
                 flex: 1 1 auto;
                 text-align: center;
+                min-width: 65px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                margin: 6px 4px;
+            }
+
+            .hall-tab {
+                flex: 1 1 calc(50% - 4px);
+                font-size: 11.5px;
+                padding: 8px 4px;
+            }
+
+            .date-tab {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .info-btn {
+                font-size: 12px;
+                padding: 8px 6px;
+            }
+
+            th, td {
+                padding: 6px 4px;
+                font-size: 11px;
+            }
+
+            .status-btn, .col-status button {
+                padding: 3px 6px;
+                font-size: 10.5px;
                 min-width: 70px;
             }
         }
