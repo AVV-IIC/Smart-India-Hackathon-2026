@@ -2522,6 +2522,7 @@ Updated Date: 2nd Sep 2026
             <button id="sw-hall-tab-swp8" class="hall-tab" onclick="switchSoftwareHall('swp8')">🏛️ SW#P8 - Viveka Hall(AB1)</button>
             <button id="sw-hall-tab-swp9" class="hall-tab" onclick="switchSoftwareHall('swp9')">🏛️ SW#P9 -Law Conference Hall (AB3)</button>
             <button id="sw-hall-tab-swp10" class="hall-tab" onclick="switchSoftwareHall('swp10')">🏛️ SW#P10 - Saraswathi Hall (AB2)</button>
+            <button id="sw-hall-tab-tbd1" class="hall-tab" onclick="switchSoftwareHall('tbd1')">🏛️ SW#P11 - TBD1</button>
             <button id="sw-hall-tab-rejected" class="hall-tab" onclick="switchSoftwareHall('rejected')">🚫 Software Rejected Teams</button>
         </div>
         -->
@@ -5283,6 +5284,150 @@ Updated Date: 2nd Sep 2026
             </div>
         </div>
 
+        <!-- Software Hall 11: SW#P11 - TBD 1 -->
+        <div id="sw-hall-content-tbd1" class="panel-details" style="display: none;">
+            <div class="date-tabs-container">
+                <button id="sw-tbd1-date-tab-7" class="date-tab active"
+                    onclick="switchSoftwareHallDate('tbd1', '7')">📅 7th Sep</button>
+                <div id="sw-tbd1-status-legend-7" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:12</span>
+                    <span class="status-legend-box legend-completed">Completed:</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
+                </div>
+            </div>
+
+            <!-- Date 7th Sep Content -->
+            <div id="sw-tbd1-date-content-7">
+                <div class="hall-header-bar">
+                    <h3>SW#P11 - TBD 1 — 7th Sep <span class="highlightc">Scheduled</span></h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sno">S.No</th>
+                            <th class="col-time">Timing</th>
+                            <th class="col-judge">Judge</th>
+                            <th class="col-pid">Problem ID and Title</th>
+                            <th class="col-team-no">Team Number</th>
+                            <th class="col-team-name">Team leader Name</th>
+                            <th class="col-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sno">1</td>
+                            <td class="col-time">09:00 AM - 09:15 AM</td>
+                            <td rowspan="3" class="col-judge">J43</td>
+                            <td rowspan="3" class="problem-cell">SIH26173</td>
+                            <td class="col-team-no">SIH26-A0H-T282</td>
+                            <td class="col-team-name">Harish D [CB.EN.U4ECE25057]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T282"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">2</td>
+                            <td class="col-time">09:20 AM - 09:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T088</td>
+                            <td class="col-team-name">Shagarika p [cb.en.u4cce26135]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T088"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">3</td>
+                            <td class="col-time">09:40 AM - 09:55 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T163</td>
+                            <td class="col-team-name">Tarun T [CB.EN.U4CCE25053]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T163"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">4</td>
+                            <td class="col-time">10:00 AM - 10:15 AM</td>
+                            <td rowspan="2" class="col-judge">J43</td>
+                            <td rowspan="2" class="problem-cell">SIH26130</td>
+                            <td class="col-team-no">SIH26-A0H-T120</td>
+                            <td class="col-team-name">Mokshit Sai J [CB.EN.U4ECE26231]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T120"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">5</td>
+                            <td class="col-time">10:20 AM - 10:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T203</td>
+                            <td class="col-team-name">DARSHAN.B [CB.EN.U4CCE25015]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T203"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">6</td>
+                            <td class="col-time">10:40 AM - 10:55 AM</td>
+                            <td rowspan="3" class="col-judge">J43</td>
+                            <td rowspan="3" class="problem-cell">SIH26083</td>
+                            <td class="col-team-no">SIH26-A0H-T244</td>
+                            <td class="col-team-name">Prakalya M [CB.EN.U4ECE26130]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T244"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">7</td>
+                            <td class="col-time">11:00 AM - 11:15 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T275</td>
+                            <td class="col-team-name">Madhumitha R [CB.EN.U4EEE26122]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T275"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">8</td>
+                            <td class="col-time">11:20 AM - 11:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T380</td>
+                            <td class="col-team-name">Sidharth G K [CB.SC.U4AIE26064]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T380"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">9</td>
+                            <td class="col-time">11:40 AM - 11:55 AM</td>
+                            <td class="col-judge">J43</td>
+                            <td class="problem-cell">SIH26227</td>
+                            <td class="col-team-no">SIH26-A0H-T068</td>
+                            <td class="col-team-name">Devi Sri Soumith [CB.SC.U4AIE24155]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T068"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">10</td>
+                            <td class="col-time">12:00 PM - 12:15 PM</td>
+                            <td class="col-judge">J43</td>
+                            <td class="problem-cell">SIH26126</td>
+                            <td class="col-team-no">SIH26-A0H-T313</td>
+                            <td class="col-team-name">C.R.Niteshraj [CB.EN.U4ARE24029]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T313"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">11</td>
+                            <td class="col-time">12:20 PM - 12:35 PM</td>
+                            <td rowspan="2" class="col-judge">J43</td>
+                            <td rowspan="2" class="problem-cell">SIH26204</td>
+                            <td class="col-team-no">SIH26-A0H-T020</td>
+                            <td class="col-team-name">Akula Manideep [CB.SC.U4CSE24462]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T020"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">12</td>
+                            <td class="col-time">12:40 PM - 12:55 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T228</td>
+                            <td class="col-team-name">Kuppachi Venkata Pranava Karthik [CB.SC.U4CSE25027]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T228"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- Software Track Rejected Teams -->
         <div id="sw-hall-content-rejected" class="panel-details" style="display: none;">
             <div class="hall-header-bar">
@@ -5372,7 +5517,8 @@ Updated Date: 2nd Sep 2026
             { id: 'a205', name: '🏛️ SW#P1 — Room A205 (AB3 - Academic Block 3)' },
             { id: 'a204', name: '🏢 SW#P2 — Room C205 (AB3 - Academic Block 3)' },
             { id: 'achala', name: '🏛️ SW#P7 — Achala Hall (AB3 - Academic Block 3)' },
-            { id: 'swp10', name: '🏛️ SW#P10 — Saraswathi Hall (AB2 - Academic Block 2)' }
+            { id: 'swp10', name: '🏛️ SW#P10 — Saraswathi Hall (AB2 - Academic Block 2)' },
+            { id: 'tbd1', name: '🏛️ SW#P11 — TBD 1' }
         ];
 
         function selectPrimaryDate(dateStr) {
@@ -5380,7 +5526,9 @@ Updated Date: 2nd Sep 2026
 
             if (currentPrimaryDate === '7') {
                 currentTrackSelection = 'software';
-                currentHallSelection = 'swp10';
+                if (currentHallSelection !== 'swp10' && currentHallSelection !== 'tbd1') {
+                    currentHallSelection = 'swp10';
+                }
                 const trackSelect = document.getElementById('sih-track-select');
                 if (trackSelect) trackSelect.value = 'software';
             }
@@ -5419,7 +5567,8 @@ Updated Date: 2nd Sep 2026
             } else {
                 if (currentPrimaryDate === '7') {
                     hallList = [
-                        { id: 'swp10', name: '🏛️ SW#P10 — Saraswathi Hall (AB2 - Academic Block 2)' }
+                        { id: 'swp10', name: '🏛️ SW#P10 — Saraswathi Hall (AB2 - Academic Block 2)' },
+                        { id: 'tbd1', name: '🏛️ SW#P11 — TBD 1' }
                     ];
                 } else {
                     hallList = SOFTWARE_HALL_LIST;
@@ -5519,7 +5668,7 @@ Updated Date: 2nd Sep 2026
         }
 
         function switchSoftwareHall(hall) {
-            const halls = ['a205', 'a204', 'f403', 'f405', 'cyberconf', 'acharya', 'achala', 'swp8', 'swp9', 'swp10', 'rejected'];
+            const halls = ['a205', 'a204', 'f403', 'f405', 'cyberconf', 'acharya', 'achala', 'swp8', 'swp9', 'swp10', 'tbd1', 'rejected'];
             halls.forEach(h => {
                 const tab = document.getElementById(`sw-hall-tab-${h}`);
                 const content = document.getElementById(`sw-hall-content-${h}`);
@@ -5555,6 +5704,19 @@ Updated Date: 2nd Sep 2026
         }
 
         const TEAMS_DATABASE = [
+            // SW#P11 - TBD1 - 7th Sep Teams
+            { id: "SIH26-A0H-T282", leader: "Harish D [CB.EN.U4ECE25057]", problem: "SIH26173", panel: "SW#P11 - TBD1", domain: "Software", time: "09:00 AM - 09:15 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T088", leader: "Shagarika p [cb.en.u4cce26135]", problem: "SIH26173", panel: "SW#P11 - TBD1", domain: "Software", time: "09:20 AM - 09:35 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T163", leader: "Tarun T [CB.EN.U4CCE25053]", problem: "SIH26173", panel: "SW#P11 - TBD1", domain: "Software", time: "09:40 AM - 09:55 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T120", leader: "Mokshit Sai J [CB.EN.U4ECE26231]", problem: "SIH26130", panel: "SW#P11 - TBD1", domain: "Software", time: "10:00 AM - 10:15 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T203", leader: "DARSHAN.B [CB.EN.U4CCE25015]", problem: "SIH26130", panel: "SW#P11 - TBD1", domain: "Software", time: "10:20 AM - 10:35 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T244", leader: "Prakalya M [CB.EN.U4ECE26130]", problem: "SIH26083", panel: "SW#P11 - TBD1", domain: "Software", time: "10:40 AM - 10:55 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T275", leader: "Madhumitha R [CB.EN.U4EEE26122]", problem: "SIH26083", panel: "SW#P11 - TBD1", domain: "Software", time: "11:00 AM - 11:15 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T380", leader: "Sidharth G K [CB.SC.U4AIE26064]", problem: "SIH26083", panel: "SW#P11 - TBD1", domain: "Software", time: "11:20 AM - 11:35 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T068", leader: "Devi Sri Soumith [CB.SC.U4AIE24155]", problem: "SIH26227", panel: "SW#P11 - TBD1", domain: "Software", time: "11:40 AM - 11:55 AM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T313", leader: "C.R.Niteshraj [CB.EN.U4ARE24029]", problem: "SIH26126", panel: "SW#P11 - TBD1", domain: "Software", time: "12:00 PM - 12:15 PM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T020", leader: "Akula Manideep [CB.SC.U4CSE24462]", problem: "SIH26204", panel: "SW#P11 - TBD1", domain: "Software", time: "12:20 PM - 12:35 PM", file: "tbd1hall.html" },
+            { id: "SIH26-A0H-T228", leader: "Kuppachi Venkata Pranava Karthik [CB.SC.U4CSE25027]", problem: "SIH26204", panel: "SW#P11 - TBD1", domain: "Software", time: "12:40 PM - 12:55 PM", file: "tbd1hall.html" },
             // SW#P10 - Saraswathi Hall (AB2) - 7th Sep Teams
             { id: "SIH26-A0H-T093", leader: "S Anisha [CB.AI.U4CPS26046]", problem: "SIH26199", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
             { id: "SIH26-A0H-T248", leader: "Swetha Rani A [CB.PS.I5DAS25031]", problem: "SIH26199", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "09:20 AM - 09:35 AM", file: "sarhall.html" },
@@ -6078,7 +6240,11 @@ Updated Date: 2nd Sep 2026
             switchTrack(isSoftware ? 'software' : 'hardware');
 
             // Switch to appropriate hall tab
-            if (panelName.includes('SW#P10') || (panelName.includes('Saraswathi') && isSoftware)) {
+            if (panelName.includes('SW#P11') || panelName.includes('TBD')) {
+                switchSoftwareHall('tbd1');
+                selectPrimaryDate('7');
+                switchSoftwareHallDate('tbd1', '7');
+            } else if (panelName.includes('SW#P10') || (panelName.includes('Saraswathi') && isSoftware)) {
                 switchSoftwareHall('swp10');
                 const is7th = ['T093','T248','T339','T154','T187','T371','T044','T272','T010','T051','T127','T031','T095','T330'].some(t => teamId.includes(t));
                 if (is7th) {
