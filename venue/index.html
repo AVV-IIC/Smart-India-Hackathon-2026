@@ -4421,6 +4421,15 @@ Updated Date: 2nd Sep 2026
                             <td class="col-team-name">Sri Hari Ramu [CB.AI.U4AAR25050]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T320" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
+                        <tr>
+                            <td class="col-sno">16</td>
+                            <td class="col-time">05:50 PM - 06:10 PM</td>
+                            <td class="col-judge">J33</td>
+                            <td class="problem-cell">SIH26133 - Accessibility and quality of public healthcare services, particularly in rural and underserved areas.</td>
+                            <td class="col-team-no">SIH26-A0H-T392</td>
+                            <td class="col-team-name">Teja Prakash [CB.AI.U4AIM24136]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T392" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -5705,6 +5714,7 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T213", leader: "Maghasri Mathiarasan [CB.SC.U4CSE24427]", problem: "SIH26143 - Leveraging satellite imagery to determine oil spills at sea along with AIS data correlations to identify the vessel responsible for the spill", panel: "SW#P7 - Achala Hall (AB3)", domain: "Software / AI / Smart Systems", time: "04:50 PM - 05:10 PM", file: "achala.html" },
             { id: "SIH26-A0H-T240", leader: "Roshini A Thirumalai [CB.AI.U4AID26137]", problem: "SIH26143 - Leveraging satellite imagery to determine oil spills at sea along with AIS data correlations to identify the vessel responsible for the spill", panel: "SW#P7 - Achala Hall (AB3)", domain: "Software / AI / Smart Systems", time: "05:10 PM - 05:30 PM", file: "achala.html" },
             { id: "SIH26-A0H-T320", leader: "Sri Hari Ramu [CB.AI.U4AAR25050]", problem: "SIH26143 - Leveraging satellite imagery to determine oil spills at sea along with AIS data correlations to identify the vessel responsible for the spill", panel: "SW#P7 - Achala Hall (AB3)", domain: "Software / AI / Smart Systems", time: "05:30 PM - 05:50 PM", file: "achala.html" },
+            { id: "SIH26-A0H-T392", leader: "Teja Prakash [CB.AI.U4AIM24136]", problem: "SIH26133 - Accessibility and quality of public healthcare services, particularly in rural and underserved areas.", panel: "SW#P7 - Achala Hall (AB3)", domain: "Software / AI / Smart Systems", time: "05:50 PM - 06:10 PM", file: "achala.html" },
         ];
 
         function escapeHtml(str) {
@@ -5943,7 +5953,7 @@ Updated Date: 2nd Sep 2026
                 switchSoftwareHall('acharya');
             } else if (panelName.includes('SW#P7') || (panelName.includes('Achala') && isSoftware)) {
                 switchSoftwareHall('achala');
-                const is6th = ['T016','T156','T377','T263','T502','T364','T030','T311','T503','T089','T213','T240','T320'].some(t => teamId.includes(t));
+                const is6th = ['T016','T156','T377','T263','T502','T364','T030','T311','T503','T089','T213','T240','T320','T392'].some(t => teamId.includes(t));
                 const is4th = ['T053','T140','T183','T232','T245','T265','T279','T318','T373','T084','T128','T013','T054','T050','T133','T115'].some(t => teamId.includes(t));
                 if (is6th) switchSoftwareHallDate('achala', '6');
                 else if (is4th) switchSoftwareHallDate('achala', '4');
