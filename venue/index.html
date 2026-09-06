@@ -1250,8 +1250,8 @@ Updated Date: 2nd Sep 2026
             <!-- <button class="sih-date-tab" data-date="3" onclick="selectPrimaryDate('3')">📅 3rd Sep</button> -->
             <!-- <button class="sih-date-tab" data-date="4" onclick="selectPrimaryDate('4')">📅 4th Sep</button> -->
             <!-- <button class="sih-date-tab" data-date="5" onclick="selectPrimaryDate('5')">📅 5th Sep</button> -->
-            <button class="sih-date-tab active" data-date="6" onclick="selectPrimaryDate('6')">📅 6th Sep</button>
-            <!-- <button class="sih-date-tab" data-date="7" onclick="selectPrimaryDate('7')">📅 7th Sep</button> -->
+            <button class="sih-date-tab" data-date="6" onclick="selectPrimaryDate('6')">📅 6th Sep</button>
+            <button class="sih-date-tab active" data-date="7" onclick="selectPrimaryDate('7')">📅 7th Sep</button>
         </div>
     </div>
 
@@ -4946,10 +4946,18 @@ Updated Date: 2nd Sep 2026
         <!-- Software Hall 10: SW#P10 - Saraswathi Hall (AB2) -->
         <div id="sw-hall-content-swp10" class="panel-details" style="display: none;">
             <div class="date-tabs-container">
-                <button id="sw-swp10-date-tab-5" class="date-tab active"
+                <button id="sw-swp10-date-tab-5" class="date-tab"
                     onclick="switchSoftwareHallDate('swp10', '5')">📅 5th Sep</button>
-                <div id="sw-swp10-status-legend-5" class="status-legend-wrapper">
+                <button id="sw-swp10-date-tab-7" class="date-tab active"
+                    onclick="switchSoftwareHallDate('swp10', '7')">📅 7th Sep</button>
+                <div id="sw-swp10-status-legend-5" class="status-legend-wrapper" style="display: none;">
                     <span class="status-legend-box legend-scheduled">Scheduled:16</span>
+                    <span class="status-legend-box legend-completed">Completed:</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
+                </div>
+                <div id="sw-swp10-status-legend-7" class="status-legend-wrapper">
+                    <span class="status-legend-box legend-scheduled">Scheduled:13</span>
                     <span class="status-legend-box legend-completed">Completed:</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
                     <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
@@ -4957,7 +4965,7 @@ Updated Date: 2nd Sep 2026
             </div>
 
             <!-- Date 5th Sep Content -->
-            <div id="sw-swp10-date-content-5">
+            <div id="sw-swp10-date-content-5" style="display: none;">
                 <div class="hall-header-bar">
                     <h3>SW#P10 - Saraswathi Hall (AB2) <span class="highlightc">Scheduled</span></h3>
                 </div>
@@ -5117,6 +5125,162 @@ Updated Date: 2nd Sep 2026
                     </tbody>
                 </table>
             </div>
+
+            <!-- Date 7th Sep Content -->
+            <div id="sw-swp10-date-content-7">
+                <div class="hall-header-bar">
+                    <h3>SW#P10 - Saraswathi Hall (AB2) — 7th Sep <span class="highlightc">Scheduled</span></h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sno">S.No</th>
+                            <th class="col-time">Timing</th>
+                            <th class="col-judge">Judge</th>
+                            <th class="col-pid">Problem ID and Title</th>
+                            <th class="col-team-no">Team Number</th>
+                            <th class="col-team-name">Team leader Name</th>
+                            <th class="col-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sno">1</td>
+                            <td class="col-time">09:00 AM - 09:15 AM</td>
+                            <td rowspan="3" class="col-judge">J40</td>
+                            <td rowspan="3" class="problem-cell">SIH26199</td>
+                            <td class="col-team-no">SIH26-A0H-T093</td>
+                            <td class="col-team-name">S Anisha [CB.AI.U4CPS26046]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T093"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">2</td>
+                            <td class="col-time">09:20 AM - 09:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T248</td>
+                            <td class="col-team-name">Swetha Rani A [CB.PS.I5DAS25031]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T248"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">3</td>
+                            <td class="col-time">09:40 AM - 09:55 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T339</td>
+                            <td class="col-team-name">SRUTHICA .M S [CB.SC.U4CSE25657]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T339"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="col-sno">4</td>
+                            <td class="col-time">10:00 AM - 10:20 AM</td>
+                            <td colspan="5" class="break-text">☕ TEA BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">5</td>
+                            <td class="col-time">10:20 AM - 10:35 AM</td>
+                            <td rowspan="3" class="col-judge">J41</td>
+                            <td rowspan="3" class="problem-cell">SIH26132</td>
+                            <td class="col-team-no">SIH26-A0H-T154</td>
+                            <td class="col-team-name">Sachin R [CB.AI.U4AID24048]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T154"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">6</td>
+                            <td class="col-time">10:40 AM - 10:55 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T187</td>
+                            <td class="col-team-name">Balam Sharmitha [CB.AI.U4AID25007]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T187"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">7</td>
+                            <td class="col-time">11:00 AM - 11:15 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T371</td>
+                            <td class="col-team-name">Yashwanthi B K [CB.SC.U4CYS24161]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T371"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">8</td>
+                            <td class="col-time">11:20 AM - 11:35 AM</td>
+                            <td rowspan="2" class="col-judge">J41</td>
+                            <td rowspan="2" class="problem-cell">SIH26011</td>
+                            <td class="col-team-no">SIH26-A0H-T044</td>
+                            <td class="col-team-name">HARISH G [CB.EN.U4CCE26125]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T044"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">9</td>
+                            <td class="col-time">11:40 AM - 11:55 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T272</td>
+                            <td class="col-team-name">Mohit Jangra [CB.EN.U4CIE26040]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T272"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">10</td>
+                            <td class="col-time">12:00 PM - 12:15 PM</td>
+                            <td rowspan="2" class="col-judge">J41</td>
+                            <td rowspan="2" class="problem-cell">SIH26135</td>
+                            <td class="col-team-no">SIH26-A0H-T010</td>
+                            <td class="col-team-name">Karthikeyan K [CB.AI.U4AID26118]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T010"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">11</td>
+                            <td class="col-time">12:20 PM - 12:35 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T051</td>
+                            <td class="col-team-name">Kanishk J [CB.SC.U4CYS26021]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T051"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="col-sno">12</td>
+                            <td class="col-time">12:35 PM - 01:30 PM</td>
+                            <td colspan="5" class="break-text">🍱 LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">13</td>
+                            <td class="col-time">01:30 PM - 01:45 PM</td>
+                            <td class="col-judge">J42</td>
+                            <td class="problem-cell">SIH26054</td>
+                            <td class="col-team-no">SIH26-A0H-T127</td>
+                            <td class="col-team-name">Gurunikesh S [CB.EN.U4ECE24118]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T127"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">14</td>
+                            <td class="col-time">01:50 PM - 02:05 PM</td>
+                            <td rowspan="3" class="col-judge">J42</td>
+                            <td rowspan="3" class="problem-cell">SIH26028 - Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains</td>
+                            <td class="col-team-no">SIH26-A0H-T031</td>
+                            <td class="col-team-name">Naren Balaji V [CB.SC.U4CSE25137]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T031"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">15</td>
+                            <td class="col-time">02:10 PM - 02:25 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T095</td>
+                            <td class="col-team-name">Satya Prakash S M [CB.SC.U4CSE25051]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T095"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">16</td>
+                            <td class="col-time">02:30 PM - 02:45 PM</td>
+                            <td class="col-team-no">SIH26-A0H-T330</td>
+                            <td class="col-team-name">Sai Abinav S [CB.EN.U4CCE26046]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T330"
+                                    onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <!-- Software Track Rejected Teams -->
@@ -5193,9 +5357,9 @@ Updated Date: 2nd Sep 2026
 
     <script>
         // State Controller for Date-First Navigation & Dynamic Dropdown
-        let currentPrimaryDate = '6';
-        let currentTrackSelection = 'hardware';
-        let currentHallSelection = 'saraswathi';
+        let currentPrimaryDate = '7';
+        let currentTrackSelection = 'software';
+        let currentHallSelection = 'swp10';
 
         const HARDWARE_HALL_LIST = [
             { id: 'saraswathi', name: '🏛️ HW#P1 — Saraswathi Hall (AB2 - Academic Block 2)' },
@@ -5213,6 +5377,13 @@ Updated Date: 2nd Sep 2026
 
         function selectPrimaryDate(dateStr) {
             currentPrimaryDate = String(dateStr);
+
+            if (currentPrimaryDate === '7') {
+                currentTrackSelection = 'software';
+                currentHallSelection = 'swp10';
+                const trackSelect = document.getElementById('sih-track-select');
+                if (trackSelect) trackSelect.value = 'software';
+            }
             
             // Highlight active date tab
             document.querySelectorAll('.sih-date-tab').forEach(tab => {
@@ -5242,7 +5413,18 @@ Updated Date: 2nd Sep 2026
             const hallSelect = document.getElementById('sih-hall-select');
             if (!hallSelect) return;
 
-            const hallList = (currentTrackSelection === 'hardware') ? HARDWARE_HALL_LIST : SOFTWARE_HALL_LIST;
+            let hallList;
+            if (currentTrackSelection === 'hardware') {
+                hallList = HARDWARE_HALL_LIST;
+            } else {
+                if (currentPrimaryDate === '7') {
+                    hallList = [
+                        { id: 'swp10', name: '🏛️ SW#P10 — Saraswathi Hall (AB2 - Academic Block 2)' }
+                    ];
+                } else {
+                    hallList = SOFTWARE_HALL_LIST;
+                }
+            }
             
             hallSelect.innerHTML = '';
             hallList.forEach(h => {
@@ -5272,7 +5454,7 @@ Updated Date: 2nd Sep 2026
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-            selectPrimaryDate('6');
+            selectPrimaryDate('7');
         });
 
         function switchTrack(track) {
@@ -5311,7 +5493,7 @@ Updated Date: 2nd Sep 2026
 
         function switchHallDate(hall, date) {
             const prefix = (hall === 'saraswathi') ? 'sar' : (hall === 'viveka') ? 'viv' : hall;
-            const dates = ['3', '4', '5', '6'];
+            const dates = ['3', '4', '5', '6', '7'];
 
             dates.forEach(d => {
                 const tab = document.getElementById(`${prefix}-date-tab-${d}`);
@@ -5353,7 +5535,7 @@ Updated Date: 2nd Sep 2026
 
         function switchSoftwareHallDate(hall, date) {
             const prefix = `sw-${hall}`;
-            const dates = ['4', '5', '6'];
+            const dates = ['4', '5', '6', '7'];
 
             dates.forEach(d => {
                 const tab = document.getElementById(`${prefix}-date-tab-${d}`);
@@ -5373,6 +5555,21 @@ Updated Date: 2nd Sep 2026
         }
 
         const TEAMS_DATABASE = [
+            // SW#P10 - Saraswathi Hall (AB2) - 7th Sep Teams
+            { id: "SIH26-A0H-T093", leader: "S Anisha [CB.AI.U4CPS26046]", problem: "SIH26199", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T248", leader: "Swetha Rani A [CB.PS.I5DAS25031]", problem: "SIH26199", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "09:20 AM - 09:35 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T339", leader: "SRUTHICA .M S [CB.SC.U4CSE25657]", problem: "SIH26199", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "09:40 AM - 09:55 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T154", leader: "Sachin R [CB.AI.U4AID24048]", problem: "SIH26132", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "10:20 AM - 10:35 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T187", leader: "Balam Sharmitha [CB.AI.U4AID25007]", problem: "SIH26132", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "10:40 AM - 10:55 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T371", leader: "Yashwanthi B K [CB.SC.U4CYS24161]", problem: "SIH26132", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "11:00 AM - 11:15 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T044", leader: "HARISH G [CB.EN.U4CCE26125]", problem: "SIH26011", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "11:20 AM - 11:35 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T272", leader: "Mohit Jangra [CB.EN.U4CIE26040]", problem: "SIH26011", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "11:40 AM - 11:55 AM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T010", leader: "Karthikeyan K [CB.AI.U4AID26118]", problem: "SIH26135", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "12:00 PM - 12:15 PM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T051", leader: "Kanishk J [CB.SC.U4CYS26021]", problem: "SIH26135", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "12:20 PM - 12:35 PM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T127", leader: "Gurunikesh S [CB.EN.U4ECE24118]", problem: "SIH26054", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "01:30 PM - 01:45 PM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T031", leader: "Naren Balaji V [CB.SC.U4CSE25137]", problem: "SIH26028 - Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "01:50 PM - 02:05 PM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T095", leader: "Satya Prakash S M [CB.SC.U4CSE25051]", problem: "SIH26028 - Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "02:10 PM - 02:25 PM", file: "sarhall.html" },
+            { id: "SIH26-A0H-T330", leader: "Sai Abinav S [CB.EN.U4CCE26046]", problem: "SIH26028 - Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains", panel: "SW#P10 - Saraswathi Hall (AB2)", domain: "Software", time: "02:30 PM - 02:45 PM", file: "sarhall.html" },
             { id: "SIH26-A0H-T036", leader: "Roahith p [CB.EN.U4CCE26144]", problem: "SIH26039", panel: "HW#P4 - Room C203 (AB3)", domain: "Smart Hardware / IoT", time: "09:00 AM - 09:15 AM", file: "c205hall.html" },
             { id: "SIH26-A0H-T090", leader: "Aditya Hamsaneni [CB.AI.U4AAR26004]", problem: "SIH26039", panel: "HW#P4 - Room C203 (AB3)", domain: "Smart Hardware / IoT", time: "09:20 AM - 09:35 AM", file: "c205hall.html" },
             { id: "SIH26-A0H-T278", leader: "Parthiv PC [CB.EN.U4ELC26132]", problem: "SIH26039", panel: "HW#P4 - Room C203 (AB3)", domain: "Smart Hardware / IoT", time: "09:40 AM - 09:55 AM", file: "c205hall.html" },
@@ -5883,6 +6080,14 @@ Updated Date: 2nd Sep 2026
             // Switch to appropriate hall tab
             if (panelName.includes('SW#P10') || (panelName.includes('Saraswathi') && isSoftware)) {
                 switchSoftwareHall('swp10');
+                const is7th = ['T093','T248','T339','T154','T187','T371','T044','T272','T010','T051','T127','T031','T095','T330'].some(t => teamId.includes(t));
+                if (is7th) {
+                    selectPrimaryDate('7');
+                    switchSoftwareHallDate('swp10', '7');
+                } else {
+                    selectPrimaryDate('5');
+                    switchSoftwareHallDate('swp10', '5');
+                }
             } else if (panelName.includes('HW#P1') || (panelName.includes('Saraswathi') && !isSoftware)) {
                 switchHall('saraswathi');
                 if (teamId.includes('T127')) selectPrimaryDate('6');
