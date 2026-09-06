@@ -2467,10 +2467,18 @@ Updated Date: 2nd Sep 2026
             <div class="date-tabs-container">
                 <button id="sw-a205-date-tab-4" class="date-tab active completed"
                     onclick="switchSoftwareHallDate('a205', '4')">📅 4th Sep</button>
+                <button id="sw-a205-date-tab-6" class="date-tab"
+                    onclick="switchSoftwareHallDate('a205', '6')">📅 6th Sep</button>
                 <div id="sw-a205-status-legend-4" class="status-legend-wrapper">
                     <span class="status-legend-box legend-scheduled">Scheduled:16</span>
                     <span class="status-legend-box legend-completed">Completed:15</span>
                     <span class="status-legend-box legend-didntshow">Didn't Shown Up:01</span>
+                </div>
+                <div id="sw-a205-status-legend-6" class="status-legend-wrapper" style="display: none;">
+                    <span class="status-legend-box legend-scheduled">Scheduled:08</span>
+                    <span class="status-legend-box legend-completed">Completed:</span>
+                    <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
+                    <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
                 </div>
             </div>
 
@@ -2646,6 +2654,92 @@ Updated Date: 2nd Sep 2026
                             <td class="col-team-name">R HARIHARAN [CB.SC.U4CYS24045]</td>
                             <td class="col-status"><button class="status-didntshowup    " data-team="SIH26-A0H-T372"
                                     onclick="toggleStatus(this)">Didn't Shown Up</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Date 6th Sep Content -->
+            <div id="sw-a205-date-content-6" style="display: none;">
+                <div class="hall-header-bar">
+                    <h3>SW#P1 - Room A205 (AB3) <span class="highlightc">Scheduled</span></h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sno">S.No</th>
+                            <th class="col-time">Timing</th>
+                            <th class="col-judge">Judge</th>
+                            <th class="col-pid">Problem ID and Title</th>
+                            <th class="col-team-no">Team Number</th>
+                            <th class="col-team-name">Team leader Name</th>
+                            <th class="col-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sno">1</td>
+                            <td class="col-time">09:00 AM - 09:15 AM</td>
+                            <td rowspan="2" class="col-judge">J35</td>
+                            <td rowspan="2" class="problem-cell">SIH26187</td>
+                            <td class="col-team-no">SIH26-A0H-T008</td>
+                            <td class="col-team-name">K Yogendra Babu [CB.AI.U4AID26123]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T008" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">2</td>
+                            <td class="col-time">09:20 AM - 09:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T112</td>
+                            <td class="col-team-name">Senthil Yohan N [CB.SC.U4CYS26155]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T112" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">3</td>
+                            <td class="col-time">09:40 AM - 09:55 AM</td>
+                            <td class="col-judge">J35</td>
+                            <td class="problem-cell">SIH26161</td>
+                            <td class="col-team-no">SIH26-A0H-T005</td>
+                            <td class="col-team-name">GARREPALLI VARSHITH [CB.SC.U4CSE24413]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T005" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">4</td>
+                            <td class="col-time">10:00 AM - 10:15 AM</td>
+                            <td rowspan="4" class="col-judge">J35</td>
+                            <td rowspan="4" class="problem-cell">SIH26117</td>
+                            <td class="col-team-no">SIH26-A0H-T059</td>
+                            <td class="col-team-name">Srishanth S [CB.AI.U4AID24056]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T059" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">5</td>
+                            <td class="col-time">10:20 AM - 10:35 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T204</td>
+                            <td class="col-team-name">Prajith S [CB.AI.U4AID24039]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T204" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">6</td>
+                            <td class="col-time">10:40 AM - 10:55 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T266</td>
+                            <td class="col-team-name">Srisha Satish Kanna [CB.AI.U4AIM24046]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T266" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">7</td>
+                            <td class="col-time">11:00 AM - 11:15 AM</td>
+                            <td class="col-team-no">SIH26-A0H-T308</td>
+                            <td class="col-team-name">Mahakisore M [CB.SC.U4AIE24333]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T308" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">8</td>
+                            <td class="col-time">11:20 AM - 11:35 AM</td>
+                            <td class="col-judge">J35</td>
+                            <td class="problem-cell">SIH26160</td>
+                            <td class="col-team-no">SIH26-A0H-T344</td>
+                            <td class="col-team-name">Pillari Kethan [CB.SC.U4CYS25038]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T344" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -2875,7 +2969,7 @@ Updated Date: 2nd Sep 2026
                     <tbody>
                         <tr>
                             <td class="col-sno">1</td>
-                            <td class="col-time">09:00 AM - 09:20 AM</td>
+                            <td class="col-time">09:00 AM - 09:15 AM</td>
                             <td rowspan="4" class="col-judge">J34</td>
                             <td class="problem-cell">—</td>
                             <td class="col-team-no">—</td>
@@ -2884,7 +2978,7 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">2</td>
-                            <td class="col-time">09:20 AM - 09:40 AM</td>
+                            <td class="col-time">09:20 AM - 09:35 AM</td>
                             <td class="problem-cell">SIH26176</td>
                             <td class="col-team-no">SIH26-A0H-T506</td>
                             <td class="col-team-name">Aswath S [CB.AC.U5ARC26006]</td>
@@ -2892,7 +2986,7 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">3</td>
-                            <td class="col-time">09:40 AM - 10:00 AM</td>
+                            <td class="col-time">09:40 AM - 09:55 AM</td>
                             <td class="problem-cell">SIH26167 - Satellite-based monitoring and alerting of anomalous water spread and water levels in glacial lakes across the Himalayan region</td>
                             <td class="col-team-no">SIH26-A0H-T001</td>
                             <td class="col-team-name">Ragulkanna V U [CB.EN.U4ECE24045]</td>
@@ -2900,7 +2994,7 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">4</td>
-                            <td class="col-time">10:00 AM - 10:20 AM</td>
+                            <td class="col-time">10:00 AM - 10:15 AM</td>
                             <td class="problem-cell">SIH26209</td>
                             <td class="col-team-no">SIH26-A0H-T324</td>
                             <td class="col-team-name">Sai Hruthik Gunuputi Penchal [CB.SC.U4CSE25623]</td>
@@ -2913,7 +3007,7 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">6</td>
-                            <td class="col-time">10:40 AM - 11:00 AM</td>
+                            <td class="col-time">10:40 AM - 10:55 AM</td>
                             <td rowspan="5" class="col-judge">J34</td>
                             <td class="problem-cell">SIH26009</td>
                             <td class="col-team-no">SIH26-A0H-T310</td>
@@ -2922,7 +3016,7 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">7</td>
-                            <td class="col-time">11:00 AM - 11:20 AM</td>
+                            <td class="col-time">11:00 AM - 11:15 AM</td>
                             <td rowspan="4" class="problem-cell">SIH26166 - Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS)</td>
                             <td class="col-team-no">SIH26-A0H-T105</td>
                             <td class="col-team-name">Krishnamohan Ambaty [Cb.ai.u4cps25001]</td>
@@ -2930,28 +3024,28 @@ Updated Date: 2nd Sep 2026
                         </tr>
                         <tr>
                             <td class="col-sno">8</td>
-                            <td class="col-time">11:20 AM - 11:40 AM</td>
+                            <td class="col-time">11:20 AM - 11:35 AM</td>
                             <td class="col-team-no">SIH26-A0H-T109</td>
                             <td class="col-team-name">Hashwin M [CB.AI.U4AID25064]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T109" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
                             <td class="col-sno">9</td>
-                            <td class="col-time">11:40 AM - 12:00 PM</td>
+                            <td class="col-time">11:40 AM - 11:55 AM</td>
                             <td class="col-team-no">SIH26-A0H-T110</td>
                             <td class="col-team-name">B Sanjai [CB.SC.U4CYS25109]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T110" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
                             <td class="col-sno">10</td>
-                            <td class="col-time">12:00 PM - 12:20 PM</td>
+                            <td class="col-time">12:00 PM - 12:15 PM</td>
                             <td class="col-team-no">SIH26-A0H-T363</td>
                             <td class="col-team-name">Y Vignesh Bhupal Reddy [CB.SC.U4CSE24360]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T363" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                         <tr>
                             <td class="col-sno">11</td>
-                            <td class="col-time">12:20 PM - 12:40 PM</td>
+                            <td class="col-time">12:20 PM - 12:35 PM</td>
                             <td class="col-judge">—</td>
                             <td class="problem-cell">—</td>
                             <td class="col-team-no">—</td>
@@ -5094,6 +5188,14 @@ Updated Date: 2nd Sep 2026
         }
 
         const TEAMS_DATABASE = [
+            { id: "SIH26-A0H-T008", leader: "K Yogendra Babu [CB.AI.U4AID26123]", problem: "SIH26187", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "09:00 AM - 09:15 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T112", leader: "Senthil Yohan N [CB.SC.U4CYS26155]", problem: "SIH26187", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "09:20 AM - 09:35 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T005", leader: "GARREPALLI VARSHITH [CB.SC.U4CSE24413]", problem: "SIH26161", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "09:40 AM - 09:55 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T059", leader: "Srishanth S [CB.AI.U4AID24056]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "10:00 AM - 10:15 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T204", leader: "Prajith S [CB.AI.U4AID24039]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "10:20 AM - 10:35 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T266", leader: "Srisha Satish Kanna [CB.AI.U4AIM24046]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "10:40 AM - 10:55 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T308", leader: "Mahakisore M [CB.SC.U4AIE24333]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "11:00 AM - 11:15 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T344", leader: "Pillari Kethan [CB.SC.U4CYS25038]", problem: "SIH26160", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "11:20 AM - 11:35 AM", file: "a205hall.html" },
             { id: "SIH26-A0H-T127", leader: "Gurunikesh S [CB.EN.U4ECE24118]", problem: "SIH26054 - PowerHouse Problem Statement", panel: "HW#P1 - Saraswathi Hall (AB2)", domain: "Smart Hardware / IoT", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
             { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.", panel: "HW#P1 - Saraswathi Hall (AB2) Completed", domain: "Smart Hardware / IoT", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
             { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Development of a Low-Cost Light-weight Milk Chilling Can for Small-Scale Dairy Farmers.", panel: "HW#P1 - Saraswathi Hall (AB2) Completed", domain: "Smart Hardware / IoT", time: "09:20 AM - 09:35 AM", file: "sarhall.html" },
@@ -5591,6 +5693,9 @@ Updated Date: 2nd Sep 2026
                 switchHall('viveka');
             } else if (panelName.includes('SW#P1') || panelName.includes('A205')) {
                 switchSoftwareHall('a205');
+                const is6th = ['T008','T112','T005','T059','T204','T266','T308','T344'].some(t => teamId.includes(t));
+                if (is6th) switchSoftwareHallDate('a205', '6');
+                else switchSoftwareHallDate('a205', '4');
             } else if (panelName.includes('HW#P4') || (panelName.includes('C205') && !isSoftware)) {
                 switchHall('c205');
                 switchHallDate('c205', '6');
