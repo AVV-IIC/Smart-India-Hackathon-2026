@@ -2527,7 +2527,7 @@ Updated Date: 2nd Sep 2026
                     <span class="status-legend-box legend-didntshow">Didn't Shown Up:01</span>
                 </div>
                 <div id="sw-a205-status-legend-6" class="status-legend-wrapper" style="display: none;">
-                    <span class="status-legend-box legend-scheduled">Scheduled:08</span>
+                    <span class="status-legend-box legend-scheduled">Scheduled:09</span>
                     <span class="status-legend-box legend-completed">Completed:</span>
                     <span class="status-legend-box legend-withdrawn">Withdrawn:</span>
                     <span class="status-legend-box legend-didntshow">Didn't Shown Up:</span>
@@ -2748,7 +2748,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">3</td>
                             <td class="col-time">09:40 AM - 09:55 AM</td>
-                            <td class="col-judge">J37</td>
+                            <td class="col-judge">J35</td>
                             <td class="problem-cell">SIH26161</td>
                             <td class="col-team-no">SIH26-A0H-T005</td>
                             <td class="col-team-name">GARREPALLI VARSHITH [CB.SC.U4CSE24413]</td>
@@ -2757,7 +2757,7 @@ Updated Date: 2nd Sep 2026
                         <tr>
                             <td class="col-sno">4</td>
                             <td class="col-time">10:00 AM - 10:15 AM</td>
-                            <td rowspan="4" class="col-judge">J39</td>
+                            <td rowspan="4" class="col-judge">J35</td>
                             <td rowspan="4" class="problem-cell">SIH26117</td>
                             <td class="col-team-no">SIH26-A0H-T059</td>
                             <td class="col-team-name">Srishanth S [CB.AI.U4AID24056]</td>
@@ -2792,6 +2792,15 @@ Updated Date: 2nd Sep 2026
                             <td class="col-team-no">SIH26-A0H-T344</td>
                             <td class="col-team-name">Pillari Kethan [CB.SC.U4CYS25038]</td>
                             <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T344" onclick="toggleStatus(this)">Scheduled</button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-sno">9</td>
+                            <td class="col-time">11:40 AM - 11:55 AM</td>
+                            <td class="col-judge">J35</td>
+                            <td class="problem-cell">SIH26182</td>
+                            <td class="col-team-no">SIH26-A0H-T176</td>
+                            <td class="col-team-name">Rohith Kumar S S [CB.PS.I5DAS23031]</td>
+                            <td class="col-status"><button class="status-scheduled" data-team="SIH26-A0H-T176" onclick="toggleStatus(this)">Scheduled</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -5257,6 +5266,7 @@ Updated Date: 2nd Sep 2026
             { id: "SIH26-A0H-T266", leader: "Srisha Satish Kanna [CB.AI.U4AIM24046]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "10:40 AM - 10:55 AM", file: "a205hall.html" },
             { id: "SIH26-A0H-T308", leader: "Mahakisore M [CB.SC.U4AIE24333]", problem: "SIH26117", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "11:00 AM - 11:15 AM", file: "a205hall.html" },
             { id: "SIH26-A0H-T344", leader: "Pillari Kethan [CB.SC.U4CYS25038]", problem: "SIH26160", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "11:20 AM - 11:35 AM", file: "a205hall.html" },
+            { id: "SIH26-A0H-T176", leader: "Rohith Kumar S S [CB.PS.I5DAS23031]", problem: "SIH26182", panel: "SW#P1 - Room A205 (AB3)", domain: "Software", time: "11:40 AM - 11:55 AM", file: "a205hall.html" },
             { id: "SIH26-A0H-T127", leader: "Gurunikesh S [CB.EN.U4ECE24118]", problem: "SIH26054 - PowerHouse Problem Statement", panel: "HW#P1 - Saraswathi Hall (AB2)", domain: "Smart Hardware / IoT", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
             { id: "SIH26-A0H-T396", leader: "Sarvesh Subramanian S [CB.EN.U4EEE26223]", problem: "SIH26118 - Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading.", panel: "HW#P1 - Saraswathi Hall (AB2) Completed", domain: "Smart Hardware / IoT", time: "09:00 AM - 09:15 AM", file: "sarhall.html" },
             { id: "SIH26-A0H-T192", leader: "S KAVIN MUTHUVEL [CB.EN.U4EEE26033]", problem: "SIH26110 - Development of a Low-Cost Light-weight Milk Chilling Can for Small-Scale Dairy Farmers.", panel: "HW#P1 - Saraswathi Hall (AB2) Completed", domain: "Smart Hardware / IoT", time: "09:20 AM - 09:35 AM", file: "sarhall.html" },
@@ -5754,7 +5764,7 @@ Updated Date: 2nd Sep 2026
                 switchHall('viveka');
             } else if (panelName.includes('SW#P1') || panelName.includes('A205')) {
                 switchSoftwareHall('a205');
-                const is6th = ['T008','T112','T005','T059','T204','T266','T308','T344'].some(t => teamId.includes(t));
+                const is6th = ['T008','T112','T005','T059','T204','T266','T308','T344','T176'].some(t => teamId.includes(t));
                 if (is6th) switchSoftwareHallDate('a205', '6');
                 else switchSoftwareHallDate('a205', '4');
             } else if (panelName.includes('HW#P4') || (panelName.includes('C205') && !isSoftware)) {
