@@ -1510,7 +1510,7 @@ Updated Date: 2nd Sep 2026
     <div class="search-container-wrapper">
         <span class="search-icon-inside">🔍</span>
         <input type="text" id="master-search-input" class="search-input-box" 
-               placeholder="🔍 Search teams by Team ID (e.g. T180), Leader Name, Problem Statement, or Panel..." 
+               placeholder="Search teams by Team ID (e.g. T180), Leader Name, Problem Statement, or Panel..." 
                oninput="handleSearchInput(this.value)" onfocus="handleSearchInput(this.value)" autocomplete="off">
         <button id="search-clear-btn" class="search-clear-btn" onclick="clearSearch()" title="Clear search">×</button>
         <div id="search-results-dropdown" class="search-results-dropdown"></div>
@@ -2180,7 +2180,7 @@ Updated Date: 2nd Sep 2026
 <td class="col-time">02:50 PM - 03:05 PM</td>
 <td class="col-team-no">SIH26-A0H-T345</td>
 <td class="col-team-name">ANANTHAKUMAR SARAVANAN [CB.EN.U4EEE24106]</td>
-<td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T345" onclick="toggleStatus(this)">Re-Scheduled</button></td>
+<td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T345" onclick="toggleStatus(this)">Completed</button></td>
 </tr>
 <tr>
 <td class="col-sno">17</td>
@@ -2202,7 +2202,7 @@ Updated Date: 2nd Sep 2026
 <td class="problem-cell">SIH26220</td>
 <td class="col-team-no">SIH26-A0H-T353</td>
 <td class="col-team-name">Dhiyayanth [CB.EN.U4EEE25113]</td>
-<td class="col-status"><button class="status-btn status-scheduled" data-team="SIH26-A0H-T353" onclick="toggleStatus(this)">Re-Scheduled</button></td>
+<td class="col-status"><button class="status-withdrawn" data-team="SIH26-A0H-T353" onclick="toggleStatus(this)">withdrawn</button></td>
 </tr>
 </tbody>
 </table>
@@ -3143,15 +3143,7 @@ Updated Date: 2nd Sep 2026
 <td class="col-team-name">R HARIHARAN [CB.SC.U4CYS24045]</td>
 <td class="col-status"><button class="status-completed" data-team="SIH26-A0H-T372" onclick="toggleStatus(this)">Completed</button></td>
 </tr>
-<tr>
-<td class="col-sno">16</td>
-<td class="col-time">04:30 PM - 04:50 PM</td>
-<td class="col-judge">J18</td>
-<td class="problem-cell">SIH26153</td>
-<td class="col-team-no">SIH26-A0H-T053B</td>
-<td class="col-team-name">C SHIVANI [CB.SC.U4CYS25012]</td>
-<td class="col-status"><button class="status-btn status-completed" data-team="SIH26-A0H-T053B" onclick="toggleStatus(this)">Completed</button></td>
-</tr></tbody>
+</tbody>
 </table>
 </div>
 <!-- Date 6th Sep Content -->
@@ -6115,7 +6107,7 @@ Updated Date: 2nd Sep 2026
         const ALL_SOFTWARE_HALLS = {
             'a205': { id: 'a205', name: '🟨 SW#P1 ➔ Room A205 (AB3)' },
             'a204': { id: 'a204', name: '🟨 SW#P2 ➔ Room C205 (AB3)' },
-            'swp8': { id: 'swp8', name: '🟨 SW#P2 ➔ Room C205 (AB3)' },
+            'swp8': { id: 'swp8', name: '🟨 SW#P8 ➔ Viveka Hall (AB1)' },
             'f403': { id: 'f403', name: '🟨 SW#P3 ➔ Room G301 (AB3)' },
             'f405': { id: 'f405', name: '🟨 SW#P4 ➔ Room F405 (AB3)' },
             'cyberconf': { id: 'cyberconf', name: '🟨 SW#P5 ➔ Cyber Security Conference Hall (AB3)' },
@@ -6185,6 +6177,32 @@ Updated Date: 2nd Sep 2026
             applyNavigationState();
         }
 
+        function getHallDisplayName(track, id, date) {
+            if (track === 'software') {
+                const dateDiv = document.getElementById(`sw-${id}-date-content-${date}`);
+                if (dateDiv) {
+                    const h3 = dateDiv.querySelector('h3');
+                    if (h3) {
+                        let text = h3.childNodes[0] ? h3.childNodes[0].textContent.trim() : h3.textContent.trim();
+                        text = text.replace(/–\s*\d+th\s*Sep/, '').replace(/-\s*/, '➔ ').trim();
+                        if (text) return text;
+                    }
+                }
+            } else if (track === 'hardware') {
+                const dateDiv = document.getElementById(`${id}-date-content-${date}`);
+                if (dateDiv) {
+                    const h3 = dateDiv.querySelector('h3');
+                    if (h3) {
+                        let text = h3.childNodes[0] ? h3.childNodes[0].textContent.trim() : h3.textContent.trim();
+                        text = text.replace(/–\s*\d+th\s*Sep/, '').replace(/-\s*/, '➔ ').trim();
+                        if (text) return text;
+                    }
+                }
+            }
+            const allHalls = (track === 'hardware') ? ALL_HARDWARE_HALLS : ALL_SOFTWARE_HALLS;
+            return allHalls[id] ? allHalls[id].name : id;
+        }
+
         function updateHallDropdownOptions() {
             const hallSelect = document.getElementById('sih-hall-select');
             if (!hallSelect) return;
@@ -6197,7 +6215,7 @@ Updated Date: 2nd Sep 2026
                 if (allHalls[id]) {
                     const opt = document.createElement('option');
                     opt.value = id;
-                    opt.textContent = allHalls[id].name;
+                    opt.textContent = getHallDisplayName(currentTrackSelection, id, currentPrimaryDate);
                     hallSelect.appendChild(opt);
                 }
             });
