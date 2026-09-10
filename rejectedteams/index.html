@@ -327,30 +327,21 @@
         <!-- Search & Control Panel -->
         <div class="sih-control-panel">
             <div class="track-nav-tabs">
-                <button class="track-tab-btn active" id="tab-all" onclick="selectTrackTab('all')">🌐 All Tracks (49)</button>
-                <button class="track-tab-btn" id="tab-hardware" onclick="selectTrackTab('hardware')">⚙️ Hardware Track (11)</button>
-                <button class="track-tab-btn" id="tab-software" onclick="selectTrackTab('software')">💻 Software Track (38)</button>
+                <button class="track-tab-btn active" id="tab-all" onclick="selectTrackTab('all')">🌐 All Tracks (88)</button>
+                <button class="track-tab-btn" id="tab-hardware" onclick="selectTrackTab('hardware')">⚙️ Hardware Track (24)</button>
+                <button class="track-tab-btn" id="tab-software" onclick="selectTrackTab('software')">💻 Software Track (64)</button>
             </div>
 
             <div class="search-box-wrapper">
                 <span class="search-icon">🔍</span>
                 <input type="text" id="rejected-search-input" class="search-input" placeholder="Search by Team Number (SIH26-A0H-TXXX), Problem Statement (SIH26XXX), or S.No..." onkeyup="filterRejectedTeams()"/>
             </div>
-
-            <div class="stats-bar">
-                <div class="stat-pills-group">
-                    <span class="stat-pill stat-pill-total">Total Rejected: 49</span>
-                    <span class="stat-pill stat-pill-hw">⚙️ Hardware: 11</span>
-                    <span class="stat-pill stat-pill-sw">💻 Software: 38</span>
-                </div>
-                <span class="count-label" id="filtered-count-label">Showing 49 of 49 teams</span>
-            </div>
         </div>
 
         <!-- Section 1: Hardware Track Rejected Teams -->
         <div class="track-section" id="section-hardware">
             <div class="section-header">
-                <div class="section-title"><span>⚙️</span> Hardware Track <span class="section-badge badge-hw">11 Teams</span></div>
+                <div class="section-title"><span>⚙️</span> Hardware Track <span class="section-badge badge-hw">24 Teams</span></div>
             </div>
             <div class="table-responsive">
                 <table>
@@ -374,20 +365,20 @@
                     <tr><td class="col-sno">9</td><td class="col-team-id">SIH26-A0H-T127</td><td class="col-problem">SIH26054</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <tr><td class="col-sno">10</td><td class="col-team-id">SIH26-A0H-T070</td><td class="col-problem">SIH26052</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <tr><td class="col-sno">11</td><td class="col-team-id">SIH26-A0H-T294</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
-                    <!-- <tr><td class="col-sno">3</td><td class="col-team-id">SIH26-A0H-T185</td><td class="col-problem">SIH26212</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">4</td><td class="col-team-id">SIH26-A0H-T201</td><td class="col-problem">SIH26064</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">5</td><td class="col-team-id">SIH26-A0H-T285</td><td class="col-problem">SIH26025</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">6</td><td class="col-team-id">SIH26-A0H-T130</td><td class="col-problem">SIH26098</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">9</td><td class="col-team-id">SIH26-A0H-T385</td><td class="col-problem">SIH26052</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">11</td><td class="col-team-id">SIH26-A0H-T177</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">12</td><td class="col-team-id">SIH26-A0H-T205</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">14</td><td class="col-team-id">SIH26-A0H-T206</td><td class="col-problem">SIH26040</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">15</td><td class="col-team-id">SIH26-A0H-T209</td><td class="col-problem">SIH26179</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
+                    <tr><td class="col-sno">12</td><td class="col-team-id">SIH26-A0H-T177</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">13</td><td class="col-team-id">SIH26-A0H-T205</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">14</td><td class="col-team-id">SIH26-A0H-T209</td><td class="col-problem">SIH26179</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">15</td><td class="col-team-id">SIH26-A0H-T270</td><td class="col-problem">SIH26007</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">16</td><td class="col-team-id">SIH26-A0H-T180</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">17</td><td class="col-team-id">SIH26-A0H-T314</td><td class="col-problem">SIH26004</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">18</td><td class="col-team-id">SIH26-A0H-T247</td><td class="col-problem">SIH26172</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">19</td><td class="col-team-id">SIH26-A0H-T185</td><td class="col-problem">SIH26212</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">20</td><td class="col-team-id">SIH26-A0H-T285</td><td class="col-problem">SIH26025</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">21</td><td class="col-team-id">SIH26-A0H-T385</td><td class="col-problem">SIH26052</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">22</td><td class="col-team-id">SIH26-A0H-T206</td><td class="col-problem">SIH26040</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">23</td><td class="col-team-id">SIH26-A0H-T130</td><td class="col-problem">SIH26098</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">24</td><td class="col-team-id">SIH26-A0H-T201</td><td class="col-problem">SIH26064</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <!-- <tr><td class="col-sno">17</td><td class="col-team-id">SIH26-A0H-T341</td><td class="col-problem">SIH26049</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">18</td><td class="col-team-id">SIH26-A0H-T270</td><td class="col-problem">SIH26007</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">19</td><td class="col-team-id">SIH26-A0H-T180</td><td class="col-problem">SIH26180</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">20</td><td class="col-team-id">SIH26-A0H-T314</td><td class="col-problem">SIH26004</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">21</td><td class="col-team-id">SIH26-A0H-T247</td><td class="col-problem">SIH26172</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
                     </tbody>
                 </table>
             </div>
@@ -396,7 +387,7 @@
         <!-- Section 2: Software Track Rejected Teams -->
         <div class="track-section" id="section-software">
             <div class="section-header">
-                <div class="section-title"><span>💻</span> Software Track <span class="section-badge badge-sw">38 Teams</span></div>
+                <div class="section-title"><span>💻</span> Software Track <span class="section-badge badge-sw">64 Teams</span></div>
             </div>
             <div class="table-responsive">
                 <table>
@@ -447,36 +438,36 @@
                     <tr><td class="col-sno">36</td><td class="col-team-id">SIH26-A0H-T181</td><td class="col-problem">SIH26123</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <tr><td class="col-sno">37</td><td class="col-team-id">SIH26-A0H-T233</td><td class="col-problem">SIH26104</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <tr><td class="col-sno">38</td><td class="col-team-id">SIH26-A0H-T097</td><td class="col-problem">SIH26051</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
-                    <!-- <tr><td class="col-sno">10</td><td class="col-team-id">SIH26-A0H-T256</td><td class="col-problem">SIH26032</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">12</td><td class="col-team-id">SIH26-A0H-T170</td><td class="col-problem">SIH26155</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">13</td><td class="col-team-id">SIH26-A0H-T062</td><td class="col-problem">SIH26057</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
+                    <tr><td class="col-sno">39</td><td class="col-team-id">SIH26-A0H-T256</td><td class="col-problem">SIH26032</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">40</td><td class="col-team-id">SIH26-A0H-T195</td><td class="col-problem">SIH26131</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">41</td><td class="col-team-id">SIH26-A0H-T154</td><td class="col-problem">SIH26132</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">42</td><td class="col-team-id">SIH26-A0H-T093</td><td class="col-problem">SIH26199</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">43</td><td class="col-team-id">SIH26-A0H-T339</td><td class="col-problem">SIH26199</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">44</td><td class="col-team-id">SIH26-A0H-T016</td><td class="col-problem">SIH26102</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">45</td><td class="col-team-id">SIH26-A0H-T250</td><td class="col-problem">SIH26164</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">46</td><td class="col-team-id">SIH26-A0H-T207</td><td class="col-problem">SIH26206</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">47</td><td class="col-team-id">SIH26-A0H-T258</td><td class="col-problem">SIH26024</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">48</td><td class="col-team-id">SIH26-A0H-T142</td><td class="col-problem">SIH26014</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">49</td><td class="col-team-id">SIH26-A0H-T255</td><td class="col-problem">SIH26104</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">50</td><td class="col-team-id">SIH26-A0H-T170</td><td class="col-problem">SIH26155</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">51</td><td class="col-team-id">SIH26-A0H-T062</td><td class="col-problem">SIH26057</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">52</td><td class="col-team-id">SIH26-A0H-T027</td><td class="col-problem">SIH26053</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">53</td><td class="col-team-id">SIH26-A0H-T103</td><td class="col-problem">SIH26176</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">54</td><td class="col-team-id">SIH26-A0H-T126</td><td class="col-problem">SIH26176</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">55</td><td class="col-team-id">SIH26-A0H-T017</td><td class="col-problem">SIH26167</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">56</td><td class="col-team-id">SIH26-A0H-T190</td><td class="col-problem">SIH26100</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">57</td><td class="col-team-id">SIH26-A0H-T076</td><td class="col-problem">SIH26091</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">58</td><td class="col-team-id">SIH26-A0H-T161</td><td class="col-problem">SIH26101</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">59</td><td class="col-team-id">SIH26-A0H-T095</td><td class="col-problem">SIH26028</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">60</td><td class="col-team-id">SIH26-A0H-T026</td><td class="col-problem">SIH26131</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">61</td><td class="col-team-id">SIH26-A0H-T297</td><td class="col-problem">SIH26034</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">62</td><td class="col-team-id">SIH26-A0H-T011</td><td class="col-problem">SIH26034</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">63</td><td class="col-team-id">SIH26-A0H-T002</td><td class="col-problem">SIH26101</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
+                    <tr><td class="col-sno">64</td><td class="col-team-id">SIH26-A0H-T080</td><td class="col-problem">SIH26002</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr>
                     <!-- <tr><td class="col-sno">14</td><td class="col-team-id">SIH26-A0H-T069</td><td class="col-problem">SIH26188</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">15</td><td class="col-team-id">SIH26-A0H-T027</td><td class="col-problem">SIH26053</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">18</td><td class="col-team-id">SIH26-A0H-T103</td><td class="col-problem">SIH26176</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">19</td><td class="col-team-id">SIH26-A0H-T126</td><td class="col-problem">SIH26176</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">22</td><td class="col-team-id">SIH26-A0H-T017</td><td class="col-problem">SIH26167</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
                     <!-- <tr><td class="col-sno">23</td><td class="col-team-id">SIH26-A0H-T014</td><td class="col-problem">SIH26055</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">24</td><td class="col-team-id">SIH26-A0H-T190</td><td class="col-problem">SIH26100</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">25</td><td class="col-team-id">SIH26-A0H-T076</td><td class="col-problem">SIH26091</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
                     <!-- <tr><td class="col-sno">26</td><td class="col-team-id">SIH26-A0H-T319</td><td class="col-problem">SIH26171</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">28</td><td class="col-team-id">SIH26-A0H-T002</td><td class="col-problem">SIH26101</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">29</td><td class="col-team-id">SIH26-A0H-T161</td><td class="col-problem">SIH26101</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">30</td><td class="col-team-id">SIH26-A0H-T080</td><td class="col-problem">SIH26002</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">33</td><td class="col-team-id">SIH26-A0H-T095</td><td class="col-problem">SIH26028</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
                     <!-- <tr><td class="col-sno">34</td><td class="col-team-id">SIH26-A0H-T067</td><td class="col-problem">SIH26068</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">35</td><td class="col-team-id">SIH26-A0H-T195</td><td class="col-problem">SIH26131</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">36</td><td class="col-team-id">SIH26-A0H-T026</td><td class="col-problem">SIH26131</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">37</td><td class="col-team-id">SIH26-A0H-T297</td><td class="col-problem">SIH26034</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">38</td><td class="col-team-id">SIH26-A0H-T011</td><td class="col-problem">SIH26034</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">39</td><td class="col-team-id">SIH26-A0H-T154</td><td class="col-problem">SIH26132</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">40</td><td class="col-team-id">SIH26-A0H-T093</td><td class="col-problem">SIH26199</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">41</td><td class="col-team-id">SIH26-A0H-T339</td><td class="col-problem">SIH26199</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">43</td><td class="col-team-id">SIH26-A0H-T016</td><td class="col-problem">SIH26102</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">58</td><td class="col-team-id">SIH26-A0H-T250</td><td class="col-problem">SIH26164</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">59</td><td class="col-team-id">SIH26-A0H-T207</td><td class="col-problem">SIH26206</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">60</td><td class="col-team-id">SIH26-A0H-T258</td><td class="col-problem">SIH26024</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">61</td><td class="col-team-id">SIH26-A0H-T142</td><td class="col-problem">SIH26014</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
-                    <!-- <tr><td class="col-sno">62</td><td class="col-team-id">SIH26-A0H-T255</td><td class="col-problem">SIH26104</td><td class="col-status"><span class="status-badge-rejected">Rejected</span></td></tr> -->
                     </tbody>
                 </table>
             </div>
@@ -545,9 +536,12 @@
             });
 
             const totalVisible = (isHwActive ? hwVisible : 0) + (isSwActive ? swVisible : 0);
-            const totalTabCount = (currentActiveTab === 'all') ? 49 : ((currentActiveTab === 'hardware') ? 11 : 38);
+            const totalTabCount = (currentActiveTab === 'all') ? 88 : ((currentActiveTab === 'hardware') ? 24 : 64);
 
-            document.getElementById('filtered-count-label').innerText = `Showing ${totalVisible} of ${totalTabCount} teams`;
+            const countLabelEl = document.getElementById('filtered-count-label');
+            if (countLabelEl) {
+                countLabelEl.innerText = `Showing ${totalVisible} of ${totalTabCount} teams`;
+            }
         }
     </script>
 </body>
