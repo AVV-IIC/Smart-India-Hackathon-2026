@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Smart India Hackathon 2026 - Top 100 Shortlisted Teams</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --primary-blue-dark: #0056b3;
+            --primary-blue-light: #e8f0fe;
+            --bg-page: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-dark: #202124;
+            --text-muted: #5f6368;
+            --border-color: #dadce0;
+            --success-green: #137333;
+            --success-bg: #e6f4ea;
+            --danger-red: #d93025;
+            --danger-bg: #fce8e6;
+            --purple-accent: #6f42c1;
+            --purple-bg: #f3e8fd;
+            --amber-accent: #b06000;
+            --amber-bg: #fef7e0;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+        }
+
+        .header-logo-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .header-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-blue);
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle-container {
+            text-align: center;
+            margin-bottom: 22px;
+            padding: 0 15px;
+        }
+
+        .subtitle {
+            color: #3c4043;
+            font-size: 15.5px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .blinking-note {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+            max-width: 860px;
+            line-height: 1.5;
+            background: linear-gradient(90deg, #007bff 0%, #00b4d8 20%, #ffd700 50%, #00b4d8 80%, #007bff 100%);
+            background-size: 200% auto;
+            color: #007bff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: chamki-shimmer 2s linear infinite;
+        }
+
+        @keyframes chamki-shimmer {
+            0% {
+                background-position: 0% center;
+                filter: drop-shadow(0 0 3px rgba(0, 123, 255, 0.4));
+            }
+
+            50% {
+                background-position: 100% center;
+                filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.85));
+            }
+
+            100% {
+                background-position: 200% center;
+                filter: drop-shadow(0 0 3px rgba(0, 123, 255, 0.4));
+            }
+        }
+
+        /* Container */
+        .top100-container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* Control & Search Bar Section */
+        .sih-control-panel {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .search-box-wrapper {
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            font-size: 15px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 25px;
+            outline: none;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        /* Track Tabs */
+        .track-nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .track-tab-btn {
+            background: #ffffff;
+            color: #3c4043;
+            border: 1.5px solid var(--border-color);
+            border-radius: 20px;
+            padding: 9px 24px;
+            font-size: 14.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .track-tab-btn:hover {
+            background-color: #f1f3f4;
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
+        .track-tab-btn.active {
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            border-color: var(--primary-blue);
+            box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Main Track Section Wrapper Cards */
+        .track-card {
+            background: #ffffff;
+            border: 1.5px solid #dadce0;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
+
+        .track-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #e8eaed;
+        }
+
+        .track-card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            color: #1a237e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+        }
+
+        .track-tag {
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 16px;
+        }
+
+        .tag-hw {
+            background-color: var(--primary-blue-light);
+            color: var(--primary-blue);
+            border: 1px solid #cce0fd;
+        }
+
+        .tag-sw {
+            background-color: var(--success-bg);
+            color: var(--success-green);
+            border: 1px solid #ceead6;
+        }
+
+        /* Status / Summary Bar inside each Section */
+        .track-status-summary-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-bottom: 25px;
+        }
+
+        .kpi-stat-item {
+            background: #f8fafc;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .kpi-stat-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .kpi-icon-box {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .kpi-icon-eval {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+        }
+
+        .kpi-icon-rej {
+            background-color: #fce8e6;
+            color: #d93025;
+        }
+
+        .kpi-icon-sel {
+            background-color: #e6f4ea;
+            color: #137333;
+        }
+
+        .kpi-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kpi-label {
+            font-size: 12.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+
+        .kpi-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-dark);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Subsections (A. Student Innovation, B. Given PSIDs) */
+        .subsection-wrapper {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .subsection-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+        }
+
+        .subsection-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #202124;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+        }
+
+        .sub-badge {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+
+        .badge-si {
+            background-color: var(--purple-bg);
+            color: var(--purple-accent);
+            border: 1px solid #e1cbf8;
+        }
+
+        .badge-given {
+            background-color: var(--amber-bg);
+            color: var(--amber-accent);
+            border: 1px solid #fce8b2;
+        }
+
+        /* Table Styling - Blue header */
+        .table-responsive {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow-x: auto;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            white-space: nowrap;
+        }
+
+        thead {
+            background-color: var(--primary-blue);
+        }
+
+        thead th,
+        thead tr th,
+        table thead th {
+            background-color: var(--primary-blue) !important;
+            color: #ffffff !important;
+            font-weight: 700 !important;
+            text-transform: none;
+            font-size: 13.5px;
+            letter-spacing: 0.3px;
+            padding: 12px 14px;
+            border-bottom: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Top corners rounded */
+        thead tr th:first-child {
+            border-top-left-radius: 7px;
+        }
+
+        thead tr th:last-child {
+            border-top-right-radius: 7px;
+        }
+
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid #e8eaed;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f4f8ff;
+        }
+
+        .col-sno {
+            width: 55px;
+        }
+
+        td.col-sno {
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        td.col-int-num {
+            font-weight: 700;
+            color: var(--primary-blue);
+            letter-spacing: 0.3px;
+            text-align: center;
+        }
+
+        td.col-int-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            text-align: left;
+        }
+
+        td.col-sih-num {
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0.3px;
+            text-align: center;
+        }
+
+        td.col-sih-name {
+            font-weight: 600;
+            color: #000000;
+            text-align: left;
+        }
+
+        td.col-idea1 {
+            font-weight: 700;
+            color: #202124;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        td.col-yukti {
+            font-weight: 600;
+            color: var(--purple-accent);
+            letter-spacing: 0.2px;
+            text-align: center;
+        }
+
+        td.col-status {
+            text-align: center;
+        }
+
+        .status-badge-selected {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            background-color: var(--success-bg);
+            color: var(--success-green);
+            border: 1px solid #b7e1cd;
+            letter-spacing: 0.2px;
+        }
+
+        .placeholder-text {
+            color: #80868b;
+            font-style: italic;
+        }
+
+        /* Footer Note */
+        .footer-note {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1.5px solid var(--border-color);
+            border-left: 5px solid var(--primary-blue);
+            color: #3c4043;
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-note-title {
+            color: var(--primary-blue);
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .footer-note p {
+            margin: 6px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4a4d51;
+        }
+
+        .footer-note p strong {
+            color: var(--text-dark);
+        }
+
+        .footer-note-thanks {
+            margin-top: 12px !important;
+            font-weight: 600;
+            color: var(--primary-blue) !important;
+        }
+
+        .footer-text {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                margin: 15px 10px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .sih-control-panel, .track-card {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 9px 10px;
+                font-size: 12.5px;
+            }
+
+            .track-status-summary-bar {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top100-container">
+        <!-- Top Header Logo Banner -->
+        <p align="center" class="header-logo-container">
+            <img alt="Smart India Hackathon 2026 Header Logo" class="header-img"
+                src="../teams/assets/images/Finalized_sih_2026_header.png" />
+        </p>
+
+        <h2>Smart India Hackathon - 2026</h2>
+        <div class="subtitle-container">
+            <div class="subtitle">Internal Hackathon — Top 100 Shortlisted Teams Directory</div>
+            <div class="blinking-note">
+                ✨ <strong>Note:</strong> Provisional shortlist for Smart India Hackathon 2026 Internal Hackathon. ✨
+            </div>
+        </div>
+
+        <!-- Search & Control Panel -->
+        <div class="sih-control-panel">
+            <div class="track-nav-tabs">
+                <button class="track-tab-btn active" id="tab-hardware" onclick="selectTrackTab('hardware')">⚙️ Hardware Track</button>
+                <!-- <button class="track-tab-btn" id="tab-software" onclick="selectTrackTab('software')">💻 Software Track</button> -->
+            </div>
+
+            <div class="search-box-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="top100-search-input" class="search-input"
+                    placeholder="Search by Internal Team No., Name, PSID (SIH26xxx), or S.No..."
+                    onkeyup="filterTop100Teams()" />
+            </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 1. HARDWARE SECTION                                                      -->
+        <!-- ========================================================================= -->
+        <div class="track-card track-section" id="section-hardware">
+            <div class="track-card-header">
+                <h3 class="track-card-title"><span>⚙️</span> Hardware Track</h3>
+                <span class="track-tag tag-hw">Hardware Evaluation</span>
+            </div>
+
+            <!-- Status / Summary Bar -->
+            <div class="track-status-summary-bar">
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-eval">📊</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Total Evaluated</span>
+                        <span class="kpi-value" id="hw-kpi-evaluated">62 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-rej">❌</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Judges Rejected</span>
+                        <span class="kpi-value" id="hw-kpi-rejected" style="color: var(--danger-red);">23 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-sel">🏆</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Selected Teams</span>
+                        <span class="kpi-value" id="hw-kpi-selected" style="color: var(--success-green);">19 Teams</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection A: Student Innovation -->
+            <div class="subsection-wrapper">
+                <div class="subsection-header">
+                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation</h4>
+                    <span class="sub-badge badge-si">Student Innovation (5Teams)</span>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-sno">S.No.</th>
+                                <th class="col-int-num">Internal Team Number</th>
+                                <th class="col-int-name">Internal Team Name</th>
+                                <th class="col-sih-num">SIH Team Number</th>
+                                <th class="col-sih-name">SIH Team Name</th>
+                                <th class="col-idea1">Idea #1 (PSID)</th>
+                                <th class="col-yukti">Yukti Idea</th>
+                                <th class="col-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-hw-student-innovation">
+                            <tr>
+                                <td class="col-sno">1</td>
+                                <td class="col-int-num">SIH26-A0H-T039</td>
+                                <td class="col-int-name">ARSEN</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26210</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">2</td>
+                                <td class="col-int-num">SIH26-A0H-T122</td>
+                                <td class="col-int-name">Fable's</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26215</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">3</td>
+                                <td class="col-int-num">SIH26-A0H-T083</td>
+                                <td class="col-int-name">SIX-SEVEN</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26222</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">4</td>
+                                <td class="col-int-num">SIH26-A0H-T074</td>
+                                <td class="col-int-name">FORGE’26</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26222</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">5</td>
+                                <td class="col-int-num">SIH26-A0H-T500</td>
+                                <td class="col-int-name">Aurez</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH262208</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Subsection B: Given PSIDs -->
+            <div class="subsection-wrapper">
+                <div class="subsection-header">
+                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs</h4>
+                    <span class="sub-badge badge-given">Govt / Industry PSIDs (14 Teams)</span>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-sno">S.No.</th>
+                                <th class="col-int-num">Internal Team Number</th>
+                                <th class="col-int-name">Internal Team Name</th>
+                                <th class="col-sih-num">SIH Team Number</th>
+                                <th class="col-sih-name">SIH Team Name</th>
+                                <th class="col-idea1">Idea #1 (PSID)</th>
+                                <th class="col-yukti">Yukti Idea</th>
+                                <th class="col-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-hw-given-psid">
+                            <tr>
+                                <td class="col-sno">1</td>
+                                <td class="col-int-num">SIH26-A0H-T508</td>
+                                <td class="col-int-name">Team Agri</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26110</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">2</td>
+                                <td class="col-int-num">SIH26-A0H-T091</td>
+                                <td class="col-int-name">DraftZero</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26181</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">3</td>
+                                <td class="col-int-num">SIH26-A0H-T278</td>
+                                <td class="col-int-name">Nexus</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26039</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">4</td>
+                                <td class="col-int-num">SIH26-A0H-T394</td>
+                                <td class="col-int-name">LUMORA</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26005</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">5</td>
+                                <td class="col-int-num">SIH26-A0H-T196</td>
+                                <td class="col-int-name">Code Syndicate</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26008</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">6</td>
+                                <td class="col-int-num">SIH26-A0H-T241</td>
+                                <td class="col-int-name">MILVEX</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26110</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">7</td>
+                                <td class="col-int-num">SIH26-A0H-T507</td>
+                                <td class="col-int-name">Quantum</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26114</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">8</td>
+                                <td class="col-int-num">SIH26-A0H-T249</td>
+                                <td class="col-int-name">SRARS - D</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26052</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">9</td>
+                                <td class="col-int-num">SIH26-A0H-T287</td>
+                                <td class="col-int-name">HexaForge</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26025</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">10</td>
+                                <td class="col-int-num">SIH26-A0H-T117</td>
+                                <td class="col-int-name">BRAVITS</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26088</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">11</td>
+                                <td class="col-int-num">SIH26-A0H-T098</td>
+                                <td class="col-int-name">The Shock Crew</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26022</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">12</td>
+                                <td class="col-int-num">SIH26-A0H-T279</td>
+                                <td class="col-int-name">Alloy Minds</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26113</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">13</td>
+                                <td class="col-int-num">SIH26-A0H-T114</td>
+                                <td class="col-int-name">Sergio</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26008</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">14</td>
+                                <td class="col-int-num">SIH26-A0H-T325</td>
+                                <td class="col-int-name">Bhuvansankar S</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26007</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 2. SOFTWARE SECTION                                                      -->
+        <!-- ========================================================================= -->
+        <div class="track-card track-section" id="section-software" style="display: none;">
+            <div class="track-card-header">
+                <h3 class="track-card-title"><span>💻</span> Software Track</h3>
+                <span class="track-tag tag-sw">Software Evaluation</span>
+            </div>
+
+            <!-- Status / Summary Bar -->
+            <div class="track-status-summary-bar">
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-eval">📊</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Total Evaluated</span>
+                        <span class="kpi-value" id="sw-kpi-evaluated">345 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-rej">❌</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Judges Rejected</span>
+                        <span class="kpi-value" id="sw-kpi-rejected" style="color: var(--danger-red);">72 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-sel">🏆</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Selected Teams</span>
+                        <span class="kpi-value" id="sw-kpi-selected" style="color: var(--success-green);">70 Teams</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection A: Student Innovation -->
+            <div class="subsection-wrapper">
+                <div class="subsection-header">
+                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation</h4>
+                    <span class="sub-badge badge-si">Student Innovation PSIDs</span>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-sno">S.No.</th>
+                                <th class="col-int-num">Internal Team Number</th>
+                                <th class="col-int-name">Internal Team Name</th>
+                                <th class="col-sih-num">SIH Team Number</th>
+                                <th class="col-sih-name">SIH Team Name</th>
+                                <th class="col-idea1">Idea #1 (PSID)</th>
+                                <th class="col-yukti">Yukti Idea</th>
+                                <th class="col-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-sw-student-innovation">
+                            <tr>
+                                <td class="col-sno">1</td>
+                                <td class="col-int-num">SIH26-A0H-T011</td>
+                                <td class="col-int-name">CodeSensei</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26-SI-006</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">2</td>
+                                <td class="col-int-num">SIH26-A0H-T012</td>
+                                <td class="col-int-name">CloudWeavers</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26-SI-007</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">3</td>
+                                <td class="col-int-num">SIH26-A0H-T013</td>
+                                <td class="col-int-name">DataNexus</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26-SI-008</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">4</td>
+                                <td class="col-int-num">SIH26-A0H-T014</td>
+                                <td class="col-int-name"><span class="placeholder-text">[Internal Team Name]</span></td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26-SI-009</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">5</td>
+                                <td class="col-int-num">SIH26-A0H-T015</td>
+                                <td class="col-int-name"><span class="placeholder-text">[Internal Team Name]</span></td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26-SI-010</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Subsection B: Given PSIDs -->
+            <div class="subsection-wrapper">
+                <div class="subsection-header">
+                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs</h4>
+                    <span class="sub-badge badge-given">Govt / Industry PSIDs</span>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-sno">S.No.</th>
+                                <th class="col-int-num">Internal Team Number</th>
+                                <th class="col-int-name">Internal Team Name</th>
+                                <th class="col-sih-num">SIH Team Number</th>
+                                <th class="col-sih-name">SIH Team Name</th>
+                                <th class="col-idea1">Idea #1 (PSID)</th>
+                                <th class="col-yukti">Yukti Idea</th>
+                                <th class="col-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-sw-given-psid">
+                            <tr>
+                                <td class="col-sno">1</td>
+                                <td class="col-int-num">SIH26-A0H-T016</td>
+                                <td class="col-int-name">NeuralNinjas</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26117</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">2</td>
+                                <td class="col-int-num">SIH26-A0H-T017</td>
+                                <td class="col-int-name">CodeAlchemists</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26188</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">3</td>
+                                <td class="col-int-num">SIH26-A0H-T018</td>
+                                <td class="col-int-name">DataVoyagers</td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26145</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">4</td>
+                                <td class="col-int-num">SIH26-A0H-T019</td>
+                                <td class="col-int-name"><span class="placeholder-text">[Internal Team Name]</span></td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26190</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                            <tr>
+                                <td class="col-sno">5</td>
+                                <td class="col-int-num">SIH26-A0H-T020</td>
+                                <td class="col-int-name"><span class="placeholder-text">[Internal Team Name]</span></td>
+                                <td class="col-sih-num"></td>
+                                <td class="col-sih-name"></td>
+                                <td class="col-idea1">SIH26167</td>
+                                <td class="col-yukti"></td>
+                                <td class="col-status"><span class="status-badge-selected">Selected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Notes Section -->
+        <!-- <div class="footer-note">
+            <h3 class="footer-note-title">Information for Shortlisted Teams</h3>
+            <p>Congratulations to all teams selected for the <strong>Top 100 Shortlist</strong> across <strong>Student Innovation</strong> and <strong>Given PSIDs</strong> categories. All team leads are requested to keep their presentation decks, codebases, and hardware prototypes ready for subsequent rounds.</p>
+            <p>Ensure that your <strong>Yukti Innovation Idea</strong> details and repository submissions are verified and aligned with SIH guidelines.</p>
+            <p class="footer-note-thanks">✨ Institution's Innovation Council wishes you all the best for the upcoming rounds! ✨</p>
+        </div> -->
+
+        <div class="footer-text">
+            © SIH 2026 - Internal Hackathon <br />
+            Institution's Innovation Council — Amrita Vishwa Vidyapeetham Coimbatore.
+        </div>
+    </div>
+
+    <script>
+        let currentActiveTab = 'hardware';
+
+        function selectTrackTab(tab) {
+            currentActiveTab = tab;
+            document.querySelectorAll('.track-tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`tab-${tab}`).classList.add('active');
+
+            const hwSection = document.getElementById('section-hardware');
+            const swSection = document.getElementById('section-software');
+
+            if (tab === 'hardware') {
+                hwSection.style.display = 'block';
+                swSection.style.display = 'none';
+            } else if (tab === 'software') {
+                hwSection.style.display = 'none';
+                swSection.style.display = 'block';
+            }
+
+            filterTop100Teams();
+        }
+
+        function filterTop100Teams() {
+            const query = document.getElementById('top100-search-input').value.toLowerCase().trim();
+            const rows = document.querySelectorAll('.table-responsive tbody tr');
+
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
