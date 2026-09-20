@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH Letterhead & Nomination Doc Generator</title>
+    <meta name="description" content="Generate official Smart India Hackathon nomination and letterhead Word documents instantly matching 074_forge26.docx format with dynamic team ID naming.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons, html2pdf, JSZip & FileSaver for GitHub Pages Standalone Support -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <header class="navbar">
+            <div class="nav-brand">
+                <div class="logo-badge">
+                    <i data-lucide="file-check-2"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>SIH Letterhead Formatter</h1>
+                    <span class="badge-sih">Smart India Hackathon 2026</span>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <button type="button" class="btn btn-secondary" id="btn-sample" title="Populate with sample data">
+                    <i data-lucide="sparkles"></i>
+                    <span>Fill Sample</span>
+                </button>
+                <button type="button" class="btn btn-secondary" id="btn-batch-modal" title="Batch Process multiple teams">
+                    <i data-lucide="layers"></i>
+                    <span>Batch Mode</span>
+                </button>
+                <button type="button" class="btn btn-secondary" id="btn-clear" title="Reset all fields">
+                    <i data-lucide="rotate-ccw"></i>
+                    <span>Reset</span>
+                </button>
+                <button type="button" class="theme-toggle" id="btn-theme" title="Toggle Dark/Light Mode">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Workspace: Split View -->
+        <main class="main-layout">
+            <!-- Left Panel: Input Editor -->
+            <section class="editor-panel">
+                <form id="doc-form" autocomplete="off" onsubmit="return false;">
+                    
+                    <!-- Form Header & Status Bar -->
+                    <div class="panel-header">
+                        <div>
+                            <h2>Team & Nomination Details</h2>
+                            <p class="subtitle">Complete the fields below to generate the exact Word nomination document.</p>
+                        </div>
+                        <div class="compliance-badge" id="sih-rule-badge">
+                            <i data-lucide="check-circle-2"></i>
+                            <span id="compliance-text">SIH Criteria: 6 Members</span>
+                        </div>
+                    </div>
+
+                    <!-- Section 1: Team & Document Meta -->
+                    <div class="card-section">
+                        <div class="section-title">
+                            <i data-lucide="hash"></i>
+                            <h3>Team Identification & Date</h3>
+                        </div>
+
+                        <div class="form-grid grid-2">
+                            <div class="form-group highlight-group">
+                                <label for="team_id">
+                                    Team ID <span class="required">*</span>
+                                    <span class="label-hint">(Used for filename: &lt;team_id&gt;.docx)</span>
+                                </label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="tag"></i>
+                                    <input type="text" id="team_id" name="team_id" placeholder="e.g. 074_forge26" required>
+                                </div>
+                                <div class="filename-preview">
+                                    <i data-lucide="file-text"></i>
+                                    <span>Download name: <strong id="preview-filename">074_forge26.docx</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="team_name">
+                                    Team Name <span class="required">*</span>
+                                </label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="users"></i>
+                                    <input type="text" id="team_name" name="team_name" placeholder="e.g. FORGE-26" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-grid grid-3">
+                            <div class="form-group">
+                                <label for="date_str">
+                                    Nomination Date <span class="required">*</span>
+                                </label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="calendar"></i>
+                                    <input type="text" id="date_str" name="date_str" placeholder="e.g. 17/September/2026">
+                                </div>
+                                <div class="quick-links">
+                                    <button type="button" class="btn-link" id="btn-today-date">Use Today</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="aicte_code">
+                                    AICTE / UGC Code <span class="required">*</span>
+                                </label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="building"></i>
+                                    <input type="text" id="aicte_code" name="aicte_code" placeholder="e.g. U-0436" value="U-0436">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hackathon_name">
+                                    Hackathon Event
+                                </label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="award"></i>
+                                    <input type="text" id="hackathon_name" name="hackathon_name" placeholder="e.g. Smart India Hackathon 2026" value="Smart India Hackathon 2026">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Signatory Details -->
+                    <div class="card-section">
+                        <div class="section-title">
+                            <i data-lucide="pen-tool"></i>
+                            <h3>College Signatory Details</h3>
+                        </div>
+
+                        <div class="form-grid grid-3">
+                            <div class="form-group">
+                                <label for="signatory_name">Signatory Name</label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="user-check"></i>
+                                    <input type="text" id="signatory_name" name="signatory_name" placeholder="e.g. Dr. Sasangan Ramanathan" value="Dr. Sasangan Ramanathan">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="signatory_title">Designation / Title</label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="briefcase"></i>
+                                    <input type="text" id="signatory_title" name="signatory_title" placeholder="e.g. Dean Academics" value="Dean Academics">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="college_name">College / Institution</label>
+                                <div class="input-with-icon">
+                                    <i data-lucide="landmark"></i>
+                                    <input type="text" id="college_name" name="college_name" placeholder="e.g. Amrita Vishwa Vidyapeetham, Coimbatore." value="Amrita Vishwa Vidyapeetham, Coimbatore.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Team Members (1 Leader + 5 Members) -->
+                    <div class="card-section">
+                        <div class="section-header-flex">
+                            <div class="section-title">
+                                <i data-lucide="user-plus"></i>
+                                <h3>Team Members List (<span id="member-count-display">6</span>)</h3>
+                            </div>
+                            <div class="section-actions">
+                                <button type="button" class="btn btn-sm btn-outline" id="btn-add-member">
+                                    <i data-lucide="plus"></i> Add Member
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="members-container" id="members-list">
+                            <!-- Dynamically generated member cards -->
+                        </div>
+                    </div>
+
+                    <!-- Floating Action Trigger for Mobile/Desktop -->
+                    <div class="form-sticky-footer">
+                        <button type="button" class="btn btn-primary btn-lg" id="btn-download-docx" title="Download Word (.docx) document">
+                            <i data-lucide="file-text"></i>
+                            <span>Download .docx (<span id="footer-btn-filename">074_forge26.docx</span>)</span>
+                        </button>
+                        <button type="button" class="btn btn-emerald btn-lg" id="btn-download-pdf" title="Download direct PDF document">
+                            <i data-lucide="file-down"></i>
+                            <span>Download .pdf</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-lg" id="btn-print-preview" title="Print document or save via system dialog">
+                            <i data-lucide="printer"></i>
+                            <span>Print</span>
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- Right Panel: Live Authentic Letterhead Preview -->
+            <section class="preview-panel">
+                <div class="preview-toolbar">
+                    <div class="preview-title">
+                        <i data-lucide="eye"></i>
+                        <span>Live Document Preview</span>
+                        <span class="doc-format-tag">Word .docx A4 Simulation</span>
+                    </div>
+                    <div class="preview-controls">
+                        <button type="button" class="tool-btn" id="zoom-out" title="Zoom Out"><i data-lucide="zoom-out"></i></button>
+                        <span class="zoom-level" id="zoom-val">100%</span>
+                        <button type="button" class="tool-btn" id="zoom-in" title="Zoom In"><i data-lucide="zoom-in"></i></button>
+                        <button type="button" class="tool-btn" id="zoom-reset" title="Fit to Screen"><i data-lucide="maximize-2"></i></button>
+                    </div>
+                </div>
+
+                <div class="preview-scroll-viewport" id="preview-viewport">
+                    <!-- Physical Sheet Container -->
+                    <div class="paper-sheet" id="paper-doc">
+                        
+                        <!-- Top spacing for letterhead -->
+                        <div class="doc-top-spacing"></div>
+
+                        <!-- Date -->
+                        <div class="doc-date" id="doc-p-date">
+                            Date: <span id="pv-date">17/September/2026</span>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="doc-subject" id="doc-p-subject">
+                            Sub: <span id="pv-hackathon">Smart India Hackathon 2026</span> – Nomination
+                        </div>
+
+                        <!-- Body paragraph -->
+                        <div class="doc-body" id="doc-p-body">
+                            <p>I am pleased to nominate the below team from our college to participate in Smart India</p>
+                            <p>Hackathon 2026. AICTE Application No/ UGC Registration No for our college is <strong><span id="pv-aicte">U-0436</span>.</strong></p>
+                        </div>
+
+                        <!-- Team Name -->
+                        <div class="doc-team-name" id="doc-p-team">
+                            <strong>Team: &nbsp;<span id="pv-team-name">FORGE-26</span></strong>
+                        </div>
+
+                        <!-- Table -->
+                        <div class="doc-table-wrapper">
+                            <table class="doc-table" id="pv-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 14%;"></th>
+                                        <th style="width: 20%;">Name</th>
+                                        <th style="width: 13%;">Gender (M/F)</th>
+                                        <th style="width: 27%;">Email id</th>
+                                        <th style="width: 14%;">Mobile No.</th>
+                                        <th style="width: 10%;">Stream</th>
+                                        <th style="width: 10%;">Academic Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pv-table-body">
+                                    <!-- Populated via Javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Signatory Section -->
+                        <div class="doc-signatory">
+                            <p class="sincerely-text">Sincerely,</p>
+                            <div class="signature-spacing"></div>
+                            <p class="sig-name" id="pv-signatory-name">Dr. Sasangan Ramanathan</p>
+                            <p class="sig-title" id="pv-signatory-title">Dean Academics</p>
+                            <p class="sig-college" id="pv-college-name">Amrita Vishwa Vidyapeetham, Coimbatore.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Batch Mode Modal -->
+        <div class="modal-backdrop" id="batch-modal" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-group">
+                        <div class="modal-icon"><i data-lucide="layers"></i></div>
+                        <div>
+                            <h3>Batch Team Generator</h3>
+                            <p>Upload a spreadsheet with multiple teams to generate and download a ZIP of all .docx files.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" id="btn-close-batch"><i data-lucide="x"></i></button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Drop Zone -->
+                    <div class="drop-zone" id="csv-dropzone">
+                        <i data-lucide="upload-cloud" class="drop-icon"></i>
+                        <h4>Drag & Drop your CSV file here</h4>
+                        <p>or click to browse from your computer</p>
+                        <input type="file" id="csv-file-input" accept=".csv" style="display: none;">
+                        <button type="button" class="btn btn-secondary btn-sm" id="btn-browse-csv">Choose CSV File</button>
+                    </div>
+
+                    <div class="template-download-row">
+                        <span>Need the template format?</span>
+                        <a href="/api/csv-template" class="btn-link" download="sih_teams_template.csv">
+                            <i data-lucide="file-spreadsheet"></i> Download Sample CSV Template
+                        </a>
+                    </div>
+
+                    <!-- Parsed Teams Preview -->
+                    <div class="parsed-teams-section" id="parsed-section" style="display: none;">
+                        <div class="parsed-header">
+                            <h4>Parsed Teams (<span id="parsed-count">0</span>)</h4>
+                            <span class="info-note">Each team will be saved as <code>&lt;team_id&gt;.docx</code> in the ZIP.</span>
+                        </div>
+                        <div class="parsed-table-container">
+                            <table class="data-table" id="parsed-table">
+                                <thead>
+                                    <tr>
+                                        <th>Team ID</th>
+                                        <th>Team Name</th>
+                                        <th>Members</th>
+                                        <th>Signatory</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="parsed-table-body">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-batch">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="btn-generate-zip" disabled>
+                        <i data-lucide="archive"></i>
+                        <span>Generate & Download ZIP</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div class="toast-container" id="toast-container"></div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="./static/js/app.js"></script>
+</body>
+</html>
