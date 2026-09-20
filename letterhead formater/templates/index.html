@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIH Letterhead & Nomination Doc Generator</title>
+    <title>Smart India Hackathon 2026 - Letterhead & Nomination Formatter</title>
     <meta name="description" content="Generate official Smart India Hackathon nomination and letterhead Word documents instantly matching 074_forge26.docx format with dynamic team ID naming.">
+    
+    <!-- Universal Favicon -->
+    <link rel="icon" type="image/png" href="../favicon/iiclogo.png"/>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons, html2pdf, JSZip & FileSaver for GitHub Pages Standalone Support -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -20,55 +23,64 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
-<body class="dark-theme">
-    <div class="app-container">
-        <!-- Top Navigation Bar -->
-        <header class="navbar">
-            <div class="nav-brand">
-                <div class="logo-badge">
-                    <i data-lucide="file-check-2"></i>
-                </div>
-                <div class="brand-text">
-                    <h1>SIH Letterhead Formatter</h1>
-                    <span class="badge-sih">Smart India Hackathon 2026</span>
-                </div>
-            </div>
+<body>
+    <div class="top100-container app-container">
+        <!-- Top Header Logo Banner -->
+        <p align="center" class="header-logo-container">
+            <img alt="Smart India Hackathon 2026 Header Logo" class="header-img"
+                src="../header/Finalised_sih_2026_header.png" />
+        </p>
 
-            <div class="nav-actions">
-                <button type="button" class="btn btn-secondary" id="btn-sample" title="Populate with sample data">
-                    <i data-lucide="sparkles"></i>
-                    <span>Fill Sample</span>
-                </button>
-                <button type="button" class="btn btn-secondary" id="btn-batch-modal" title="Batch Process multiple teams">
-                    <i data-lucide="layers"></i>
-                    <span>Batch Mode</span>
-                </button>
-                <button type="button" class="btn btn-secondary" id="btn-clear" title="Reset all fields">
-                    <i data-lucide="rotate-ccw"></i>
-                    <span>Reset</span>
-                </button>
-                <button type="button" class="theme-toggle" id="btn-theme" title="Toggle Dark/Light Mode">
-                    <i data-lucide="sun" class="sun-icon"></i>
-                    <i data-lucide="moon" class="moon-icon"></i>
-                </button>
+        <h2>Smart India Hackathon - 2026</h2>
+        <div class="subtitle-container">
+            <div class="subtitle">Official Nomination Letterhead & Document Formatter</div>
+            <div class="blinking-note">
+                ✨ <strong>Nomination Generator:</strong> Create official SIH 2026 Word (.docx) & PDF documents with authentic institutional letterhead formatting. ✨
             </div>
-        </header>
+        </div>
+
+        <!-- Action Control Panel -->
+        <div class="sih-control-panel">
+            <div class="panel-actions-wrapper">
+                <div class="panel-left-actions">
+                    <button type="button" class="btn btn-secondary" id="btn-sample" title="Populate with sample data">
+                        <i data-lucide="sparkles"></i>
+                        <span>Fill Sample</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="btn-batch-modal" title="Batch Process multiple teams">
+                        <i data-lucide="layers"></i>
+                        <span>Batch Mode</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="btn-clear" title="Reset all fields">
+                        <i data-lucide="rotate-ccw"></i>
+                        <span>Reset</span>
+                    </button>
+                </div>
+
+                <div class="panel-right-status">
+                    <div class="compliance-badge" id="sih-rule-badge">
+                        <i data-lucide="check-circle-2"></i>
+                        <span id="compliance-text">SIH Criteria: 6 Members</span>
+                    </div>
+                    <button type="button" class="theme-toggle" id="btn-theme" title="Toggle Dark/Light Mode">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <!-- Main Workspace: Split View -->
         <main class="main-layout">
             <!-- Left Panel: Input Editor -->
-            <section class="editor-panel">
+            <section class="editor-panel track-card">
                 <form id="doc-form" autocomplete="off" onsubmit="return false;">
                     
                     <!-- Form Header & Status Bar -->
                     <div class="panel-header">
                         <div>
-                            <h2>Team & Nomination Details</h2>
-                            <p class="subtitle">Complete the fields below to generate the exact Word nomination document.</p>
-                        </div>
-                        <div class="compliance-badge" id="sih-rule-badge">
-                            <i data-lucide="check-circle-2"></i>
-                            <span id="compliance-text">SIH Criteria: 6 Members</span>
+                            <h3 class="track-card-title"><span>📝</span> Team & Nomination Details</h3>
+                            <p class="subtitle-hint">Fill in the fields below to dynamically generate the official nomination document.</p>
                         </div>
                     </div>
 
@@ -76,7 +88,7 @@
                     <div class="card-section">
                         <div class="section-title">
                             <i data-lucide="hash"></i>
-                            <h3>Team Identification & Date</h3>
+                            <h4>Team Identification & Date</h4>
                         </div>
 
                         <div class="form-grid grid-2">
@@ -146,7 +158,7 @@
                     <div class="card-section">
                         <div class="section-title">
                             <i data-lucide="pen-tool"></i>
-                            <h3>College Signatory Details</h3>
+                            <h4>College Signatory Details</h4>
                         </div>
 
                         <div class="form-grid grid-3">
@@ -181,7 +193,7 @@
                         <div class="section-header-flex">
                             <div class="section-title">
                                 <i data-lucide="user-plus"></i>
-                                <h3>Team Members List (<span id="member-count-display">6</span>)</h3>
+                                <h4>Team Members List (<span id="member-count-display">6</span>)</h4>
                             </div>
                             <div class="section-actions">
                                 <button type="button" class="btn btn-sm btn-outline" id="btn-add-member">
@@ -195,7 +207,7 @@
                         </div>
                     </div>
 
-                    <!-- Floating Action Trigger for Mobile/Desktop -->
+                    <!-- Action Trigger Buttons -->
                     <div class="form-sticky-footer">
                         <button type="button" class="btn btn-primary btn-lg" id="btn-download-docx" title="Download Word (.docx) document">
                             <i data-lucide="file-text"></i>
@@ -215,7 +227,7 @@
             </section>
 
             <!-- Right Panel: Live Authentic Letterhead Preview -->
-            <section class="preview-panel">
+            <section class="preview-panel track-card">
                 <div class="preview-toolbar">
                     <div class="preview-title">
                         <i data-lucide="eye"></i>
@@ -360,6 +372,11 @@
         <!-- Toast Notifications -->
         <div class="toast-container" id="toast-container"></div>
 
+        <!-- Footer Notes Section -->
+        <div class="footer-text">
+            © SIH 2026 - Internal Hackathon <br />
+            Institution's Innovation Council — Amrita Vishwa Vidyapeetham Coimbatore.
+        </div>
     </div>
 
     <!-- Script -->
