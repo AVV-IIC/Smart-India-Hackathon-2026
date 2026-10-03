@@ -11,568 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@500;600;700;800&amp;display=swap"
         rel="stylesheet" />
-    <style>
-        :root {
-            --primary-blue: #007bff;
-            --primary-blue-dark: #0056b3;
-            --primary-blue-light: #e8f0fe;
-            --bg-page: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-dark: #202124;
-            --text-muted: #5f6368;
-            --border-color: #dadce0;
-            --success-green: #137333;
-            --success-bg: #e6f4ea;
-            --danger-red: #d93025;
-            --danger-bg: #fce8e6;
-            --purple-accent: #6f42c1;
-            --purple-bg: #f3e8fd;
-            --amber-accent: #b06000;
-            --amber-bg: #fef7e0;
-        }
-
-        body {
-            font-family: 'Inter', Arial, sans-serif;
-            margin: 20px;
-            background-color: var(--bg-page);
-            color: var(--text-dark);
-        }
-
-        .header-logo-container {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .header-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-        }
-
-        h2 {
-            text-align: center;
-            color: var(--primary-blue);
-            font-family: 'Outfit', sans-serif;
-            font-size: 28px;
-            margin-top: 10px;
-            margin-bottom: 6px;
-            letter-spacing: -0.5px;
-        }
-
-        .subtitle-container {
-            text-align: center;
-            margin-bottom: 22px;
-            padding: 0 15px;
-        }
-
-        .subtitle {
-            color: #3c4043;
-            font-size: 15.5px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        .blinking-note {
-            display: inline-block;
-            font-size: 14px;
-            font-weight: 800;
-            letter-spacing: 0.3px;
-            max-width: 860px;
-            line-height: 1.5;
-            background: linear-gradient(90deg, #007bff 0%, #00b4d8 20%, #ffd700 50%, #00b4d8 80%, #007bff 100%);
-            background-size: 200% auto;
-            color: #007bff;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: chamki-shimmer 2s linear infinite;
-        }
-
-        @keyframes chamki-shimmer {
-            0% {
-                background-position: 0% center;
-                filter: drop-shadow(0 0 3px rgba(0, 123, 255, 0.4));
-            }
-
-            50% {
-                background-position: 100% center;
-                filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.85));
-            }
-
-            100% {
-                background-position: 200% center;
-                filter: drop-shadow(0 0 3px rgba(0, 123, 255, 0.4));
-            }
-        }
-
-        /* Container */
-        .top100-container {
-            max-width: 1250px;
-            margin: 0 auto;
-        }
-
-        /* Control & Search Bar Section */
-        .sih-control-panel {
-            background-color: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .search-box-wrapper {
-            position: relative;
-            margin-bottom: 0;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 12px 16px 12px 44px;
-            font-size: 15px;
-            border: 1.5px solid var(--border-color);
-            border-radius: 25px;
-            outline: none;
-            box-sizing: border-box;
-            transition: all 0.2s ease;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.03);
-        }
-
-        .search-input:focus {
-            border-color: var(--primary-blue);
-            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-muted);
-            font-size: 16px;
-        }
-
-        /* Track Tabs */
-        .track-nav-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-
-        .track-tab-btn {
-            background: #ffffff;
-            color: #3c4043;
-            border: 1.5px solid var(--border-color);
-            border-radius: 20px;
-            padding: 9px 24px;
-            font-size: 14.5px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .track-tab-btn:hover {
-            background-color: #f1f3f4;
-            border-color: var(--primary-blue);
-            color: var(--primary-blue);
-        }
-
-        .track-tab-btn.active {
-            background-color: var(--primary-blue);
-            color: #ffffff;
-            border-color: var(--primary-blue);
-            box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
-        }
-
-        /* Main Track Section Wrapper Cards */
-        .track-card {
-            background: #ffffff;
-            border: 1.5px solid #dadce0;
-            border-radius: 14px;
-            padding: 24px;
-            margin-bottom: 35px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-        }
-
-        .track-card-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 20px;
-            padding-bottom: 14px;
-            border-bottom: 2px solid #e8eaed;
-        }
-
-        .track-card-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 23px;
-            font-weight: 800;
-            color: #1a237e;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 0;
-        }
-
-        .track-tag {
-            font-size: 13px;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 16px;
-        }
-
-        .tag-hw {
-            background-color: var(--primary-blue-light);
-            color: var(--primary-blue);
-            border: 1px solid #cce0fd;
-        }
-
-        .tag-sw {
-            background-color: var(--success-bg);
-            color: var(--success-green);
-            border: 1px solid #ceead6;
-        }
-
-        /* Status / Summary Bar inside each Section */
-        .track-status-summary-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 14px;
-            margin-bottom: 25px;
-        }
-
-        .kpi-stat-item {
-            background: #f8fafc;
-            border: 1.5px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 14px 18px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            transition: all 0.2s ease;
-        }
-
-        .kpi-stat-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .kpi-icon-box {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .kpi-icon-eval {
-            background-color: #e8f0fe;
-            color: #1a73e8;
-        }
-
-        .kpi-icon-rej {
-            background-color: #fce8e6;
-            color: #d93025;
-        }
-
-        .kpi-icon-sel {
-            background-color: #e6f4ea;
-            color: #137333;
-        }
-
-        .kpi-details {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .kpi-label {
-            font-size: 12.5px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--text-muted);
-            margin-bottom: 2px;
-        }
-
-        .kpi-value {
-            font-size: 20px;
-            font-weight: 800;
-            color: var(--text-dark);
-            font-family: 'Outfit', sans-serif;
-        }
-
-        /* Subsections (A. Student Innovation, B. Given PSIDs) */
-        .subsection-wrapper {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        .subsection-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
-        }
-
-        .subsection-title {
-            font-size: 17px;
-            font-weight: 700;
-            color: #202124;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-        }
-
-        .sub-badge {
-            font-size: 12px;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 12px;
-        }
-
-        .badge-si {
-            background-color: var(--purple-bg);
-            color: var(--purple-accent);
-            border: 1px solid #e1cbf8;
-        }
-
-        .badge-given {
-            background-color: var(--amber-bg);
-            color: var(--amber-accent);
-            border: 1px solid #fce8b2;
-        }
-
-        /* Table Styling - Blue header */
-        .table-responsive {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            overflow-x: auto;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13.5px;
-            white-space: nowrap;
-        }
-
-        thead {
-            background-color: var(--primary-blue);
-        }
-
-        thead th,
-        thead tr th,
-        table thead th {
-            background-color: var(--primary-blue) !important;
-            color: #ffffff !important;
-            font-weight: 700 !important;
-            text-transform: none;
-            font-size: 13.5px;
-            letter-spacing: 0.3px;
-            padding: 12px 14px;
-            border-bottom: none;
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        /* Top corners rounded */
-        thead tr th:first-child {
-            border-top-left-radius: 7px;
-        }
-
-        thead tr th:last-child {
-            border-top-right-radius: 7px;
-        }
-
-        td {
-            padding: 11px 14px;
-            border-bottom: 1px solid #e8eaed;
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        tr:hover {
-            background-color: #f4f8ff;
-        }
-
-        .col-sno {
-            width: 55px;
-        }
-
-        td.col-sno {
-            font-weight: 600;
-            color: var(--text-muted);
-        }
-
-        td.col-int-num {
-            font-weight: 700;
-            color: var(--primary-blue);
-            letter-spacing: 0.3px;
-            text-align: center;
-        }
-
-        td.col-int-name {
-            font-weight: 600;
-            color: var(--text-dark);
-            text-align: left;
-        }
-
-        td.col-sih-num {
-            font-weight: 600;
-            color: #000000;
-            letter-spacing: 0.3px;
-            text-align: center;
-        }
-
-        td.col-sih-name {
-            font-weight: 600;
-            color: #000000;
-            text-align: left;
-        }
-
-        td.col-idea1 {
-            font-weight: 700;
-            color: #202124;
-            text-align: center;
-            letter-spacing: 0.3px;
-        }
-
-        td.col-yukti {
-            font-weight: 600;
-            color: var(--purple-accent);
-            letter-spacing: 0.2px;
-            text-align: center;
-        }
-
-        td.col-status {
-            text-align: center;
-        }
-
-        .status-badge-shortlisted {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 14px;
-            font-size: 12px;
-            font-weight: 700;
-            background-color: var(--success-bg);
-            color: var(--success-green);
-            border: 1px solid #b7e1cd;
-            letter-spacing: 0.2px;
-        }
-
-        .status-badge-waitlisted {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 14px;
-            font-size: 12px;
-            font-weight: 700;
-            background-color: #fef7e0;
-            color: #b06000;
-            border: 1px solid #fce8b2;
-            letter-spacing: 0.2px;
-        }
-
-        .placeholder-text {
-            color: #80868b;
-            font-style: italic;
-        }
-
-        /* Footer Note */
-        .footer-note {
-            text-align: center;
-            background-color: #ffffff;
-            border: 1.5px solid var(--border-color);
-            border-left: 5px solid var(--primary-blue);
-            color: #3c4043;
-            padding: 20px 24px;
-            border-radius: 12px;
-            margin-top: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footer-note-title {
-            color: var(--primary-blue);
-            font-family: 'Outfit', sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-        }
-
-        .footer-note p {
-            margin: 6px 0;
-            font-size: 14px;
-            line-height: 1.6;
-            color: #4a4d51;
-        }
-
-        .footer-note p strong {
-            color: var(--text-dark);
-        }
-
-        .footer-note-thanks {
-            margin-top: 12px !important;
-            font-weight: 600;
-            color: var(--primary-blue) !important;
-        }
-
-        .footer-text {
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 13px;
-            margin-top: 15px;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            body {
-                margin: 15px 10px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            .sih-control-panel, .track-card {
-                padding: 15px;
-            }
-
-            th, td {
-                padding: 9px 10px;
-                font-size: 12.5px;
-            }
-
-            .track-status-summary-bar {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -588,21 +27,25 @@
         <div class="subtitle-container">
             <div class="subtitle">Internal Hackathon — Top 100 Shortlisted Teams Directory</div>
             <div class="blinking-note">
-                ✨ <strong>Note:</strong> Congratulations for all the shortlist teams in Smart India Hackathon 2026 Internal Hackathon. ✨
+                ✨ <strong>Note:</strong> Congratulations for all the teams in Smart India Hackathon 2026 Internal
+                Hackathon. ✨
             </div>
         </div>
 
         <!-- Search & Control Panel -->
         <div class="sih-control-panel">
             <div class="track-nav-tabs">
-                <button class="track-tab-btn active" id="tab-hardware" onclick="selectTrackTab('hardware')">⚙️ Hardware Track</button>
-                <button class="track-tab-btn" id="tab-software" onclick="selectTrackTab('software')">💻 Software Track</button>
+                <button class="track-tab-btn active" id="tab-hardware" onclick="selectTrackTab('hardware')">⚙️ Hardware
+                    Track (22)</button>
+                <button class="track-tab-btn" id="tab-software" onclick="selectTrackTab('software')">💻 Software Track
+                    (78)</button>
+                <button class="track-tab-btn" id="tab-all" onclick="selectTrackTab('all')">👥 All Teams (100)</button>
             </div>
 
             <div class="search-box-wrapper">
                 <span class="search-icon">🔍</span>
                 <input type="text" id="top100-search-input" class="search-input"
-                    placeholder="Search by Internal Team No., Name, PSID (SIH26xxx), or S.No..."
+                    placeholder="Search by Internal Team No., Name, PSID (SIH26xxx), Track, or S.No..."
                     onkeyup="filterTop100Teams()" />
             </div>
         </div>
@@ -636,7 +79,8 @@
                     <div class="kpi-icon-box kpi-icon-sel">🏆</div>
                     <div class="kpi-details">
                         <span class="kpi-label">Shortlisted Teams</span>
-                        <span class="kpi-value" id="hw-kpi-shortlisted" style="color: var(--success-green);">22 Teams</span>
+                        <span class="kpi-value" id="hw-kpi-shortlisted" style="color: var(--success-green);">22
+                            Teams</span>
                     </div>
                 </div>
             </div>
@@ -644,7 +88,7 @@
             <!-- Subsection A: Student Innovation -->
             <div class="subsection-wrapper">
                 <div class="subsection-header">
-                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation</h4>
+                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation (Sorted by PSID)</h4>
                     <span class="sub-badge badge-si">Student Innovation (5 Teams)</span>
                 </div>
                 <div class="table-responsive">
@@ -661,60 +105,7 @@
                                 <th class="col-status">Status</th>
                             </tr>
                         </thead>
-                        <tbody id="tbody-hw-student-innovation">
-                            <tr>
-                                <td class="col-sno">1</td>
-                                <td class="col-int-num">SIH26-A0H-T039</td>
-                                <td class="col-int-name">ARSEN</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26210</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">2</td>
-                                <td class="col-int-num">SIH26-A0H-T122</td>
-                                <td class="col-int-name">Fable's</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26215</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">3</td>
-                                <td class="col-int-num">SIH26-A0H-T083</td>
-                                <td class="col-int-name">SIX-SEVEN</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26222</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">4</td>
-                                <td class="col-int-num">SIH26-A0H-T074</td>
-                                <td class="col-int-name">FORGE’26</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26222</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <!-- VERIFY: SIH26208 is a SOFTWARE Student Innovation PSID on sih.gov.in.
-                                 Hardware equivalent (Toys & Games) is SIH26225. -->
-                            <tr>
-                                <td class="col-sno">5</td>
-                                <td class="col-int-num">SIH26-A0H-T151</td>
-                                <td class="col-int-name">CipherZ</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26226</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tbody-hw-student-innovation"></tbody>
                     </table>
                 </div>
             </div>
@@ -722,7 +113,7 @@
             <!-- Subsection B: Given PSIDs -->
             <div class="subsection-wrapper">
                 <div class="subsection-header">
-                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs</h4>
+                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs (Sorted by PSID)</h4>
                     <span class="sub-badge badge-given">Govt / Industry PSIDs (17 Teams)</span>
                 </div>
                 <div class="table-responsive">
@@ -732,186 +123,14 @@
                                 <th class="col-sno">S.No.</th>
                                 <th class="col-int-num">Internal Team Number</th>
                                 <th class="col-int-name">Internal Team Name</th>
-                                <th class="col-sih-num">SIH Team Number</th>               
+                                <th class="col-sih-num">SIH Team Number</th>
                                 <th class="col-sih-name">SIH Team Name</th>
                                 <th class="col-idea1">Idea #1 (PSID)</th>
                                 <th class="col-yukti">Yukti Idea</th>
                                 <th class="col-status">Status</th>
                             </tr>
                         </thead>
-                        <tbody id="tbody-hw-given-psid">
-                            <tr>
-                                <td class="col-sno">1</td>
-                                <td class="col-int-num">SIH26-A0H-T508</td>
-                                <td class="col-int-name">Team Agri</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26110</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">2</td>
-                                <td class="col-int-num">SIH26-A0H-T091</td>
-                                <td class="col-int-name">DraftZero</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26181</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">3</td>
-                                <td class="col-int-num">SIH26-A0H-T278</td>
-                                <td class="col-int-name">Nexus</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26039</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">4</td>
-                                <td class="col-int-num">SIH26-A0H-T394</td>
-                                <td class="col-int-name">LUMORA</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26005</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">5</td>
-                                <td class="col-int-num">SIH26-A0H-T196</td>
-                                <td class="col-int-name">Code Syndicate</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26008</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">6</td>
-                                <td class="col-int-num">SIH26-A0H-T241</td>
-                                <td class="col-int-name">MILVEX</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26110</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <!-- VERIFY: SIH26114 (Autodesk) is listed as SOFTWARE on sih.gov.in. -->
-                            <tr>
-                                <td class="col-sno">7</td>
-                                <td class="col-int-num">SIH26-A0H-T249</td>
-                                <td class="col-int-name">SRARS - D</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26052</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">8</td>
-                                <td class="col-int-num">SIH26-A0H-T287</td>
-                                <td class="col-int-name">HexaForge</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26025</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">9</td>
-                                <td class="col-int-num">SIH26-A0H-T117</td>
-                                <td class="col-int-name">BRAVITS</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26088</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">10</td>
-                                <td class="col-int-num">SIH26-A0H-T098</td>
-                                <td class="col-int-name">The Shock Crew</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26022</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">11</td>
-                                <td class="col-int-num">SIH26-A0H-T279</td>
-                                <td class="col-int-name">Alloy Minds</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26113</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">12</td>
-                                <td class="col-int-num">SIH26-A0H-T114</td>
-                                <td class="col-int-name">Sergio</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26008</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">13</td>
-                                <td class="col-int-num">SIH26-A0H-T325</td>
-                                <td class="col-int-name">Bhuvansankar S</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26007</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">14</td>
-                                <td class="col-int-num">SIH26-A0H-T302</td>
-                                <td class="col-int-name">Blueprint Breakers</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26112</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">15</td>
-                                <td class="col-int-num">SIH26-A0H-T273</td>
-                                <td class="col-int-name">Zero Glitch</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26112</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">16</td>
-                                <td class="col-int-num">SIH26-A0H-T280</td>
-                                <td class="col-int-name">_Init_ to win it</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26172</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">17</td>
-                                <td class="col-int-num">SIH26-A0H-T368</td>
-                                <td class="col-int-name">Finsentry</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26179</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tbody-hw-given-psid"></tbody>
                     </table>
                 </div>
             </div>
@@ -946,7 +165,8 @@
                     <div class="kpi-icon-box kpi-icon-sel">🏆</div>
                     <div class="kpi-details">
                         <span class="kpi-label">Shortlisted Teams</span>
-                        <span class="kpi-value" id="sw-kpi-shortlisted" style="color: var(--success-green);">73 Teams</span>
+                        <span class="kpi-value" id="sw-kpi-shortlisted" style="color: var(--success-green);">73
+                            Teams</span>
                     </div>
                 </div>
                 <div class="kpi-stat-item">
@@ -961,7 +181,7 @@
             <!-- Subsection A: Student Innovation -->
             <div class="subsection-wrapper">
                 <div class="subsection-header">
-                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation</h4>
+                    <h4 class="subsection-title"><span>💡</span> Subsection A: Student Innovation (Sorted by PSID)</h4>
                     <span class="sub-badge badge-si">Student Innovation (7 Teams)</span>
                 </div>
                 <div class="table-responsive">
@@ -978,80 +198,7 @@
                                 <th class="col-status">Status</th>
                             </tr>
                         </thead>
-                        <tbody id="tbody-sw-student-innovation">
-                            <tr>
-                                <td class="col-sno">1</td>
-                                <td class="col-int-num">SIH26-A0H-T020</td>
-                                <td class="col-int-name">HexNova</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26204</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">2</td>
-                                <td class="col-int-num">SIH26-A0H-T243</td>
-                                <td class="col-int-name">ParellelX</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26202</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">3</td>
-                                <td class="col-int-num">SIH26-A0H-T264</td>
-                                <td class="col-int-name">penguin.exe</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26196</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">4</td>
-                                <td class="col-int-num">SIH26-A0H-T228</td>
-                                <td class="col-int-name">Code Blooded</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26204</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">5</td>
-                                <td class="col-int-num">SIH26-A0H-T248</td>
-                                <td class="col-int-name">Innovatrix</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26199</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">6</td>
-                                <td class="col-int-num">SIH26-A0H-T500</td>
-                                <td class="col-int-name">Aurez</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26208</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <!-- MOVED from Subsection B: SIH26197 is a Student Innovation PSID
-                                 (Heritage & Culture, Software) on sih.gov.in. -->
-                            <tr>
-                                <td class="col-sno">7</td>
-                                <td class="col-int-num">SIH26-A0H-T503</td>
-                                <td class="col-int-name">ArchiTechs</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26197</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tbody-sw-student-innovation"></tbody>
                     </table>
                 </div>
             </div>
@@ -1059,7 +206,7 @@
             <!-- Subsection B: Given PSIDs -->
             <div class="subsection-wrapper">
                 <div class="subsection-header">
-                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs</h4>
+                    <h4 class="subsection-title"><span>📋</span> Subsection B: Given PSIDs (Sorted by PSID)</h4>
                     <span class="sub-badge badge-given">Govt / Industry PSIDs (66 Shortlisted + 5 Waitlisted)</span>
                 </div>
                 <div class="table-responsive">
@@ -1076,730 +223,90 @@
                                 <th class="col-status">Status</th>
                             </tr>
                         </thead>
-                        <tbody id="tbody-sw-given-psid">
-                            <tr>
-                                <td class="col-sno">1</td>
-                                <td class="col-int-num">SIH26-A0H-T109</td>
-                                <td class="col-int-name">HackRythm</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26166</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">2</td>
-                                <td class="col-int-num">SIH26-A0H-T084</td>
-                                <td class="col-int-name">Neural Ninjas</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26042</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">3</td>
-                                <td class="col-int-num">SIH26-A0H-T236</td>
-                                <td class="col-int-name">CODE_BLUE</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26102</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">4</td>
-                                <td class="col-int-num">SIH26-A0H-T004</td>
-                                <td class="col-int-name">ARISTELLA</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26141</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">5</td>
-                                <td class="col-int-num">SIH26-A0H-T316</td>
-                                <td class="col-int-name">HackProcessingUnit</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26038</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">6</td>
-                                <td class="col-int-num">SIH26-A0H-T245</td>
-                                <td class="col-int-name">C3-CODECOFFEECHAOS</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26001</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">7</td>
-                                <td class="col-int-num">SIH26-A0H-T213</td>
-                                <td class="col-int-name">BugSmiths</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26143</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">8</td>
-                                <td class="col-int-num">SIH26-A0H-T089</td>
-                                <td class="col-int-name">Team Algoris</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26143</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">9</td>
-                                <td class="col-int-num">SIH26-A0H-T332</td>
-                                <td class="col-int-name">The Nexus</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26032</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">10</td>
-                                <td class="col-int-num">SIH26-A0H-T100</td>
-                                <td class="col-int-name">Serendipity Sparks</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26156</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">11</td>
-                                <td class="col-int-num">SIH26-A0H-T223</td>
-                                <td class="col-int-name">HydraX</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26124</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">12</td>
-                                <td class="col-int-num">SIH26-A0H-T164</td>
-                                <td class="col-int-name">Team Matrix</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26103</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">13</td>
-                                <td class="col-int-num">SIH26-A0H-T133</td>
-                                <td class="col-int-name">Dark protocol</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26089</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">14</td>
-                                <td class="col-int-num">SIH26-A0H-T239</td>
-                                <td class="col-int-name">RetroFit</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26066</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">15</td>
-                                <td class="col-int-num">SIH26-A0H-T286</td>
-                                <td class="col-int-name">Excelsior</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26176</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">16</td>
-                                <td class="col-int-num">SIH26-A0H-T108</td>
-                                <td class="col-int-name">Singularities</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26159</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">17</td>
-                                <td class="col-int-num">SIH26-A0H-T184</td>
-                                <td class="col-int-name">Aura</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26171</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">18</td>
-                                <td class="col-int-num">SIH26-A0H-T323</td>
-                                <td class="col-int-name">AI CRUISERS</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26038</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">19</td>
-                                <td class="col-int-num">SIH26-A0H-T282</td>
-                                <td class="col-int-name">Odyssix</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26173</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">20</td>
-                                <td class="col-int-num">SIH26-A0H-T214</td>
-                                <td class="col-int-name">IdliSambar.json</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26034</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">21</td>
-                                <td class="col-int-num">SIH26-A0H-T224</td>
-                                <td class="col-int-name">GridX</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26183</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">22</td>
-                                <td class="col-int-num">SIH26-A0H-T305</td>
-                                <td class="col-int-name">Recursive Renagades</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26003</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">23</td>
-                                <td class="col-int-num">SIH26-A0H-T120</td>
-                                <td class="col-int-name">First Year Fiasco</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26130</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">24</td>
-                                <td class="col-int-num">SIH26-A0H-T313</td>
-                                <td class="col-int-name">HackNox</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26126</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">25</td>
-                                <td class="col-int-num">SIH26-A0H-T025</td>
-                                <td class="col-int-name">Git Gud</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26123</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">26</td>
-                                <td class="col-int-num">SIH26-A0H-T183</td>
-                                <td class="col-int-name">Byte Force</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26001</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">27</td>
-                                <td class="col-int-num">SIH26-A0H-T208</td>
-                                <td class="col-int-name">Caelum</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26053</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">28</td>
-                                <td class="col-int-num">SIH26-A0H-T136</td>
-                                <td class="col-int-name">Cyber Syndicate</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26101</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">29</td>
-                                <td class="col-int-num">SIH26-A0H-T359</td>
-                                <td class="col-int-name">Half Squadron</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26055</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">30</td>
-                                <td class="col-int-num">SIH26-A0H-T348</td>
-                                <td class="col-int-name">Agentic Coven</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26140</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">31</td>
-                                <td class="col-int-num">SIH26-A0H-T066</td>
-                                <td class="col-int-name">Nexora</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26124</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">32</td>
-                                <td class="col-int-num">SIH26-A0H-T165</td>
-                                <td class="col-int-name">Paradoxx6</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26013</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">33</td>
-                                <td class="col-int-num">SIH26-A0H-T052</td>
-                                <td class="col-int-name">TECH FORGE</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26082</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">34</td>
-                                <td class="col-int-num">SIH26-A0H-T163</td>
-                                <td class="col-int-name">CodeX</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26173</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">35</td>
-                                <td class="col-int-num">SIH26-A0H-T275</td>
-                                <td class="col-int-name">Tech Indians</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26083</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">36</td>
-                                <td class="col-int-num">SIH26-A0H-T068</td>
-                                <td class="col-int-name">Stack Trace</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26227</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">37</td>
-                                <td class="col-int-num">SIH26-A0H-T364</td>
-                                <td class="col-int-name">Team Invictus</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26044</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">38</td>
-                                <td class="col-int-num">SIH26-A0H-T315</td>
-                                <td class="col-int-name">Vireon</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26033</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">39</td>
-                                <td class="col-int-num">SIH26-A0H-T018</td>
-                                <td class="col-int-name">VISHWAKARMA</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26167</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">40</td>
-                                <td class="col-int-num">SIH26-A0H-T143</td>
-                                <td class="col-int-name">Tomato Chutney</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26131</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">41</td>
-                                <td class="col-int-num">SIH26-A0H-T043</td>
-                                <td class="col-int-name">F0rg3d</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26164</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">42</td>
-                                <td class="col-int-num">SIH26-A0H-T360</td>
-                                <td class="col-int-name">Teen Titans</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26091</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">43</td>
-                                <td class="col-int-num">SIH26-A0H-T363</td>
-                                <td class="col-int-name">Team zenith</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26166</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">44</td>
-                                <td class="col-int-num">SIH26-A0H-T105</td>
-                                <td class="col-int-name">Sentinels</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26166</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">45</td>
-                                <td class="col-int-num">SIH26-A0H-T204</td>
-                                <td class="col-int-name">Lowkey6</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26117</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">46</td>
-                                <td class="col-int-num">SIH26-A0H-T156</td>
-                                <td class="col-int-name">Harrington</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26102</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">47</td>
-                                <td class="col-int-num">SIH26-A0H-T369</td>
-                                <td class="col-int-name">Neural Nexus</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26034</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">48</td>
-                                <td class="col-int-num">SIH26-A0H-T371</td>
-                                <td class="col-int-name">Strike Out</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26132</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">49</td>
-                                <td class="col-int-num">SIH26-A0H-T005</td>
-                                <td class="col-int-name">Code Psychics</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26161</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">50</td>
-                                <td class="col-int-num">SIH26-A0H-T040</td>
-                                <td class="col-int-name">Anantha</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26184</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">51</td>
-                                <td class="col-int-num">SIH26-A0H-T198</td>
-                                <td class="col-int-name">IntelliHive</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26076</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">52</td>
-                                <td class="col-int-num">SIH26-A0H-T333</td>
-                                <td class="col-int-name">YOUNG INNOVATORS</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26037</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">53</td>
-                                <td class="col-int-num">SIH26-A0H-T350</td>
-                                <td class="col-int-name">Pixels</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26037</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">54</td>
-                                <td class="col-int-num">SIH26-A0H-T230</td>
-                                <td class="col-int-name">Runtime Rebels</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26002</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">55</td>
-                                <td class="col-int-num">SIH26-A0H-T284</td>
-                                <td class="col-int-name">Krayons</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26123</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">56</td>
-                                <td class="col-int-num">SIH26-A0H-T007</td>
-                                <td class="col-int-name">OrbitalGeeks</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26167</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">57</td>
-                                <td class="col-int-num">SIH26-A0H-T263</td>
-                                <td class="col-int-name">Byte busters</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26107</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">58</td>
-                                <td class="col-int-num">SIH26-A0H-T028</td>
-                                <td class="col-int-name">Hacktilldawn</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26104</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">59</td>
-                                <td class="col-int-num">SIH26-A0H-T009</td>
-                                <td class="col-int-name">Algo Knights</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26190</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">60</td>
-                                <td class="col-int-num">SIH26-A0H-T059</td>
-                                <td class="col-int-name">Code Architects</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26117</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">61</td>
-                                <td class="col-int-num">SIH26-A0H-T148</td>
-                                <td class="col-int-name">Dark Mod Devs</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26151</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">62</td>
-                                <td class="col-int-num">SIH26-A0H-T217</td>
-                                <td class="col-int-name">BEYOND BINARY</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26153</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">63</td>
-                                <td class="col-int-num">SIH26-A0H-T335</td>
-                                <td class="col-int-name">Bit Bandits</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26090</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">64</td>
-                                <td class="col-int-num">SIH26-A0H-T055</td>
-                                <td class="col-int-name">HexaScrapers</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26033</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">65</td>
-                                <td class="col-int-num">SIH26-A0H-T092</td>
-                                <td class="col-int-name">TExperts</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26090</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">66</td>
-                                <td class="col-int-num">SIH26-A0H-T507</td>
-                                <td class="col-int-name">Quantum</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26114</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-shortlisted">Shortlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">67</td>
-                                <td class="col-int-num">SIH26-A0H-T054</td>
-                                <td class="col-int-name">404 Brain not found</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26043</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-waitlisted">Waitlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">68</td>
-                                <td class="col-int-num">SIH26-A0H-T013</td>
-                                <td class="col-int-name">PIKACHU</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26043</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-waitlisted">Waitlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">69</td>
-                                <td class="col-int-num">SIH26-A0H-T202</td>
-                                <td class="col-int-name">FnF</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26053</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-waitlisted">Waitlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">70</td>
-                                <td class="col-int-num">SIH26-A0H-T125</td>
-                                <td class="col-int-name">Cognivex</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26038</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-waitlisted">Waitlisted</span></td>
-                            </tr>
-                            <tr>
-                                <td class="col-sno">71</td>
-                                <td class="col-int-num">SIH26-A0H-T001</td>
-                                <td class="col-int-name">Nova Prime</td>
-                                <td class="col-sih-num"></td>
-                                <td class="col-sih-name"></td>
-                                <td class="col-idea1">SIH26167</td>
-                                <td class="col-yukti"></td>
-                                <td class="col-status"><span class="status-badge-waitlisted">Waitlisted</span></td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tbody-sw-given-psid"></tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-        <!-- Footer Notes Section -->
-        <!-- <div class="footer-note">
-            <h3 class="footer-note-title">Information for Shortlisted Teams</h3>
-            <p>Congratulations to all teams shortlisted for the <strong>Top 100 Shortlist</strong> across <strong>Student Innovation</strong> and <strong>Given PSIDs</strong> categories. All team leads are requested to keep their presentation decks, codebases, and hardware prototypes ready for subsequent rounds.</p>
-            <p>Ensure that your <strong>Yukti Innovation Idea</strong> details and repository submissions are verified and aligned with SIH guidelines.</p>
-            <p class="footer-note-thanks">✨ Institution's Innovation Council wishes you all the best for the upcoming rounds! ✨</p>
-        </div> -->
+        <!-- ========================================================================= -->
+        <!-- 3. ALL TEAMS SECTION                                                     -->
+        <!-- ========================================================================= -->
+        <div class="track-card track-section" id="section-all" style="display: none;">
+            <div class="track-card-header">
+                <h3 class="track-card-title"><span>👥</span> All Teams Directory</h3>
+                <span class="track-tag tag-all">Complete Top 100 Shortlist</span>
+            </div>
+
+            <!-- Status / Summary Bar -->
+            <div class="track-status-summary-bar">
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-eval">📊</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Total Teams</span>
+                        <span class="kpi-value" id="all-kpi-total">100 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box"
+                        style="background-color: var(--primary-blue-light); color: var(--primary-blue);">⚙️</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Hardware Track</span>
+                        <span class="kpi-value" id="all-kpi-hw" style="color: var(--primary-blue);">22 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box" style="background-color: var(--success-bg); color: var(--success-green);">
+                        💻</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Software Track</span>
+                        <span class="kpi-value" id="all-kpi-sw" style="color: var(--success-green);">78 Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box kpi-icon-sel">🏆</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Direct Shortlisted</span>
+                        <span class="kpi-value" id="all-kpi-shortlisted" style="color: var(--success-green);">95
+                            Teams</span>
+                    </div>
+                </div>
+                <div class="kpi-stat-item">
+                    <div class="kpi-icon-box" style="background-color: #fef7e0; color: #b06000;">⏳</div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Waitlisted</span>
+                        <span class="kpi-value" id="all-kpi-waitlisted" style="color: #b06000;">5 Teams</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master All Teams Table -->
+            <div class="subsection-wrapper">
+                <div class="subsection-header">
+                    <h4 class="subsection-title"><span>📋</span> All Teams (Sorted by PSID & Waitlisted at the Last)
+                    </h4>
+                    <span class="sub-badge badge-si">Top 100 Teams (95 Shortlisted + 5 Waitlisted)</span>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-sno">S.No.</th>
+                                <th class="col-int-num">Internal Team Number</th>
+                                <th class="col-int-name">Internal Team Name</th>
+                                <th class="col-track">Track</th>
+                                <th class="col-sih-num">SIH Team Number</th>
+                                <th class="col-sih-name">SIH Team Name</th>
+                                <th class="col-idea1">Idea #1 (PSID)</th>
+                                <th class="col-yukti">Yukti Idea</th>
+                                <th class="col-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-all-teams"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
         <div class="footer-text">
             © SIH 2026 - Internal Hackathon <br />
@@ -1807,54 +314,8 @@
         </div>
     </div>
 
-    <script>
-        let currentActiveTab = 'hardware';
-
-        // Auto-renumber S.No. in every table on load, so moving a team
-        // between sections never leaves stale numbering behind.
-        function renumberAllTables() {
-            document.querySelectorAll('.table-responsive tbody').forEach(tbody => {
-                tbody.querySelectorAll('tr').forEach((row, index) => {
-                    const cell = row.querySelector('.col-sno');
-                    if (cell) cell.textContent = index + 1;
-                });
-            });
-        }
-
-        function selectTrackTab(tab) {
-            currentActiveTab = tab;
-            document.querySelectorAll('.track-tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.getElementById(`tab-${tab}`).classList.add('active');
-
-            const hwSection = document.getElementById('section-hardware');
-            const swSection = document.getElementById('section-software');
-
-            if (tab === 'hardware') {
-                hwSection.style.display = 'block';
-                swSection.style.display = 'none';
-            } else if (tab === 'software') {
-                hwSection.style.display = 'none';
-                swSection.style.display = 'block';
-            }
-
-            filterTop100Teams();
-        }
-
-        function filterTop100Teams() {
-            const query = document.getElementById('top100-search-input').value.toLowerCase().trim();
-            const rows = document.querySelectorAll('.table-responsive tbody tr');
-
-            rows.forEach(row => {
-                const text = row.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-        }
-
-        renumberAllTables();
-    </script>
+    <script src="teams-data.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
